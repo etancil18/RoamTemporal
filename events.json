@@ -574,7 +574,8 @@
   "sat": [
     { "open": 9, "close": 15.5 },
     { "open": 17, "close": 23 }
-  ] },
+  ] 
+},
     "dayParts": {
     "mon": "MD",
     "tue": "MD",
@@ -770,7 +771,8 @@
   "sat": [
     { "open": 10.5, "close": 14.75 },
     { "open": 16, "close": 24.75 }
-  ] },
+  ]
+},
     "dayParts": {
     "mon": "-",
     "tue": "-",
@@ -896,7 +898,8 @@
   "sat": [
     { "open": 8, "close": 16 },
     { "open": 18, "close": 22 }
-  ] },
+  ]
+},
     "dayParts": {
     "mon": "M",
     "tue": "M",
@@ -2171,7 +2174,8 @@
   "sat": [
     { "open": 12, "close": 15.75 },
     { "open": 17, "close": 22 }
-  ] },
+  ]
+},
     "dayParts": {
     "mon": "MD",
     "tue": "MD",
@@ -4530,7 +4534,8 @@
   "sat": [
     { "open": 10, "close": 15 },
     { "open": 17, "close": 23 }
-  ] },
+  ]
+},
     "dayParts": {
     "mon": "MD",
     "tue": "MD",
@@ -4662,7 +4667,8 @@
   "sat": [
     { "open": 14, "close": 16 },
     { "open": 17, "close": 22 }
-  ] },
+  ]
+},
     "dayParts": {
     "mon": "E",
     "tue": "E",
@@ -5075,7 +5081,8 @@
   "sat": [
     { "open": 11, "close": 15.5 },
     { "open": 17.5, "close": 22.5 }
-  ] },
+  ]
+},
     "dayParts": {
     "mon": "MD",
     "tue": "MD",
@@ -5160,7 +5167,8 @@
   "sat": [
     { "open": 10, "close": 17 },
     { "open": 18, "close": 28 }
-  ] },
+  ]
+},
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
@@ -10603,7 +10611,8 @@
     "sat": [
         { "open": 11.5, "close": 14 },
         { "open": 17, "close": 23.5 }
-      ] },
+      ]
+},
     "dayParts": {
     "mon": "-",
     "tue": "-",
@@ -10888,7 +10897,8 @@
     "sat": [
         { "open": 12, "close": 15 },
         { "open": 17, "close": 23 }
-      ] },
+      ]
+},
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
@@ -11197,7 +11207,8 @@
     "sat": [
         { "open": 12, "close": 15 },
         { "open": 17, "close": 23 }
-      ] },
+      ]
+},
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
@@ -11469,7 +11480,8 @@
     "sat": [
         { "open": 11, "close": 14.5 },
         { "open": 17.5, "close": 22 }
-      ] },
+      ]
+},
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
@@ -11513,7 +11525,8 @@
     "sat": [
         { "open": 11, "close": 15.5 },
         { "open": 17.5, "close": 24 }
-      ] },
+      ]
+},
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
@@ -12545,7 +12558,8 @@
     "sat": [
       { "open": 12, "close": 30 },
       { "open": 14, "close": 24 }
-    ] },
+    ]
+},
     "dayParts": {
     "mon": "-",
     "tue": "-",
@@ -19363,7 +19377,8 @@
       { "open": 7, "close": 10.5 },
       { "open": 11.5, "close": 14.5 },
       { "open": 17, "close": 22 }
-    ] },
+    ]
+},
     "dayParts": {
     "mon": "-",
     "tue": "-",
