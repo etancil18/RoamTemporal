@@ -32,10 +32,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "hidden gem, speakeasy",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Doris",
@@ -70,10 +70,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "neighborhood bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Abe's Pagoda Bar",
@@ -108,10 +108,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "dive, chill",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Carmelo’s",
@@ -146,10 +146,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Italian, romantic",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Saturdays NYC Crosby St",
@@ -184,10 +184,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "coffee, menswear",
     "Price": "$$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Honey's",
@@ -222,10 +222,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "distillery, alt-vibe",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "La Cabra",
@@ -260,10 +260,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "café, bakery",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Freemans",
@@ -298,10 +298,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "rustic brunch/dinner",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Blue-Sun Record Store",
@@ -336,10 +336,10 @@
     "sun": "MD"
   },
   "TimeCategory": "afternoon, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "music, browsing",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Carousel",
@@ -374,10 +374,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "speakeasy",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Kanoyama",
@@ -412,10 +412,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "sushi, upscale",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Waiting on a Friend",
@@ -450,10 +450,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "small plates, vinyl",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Bakeri",
@@ -488,10 +488,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Nordic bakery",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Red Sorghum 夜宴",
@@ -526,10 +526,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "modern Chinese, late",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Rucola",
@@ -585,10 +585,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "brunch, cozy",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Dead Letter No. 9",
@@ -623,10 +623,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "cocktail, hidden",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "HOMERUN NYC",
@@ -661,10 +661,10 @@
     "sun": "MD"
   },
   "TimeCategory": "afternoon, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "vintage retail",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "The Cactus Shop",
@@ -699,10 +699,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "plant, design",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Chisholm Larsson Gallery",
@@ -737,10 +737,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "poster art, gallery",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Nightly's",
@@ -781,10 +781,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "speakeasy, velvet vibe",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "schmuck.",
@@ -819,10 +819,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "wine bar, edgy",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Wo Hop",
@@ -857,10 +857,10 @@
     "sun": "L"
   },
   "TimeCategory": "late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Chinese, late night",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "L'Appartement 4F",
@@ -907,10 +907,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "French bakery, luxe",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Cafe Mogador",
@@ -945,10 +945,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "brunch, Moroccan",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Skarstedt Gallery",
@@ -983,10 +983,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "art, high-end",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "BrownstoneJAZZ",
@@ -1021,10 +1021,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "jazz, immersive",
     "Price": "$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Million Goods",
@@ -1059,10 +1059,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "niche retail, concept",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "El Pingüino",
@@ -1097,10 +1097,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "tapas, wine bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "The Se7en",
@@ -1135,10 +1135,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "nightlife, exclusive",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Experimental Cocktail Club",
@@ -1173,10 +1173,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "mixology, speakeasy",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "So & So's Neighborhood Piano Bar",
@@ -1211,10 +1211,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "music, cozy bar",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "LunÀtico",
@@ -1249,10 +1249,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "jazz, wine",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Carpenters Workshop Gallery",
@@ -1287,10 +1287,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "gallery, avant-garde",
     "Price": "",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "The Tusk Bar",
@@ -1325,10 +1325,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cocktail, dark vibe",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Codex",
@@ -1363,10 +1363,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "underground, speakeasy",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "The Hole",
@@ -1401,10 +1401,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "art, edgy",
     "Price": "",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Botanica Bar",
@@ -1439,10 +1439,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "dive, alt-classic",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Bibliotheque",
@@ -1477,10 +1477,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "cafe, Japanese minimalism",
     "Price": "$$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "% Arabica",
@@ -1515,10 +1515,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "coffee, sleek",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Tuffet",
@@ -1553,10 +1553,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "wine, cheese, patio",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Bisou",
@@ -1591,10 +1591,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "date night, French",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Superbueno",
@@ -1629,10 +1629,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "modern Mexican, vibrant",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Bar Mario",
@@ -1667,10 +1667,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "intimate, Euro vibe",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Milady's",
@@ -1705,10 +1705,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "casual, nightlife",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Pepe Rosso",
@@ -1743,10 +1743,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Italian, quick bite",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Clover Club",
@@ -1781,10 +1781,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "cocktail, timeless",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Brooklyn Social",
@@ -1819,10 +1819,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "retro, local",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Hard to Explain",
@@ -1857,10 +1857,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "indie, underground",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Have & Meyer",
@@ -1895,10 +1895,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "natural wine, rustic",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Antidote",
@@ -1933,10 +1933,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "wine, hidden gem",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Sake Bar Decibel",
@@ -1971,10 +1971,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "sake, underground",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Raku",
@@ -2009,10 +2009,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Japanese comfort",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Ichibantei",
@@ -2047,10 +2047,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "izakaya, late night",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Ask For Janice",
@@ -2085,10 +2085,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "wine, natural, small plates",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "With Others",
@@ -2123,10 +2123,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "art bar, social",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Samurai Mama",
@@ -2182,10 +2182,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "ramen, cozy",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Birds of a Feather",
@@ -2220,10 +2220,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Sichuan, modern",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "ACRE",
@@ -2258,10 +2258,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "ceramics, peaceful",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Smalls Jazz Club",
@@ -2296,10 +2296,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "jazz, historic",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Ornithology Jazz Club",
@@ -2334,10 +2334,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "jazz, intimate",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Angel’s Share",
@@ -2372,10 +2372,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "speakeasy, high-end",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Layla",
@@ -2410,10 +2410,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Mediterranean, romantic",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Taqueria Ramirez",
@@ -2448,10 +2448,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "tacos, casual",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Madeline's Martini",
@@ -2486,10 +2486,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "cocktails, stylish",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "MONO+MONO",
@@ -2524,10 +2524,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Korean jazz, lounge",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Romeos",
@@ -2562,10 +2562,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "moody bar, date spot",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Simple",
@@ -2600,10 +2600,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "café, zen minimal",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "The Belfry",
@@ -2638,10 +2638,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "cocktail, piano bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Spectacle",
@@ -2676,10 +2676,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "cinema, underground",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Nightmoves",
@@ -2714,10 +2714,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "deep house, late night",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Radegast Hall & Biergarten",
@@ -2752,10 +2752,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "beerhall, social",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Deux Chats",
@@ -2790,10 +2790,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "speakeasy, moody",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Sauced",
@@ -2828,10 +2828,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "natural wine, fun vibe",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Ponyboy",
@@ -2866,10 +2866,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "music, dance, cocktails",
     "Price": "$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Twins Lounge",
@@ -2904,10 +2904,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "dive, artsy",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Hotel Delmano",
@@ -2942,10 +2942,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cocktail, old world",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Studio 151",
@@ -2980,10 +2980,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "sushi + DJ, hybrid",
     "Price": "$$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Joyface",
@@ -3018,10 +3018,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "retro, immersive, dance",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Fresh Kills Bar",
@@ -3056,10 +3056,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cocktail, serious bar",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Bar Blondeau",
@@ -3094,10 +3094,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "scenic, upscale",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Night of Joy",
@@ -3132,10 +3132,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "rooftop, intimate",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "PPL",
@@ -3170,10 +3170,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "nightlife, queer-forward",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Barano",
@@ -3208,10 +3208,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Italian, dinner spot",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Pollyn",
@@ -3246,10 +3246,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cocktail, edge",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Fan Fried Rice Bar",
@@ -3284,10 +3284,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "casual, post-drink",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Casa Magazines",
@@ -3322,10 +3322,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "culture, print",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Café-Flor / Bar 21",
@@ -3360,10 +3360,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "cafe by day, bar by night",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Frevo",
@@ -3398,10 +3398,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "fine dining, hidden",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Bozu",
@@ -3436,10 +3436,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Japanese, fusion",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Au Cheval",
@@ -3474,10 +3474,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "indulgent burger, upscale",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Casa Mono",
@@ -3512,10 +3512,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Spanish, wine, intimate",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Ampersand",
@@ -3550,10 +3550,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "small plates, date night",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Cherry on Top",
@@ -3588,10 +3588,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "rooftop, wine",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Close Up",
@@ -3626,10 +3626,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "arthouse cinema, curated",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "The Noguchi Museum",
@@ -3664,10 +3664,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "art, sculpture, contemplative",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "SculptureCenter",
@@ -3702,10 +3702,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "art, conceptual",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Glenn Marlowe Sculpture Studio and Gallery",
@@ -3740,10 +3740,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "hidden art studio",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Salon 94",
@@ -3778,10 +3778,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "contemporary gallery",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "APPARATUS",
@@ -3816,10 +3816,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "design, lighting, showroom",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Yan's Antique Jewelry Inc.",
@@ -3854,10 +3854,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "antique, eclectic",
     "Price": "",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Magic Jewelry",
@@ -3892,10 +3892,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "spiritual, mystic",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Philip Williams Posters",
@@ -3930,10 +3930,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "vintage posters, discovery",
     "Price": "",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Westsider Rare & Used Books Inc.",
@@ -3968,10 +3968,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "bookstore, literary escape",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "niconeco zakkaya",
@@ -4006,10 +4006,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Japanese stationery, kawaii",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Bungee Space",
@@ -4044,10 +4044,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "magazine store, hidden media",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Brandy Library",
@@ -4082,10 +4082,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cocktails, dark, refined",
     "Price": "$$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Cafe Erzulie",
@@ -4120,10 +4120,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday, happyhour, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "cafe by day, music garden by night",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Mr. Melo",
@@ -4158,10 +4158,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "barbershop + bar, vibe spot",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Nem's Japandi Bistro",
@@ -4196,10 +4196,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cozy fusion, quiet luxury",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Milk & Roses",
@@ -4234,10 +4234,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "romantic, Euro garden",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Tula House",
@@ -4272,10 +4272,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "plant house, design",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Death & Co East Village",
@@ -4310,10 +4310,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "cocktail institution",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Midnight Blue",
@@ -4348,10 +4348,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "sultry bar, ambient",
     "Price": "$$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "The Office of Mr. Moto",
@@ -4386,10 +4386,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "immersive tasting, speakeasy",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Jones Street Wine Bar & Chefs Tasting Counter",
@@ -4424,10 +4424,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "intimate, high-end",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "A-1 Record Shop",
@@ -4462,10 +4462,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "vinyl, crate digging",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "The Lot Radio",
@@ -4500,10 +4500,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon, happyhour, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "music, outdoor, community",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Rule of Thirds",
@@ -4541,10 +4541,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Japanese, design-forward",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Met Cloisters",
@@ -4579,10 +4579,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "museum, sacred calm",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Lexington Candy Shop",
@@ -4617,10 +4617,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "vintage soda fountain",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Tsumo Omakase",
@@ -4673,10 +4673,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "omakase, quiet craft",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Piccola Strada",
@@ -4711,10 +4711,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "tiny trattoria, date fuel",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Kam Man Market",
@@ -4749,10 +4749,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Chinatown essentials",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Kai Feng Fu Dumpling House",
@@ -4787,10 +4787,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cheap eats, late cravings",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Le Veau d'Or",
@@ -4837,10 +4837,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "classic French, timeless",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Cafe Regular",
@@ -4875,10 +4875,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "tiny Euro café",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "NBetween",
@@ -4913,10 +4913,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "conceptual, niche retail",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Craftsman Ave",
@@ -4951,10 +4951,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "hands-on workshops, DIY",
     "Price": "",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Untermyer Gardens",
@@ -4989,10 +4989,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "majestic, garden escape",
     "Price": "$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "Dahing Plants",
@@ -5027,10 +5027,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "plant jungle, immersive",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Bricolage",
@@ -5086,10 +5086,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Vietnamese, backyard feel",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Bar at Café Kitsuné",
@@ -5124,10 +5124,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "sleek, design-forward café bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Public Records",
@@ -5171,10 +5171,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "music, design, café/bar hybrid",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Casino",
@@ -5209,10 +5209,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "bold, postmodern nightlife",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Bode Men’s",
@@ -5247,10 +5247,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "men’s boutique, aesthetic retail",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Desert Vintage",
@@ -5285,10 +5285,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "curated vintage, art-wear",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Regina's Grocery",
@@ -5323,10 +5323,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Italian deli, nostalgia chic",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "TUMBAO",
@@ -5361,10 +5361,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "salsa energy, open air",
     "Price": "",
-    "Duration": "0"
+    "Duration": 0
   },
   {
     "Name": "Sommwhere",
@@ -5399,10 +5399,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "wine bar, grounded elegance",
     "Price": "",
-    "Duration": "0"
+    "Duration": 0
   },
   {
     "Name": "Old Friend Photobooth",
@@ -5437,10 +5437,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "analog nostalgia shot",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "The Little Shop",
@@ -5475,10 +5475,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "hidden cocktail bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Cellar 36",
@@ -5513,10 +5513,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "under-the-radar wine bar",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "the Ground",
@@ -5551,10 +5551,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "nature-inspired calm",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Amsterdam Billiards Club",
@@ -5589,10 +5589,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "games, social, casual energy",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "colbo",
@@ -5627,10 +5627,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "fashion x culture hybrid space",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "tearoom by calmplex",
@@ -5665,10 +5665,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "minimalist tea & sound ritual",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "St Jardim",
@@ -5703,10 +5703,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "espresso bar, minimal",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "renewfinds",
@@ -5741,10 +5741,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "vintage, lifestyle curation",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Bury Your Dead Downwind",
@@ -5779,10 +5779,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "niche music venue",
     "Price": "$$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Paquita",
@@ -5817,10 +5817,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Spanish vermouth bar",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Bar Orai",
@@ -5855,10 +5855,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cocktails, minimal chic",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Sake Bar Asoko",
@@ -5893,10 +5893,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "sake, hidden bar",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Mezzrow",
@@ -5931,10 +5931,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "jazz, intimate",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Sun at Six Gallery",
@@ -5969,10 +5969,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "furniture as art, slow design",
     "Price": "",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Quarters",
@@ -6007,10 +6007,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "wine & snacks, mellow",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Sullaluna",
@@ -6045,10 +6045,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "wine bar meets bookstore",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Parcelle Chinatown",
@@ -6083,10 +6083,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "natural wine, low-key cool",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Mao Mao",
@@ -6121,10 +6121,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "late bites, neon chaos",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Damballa",
@@ -6159,10 +6159,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "mystic retail + spiritual layer",
     "Price": "$$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Lévy Gorvy Dayan",
@@ -6197,10 +6197,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "elite art gallery",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Dream Fishing Tackle",
@@ -6235,10 +6235,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "absurdist retail, brainy oddball",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Silence Please",
@@ -6273,10 +6273,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "conceptual tea bar",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "le gaz",
@@ -6311,10 +6311,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "scent & concept retail",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Chess Forum",
@@ -6349,10 +6349,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "legacy niche, contemplative",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Early Terrible [New York City]",
@@ -6387,10 +6387,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "speakeasy, lush",
     "Price": "$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Elvis",
@@ -6425,10 +6425,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "food & vibes",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "High Valley Books",
@@ -6463,10 +6463,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "rare books, literary curiosity",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Ed’s Elbow Room",
@@ -6501,10 +6501,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "dive, locals only",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "la milagrosa",
@@ -6539,10 +6539,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "mezcal, speakeasy, cumbia",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Film Noir Cinema",
@@ -6577,10 +6577,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "indie film, moody",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Pearlbox",
@@ -6615,10 +6615,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "art, alternative retail",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "We Got Company",
@@ -6653,10 +6653,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "espresso + media shop",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Oxomoco",
@@ -6691,10 +6691,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Michelin Mexican, bright vibe",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Frog",
@@ -6729,10 +6729,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "curated wine, calm",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Apotheke Chinatown",
@@ -6767,10 +6767,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "high-design cocktails",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Patent Pending",
@@ -6805,10 +6805,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "speakeasy, hidden in lobby",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Wilfie & Nell",
@@ -6843,10 +6843,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "bar, warm neighborhood feel",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Rosecrans Cafe & Wine Bar",
@@ -6881,10 +6881,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "botanical, brunch to bar shift",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Sunshine Laundromat",
@@ -6919,10 +6919,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "pinball speakeasy, weird magic",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Gran Torino",
@@ -6957,10 +6957,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Italian, group-friendly",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Cafe Balearica",
@@ -6995,10 +6995,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "day-to-night cafe/lounge",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Juliette Restaurant",
@@ -7033,10 +7033,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "rooftop brunch, greenery",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "MIDNIGHTS",
@@ -7071,10 +7071,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "nightlife, alt scene",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Skinny Dennis",
@@ -7109,10 +7109,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "dive bar with country twist",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Pokito",
@@ -7147,10 +7147,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "tropical cocktails, fun",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "MoMA PS1",
@@ -7185,10 +7185,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "museum, experimental",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Record Room",
@@ -7223,10 +7223,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "DJ bar, niche vinyl scene",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Honeycomb Hi-Fi Lounge",
@@ -7261,10 +7261,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "audiophile bar, serious tones",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Rhodora Wine Bar",
@@ -7299,10 +7299,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "natural wine, elevated chill",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Bar Birba",
@@ -7337,10 +7337,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "negronis, edge, cozy tight space",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Entre Nous",
@@ -7375,10 +7375,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "natural wine, hidden",
     "Price": "$$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Anaïs",
@@ -7413,10 +7413,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cozy Parisian",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Petit Paulette",
@@ -7451,10 +7451,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "sidewalk wine, low-lit charm",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "The Ten Bells Brooklyn",
@@ -7489,10 +7489,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "big energy, Euro feel",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Bouquet",
@@ -7527,10 +7527,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "intimate, romantic",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Diamond Lil",
@@ -7565,10 +7565,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "cocktails, neon retro",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Heaven & Earth",
@@ -7603,10 +7603,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "meditative, poetic bar",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "BABA on Withers",
@@ -7641,10 +7641,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "wine cave, vibey hideaway",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Plus de Vin",
@@ -7679,10 +7679,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "minimalist natural wine",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Woodhul Wine Bar",
@@ -7717,10 +7717,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "local-focused, easy social",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Pinkerton Wine Bar",
@@ -7755,10 +7755,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "retro, intimate",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Sauced",
@@ -7793,10 +7793,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "raw energy, wine party spot",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Immigrant",
@@ -7831,10 +7831,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "hybrid wine/beer, tiny",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Ruffian",
@@ -7869,10 +7869,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "acclaimed, small, bold flavors",
     "Price": "$$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Bibi Wine Bar",
@@ -7907,10 +7907,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "deep cuts, conversation-rich",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Brick Wine Bar",
@@ -7945,10 +7945,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "natural wine, long hangs",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Domino Wine Bar",
@@ -7983,10 +7983,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Williamsburg casual chic",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Lise & Vito",
@@ -8021,10 +8021,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "curated intimacy",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Maison Premiere",
@@ -8059,10 +8059,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "oysters, absinthe, drama",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Horses and Divorces",
@@ -8097,10 +8097,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "dark, chaotic bar energy",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "The Sultan Room",
@@ -8135,10 +8135,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "performance venue, glam chaos",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Elsewhere",
@@ -8173,10 +8173,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "big nightlife venue",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Mansions",
@@ -8211,10 +8211,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "bold bar, mystery branding",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Please Tell Me",
@@ -8249,10 +8249,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "wine bar, covertly playful",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Arcane Estate Coffee",
@@ -8287,10 +8287,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "dark café, niche, brooding",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "PUBLIC Hotel",
@@ -8325,10 +8325,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "sleek chaos, entry to nightlife layers",
     "Price": "$$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Ray’s",
@@ -8363,10 +8363,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "dive bar, scene-heavy",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Fig. 19",
@@ -8401,10 +8401,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "gallery → speakeasy twist",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Attaboy",
@@ -8439,10 +8439,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "legendary cocktail den",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Flower Shop",
@@ -8477,10 +8477,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "multi-level chill to party progression",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Skin Contact",
@@ -8515,10 +8515,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "natural wine, sophisticated edge",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Ramen Ishida",
@@ -8553,10 +8553,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "low-key ramen with quiet aesthetic",
     "Price": "$$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "The Back Room",
@@ -8591,10 +8591,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "speakeasy, hidden behind toy shop",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Dear Irving Gramercy",
@@ -8629,10 +8629,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "glam speakeasy, intimacy-focused",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Raines Law Room Chelsea",
@@ -8667,10 +8667,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "elite speakeasy, ultra-curated service",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "La Noxe",
@@ -8705,10 +8705,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "cocktail bar in subway station",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "The Coyote Club",
@@ -8743,10 +8743,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "moody, artsy bar",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Union Pool",
@@ -8781,10 +8781,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "social dive with open patio",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "7 Spring",
@@ -8819,10 +8819,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "refined, upscale hidden bar",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "yakuni",
@@ -8857,10 +8857,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "izakaya-style energy",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Bar Bianchi",
@@ -8895,10 +8895,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday, happyhour",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "espresso & aperitivo crossover",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Little Fino",
@@ -8933,10 +8933,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "chill, romantic, Euro lean",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Clemente Bar",
@@ -8971,10 +8971,10 @@
     "sun": "HH"
   },
   "TimeCategory": "afternoon, happyhour",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "hybrid café/bar, contemporary Latino art",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Greenburg Café",
@@ -9009,10 +9009,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "modern café, art-influenced",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "RHYTHM ZERO | GREENPOINT",
@@ -9046,10 +9046,10 @@
     "sun": "L"
   },
   "TimeCategory": "L",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "GREENPOINT",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "The Metropolitan Museum of Art",
@@ -9084,10 +9084,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "classical art flagship",
     "Price": "$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "Solomon R. Guggenheim Museum",
@@ -9122,10 +9122,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "modernist spiral, psychological pull",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "The Frick Collection",
@@ -9160,10 +9160,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "classical, quiet power",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "American Museum of Natural History",
@@ -9198,10 +9198,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "wonder, childhood awe",
     "Price": "$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "Whitney Museum of American Art",
@@ -9236,10 +9236,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "contemporary American focus",
     "Price": "$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Eden Gallery",
@@ -9274,10 +9274,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "commercial art, bright, sleek",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Taglialatella Galleries",
@@ -9312,10 +9312,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "pop/street art crossover",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Gagosian",
@@ -9350,10 +9350,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "elite minimalism, ultra-curated",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Agora Gallery",
@@ -9388,10 +9388,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "emerging artists, accessible",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Pace Gallery",
@@ -9426,10 +9426,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "institutional powerhouse",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "David Zwirner",
@@ -9464,10 +9464,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "serious, cerebral",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Lisson Gallery",
@@ -9502,10 +9502,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "conceptual lean, British aesthetic",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Gladstone Gallery",
@@ -9540,10 +9540,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "installation, avant-garde",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Eli Klein Gallery",
@@ -9578,10 +9578,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Chinese contemporary",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "The Jazz Gallery",
@@ -9616,10 +9616,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "niche live performance, elegant",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "PERROTIN NEW YORK",
@@ -9654,10 +9654,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "edgier European contemporary",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Hannah Traore Gallery",
@@ -9692,10 +9692,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "new voices, BIPOC focus",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Mr. Purple",
@@ -9730,10 +9730,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "rooftop party spot, upscale chaos",
     "Price": "$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Van Der Plas Gallery",
@@ -9768,10 +9768,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "outsider art, lower east side vibe",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "BAR GOTO",
@@ -9806,10 +9806,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Japanese cocktail perfection",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Make Believe",
@@ -9844,10 +9844,10 @@
     "sun": "L"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "rooftop Latin nightlife",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "River Deli",
@@ -9882,10 +9882,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "riverside Italian, mellow vibe",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "The Sandwich Board",
@@ -9920,10 +9920,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "classic deli energy",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Chimito's",
@@ -9958,10 +9958,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "fast-casual Latin food",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Krispy Pizza- Brooklyn, NY",
@@ -9996,10 +9996,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "old-school NYC pizza",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Tigre",
@@ -10034,10 +10034,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Argentinian chic bistro",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Nines",
@@ -10072,10 +10072,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "live piano bar, glam date-night",
     "Price": "$$$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Lovers of Today",
@@ -10110,10 +10110,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "dark, tiny, perfect for intimacy",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Pebble Bar",
@@ -10148,10 +10148,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "layered experience inside old Rockefeller HQ",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "HiLot",
@@ -10186,10 +10186,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "loud, modern, Tokyo cocktail influence",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Ding-a-ling",
@@ -10224,10 +10224,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "high-energy dive feel",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Bar Room at the Beekman",
@@ -10256,10 +10256,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "classic NYC hotel bar, ornate elegance",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "The Portrait Bar",
@@ -10294,10 +10294,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "precision cocktails, refined interior",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Shinji's",
@@ -10332,10 +10332,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Tokyo-style sensory cocktail theater",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Dante West Village",
@@ -10370,10 +10370,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "aperitivo legend, IG-famous",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Martiny’s",
@@ -10408,10 +10408,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "quiet excellence, narrative drinks",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Jac's on Bond",
@@ -10446,10 +10446,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "cool-kid cocktail spot, hip nostalgic",
     "Price": "$$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Ma•dé",
@@ -10484,10 +10484,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "tropical dining, bright drinks",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Mulberry",
@@ -10522,10 +10522,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "polished bar, New Americana",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Café Leon Dore",
@@ -10560,10 +10560,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "fashion x espresso culture",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Torrisi",
@@ -10613,10 +10613,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "upscale Italian, elite culinary experience",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Lil' Frankie's",
@@ -10651,10 +10651,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "casual Italian, always buzzing",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Mission Ceviche",
@@ -10689,10 +10689,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "vibrant, fast upscale Latin fusion",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Xolo",
@@ -10727,10 +10727,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday, happyhour",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "casual Mexican, small footprint",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Bird Dog",
@@ -10765,10 +10765,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Southern twist, cozy and new",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Le French Diner",
@@ -10803,10 +10803,10 @@
     "sun": "HH"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "tiny, romantic, tucked away",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "(SUB)MERCER",
@@ -10839,10 +10839,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "covert, legacy nightlife basement",
     "Price": "$$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "COQODAQ",
@@ -10898,10 +10898,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "upscale fried chicken w/ theatrical style",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Campbell",
@@ -10936,10 +10936,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "grand central’s old money power bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Shoo Shoo Nolita",
@@ -10974,10 +10974,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Israeli fusion, brunch to date night",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Bar Pisellino",
@@ -11012,10 +11012,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday, happyhour",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "espresso, aperitivo, Italian sidewalk",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Black Mountain Wine House",
@@ -11050,10 +11050,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cabin-core wine, fireplace energy",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "The Flower Shop Rooftop",
@@ -11088,10 +11088,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "hip, casual, peak Gen Z hang",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Jolene Sound Room",
@@ -11122,10 +11122,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "audiophile cocktail den",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "The Ten Bells",
@@ -11160,10 +11160,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "LES wine staple, low-light vibe",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Ammazzacaffè",
@@ -11207,10 +11207,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "refined Italian, back garden hidden gem",
     "Price": "$$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Alice",
@@ -11245,10 +11245,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "Italian w/ romantic aesthetic",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Vinyl Steakhouse",
@@ -11283,10 +11283,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "dinner w/ playlist experience",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Saint Tuesday",
@@ -11321,10 +11321,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "hidden cocktail perfection, piano energy",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Le Dive",
@@ -11359,10 +11359,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "trendy French bistro, effortless",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Scarr's Pizza",
@@ -11397,10 +11397,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "classic NYC slice joint",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Little Ways",
@@ -11435,10 +11435,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "glam cocktail vibe, modern finish",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "NURA",
@@ -11479,10 +11479,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "serious seasonal plates + design focus",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Casa Ora",
@@ -11523,10 +11523,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "elegant Latinx cuisine",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "JIMMY",
@@ -11561,10 +11561,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "rooftop, hotel party lean",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Urban Backyard",
@@ -11599,10 +11599,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "café with personality, plants, community",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Llama Inn",
@@ -11637,10 +11637,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "rooftop Peruvian energy, sleek atmosphere",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Ms. Yoo",
@@ -11675,10 +11675,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "Korean bar food with nightlife lean",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "NR",
@@ -11713,10 +11713,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "experimental Japanese cocktail lab",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Macao Trading Company",
@@ -11751,10 +11751,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "theatrical cocktails, Shanghai noir",
     "Price": "$$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Please Don't Tell",
@@ -11789,10 +11789,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "secretive speakeasy, reservation-only",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Thyme Bar",
@@ -11827,10 +11827,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "molecular cocktails, quiet opulence",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Bathtub Gin",
@@ -11865,10 +11865,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "roaring 20s style speakeasy",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Lucien",
@@ -11903,10 +11903,10 @@
     "sun": "HH"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "French cool-kid bistro",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Glass Ceiling Rooftop",
@@ -11941,10 +11941,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "Midtown rooftop, Instagram energy",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Palmetto",
@@ -11979,10 +11979,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "cocktail lab in Bushwick",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Electric Lemon",
@@ -12017,10 +12017,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "Hudson Yards haute cuisine",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Bemelmans Bar",
@@ -12055,10 +12055,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "classic hotel bar, old New York charm",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Tyger",
@@ -12093,10 +12093,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "downtown Asian fusion",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "JANE Motorcycles",
@@ -12131,10 +12131,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cafe x retail x lifestyle",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Tokyo Record Bar",
@@ -12169,10 +12169,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "tasting menu + vinyl ritual",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "LaRina Pastificio & Vino",
@@ -12207,10 +12207,10 @@
     "sun": "HH"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Brooklyn pasta perfection",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Django",
@@ -12245,10 +12245,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "jazz + cocktails in vaulted cellar",
     "Price": "$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Maracuja",
@@ -12283,10 +12283,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "divey, cozy, unpretentious",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Woods",
@@ -12321,10 +12321,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "late-night party bar",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Adore",
@@ -12359,10 +12359,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "wine-focused romantic small plates",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Monkey King",
@@ -12397,10 +12397,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "Chinese speakeasy with dramatic flair",
     "Price": "$$$",
-    "Duration": ""
+    "Duration": 
   },
   {
     "Name": "The Noble Brooklyn",
@@ -12435,10 +12435,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "refined cocktails, slow tempo",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Sereneco",
@@ -12473,10 +12473,10 @@
     "sun": "HH"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "elegant Greenpoint seasonal dining",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Cozy Royale",
@@ -12511,10 +12511,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "meat-focused, neighborhood cult spot",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Nowadays",
@@ -12555,10 +12555,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "outdoor, vibey, DJ-forward",
     "Price": "$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Caffè Panna",
@@ -12593,10 +12593,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "creative soft serve",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Mắm",
@@ -12631,10 +12631,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Vietnamese fast-casual gem",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Cosenza's Fish Market",
@@ -12669,10 +12669,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "rugged Bronx seafood counter",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Strong Rope Brewery Red Hook",
@@ -12707,10 +12707,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Red Hook craft beer w/ industrial feel",
     "Price": "$$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Roy's Fish Market",
@@ -12745,10 +12745,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "classic outer-borough market",
     "Price": "$$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Le Gratin",
@@ -12783,10 +12783,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Daniel Boulud’s Lyonnaise bistro",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Ella Funt",
@@ -12821,10 +12821,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "wine bar + community feel",
     "Price": "$$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Troost",
@@ -12859,10 +12859,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "casual Greenpoint local bar",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Bar Madonna",
@@ -12897,10 +12897,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "sultry cocktail hideout",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Casetta",
@@ -12935,10 +12935,10 @@
     "sun": "HH"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Italian-leaning natural wine bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Ketchy Shuby",
@@ -12977,10 +12977,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "retro funk bar with late-night pull",
     "Price": "$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Arlo Williamsburg",
@@ -13015,10 +13015,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "rooftop hotel bar with Manhattan views",
     "Price": "$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Westlight",
@@ -13053,10 +13053,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "polished rooftop, sunset crowd",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Unveiled",
@@ -13091,10 +13091,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "immersive/artsy pop-up nightlife concept",
     "Price": "$$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Good Room",
@@ -13129,10 +13129,10 @@
     "sun": "-"
   },
   "TimeCategory": "late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "warehouse music venue, raw and late",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Bar Milagro",
@@ -13167,10 +13167,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "small Mexican cocktail den",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "PIPS",
@@ -13205,10 +13205,10 @@
     "sun": "HH"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Japanese-Italian hybrid w/ back garden",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Grand Army",
@@ -13243,10 +13243,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "oyster + cocktail combo bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Liar Liar",
@@ -13281,10 +13281,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "pink-lit femme-forward cocktail bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Elsa",
@@ -13319,10 +13319,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "minimalist bar with warm tone",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Saint Julivert",
@@ -13357,10 +13357,10 @@
     "sun": "HH"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "seafood-focused w/ Euro flair",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Otheroom",
@@ -13395,10 +13395,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "dimly-lit West Village wine bar",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Ophelia Lounge NYC",
@@ -13433,10 +13433,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "1920s glam rooftop + Art Deco aesthetic",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Koi Bā",
@@ -13471,10 +13471,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "upscale sushi + neon future design",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Bridges",
@@ -13509,10 +13509,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "French-influenced fine dining",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Hildur",
@@ -13547,10 +13547,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "bakery-café w/ local feel",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Knockdown Center",
@@ -13579,10 +13579,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "sprawling art + music venue",
     "Price": "$$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "Winona's",
@@ -13617,10 +13617,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday, happyhour",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "neighborhood European-style bistro",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Market Hotel",
@@ -13649,10 +13649,10 @@
     "sun": "-"
   },
   "TimeCategory": "late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "underground concert space w/ DIY legacy",
     "Price": "$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Le Boudoir",
@@ -13687,10 +13687,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "underground Versailles-style cocktail bar",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Father Knows Best",
@@ -13725,10 +13725,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "hybrid café + bar, creative crowd",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Umbra",
@@ -13763,10 +13763,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "moody new cocktail bar",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Jupiter Disco",
@@ -13801,10 +13801,10 @@
     "sun": "L"
   },
   "TimeCategory": "late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "late-night sci-fi electro haunt",
     "Price": "$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Roberta's",
@@ -13839,10 +13839,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "cult pizza + back patio bar scene",
     "Price": "$$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Mood Ring",
@@ -13877,10 +13877,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "astrology-themed, queer-friendly dive",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Goldie's Bar",
@@ -13915,10 +13915,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "retro-chic neighborhood bar",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Razor-N-Tape",
@@ -13953,10 +13953,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "vinyl label bar + dance floor",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Dolly's Swing and Dive",
@@ -13991,10 +13991,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "dive with soft-core Americana aesthetic",
     "Price": "$",
-    "Duration": "0.9"
+    "Duration": 0.9
   },
   {
     "Name": "Rocka Rolla ",
@@ -14029,10 +14029,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "biker meets rock'n'roll bar",
     "Price": "$",
-    "Duration": "0.9"
+    "Duration": 0.9
   },
   {
     "Name": "Duff's ",
@@ -14067,10 +14067,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "heavy metal cathedral dive bar",
     "Price": "$",
-    "Duration": "0.9"
+    "Duration": 0.9
   },
   {
     "Name": "TØRST ",
@@ -14105,10 +14105,10 @@
     "sun": "HH"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "rare beer mecca, lowkey Scandi",
     "Price": "$$",
-    "Duration": "1.33"
+    "Duration": 1.33
   },
   {
     "Name": "Ray's Hometown Bar ",
@@ -14143,10 +14143,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "ultra-casual with shuffleboard",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Good Bar ",
@@ -14181,10 +14181,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "design-forward with relaxed pace",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Berry Park ",
@@ -14219,10 +14219,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "big rooftop bar, sports-friendly",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "The Gutter ",
@@ -14257,10 +14257,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "bowling alley dive with real grit",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Brooklyn Billiards ",
@@ -14295,10 +14295,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening, late",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "all-purpose hang + billiards",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Bathhouse Williamsburg ",
@@ -14333,10 +14333,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "spa-meets-bar-meets-Instagram",
     "Price": "$$$",
-    "Duration": "2.25"
+    "Duration": 2.25
   },
   {
     "Name": "Juicery Kitchen ",
@@ -14371,10 +14371,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "day-centric health bar",
     "Price": "$",
-    "Duration": "0.25"
+    "Duration": 0.25
   },
   {
     "Name": "Bar Americano ",
@@ -14409,10 +14409,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "sleek and minimal euro-style aperitivo",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Little Rascal Bar ",
@@ -14447,10 +14447,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Moroccan-flavored cocktail experience",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Paulie Gee's Slice Shop ",
@@ -14485,10 +14485,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "pizza-focused casual gem",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Bk Backyard Bar ",
@@ -14523,10 +14523,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "outdoor social + retro games",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Beco ",
@@ -14561,10 +14561,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "Brazilian café + brunch",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Cafe MSMN ",
@@ -14599,10 +14599,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "minimalist coffee & snack bar",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Hide & Seek ",
@@ -14637,10 +14637,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "speakeasy-style cozy bar",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Birdee ",
@@ -14675,10 +14675,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "bright cocktail bar, tropical vibes",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "The Charleston ",
@@ -14713,10 +14713,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "dive bar + free pizza",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "SESSION TRAINING | SOUTH WILLIAMSBURG ",
@@ -14750,10 +14750,10 @@
     "sun": "M"
   },
   "TimeCategory": "M",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "SOUTH WILLIAMSBURG",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Barcade ",
@@ -14788,10 +14788,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "retro arcade bar",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Last Place On Earth ",
@@ -14826,10 +14826,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "dystopian-leaning moody cocktail spot",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Union Square Greenmarket ",
@@ -14864,10 +14864,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "seasonal produce, big community draw",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Brooklyn Borough Hall Greenmarket ",
@@ -14902,10 +14902,10 @@
     "sun": "-"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "borough central, smaller but dense",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Tompkins Square Park Greenmarket ",
@@ -14940,10 +14940,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "East Village culture draw",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Fort Greene Park Greenmarket ",
@@ -14978,10 +14978,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "family + foodie crowd",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "McCarren Park Greenmarket ",
@@ -15016,10 +15016,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "artsy, local heavy, Williamsburg",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Stuyvesant Town Greenmarket ",
@@ -15054,10 +15054,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "quieter, residential",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Tribeca Greenmarket ",
@@ -15092,10 +15092,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "upscale local market",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Carroll Gardens Greenmarket ",
@@ -15130,10 +15130,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "family, chill, garden-type neighborhood",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Staten Island Ferry Whitehall Terminal Greenmarket ",
@@ -15168,10 +15168,10 @@
     "sun": "-"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "commuter drop-off culture node",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Smorgasburg Williamsburg ",
@@ -15206,10 +15206,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "food bazaar, major event vibe",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Smorgasburg WTC ",
@@ -15244,10 +15244,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "financial district meets foodie wave",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Smorgasburg Prospect Park ",
@@ -15282,10 +15282,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "huge, family-focused food sprawl",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Grand Banks Park ",
@@ -15320,10 +15320,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "floating oyster bar, sunset lure",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Water Tower Bar ",
@@ -15358,10 +15358,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "rooftop, luxury lite",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "elNico ",
@@ -15396,10 +15396,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "rooftop w/ Latin-forward drinks",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Pineapple Club",
@@ -15434,10 +15434,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "visually driven cocktail spot",
     "Price": "$$",
-    "Duration": "1.33"
+    "Duration": 1.33
   },
   {
     "Name": "Book Club Bar",
@@ -15472,10 +15472,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "bookstore + coffee + bar",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Happy Medium",
@@ -15510,10 +15510,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "creative workshop bar hybrid",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Books Are Magic",
@@ -15548,10 +15548,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "indie bookstore, community",
     "Price": "$",
-    "Duration": "0.66"
+    "Duration": 0.66
   },
   {
     "Name": "Commune Cafe + Wine Bar",
@@ -15586,10 +15586,10 @@
     "sun": "A"
   },
   "TimeCategory": "midday, afternoon",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "chill hybrid",
     "Price": "$$",
-    "Duration": "0.66"
+    "Duration": 0.66
   },
   {
     "Name": "Holcombe Rucker Park",
@@ -15624,10 +15624,10 @@
     "sun": "A"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "iconic basketball court",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Tomi Jazz",
@@ -15662,10 +15662,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "intimate Japanese jazz bar",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "The Morgan Library & Museum",
@@ -15700,10 +15700,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "historic literary archive",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Brooklyn Flea",
@@ -15738,10 +15738,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "vintage market",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Puerh Brooklyn Teashop",
@@ -15776,10 +15776,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "calm, Eastern tea vibes",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Patio Tropical",
@@ -15814,10 +15814,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "colorful outdoor cocktails",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Pete's Candy Store",
@@ -15852,10 +15852,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "music + bar w/ nostalgia",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Wiggle Room",
@@ -15890,10 +15890,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, late",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "high-energy dance & drinks",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Broken Shaker",
@@ -15928,10 +15928,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "rooftop casual cocktails",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Nerina",
@@ -15966,10 +15966,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "intimate, sceney Italian spot",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Tara Rose",
@@ -16004,10 +16004,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "upscale yet social bar",
     "Price": "$$",
-    "Duration": "1.33"
+    "Duration": 1.33
   },
   {
     "Name": "Tavern 29",
@@ -16042,10 +16042,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "sports, after-work, casual",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Amélie west village Restaurant, Bistro & Wine Bar",
@@ -16080,10 +16080,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "romantic, French, cozy",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Zona Rosa Brooklyn",
@@ -16118,10 +16118,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening, night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "rooftop, Latin, fun",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Pally",
@@ -16156,10 +16156,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "wine, neighborhood, mellow",
     "Price": "$",
-    "Duration": "0.66"
+    "Duration": 0.66
   },
   {
     "Name": "Pan Pan",
@@ -16194,10 +16194,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "tropical, intimate, niche",
     "Price": "$",
-    "Duration": "0.66"
+    "Duration": 0.66
   },
   {
     "Name": "Gabriela",
@@ -16232,10 +16232,10 @@
     "sun": "MD"
   },
   "TimeCategory": "afternoon, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "Mexican, festive, dinner",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "forecast",
@@ -16270,10 +16270,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening, night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "moody, dimly-lit, cool",
     "Price": "$$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Yawning Cobra",
@@ -16308,10 +16308,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "underground, alt, rowdy",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Garret",
@@ -16346,10 +16346,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "speakeasy, lowkey, chic",
     "Price": "$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Cafe Kitsune West Village",
@@ -16384,10 +16384,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning, midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "chic, airy, Euro-style",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Tompkins Square Bagels",
@@ -16422,10 +16422,10 @@
     "sun": "M"
   },
   "TimeCategory": "morning",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "classic, fast, breakfast",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Maison Close Restaurant",
@@ -16460,10 +16460,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "indulgent, upscale, dinner",
     "Price": "$$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Scarlet Lounge",
@@ -16498,10 +16498,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "luxe, lounge, bottle scene",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Baretto New York",
@@ -16536,10 +16536,10 @@
     "sun": "MD"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "Italian, elegant, social",
     "Price": "$$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Desert 5 Spot",
@@ -16574,10 +16574,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "western, rowdy, neon",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Bar Nena",
@@ -16612,10 +16612,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "Latin, party, dance",
     "Price": "$$$",
-    "Duration": "1.66"
+    "Duration": 1.66
   },
   {
     "Name": "Easy Lover",
@@ -16650,10 +16650,10 @@
     "sun": "L"
   },
   "TimeCategory": "evening, night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "playful, vibey, danceable",
     "Price": "$$",
-    "Duration": "1.66"
+    "Duration": 1.66
   },
   {
     "Name": "Prima Brooklyn",
@@ -16688,10 +16688,10 @@
     "sun": "MD"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "sleek, intimate, date-night",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "The Riff Raff Club",
@@ -16726,10 +16726,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "chaotic, dance, wild",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Silver Lining Lounge",
@@ -16764,10 +16764,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening, night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "throwback, jazz, speakeasy",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Castell Rooftop Lounge",
@@ -16802,10 +16802,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "skyline, elegant, sunset",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Selva",
@@ -16840,10 +16840,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "Latin, nightlife, high-energy",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Daintree",
@@ -16878,10 +16878,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "rooftop, chic, date-spot",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Laziza",
@@ -16916,10 +16916,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening, night",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "hookah, Arab lounge, cozy",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Che",
@@ -16954,10 +16954,10 @@
     "sun": "MD"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Argentine, romantic, rustic",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Suono",
@@ -16992,10 +16992,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "DJ-driven, niche, underground",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Bar Camillo",
@@ -17031,10 +17031,10 @@
     "sun": "MD"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Italian, relaxed, neighborhood",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Tadpole",
@@ -17069,10 +17069,10 @@
     "sun": "MD"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "natural wine, cozy, quiet",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Bohemien Bar",
@@ -17107,10 +17107,10 @@
     "sun": "E"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "dark, vibey, late-night",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Reservoir",
@@ -17145,10 +17145,10 @@
     "sun": "E"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "sports bar, casual, NY-local",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Skylark - Rooftop Bar",
@@ -17183,10 +17183,10 @@
     "sun": "HH"
   },
   "TimeCategory": "happyhour, evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "luxe, skyline views, dates",
     "Price": "$$$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Iggy's",
@@ -17221,10 +17221,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "divey, karaoke, rowdy",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "Space Karaoke Bar & Lounge | Koreatown NYC",
@@ -17259,10 +17259,10 @@
     "sun": "E"
   },
   "TimeCategory": "night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "K-pop, karaoke, LED-lit",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "161 Lafayette",
@@ -17297,10 +17297,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "pop-up, artsy, hidden",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "McSorley's Old Ale House",
@@ -17335,10 +17335,10 @@
     "sun": "M"
   },
   "TimeCategory": "midday, afternoon",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "historic, Irish, communal",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Reforesters Laboratory",
@@ -17373,10 +17373,10 @@
     "sun": "M"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "design, niche, quiet",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "Gelateria Gentile - Williamsburg",
@@ -17411,10 +17411,10 @@
     "sun": "MD"
   },
   "TimeCategory": "afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "dessert, casual, family",
     "Price": "$",
-    "Duration": "0.5"
+    "Duration": 0.5
   },
   {
     "Name": "10 ft Single by Stella Dallas",
@@ -17449,10 +17449,10 @@
     "sun": "M"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "vintage, curated, eclectic",
     "Price": "$$",
-    "Duration": "0.66"
+    "Duration": 0.66
   },
   {
     "Name": "FourFiveSix",
@@ -17487,10 +17487,10 @@
     "sun": "E"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "dancey, moody, DJ bar",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Birria-Landia",
@@ -17525,10 +17525,10 @@
     "sun": "M"
   },
   "TimeCategory": "midday, evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "casual, quick-bite, delicious",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "The Commodore",
@@ -17563,10 +17563,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "divey, fried chicken, vibey",
     "Price": "$$",
-    "Duration": "1.33"
+    "Duration": 1.33
   },
   {
     "Name": "Roebling Sporting Club",
@@ -17601,10 +17601,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "pool table, TV, lowkey",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Tabare Williamsburg",
@@ -17639,10 +17639,10 @@
     "sun": "MD"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Latin fusion, chill, low light",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Lavender Lake",
@@ -17677,10 +17677,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "hidden gem, cozy, mellow",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "TBA Brooklyn",
@@ -17715,10 +17715,10 @@
     "sun": "L"
   },
   "TimeCategory": "late night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "warehouse, after-hours, dance",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Lucali",
@@ -17753,10 +17753,10 @@
     "sun": "MD"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "iconic, intimate, no-reserve",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Steve's Authentic Key Lime Pie",
@@ -17791,10 +17791,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "classic, lowkey, waterfront",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "On The 7 - Where Manhattan Meets LIC",
@@ -17829,10 +17829,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "rooftop, skyline views, luxe",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "56709",
@@ -17867,10 +17867,10 @@
     "sun": "E"
   },
   "TimeCategory": "night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "indie, music-heavy, underground",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Lost in Paradise Rooftop",
@@ -17905,10 +17905,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "tropical, flashy, party vibes",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Anable Basin Sailing Bar & Grill",
@@ -17943,10 +17943,10 @@
     "sun": "MD"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "waterfront, chill, picnic-style",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "The Gutter Bar LIC",
@@ -17981,10 +17981,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "bowling, divey, fun crowd",
     "Price": "$$",
-    "Duration": "1.75"
+    "Duration": 1.75
   },
   {
     "Name": "LIC Bar",
@@ -18019,10 +18019,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "local live music, lowkey",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Darling",
@@ -18057,10 +18057,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "posh, cocktail-first, date-night",
     "Price": "$$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Brooklyn Farmacy & Soda Fountain",
@@ -18095,10 +18095,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday, afternoon",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "retro, family-friendly, sweets",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Turbo Pizza",
@@ -18133,10 +18133,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "bold branding, NY-slice w/ edge",
     "Price": "$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "O'Hanlon's",
@@ -18171,10 +18171,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "Irish pub, neighborhood, sports",
     "Price": "$",
-    "Duration": "1.66"
+    "Duration": 1.66
   },
   {
     "Name": "Legends",
@@ -18209,10 +18209,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "karaoke, kitschy, energetic",
     "Price": "$$",
-    "Duration": "1.66"
+    "Duration": 1.66
   },
   {
     "Name": "Huuma",
@@ -18247,10 +18247,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "moody, fusion, hidden",
     "Price": "$$",
-    "Duration": "1.5"
+    "Duration": 1.5
   },
   {
     "Name": "Little Island",
@@ -18285,10 +18285,10 @@
     "sun": "MD"
   },
   "TimeCategory": "daytime",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "outdoor, art walk, mellow",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Domino Park",
@@ -18323,10 +18323,10 @@
     "sun": "MD"
   },
   "TimeCategory": "daytime",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "waterfront, green, active",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Harriet's Rooftop",
@@ -18361,10 +18361,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "upscale, cocktails, skyline",
     "Price": "$$$$",
-    "Duration": "3.5"
+    "Duration": 3.5
   },
   {
     "Name": "Brooklyn Crab",
@@ -18399,10 +18399,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "seafood, games, sunset spot",
     "Price": "$$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "All Blues",
@@ -18437,10 +18437,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "vintage jazz, velvet energy",
     "Price": "$$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "TIME AGAIN",
@@ -18475,10 +18475,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "curated crowd, fashion-forward",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Undercote",
@@ -18513,10 +18513,10 @@
     "sun": "E"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "underground, cocktails, sleek",
     "Price": "$$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Barely Disfigured",
@@ -18551,10 +18551,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "sexy, dark, intimate date vibes",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Bar Valentina",
@@ -18589,10 +18589,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "colorful, bright, modern",
     "Price": "$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Bar Oliver",
@@ -18627,10 +18627,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "cozy, modern, low-profile",
     "Price": "$$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Kettl Tea - Greenpoint",
@@ -18665,10 +18665,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "serene, aesthetic, tea sanctuary",
     "Price": "$",
-    "Duration": "1"
+    "Duration": 1
   },
   {
     "Name": "Little Rascal",
@@ -18703,10 +18703,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "lively, Mediterranean-inspired",
     "Price": "$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Dae",
@@ -18741,10 +18741,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "minimalist, Korean-Japanese, intimate",
     "Price": "$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Rude Mouth",
@@ -18779,10 +18779,10 @@
     "sun": "E"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "irreverent, artsy, music-oriented",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Swiss Institute",
@@ -18817,10 +18817,10 @@
     "sun": "MD"
   },
   "TimeCategory": "midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "cutting-edge art, conceptual",
     "Price": "$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "San Tokki Studio (Appt. only)",
@@ -18855,10 +18855,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "private, artistic, sake-focused",
     "Price": "",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "THE LAST CALL",
@@ -18893,10 +18893,10 @@
     "sun": "L"
   },
   "TimeCategory": "night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "party bar, loud, end-of-night vibe",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Double Chicken Please",
@@ -18931,10 +18931,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening to night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "experiential, world-class cocktails",
     "Price": "$$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Cubbyhole",
@@ -18969,10 +18969,10 @@
     "sun": "E"
   },
   "TimeCategory": "evening to night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "queer-friendly, colorful, joyful",
     "Price": "$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "Julius'",
@@ -19007,10 +19007,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "oldest gay bar, historic, local vibe",
     "Price": "$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "The Cobra Club",
@@ -19045,10 +19045,10 @@
     "sun": "E"
   },
   "TimeCategory": "all-day",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "punk, yoga by day, rock show by night",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "ANIMAL",
@@ -19083,10 +19083,10 @@
     "sun": "-"
   },
   "TimeCategory": "late night",
-    "energyRamp": "5",
+    "energyRamp": 5,
     "tags": "queer, art club energy",
     "Price": "$$",
-    "Duration": "3.5"
+    "Duration": 3.5
   },
   {
     "Name": "Hidden Lane Bar",
@@ -19121,10 +19121,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "tucked away, vibey, plant-filled",
     "Price": "$$",
-    "Duration": "2.5"
+    "Duration": 2.5
   },
   {
     "Name": "Botanica at Widow Jane",
@@ -19159,10 +19159,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "spirits and botanicals, sexy-lush",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "La Bicyclette Bakery",
@@ -19197,10 +19197,10 @@
     "sun": "MD"
   },
   "TimeCategory": "morning to midday",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "Parisian, charming, offbeat",
     "Price": "$",
-    "Duration": "0.75"
+    "Duration": 0.75
   },
   {
     "Name": "Elizabeth Street Garden",
@@ -19235,10 +19235,10 @@
     "sun": "MD"
   },
   "TimeCategory": "daytime",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "peaceful, hidden, communal green",
     "Price": "$",
-    "Duration": "1.25"
+    "Duration": 1.25
   },
   {
     "Name": "Brooklyn Botanic Garden",
@@ -19273,10 +19273,10 @@
     "sun": "MD"
   },
   "TimeCategory": "daytime",
-    "energyRamp": "1",
+    "energyRamp": 1,
     "tags": "iconic, floral immersion",
     "Price": "$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "Xanadu Roller Arts",
@@ -19311,10 +19311,10 @@
     "sun": "E"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "alt, roller skate-centric, vintage chaos",
     "Price": "$$",
-    "Duration": "3"
+    "Duration": 3
   },
   {
     "Name": "The Clocktower",
@@ -19372,10 +19372,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "upscale, gilded, dramatic",
     "Price": "$$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Little Dipper",
@@ -19410,10 +19410,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "celestial, neighborhood gem",
     "Price": "$$",
-    "Duration": "2.25"
+    "Duration": 2.25
   },
   {
     "Name": "Bar Bonobo",
@@ -19448,10 +19448,10 @@
     "sun": "HH"
   },
   "TimeCategory": "evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "natural wine, sleek, warm lighting",
     "Price": "$$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "The Ripple Room",
@@ -19486,10 +19486,10 @@
     "sun": "E"
   },
   "TimeCategory": "night",
-    "energyRamp": "4",
+    "energyRamp": 4,
     "tags": "dim, experimental, mixed crowd",
     "Price": "$$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Rockaway Brewing Company",
@@ -19524,10 +19524,10 @@
     "sun": "HH"
   },
   "TimeCategory": "afternoon-evening",
-    "energyRamp": "2",
+    "energyRamp": 2,
     "tags": "craft brew, beachy, casual",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   },
   {
     "Name": "Fifth Hammer Brewing Company",
@@ -19562,9 +19562,9 @@
     "sun": "HH"
   },
   "TimeCategory": "afternoon-evening",
-    "energyRamp": "3",
+    "energyRamp": 3,
     "tags": "industrial, live music, rotating taps",
     "Price": "$",
-    "Duration": "2"
+    "Duration": 2
   }
 ]
