@@ -713,7 +713,7 @@ function getCurrentTimeCategory(hour) {
   if (hour >= 14 && hour < 16) return ['afternoon'];
   if (hour >= 16 && hour < 19) return ['happyhour'];
   if (hour >= 19 && hour < 22) return ['evening'];
-  if (hour >= 22 || hour < 2) return ['late'];
+  if (hour >= 22 || hour < 28.5) return ['late'];
   return [];
 }
 
