@@ -353,42 +353,6 @@ fetch('events.json')
     }
   });
 
-const vibeMap = {
-  jazz: ["jazz"],
-  artsy: ["art", "artsy", "gallery", "museum"],
-  coffee: ["coffee", "café", "matcha"],
-  hip: ["hip", "trendy", "dj", "brunch"],
-  "date night": ["date", "intimate", "date night", "charming"],
-  nightlife: ["nightlife", "dance", "social", "dj", "speakeasy"],
-  "hidden gem": ["hidden", "hidden gem", "speakeasy", "underground"],
-  wine: ["wine", "natural wine", "craft wine"],
-  rooftop: ["rooftop", "scenic", "views", "skyline"]
-};
-
-
-function enlargeMarker(marker) {
-  marker.setIcon(enlargedIcon);
-  enlargedMarkers.add(marker);
-}
-
-function resetMarker(marker) {
-  marker.setIcon(defaultIcon);
-  enlargedMarkers.delete(marker);
-}
-
-function resetAllEnlargedMarkers() {
-  enlargedMarkers.forEach(m => resetMarker(m));
-}
-
-  function showOnlySharedMarkers(latlngArray) {
-  markerCluster.clearLayers();
-  allMarkers.forEach(marker => {
-    if (latlngArray.some(p => marker.getLatLng().equals(p))) {
-      markerCluster.addLayer(marker);
-    }
-  });
-}
-
   
 function getTodayHours(hoursArray) {
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
