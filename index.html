@@ -707,42 +707,6 @@ const neighborhoodCenters = {
   "williamsburg": L.latLng(40.7081, -73.9571)
 };
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Roam Crawl Engine</title>
-</head>
-<body>
-  <button id="crawlNowBtn" disabled>Crawl Now</button>
-
-  <script>
-    let venues = [];
-
-    // Load venues JSON
-    fetch('events.json') // Ensure this file exists and is valid
-      .then(response => response.json())
-      .then(data => {
-        venues = data;
-        document.getElementById('crawlNowBtn').disabled = false;
-      });
-
-    // Trigger crawl generation when button is clicked
-    document.getElementById('crawlNowBtn').addEventListener('click', () => {
-      const now = new Date();
-      const crawl = buildCrawl(venues, now);
-      console.log("Generated Crawl:", crawl);
-
-      // Optional: Render output to the screen
-      const list = document.createElement('ol');
-      crawl.forEach(stop => {
-        const li = document.createElement('li');
-        li.textContent = `${stop.startTime} – ${stop.name} (${stop.vibe})`;
-        list.appendChild(li);
-      });
-      document.body.appendChild(list);
-    });
-
 // Core time mapping
 function getCurrentTimeCategory(hour) {
   if (hour >= 6 && hour < 11) return ['morning'];
@@ -832,12 +796,12 @@ function getSuggestedTheme(context) {
   return ranked[0]?.theme || null;
 }
 
-function buildPath(startVenue, venues, maxStops = 6, maxEnergy) {
-  const path = [startVenue];
-  let currentEnergy = startVenue.energyRamp;
+function buildPath(startEvent, events, maxStops = 6, maxEnergy) {
+  const path = [startEvent];
+  let currentEnergy = startEvent.energyRamp;
 
   while (path.length < maxStops) {
-    const next = venues.find(v =>
+    const next = events.find(v =>
       !path.includes(v) &&
       v.energyRamp >= currentEnergy &&
       v.energyRamp <= maxEnergy &&
@@ -850,7 +814,7 @@ function buildPath(startVenue, venues, maxStops = 6, maxEnergy) {
   return path;
 }
 
-function buildCrawl(venues, now = new Date(), theme = null, context = {}) {
+function buildCrawl(events, now = new Date(), theme = null, context = {}) {
   const hour = now.getHours();
   const day = now.toLocaleString('en-US', { weekday: 'long' }).toLowerCase();
   const timeCategories = getCurrentTimeCategory(hour);
@@ -859,7 +823,7 @@ function buildCrawl(venues, now = new Date(), theme = null, context = {}) {
   const themeTags = themeUsed ? themes[themeUsed] || [] : [];
   const behaviorTags = getBehaviorTags(day);
 
-  const candidates = venues.filter(v =>
+  const candidates = events.filter(v =>
     v[day.slice(0, 3)] !== '-' &&
     v.energyRamp <= maxEnergyRamp &&
     timeCategories.some(cat => v.timeCategory.includes(cat)) &&
@@ -869,8 +833,8 @@ function buildCrawl(venues, now = new Date(), theme = null, context = {}) {
   );
 
   let bestPath = [];
-  for (let venue of candidates) {
-    const path = buildPath(venue, candidates, 6, maxEnergyRamp);
+  for (let event of candidates) {
+    const path = buildPath(event, candidates, 6, maxEnergyRamp);
     if (path.length > bestPath.length) bestPath = path;
   }
 
@@ -885,6 +849,11 @@ function buildCrawl(venues, now = new Date(), theme = null, context = {}) {
   });
 }
 
+      // Trigger crawl generation when button is clicked
+    document.getElementById('crawlNowBtn').addEventListener('click', () => {
+      const now = new Date();
+      const crawl = buildCrawl(events, now);
+      console.log("Generated Crawl:", crawl);
   
 document.getElementById('generateRoute').addEventListener('click', () => {
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
