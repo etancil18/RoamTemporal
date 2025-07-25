@@ -17029,7 +17029,7 @@
     "Friday: 5:00 PM–1:00 AM",
     "Saturday: 5:00 PM–1:00 AM"
     ],
-  "hoursNumeric": {"Bar Camillo": {
+  "hoursNumeric": {
     "sun": { "open": 17, "close": 22 },
     "mon": { "open": 17, "close": 22 },
     "tue": { "open": 17, "close": 22 },
