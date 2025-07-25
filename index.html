@@ -8,81 +8,139 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-    #map {
-      height: 100vh;
-      width: 100vw;
-    }
-    .controls {
-      position: absolute;
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  #map {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #details {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+    font-size: 14px;
+    display: none;
+    z-index: 1000;
+  }
+
+  #details button {
+    display: block;
+    margin-top: 5px;
+    background: #ccc;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    background: rgba(255,255,255,0.9);
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .controls select,
+  .controls input,
+  .controls button {
+    font-size: 14px;
+    padding: 5px;
+    flex: 1 1 120px;
+  }
+
+  @media (min-width: 768px) {
+    #details {
+      width: 300px;
+      left: 50%;
+      bottom: auto;
       top: 10px;
-      left: 10px;
-      right: 10px;
-      z-index: 1000;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      background: rgba(255,255,255,0.9);
-      padding: 8px;
-      border-radius: 8px;
+      transform: translateX(-50%);
     }
+
+    #details button {
+      width: auto;
+    }
+
+    .controls {
+      flex-wrap: nowrap;
+      gap: 10px;
+      top: 10px;
+      left: 50px;
+      right: auto;
+    }
+
     .controls select,
     .controls input,
     .controls button {
-      font-size: 14px;
-      padding: 5px;
-      flex: 1 1 120px;
+      flex: unset;
     }
-    @media (min-width: 768px) {
-      .controls {
-        flex-wrap: nowrap;
-        gap: 10px;
-        top: 10px;
-        left: 50px;
-        right: auto;
-      }
-      .controls select,
-      .controls input,
-      .controls button {
-        flex: unset;
-      }
-    }
-  </style>
+  }
+  .custom-blue-icon {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid white;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+</style>
 </head>
 <body>
 
 <div class="controls">
   <input id="map-search" type="text" placeholder="What's the vibe..." />
-  
-  <select id="themeDropdown">
-    <option value="">Theme</option>
-    <option value="Quiet Luxury">Quiet Luxury</option>
-    <option value="Hedonist's Loop">Hedonist's Loop</option>
-    <option value="Creative Recharge">Creative Recharge</option>
-    <option value="Wellness Ritual">Wellness Ritual</option>
-    <option value="Alt Crawl">Alt Crawl</option>
-    <option value="Power Lunch">Power Lunch</option>
-    <option value="Cozy Corners">Cozy Corners</option>
-    <option value="Flirt & Flow">Flirt & Flow</option>
-    <option value="Urban Safari">Urban Safari</option>
+  <select id="vibeFilter">
+    <option value="">General Vibes</option>
+    <option value="rooftop">Rooftop</option>
+    <option value="jazz">Jazz</option>
+    <option value="artsy">Artsy</option>
+    <option value="coffee">Coffee</option>
+    <option value="hip">Hip</option>
+    <option value="date night">Date Night</option>
+    <option value="nightlife">Nightlife</option>
+    <option value="hidden gem">Hidden Gem</option>
+    <option value="wine">Wine</option>
   </select>
-
-  <select id="durationDropdown">
-    <option value="">How Long?</option>
-    <option value="short">Short (&lt; 2h)</option>
-    <option value="medium">Medium (2.5–5h)</option>
-    <option value="long">Long (5.5–8h)</option>
+  <select id="priceFilter">
+    <option value="">Price</option>
+    <option value="$">$</option>
+    <option value="$$">$$</option>
+    <option value="$$$">$$$</option>
+    <option value="$$$$">$$$$</option>
   </select>
-
+  <select id="durationFilter">
+    <option value="">Select Crawl Length</option>
+    <option value="quick">Quick Hop (&lt;1.5h)</option>
+    <option value="classic">Classic Loop (1.5–3h)</option>
+    <option value="long">All-Night Crawl (3h+)</option>
+  </select>
   <select id="neighborhood-input">
     <option value="">Select Neighborhood</option>
     <option>Alphabet City</option>
@@ -107,20 +165,11 @@
     <option>West Village</option>
     <option>Williamsburg</option>
   </select>
-
-  <select id="priceFilter">
-    <option value="">Price</option>
-    <option value="$">$</option>
-    <option value="$$">$$</option>
-    <option value="$$$">$$$</option>
-    <option value="$$$$">$$$$</option>
-  </select>
-
-  <button id="crawlNowBtn">Crawl Now</button>
+  <button id="generateRoute">Generate Mini Crawl</button>
   <button id="removeLastPoint">Remove Last Point</button>
   <button id="clearRoute">Clear Route</button>
-  <button id="favoritesBtn">My Favorites</button>
 </div>
+
 
 <div id="map"></div>
 <div id="details"><strong>Click a pin to see details</strong></div>
@@ -216,6 +265,9 @@ function parseSharedCrawl() {
   });
 }
 }
+
+
+
   
 const markerCluster = L.markerClusterGroup({
   spiderfyOnMaxZoom: true,
@@ -295,6 +347,42 @@ fetch('events.json')
     }
   });
 
+const vibeMap = {
+  jazz: ["jazz"],
+  artsy: ["art", "artsy", "gallery", "museum"],
+  coffee: ["coffee", "café", "matcha"],
+  hip: ["hip", "trendy", "dj", "brunch"],
+  "date night": ["date", "intimate", "date night", "charming"],
+  nightlife: ["nightlife", "dance", "social", "dj", "speakeasy"],
+  "hidden gem": ["hidden", "hidden gem", "speakeasy", "underground"],
+  wine: ["wine", "natural wine", "craft wine"],
+  rooftop: ["rooftop", "scenic", "views", "skyline"]
+};
+
+
+function enlargeMarker(marker) {
+  marker.setIcon(enlargedIcon);
+  enlargedMarkers.add(marker);
+}
+
+function resetMarker(marker) {
+  marker.setIcon(defaultIcon);
+  enlargedMarkers.delete(marker);
+}
+
+function resetAllEnlargedMarkers() {
+  enlargedMarkers.forEach(m => resetMarker(m));
+}
+
+  function showOnlySharedMarkers(latlngArray) {
+  markerCluster.clearLayers();
+  allMarkers.forEach(marker => {
+    if (latlngArray.some(p => marker.getLatLng().equals(p))) {
+      markerCluster.addLayer(marker);
+    }
+  });
+}
+
   
 function getTodayHours(hoursArray) {
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -323,6 +411,8 @@ function getTodayHours(hoursArray) {
 
   return now >= open && now <= close;
 }
+
+
   
 function showOnlySelectedMarkers() {
   markerCluster.clearLayers();
@@ -495,37 +585,40 @@ function renderFavoritesPanel() {
 }
 
 function generateCrawlFromFavorite(startMarker) {
+  const vibeFilter = document.getElementById('vibeFilter').value.toLowerCase();
+  const priceFilter = document.getElementById('priceFilter').value.trim();
   const center = startMarker.getLatLng();
-  const baseVibe = startMarker.options.vibe?.split(',')[0]?.trim().toLowerCase() || '';
-  const hour = new Date().getHours();
 
-  const sortedCandidates = allMarkers.filter(m =>
-    m !== startMarker &&
-    m.options.vibe?.toLowerCase().includes(baseVibe) &&
-    isOpenNow(m.options.hours || [], hour)
-  ).sort((a, b) =>
-    center.distanceTo(a.getLatLng()) - center.distanceTo(b.getLatLng())
-  );
+  const candidates = allMarkers.filter(marker => {
+    const isInRadius = center.distanceTo(marker.getLatLng()) < 1500;
+    const isOpen = isOpenNow(marker.options.hours || []);
+    const vibeMatch = !vibeFilter || (marker.vibe && marker.vibe.includes(vibeFilter));
+    const priceMatch = !priceFilter || (marker.price && marker.price.trim() === priceFilter);
+    return isInRadius && isOpen && vibeMatch && priceMatch;
+  });
 
+  if (candidates.length < 1) {
+    alert('No nearby places found.');
+    return;
+  }
+
+  let totalDuration = 0;
   const crawlPoints = [startMarker];
-  const radiusLimits = [600, 300, 150];
-  let lastPoint = startMarker;
+  const alreadyIncluded = new Set([startMarker.name]);
 
-  for (let radius of radiusLimits) {
-    const next = sortedCandidates.find(c => {
-      return !crawlPoints.includes(c) &&
-        center.distanceTo(c.getLatLng()) <= radius;
-    });
-    if (next) {
-      crawlPoints.push(next);
-      lastPoint = next;
-    } else {
-      break;
-    }
+  for (let marker of candidates.sort(() => 0.5 - Math.random())) {
+    if (alreadyIncluded.has(marker.name)) continue;
+    const dur = marker.duration || 0;
+    if (dur === 0) continue;
+    if (totalDuration + dur > 3) break;
+    totalDuration += dur;
+    crawlPoints.push(marker);
+    alreadyIncluded.add(marker.name);
+    if (totalDuration >= 1.5) break;
   }
 
   if (crawlPoints.length < 2) {
-    alert('Not enough crawl-worthy spots nearby.');
+    alert('Not enough places to build a classic crawl from this favorite.');
     return;
   }
 
@@ -539,8 +632,6 @@ function generateCrawlFromFavorite(startMarker) {
 
   updateRoute();
   map.fitBounds(L.featureGroup(crawlPoints).getBounds());
-}
-
 
     // Show crawl modal with steps and Google Maps export
   const crawlModal = document.createElement('div');
@@ -615,170 +706,77 @@ const neighborhoodCenters = {
   "williamsburg": L.latLng(40.7081, -73.9571)
 };
 
-  // Core time mapping
-function getCurrentTimeCategory(hour) {
-  if (hour >= 6 && hour < 11) return ['morning'];
-  if (hour >= 11 && hour < 14) return ['midday'];
-  if (hour >= 14 && hour < 16) return ['afternoon'];
-  if (hour >= 16 && hour < 19) return ['happyhour'];
-  if (hour >= 19 && hour < 22) return ['evening'];
-  if (hour >= 22 || hour < 2) return ['late'];
-  return [];
-}
 
-function parseTimeStringToHour(timeString) {
-  const [time, modifier] = timeString.trim().split(/\s+/);
-  let [hours, minutes] = time.split(':').map(Number);
-  if (modifier.toLowerCase().includes('pm') && hours !== 12) hours += 12;
-  if (modifier.toLowerCase().includes('am') && hours === 12) hours = 0;
-  return hours;
-}
-
-function isOpenNow(hoursToday, hourNow) {
-  const openHour = parseTimeStringToHour(hoursToday.split('–')[0]);
-  const closeHour = parseTimeStringToHour(hoursToday.split('–')[1]);
-  return hourNow >= openHour && hourNow < (closeHour === 0 ? 24 : closeHour);
-}
-
-function areNearby(v1, v2, maxDistance = 0.5) {
-  const R = 6371;
-  const dLat = (v2.lat - v1.lat) * Math.PI / 180;
-  const dLon = (v2.lon - v1.lon) * Math.PI / 180;
-  const a =
-    Math.sin(dLat/2) * Math.sin(dLat/2) +
-    Math.cos(v1.lat * Math.PI / 180) * Math.cos(v2.lat * Math.PI / 180) *
-    Math.sin(dLon/2) * Math.sin(dLon/2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-  const distance = R * c;
-  return distance <= maxDistance;
-}
-
-function getMaxEnergyRamp(day) {
-  const limits = {
-    monday: 2,
-    tuesday: 2,
-    wednesday: 3,
-    thursday: 4,
-    friday: 5,
-    saturday: 5,
-    sunday: 3
-  };
-  return limits[day] || 5;
-}
-
-function getBehaviorTags(day) {
-  const behaviors = {
-    monday: ['coffee', 'chill', 'food', 'hidden gem'],
-    tuesday: ['coffee', 'chill', 'hidden gem'],
-    wednesday: ['dinner', 'art', 'comedy'],
-    thursday: ['cocktail', 'music', 'buzz'],
-    friday: ['nightlife', 'party', 'rooftop'],
-    saturday: ['adventure', 'brunch', 'experience'],
-    sunday: ['wellness', 'calm', 'relax']
-  };
-  return behaviors[day] || [];
-}
-
-const themes = {
-  "Quiet Luxury": ["wine", "date night", "hidden gem"],
-  "Hedonist's Loop": ["rooftop", "nightlife", "jazz"],
-  "Creative Recharge": ["coffee", "artsy", "hidden gem"],
-  "Wellness Ritual": ["wellness", "tea", "calm"],
-  "Alt Crawl": ["indie", "dive bar", "grunge"],
-  "Power Lunch": ["midday", "networking", "bistro"],
-  "Cozy Corners": ["books", "tea", "quiet"],
-  "Flirt & Flow": ["date night", "wine", "speakeasy"],
-  "Urban Safari": ["hidden gem", "adventure", "unexpected"]
-};
-
-function getSuggestedTheme(context) {
-  const { mood = '', timeCategories = [], weather = '' } = context;
-  const moodTags = mood.toLowerCase().split(/\s+/);
-  const tags = [...moodTags, ...timeCategories, weather.toLowerCase()];
-
-  const ranked = Object.entries(themes).map(([theme, keywords]) => {
-    const matchScore = keywords.filter(k => tags.includes(k)).length;
-    return { theme, score: matchScore };
-  }).sort((a, b) => b.score - a.score);
-
-  return ranked[0]?.theme || null;
-}
-
-function buildPath(startEvent, events, maxStops = 6, maxEnergy) {
-  const path = [startEvent];
-  let currentEnergy = startEvent.energyRamp;
-
-  while (path.length < maxStops) {
-    const next = events.find(e =>
-      !path.includes(e) &&
-      e.energyRamp >= currentEnergy &&
-      e.energyRamp <= maxEnergy &&
-      areNearby(path[path.length - 1], e)
-    );
-    if (!next) break;
-    path.push(next);
-    currentEnergy = next.energyRamp;
-  }
-  return path;
-}
-
-function buildCrawl(events, now = new Date(), theme = null, context = {}, maxDuration = 8) {
-  const hour = now.getHours();
-  const day = now.toLocaleString('en-US', { weekday: 'long' }).toLowerCase();
-  const timeCategories = getCurrentTimeCategory(hour);
-  const maxEnergyRamp = getMaxEnergyRamp(day);
-  const themeUsed = theme || getSuggestedTheme({ ...context, timeCategories });
-  const themeTags = themeUsed ? themes[themeUsed] || [] : [];
-  const behaviorTags = getBehaviorTags(day);
-
-  const candidates = events.filter(e =>
-    e[day.slice(0, 3)] !== '-' &&
-    e.energyRamp <= maxEnergyRamp &&
-    timeCategories.some(cat => e.timeCategory.includes(cat)) &&
-    isOpenNow(e.hours.find(h => h.toLowerCase().includes(day)), hour) &&
-    (themeTags.length === 0 || themeTags.some(tag => e.tags.includes(tag))) &&
-    behaviorTags.some(tag => e.tags.includes(tag))
-  );
-
-  let bestPath = [];
-  for (let event of candidates) {
-    const path = buildPath(event, candidates, 6, maxEnergyRamp);
-    const totalDuration = path.reduce((sum, e) => sum + e.duration, 0);
-    if (totalDuration <= maxDuration && path.length > bestPath.length) {
-      bestPath = path;
-    }
+document.getElementById('generateRoute').addEventListener('click', () => {
+  const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
+  if (!neighborhood) {
+    alert('Please select a neighborhood.');
+    return;
   }
 
-  return bestPath.map((e, i) => {
-    return {
-      name: e.name,
-      vibe: e.vibe,
-      startTime: `${(hour + i * e.duration).toFixed(2)}h`,
-      duration: e.duration,
-      energyRamp: e.energyRamp
-    }
-  });
+  const center = neighborhoodCenters[neighborhood];
+  if (!center) {
+    alert('Neighborhood center not found.');
+    return;
+  }
+
+  const crawlType = document.getElementById('durationFilter').value;
+let minDuration = 0, maxDuration = Infinity;
+
+if (crawlType === 'quick') {
+  maxDuration = 1.5;
+} else if (crawlType === 'classic') {
+  minDuration = 1.5;
+  maxDuration = 3;
+} else if (crawlType === 'long') {
+  minDuration = 3;
 }
 
-// Trigger crawl generation when button is clicked
-const crawlNowBtn = document.getElementById('crawlNowBtn');
-if (crawlNowBtn) {
-  crawlNowBtn.addEventListener('click', () => {
-    const now = new Date();
-    const selectedTheme = document.getElementById('themeDropdown')?.value || null;
-    const selectedLength = document.getElementById('durationDropdown')?.value || 'medium';
-    const durationLimits = {
-      short: 2,
-      medium: 5,
-      long: 8
-    };
-    const maxDuration = durationLimits[selectedLength];
-    const crawl = buildCrawl(events, now, selectedTheme, {}, maxDuration);
-    console.log("Generated Crawl:", crawl);
-    // TODO: Render the crawl visually or route on map
-  });
+const vibeFilter = document.getElementById('vibeFilter').value.toLowerCase();
+    const priceFilter = document.getElementById('priceFilter').value.trim();
+
+    const candidates = allMarkers.filter(marker => {
+      const isInRadius = center.distanceTo(marker.getLatLng()) < 1500;
+      const isOpen = isOpenNow(marker.options.hours || []);
+
+      const vibeMatch = !vibeFilter || (marker.vibe && marker.vibe.includes(vibeFilter));
+      const priceMatch = !priceFilter || (marker.price && marker.price.trim() === priceFilter);
+
+      return isInRadius && isOpen && vibeMatch && priceMatch;
+    });
+
+  if (candidates.length < 1) {
+    alert('No places found in this neighborhood.');
+    return;
+  }
+
+  let totalDuration = 0;
+const crawlPoints = [];
+
+for (let marker of candidates.sort(() => 0.5 - Math.random())) {
+  const dur = marker.duration || 0;
+  if (dur === 0 || crawlPoints.includes(marker)) continue;
+  if (totalDuration + dur > maxDuration) break;
+  totalDuration += dur;
+  crawlPoints.push(marker);
+  if (totalDuration >= minDuration) break;
 }
-  
+
+if (crawlPoints.length < 2) {
+  alert('Not enough places to build a crawl within this duration.');
+  return;
+}
+
+selectedPoints = [];
+resetAllEnlargedMarkers();
+
+crawlPoints.forEach(m => {
+  selectedPoints.push(m.getLatLng());
+  enlargeMarker(m);
+});
+
+updateRoute();
+map.fitBounds(L.featureGroup(crawlPoints).getBounds());
 
 const details = document.getElementById('details');
 const shareLink = generateShareURL(selectedPoints);
@@ -840,27 +838,30 @@ function generateShareURL(points) {
   return `${base}?crawl=${encodeURIComponent(params)}`;
 }
 
+
+document.getElementById('vibeFilter').addEventListener('change', applyFilters);
+document.getElementById('priceFilter').addEventListener('change', applyFilters);
 document.getElementById('map-search').addEventListener('input', applyFilters);
-  document.getElementById('themeDropdown').addEventListener('change', applyFilters);
-  document.getElementById('priceFilter').addEventListener('change', applyFilters);
 
-  function applyFilters() {
-    const query = document.getElementById('map-search').value.toLowerCase();
-    const theme = document.getElementById('themeDropdown').value;
-    const price = document.getElementById('priceFilter').value.trim();
-    markerCluster.clearLayers();
+function applyFilters() {
+  const vibe = document.getElementById('vibeFilter').value.toLowerCase();
+  const query = document.getElementById('map-search').value.toLowerCase();
+  const price = document.getElementById('priceFilter').value.trim();
+  markerCluster.clearLayers();
 
-    allMarkers.forEach(marker => {
-      const searchMatch = !query || marker.name.toLowerCase().includes(query) || marker.vibe.toLowerCase().includes(query);
-      const priceMatch = !price || (marker.price && marker.price.trim() === price);
-      const themeTags = themes[theme] || [];
-      const themeMatch = !theme || themeTags.some(tag => marker.tags.includes(tag));
-
-      if (searchMatch && priceMatch && themeMatch) {
-        markerCluster.addLayer(marker);
-      }
-    });
-  }
+  allMarkers.forEach(marker => {
+    let vibeMatch = !vibe;
+    if (vibe && vibeMap[vibe]) {
+      vibeMatch = vibeMap[vibe].some(keyword => marker.vibe.includes(keyword));
+    }
+    const searchMatch = !query || marker.name.includes(query) || marker.vibe.includes(query);
+    const markerPrice = marker.price ? marker.price.trim() : '';
+    const priceMatch = !price || markerPrice === price;
+    if (vibeMatch && searchMatch && priceMatch) {
+      markerCluster.addLayer(marker);
+    }
+  });
+}
  
 document.getElementById('clearRoute').addEventListener('click', () => {
   if (currentRoute) {
@@ -891,6 +892,28 @@ window.addEventListener('DOMContentLoaded', () => {
     </div>
   `;
   document.body.appendChild(modal);
+
+  const controls = document.querySelector('.controls');
+  const toggleBtn = document.createElement('button');
+  toggleBtn.textContent = 'My Favorites';
+  toggleBtn.style.padding = '5px';
+  toggleBtn.style.fontSize = '14px';
+  toggleBtn.onclick = () => {
+    document.getElementById('favorites-modal').style.display = 'block';
+    renderFavoritesPanel();
+  };
+  controls.appendChild(toggleBtn);
+});
+ 
+document.getElementById('removeLastPoint').addEventListener('click', () => {
+  if (selectedPoints.length === 0) {
+    alert('No points to remove.');
+    return;
+  }
+  const removed = selectedPoints.pop();
+  resetMarker(findMarkerByLatLng(removed));
+  updateRoute();
+});
 </script>
 <div style="position: absolute; bottom: 3px; right: 0px; z-index: 1000; background: rgba(255,255,255,0.8); padding: 4px 8px; border-radius: 4px; font-size: 8px;">
   © 2025 Roam. All rights reserved. The Roam App™ is a trademark of Roam Curated LLC.
