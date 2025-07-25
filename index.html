@@ -212,6 +212,15 @@
       });
     }
 
+    function showOnlySelectedMarkers() {
+  markerCluster.clearLayers();
+  allMarkers.forEach(marker => {
+    if (selectedPoints.some(p => marker.getLatLng().equals(p))) {
+      markerCluster.addLayer(marker);
+    }
+  });
+}
+    
     function showDetails(ev, latlng) {
   const details = document.getElementById('details');
   const suggestions = findNearbySimilar(latlng, (ev.vibe || '').toLowerCase(), 350);
