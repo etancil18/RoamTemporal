@@ -8,113 +8,55 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-<style>
-  * {
-    box-sizing: border-box;
-  }
-
-  html, body {
-  height: 100%;
-}
-
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-
-  #map {
-    height: 100vh;
-    width: 100vw;
-  }
-
-  #details {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    padding: 10px;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
-    font-size: 14px;
-    display: none;
-    z-index: 1000;
-  }
-
-  #details button {
-    display: block;
-    margin-top: 5px;
-    background: #ccc;
-    border: none;
-    padding: 5px;
-    width: 100%;
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  .controls {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    z-index: 1000;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    background: rgba(255,255,255,0.9);
-    padding: 8px;
-    border-radius: 8px;
-  }
-
-  .controls select,
-  .controls input,
-  .controls button {
-    font-size: 14px;
-    padding: 5px;
-    flex: 1 1 120px;
-  }
-
-  @media (min-width: 768px) {
-    #details {
-      width: 300px;
-      left: 50%;
-      bottom: auto;
-      top: 10px;
-      transform: translateX(-50%);
+  <style>
+    * {
+      box-sizing: border-box;
     }
-
-    #details button {
-      width: auto;
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
     }
-
+    #map {
+      height: 100vh;
+      width: 100vw;
+    }
     .controls {
-      flex-wrap: nowrap;
-      gap: 10px;
+      position: absolute;
       top: 10px;
-      left: 50px;
-      right: auto;
+      left: 10px;
+      right: 10px;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      background: rgba(255,255,255,0.9);
+      padding: 8px;
+      border-radius: 8px;
     }
-
     .controls select,
     .controls input,
     .controls button {
-      flex: unset;
+      font-size: 14px;
+      padding: 5px;
+      flex: 1 1 120px;
     }
-  }
-  .custom-blue-icon {
-  background-color: #007bff; /* Bootstrap blue */
-  color: white;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  text-align: center;
-  line-height: 28px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 2px solid white;
-  box-shadow: 0 0 3px rgba(0,0,0,0.5);
-}
-</style>
+    @media (min-width: 768px) {
+      .controls {
+        flex-wrap: nowrap;
+        gap: 10px;
+        top: 10px;
+        left: 50px;
+        right: auto;
+      }
+      .controls select,
+      .controls input,
+      .controls button {
+        flex: unset;
+      }
+    }
+  </style>
 </head>
 <body>
 
