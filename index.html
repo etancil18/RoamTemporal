@@ -165,6 +165,7 @@
     <option>West Village</option>
     <option>Williamsburg</option>
   </select>
+  <button id="crawlNowBtn">Crawl Now</button>
   <button id="generateRoute">Generate Mini Crawl</button>
   <button id="removeLastPoint">Remove Last Point</button>
   <button id="clearRoute">Clear Route</button>
@@ -705,6 +706,42 @@ const neighborhoodCenters = {
   "west village": L.latLng(40.7359, -74.0036),
   "williamsburg": L.latLng(40.7081, -73.9571)
 };
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roam Crawl Engine</title>
+</head>
+<body>
+  <button id="crawlNowBtn" disabled>Crawl Now</button>
+
+  <script>
+    let venues = [];
+
+    // Load venues JSON
+    fetch('events.json') // Ensure this file exists and is valid
+      .then(response => response.json())
+      .then(data => {
+        venues = data;
+        document.getElementById('crawlNowBtn').disabled = false;
+      });
+
+    // Trigger crawl generation when button is clicked
+    document.getElementById('crawlNowBtn').addEventListener('click', () => {
+      const now = new Date();
+      const crawl = buildCrawl(venues, now);
+      console.log("Generated Crawl:", crawl);
+
+      // Optional: Render output to the screen
+      const list = document.createElement('ol');
+      crawl.forEach(stop => {
+        const li = document.createElement('li');
+        li.textContent = `${stop.startTime} – ${stop.name} (${stop.vibe})`;
+        list.appendChild(li);
+      });
+      document.body.appendChild(list);
+    });
 
 // Core time mapping
 function getCurrentTimeCategory(hour) {
