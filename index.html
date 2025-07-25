@@ -13,6 +13,10 @@
     box-sizing: border-box;
   }
 
+  html, body {
+  height: 100%;
+}
+
   body {
     margin: 0;
     padding: 0;
@@ -935,6 +939,14 @@ function generateShareURL(points) {
   return `${base}?crawl=${encodeURIComponent(params)}`;
 }
 
+window.addEventListener('DOMContentLoaded', () => {
+  const map = L.map('map').setView([40.72, -73.98], 12);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors & Carto',
+    subdomains: 'abcd',
+    maxZoom: 19
+  }).addTo(map);
 
 document.getElementById('map-search').addEventListener('input', applyFilters);
   document.getElementById('themeDropdown').addEventListener('change', applyFilters);
