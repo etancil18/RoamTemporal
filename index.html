@@ -149,6 +149,20 @@
 
     map.addLayer(markerCluster);
 
+    fetch('events.json')
+      .then(res => res.json())
+      .then(events => {
+        events.forEach(ev => {
+          const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)]);
+          marker.name = ev.name;
+          marker.vibe = ev.vibe || '';
+          marker.price = ev.price || '';
+          marker.tags = (ev.tags || '').toLowerCase().split(',').map(t => t.trim());
+          allMarkers.push(marker);
+          markerCluster.addLayer(marker);
+        });
+      });
+
     document.getElementById('map-search').addEventListener('input', applyFilters);
     document.getElementById('themeDropdown').addEventListener('change', applyFilters);
     document.getElementById('priceFilter').addEventListener('change', applyFilters);
