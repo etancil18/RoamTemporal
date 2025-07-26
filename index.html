@@ -186,6 +186,9 @@
           marker.vibe = ev.vibe || '';
           marker.price = ev.price || '';
           marker.tags = (ev.tags || '').toLowerCase().split(',').map(t => t.trim());
+
+          marker.on('click', () => showDetails(ev, marker.getLatLng()));
+          
           allMarkers.push(marker);
           markerCluster.addLayer(marker);
         });
