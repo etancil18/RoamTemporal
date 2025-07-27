@@ -156,6 +156,7 @@ function isOpenNow(hoursArray = []) {
         maxZoom: 19
       }).addTo(map);
       map.addLayer(markerCluster);
+    });
       
   fetch('events.json')
     .then(res => res.json())
