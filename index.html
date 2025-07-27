@@ -153,11 +153,16 @@
 
   document.getElementById('crawlNowBtn').addEventListener('click', () => {
   const neighborhood = document.getElementById('neighborhood-input').value;
+  const theme = document.getElementById('themeDropdown').value;
+  const price = document.getElementById('priceFilter').value;
+  const duration = document.getElementById('durationDropdown').value;
+
   if (!neighborhood) {
     alert('Please select a neighborhood first.');
     return;
   }
-  generateCrawl({ neighborhood });
+
+  generateCrawl({ neighborhood, theme, price, duration });
 });
 
   const neighborhoodCenters = {
@@ -184,32 +189,36 @@
   "williamsburg": L.latLng(40.7081, -73.9571)
 };
 
-// Simplified Crawl Engine for Testing
-function generateCrawl({ neighborhood }) {
+function generateCrawl({ neighborhood, theme, price, duration }) {
   const now = new Date();
   const hour = now.getHours();
-  const dayPart = hour < 12 ? 'M' : hour < 17 ? 'A' : 'E';
+  let dayPart = '';
+  if (hour < 11) dayPart = 'M';
+  else if (hour < 14) dayPart = 'MD';
+  else if (hour < 17) dayPart = 'A';
+  else if (hour < 19) dayPart = 'HH';
+  else if (hour < 22) dayPart = 'E';
+  else dayPart = 'L';
+
+  const durationRange = {
+    short: { min: 0, max: 2 },
+    medium: { min: 2.5, max: 5 },
+    long: { min: 5.5, max: 8 }
+  }[duration];
 
   const startPoint = allMarkers.find(marker => {
     const inNeighborhood = marker.neighborhood && marker.neighborhood.toLowerCase() === neighborhood.toLowerCase();
+    const matchesPrice = !price || (marker.price && marker.price.trim() === price);
     const isOpenNow = marker.dayParts && marker.dayParts.includes(dayPart);
-    return inNeighborhood && isOpenNow;
+    return inNeighborhood && matchesPrice && isOpenNow;
   });
 
-  if (!startPoint) return alert('No open location found in neighborhood.');
+  if (!startPoint) return alert('No open location found for this time.');
 
-  const route = [startPoint];
-  const next = allMarkers.find(marker => {
-    return marker !== startPoint && marker.vibe && startPoint.vibe &&
-      marker.vibe.split(',').some(v => startPoint.vibe.includes(v)) &&
-      startPoint.latlng.distanceTo(marker.latlng) < 800;
-  });
+  const route = buildCrawlRoute({ startPoint, durationRange, theme });
+  if (route.length < 2) return alert('Unable to generate a crawl.');
 
-  if (next) route.push(next);
   displayCrawl(route);
-
-  const center = neighborhoodCenters[neighborhood.toLowerCase()];
-  if (center) map.setView(center, 15);
 }
 
 function displayCrawl(route) {
