@@ -206,19 +206,74 @@ function generateCrawl({ neighborhood, theme, price, duration }) {
     long: { min: 5.5, max: 8 }
   }[duration];
 
-  const startPoint = allMarkers.find(marker => {
+  const themeVibes = {
+    "Quiet Luxury": ["luxury", "elegant", "refined"],
+    "Hedonist's Loop": ["party", "dance", "cocktail"],
+    "Creative Recharge": ["coffee", "art", "gallery", "creative"],
+    "Wellness Ritual": ["spa", "wellness", "juice"],
+    "Alt Crawl": ["alt", "underground", "grunge"],
+    "Power Lunch": ["business", "lunch", "network"],
+    "Cozy Corners": ["cozy", "quiet", "nook"],
+    "Flirt & Flow": ["romantic", "date", "vibe"],
+    "Urban Safari": ["rooftop", "scenic", "explore"]
+  }[theme] || [];
+
+  const used = new Set();
+
+  const crawl = [];
+  let currentTime = hour;
+  let currentDayPart = dayPart;
+  let currentDuration = 0;
+
+  const getNextDayPart = (time) => {
+    if (time < 11) return 'M';
+    if (time < 14) return 'MD';
+    if (time < 17) return 'A';
+    if (time < 19) return 'HH';
+    if (time < 22) return 'E';
+    return 'L';
+  };
+
+  let current = allMarkers.find(marker => {
     const inNeighborhood = marker.neighborhood && marker.neighborhood.toLowerCase() === neighborhood.toLowerCase();
     const matchesPrice = !price || (marker.price && marker.price.trim() === price);
-    const isOpenNow = marker.dayParts && marker.dayParts.includes(dayPart);
-    return inNeighborhood && matchesPrice && isOpenNow;
+    const isOpenNow = marker.dayParts && marker.dayParts.includes(currentDayPart);
+    const matchesTheme = marker.vibe && themeVibes.some(tv => marker.vibe.toLowerCase().includes(tv));
+    return inNeighborhood && matchesPrice && isOpenNow && matchesTheme;
   });
 
-  if (!startPoint) return alert('No open location found for this time.');
+  if (!current) return alert('No suitable starting location found for this time and theme.');
 
-  const route = buildCrawlRoute({ startPoint, durationRange, theme });
-  if (route.length < 2) return alert('Unable to generate a crawl.');
+  crawl.push(current);
+  used.add(current.name);
+  currentDuration += current.duration || 1;
 
-  displayCrawl(route);
+  while (currentDuration < durationRange.max) {
+    currentTime += Math.round(current.duration || 1);
+    currentDayPart = getNextDayPart(currentTime);
+
+    const next = allMarkers.find(marker => {
+      if (used.has(marker.name) || marker === current) return false;
+      const isClose = current.latlng.distanceTo(marker.latlng) < 800;
+      const sharesVibe = marker.vibe && current.vibe && marker.vibe.split(',').some(v => current.vibe.includes(v));
+      const themeMatch = themeVibes.some(tv => marker.vibe && marker.vibe.toLowerCase().includes(tv));
+      const isOpen = marker.dayParts && marker.dayParts.includes(currentDayPart);
+      return isClose && sharesVibe && themeMatch && isOpen && marker.duration;
+    });
+
+    if (!next) break;
+
+    crawl.push(next);
+    used.add(next.name);
+    currentDuration += next.duration;
+    current = next;
+
+    if (currentDuration >= durationRange.min) break;
+  }
+
+  if (crawl.length < 2) return alert('Unable to generate a full crawl.');
+
+  displayCrawl(crawl);
 }
 
 function displayCrawl(route) {
