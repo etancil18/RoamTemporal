@@ -345,26 +345,18 @@ function displayCrawl(route) {
   });
 
     document.getElementById('map-search').addEventListener('input', applyFilters);
-    document.getElementById('themeDropdown').addEventListener('change', applyFilters);
-    document.getElementById('priceFilter').addEventListener('change', applyFilters);
 
-    function applyFilters() {
-      const query = document.getElementById('map-search').value.toLowerCase();
-      const theme = document.getElementById('themeDropdown').value;
-      const price = document.getElementById('priceFilter').value.trim();
-      markerCluster.clearLayers();
+function applyFilters() {
+  const query = document.getElementById('map-search').value.toLowerCase();
+  markerCluster.clearLayers();
 
-      allMarkers.forEach(marker => {
-        const searchMatch = !query || marker.name.toLowerCase().includes(query) || marker.vibe.toLowerCase().includes(query);
-        const priceMatch = !price || (marker.price && marker.price.trim() === price);
-        const themeTags = themes[theme] || [];
-        const themeMatch = !theme || themeTags.some(tag => marker.tags.includes(tag));
-
-        if (searchMatch && priceMatch && themeMatch) {
-          markerCluster.addLayer(marker);
-        }
-      });
+  allMarkers.forEach(marker => {
+    const searchMatch = !query || marker.name.toLowerCase().includes(query) || marker.vibe.toLowerCase().includes(query);
+    if (searchMatch) {
+      markerCluster.addLayer(marker.markerInstance);
     }
+  });
+}
 
     function showOnlySelectedMarkers() {
   markerCluster.clearLayers();
