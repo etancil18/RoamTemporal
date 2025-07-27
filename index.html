@@ -362,6 +362,7 @@ function displayCrawl(route) {
   });
 
     document.getElementById('map-search').addEventListener('input', applyFilters);
+
 function applyFilters() {
   const query = document.getElementById('map-search').value.toLowerCase();
   markerCluster.clearLayers();
@@ -387,35 +388,49 @@ function applyFilters() {
   });
 }
 
-    function showDetails(name) {
-  const marker = allMarkers.find(m => m.name === name);
-  if (!marker) return;
-
+    function showOnlySelectedMarkers() {
+  markerCluster.clearLayers();
+  allMarkers.forEach(marker => {
+    if (selectedPoints.some(p => marker.getLatLng().equals(p))) {
+      markerCluster.addLayer(marker);
+    }
+  });
+}
+    
+    function showDetails(ev, latlng) {
   const details = document.getElementById('details');
-  const todayHours = marker.hours || "No hours available";
-  const isOpen = marker.dayParts && (marker.dayParts.includes('M') || marker.dayParts.includes('MD') || marker.dayParts.includes('A') || marker.dayParts.includes('HH') || marker.dayParts.includes('E') || marker.dayParts.includes('L'));
+  const suggestions = findNearbySimilar(latlng, (ev.vibe || '').toLowerCase(), 350);
+
+  let suggestionHtml = suggestions.length > 0
+    ? `<strong>Also could be the move:</strong><ul>${suggestions.map(s => `<li>${s.name}</li>`).join('')}</ul>`
+    : '<em>No similar spots nearby</em>';
+
+  const todayHours = ev.hours ? getTodayHours(ev.hours) : "No hours available";
+  const isOpen = isOpenNow(ev.hours || []);
   const statusText = isOpen ? "🟢 Open Now" : "🔴 Closed Now";
 
   details.innerHTML = `
-    <strong>${marker.name}</strong><br>
-    Vibe: ${marker.vibe}<br>
-    Price: ${marker.price || "N/A"}<br>
+    <strong>${ev.name}</strong><br>
+    Vibe: ${ev.vibe}<br>
+    Price: ${ev.price || "N/A"}<br>
     Status: ${statusText}<br>
     Today's Hours: ${todayHours}<br>
-    <a href="${marker.link}" target="_blank">View More</a><br>
+    <a href="${ev.link}" target="_blank">View More</a><br>
     <button id="favoriteLocationBtn">❤️</button>
     <button id="addToRoute">Add to Route</button>
     <button id="exportGooglePopup">Export Route to Google Maps</button>
     <button id="closeDetails">Close</button>
+    <hr>
+    ${suggestionHtml}
   `;
 
   details.style.display = 'block';
 
   document.getElementById('favoriteLocationBtn').addEventListener('click', () => {
-    saveFavorite(marker.name);
+    saveFavorite(ev.name);
   });
   document.getElementById('addToRoute').addEventListener('click', () => {
-    addPointToRoute(marker.latlng);
+    addPointToRoute(latlng);
   });
   document.getElementById('exportGooglePopup').addEventListener('click', () => {
     if (selectedPoints.length < 2) {
@@ -429,16 +444,8 @@ function applyFilters() {
   document.getElementById('closeDetails').addEventListener('click', () => {
     details.style.display = 'none';
   });
-    
-    function showOnlySelectedMarkers() {
-  markerCluster.clearLayers();
-  allMarkers.forEach(marker => {
-    if (selectedPoints.some(p => marker.getLatLng().equals(p))) {
-      markerCluster.addLayer(marker);
-    }
-  });
 }
-
+  });
 
 </script>
 </body>
