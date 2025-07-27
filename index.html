@@ -137,7 +137,19 @@
 <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 <script>
    
+let map;
+let markerCluster = L.markerClusterGroup();
+let allMarkers = [];
+let selectedPoints = [];
 
+window.addEventListener('DOMContentLoaded', () => {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap contributors & Carto',
+  subdomains: 'abcd',
+  maxZoom: 19
+}).addTo(map);
+  map.addLayer(markerCluster);
+  
   const neighborhoodCenters = {
   "alphabet city": L.latLng(40.7265, -73.9815),
   "bedstuy": L.latLng(40.6850, -73.9419),
@@ -182,18 +194,6 @@ function isOpenNow(hoursArray = []) {
 
   return now >= openTime && now <= closeTime;
 }
-  
-let map;
-let markerCluster = L.markerClusterGroup();
-let allMarkers = [];
-let selectedPoints = [];
-
-window.addEventListener('DOMContentLoaded', () => {
-  map = L.map('map').setView([40.72, -73.98], 13);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
-  map.addLayer(markerCluster);
 
   fetch('events.json')
     .then(res => res.json())
