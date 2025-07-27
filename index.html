@@ -218,6 +218,15 @@ function generateCrawl({ neighborhood, theme, price, duration }) {
     "Urban Safari": ["rooftop", "scenic", "explore"]
   }[theme] || [];
 
+  const priceTiers = {
+    "$": ["$"],
+    "$$": ["$", "$$"],
+    "$$$": ["$", "$$", "$$$"],
+    "$$$$": ["$", "$$", "$$$", "$$$$"]
+  };
+
+  const priceOptions = priceTiers[price] || ["$", "$$", "$$$", "$$$$"];
+
   const used = new Set();
 
   const crawl = [];
@@ -236,7 +245,7 @@ function generateCrawl({ neighborhood, theme, price, duration }) {
 
   let current = allMarkers.find(marker => {
     const inNeighborhood = marker.neighborhood && marker.neighborhood.toLowerCase() === neighborhood.toLowerCase();
-    const matchesPrice = !price || (marker.price && marker.price.trim() === price);
+    const matchesPrice = !marker.price || priceOptions.includes(marker.price.trim());
     const isOpenNow = marker.dayParts && marker.dayParts.includes(currentDayPart);
     const matchesTheme = marker.vibe && themeVibes.some(tv => marker.vibe.toLowerCase().includes(tv));
     return inNeighborhood && matchesPrice && isOpenNow && matchesTheme;
@@ -258,7 +267,8 @@ function generateCrawl({ neighborhood, theme, price, duration }) {
       const sharesVibe = marker.vibe && current.vibe && marker.vibe.split(',').some(v => current.vibe.includes(v));
       const themeMatch = themeVibes.some(tv => marker.vibe && marker.vibe.toLowerCase().includes(tv));
       const isOpen = marker.dayParts && marker.dayParts.includes(currentDayPart);
-      return isClose && sharesVibe && themeMatch && isOpen && marker.duration;
+      const matchesPrice = !marker.price || priceOptions.includes(marker.price.trim());
+      return isClose && sharesVibe && themeMatch && isOpen && marker.duration && matchesPrice;
     });
 
     if (!next) break;
