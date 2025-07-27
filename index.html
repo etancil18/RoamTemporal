@@ -243,12 +243,15 @@ function generateCrawl({ neighborhood, theme, price, duration }) {
     return 'L';
   };
 
+  const center = neighborhoodCenters[neighborhood.toLowerCase()];
+
   let current = allMarkers.find(marker => {
     const inNeighborhood = marker.neighborhood && marker.neighborhood.toLowerCase() === neighborhood.toLowerCase();
     const matchesPrice = !marker.price || priceOptions.includes(marker.price.trim());
     const isOpenNow = marker.dayParts && marker.dayParts.includes(currentDayPart);
     const matchesTheme = marker.vibe && themeVibes.some(tv => marker.vibe.toLowerCase().includes(tv));
-    return inNeighborhood && matchesPrice && isOpenNow && matchesTheme;
+    const nearCenter = center && marker.latlng.distanceTo(center) <= 200;
+    return inNeighborhood && matchesPrice && isOpenNow && matchesTheme && nearCenter;
   });
 
   if (!current) return alert('No suitable starting location found for this time and theme.');
