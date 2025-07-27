@@ -315,6 +315,7 @@ fetch('events.json')
       marker.duration = ev.duration || 0;
       marker.options.link = ev.link;
       marker.options.hours = ev.hours || [];
+      marker.options.dayParts = ev.dayParts;
 
       if (favorites.some(f => f.toLowerCase() === ev.name.toLowerCase())) {
   enlargeMarker(marker); 
@@ -592,12 +593,14 @@ function generateCrawlFromFavorite(startMarker) {
   const center = startMarker.getLatLng();
 
   const candidates = allMarkers.filter(marker => {
-    const isInRadius = center.distanceTo(marker.getLatLng()) < 1500;
-    const isOpen = isOpenNow(marker.options.hours || []);
-    const vibeMatch = !vibeFilter || (marker.vibe && marker.vibe.includes(vibeFilter));
-    const priceMatch = !priceFilter || (marker.price && marker.price.trim() === priceFilter);
-    return isInRadius && isOpen && vibeMatch && priceMatch;
-  });
+  const isInRadius = center.distanceTo(marker.getLatLng()) < 1500;
+  const isOpen = isOpenNow(marker.options.hours || []);
+  const vibeMatch = !vibeFilter || (marker.vibe && marker.vibe.includes(vibeFilter));
+  const priceMatch = !priceFilter || (marker.price && marker.price.trim() === priceFilter);
+  const temporalMatch = isOpenInCurrentDayPart(marker.options || {});
+
+  return isInRadius && isOpen && vibeMatch && priceMatch && temporalMatch;
+});
 
   if (candidates.length < 1) {
     alert('No nearby places found.');
@@ -684,127 +687,116 @@ function generateCrawlFromFavorite(startMarker) {
   document.body.appendChild(crawlModal);
 }
 
-const neighborhoodCenters = {
-  "alphabet city": L.latLng(40.7265, -73.9815),
-  "bedstuy": L.latLng(40.6850, -73.9419),
-  "bushwick": L.latLng(40.6943, -73.9213),
-  "chelsea": L.latLng(40.7465, -74.0014),
-  "chinatown": L.latLng(40.7158, -73.9970),
-  "clinton hill": L.latLng(40.6896, -73.9606),
-  "downtown brooklyn": L.latLng(40.6928, -73.9903),
-  "dumbo": L.latLng(40.7033, -73.9881),
-  "east village": L.latLng(40.7260, -73.9816),
-  "gramercy": L.latLng(40.7376, -73.9857),
-  "greenpoint": L.latLng(40.7301, -73.9546),
-  "greenwich village": L.latLng(40.7336, -74.0027),
-  "lower east side": L.latLng(40.7150, -73.9843),
-  "long island city": L.latLng(40.7440, -73.9488),
-  "midtown": L.latLng(40.7549, -73.9840),
-  "soho": L.latLng(40.7233, -74.0030),
-  "tribeca": L.latLng(40.7163, -74.0086),
-  "upper east side": L.latLng(40.7736, -73.9566),
-  "upper west side": L.latLng(40.7870, -73.9754),
-  "west village": L.latLng(40.7359, -74.0036),
-  "williamsburg": L.latLng(40.7081, -73.9571)
-};
 
+ function getCurrentDayPart() {
+      const hour = new Date().getHours();
+      if (hour >= 6 && hour < 11) return ['M'];
+      if (hour >= 11 && hour < 14) return ['MD'];
+      if (hour >= 14 && hour < 16) return ['A'];
+      if (hour >= 16 && hour < 19) return ['HH'];
+      if (hour >= 19 && hour < 22) return ['E'];
+      if (hour >= 22 || hour < 6) return ['L'];
+      return [];
+    }
 
-document.getElementById('generateRoute').addEventListener('click', () => {
-  const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
-  if (!neighborhood) {
-    alert('Please select a neighborhood.');
-    return;
-  }
+    const currentDayParts = getCurrentDayPart();
+    console.log('Current time segment(s):', currentDayParts);
 
-  const center = neighborhoodCenters[neighborhood];
-  if (!center) {
-    alert('Neighborhood center not found.');
-    return;
-  }
+    function isOpenInCurrentDayPart(location) {
+      if (!location.dayParts || !Array.isArray(location.dayParts)) return false;
+      return location.dayParts.some(part => currentDayParts.includes(part));
+    }
 
-  const crawlType = document.getElementById('durationFilter').value;
-let minDuration = 0, maxDuration = Infinity;
+    const neighborhoodCenters = {
+      "alphabet city": { lat: 40.7265, lon: -73.9815 },
+      "bedstuy": { lat: 40.6850, lon: -73.9419 },
+      "bushwick": { lat: 40.6943, lon: -73.9213 },
+      "chelsea": { lat: 40.7465, lon: -74.0014 },
+      "chinatown": { lat: 40.7158, lon: -73.9970 },
+      "clinton hill": { lat: 40.6896, lon: -73.9606 },
+      "downtown brooklyn": { lat: 40.6928, lon: -73.9903 },
+      "dumbo": { lat: 40.7033, lon: -73.9881 },
+      "east village": { lat: 40.7260, lon: -73.9816 },
+      "gramercy": { lat: 40.7376, lon: -73.9857 },
+      "greenpoint": { lat: 40.7301, lon: -73.9546 },
+      "greenwich village": { lat: 40.7336, lon: -74.0027 },
+      "lower east side": { lat: 40.7150, lon: -73.9843 },
+      "long island city": { lat: 40.7440, lon: -73.9488 },
+      "midtown": { lat: 40.7549, lon: -73.9840 },
+      "soho": { lat: 40.7233, lon: -74.0030 },
+      "tribeca": { lat: 40.7163, lon: -74.0086 },
+      "upper east side": { lat: 40.7736, lon: -73.9566 },
+      "upper west side": { lat: 40.7870, lon: -73.9754 },
+      "west village": { lat: 40.7359, lon: -74.0036 },
+      "williamsburg": { lat: 40.7081, lon: -73.9571 }
+    };
 
-if (crawlType === 'quick') {
-  maxDuration = 1.5;
-} else if (crawlType === 'classic') {
-  minDuration = 1.5;
-  maxDuration = 3;
-} else if (crawlType === 'long') {
-  minDuration = 3;
-}
+    function generateCrawlRoute(allLocations) {
+      const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
+      const priceFilter = document.getElementById('priceFilter').value.trim();
+      const theme = document.getElementById('themeDropdown').value.toLowerCase();
+      const durationSetting = document.getElementById('durationDropdown').value;
 
-const vibeFilter = document.getElementById('vibeFilter').value.toLowerCase();
-    const priceFilter = document.getElementById('priceFilter').value.trim();
+      const neighborhoodCenter = neighborhoodCenters[neighborhood];
+      if (!neighborhoodCenter) {
+        alert('Invalid neighborhood selected.');
+        return;
+      }
 
-    const candidates = allMarkers.filter(marker => {
-      const isInRadius = center.distanceTo(marker.getLatLng()) < 1500;
-      const isOpen = isOpenNow(marker.options.hours || []);
+      const openLocations = allLocations.filter(loc => {
+        const inNeighborhood = !neighborhood || (loc.neighborhood && loc.neighborhood.toLowerCase() === neighborhood);
+        const matchesPrice = !priceFilter || (loc.price && loc.price === priceFilter);
+        const matchesTheme = !theme || (loc.theme && loc.theme.toLowerCase() === theme);
+        const isOpenTemporal = isOpenInCurrentDayPart(loc);
+        return inNeighborhood && matchesPrice && matchesTheme && isOpenTemporal;
+      });
 
-      const vibeMatch = !vibeFilter || (marker.vibe && marker.vibe.includes(vibeFilter));
-      const priceMatch = !priceFilter || (marker.price && marker.price.trim() === priceFilter);
+      if (openLocations.length === 0) {
+        alert('No suitable locations found.');
+        return;
+      }
 
-      return isInRadius && isOpen && vibeMatch && priceMatch;
-    });
+      // Sort by proximity to neighborhood center
+      openLocations.sort((a, b) => {
+        const d1 = Math.hypot(a.lat - neighborhoodCenter.lat, a.lon - neighborhoodCenter.lon);
+        const d2 = Math.hypot(b.lat - neighborhoodCenter.lat, b.lon - neighborhoodCenter.lon);
+        return d1 - d2;
+      });
 
-  if (candidates.length < 1) {
-    alert('No places found in this neighborhood.');
-    return;
-  }
+      let maxDuration = 8;
+      if (durationSetting === 'short') maxDuration = 2;
+      else if (durationSetting === 'medium') maxDuration = 5;
 
-  let totalDuration = 0;
-const crawlPoints = [];
+      let totalDuration = 0;
+      const crawlRoute = [];
 
-for (let marker of candidates.sort(() => 0.5 - Math.random())) {
-  const dur = marker.duration || 0;
-  if (dur === 0 || crawlPoints.includes(marker)) continue;
-  if (totalDuration + dur > maxDuration) break;
-  totalDuration += dur;
-  crawlPoints.push(marker);
-  if (totalDuration >= minDuration) break;
-}
+      for (let loc of openLocations) {
+        if (loc.duration && (totalDuration + loc.duration) <= maxDuration) {
+          crawlRoute.push(loc);
+          totalDuration += loc.duration;
+        }
+        if (totalDuration >= maxDuration) break;
+      }
 
-if (crawlPoints.length < 2) {
-  alert('Not enough places to build a crawl within this duration.');
-  return;
-}
+      if (crawlRoute.length < 2) {
+        alert('A crawl requires at least 2 stops. Try adjusting your filters or duration.');
+        return;
+      }
 
-selectedPoints = [];
-resetAllEnlargedMarkers();
+      console.log('Generated Crawl Route:', crawlRoute);
+      // TODO: visualize on map and enable saving
+    }
 
-crawlPoints.forEach(m => {
-  selectedPoints.push(m.getLatLng());
-  enlargeMarker(m);
-});
+    const allLocations = [
+      { name: 'Cafe Sunrise', dayParts: ['M', 'MD'], lat: 40.72, lon: -73.98, duration: 1, neighborhood: 'east village', price: '$$', theme: 'creative recharge' },
+      { name: 'Noon Bites', dayParts: ['MD', 'A'], lat: 40.73, lon: -73.99, duration: 1.5, neighborhood: 'east village', price: '$', theme: 'power lunch' },
+      { name: 'Evening Lounge', dayParts: ['E', 'L'], lat: 40.74, lon: -73.97, duration: 2, neighborhood: 'east village', price: '$$$', theme: 'quiet luxury' }
+    ];
 
-updateRoute();
-map.fitBounds(L.featureGroup(crawlPoints).getBounds());
-
-const details = document.getElementById('details');
-const shareLink = generateShareURL(selectedPoints);
-
-details.innerHTML = `<strong>Your Mini Crawl:</strong><ul>${
-  crawlPoints.map(m => `<li>${m.name}</li>`).join('')
-}</ul>
-<button id="exportGooglePopup">Export Route to Google Maps</button>
-<button id="copyLinkBtn">Copy Shareable Link</button>
-<input id="shareLinkInput" type="text" readonly value="${shareLink}" style="width:100%; margin-top:5px;" />
-<a id="smsShare" href="sms:?body=Check out this crawl: ${encodeURIComponent(shareLink)}" target="_blank">📲 Text This Crawl</a>
-<button id="closeDetails">Close</button>`;
-
-details.style.display = 'block';
-
-
-  document.getElementById('exportGooglePopup').addEventListener('click', () => {
-    const baseUrl = "https://www.google.com/maps/dir/";
-    const path = selectedPoints.map(p => `${p.lat},${p.lng}`).join('/');
-    window.open(baseUrl + path, '_blank');
-  });
-
-  document.getElementById('closeDetails').addEventListener('click', () => {
-    details.style.display = 'none';
-  });
-});
+  document.getElementById('crawlNowBtn').addEventListener('click', () => {
+    generateCrawlRoute(allLocations);
+     });
+  
 
 function addPointToRoute(latlng) {
   if (selectedPoints.length >= 5) {
