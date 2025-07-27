@@ -189,6 +189,101 @@
   "williamsburg": L.latLng(40.7081, -73.9571)
 };
 
+let map;
+let markerCluster = L.markerClusterGroup();
+let allMarkers = [];
+let selectedPoints = [];
+
+window.addEventListener('DOMContentLoaded', () => {
+  map = L.map('map').setView([40.72, -73.98], 13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+  map.addLayer(markerCluster);
+
+  fetch('events.json')
+    .then(res => res.json())
+    .then(data => {
+      data.forEach(ev => {
+        const latlng = L.latLng(parseFloat(ev.lat), parseFloat(ev.lon));
+        const mInstance = L.marker(latlng);
+        mInstance.bindPopup(`
+          <strong>${ev.name}</strong><br>
+          Vibe: ${ev.vibe}<br>
+          Price: ${ev.price || "N/A"}<br>
+          <a href="${ev.link}" target="_blank">View More</a><br>
+          <button onclick=\"showDetails('${ev.name}')\">More Details</button>
+        `);
+        mInstance.on('click', () => mInstance.openPopup());
+        const marker = {
+          name: ev.name,
+          vibe: ev.vibe,
+          price: ev.price,
+          duration: ev.duration,
+          latlng,
+          neighborhood: ev.neighborhood || 'unknown',
+          dayParts: Object.values(ev.dayParts).join(','),
+          markerInstance: mInstance,
+          tags: ev.tags || '',
+          hours: ev.hours,
+          link: ev.link
+        };
+        allMarkers.push(marker);
+        markerCluster.addLayer(mInstance);
+      });
+    });
+
+  document.getElementById('map-search').addEventListener('input', applyFilters);
+});
+
+function applyFilters() {
+  const query = document.getElementById('map-search').value.toLowerCase();
+  markerCluster.clearLayers();
+  allMarkers.forEach(marker => {
+    const match = !query || marker.name.toLowerCase().includes(query) || marker.vibe.toLowerCase().includes(query);
+    if (match) markerCluster.addLayer(marker.markerInstance);
+  });
+}
+
+function showDetails(name) {
+  const marker = allMarkers.find(m => m.name === name);
+  if (!marker) return;
+
+  const details = document.getElementById('details');
+  const todayHours = marker.hours || "No hours available";
+  const isOpen = marker.dayParts && /M|MD|A|HH|E|L/.test(marker.dayParts);
+  const statusText = isOpen ? "🟢 Open Now" : "🔴 Closed Now";
+
+  details.innerHTML = `
+    <strong>${marker.name}</strong><br>
+    Vibe: ${marker.vibe}<br>
+    Price: ${marker.price || "N/A"}<br>
+    Status: ${statusText}<br>
+    Today's Hours: ${todayHours}<br>
+    <a href="${marker.link}" target="_blank">View More</a><br>
+    <button id="favoriteLocationBtn">❤️</button>
+    <button id="addToRoute">Add to Route</button>
+    <button id="exportGooglePopup">Export Route to Google Maps</button>
+    <button id="closeDetails">Close</button>
+  `;
+
+  details.style.display = 'block';
+  document.getElementById('favoriteLocationBtn').onclick = () => alert(`Favorited: ${marker.name}`);
+  document.getElementById('addToRoute').onclick = () => {
+    selectedPoints.push(marker.latlng);
+    alert(`Added to route: ${marker.name}`);
+  };
+  document.getElementById('exportGooglePopup').onclick = () => {
+    if (selectedPoints.length < 2) return alert('Select at least 2 points to export.');
+    const base = "https://www.google.com/maps/dir/";
+    const path = selectedPoints.map(p => `${p.lat},${p.lng}`).join('/');
+    window.open(base + path, '_blank');
+  };
+  document.getElementById('closeDetails').onclick = () => {
+    details.style.display = 'none';
+  };
+}
+
 function generateCrawl({ neighborhood, theme, price, duration }) {
   const now = new Date();
   const hour = now.getHours();
@@ -325,162 +420,6 @@ function displayCrawl(route) {
     "Urban Safari": ["rooftop", "scenic", "explore"]
   };
 
-  window.addEventListener('DOMContentLoaded', () => {
-    map = L.map('map').setView([40.72, -73.98], 12);
-
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap contributors & Carto',
-      subdomains: 'abcd',
-      maxZoom: 19
-    }).addTo(map);
-
-    map.addLayer(markerCluster);
-
-    fetch('events.json')
-  .then(res => res.json())
-  .then(data => {
-    data.forEach(ev => {
-      const latlng = L.latLng(parseFloat(ev.lat), parseFloat(ev.lon));
-      const mInstance = L.marker(latlng);
-      mInstance.on('click', () => showDetails(ev, latlng));
-
-      const marker = {
-        name: ev.name,
-        vibe: ev.vibe,
-        price: ev.price,
-        duration: ev.duration,
-        latlng,  // store for crawl engine
-        neighborhood: ev.neighborhood || 'unknown',
-        dayParts: Object.values(ev.dayParts).join(','),
-        markerInstance: mInstance,
-        tags: ev.tags || ''
-      };
-
-      allMarkers.push(marker);
-      markerCluster.addLayer(mInstance);
-    });
-  });
-
-    document.getElementById('map-search').addEventListener('input', applyFilters);
-
-function applyFilters() {
-  const query = document.getElementById('map-search').value.toLowerCase();
-  markerCluster.clearLayers();
-
- allMarkers.forEach(marker => {
-    const searchMatch = !query || marker.name.toLowerCase().includes(query) || marker.vibe.toLowerCase().includes(query);
-    if (searchMatch) {
-      markerCluster.addLayer(marker.markerInstance);
-      marker.markerInstance.bindPopup(() => {
-        const today = new Date();
-        const weekday = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][today.getDay()];
-        const openStatus = marker.dayParts.includes('M') || marker.dayParts.includes('MD') || marker.dayParts.includes('A') || marker.dayParts.includes('HH') || marker.dayParts.includes('E') || marker.dayParts.includes('L');
-        const hours = marker.hours || "N/A";
-        const isOpen = openStatus ? "🟢 Open Now" : "🔴 Closed Now";
-        return `<strong>${marker.name}</strong><br>
-                Vibe: ${marker.vibe}<br>
-                Price: ${marker.price || "N/A"}<br>
-                Status: ${isOpen}<br>
-                Today's Hours: ${hours}<br>
-                <a href="${marker.link}" target="_blank">View More</a><br>
-                <button onclick=\"showDetails('${marker.name}')\">More Details</button>`;
-      });
-      marker.markerInstance.on('click', () => {
-        marker.markerInstance.openPopup();
-      });
-    }
-  });
-}
-
-    function showOnlySelectedMarkers() {
-  markerCluster.clearLayers();
-  allMarkers.forEach(marker => {
-    if (selectedPoints.some(p => marker.getLatLng().equals(p))) {
-      markerCluster.addLayer(marker);
-    }
-  });
-}
-    
-    function showDetails(name) {
-  const marker = allMarkers.find(m => m.name === name);
-  if (!marker) return;
-
-  const details = document.getElementById('details');
-  const todayHours = marker.hours || "No hours available";
-  const isOpen = marker.dayParts && (marker.dayParts.includes('M') || marker.dayParts.includes('MD') || marker.dayParts.includes('A') || marker.dayParts.includes('HH') || marker.dayParts.includes('E') || marker.dayParts.includes('L'));
-  const statusText = isOpen ? "🟢 Open Now" : "🔴 Closed Now";
-
-  details.innerHTML = `
-    <strong>${marker.name}</strong><br>
-    Vibe: ${marker.vibe}<br>
-    Price: ${marker.price || "N/A"}<br>
-    Status: ${statusText}<br>
-    Today's Hours: ${todayHours}<br>
-    <a href="${marker.link}" target="_blank">View More</a><br>
-    <button id="favoriteLocationBtn">❤️</button>
-    <button id="addToRoute">Add to Route</button>
-    <button id="exportGooglePopup">Export Route to Google Maps</button>
-    <button id="closeDetails">Close</button>
-  `;
-
-  details.style.display = 'block';
-
-  document.getElementById('favoriteLocationBtn').addEventListener('click', () => {
-    saveFavorite(marker.name);
-  });
-  document.getElementById('addToRoute').addEventListener('click', () => {
-    addPointToRoute(marker.latlng);
-  });
-  document.getElementById('exportGooglePopup').addEventListener('click', () => {
-    if (selectedPoints.length < 2) {
-      alert('Select at least 2 points to export a route.');
-      return;
-    }
-    const base = "https://www.google.com/maps/dir/";
-    const path = selectedPoints.map(p => `${p.lat},${p.lng}`).join('/');
-    window.open(base + path, '_blank');
-  });
-  document.getElementById('closeDetails').addEventListener('click', () => {
-    details.style.display = 'none';
-  });
-}
-
-// Bind popup and click handler when creating markers
-fetch('events.json')
-  .then(res => res.json())
-  .then(data => {
-    data.forEach(ev => {
-      const latlng = L.latLng(parseFloat(ev.lat), parseFloat(ev.lon));
-      const mInstance = L.marker(latlng);
-
-      mInstance.bindPopup(`
-        <strong>${ev.name}</strong><br>
-        Vibe: ${ev.vibe}<br>
-        Price: ${ev.price || "N/A"}<br>
-        <a href="${ev.link}" target="_blank">View More</a><br>
-        <button onclick="showDetails('${ev.name}')">More Details</button>
-      `);
-
-      mInstance.on('click', () => mInstance.openPopup());
-
-      const marker = {
-        name: ev.name,
-        vibe: ev.vibe,
-        price: ev.price,
-        duration: ev.duration,
-        latlng,
-        neighborhood: ev.neighborhood || 'unknown',
-        dayParts: Object.values(ev.dayParts).join(','),
-        markerInstance: mInstance,
-        tags: ev.tags || '',
-        hours: ev.hours,
-        link: ev.link
-      };
-
-      allMarkers.push(marker);
-      markerCluster.addLayer(mInstance);
-    });
-  });
 
 </script>
 </body>
