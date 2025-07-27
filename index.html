@@ -148,15 +148,12 @@ function isOpenNow(hoursArray = []) {
     let allMarkers = [];
     let selectedPoints = [];
 
-    window.addEventListener('DOMContentLoaded', () => {
       map = L.map('map').setView([40.72, -73.98], 13);
       L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; OpenStreetMap contributors & Carto',
         subdomains: 'abcd',
         maxZoom: 19
       }).addTo(map);
-      map.addLayer(markerCluster);
-    });
       
   fetch('events.json')
     .then(res => res.json())
@@ -375,21 +372,6 @@ function displayCrawl(route) {
   crawlLayer.addTo(map);
   map.fitBounds(L.featureGroup(markers).getBounds(), { padding: [20, 20] });
 }
-
-  let map;
-  let markerCluster = L.markerClusterGroup();
-  let allMarkers = [];
-  const themes = {
-    "Quiet Luxury": ["luxury", "elegant", "refined"],
-    "Hedonist's Loop": ["party", "dance", "cocktail"],
-    "Creative Recharge": ["art", "gallery", "creative"],
-    "Wellness Ritual": ["spa", "wellness", "juice"],
-    "Alt Crawl": ["alt", "underground", "grunge"],
-    "Power Lunch": ["business", "lunch", "network"],
-    "Cozy Corners": ["cozy", "quiet", "nook"],
-    "Flirt & Flow": ["romantic", "date", "vibe"],
-    "Urban Safari": ["rooftop", "scenic", "explore"]
-  };
 
 
 </script>
