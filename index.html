@@ -371,6 +371,19 @@ function applyFilters() {
     const searchMatch = !query || marker.name.toLowerCase().includes(query) || marker.vibe.toLowerCase().includes(query);
     if (searchMatch) {
       markerCluster.addLayer(marker.markerInstance);
+      marker.markerInstance.bindPopup(() => {
+        const today = new Date();
+        const weekday = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][today.getDay()];
+        const openStatus = marker.dayParts.includes('M') || marker.dayParts.includes('MD') || marker.dayParts.includes('A') || marker.dayParts.includes('HH') || marker.dayParts.includes('E') || marker.dayParts.includes('L');
+        const hours = marker.hours || "N/A";
+        const isOpen = openStatus ? "🟢 Open Now" : "🔴 Closed Now";
+        return `<strong>${marker.name}</strong><br>
+                Vibe: ${marker.vibe}<br>
+                Price: ${marker.price || "N/A"}<br>
+                Status: ${isOpen}<br>
+                Today's Hours: ${hours}<br>
+                <a href="${marker.link}" target="_blank">View More</a>`;
+      });
     }
   });
 }
