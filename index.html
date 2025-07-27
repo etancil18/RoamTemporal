@@ -367,7 +367,7 @@ function applyFilters() {
   const query = document.getElementById('map-search').value.toLowerCase();
   markerCluster.clearLayers();
 
-  allMarkers.forEach(marker => {
+ allMarkers.forEach(marker => {
     const searchMatch = !query || marker.name.toLowerCase().includes(query) || marker.vibe.toLowerCase().includes(query);
     if (searchMatch) {
       markerCluster.addLayer(marker.markerInstance);
@@ -382,7 +382,11 @@ function applyFilters() {
                 Price: ${marker.price || "N/A"}<br>
                 Status: ${isOpen}<br>
                 Today's Hours: ${hours}<br>
-                <a href="${marker.link}" target="_blank">View More</a>`;
+                <a href="${marker.link}" target="_blank">View More</a><br>
+                <button onclick=\"showDetails('${marker.name}')\">More Details</button>`;
+      });
+      marker.markerInstance.on('click', () => {
+        marker.markerInstance.openPopup();
       });
     }
   });
