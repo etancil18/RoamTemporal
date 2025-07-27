@@ -97,6 +97,28 @@
 <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 <script>
+
+  let map;
+  let markerCluster = L.markerClusterGroup();
+  let allMarkers = [];
+  const themes = {
+    "Quiet Luxury": ["luxury", "elegant", "refined"],
+    "Hedonist's Loop": ["party", "dance", "cocktail"],
+    "Creative Recharge": ["art", "gallery", "creative"],
+    "Wellness Ritual": ["spa", "wellness", "juice"],
+    "Alt Crawl": ["alt", "underground", "grunge"],
+    "Power Lunch": ["business", "lunch", "network"],
+    "Cozy Corners": ["cozy", "quiet", "nook"],
+    "Flirt & Flow": ["romantic", "date", "vibe"],
+    "Urban Safari": ["rooftop", "scenic", "explore"]
+  };
+
+  map = L.map('map').setView([40.72, -73.98], 13);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap contributors & Carto',
+        subdomains: 'abcd',
+        maxZoom: 19
+      }).addTo(map);
   
   const neighborhoodCenters = {
   "alphabet city": L.latLng(40.7265, -73.9815),
@@ -142,19 +164,7 @@ function isOpenNow(hoursArray = []) {
 
   return now >= openTime && now <= closeTime;
 }
-
-  let map;
-    let markerCluster = L.markerClusterGroup();
-    let allMarkers = [];
-    let selectedPoints = [];
-
-      map = L.map('map').setView([40.72, -73.98], 13);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap contributors & Carto',
-        subdomains: 'abcd',
-        maxZoom: 19
-      }).addTo(map);
-      
+    
   fetch('events.json')
     .then(res => res.json())
     .then(data => {
