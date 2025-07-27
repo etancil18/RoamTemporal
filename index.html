@@ -259,21 +259,24 @@ function displayCrawl(route) {
   .then(res => res.json())
   .then(data => {
     data.forEach(ev => {
+      const latlng = L.latLng(parseFloat(ev.lat), parseFloat(ev.lon));
+      const mInstance = L.marker(latlng);
+      mInstance.on('click', () => showDetails(ev, latlng));
+
       const marker = {
         name: ev.name,
         vibe: ev.vibe,
         price: ev.price,
         duration: ev.duration,
-        latlng: L.latLng(parseFloat(ev.lat), parseFloat(ev.lon)),
+        latlng,  // store for crawl engine
         neighborhood: ev.neighborhood || 'unknown',
         dayParts: Object.values(ev.dayParts).join(','),
-        markerInstance: L.marker([ev.lat, ev.lon])
+        markerInstance: mInstance,
+        tags: ev.tags || ''
       };
 
-      marker.on('click', () => showDetails(ev, marker.getLatLng()));
-
       allMarkers.push(marker);
-       markerCluster.addLayer(marker);
+      markerCluster.addLayer(mInstance);
     });
   });
 
