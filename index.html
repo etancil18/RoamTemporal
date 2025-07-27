@@ -401,40 +401,35 @@ function applyFilters() {
   });
 }
     
-    function showDetails(ev, latlng) {
+    function showDetails(name) {
+  const marker = allMarkers.find(m => m.name === name);
+  if (!marker) return;
+
   const details = document.getElementById('details');
-  const suggestions = findNearbySimilar(latlng, (ev.vibe || '').toLowerCase(), 350);
-
-  let suggestionHtml = suggestions.length > 0
-    ? `<strong>Also could be the move:</strong><ul>${suggestions.map(s => `<li>${s.name}</li>`).join('')}</ul>`
-    : '<em>No similar spots nearby</em>';
-
-  const todayHours = ev.hours ? getTodayHours(ev.hours) : "No hours available";
-  const isOpen = isOpenNow(ev.hours || []);
+  const todayHours = marker.hours || "No hours available";
+  const isOpen = marker.dayParts && (marker.dayParts.includes('M') || marker.dayParts.includes('MD') || marker.dayParts.includes('A') || marker.dayParts.includes('HH') || marker.dayParts.includes('E') || marker.dayParts.includes('L'));
   const statusText = isOpen ? "🟢 Open Now" : "🔴 Closed Now";
 
   details.innerHTML = `
-    <strong>${ev.name}</strong><br>
-    Vibe: ${ev.vibe}<br>
-    Price: ${ev.price || "N/A"}<br>
+    <strong>${marker.name}</strong><br>
+    Vibe: ${marker.vibe}<br>
+    Price: ${marker.price || "N/A"}<br>
     Status: ${statusText}<br>
     Today's Hours: ${todayHours}<br>
-    <a href="${ev.link}" target="_blank">View More</a><br>
+    <a href="${marker.link}" target="_blank">View More</a><br>
     <button id="favoriteLocationBtn">❤️</button>
     <button id="addToRoute">Add to Route</button>
     <button id="exportGooglePopup">Export Route to Google Maps</button>
     <button id="closeDetails">Close</button>
-    <hr>
-    ${suggestionHtml}
   `;
 
   details.style.display = 'block';
 
   document.getElementById('favoriteLocationBtn').addEventListener('click', () => {
-    saveFavorite(ev.name);
+    saveFavorite(marker.name);
   });
   document.getElementById('addToRoute').addEventListener('click', () => {
-    addPointToRoute(latlng);
+    addPointToRoute(marker.latlng);
   });
   document.getElementById('exportGooglePopup').addEventListener('click', () => {
     if (selectedPoints.length < 2) {
@@ -449,6 +444,42 @@ function applyFilters() {
     details.style.display = 'none';
   });
 }
+
+// Bind popup and click handler when creating markers
+fetch('events.json')
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(ev => {
+      const latlng = L.latLng(parseFloat(ev.lat), parseFloat(ev.lon));
+      const mInstance = L.marker(latlng);
+
+      mInstance.bindPopup(`
+        <strong>${ev.name}</strong><br>
+        Vibe: ${ev.vibe}<br>
+        Price: ${ev.price || "N/A"}<br>
+        <a href="${ev.link}" target="_blank">View More</a><br>
+        <button onclick="showDetails('${ev.name}')">More Details</button>
+      `);
+
+      mInstance.on('click', () => mInstance.openPopup());
+
+      const marker = {
+        name: ev.name,
+        vibe: ev.vibe,
+        price: ev.price,
+        duration: ev.duration,
+        latlng,
+        neighborhood: ev.neighborhood || 'unknown',
+        dayParts: Object.values(ev.dayParts).join(','),
+        markerInstance: mInstance,
+        tags: ev.tags || '',
+        hours: ev.hours,
+        link: ev.link
+      };
+
+      allMarkers.push(marker);
+      markerCluster.addLayer(mInstance);
+    });
   });
 
 </script>
