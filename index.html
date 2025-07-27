@@ -350,26 +350,34 @@ fetch('events.json')
     }
   });
   
-function getTodayHours(hoursArray = []) {
-  const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-  return hoursArray.find(entry => entry.startsWith(today)) || "Hours not available";
+function getTodayHours(hoursArray) {
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const today = days[new Date().getDay()];
+  const todayEntry = hoursArray.find(entry => entry.startsWith(today));
+  return todayEntry || "Hours not available";
 }
-
-function isOpenNow(hoursArray = []) {
-  const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-  const entry = hoursArray.find(h => h.toLowerCase().startsWith(today.toLowerCase()));
-  if (!entry) return false;
-
-  const [openStr, closeStr] = entry.replace(/[–—−]/g, "-").split("-").map(str => str.trim());
-  if (!openStr || !closeStr) return false;
-
+ function isOpenNow(hoursArray) {
   const now = new Date();
-  const openTime = new Date(`${now.toDateString()} ${openStr}`);
-  let closeTime = new Date(`${now.toDateString()} ${closeStr}`);
-  if (closeTime <= openTime) closeTime.setDate(closeTime.getDate() + 1);
+  const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const today = dayNames[now.getDay()];
 
-  return now >= openTime && now <= closeTime;
+  const todayHoursEntry = hoursArray.find(h => h.toUpperCase().startsWith(today.toUpperCase()));
+  if (!todayHoursEntry) return false;
+
+  const cleanHours = todayHoursEntry.replace(/\u2013|\u2014|\u2212/g, "-").replace(/\u202F|\u00A0/g, " ");
+
+  const match = cleanHours.match(/(\d{1,2}(?::\d{2})?\s*[APMapm]{2})\s*-\s*(\d{1,2}(?::\d{2})?\s*[APMapm]{2})/);
+  if (!match) return false;
+
+  const [_, openStr, closeStr] = match;
+  const open = new Date(`${now.toDateString()} ${openStr}`);
+  let close = new Date(`${now.toDateString()} ${closeStr}`);
+
+  if (close <= open) close.setDate(close.getDate() + 1);
+
+  return now >= open && now <= close;
 }
+
 
   document.getElementById('map-search').addEventListener('input', applyFilters);
 
