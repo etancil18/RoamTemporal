@@ -137,43 +137,6 @@
 <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 <script>
    
-  
-  function getTodayHours(hoursArray) {
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const today = days[new Date().getDay()];
-    const todayEntry = hoursArray.find(entry => entry.startsWith(today));
-    return todayEntry || "Hours not available";
-  }
-
-  function isOpenNow(hoursArray) {
-    const now = new Date();
-    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const today = dayNames[now.getDay()];
-    const todayHoursEntry = hoursArray.find(h => h.toUpperCase().startsWith(today.toUpperCase()));
-    if (!todayHoursEntry) return false;
-    const cleanHours = todayHoursEntry.replace(/\u2013|\u2014|\u2212/g, "-").replace(/\u202F|\u00A0/g, " ");
-    const match = cleanHours.match(/(\d{1,2}(?::\d{2})?\s*[APMapm]{2})\s*-\s*(\d{1,2}(?::\d{2})?\s*[APMapm]{2})/);
-    if (!match) return false;
-    const [_, openStr, closeStr] = match;
-    const open = new Date(`${now.toDateString()} ${openStr}`);
-    let close = new Date(`${now.toDateString()} ${closeStr}`);
-    if (close <= open) close.setDate(close.getDate() + 1);
-    return now >= open && now <= close;
-  }
-
-  document.getElementById('crawlNowBtn').addEventListener('click', () => {
-  const neighborhood = document.getElementById('neighborhood-input').value;
-  const theme = document.getElementById('themeDropdown').value;
-  const price = document.getElementById('priceFilter').value;
-  const duration = document.getElementById('durationDropdown').value;
-
-  if (!neighborhood) {
-    alert('Please select a neighborhood first.');
-    return;
-  }
-
-  generateCrawl({ neighborhood, theme, price, duration });
-});
 
   const neighborhoodCenters = {
   "alphabet city": L.latLng(40.7265, -73.9815),
@@ -199,6 +162,29 @@
   "williamsburg": L.latLng(40.7081, -73.9571)
 };
 
+function getTodayHours(hoursArray) {
+      const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      const today = days[new Date().getDay()];
+      const todayEntry = hoursArray.find(entry => entry.startsWith(today));
+      return todayEntry || "Hours not available";
+    }
+
+    function isOpenNow(hoursArray) {
+      const now = new Date();
+      const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      const today = dayNames[now.getDay()];
+      const todayHoursEntry = hoursArray.find(h => h.toUpperCase().startsWith(today.toUpperCase()));
+      if (!todayHoursEntry) return false;
+      const cleanHours = todayHoursEntry.replace(/\u2013|\u2014|\u2212/g, "-").replace(/\u202F|\u00A0/g, " ");
+      const match = cleanHours.match(/(\d{1,2}(?::\d{2})?\s*[APMapm]{2})\s*-\s*(\d{1,2}(?::\d{2})?\s*[APMapm]{2})/);
+      if (!match) return false;
+      const [_, openStr, closeStr] = match;
+      const open = new Date(`${now.toDateString()} ${openStr}`);
+      let close = new Date(`${now.toDateString()} ${closeStr}`);
+      if (close <= open) close.setDate(close.getDate() + 1);
+      return now >= open && now <= close;
+    }
+  
 let map;
 let markerCluster = L.markerClusterGroup();
 let allMarkers = [];
@@ -244,6 +230,20 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
   document.getElementById('map-search').addEventListener('input', applyFilters);
+
+  document.getElementById('crawlNowBtn')?.addEventListener('click', () => {
+        const neighborhood = document.getElementById('neighborhood-input')?.value;
+        const theme = document.getElementById('themeDropdown')?.value;
+        const price = document.getElementById('priceFilter')?.value;
+        const duration = document.getElementById('durationDropdown')?.value;
+
+        if (!neighborhood) {
+          alert('Please select a neighborhood first.');
+          return;
+        }
+
+        generateCrawl({ neighborhood, theme, price, duration });
+      });
 });
 
 function applyFilters() {
