@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Roam MVP Map</title>
+  <title>Roam Crawl Map</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
   <style>
-    * {
-      box-sizing: border-box;
-    }
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
     }
     #map {
       height: 100vh;
@@ -31,40 +26,6 @@
       padding: 10px;
       display: none;
       border-top: 1px solid #ccc;
-    }
-    .controls {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      right: 10px;
-      z-index: 1000;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      background: rgba(255,255,255,0.9);
-      padding: 8px;
-      border-radius: 8px;
-    }
-    .controls select,
-    .controls input,
-    .controls button {
-      font-size: 14px;
-      padding: 5px;
-      flex: 1 1 120px;
-    }
-    @media (min-width: 768px) {
-      .controls {
-        flex-wrap: nowrap;
-        gap: 10px;
-        top: 10px;
-        left: 50px;
-        right: auto;
-      }
-      .controls select,
-      .controls input,
-      .controls button {
-        flex: unset;
-      }
     }
   </style>
 </head>
