@@ -228,7 +228,6 @@ function generateCrawl({ neighborhood, theme, price, duration }) {
   const priceOptions = priceTiers[price] || ["$", "$$", "$$$", "$$$$"];
 
   const used = new Set();
-
   const crawl = [];
   let currentTime = hour;
   let currentDayPart = dayPart;
@@ -264,9 +263,14 @@ function generateCrawl({ neighborhood, theme, price, duration }) {
     currentTime += Math.round(current.duration || 1);
     currentDayPart = getNextDayPart(currentTime);
 
+    const maxDistances = [500, 275, 150];
+    const fallbackDistance = 75;
+    const stepIndex = crawl.length - 1;
+    const maxDistance = stepIndex < maxDistances.length ? maxDistances[stepIndex] : fallbackDistance;
+
     const next = allMarkers.find(marker => {
       if (used.has(marker.name) || marker === current) return false;
-      const isClose = current.latlng.distanceTo(marker.latlng) < 800;
+      const isClose = current.latlng.distanceTo(marker.latlng) <= maxDistance;
       const sharesVibe = marker.vibe && current.vibe && marker.vibe.split(',').some(v => current.vibe.includes(v));
       const themeMatch = themeVibes.some(tv => marker.vibe && marker.vibe.toLowerCase().includes(tv));
       const isOpen = marker.dayParts && marker.dayParts.includes(currentDayPart);
