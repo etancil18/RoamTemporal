@@ -115,6 +115,18 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 
 let allLocations = [];
 
+function generateCrawlRoute(allLocations) {
+  const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
+  const priceFilter = document.getElementById('priceFilter').value.trim();
+  const theme = document.getElementById('themeDropdown').value.toLowerCase();
+  const durationSetting = document.getElementById('durationDropdown').value;
+
+  const neighborhoodCenter = neighborhoodCenters[neighborhood];
+  if (!neighborhoodCenter) {
+    alert('Invalid neighborhood selected.');
+    return;
+  }
+  
 fetch('events.json')
   .then(res => res.json())
   .then(events => {
@@ -179,17 +191,6 @@ const themeMap = {
   "urban safari": ["explore", "rooftop", "view", "city", "street", "skyline", "vr", "wander", "overlook"]
 };
 
-function generateCrawlRoute(allLocations) {
-  const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
-  const priceFilter = document.getElementById('priceFilter').value.trim();
-  const theme = document.getElementById('themeDropdown').value.toLowerCase();
-  const durationSetting = document.getElementById('durationDropdown').value;
-
-  const neighborhoodCenter = neighborhoodCenters[neighborhood];
-  if (!neighborhoodCenter) {
-    alert('Invalid neighborhood selected.');
-    return;
-  }
 
   const openLocations = allLocations.filter(loc => {
     const priceTiers = ['$', '$$', '$$$', '$$$$'];
@@ -260,39 +261,6 @@ function generateCrawlRoute(allLocations) {
     show: false
   }).addTo(map);
 }
-
-    const allLocations = [
-  { name: 'Cafe Sunrise', dayParts: ['M', 'MD'], lat: 40.72, lon: -73.98, duration: 1, price: '$$', theme: 'creative recharge', vibe: ['cafe', 'sunlight', 'quiet', 'artsy'] },
-  { name: 'Noon Bites', dayParts: ['MD', 'A'], lat: 40.73, lon: -73.99, duration: 1.5, price: '$', theme: 'power lunch', vibe: ['lunch', 'bistro', 'daytime', 'bite'] },
-  { name: 'Evening Lounge', dayParts: ['E', 'L'], lat: 40.74, lon: -73.97, duration: 2, price: '$$$', theme: 'quiet luxury', vibe: ['lounge', 'refined', 'cocktail', 'elegant'] },
-  { name: 'Matcha Muse', dayParts: ['M', 'MD'], lat: 40.731, lon: -73.962, duration: 0.8, price: '$', theme: 'wellness ritual', vibe: ['matcha', 'relax', 'serenity', 'spa'] },
-  { name: 'Sunset Overlook', dayParts: ['E', 'L'], lat: 40.728, lon: -73.951, duration: 1.2, price: '$$', theme: 'urban safari', vibe: ['view', 'city', 'overlook', 'skyline'] },
-  { name: 'Basement Beats', dayParts: ['HH', 'E', 'L'], lat: 40.725, lon: -73.994, duration: 1.5, price: '$', theme: 'alt crawl', vibe: ['underground', 'dance', 'vinyl', 'beats'] },
-  { name: 'Bodega Poetry Club', dayParts: ['MD', 'A', 'HH'], lat: 40.729, lon: -73.987, duration: 1, price: '$', theme: 'creative recharge', vibe: ['poetry', 'cafe', 'art', 'book'] },
-  { name: 'Rooftop Reverie', dayParts: ['HH', 'E'], lat: 40.743, lon: -73.991, duration: 1.5, price: '$$$', theme: 'quiet luxury', vibe: ['rooftop', 'chic', 'cocktail', 'elegant'] },
-  { name: 'Vinyl Vibes', dayParts: ['L'], lat: 40.726, lon: -73.993, duration: 1.3, price: '$$', theme: "hedonist's loop", vibe: ['vinyl', 'club', 'late', 'after hours'] },
-  { name: 'Cozy Hearth Cafe', dayParts: ['M', 'MD', 'A'], lat: 40.731, lon: -73.985, duration: 1, price: '$$', theme: 'cozy corners', vibe: ['cozy', 'cafe', 'hearth', 'quiet'] },
-  { name: 'Modernist Martini', dayParts: ['E', 'L'], lat: 40.735, lon: -74.004, duration: 1.8, price: '$$$$', theme: 'flirt & flow', vibe: ['martini', 'romantic', 'modernist', 'date'] },
-  { name: 'Sound Bath Studio', dayParts: ['MD', 'A'], lat: 40.728, lon: -73.981, duration: 1.2, price: '$$', theme: 'wellness ritual', vibe: ['sound', 'bath', 'spa', 'relax'] },
-  { name: 'Gastronome Grove', dayParts: ['MD', 'A'], lat: 40.745, lon: -73.982, duration: 2.5, price: '$$$$', theme: 'power lunch', vibe: ['lunch', 'grove', 'bite', 'bistro'] },
-  { name: 'Velvet Underground', dayParts: ['E', 'L'], lat: 40.742, lon: -73.995, duration: 3, price: '$$$', theme: 'alt crawl', vibe: ['basement', 'velvet', 'eclectic', 'indie'] },
-  { name: 'Skyline Sanctuary', dayParts: ['HH', 'E'], lat: 40.736, lon: -73.988, duration: 2, price: '$$$$', theme: 'urban safari', vibe: ['skyline', 'rooftop', 'view', 'city'] },
-  { name: 'Serenity Spa Retreat', dayParts: ['MD', 'A'], lat: 40.733, lon: -73.969, duration: 2.5, price: '$$$', theme: 'wellness ritual', vibe: ['spa', 'serenity', 'retreat', 'relax'] },
-  { name: 'Starlight Cinema Lounge', dayParts: ['E', 'L'], lat: 40.737, lon: -73.986, duration: 2, price: '$$', theme: 'cozy corners', vibe: ['cinema', 'cozy', 'quiet', 'intimate'] },
-  { name: 'Elysian Fields Cafe', dayParts: ['M', 'MD'], lat: 40.721, lon: -73.989, duration: 1.5, price: '$$', theme: 'creative recharge', vibe: ['cafe', 'fields', 'art', 'inspire'] },
-  { name: 'Twilight Jazz Club', dayParts: ['E', 'L'], lat: 40.729, lon: -74.002, duration: 2, price: '$$', theme: 'flirt & flow', vibe: ['twilight', 'jazz', 'flirt', 'vibe'] },
-  { name: 'Night Owl Diner', dayParts: ['L'], lat: 40.734, lon: -73.995, duration: 1, price: '$', theme: "hedonist's loop", vibe: ['diner', 'late', 'after hours', 'party'] },
-  { name: 'Meditation Cove', dayParts: ['M', 'MD'], lat: 40.732, lon: -73.982, duration: 3, price: '$$', theme: 'wellness ritual', vibe: ['meditation', 'garden', 'cove', 'relax'] },
-  { name: 'Chef’s Lab Experience', dayParts: ['A', 'HH'], lat: 40.746, lon: -73.984, duration: 3.5, price: '$$$$', theme: 'quiet luxury', vibe: ['chef', 'lab', 'tasting', 'refined'] },
-  { name: 'After Hours Social Club', dayParts: ['L'], lat: 40.735, lon: -73.997, duration: 2.5, price: '$$$', theme: "hedonist's loop", vibe: ['club', 'after hours', 'social', 'cocktail'] },
-  { name: 'Artisan Craft Workshop', dayParts: ['M', 'MD'], lat: 40.728, lon: -73.988, duration: 4, price: '$$', theme: 'creative recharge', vibe: ['craft', 'studio', 'workshop', 'art'] },
-  { name: 'Boulevard Brunch Bar', dayParts: ['MD'], lat: 40.724, lon: -73.991, duration: 2, price: '$$', theme: 'power lunch', vibe: ['brunch', 'bar', 'lunch', 'bistro'] },
-  { name: 'Dreamscape VR Studio', dayParts: ['A', 'HH'], lat: 40.730, lon: -73.990, duration: 2, price: '$$', theme: 'urban safari', vibe: ['vr', 'explore', 'studio', 'city'] },
-  { name: 'Deep Chill Lounge', dayParts: ['E', 'L'], lat: 40.727, lon: -73.996, duration: 3, price: '$$$', theme: 'alt crawl', vibe: ['chill', 'beats', 'lounge', 'underground'] },
-  { name: 'Twilight Tasting Room', dayParts: ['E', 'L'], lat: 40.740, lon: -73.983, duration: 2.5, price: '$$$$', theme: 'quiet luxury', vibe: ['twilight', 'tasting', 'cocktail', 'elegant'] },
-  { name: 'Ambient Flow Garden', dayParts: ['M', 'MD'], lat: 40.725, lon: -73.979, duration: 3, price: '$$', theme: 'wellness ritual', vibe: ['ambient', 'garden', 'serenity', 'relax'] },
-  { name: 'Boho Book Nook', dayParts: ['M', 'MD', 'A'], lat: 40.722, lon: -73.984, duration: 1.5, price: '$', theme: 'cozy corners', vibe: ['book', 'nook', 'cozy', 'quiet'] }
-];
 
   
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
