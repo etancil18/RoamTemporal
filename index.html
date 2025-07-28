@@ -139,7 +139,15 @@ fetch('events.json')
       marker.duration = ev.duration || 0;
       marker.options.link = ev.link;
       marker.options.hours = ev.hours || [];
-      )
+
+      // Add marker to the map or some layer group if needed
+      marker.addTo(map); // or someGroup.addLayer(marker);
+    });
+  })
+  .catch(error => {
+    console.error('Error loading events:', error);
+  });
+      
 
     allLocations = events.map(ev => ({
       name: ev.name,
