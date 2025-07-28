@@ -131,31 +131,36 @@ function generateCrawlRoute(allLocations) {
 fetch('events.json')
   .then(res => res.json())
   .then(events => {
-    allLocations = events.map(ev => {
+    events.forEach(ev => {
       const lat = parseFloat(ev.lat);
       const lon = parseFloat(ev.lon);
       if (!isNaN(lat) && !isNaN(lon)) {
         const marker = L.marker([lat, lon], { icon: defaultIcon }).addTo(map);
         marker.bindPopup(`<b>${ev.name}</b><br>${ev.vibe}`);
       }
-      return {
-        name: ev.name,
-        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
-        lat,
-        lon,
-        link: ev.link,
-        openNow: ev.openNow,
-        hours: ev.hours || [],
-        hoursNumeric: ev.hoursNumeric || {},
-        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
-        timeCategory: ev.timeCategory,
-        energyRamp: ev.energyRamp,
-        tags: ev.tags,
-        price: ev.price,
-        duration: ev.duration
-      };
     });
+
+    allLocations = events.map(ev => ({
+      name: ev.name,
+      vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+      lat: parseFloat(ev.lat),
+      lon: parseFloat(ev.lon),
+      link: ev.link,
+      openNow: ev.openNow,
+      hours: ev.hours || [],
+      hoursNumeric: ev.hoursNumeric || {},
+      dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
+      timeCategory: ev.timeCategory,
+      energyRamp: ev.energyRamp,
+      tags: ev.tags,
+      price: ev.price,
+      duration: ev.duration
+    }));
   })
+  .catch(err => {
+    console.error('Failed to load event data:', err);
+    alert('Could not load event data.');
+  });
   
 function getCurrentDayPart() {
   const hour = new Date().getHours();
