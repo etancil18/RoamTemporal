@@ -137,7 +137,7 @@ fetch('events.json')
       if (!isNaN(lat) && !isNaN(lon)) {
         const marker = L.marker([lat, lon], { icon: defaultIcon }).addTo(map);
         marker.bindPopup(`<b>${ev.name}</b><br>${ev.vibe}`);
-      });
+      })
     });
   
 function getCurrentDayPart() {
