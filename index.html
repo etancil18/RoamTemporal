@@ -230,8 +230,9 @@ const themeMap = {
   function checkOpenLocations(openLocations) {
   if (openLocations.length === 0) {
     alert('No suitable locations found.');
-    return;
+    return false;
   }
+  return true;
 }
 
   const initialOptions = openLocations.filter(loc => {
@@ -240,10 +241,13 @@ const themeMap = {
     return center.distanceTo(locLatLng) <= 175;
   });
 
+  function checkInitialOptions(initialOptions) {
   if (initialOptions.length === 0) {
     alert('No suitable starting points within the neighborhood center.');
-    return;
+    return false;
   }
+  return true;
+}
 
   const crawlRoute = [initialOptions[0]];
   let totalDuration = initialOptions[0].duration || 0;
