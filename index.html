@@ -137,8 +137,25 @@ fetch('events.json')
       if (!isNaN(lat) && !isNaN(lon)) {
         const marker = L.marker([lat, lon], { icon: defaultIcon }).addTo(map);
         marker.bindPopup(`<b>${ev.name}</b><br>${ev.vibe}`);
-      })
+      }
+      return {
+        name: ev.name,
+        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+        lat,
+        lon,
+        link: ev.link,
+        openNow: ev.openNow,
+        hours: ev.hours || [],
+        hoursNumeric: ev.hoursNumeric || {},
+        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
+        timeCategory: ev.timeCategory,
+        energyRamp: ev.energyRamp,
+        tags: ev.tags,
+        price: ev.price,
+        duration: ev.duration
+      };
     });
+  })
   
 function getCurrentDayPart() {
   const hour = new Date().getHours();
