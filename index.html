@@ -187,29 +187,6 @@ fetch('events.json')
       `;
 
       const marker = L.marker([ev.lat, ev.lon], { icon });
-
-const now = new Date();
-const currentHour = now.getHours();
-const today = now.getDay();
-const todayLabel = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][today];
-const todayHours = ev.hours?.[today] || 'N/A';
-
-const todayNumeric = ev.hoursNumeric?.[today];
-let openStatus = 'Unknown';
-if (todayNumeric && typeof todayNumeric.open === 'number' && typeof todayNumeric.close === 'number') {
-  openStatus = (currentHour >= todayNumeric.open && currentHour < todayNumeric.close) ? 'Open now' : 'Closed';
-}
-
-const popupContent = `
-  <div style="font-size: 14px; line-height: 1.4;">
-    <strong>${ev.name}</strong><br/>
-    <em>Vibe:</em> ${ev.vibe}<br/>
-    <em>Hours (${todayLabel}):</em> ${todayHours}<br/>
-    <strong style="color:${openStatus === 'Open now' ? 'green' : 'red'};">${openStatus}</strong><br/>
-    <a href="${ev.link}" target="_blank">More Info</a>
-  </div>
-`;
-
 marker.bindPopup(popupContent);
 marker.addTo(map);
 });
