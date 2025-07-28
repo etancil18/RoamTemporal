@@ -104,12 +104,18 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19
 }).addTo(map);
 
+const favorites = getFavorites();  
 fetch('events.json')
   .then(res => res.json())
   .then(events => {
-    allLocations = events.map(ev => {
-      const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)]).addTo(map);
-      marker.bindPopup(`<strong>${ev.name}</strong><br>${ev.vibe}<br><a href='${ev.link}' target='_blank'>More Info</a>`);
+    events.forEach(ev => {
+      const marker = L.marker([ev.lat, ev.lon], { icon: defaultIcon });
+      marker.vibe = ev.vibe.toLowerCase();
+      marker.name = ev.name.toLowerCase();
+      marker.price = ev.price;
+      marker.duration = ev.duration || 0;
+      marker.options.link = ev.link;
+      marker.options.hours = ev.hours || [];
 
       return {
         name: ev.name,
