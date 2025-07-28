@@ -127,11 +127,6 @@ fetch('events.json')
         price: ev.price,
         duration: ev.duration
       };
-        ...ev,
-        lat: parseFloat(ev.lat),
-        lon: parseFloat(ev.lon),
-        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
-        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== '')
       };
     });
   
