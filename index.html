@@ -167,12 +167,6 @@ const neighborhoodCenters = {
 };
 
 
-    document.getElementById('crawlNowBtn').addEventListener('click', () => {
-      generateCrawlRoute(allLocations);
-    });
-
- 
-
 const themeMap = {
   "quiet luxury": ["martini", "rooftop", "lounge", "luxury", "refined", "tasting", "elegant", "cocktail", "chic"],
   "hedonist's loop": ["vinyl", "dance", "cocktail", "party", "beats", "late", "diner", "club", "after hours"],
@@ -299,7 +293,11 @@ function generateCrawlRoute(allLocations) {
   { name: 'Ambient Flow Garden', dayParts: ['M', 'MD'], lat: 40.725, lon: -73.979, duration: 3, price: '$$', theme: 'wellness ritual', vibe: ['ambient', 'garden', 'serenity', 'relax'] },
   { name: 'Boho Book Nook', dayParts: ['M', 'MD', 'A'], lat: 40.722, lon: -73.984, duration: 1.5, price: '$', theme: 'cozy corners', vibe: ['book', 'nook', 'cozy', 'quiet'] }
 ];
- 
+
+  
+    document.getElementById('crawlNowBtn').addEventListener('click', () => {
+      generateCrawlRoute(allLocations);
+    });
 
 </script>
 <div style="position: absolute; bottom: 3px; right: 0px; z-index: 1000; background: rgba(255,255,255,0.8); padding: 4px 8px; border-radius: 4px; font-size: 8px;">
