@@ -235,12 +235,6 @@ const themeMap = {
   return true;
 }
 
-  const initialOptions = openLocations.filter(loc => {
-    const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
-    const locLatLng = L.latLng(loc.lat, loc.lon);
-    return center.distanceTo(locLatLng) <= 175;
-  });
-
   function checkInitialOptions(initialOptions) {
   if (initialOptions.length === 0) {
     alert('No suitable starting points within the neighborhood center.');
@@ -249,6 +243,24 @@ const themeMap = {
   return true;
 }
 
+  function checkCrawlRoute(crawlRoute) {
+  if (crawlRoute.length < 2) {
+    alert('A crawl requires at least 2 stops. Try adjusting your filters or duration.');
+    return false;
+  }
+  return true;
+}
+
+  if (!checkOpenLocations(openLocations)) return;
+
+  const initialOptions = openLocations.filter(loc => {
+    const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+    const locLatLng = L.latLng(loc.lat, loc.lon);
+    return center.distanceTo(locLatLng) <= 175;
+  });
+
+  if (!checkInitialOptions(initialOptions)) return;
+  
   const crawlRoute = [initialOptions[0]];
   let totalDuration = initialOptions[0].duration || 0;
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
@@ -273,13 +285,7 @@ const themeMap = {
     if (totalDuration >= maxDuration) break;
   }
 
-  function checkCrawlRoute(crawlRoute) {
-  if (crawlRoute.length < 2) {
-    alert('A crawl requires at least 2 stops. Try adjusting your filters or duration.');
-    return false;
-  }
-  return true;
-}
+  if (!checkCrawlRoute(crawlRoute)) return;
 
   if (window.routeLayer) {
     map.removeControl(window.routeLayer);
@@ -293,10 +299,6 @@ const themeMap = {
     addWaypoints: false,
     show: false
   }).addTo(map);
-
-  if (!checkOpenLocations(openLocations)) return;
-if (!checkInitialOptions(initialOptions)) return;
-  if (!checkCrawlRoute(crawlRoute)) return;
   
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
       generateCrawlRoute(allLocations);
