@@ -124,7 +124,60 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   L: 'black'        // Late Night
 };
 
+  function renderMarkers(events) {
+  const weekdayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+  const todayIndex = new Date().getDay();
+  const todayKey = weekdayKeys[todayIndex];
+
+  events.forEach(ev => {
+    const relevantDayPart = ev.dayParts?.[todayKey] && ev.dayParts[todayKey] !== '-'
+      ? ev.dayParts[todayKey]
+      : 'M';
+    const markerColor = dayPartColors[relevantDayPart] || 'gray';
+
+    const icon = new L.Icon({
+      iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
+      shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
+
+    const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
+    const popupContent = `
+      <div style="font-size: 14px; line-height: 1.4;">
+        <strong>${ev.name}</strong><br/>
+        <em>Vibe:</em> ${ev.vibe}<br/>
+        <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
+        <a href="${ev.link}" target="_blank">More Info</a>
+      </div>
+    `;
+    marker.bindPopup(popupContent).addTo(map);
+  });
+}
+
+// Global cache for crawl logic
+let globalEvents = [];
+
+// Initial data fetch + map rendering
+fetch('events.json')
+  .then(res => res.json())
+  .then(events => {
+    globalEvents = events;         // Store globally
+    renderMarkers(events);         // Render all locations immediately
+  })
+  .catch(err => {
+    console.error('Error loading events:', err);
+    alert('Failed to load locations.');
+  });
+
 function generateCrawlRoute() {
+  if (!globalEvents.length) {
+    alert("Locations not loaded yet. Please wait a second and try again.");
+    return;
+  }
+
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
   const priceFilter = document.getElementById('priceFilter').value.trim();
   const theme = document.getElementById('themeDropdown').value.toLowerCase();
@@ -136,58 +189,22 @@ function generateCrawlRoute() {
     return;
   }
 
-  fetch('events.json')
-    .then(res => res.json())
-    .then(events => {
-      const weekdayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
-      const todayIndex = new Date().getDay();
-      const todayKey = weekdayKeys[todayIndex];
-
-      // Draw markers
-      events.forEach(ev => {
-        const relevantDayPart = ev.dayParts?.[todayKey] && ev.dayParts[todayKey] !== '-'
-          ? ev.dayParts[todayKey]
-          : 'M';
-        const markerColor = dayPartColors[relevantDayPart] || 'gray';
-
-        const icon = new L.Icon({
-          iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
-          shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-          iconSize: [25, 41],
-          iconAnchor: [12, 41],
-          popupAnchor: [1, -34],
-          shadowSize: [41, 41]
-        });
-
-        const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
-        const popupContent = `
-          <div style="font-size: 14px; line-height: 1.4;">
-            <strong>${ev.name}</strong><br/>
-            <em>Vibe:</em> ${ev.vibe}<br/>
-            <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
-            <a href="${ev.link}" target="_blank">More Info</a>
-          </div>
-        `;
-        marker.bindPopup(popupContent).addTo(map);
-      });
-
-      // Cleaned data structure for routing
-      const allLocations = events.map(ev => ({
-        name: ev.name,
-        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
-        lat: parseFloat(ev.lat),
-        lon: parseFloat(ev.lon),
-        link: ev.link,
-        openNow: ev.openNow,
-        hours: ev.hours || [],
-        hoursNumeric: ev.hoursNumeric || {},
-        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
-        timeCategory: ev.timeCategory,
-        energyRamp: ev.energyRamp,
-        tags: ev.tags,
-        price: ev.price,
-        duration: ev.duration
-      }));
+  const allLocations = globalEvents.map(ev => ({
+    name: ev.name,
+    vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+    lat: parseFloat(ev.lat),
+    lon: parseFloat(ev.lon),
+    link: ev.link,
+    openNow: ev.openNow,
+    hours: ev.hours || [],
+    hoursNumeric: ev.hoursNumeric || {},
+    dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
+    timeCategory: ev.timeCategory,
+    energyRamp: ev.energyRamp,
+    tags: ev.tags,
+    price: ev.price,
+    duration: ev.duration
+  }));
 
       const currentDayParts = getCurrentDayPart();
       const priceTiers = ['$', '$$', '$$$', '$$$$'];
@@ -283,6 +300,7 @@ function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
 
 // ✅ Only trigger crawl logic on button click — no arguments needed
 document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
+
 
 </script>
 <div style="position: absolute; bottom: 3px; right: 0px; z-index: 1000; background: rgba(255,255,255,0.8); padding: 4px 8px; border-radius: 4px; font-size: 8px;">
