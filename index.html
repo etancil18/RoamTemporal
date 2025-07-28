@@ -116,23 +116,6 @@ fetch('events.json')
       marker.duration = ev.duration || 0;
       marker.options.link = ev.link;
       marker.options.hours = ev.hours || [];
-
-      return {
-        name: ev.name,
-        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
-        lat: parseFloat(ev.lat),
-        lon: parseFloat(ev.lon),
-        link: ev.link,
-        openNow: ev.openNow,
-        hours: ev.hours || [],
-        hoursNumeric: ev.hoursNumeric || {},
-        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
-        timeCategory: ev.timeCategory,
-        energyRamp: ev.energyRamp,
-        tags: ev.tags,
-        price: ev.price,
-        duration: ev.duration
-      };
       };
     });
   
