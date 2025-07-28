@@ -6,114 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-<style>
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-
-  #map {
-    height: 100vh;
-    width: 100vw;
-  }
-
-  #details {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    padding: 10px;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
-    font-size: 14px;
-    display: none;
-    z-index: 1000;
-  }
-
-  #details button {
-    display: block;
-    margin-top: 5px;
-    background: #ccc;
-    border: none;
-    padding: 5px;
-    width: 100%;
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  .controls {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    z-index: 1000;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    background: rgba(255,255,255,0.9);
-    padding: 8px;
-    border-radius: 8px;
-  }
-
-  .controls select,
-  .controls input,
-  .controls button {
-    font-size: 14px;
-    padding: 5px;
-    flex: 1 1 120px;
-  }
-
-  @media (min-width: 768px) {
-    #details {
-      width: 300px;
-      left: 50%;
-      bottom: auto;
-      top: 10px;
-      transform: translateX(-50%);
+  <style>
+    * {
+      box-sizing: border-box;
     }
-
-    #details button {
-      width: auto;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
     }
-
+    #map {
+      height: 100vh;
+      width: 100vw;
+    }
     .controls {
-      flex-wrap: nowrap;
-      gap: 10px;
+      position: absolute;
       top: 10px;
-      left: 50px;
-      right: auto;
+      left: 10px;
+      right: 10px;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      background: rgba(255,255,255,0.9);
+      padding: 8px;
+      border-radius: 8px;
     }
-
     .controls select,
-    .controls input,
     .controls button {
-      flex: unset;
+      font-size: 14px;
+      padding: 5px;
+      flex: 1 1 120px;
     }
-  }
-  .custom-blue-icon {
-  background-color: #007bff; /* Bootstrap blue */
-  color: white;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  text-align: center;
-  line-height: 28px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 2px solid white;
-  box-shadow: 0 0 3px rgba(0,0,0,0.5);
-}
   </style>
 </head>
 <body>
 <div class="controls">
-  <input id="map-search" type="text" placeholder="What's the vibe..." />
-
   <select id="themeDropdown">
     <option value="">Select Theme</option>
     <option value="Quiet Luxury">Quiet Luxury</option>
@@ -126,7 +54,6 @@
     <option value="Flirt & Flow">Flirt & Flow</option>
     <option value="Urban Safari">Urban Safari</option>
   </select>
-
   <select id="neighborhood-input">
     <option value="">Select Neighborhood</option>
     <option>Alphabet City</option>
@@ -151,7 +78,6 @@
     <option>West Village</option>
     <option>Williamsburg</option>
   </select>
-
   <select id="priceFilter">
     <option value="">Price</option>
     <option value="$">$</option>
@@ -159,245 +85,64 @@
     <option value="$$$">$$$</option>
     <option value="$$$$">$$$$</option>
   </select>
-
   <select id="durationDropdown">
     <option value="medium">How Long?</option>
     <option value="short">Short (≤2h)</option>
     <option value="medium">Medium (2.5–5h)</option>
     <option value="long">Long (5.5–8h)</option>
   </select>
-
   <button id="crawlNowBtn">Crawl Now</button>
 </div>
 <div id="map"></div>
-<div id="details"></div>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 <script>
-
 const map = L.map('map').setView([40.72, -73.98], 12);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap contributors & Carto',
   subdomains: 'abcd',
   maxZoom: 19
 }).addTo(map);
-  
-const markerCluster = L.markerClusterGroup({
-  spiderfyOnMaxZoom: true,
-  showCoverageOnHover: false,
-  zoomToBoundsOnClick: true,
-  maxClusterRadius: 40,
-  disableClusteringAtZoom: 17
-});
-map.addLayer(markerCluster);
-
-const allMarkers = [];
-let selectedPoints = [];
-let currentRoute = null;
-let enlargedMarkers = new Set();
-
-const defaultIcon = L.divIcon({
-  className: 'custom-blue-icon',
-  html: '', // You can add a number or letter here if desired
-  iconSize: [18, 18],
-  iconAnchor: [9, 18]
-});
-
-const enlargedIcon = L.icon({
-  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
-});
-    
-
-
-function enlargeMarker(marker) {
-  marker.setIcon(enlargedIcon);
-  enlargedMarkers.add(marker);
-}
-
-function resetMarker(marker) {
-  marker.setIcon(defaultIcon);
-  enlargedMarkers.delete(marker);
-}
-
-function resetAllEnlargedMarkers() {
-  enlargedMarkers.forEach(m => resetMarker(m));
-}
-
-  function showOnlySharedMarkers(latlngArray) {
-  markerCluster.clearLayers();
-  allMarkers.forEach(marker => {
-    if (latlngArray.some(p => marker.getLatLng().equals(p))) {
-      markerCluster.addLayer(marker);
-    }
-  });
-}
-
-  
-function getTodayHours(hoursArray) {
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const today = days[new Date().getDay()];
-  const todayEntry = hoursArray.find(entry => entry.startsWith(today));
-  return todayEntry || "Hours not available";
-}
- function isOpenNow(hoursArray) {
-  const now = new Date();
-  const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const today = dayNames[now.getDay()];
-
-  const todayHoursEntry = hoursArray.find(h => h.toUpperCase().startsWith(today.toUpperCase()));
-  if (!todayHoursEntry) return false;
-
-  const cleanHours = todayHoursEntry.replace(/\u2013|\u2014|\u2212/g, "-").replace(/\u202F|\u00A0/g, " ");
-
-  const match = cleanHours.match(/(\d{1,2}(?::\d{2})?\s*[APMapm]{2})\s*-\s*(\d{1,2}(?::\d{2})?\s*[APMapm]{2})/);
-  if (!match) return false;
-
-  const [_, openStr, closeStr] = match;
-  const open = new Date(`${now.toDateString()} ${openStr}`);
-  let close = new Date(`${now.toDateString()} ${closeStr}`);
-
-  if (close <= open) close.setDate(close.getDate() + 1);
-
-  return now >= open && now <= close;
-}
-
-
-  
-function showOnlySelectedMarkers() {
-  markerCluster.clearLayers();
-  allMarkers.forEach(marker => {
-    if (selectedPoints.some(p => marker.getLatLng().equals(p))) {
-      markerCluster.addLayer(marker);
-    }
-  });
-}
-
-function showDetails(ev, latlng) {
-  const details = document.getElementById('details');
-  const suggestions = findNearbySimilar(latlng, (ev.vibe || '').toLowerCase(), 350);
-
-  let suggestionHtml = suggestions.length > 0
-    ? `<strong>Also could be the move:</strong><ul>${suggestions.map(s => `<li>${s.name}</li>`).join('')}</ul>`
-    : '<em>No similar spots nearby</em>';
-
-  const todayHours = ev.hours ? getTodayHours(ev.hours) : "No hours available";
-
-  const isOpen = isOpenNow(ev.hours || []);
-  const statusText = isOpen ? "🟢 Open Now" : "🔴 Closed Now";
-
-  details.innerHTML = `
-    <strong>${ev.name}</strong><br>
-    Vibe: ${ev.vibe}<br>
-    Price: ${ev.price || "N/A"}<br>
-    Status: ${statusText}<br>
-    Today's Hours: ${todayHours}<br>
-    <a href="${ev.link}" target="_blank">View More</a><br>
-    <button id="exportGooglePopup">Export Route to Google Maps</button>
-    <button id="closeDetails">Close</button>
-    <hr>
-    ${suggestionHtml}
-  `;
-
-  details.style.display = 'block';
-
-  document.getElementById('favoriteLocationBtn').addEventListener('click', () => {
-  saveFavorite(ev.name);
-});
-
-  document.getElementById('addToRoute').addEventListener('click', () => {
-    addPointToRoute(latlng);
-  });
-
-  document.getElementById('exportGooglePopup').addEventListener('click', () => {
-    if (selectedPoints.length < 2) {
-      alert('Select at least 2 points to export a route.');
-      return;
-    }
-    const base = "https://www.google.com/maps/dir/";
-    const path = selectedPoints.map(p => `${p.lat},${p.lng}`).join('/');
-    window.open(base + path, '_blank');
-  });
-
-  document.getElementById('closeDetails').addEventListener('click', () => {
-    details.style.display = 'none';
-  });
-}
-
-
-function findNearbySimilar(latlng, vibeText = '', radius = 350) {
-  const tags = vibeText.split(',').map(t => t.trim().toLowerCase()).filter(Boolean);
-
-  const matches = allMarkers.filter(marker => {
-    const markerVibe = (marker.vibe || '').toLowerCase();
-    const distance = latlng.distanceTo(marker.getLatLng());
-
-    const vibeMatch = tags.length > 0
-      ? tags.some(tag => markerVibe.includes(tag))
-      : markerVibe.includes(vibeText.toLowerCase());
-
-    return distance <= radius && vibeMatch && !latlng.equals(marker.getLatLng());
-  });
-
-  console.log({
-    vibeText,
-    tags,
-    matchingMarkers: matches.map(m => m.name)
-  });
-
-  return matches.slice(0, 3);
-}
-
 
 
  function getCurrentDayPart() {
-      const hour = new Date().getHours();
-      if (hour >= 6 && hour < 11) return ['M'];
-      if (hour >= 11 && hour < 14) return ['MD'];
-      if (hour >= 14 && hour < 16) return ['A'];
-      if (hour >= 16 && hour < 19) return ['HH'];
-      if (hour >= 19 && hour < 22) return ['E'];
-      if (hour >= 22 || hour < 6) return ['L'];
-      return [];
-    }
+  const hour = new Date().getHours();
+  if (hour >= 6 && hour < 11) return ['M'];
+  if (hour >= 11 && hour < 14) return ['MD'];
+  if (hour >= 14 && hour < 16) return ['A'];
+  if (hour >= 16 && hour < 19) return ['HH'];
+  if (hour >= 19 && hour < 22) return ['E'];
+  if (hour >= 22 || hour < 6) return ['L'];
+  return [];
+}
 
-    const currentDayParts = getCurrentDayPart();
-    console.log('Current time segment(s):', currentDayParts);
+const currentDayParts = getCurrentDayPart();
 
-    function isOpenInCurrentDayPart(location) {
-      if (!location.dayParts || !Array.isArray(location.dayParts)) return false;
-      return location.dayParts.some(part => currentDayParts.includes(part));
-    }
+const neighborhoodCenters = {
+  "alphabet city": { lat: 40.7265, lon: -73.9815 },
+  "bedstuy": { lat: 40.6850, lon: -73.9419 },
+  "bushwick": { lat: 40.6943, lon: -73.9213 },
+  "chelsea": { lat: 40.7465, lon: -74.0014 },
+  "chinatown": { lat: 40.7158, lon: -73.9970 },
+  "clinton hill": { lat: 40.6896, lon: -73.9606 },
+  "downtown brooklyn": { lat: 40.6928, lon: -73.9903 },
+  "dumbo": { lat: 40.7033, lon: -73.9881 },
+  "east village": { lat: 40.7260, lon: -73.9816 },
+  "gramercy": { lat: 40.7376, lon: -73.9857 },
+  "greenpoint": { lat: 40.7301, lon: -73.9546 },
+  "greenwich village": { lat: 40.7336, lon: -74.0027 },
+  "lower east side": { lat: 40.7150, lon: -73.9843 },
+  "long island city": { lat: 40.7440, lon: -73.9488 },
+  "midtown": { lat: 40.7549, lon: -73.9840 },
+  "soho": { lat: 40.7233, lon: -74.0030 },
+  "tribeca": { lat: 40.7163, lon: -74.0086 },
+  "upper east side": { lat: 40.7736, lon: -73.9566 },
+  "upper west side": { lat: 40.7870, lon: -73.9754 },
+  "west village": { lat: 40.7359, lon: -74.0036 },
+  "williamsburg": { lat: 40.7081, lon: -73.9571 }
+};
 
-    const neighborhoodCenters = {
-      "alphabet city": { lat: 40.7265, lon: -73.9815 },
-      "bedstuy": { lat: 40.6850, lon: -73.9419 },
-      "bushwick": { lat: 40.6943, lon: -73.9213 },
-      "chelsea": { lat: 40.7465, lon: -74.0014 },
-      "chinatown": { lat: 40.7158, lon: -73.9970 },
-      "clinton hill": { lat: 40.6896, lon: -73.9606 },
-      "downtown brooklyn": { lat: 40.6928, lon: -73.9903 },
-      "dumbo": { lat: 40.7033, lon: -73.9881 },
-      "east village": { lat: 40.7260, lon: -73.9816 },
-      "gramercy": { lat: 40.7376, lon: -73.9857 },
-      "greenpoint": { lat: 40.7301, lon: -73.9546 },
-      "greenwich village": { lat: 40.7336, lon: -74.0027 },
-      "lower east side": { lat: 40.7150, lon: -73.9843 },
-      "long island city": { lat: 40.7440, lon: -73.9488 },
-      "midtown": { lat: 40.7549, lon: -73.9840 },
-      "soho": { lat: 40.7233, lon: -74.0030 },
-      "tribeca": { lat: 40.7163, lon: -74.0086 },
-      "upper east side": { lat: 40.7736, lon: -73.9566 },
-      "upper west side": { lat: 40.7870, lon: -73.9754 },
-      "west village": { lat: 40.7359, lon: -74.0036 },
-      "williamsburg": { lat: 40.7081, lon: -73.9571 }
-    };
-
-    const themeMap = {
+const themeMap = {
   "quiet luxury": ["martini", "rooftop", "lounge", "luxury", "refined", "tasting", "elegant", "cocktail", "chic"],
   "hedonist's loop": ["vinyl", "dance", "cocktail", "party", "beats", "late", "diner", "club", "after hours"],
   "creative recharge": ["cafe", "gallery", "poetry", "studio", "art", "workshop", "craft", "book", "inspire"],
@@ -410,111 +155,86 @@ function findNearbySimilar(latlng, vibeText = '', radius = 350) {
 };
 
 function generateCrawlRoute(allLocations) {
-      const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
-      const priceFilter = document.getElementById('priceFilter').value.trim();
-      const theme = document.getElementById('themeDropdown').value.toLowerCase();
-      const durationSetting = document.getElementById('durationDropdown').value;
+  const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
+  const priceFilter = document.getElementById('priceFilter').value.trim();
+  const theme = document.getElementById('themeDropdown').value.toLowerCase();
+  const durationSetting = document.getElementById('durationDropdown').value;
 
-      const neighborhoodCenter = neighborhoodCenters[neighborhood];
-      if (!neighborhoodCenter) {
-        alert('Invalid neighborhood selected.');
-        return;
+  const neighborhoodCenter = neighborhoodCenters[neighborhood];
+  if (!neighborhoodCenter) {
+    alert('Invalid neighborhood selected.');
+    return;
+  }
+
+  const openLocations = allLocations.filter(loc => {
+    const priceTiers = ['$', '$$', '$$$', '$$$$'];
+    const selectedTierIndex = priceTiers.indexOf(priceFilter);
+    const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
+    const matchesTheme = !theme || (themeMap[theme] || []).some(kw => loc.vibe?.join(' ').toLowerCase().includes(kw));
+    const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
+    const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
+    const isOpenTemporal = loc.dayParts.some(part => futureParts.includes(part));
+    return matchesPrice && matchesTheme && isOpenTemporal;
+  });
+
+  if (openLocations.length === 0) {
+    alert('No suitable locations found.');
+    return;
+  }
+
+  const initialOptions = openLocations.filter(loc => {
+    const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+    const locLatLng = L.latLng(loc.lat, loc.lon);
+    return center.distanceTo(locLatLng) <= 175;
+  });
+
+  if (initialOptions.length === 0) {
+    alert('No suitable starting points within the neighborhood center.');
+    return;
+  }
+
+  const crawlRoute = [initialOptions[0]];
+  let totalDuration = initialOptions[0].duration || 0;
+  const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
+
+  let lastStop = initialOptions[0];
+  let lastDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => lastStop.dayParts.includes(p));
+  const remaining = openLocations.filter(loc => loc !== lastStop);
+
+  for (let loc of remaining) {
+    if (!loc.duration || totalDuration + loc.duration > maxDuration) continue;
+    const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
+    const locLatLng = L.latLng(loc.lat, loc.lon);
+    if (lastLatLng.distanceTo(locLatLng) <= 350) {
+      const locDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => loc.dayParts.includes(p));
+      if (locDayPartIndex >= lastDayPartIndex) {
+        crawlRoute.push(loc);
+        totalDuration += loc.duration;
+        lastStop = loc;
+        lastDayPartIndex = locDayPartIndex;
       }
-
-      const openLocations = allLocations.filter(loc => {
-        const priceTiers = ['$', '$$', '$$$', '$$$$'];
-        const selectedTierIndex = priceTiers.indexOf(priceFilter);
-        const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
-        const matchesTheme = !theme || (() => {
-          const keywords = themeMap[theme] || [];
-          return keywords.some(kw => loc.vibe && loc.vibe.join(' ').toLowerCase().includes(kw));
-        })();
-        const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
-        const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
-        const isOpenTemporal = loc.dayParts.some(part => futureParts.includes(part));
-        return matchesPrice && matchesTheme && isOpenTemporal;
-      });
-
-      if (openLocations.length === 0) {
-        alert('No suitable locations found.');
-        return;
-      }
-
-      // Sort by proximity to neighborhood center
-      // Filter only those within 175m of neighborhood center for starting point
-      const initialOptions = openLocations.filter(loc => {
-        const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
-        const locLatLng = L.latLng(loc.lat, loc.lon);
-        const dist = center.distanceTo(locLatLng);
-        return dist <= 175; // in meters
-      });
-
-      if (initialOptions.length === 0) {
-        alert('No suitable starting points within the neighborhood center.');
-        return;
-      }
-
-      const crawlRoute = [initialOptions[0]];
-      let totalDuration = initialOptions[0].duration || 0;
-      const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
-
-      let lastStop = initialOptions[0];
-      let lastDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => lastStop.dayParts && lastStop.dayParts.includes(p));
-      const remaining = openLocations.filter(loc => loc !== lastStop);
-
-      for (let loc of remaining) {
-        if (!loc.duration || (totalDuration + loc.duration > maxDuration)) continue;
-        const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
-        const locLatLng = L.latLng(loc.lat, loc.lon);
-        const dist = lastLatLng.distanceTo(locLatLng);
-        if (dist <= 350) {
-          const locDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => loc.dayParts && loc.dayParts.includes(p));
-          if (locDayPartIndex >= lastDayPartIndex) {
-            crawlRoute.push(loc);
-            totalDuration += loc.duration;
-            lastStop = loc;
-            lastDayPartIndex = locDayPartIndex;
-          }
-        }
-        if (totalDuration >= maxDuration) break;
-      }
-        if (!loc.duration || (totalDuration + loc.duration > maxDuration)) continue;
-        const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
-        const locLatLng = L.latLng(loc.lat, loc.lon);
-        const dist = lastLatLng.distanceTo(locLatLng);
-        if (dist <= 350) { // ~350 meters in degrees
-          crawlRoute.push(loc);
-          totalDuration += loc.duration;
-          lastStop = loc;
-        }
-        if (totalDuration >= maxDuration) break;
-      }
-
-              if (totalDuration >= maxDuration) break;
-      }
-
-      if (crawlRoute.length < 2) {
-        alert('A crawl requires at least 2 stops. Try adjusting your filters or duration.');
-        return;
-      }
-
-      console.log('Generated Crawl Route:', crawlRoute);
-
-      // Clear any existing route layers
-      if (window.routeLayer) {
-        map.removeControl(window.routeLayer);
-      }
-
-      // Create and display the route
-      const waypoints = crawlRoute.map(loc => L.latLng(loc.lat, loc.lon));
-      window.routeLayer = L.Routing.control({
-        waypoints: waypoints,
-        routeWhileDragging: false,
-        draggableWaypoints: false,
-        addWaypoints: false,
-        show: false
-      }).addTo(map);
     }
+    if (totalDuration >= maxDuration) break;
+  }
+
+  if (crawlRoute.length < 2) {
+    alert('A crawl requires at least 2 stops. Try adjusting your filters or duration.');
+    return;
+  }
+
+  if (window.routeLayer) {
+    map.removeControl(window.routeLayer);
+  }
+
+  const waypoints = crawlRoute.map(loc => L.latLng(loc.lat, loc.lon));
+  window.routeLayer = L.Routing.control({
+    waypoints,
+    routeWhileDragging: false,
+    draggableWaypoints: false,
+    addWaypoints: false,
+    show: false
+  }).addTo(map);
+}
 
     const allLocations = [
   { name: 'Cafe Sunrise', dayParts: ['M', 'MD'], lat: 40.72, lon: -73.98, duration: 1, price: '$$', theme: 'creative recharge', vibe: ['cafe', 'sunlight', 'quiet', 'artsy'] },
