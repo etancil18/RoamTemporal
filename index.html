@@ -152,8 +152,8 @@ fetch('events.json')
       marker.addTo(map); // or someGroup.addLayer(marker);
     });
     events.forEach(ev => {
-  const dominantDayPart = ev.dayParts?.[0] || 'M'; // fallback to 'M'
-const markerColor = dayPartColors[dominantDayPart] || '808080'; // default gray
+  const dominantDayPart = ev.dayParts?.[0] || 'M';
+const markerColor = dayPartColors[dominantDayPart] || 'gray';
 
 const icon = L.icon({
   iconUrl: `https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|${markerColor}`,
