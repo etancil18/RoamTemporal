@@ -152,12 +152,24 @@ fetch('events.json')
       marker.addTo(map); // or someGroup.addLayer(marker);
     });
     events.forEach(ev => {
-  const part = ev.dayParts?.[0] || 'M';
-const color = dayPartColors[part] || 'grey';
+  const allParts = ['M', 'MD', 'A', 'HH', 'E', 'L'];
+const now = new Date();
+const currentHour = now.getHours();
+let currentPart = 'M';
 
-// Build icon from that colored image
+if (currentHour >= 6 && currentHour < 11) currentPart = 'M';
+else if (currentHour >= 11 && currentHour < 14) currentPart = 'MD';
+else if (currentHour >= 14 && currentHour < 16) currentPart = 'A';
+else if (currentHour >= 16 && currentHour < 19) currentPart = 'HH';
+else if (currentHour >= 19 && currentHour < 22) currentPart = 'E';
+else currentPart = 'L';
+
+// Choose a matching dayPart from the event
+const relevantDayPart = ev.dayParts.includes(currentPart) ? currentPart : (ev.dayParts[0] || 'M');
+const markerColor = dayPartColors[relevantDayPart] || 'gray';
+
 const icon = new L.Icon({
-  iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${color}.png`,
+  iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
