@@ -143,6 +143,22 @@ fetch('events.json')
       // Add marker to the map or some layer group if needed
       marker.addTo(map); // or someGroup.addLayer(marker);
     });
+    events.forEach(ev => {
+  const marker = L.marker([ev.lat, ev.lon], { icon: defaultIcon });
+
+  // Prepare content
+  const popupContent = `
+    <div style="font-size: 14px; line-height: 1.4;">
+      <strong>${ev.name}</strong><br/>
+      <em>Vibe:</em> ${ev.vibe}<br/>
+      <em>Hours:</em> ${ev.hours?.join(', ') || 'N/A'}<br/>
+      <a href="${ev.link}" target="_blank">More Info</a>
+    </div>
+  `;
+
+  marker.bindPopup(popupContent);
+  marker.addTo(map);
+});
   })
       
 
