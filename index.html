@@ -135,12 +135,6 @@ fetch('events.json')
       const lon = parseFloat(ev.lon);
       if (!isNaN(lat) && !isNaN(lon)) {
         const marker = L.marker([lat, lon], { icon: defaultIcon }).addTo(map);
-        marker.name = ev.name.toLowerCase();
-        marker.vibe = typeof ev.vibe === 'string' ? ev.vibe.toLowerCase() : '';
-        marker.price = ev.price;
-        marker.duration = ev.duration || 0;
-        marker.options.link = ev.link;
-        marker.options.hours = ev.hours || [];
         marker.bindPopup(`<b>${ev.name}</b><br>${ev.vibe}`);
       }
   
