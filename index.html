@@ -116,11 +116,14 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 }).addTo(map);
 
 
-function generateCrawlRoute(allLocations) {
+document.getElementById('crawlNowBtn').addEventListener('click', () => {
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
   const priceFilter = document.getElementById('priceFilter').value.trim();
   const theme = document.getElementById('themeDropdown').value.toLowerCase();
   const durationSetting = document.getElementById('durationDropdown').value;
+  const neighborhoodCenter = neighborhoodCenters[neighborhood];
+  const currentDayParts = getCurrentDayPart();
+
 
   const neighborhoodCenter = neighborhoodCenters[neighborhood];
   if (!neighborhoodCenter) {
@@ -129,41 +132,35 @@ function generateCrawlRoute(allLocations) {
   }
   
 fetch('events.json')
-  .then(res => res.json())
-  .then(events => {
-    events.forEach(ev => {
-      const marker = L.marker([ev.lat, ev.lon], { icon: defaultIcon });
-      marker.vibe = ev.vibe.toLowerCase();
-      marker.name = ev.name.toLowerCase();
-      marker.price = ev.price;
-      marker.duration = ev.duration || 0;
-      marker.options.link = ev.link;
-      marker.options.hours = ev.hours || [];
+    .then(res => res.json())
+    .then(events => {
+      const allLocations = events.map(ev => ({
+        name: ev.name,
+        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+        lat: parseFloat(ev.lat),
+        lon: parseFloat(ev.lon),
+        link: ev.link,
+        openNow: ev.openNow,
+        hours: ev.hours || [],
+        hoursNumeric: ev.hoursNumeric || {},
+        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
+        timeCategory: ev.timeCategory,
+        energyRamp: ev.energyRamp,
+        tags: ev.tags,
+        price: ev.price,
+        duration: ev.duration
+      }));
 
-      // Add marker to the map or some layer group if needed
-      marker.addTo(map); // or someGroup.addLayer(marker);
-    });
-  })
-      
-
-    allLocations = events.map(ev => ({
-      name: ev.name,
-      vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
-      lat: parseFloat(ev.lat),
-      lon: parseFloat(ev.lon),
-      link: ev.link,
-      openNow: ev.openNow,
-      hours: ev.hours || [],
-      hoursNumeric: ev.hoursNumeric || {},
-      dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
-      timeCategory: ev.timeCategory,
-      energyRamp: ev.energyRamp,
-      tags: ev.tags,
-      price: ev.price,
-      duration: ev.duration
-    }));
-  }
-
+  const openLocations = allLocations.filter(loc => {
+    const priceTiers = ['$', '$$', '$$$', '$$$$'];
+    const selectedTierIndex = priceTiers.indexOf(priceFilter);
+    const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
+    const matchesTheme = !theme || (themeMap[theme] || []).some(kw => loc.vibe?.join(' ').toLowerCase().includes(kw));
+    const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
+    const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
+    const isOpenTemporal = loc.dayParts.some(part => futureParts.includes(part));
+    return matchesPrice && matchesTheme && isOpenTemporal;
+  });
   
 function getCurrentDayPart() {
   const hour = new Date().getHours();
@@ -215,19 +212,10 @@ const themeMap = {
   "urban safari": ["explore", "rooftop", "view", "city", "street", "skyline", "vr", "wander", "overlook"]
 };
 
+      runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting);
+    });
 
-  const openLocations = allLocations.filter(loc => {
-    const priceTiers = ['$', '$$', '$$$', '$$$$'];
-    const selectedTierIndex = priceTiers.indexOf(priceFilter);
-    const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
-    const matchesTheme = !theme || (themeMap[theme] || []).some(kw => loc.vibe?.join(' ').toLowerCase().includes(kw));
-    const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
-    const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
-    const isOpenTemporal = loc.dayParts.some(part => futureParts.includes(part));
-    return matchesPrice && matchesTheme && isOpenTemporal;
-  });
-
-  (function runCrawlPlanner() {
+  function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   function checkOpenLocations(openLocations) {
     if (openLocations.length === 0) {
       alert('No suitable locations found.');
@@ -300,7 +288,7 @@ const themeMap = {
     addWaypoints: false,
     show: false
   }).addTo(map);
-})();
+}
   
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
       generateCrawlRoute(allLocations);
