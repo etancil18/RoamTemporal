@@ -731,7 +731,19 @@ function generateCrawlFromFavorite(startMarker) {
       "williamsburg": { lat: 40.7081, lon: -73.9571 }
     };
 
-    function generateCrawlRoute(allLocations) {
+    const themeMap = {
+  "quiet luxury": ["martini", "rooftop", "lounge", "luxury", "refined", "tasting", "elegant", "cocktail", "chic"],
+  "hedonist's loop": ["vinyl", "dance", "cocktail", "party", "beats", "late", "diner", "club", "after hours"],
+  "creative recharge": ["cafe", "gallery", "poetry", "studio", "art", "workshop", "craft", "book", "inspire"],
+  "wellness ritual": ["matcha", "bath", "yoga", "spa", "relax", "meditation", "serenity", "retreat", "garden"],
+  "alt crawl": ["basement", "underground", "alt", "indie", "vinyl", "chill", "lounge", "beats", "eclectic"],
+  "power lunch": ["lunch", "bistro", "brunch", "bite", "noon", "business", "daytime", "grove", "bar"],
+  "cozy corners": ["cozy", "hearth", "nook", "quiet", "cafe", "book", "niche", "intimate", "cinema"],
+  "flirt & flow": ["martini", "romantic", "flirt", "date", "vibe", "twilight", "jazz", "modernist", "glow"],
+  "urban safari": ["explore", "rooftop", "view", "city", "street", "skyline", "vr", "wander", "overlook"]
+};
+
+function generateCrawlRoute(allLocations) {
       const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
       const priceFilter = document.getElementById('priceFilter').value.trim();
       const theme = document.getElementById('themeDropdown').value.toLowerCase();
@@ -744,11 +756,17 @@ function generateCrawlFromFavorite(startMarker) {
       }
 
       const openLocations = allLocations.filter(loc => {
-        const inNeighborhood = !neighborhood || (loc.neighborhood && loc.neighborhood.toLowerCase() === neighborhood);
-        const matchesPrice = !priceFilter || (loc.price && loc.price === priceFilter);
-        const matchesTheme = !theme || (loc.theme && loc.theme.toLowerCase() === theme);
-        const isOpenTemporal = isOpenInCurrentDayPart(loc);
-        return inNeighborhood && matchesPrice && matchesTheme && isOpenTemporal;
+        const priceTiers = ['$', '$$', '$$$', '$$$$'];
+        const selectedTierIndex = priceTiers.indexOf(priceFilter);
+        const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
+        const matchesTheme = !theme || (() => {
+          const keywords = themeMap[theme] || [];
+          return keywords.some(kw => loc.vibe && loc.vibe.join(' ').toLowerCase().includes(kw));
+        })();
+        const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
+        const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
+        const isOpenTemporal = loc.dayParts.some(part => futureParts.includes(part));
+        return matchesPrice && matchesTheme && isOpenTemporal;
       });
 
       if (openLocations.length === 0) {
@@ -757,25 +775,56 @@ function generateCrawlFromFavorite(startMarker) {
       }
 
       // Sort by proximity to neighborhood center
-      openLocations.sort((a, b) => {
-        const d1 = Math.hypot(a.lat - neighborhoodCenter.lat, a.lon - neighborhoodCenter.lon);
-        const d2 = Math.hypot(b.lat - neighborhoodCenter.lat, b.lon - neighborhoodCenter.lon);
-        return d1 - d2;
+      // Filter only those within 175m of neighborhood center for starting point
+      const initialOptions = openLocations.filter(loc => {
+        const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+        const locLatLng = L.latLng(loc.lat, loc.lon);
+        const dist = center.distanceTo(locLatLng);
+        return dist <= 175; // in meters
       });
 
-      let maxDuration = 8;
-      if (durationSetting === 'short') maxDuration = 2;
-      else if (durationSetting === 'medium') maxDuration = 5;
+      if (initialOptions.length === 0) {
+        alert('No suitable starting points within the neighborhood center.');
+        return;
+      }
 
-      let totalDuration = 0;
-      const crawlRoute = [];
+      const crawlRoute = [initialOptions[0]];
+      let totalDuration = initialOptions[0].duration || 0;
+      const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
 
-      for (let loc of openLocations) {
-        if (loc.duration && (totalDuration + loc.duration) <= maxDuration) {
-          crawlRoute.push(loc);
-          totalDuration += loc.duration;
+      let lastStop = initialOptions[0];
+      let lastDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => lastStop.dayParts && lastStop.dayParts.includes(p));
+      const remaining = openLocations.filter(loc => loc !== lastStop);
+
+      for (let loc of remaining) {
+        if (!loc.duration || (totalDuration + loc.duration > maxDuration)) continue;
+        const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
+        const locLatLng = L.latLng(loc.lat, loc.lon);
+        const dist = lastLatLng.distanceTo(locLatLng);
+        if (dist <= 350) {
+          const locDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => loc.dayParts && loc.dayParts.includes(p));
+          if (locDayPartIndex >= lastDayPartIndex) {
+            crawlRoute.push(loc);
+            totalDuration += loc.duration;
+            lastStop = loc;
+            lastDayPartIndex = locDayPartIndex;
+          }
         }
         if (totalDuration >= maxDuration) break;
+      }
+        if (!loc.duration || (totalDuration + loc.duration > maxDuration)) continue;
+        const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
+        const locLatLng = L.latLng(loc.lat, loc.lon);
+        const dist = lastLatLng.distanceTo(locLatLng);
+        if (dist <= 350) { // ~350 meters in degrees
+          crawlRoute.push(loc);
+          totalDuration += loc.duration;
+          lastStop = loc;
+        }
+        if (totalDuration >= maxDuration) break;
+      }
+
+              if (totalDuration >= maxDuration) break;
       }
 
       if (crawlRoute.length < 2) {
@@ -784,27 +833,59 @@ function generateCrawlFromFavorite(startMarker) {
       }
 
       console.log('Generated Crawl Route:', crawlRoute);
-      // TODO: visualize on map and enable saving
+
+      // Clear any existing route layers
+      if (window.routeLayer) {
+        map.removeControl(window.routeLayer);
+      }
+
+      // Create and display the route
+      const waypoints = crawlRoute.map(loc => L.latLng(loc.lat, loc.lon));
+      window.routeLayer = L.Routing.control({
+        waypoints: waypoints,
+        routeWhileDragging: false,
+        draggableWaypoints: false,
+        addWaypoints: false,
+        show: false
+      }).addTo(map);
     }
 
     const allLocations = [
-  { name: 'Cafe Sunrise', dayParts: ['M', 'MD'], lat: 40.72, lon: -73.98, duration: 1, price: '$$', theme: 'creative recharge' },
-  { name: 'Noon Bites', dayParts: ['MD', 'A'], lat: 40.73, lon: -73.99, duration: 1.5, price: '$', theme: 'power lunch' },
-  { name: 'Evening Lounge', dayParts: ['E', 'L'], lat: 40.74, lon: -73.97, duration: 2, price: '$$$', theme: 'quiet luxury' },
-  { name: 'Matcha Muse', dayParts: ['M', 'MD'], lat: 40.731, lon: -73.962, duration: 0.8, price: '$', theme: 'wellness ritual' },
-  { name: 'Sunset Overlook', dayParts: ['E', 'L'], lat: 40.728, lon: -73.951, duration: 1.2, price: '$$', theme: 'urban safari' },
-  { name: 'Basement Beats', dayParts: ['HH', 'E', 'L'], lat: 40.725, lon: -73.994, duration: 1.5, price: '$', theme: 'alt crawl' },
-  { name: 'Bodega Poetry Club', dayParts: ['MD', 'A', 'HH'], lat: 40.729, lon: -73.987, duration: 1, price: '$', theme: 'creative recharge' },
-  { name: 'Rooftop Reverie', dayParts: ['HH', 'E'], lat: 40.743, lon: -73.991, duration: 1.5, price: '$$$', theme: 'quiet luxury' },
-  { name: 'Vinyl Vibes', dayParts: ['L'], lat: 40.726, lon: -73.993, duration: 1.3, price: '$$', theme: 'hedonist\'s loop' },
-  { name: 'Cozy Hearth Cafe', dayParts: ['M', 'MD', 'A'], lat: 40.731, lon: -73.985, duration: 1, price: '$$', theme: 'cozy corners' },
-  { name: 'Modernist Martini', dayParts: ['E', 'L'], lat: 40.735, lon: -74.004, duration: 1.8, price: '$$$$', theme: 'flirt & flow' },
-  { name: 'Sound Bath Studio', dayParts: ['MD', 'A'], lat: 40.728, lon: -73.981, duration: 1.2, price: '$$', theme: 'wellness ritual' }
+  { name: 'Cafe Sunrise', dayParts: ['M', 'MD'], lat: 40.72, lon: -73.98, duration: 1, price: '$$', theme: 'creative recharge', vibe: ['cafe', 'sunlight', 'quiet', 'artsy'] },
+  { name: 'Noon Bites', dayParts: ['MD', 'A'], lat: 40.73, lon: -73.99, duration: 1.5, price: '$', theme: 'power lunch', vibe: ['lunch', 'bistro', 'daytime', 'bite'] },
+  { name: 'Evening Lounge', dayParts: ['E', 'L'], lat: 40.74, lon: -73.97, duration: 2, price: '$$$', theme: 'quiet luxury', vibe: ['lounge', 'refined', 'cocktail', 'elegant'] },
+  { name: 'Matcha Muse', dayParts: ['M', 'MD'], lat: 40.731, lon: -73.962, duration: 0.8, price: '$', theme: 'wellness ritual', vibe: ['matcha', 'relax', 'serenity', 'spa'] },
+  { name: 'Sunset Overlook', dayParts: ['E', 'L'], lat: 40.728, lon: -73.951, duration: 1.2, price: '$$', theme: 'urban safari', vibe: ['view', 'city', 'overlook', 'skyline'] },
+  { name: 'Basement Beats', dayParts: ['HH', 'E', 'L'], lat: 40.725, lon: -73.994, duration: 1.5, price: '$', theme: 'alt crawl', vibe: ['underground', 'dance', 'vinyl', 'beats'] },
+  { name: 'Bodega Poetry Club', dayParts: ['MD', 'A', 'HH'], lat: 40.729, lon: -73.987, duration: 1, price: '$', theme: 'creative recharge', vibe: ['poetry', 'cafe', 'art', 'book'] },
+  { name: 'Rooftop Reverie', dayParts: ['HH', 'E'], lat: 40.743, lon: -73.991, duration: 1.5, price: '$$$', theme: 'quiet luxury', vibe: ['rooftop', 'chic', 'cocktail', 'elegant'] },
+  { name: 'Vinyl Vibes', dayParts: ['L'], lat: 40.726, lon: -73.993, duration: 1.3, price: '$$', theme: "hedonist's loop", vibe: ['vinyl', 'club', 'late', 'after hours'] },
+  { name: 'Cozy Hearth Cafe', dayParts: ['M', 'MD', 'A'], lat: 40.731, lon: -73.985, duration: 1, price: '$$', theme: 'cozy corners', vibe: ['cozy', 'cafe', 'hearth', 'quiet'] },
+  { name: 'Modernist Martini', dayParts: ['E', 'L'], lat: 40.735, lon: -74.004, duration: 1.8, price: '$$$$', theme: 'flirt & flow', vibe: ['martini', 'romantic', 'modernist', 'date'] },
+  { name: 'Sound Bath Studio', dayParts: ['MD', 'A'], lat: 40.728, lon: -73.981, duration: 1.2, price: '$$', theme: 'wellness ritual', vibe: ['sound', 'bath', 'spa', 'relax'] },
+  { name: 'Gastronome Grove', dayParts: ['MD', 'A'], lat: 40.745, lon: -73.982, duration: 2.5, price: '$$$$', theme: 'power lunch', vibe: ['lunch', 'grove', 'bite', 'bistro'] },
+  { name: 'Velvet Underground', dayParts: ['E', 'L'], lat: 40.742, lon: -73.995, duration: 3, price: '$$$', theme: 'alt crawl', vibe: ['basement', 'velvet', 'eclectic', 'indie'] },
+  { name: 'Skyline Sanctuary', dayParts: ['HH', 'E'], lat: 40.736, lon: -73.988, duration: 2, price: '$$$$', theme: 'urban safari', vibe: ['skyline', 'rooftop', 'view', 'city'] },
+  { name: 'Serenity Spa Retreat', dayParts: ['MD', 'A'], lat: 40.733, lon: -73.969, duration: 2.5, price: '$$$', theme: 'wellness ritual', vibe: ['spa', 'serenity', 'retreat', 'relax'] },
+  { name: 'Starlight Cinema Lounge', dayParts: ['E', 'L'], lat: 40.737, lon: -73.986, duration: 2, price: '$$', theme: 'cozy corners', vibe: ['cinema', 'cozy', 'quiet', 'intimate'] },
+  { name: 'Elysian Fields Cafe', dayParts: ['M', 'MD'], lat: 40.721, lon: -73.989, duration: 1.5, price: '$$', theme: 'creative recharge', vibe: ['cafe', 'fields', 'art', 'inspire'] },
+  { name: 'Twilight Jazz Club', dayParts: ['E', 'L'], lat: 40.729, lon: -74.002, duration: 2, price: '$$', theme: 'flirt & flow', vibe: ['twilight', 'jazz', 'flirt', 'vibe'] },
+  { name: 'Night Owl Diner', dayParts: ['L'], lat: 40.734, lon: -73.995, duration: 1, price: '$', theme: "hedonist's loop", vibe: ['diner', 'late', 'after hours', 'party'] },
+  { name: 'Meditation Cove', dayParts: ['M', 'MD'], lat: 40.732, lon: -73.982, duration: 3, price: '$$', theme: 'wellness ritual', vibe: ['meditation', 'garden', 'cove', 'relax'] },
+  { name: 'Chef’s Lab Experience', dayParts: ['A', 'HH'], lat: 40.746, lon: -73.984, duration: 3.5, price: '$$$$', theme: 'quiet luxury', vibe: ['chef', 'lab', 'tasting', 'refined'] },
+  { name: 'After Hours Social Club', dayParts: ['L'], lat: 40.735, lon: -73.997, duration: 2.5, price: '$$$', theme: "hedonist's loop", vibe: ['club', 'after hours', 'social', 'cocktail'] },
+  { name: 'Artisan Craft Workshop', dayParts: ['M', 'MD'], lat: 40.728, lon: -73.988, duration: 4, price: '$$', theme: 'creative recharge', vibe: ['craft', 'studio', 'workshop', 'art'] },
+  { name: 'Boulevard Brunch Bar', dayParts: ['MD'], lat: 40.724, lon: -73.991, duration: 2, price: '$$', theme: 'power lunch', vibe: ['brunch', 'bar', 'lunch', 'bistro'] },
+  { name: 'Dreamscape VR Studio', dayParts: ['A', 'HH'], lat: 40.730, lon: -73.990, duration: 2, price: '$$', theme: 'urban safari', vibe: ['vr', 'explore', 'studio', 'city'] },
+  { name: 'Deep Chill Lounge', dayParts: ['E', 'L'], lat: 40.727, lon: -73.996, duration: 3, price: '$$$', theme: 'alt crawl', vibe: ['chill', 'beats', 'lounge', 'underground'] },
+  { name: 'Twilight Tasting Room', dayParts: ['E', 'L'], lat: 40.740, lon: -73.983, duration: 2.5, price: '$$$$', theme: 'quiet luxury', vibe: ['twilight', 'tasting', 'cocktail', 'elegant'] },
+  { name: 'Ambient Flow Garden', dayParts: ['M', 'MD'], lat: 40.725, lon: -73.979, duration: 3, price: '$$', theme: 'wellness ritual', vibe: ['ambient', 'garden', 'serenity', 'relax'] },
+  { name: 'Boho Book Nook', dayParts: ['M', 'MD', 'A'], lat: 40.722, lon: -73.984, duration: 1.5, price: '$', theme: 'cozy corners', vibe: ['book', 'nook', 'cozy', 'quiet'] }
 ];
 
-  document.getElementById('crawlNowBtn').addEventListener('click', () => {
-    generateCrawlRoute(allLocations);
-     });
+    document.getElementById('crawlNowBtn').addEventListener('click', () => {
+      generateCrawlRoute(allLocations);
+    });
   
 
 function addPointToRoute(latlng) {
