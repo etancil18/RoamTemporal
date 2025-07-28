@@ -273,14 +273,26 @@ function generateCrawlRoute(allLocations) {
 
 fetch('events.json')
   .then(res => res.json())
-  .then(data => {
-    allLocations = data.map(ev => ({
-      ...ev,
-      lat: parseFloat(ev.lat),
-      lon: parseFloat(ev.lon),
-      vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
-      dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== '')
-    }));
+  .then(events => {
+    allLocations = [];
+
+    events.forEach(ev => {
+      const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)]);
+      marker.vibe = (ev.vibe || '').toLowerCase();
+      marker.name = (ev.name || '').toLowerCase();
+      marker.price = ev.price;
+      marker.duration = ev.duration || 0;
+      marker.options.link = ev.link;
+      marker.options.hours = ev.hours || [];
+
+      allLocations.push({
+        ...ev,
+        lat: parseFloat(ev.lat),
+        lon: parseFloat(ev.lon),
+        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== '')
+      });
+    });
 
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
       generateCrawlRoute(allLocations);
