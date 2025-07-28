@@ -272,7 +272,24 @@ function generateCrawlRoute(allLocations) {
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
       generateCrawlRoute(allLocations);
     });
-  
+
+  let allLocations = [];
+
+fetch('events.json')
+  .then(res => res.json())
+  .then(data => {
+    allLocations = data.map(ev => ({
+      ...ev,
+      lat: parseFloat(ev.lat),
+      lon: parseFloat(ev.lon),
+      vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+      dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== '')
+    }));
+  })
+  .catch(err => {
+    console.error('Failed to load event data:', err);
+    alert('Could not load event data.');
+  });
 
 </script>
 <div style="position: absolute; bottom: 3px; right: 0px; z-index: 1000; background: rgba(255,255,255,0.8); padding: 4px 8px; border-radius: 4px; font-size: 8px;">
