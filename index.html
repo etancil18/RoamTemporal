@@ -130,10 +130,10 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   const todayKey = weekdayKeys[todayIndex];
 
   events.forEach(ev => {
-    const relevantDayPart = ev.dayParts?.[todayKey] && ev.dayParts[todayKey] !== '-'
-      ? ev.dayParts[todayKey]
-      : 'M';
-    const markerColor = dayPartColors[relevantDayPart] || 'gray';
+    const rawPart = ev.dayParts?.[todayKey];
+const isClosed = !rawPart || rawPart === '-' || !ev.openNow || ev.openNow.toLowerCase() === 'false';
+
+const markerColor = isClosed ? 'gray' : (dayPartColors[rawPart] || 'gray');
 
     const icon = new L.Icon({
       iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
@@ -151,6 +151,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         <em>Vibe:</em> ${ev.vibe}<br/>
         <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
         <a href="${ev.link}" target="_blank">More Info</a>
+        <em>Status:</em> ${isClosed ? '<span style="color:gray;">Closed</span>' : '<span style="color:green;">Open Now</span>'}<br/>
       </div>
     `;
     marker.bindPopup(popupContent).addTo(map);
