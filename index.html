@@ -273,10 +273,13 @@ const themeMap = {
     if (totalDuration >= maxDuration) break;
   }
 
+  function checkCrawlRoute(crawlRoute) {
   if (crawlRoute.length < 2) {
     alert('A crawl requires at least 2 stops. Try adjusting your filters or duration.');
-    return;
+    return false;
   }
+  return true;
+}
 
   if (window.routeLayer) {
     map.removeControl(window.routeLayer);
@@ -292,6 +295,9 @@ const themeMap = {
   }).addTo(map);
 }
 
+  if (!checkOpenLocations(openLocations)) return;
+if (!checkInitialOptions(initialOptions)) return;
+  if (!checkCrawlRoute(crawlRoute)) return;
   
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
       generateCrawlRoute(allLocations);
