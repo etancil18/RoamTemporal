@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+""<!DOCTYPE html>
 <html>
 <head>
   <title>Roam Temporal Map</title>
@@ -97,6 +97,15 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 <script>
+const defaultIcon = L.icon({
+  iconUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
 const map = L.map('map').setView([40.72, -73.98], 12);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap contributors & Carto',
@@ -104,22 +113,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19
 }).addTo(map);
 
-const favorites = getFavorites();  
-fetch('events.json')
-  .then(res => res.json())
-  .then(events => {
-    events.forEach(ev => {
-      const marker = L.marker([ev.lat, ev.lon], { icon: defaultIcon });
-      marker.vibe = ev.vibe.toLowerCase();
-      marker.name = ev.name.toLowerCase();
-      marker.price = ev.price;
-      marker.duration = ev.duration || 0;
-      marker.options.link = ev.link;
-      marker.options.hours = ev.hours || [];
-      };
-    });
-  
- function getCurrentDayPart() {
+function getCurrentDayPart() {
   const hour = new Date().getHours();
   if (hour >= 6 && hour < 11) return ['M'];
   if (hour >= 11 && hour < 14) return ['MD'];
@@ -155,6 +149,47 @@ const neighborhoodCenters = {
   "west village": { lat: 40.7359, lon: -74.0036 },
   "williamsburg": { lat: 40.7081, lon: -73.9571 }
 };
+
+let allLocations = [];
+
+fetch('events.json')
+  .then(res => res.json())
+  .then(events => {
+    allLocations = events.map(ev => {
+      const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon: defaultIcon }).addTo(map);
+      marker.name = ev.name.toLowerCase();
+      marker.vibe = ev.vibe.toLowerCase();
+      marker.price = ev.price;
+      marker.duration = ev.duration || 0;
+      marker.options.link = ev.link;
+      marker.options.hours = ev.hours || [];
+
+      return {
+        name: ev.name,
+        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+        lat: parseFloat(ev.lat),
+        lon: parseFloat(ev.lon),
+        link: ev.link,
+        openNow: ev.openNow,
+        hours: ev.hours || [],
+        hoursNumeric: ev.hoursNumeric || {},
+        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
+        timeCategory: ev.timeCategory,
+        energyRamp: ev.energyRamp,
+        tags: ev.tags,
+        price: ev.price,
+        duration: ev.duration
+      };
+    });
+
+    document.getElementById('crawlNowBtn').addEventListener('click', () => {
+      generateCrawlRoute(allLocations);
+    });
+  })
+  .catch(err => {
+    console.error('Failed to load event data:', err);
+    alert('Could not load event data.');
+  });
 
 const themeMap = {
   "quiet luxury": ["martini", "rooftop", "lounge", "luxury", "refined", "tasting", "elegant", "cocktail", "chic"],
@@ -282,10 +317,6 @@ function generateCrawlRoute(allLocations) {
   { name: 'Ambient Flow Garden', dayParts: ['M', 'MD'], lat: 40.725, lon: -73.979, duration: 3, price: '$$', theme: 'wellness ritual', vibe: ['ambient', 'garden', 'serenity', 'relax'] },
   { name: 'Boho Book Nook', dayParts: ['M', 'MD', 'A'], lat: 40.722, lon: -73.984, duration: 1.5, price: '$', theme: 'cozy corners', vibe: ['book', 'nook', 'cozy', 'quiet'] }
 ];
-
-    document.getElementById('crawlNowBtn').addEventListener('click', () => {
-      generateCrawlRoute(allLocations);
-    });
  
 
 </script>
