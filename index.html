@@ -292,8 +292,6 @@ function generateCrawlRoute(allLocations) {
   { name: 'Boho Book Nook', dayParts: ['M', 'MD', 'A'], lat: 40.722, lon: -73.984, duration: 1.5, price: '$', theme: 'cozy corners', vibe: ['book', 'nook', 'cozy', 'quiet'] }
 ];
 
-    let allLocations = [];
-
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
       generateCrawlRoute(allLocations);
     });
