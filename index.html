@@ -181,20 +181,6 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   subdomains: 'abcd',
   maxZoom: 19
 }).addTo(map);
-
-  selectedPoints = coords.map(p => p.latlng);
-
-  coords.forEach(p => {
-    const marker = findMarkerByLatLng(p.latlng);
-    if (marker) enlargeMarker(marker);
-  });
-
-  if (selectedPoints.length > 1) {
-    updateRoute();
-    map.fitBounds(L.featureGroup(
-      selectedPoints.map(latlng => L.marker(latlng))
-    ).getBounds());
-  }
   
 const markerCluster = L.markerClusterGroup({
   spiderfyOnMaxZoom: true,
