@@ -116,12 +116,12 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 }).addTo(map);
 
   const dayPartColors = {
-  M: '1E90FF',     // Morning - DodgerBlue
-  MD: '32CD32',    // Midday - LimeGreen
-  A: 'FFA500',     // Afternoon - Orange
-  HH: '800080',    // Happy Hour - Purple
-  E: 'DC143C',     // Evening - Crimson
-  L: '000000'      // Late Night - Black
+  M: 'blue',        // Morning
+  MD: 'green',      // Midday
+  A: 'orange',      // Afternoon
+  HH: 'purple',     // Happy Hour
+  E: 'red',         // Evening
+  L: 'black'        // Late Night
 };
 
 function generateCrawlRoute(allLocations) {
