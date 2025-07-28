@@ -104,7 +104,30 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19
 }).addTo(map);
 
+fetch('events.json')
+  .then(res => res.json())
+  .then(events => {
+    allLocations = [];
 
+    events.forEach(ev => {
+      const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)]);
+      marker.vibe = (ev.vibe || '').toLowerCase();
+      marker.name = (ev.name || '').toLowerCase();
+      marker.price = ev.price;
+      marker.duration = ev.duration || 0;
+      marker.options.link = ev.link;
+      marker.options.hours = ev.hours || [];
+
+      allLocations.push({
+        ...ev,
+        lat: parseFloat(ev.lat),
+        lon: parseFloat(ev.lon),
+        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== '')
+      });
+    });
+ })
+  
  function getCurrentDayPart() {
   const hour = new Date().getHours();
   if (hour >= 6 && hour < 11) return ['M'];
@@ -271,37 +294,10 @@ function generateCrawlRoute(allLocations) {
 
     let allLocations = [];
 
-fetch('events.json')
-  .then(res => res.json())
-  .then(events => {
-    allLocations = [];
-
-    events.forEach(ev => {
-      const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)]);
-      marker.vibe = (ev.vibe || '').toLowerCase();
-      marker.name = (ev.name || '').toLowerCase();
-      marker.price = ev.price;
-      marker.duration = ev.duration || 0;
-      marker.options.link = ev.link;
-      marker.options.hours = ev.hours || [];
-
-      allLocations.push({
-        ...ev,
-        lat: parseFloat(ev.lat),
-        lon: parseFloat(ev.lon),
-        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
-        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== '')
-      });
-    });
-
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
       generateCrawlRoute(allLocations);
     });
-  })
-  .catch(err => {
-    console.error('Failed to load event data:', err);
-    alert('Could not load event data.');
-  });
+ 
 
 </script>
 <div style="position: absolute; bottom: 3px; right: 0px; z-index: 1000; background: rgba(255,255,255,0.8); padding: 4px 8px; border-radius: 4px; font-size: 8px;">
