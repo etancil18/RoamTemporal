@@ -152,15 +152,20 @@ fetch('events.json')
       marker.addTo(map); // or someGroup.addLayer(marker);
     });
     events.forEach(ev => {
-  const dominantDayPart = ev.dayParts?.[0] || 'M';
-const markerColor = dayPartColors[dominantDayPart] || 'gray';
+  const part = ev.dayParts?.[0] || 'M';
+const color = dayPartColors[part] || 'grey';
 
-const icon = L.icon({
-  iconUrl: `https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|${markerColor}`,
-  iconSize: [21, 34],
-  iconAnchor: [10, 34],
-  popupAnchor: [0, -28]
+// Build icon from that colored image
+const icon = new L.Icon({
+  iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${color}.png`,
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
 });
+
+const marker = L.marker([ev.lat, ev.lon], { icon });
 
 const marker = L.marker([ev.lat, ev.lon], { icon });
 
