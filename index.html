@@ -115,6 +115,14 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19
 }).addTo(map);
 
+  const dayPartColors = {
+  M: '1E90FF',     // Morning - DodgerBlue
+  MD: '32CD32',    // Midday - LimeGreen
+  A: 'FFA500',     // Afternoon - Orange
+  HH: '800080',    // Happy Hour - Purple
+  E: 'DC143C',     // Evening - Crimson
+  L: '000000'      // Late Night - Black
+};
 
 function generateCrawlRoute(allLocations) {
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
@@ -144,23 +152,31 @@ fetch('events.json')
       marker.addTo(map); // or someGroup.addLayer(marker);
     });
     events.forEach(ev => {
-  const marker = L.marker([ev.lat, ev.lon], { icon: defaultIcon });
+  const dominantDayPart = ev.dayParts?.[0] || 'M'; // fallback to 'M'
+const markerColor = dayPartColors[dominantDayPart] || '808080'; // default gray
+
+const icon = L.icon({
+  iconUrl: `https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|${markerColor}`,
+  iconSize: [21, 34],
+  iconAnchor: [10, 34],
+  popupAnchor: [0, -28]
+});
+
+const marker = L.marker([ev.lat, ev.lon], { icon });
 
 const now = new Date();
 const currentHour = now.getHours();
-const today = now.getDay(); // 0 = Sunday ... 6 = Saturday
-
+const today = now.getDay();
 const todayLabel = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][today];
 const todayHours = ev.hours?.[today] || 'N/A';
 
 const todayNumeric = ev.hoursNumeric?.[today];
 let openStatus = 'Unknown';
-
 if (todayNumeric && typeof todayNumeric.open === 'number' && typeof todayNumeric.close === 'number') {
   openStatus = (currentHour >= todayNumeric.open && currentHour < todayNumeric.close) ? 'Open now' : 'Closed';
 }
-      
-  const popupContent = `
+
+const popupContent = `
   <div style="font-size: 14px; line-height: 1.4;">
     <strong>${ev.name}</strong><br/>
     <em>Vibe:</em> ${ev.vibe}<br/>
@@ -170,8 +186,8 @@ if (todayNumeric && typeof todayNumeric.open === 'number' && typeof todayNumeric
   </div>
 `;
 
-  marker.bindPopup(popupContent);
-  marker.addTo(map);
+marker.bindPopup(popupContent);
+marker.addTo(map);
 });
   })
       
