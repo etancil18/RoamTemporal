@@ -227,29 +227,30 @@ const themeMap = {
     return matchesPrice && matchesTheme && isOpenTemporal;
   });
 
+  (function runCrawlPlanner() {
   function checkOpenLocations(openLocations) {
-  if (openLocations.length === 0) {
-    alert('No suitable locations found.');
-    return false;
+    if (openLocations.length === 0) {
+      alert('No suitable locations found.');
+      return false;
+    }
+    return true;
   }
-  return true;
-}
 
   function checkInitialOptions(initialOptions) {
-  if (initialOptions.length === 0) {
-    alert('No suitable starting points within the neighborhood center.');
-    return false;
+    if (initialOptions.length === 0) {
+      alert('No suitable starting points within the neighborhood center.');
+      return false;
+    }
+    return true;
   }
-  return true;
-}
 
   function checkCrawlRoute(crawlRoute) {
-  if (crawlRoute.length < 2) {
-    alert('A crawl requires at least 2 stops. Try adjusting your filters or duration.');
-    return false;
+    if (crawlRoute.length < 2) {
+      alert('A crawl requires at least 2 stops. Try adjusting your filters or duration.');
+      return false;
+    }
+    return true;
   }
-  return true;
-}
 
   if (!checkOpenLocations(openLocations)) return;
 
@@ -260,7 +261,7 @@ const themeMap = {
   });
 
   if (!checkInitialOptions(initialOptions)) return;
-  
+
   const crawlRoute = [initialOptions[0]];
   let totalDuration = initialOptions[0].duration || 0;
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
@@ -299,6 +300,7 @@ const themeMap = {
     addWaypoints: false,
     show: false
   }).addTo(map);
+})();
   
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
       generateCrawlRoute(allLocations);
