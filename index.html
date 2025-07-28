@@ -124,6 +124,22 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   L: 'midnightblue'   // Late Night
 };
 
+  function isLocationOpenNow(ev) {
+  const now = new Date();
+  const dayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+  const todayKey = dayKeys[now.getDay()];
+  const currentHour = now.getHours();
+
+  const hours = ev.hoursNumeric?.[todayKey];
+  if (!hours || hours.open === undefined || hours.close === undefined) return false;
+
+  // Handle closing after midnight
+  if (hours.close < hours.open) {
+    return currentHour >= hours.open || currentHour < hours.close;
+  }
+  return currentHour >= hours.open && currentHour < hours.close;
+}
+  
   function renderMarkers(events) {
   const weekdayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
   const todayIndex = new Date().getDay();
@@ -131,9 +147,8 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 
   events.forEach(ev => {
     const rawPart = ev.dayParts?.[todayKey];
-const isClosed = !rawPart || rawPart === '-' || !ev.openNow || ev.openNow.toLowerCase() === 'false';
-
-const markerColor = isClosed ? 'gray' : (dayPartColors[rawPart] || 'gray');
+    const isOpen = isLocationOpenNow(ev);
+    const markerColor = isOpen && rawPart && rawPart !== '-' ? (dayPartColors[rawPart] || 'gray') : 'gray';
 
     const icon = new L.Icon({
       iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
@@ -144,17 +159,19 @@ const markerColor = isClosed ? 'gray' : (dayPartColors[rawPart] || 'gray');
       shadowSize: [41, 41]
     });
 
-    const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
     const popupContent = `
       <div style="font-size: 14px; line-height: 1.4;">
         <strong>${ev.name}</strong><br/>
         <em>Vibe:</em> ${ev.vibe}<br/>
         <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
+        <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
         <a href="${ev.link}" target="_blank">More Info</a>
-        <em>Status:</em> ${isClosed ? '<span style="color:gray;">Closed</span>' : '<span style="color:green;">Open Now</span>'}<br/>
       </div>
     `;
-    marker.bindPopup(popupContent).addTo(map);
+
+    L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon })
+      .bindPopup(popupContent)
+      .addTo(map);
   });
 }
 
