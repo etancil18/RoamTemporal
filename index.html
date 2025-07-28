@@ -163,10 +163,7 @@ fetch('events.json')
       duration: ev.duration
     }));
   }
-  catch(err => {
-    console.error('Failed to load event data:', err);
-    alert('Could not load event data.');
-  });
+
   
 function getCurrentDayPart() {
   const hour = new Date().getHours();
