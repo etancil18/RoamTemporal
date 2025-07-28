@@ -227,10 +227,12 @@ const themeMap = {
     return matchesPrice && matchesTheme && isOpenTemporal;
   });
 
+  function checkOpenLocations(openLocations) {
   if (openLocations.length === 0) {
     alert('No suitable locations found.');
     return;
   }
+}
 
   const initialOptions = openLocations.filter(loc => {
     const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
