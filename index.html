@@ -107,26 +107,33 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 fetch('events.json')
   .then(res => res.json())
   .then(events => {
-    allLocations = [];
+    allLocations = events.map(ev => {
+      const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)]).addTo(map);
+      marker.bindPopup(`<strong>${ev.name}</strong><br>${ev.vibe}<br><a href='${ev.link}' target='_blank'>More Info</a>`);
 
-    events.forEach(ev => {
-      const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)]);
-      marker.vibe = (ev.vibe || '').toLowerCase();
-      marker.name = (ev.name || '').toLowerCase();
-      marker.price = ev.price;
-      marker.duration = ev.duration || 0;
-      marker.options.link = ev.link;
-      marker.options.hours = ev.hours || [];
-
-      allLocations.push({
+      return {
+        name: ev.name,
+        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+        lat: parseFloat(ev.lat),
+        lon: parseFloat(ev.lon),
+        link: ev.link,
+        openNow: ev.openNow,
+        hours: ev.hours || [],
+        hoursNumeric: ev.hoursNumeric || {},
+        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
+        timeCategory: ev.timeCategory,
+        energyRamp: ev.energyRamp,
+        tags: ev.tags,
+        price: ev.price,
+        duration: ev.duration
+      };
         ...ev,
         lat: parseFloat(ev.lat),
         lon: parseFloat(ev.lon),
         vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
         dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== '')
-      });
+      };
     });
- })
   
  function getCurrentDayPart() {
   const hour = new Date().getHours();
