@@ -129,8 +129,8 @@ function generateCrawlRoute() {
   const priceFilter = document.getElementById('priceFilter').value.trim();
   const theme = document.getElementById('themeDropdown').value.toLowerCase();
   const durationSetting = document.getElementById('durationDropdown').value;
-
   const neighborhoodCenter = neighborhoodCenters[neighborhood];
+
   if (!neighborhoodCenter) {
     alert('Invalid neighborhood selected.');
     return;
@@ -139,17 +139,17 @@ function generateCrawlRoute() {
   fetch('events.json')
     .then(res => res.json())
     .then(events => {
-      // Populate markers
       const weekdayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
       const todayIndex = new Date().getDay();
       const todayKey = weekdayKeys[todayIndex];
 
+      // Draw markers
       events.forEach(ev => {
         const relevantDayPart = ev.dayParts?.[todayKey] && ev.dayParts[todayKey] !== '-'
           ? ev.dayParts[todayKey]
           : 'M';
-
         const markerColor = dayPartColors[relevantDayPart] || 'gray';
+
         const icon = new L.Icon({
           iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
           shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -171,7 +171,7 @@ function generateCrawlRoute() {
         marker.bindPopup(popupContent).addTo(map);
       });
 
-      // Build location array
+      // Cleaned data structure for routing
       const allLocations = events.map(ev => ({
         name: ev.name,
         vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
@@ -202,7 +202,11 @@ function generateCrawlRoute() {
         return matchesPrice && matchesTheme && isOpenTemporal;
       });
 
- function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
+      runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting);
+    });
+}
+
+function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   function checkOpenLocations(openLocations) {
     if (openLocations.length === 0) {
       alert('No suitable locations found.');
@@ -275,11 +279,10 @@ function generateCrawlRoute() {
     addWaypoints: false,
     show: false
   }).addTo(map);
-})();
-  
-    document.getElementById('crawlNowBtn').addEventListener('click', () => {
-      generateCrawlRoute(allLocations);
-    });
+}
+
+// ✅ Only trigger crawl logic on button click — no arguments needed
+document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
 
 </script>
 <div style="position: absolute; bottom: 3px; right: 0px; z-index: 1000; background: rgba(255,255,255,0.8); padding: 4px 8px; border-radius: 4px; font-size: 8px;">
