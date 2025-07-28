@@ -176,10 +176,14 @@ fetch('events.json')
         openStatus = (currentHour >= todayNumeric.open && currentHour < todayNumeric.close) ? 'Open now' : 'Closed';
       }
 
+      // Popup content with full info
       const popupContent = `
         <div style="font-size: 14px; line-height: 1.4;">
           <strong>${ev.name}</strong><br/>
           <em>Vibe:</em> ${ev.vibe}<br/>
+          <em>Price:</em> ${ev.price || 'N/A'}<br/>
+          <em>Duration:</em> ${ev.duration || 'N/A'} hrs<br/>
+          <em>Energy:</em> ${ev.energyRamp || 'N/A'}<br/>
           <em>Hours (${todayLabel}):</em> ${todayHours}<br/>
           <strong style="color:${openStatus === 'Open now' ? 'green' : 'red'};">${openStatus}</strong><br/>
           <a href="${ev.link}" target="_blank">More Info</a>
@@ -187,10 +191,10 @@ fetch('events.json')
       `;
 
       const marker = L.marker([ev.lat, ev.lon], { icon });
-marker.bindPopup(popupContent);
-marker.addTo(map);
-});
-  })
+      marker.bindPopup(popupContent);
+      marker.addTo(map);
+    });
+  });
       
 
     allLocations = events.map(ev => ({
