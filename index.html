@@ -113,6 +113,39 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19
 }).addTo(map);
 
+let allLocations = [];
+
+fetch('events.json')
+  .then(res => res.json())
+  .then(events => {
+    allLocations = events.map(ev => {
+      const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon: defaultIcon }).addTo(map);
+      marker.name = ev.name.toLowerCase();
+      marker.vibe = ev.vibe.toLowerCase();
+      marker.price = ev.price;
+      marker.duration = ev.duration || 0;
+      marker.options.link = ev.link;
+      marker.options.hours = ev.hours || [];
+
+      return {
+        name: ev.name,
+        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
+        lat: parseFloat(ev.lat),
+        lon: parseFloat(ev.lon),
+        link: ev.link,
+        openNow: ev.openNow,
+        hours: ev.hours || [],
+        hoursNumeric: ev.hoursNumeric || {},
+        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
+        timeCategory: ev.timeCategory,
+        energyRamp: ev.energyRamp,
+        tags: ev.tags,
+        price: ev.price,
+        duration: ev.duration
+      };
+    });
+  })
+  
 function getCurrentDayPart() {
   const hour = new Date().getHours();
   if (hour >= 6 && hour < 11) return ['M'];
@@ -150,46 +183,12 @@ const neighborhoodCenters = {
   "williamsburg": { lat: 40.7081, lon: -73.9571 }
 };
 
-let allLocations = [];
-
-fetch('events.json')
-  .then(res => res.json())
-  .then(events => {
-    allLocations = events.map(ev => {
-      const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon: defaultIcon }).addTo(map);
-      marker.name = ev.name.toLowerCase();
-      marker.vibe = ev.vibe.toLowerCase();
-      marker.price = ev.price;
-      marker.duration = ev.duration || 0;
-      marker.options.link = ev.link;
-      marker.options.hours = ev.hours || [];
-
-      return {
-        name: ev.name,
-        vibe: typeof ev.vibe === 'string' ? ev.vibe.split(',').map(v => v.trim().toLowerCase()) : [],
-        lat: parseFloat(ev.lat),
-        lon: parseFloat(ev.lon),
-        link: ev.link,
-        openNow: ev.openNow,
-        hours: ev.hours || [],
-        hoursNumeric: ev.hoursNumeric || {},
-        dayParts: Object.values(ev.dayParts || {}).filter(dp => dp !== '-' && dp !== ''),
-        timeCategory: ev.timeCategory,
-        energyRamp: ev.energyRamp,
-        tags: ev.tags,
-        price: ev.price,
-        duration: ev.duration
-      };
-    });
 
     document.getElementById('crawlNowBtn').addEventListener('click', () => {
       generateCrawlRoute(allLocations);
     });
-  })
-  .catch(err => {
-    console.error('Failed to load event data:', err);
-    alert('Could not load event data.');
-  });
+
+ 
 
 const themeMap = {
   "quiet luxury": ["martini", "rooftop", "lounge", "luxury", "refined", "tasting", "elegant", "cocktail", "chic"],
