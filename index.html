@@ -165,7 +165,7 @@ fetch('events.json')
       price: ev.price,
       duration: ev.duration
     }));
-  })
+  }
   .catch(err => {
     console.error('Failed to load event data:', err);
     alert('Could not load event data.');
