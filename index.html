@@ -744,11 +744,10 @@ function generateCrawlFromFavorite(startMarker) {
       }
 
       const openLocations = allLocations.filter(loc => {
-        const inNeighborhood = !neighborhood || (loc.neighborhood && loc.neighborhood.toLowerCase() === neighborhood);
         const matchesPrice = !priceFilter || (loc.price && loc.price === priceFilter);
         const matchesTheme = !theme || (loc.theme && loc.theme.toLowerCase() === theme);
         const isOpenTemporal = isOpenInCurrentDayPart(loc);
-        return inNeighborhood && matchesPrice && matchesTheme && isOpenTemporal;
+        return matchesPrice && matchesTheme && isOpenTemporal;
       });
 
       if (openLocations.length === 0) {
@@ -757,25 +756,40 @@ function generateCrawlFromFavorite(startMarker) {
       }
 
       // Sort by proximity to neighborhood center
-      openLocations.sort((a, b) => {
-        const d1 = Math.hypot(a.lat - neighborhoodCenter.lat, a.lon - neighborhoodCenter.lon);
-        const d2 = Math.hypot(b.lat - neighborhoodCenter.lat, b.lon - neighborhoodCenter.lon);
-        return d1 - d2;
+      // Filter only those within 175m of neighborhood center for starting point
+      const initialOptions = openLocations.filter(loc => {
+        const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+        const locLatLng = L.latLng(loc.lat, loc.lon);
+        const dist = center.distanceTo(locLatLng);
+        return dist <= 175; // in meters
       });
 
-      let maxDuration = 8;
-      if (durationSetting === 'short') maxDuration = 2;
-      else if (durationSetting === 'medium') maxDuration = 5;
+      if (initialOptions.length === 0) {
+        alert('No suitable starting points within the neighborhood center.');
+        return;
+      }
 
-      let totalDuration = 0;
-      const crawlRoute = [];
+      const crawlRoute = [initialOptions[0]];
+      let totalDuration = initialOptions[0].duration || 0;
+      const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
 
-      for (let loc of openLocations) {
-        if (loc.duration && (totalDuration + loc.duration) <= maxDuration) {
+      let lastStop = initialOptions[0];
+      const remaining = openLocations.filter(loc => loc !== lastStop);
+
+      for (let loc of remaining) {
+        if (!loc.duration || (totalDuration + loc.duration > maxDuration)) continue;
+        const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
+        const locLatLng = L.latLng(loc.lat, loc.lon);
+        const dist = lastLatLng.distanceTo(locLatLng);
+        if (dist <= 350) { // ~350 meters in degrees
           crawlRoute.push(loc);
           totalDuration += loc.duration;
+          lastStop = loc;
         }
         if (totalDuration >= maxDuration) break;
+      }
+
+              if (totalDuration >= maxDuration) break;
       }
 
       if (crawlRoute.length < 2) {
@@ -802,9 +816,9 @@ function generateCrawlFromFavorite(startMarker) {
   { name: 'Sound Bath Studio', dayParts: ['MD', 'A'], lat: 40.728, lon: -73.981, duration: 1.2, price: '$$', theme: 'wellness ritual' }
 ];
 
-  document.getElementById('crawlNowBtn').addEventListener('click', () => {
-    generateCrawlRoute(allLocations);
-     });
+    document.getElementById('crawlNowBtn').addEventListener('click', () => {
+      generateCrawlRoute(allLocations);
+    });
   
 
 function addPointToRoute(latlng) {
