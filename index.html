@@ -106,6 +106,8 @@ const defaultIcon = L.icon({
   shadowSize: [41, 41]
 });
 
+  let allLocations = [];
+  
 const map = L.map('map').setView([40.72, -73.98], 12);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap contributors & Carto',
@@ -113,7 +115,6 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19
 }).addTo(map);
 
-let allLocations = [];
 
 function generateCrawlRoute(allLocations) {
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
