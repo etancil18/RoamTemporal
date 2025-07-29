@@ -428,7 +428,7 @@ function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   const initialOptions = openLocations.filter(loc => {
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
   const locLatLng = L.latLng(loc.lat, loc.lon);
-  const withinRadius = center.distanceTo(locLatLng) <= 150;
+  const withinRadius = center.distanceTo(locLatLng) <= 250;
 
   const themeKeywords = themeMap[theme] || [];
   const allVibes = Array.isArray(loc.vibe) ? loc.vibe : [];
