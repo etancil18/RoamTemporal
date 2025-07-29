@@ -109,6 +109,9 @@
     <option value="long">Long (5.5–8h)</option>
   </select>
   <button id="crawlNowBtn">Crawl Now</button>
+  <button id="saveRouteBtn">Save Route</button>
+<button id="clearRouteBtn">Clear Route</button>
+<button id="favoritesBtn">My Favorites</button>
 </div>
 <div id="map"></div>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -162,6 +165,7 @@ let allMarkers = [];
 let selectedRoute = [];
 let currentRoute = null;
 const maxRouteStops = 5;
+  let savedRoutes = [];
 
 // ─── DRAW ROUTE FUNCTION ───────────────────────────────────────────────────────
 function drawRoute() {
@@ -308,6 +312,24 @@ fetch('events.json')
     alert('Failed to load locations.');
   });
 
+document.getElementById('clearRouteBtn').addEventListener('click', () => {
+  selectedRoute = [];
+  if (currentRoute) map.removeControl(currentRoute);
+});
+
+document.getElementById('saveRouteBtn').addEventListener('click', () => {
+  if (selectedRoute.length < 2) {
+    alert('Add at least 2 locations to save a route.');
+    return;
+  }
+  savedRoutes.push([...selectedRoute]);
+  alert('Route saved to favorites.');
+});
+
+document.getElementById('favoritesBtn').addEventListener('click', () => {
+  openFavoritesModal();
+});
+  
 const neighborhoodCenters = {
   "alphabet city": L.latLng(40.7265, -73.9815),
   "bedstuy": L.latLng(40.6850, -73.9419),
@@ -563,6 +585,35 @@ for (let loc of remaining) {
   }).addTo(map);
 }
 
+  // Simple modal HTML injection
+function openFavoritesModal() {
+  let html = '<div id="modal" style="position:fixed;top:10%;left:50%;transform:translateX(-50%);background:white;padding:20px;z-index:2000;border:1px solid #ccc;max-height:80%;overflow:auto;">';
+  html += '<h2>Saved Routes</h2>';
+  if (!savedRoutes.length) {
+    html += '<p>No routes saved.</p>';
+  } else {
+    savedRoutes.forEach((route, idx) => {
+      html += `<div><strong>Route #${idx + 1}</strong><ul>`;
+      route.forEach(loc => {
+        html += `<li>${loc.name}</li>`;
+      });
+      html += `</ul><button data-idx="${idx}" class="load-route">Load</button></div>`;
+    });
+  }
+  html += '<hr><button id="closeModal">Close</button></div>';
+  document.body.insertAdjacentHTML('beforeend', html);
+
+  document.getElementById('closeModal').onclick = () => {
+    document.getElementById('modal').remove();
+  };
+  document.querySelectorAll('.load-route').forEach(btn => {
+    btn.onclick = () => {
+      selectedRoute = savedRoutes[btn.dataset.idx];
+      drawRoute();
+      document.getElementById('modal').remove();
+    };
+  });
+}
 
 </script>
 <div style="position: absolute; bottom: 3px; right: 0px; z-index: 1000; background: rgba(255,255,255,0.8); padding: 4px 8px; border-radius: 4px; font-size: 8px;">
