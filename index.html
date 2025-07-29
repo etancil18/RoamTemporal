@@ -487,85 +487,40 @@ function generateCrawlRoute() {
   return matchesPrice && matchesTheme && (isCurrentlyOpen || isOpenLater);
 });
 
-      runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting);
-    };
+      runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme);
+}
 
-  // ✅ Only trigger crawl logic on button click — no arguments needed
-document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
-
-function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
-  function checkOpenLocations(openLocations) {
-    if (openLocations.length === 0) {
-      alert('No suitable locations found.');
-      return false;
-    }
-    return true;
-  }
-
-  function checkInitialOptions(initialOptions) {
-    if (initialOptions.length === 0) {
-      alert('No suitable starting points within the neighborhood center.');
-      return false;
-    }
-    return true;
-  }
-
-  function checkCrawlRoute(crawlRoute) {
-    if (crawlRoute.length < 2) {
-      alert('A crawl requires at least 2 stops. Try adjusting your filters or duration.');
-      return false;
-    }
-    return true;
-  }
-
-  if (!checkOpenLocations(openLocations)) return;
-
-  const initialOptions = openLocations.filter(loc => {
-  const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
-  const locLatLng = L.latLng(loc.lat, loc.lon);
-  const withinRadius = center.distanceTo(locLatLng) <= 1500;
-
-  const themeKeywords = themeMap[theme] || [];
-  const allVibes = Array.isArray(loc.vibe) ? loc.vibe : [];
-  const sharedVibes = allVibes.filter(v => themeKeywords.includes(v));
-  const vibeMatch = sharedVibes.length >= 2;
+runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme) {
+  const clean = openLocations.filter(loc =>
+    typeof loc.lat === 'number' && typeof loc.lon === 'number' &&
+    !isNaN(loc.lat) && !isNaN(loc.lon)
+  );
 
   const currentPart = getCurrentDayPart()[0];
-  const isOpenNow = loc.dayParts.includes(currentPart);
+  const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
+  const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
-  return withinRadius && vibeMatch && isOpenNow;
-});
+  const candidates = clean.filter(loc => {
+    if (!loc.dayParts.includes(currentPart)) return false;
+    const ll = L.latLng(loc.lat, loc.lon);
+    if (center.distanceTo(ll) > 1000) return false;
 
-if (!checkInitialOptions(initialOptions)) return;
+    const locVibes = Array.isArray(loc.vibe)
+      ? loc.vibe.map(v => v.toLowerCase())
+      : (loc.vibe || '').split(',').map(v => v.trim().toLowerCase());
 
-// 🔀 Randomly pick the first stop
-const firstStop = initialOptions[Math.floor(Math.random() * initialOptions.length)];
-const crawlRoute = [firstStop];
-let totalDuration = firstStop.duration || 0;
-const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
+    const shared = locVibes.filter(v => themeKeywords.includes(v));
+    return shared.length >= 1;
+  });
 
-let lastStop = firstStop;
-let lastDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => lastStop.dayParts.includes(p));
-const remaining = openLocations.filter(loc => loc !== lastStop);
-
-for (let loc of remaining) {
-  if (theme && !matchesTheme(loc, theme)) continue;
-  if (!loc.duration || totalDuration + loc.duration > maxDuration) continue;
-
-  const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
-  const locLatLng = L.latLng(loc.lat, loc.lon);
-  if (lastLatLng.distanceTo(locLatLng) <= 350) {
-    const locDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => loc.dayParts.includes(p));
-    if (locDayPartIndex >= lastDayPartIndex) {
-      crawlRoute.push(loc);
-      totalDuration += loc.duration;
-      lastStop = loc;
-      lastDayPartIndex = locDayPartIndex;
-    }
+  if (candidates.length === 0) {
+    alert('No suitable first stop found.');
+    return;
   }
 
-  if (totalDuration >= maxDuration) break;
-}
+  const firstStop = candidates[Math.floor(Math.random() * candidates.length)];
+  const crawlRoute = [firstStop];
+  let totalDuration = firstStop.duration || 0;
 
   if (!checkCrawlRoute(crawlRoute)) return;
 
@@ -582,6 +537,9 @@ for (let loc of remaining) {
     show: false
   }).addTo(map);
 }
+
+   // ✅ Only trigger crawl logic on button click — no arguments needed
+document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
 
   // Simple modal HTML injection
 function openFavoritesModal() {
