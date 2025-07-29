@@ -488,9 +488,8 @@ function generateCrawlRoute() {
 });
 
       runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme);
-}
 
-runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme) {
+function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme) {
   const clean = openLocations.filter(loc =>
     typeof loc.lat === 'number' && typeof loc.lon === 'number' &&
     !isNaN(loc.lat) && !isNaN(loc.lon)
