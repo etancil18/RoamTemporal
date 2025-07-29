@@ -178,7 +178,13 @@ function drawRoute() {
     draggableWaypoints: false,
     addWaypoints: false,
     show: false,
-    createMarker: () => null  // Suppress default marker icons
+    createMarker: () => null, // Hide default markers
+    lineOptions: {
+      styles: [{ color: 'red', opacity: 0.9, weight: 5 }]
+    },
+    router: new L.Routing.osrmv1({
+      serviceUrl: 'https://router.project-osrm.org/route/v1'
+    })
   }).addTo(map);
 }
 
