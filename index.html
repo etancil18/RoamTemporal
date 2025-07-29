@@ -229,13 +229,21 @@ function generateCrawlRoute() {
       const selectedTierIndex = priceTiers.indexOf(priceFilter);
 
       const openLocations = allLocations.filter(loc => {
-        const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
-        const matchesTheme = !theme || (themeMap[theme] || []).some(kw => loc.vibe?.join(' ').includes(kw));
-        const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
-        const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
-        const isOpenTemporal = loc.dayParts.some(part => futureParts.includes(part));
-        return matchesPrice && matchesTheme && isOpenTemporal;
-      });
+  const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
+
+  const themeKeywords = themeMap[theme] || [];
+  const matchesTheme = !theme || themeKeywords.some(kw => {
+    const vibeMatch = loc.vibe?.some(v => v.includes(kw));
+    const tagMatch = typeof loc.tags === 'string' && loc.tags.toLowerCase().includes(kw);
+    return vibeMatch || tagMatch;
+  });
+
+  const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
+  const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
+  const isOpenTemporal = loc.dayParts.some(part => futureParts.includes(part));
+
+  return matchesPrice && matchesTheme && isOpenTemporal;
+});
 
       runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting);
     };
