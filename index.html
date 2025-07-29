@@ -205,7 +205,7 @@ function renderMarkers(events) {
       const mVibes = Array.isArray(m.ev.vibe)
         ? m.ev.vibe.map(v => v.toLowerCase())
         : [];
-      const shared = vibes.filter(v => mVibes.includes(v));
+      const shared = vibe.filter(v => mVibe.includes(v));
       return dist <= 350 && shared.length > 0;
     });
 
@@ -221,7 +221,7 @@ function renderMarkers(events) {
         <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
         <a href="${ev.link}" target="_blank">More Info</a>
         <hr/>
-        <strong>Similar Places Nearby:</strong>
+        <strong>Could also be the move..:</strong>
         ${similarList}
       </div>
     `;
