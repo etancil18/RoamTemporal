@@ -161,16 +161,17 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 
 function renderMarkers(events) {
   markerLayer.clearLayers();
+  allMarkers = []; // Reset global marker store
+
   const weekdayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
   const todayIndex = new Date().getDay();
   const todayKey = weekdayKeys[todayIndex];
 
-  const markers = [];
-
-  // Create all markers first
+  // Create markers and cache
   events.forEach(ev => {
-    const isOpen = isLocationOpenNow(ev);
     const rawPart = ev.dayParts?.[todayKey];
+    const isOpen = isLocationOpenNow(ev);
+
     const markerColor =
       isOpen && rawPart && rawPart !== '-'
         ? (dayPartColors[rawPart] || 'grey')
@@ -187,40 +188,34 @@ function renderMarkers(events) {
 
     const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
     marker.ev = ev;
-    markers.push(marker);
+    allMarkers.push(marker);
   });
 
-  // Attach popups with static nearby suggestions
-  markers.forEach(marker => {
+  // Attach popups with Nearby Similar logic
+  allMarkers.forEach(marker => {
     const ev = marker.ev;
     const latlng = marker.getLatLng();
-    const vibes = Array.isArray(ev.vibe)
-      ? ev.vibe.map(v => v.toLowerCase())
-      : [];
     const isOpen = isLocationOpenNow(ev);
 
-    const similar = markers
-  .filter(m => {
-    if (m === marker) return false;
-    const dist = latlng.distanceTo(m.getLatLng());
-    if (dist > 350) return false;
+    const thisVibes = (ev.vibe || '')
+      .split(',')
+      .map(v => v.trim().toLowerCase())
+      .filter(Boolean);
 
-    const mVibes = Array.isArray(m.ev.vibe)
-      ? m.ev.vibe.map(v => v.toLowerCase())
-      : [];
-    const sharedCount = vibes.filter(v => mVibes.includes(v)).length;
-
-    // Accept if they share at least 1 vibe (or change to >=2 if you prefer)
-    return sharedCount >= 1;
-  })
-    // Sort by distance (optional but helpful)
-  .sort((a, b) => latlng.distanceTo(a.getLatLng()) - latlng.distanceTo(b.getLatLng()))
-  // Limit to just three
-  .slice(0, 3);
+    const similar = allMarkers
+      .filter(m => m !== marker && latlng.distanceTo(m.getLatLng()) <= 350)
+      .filter(m => {
+        const otherVibes = (m.ev.vibe || '')
+          .split(',')
+          .map(v => v.trim().toLowerCase())
+          .filter(Boolean);
+        return thisVibes.some(v => otherVibes.includes(v));
+      })
+      .slice(0, 3);
 
     const similarList = similar.length
-  ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
-  : '<em>No similar places nearby.</em>';
+      ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
+      : '<em>No similar places nearby.</em>';
 
     const popupContent = `
       <div style="font-size: 14px; line-height: 1.4;">
