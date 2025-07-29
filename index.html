@@ -386,36 +386,45 @@ function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
   const locLatLng = L.latLng(loc.lat, loc.lon);
   const withinRadius = center.distanceTo(locLatLng) <= 150;
-  const themeMatch = theme ? matchesTheme(loc, theme) : true;
-  return withinRadius && themeMatch;
+
+  const themeKeywords = themeMap[theme] || [];
+  const allVibes = Array.isArray(loc.vibe) ? loc.vibe : [];
+  const sharedVibes = allVibes.filter(v => themeKeywords.includes(v));
+  const vibeMatch = sharedVibes.length >= 2;
+
+  return withinRadius && vibeMatch;
 });
 
-  if (!checkInitialOptions(initialOptions)) return;
+if (!checkInitialOptions(initialOptions)) return;
 
-  const crawlRoute = [initialOptions[0]];
-  let totalDuration = initialOptions[0].duration || 0;
-  const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
+// 🔀 Randomly pick the first stop
+const firstStop = initialOptions[Math.floor(Math.random() * initialOptions.length)];
+const crawlRoute = [firstStop];
+let totalDuration = firstStop.duration || 0;
+const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
 
-  let lastStop = initialOptions[0];
-  let lastDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => lastStop.dayParts.includes(p));
-  const remaining = openLocations.filter(loc => loc !== lastStop);
+let lastStop = firstStop;
+let lastDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => lastStop.dayParts.includes(p));
+const remaining = openLocations.filter(loc => loc !== lastStop);
 
-  for (let loc of remaining) {
-    if (theme && !matchesTheme(loc, theme)) continue;
-    if (!loc.duration || totalDuration + loc.duration > maxDuration) continue;
-    const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
-    const locLatLng = L.latLng(loc.lat, loc.lon);
-    if (lastLatLng.distanceTo(locLatLng) <= 350) {
-      const locDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => loc.dayParts.includes(p));
-      if (locDayPartIndex >= lastDayPartIndex) {
-        crawlRoute.push(loc);
-        totalDuration += loc.duration;
-        lastStop = loc;
-        lastDayPartIndex = locDayPartIndex;
-      }
+for (let loc of remaining) {
+  if (theme && !matchesTheme(loc, theme)) continue;
+  if (!loc.duration || totalDuration + loc.duration > maxDuration) continue;
+
+  const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
+  const locLatLng = L.latLng(loc.lat, loc.lon);
+  if (lastLatLng.distanceTo(locLatLng) <= 350) {
+    const locDayPartIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => loc.dayParts.includes(p));
+    if (locDayPartIndex >= lastDayPartIndex) {
+      crawlRoute.push(loc);
+      totalDuration += loc.duration;
+      lastStop = loc;
+      lastDayPartIndex = locDayPartIndex;
     }
-    if (totalDuration >= maxDuration) break;
   }
+
+  if (totalDuration >= maxDuration) break;
+}
 
   if (!checkCrawlRoute(crawlRoute)) return;
 
