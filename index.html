@@ -384,9 +384,12 @@ function generateCrawlRoute() {
 
   const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
   const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
-  const isOpenTemporal = loc.dayParts.some(part => futureParts.includes(part));
+  const currentPart = currentDayParts[0];
+  const isCurrentlyOpen = loc.dayParts.includes(currentPart);
+  const isOpenLater = loc.dayParts.some(part => futureParts.includes(part));
 
-  return matchesPrice && matchesTheme && isOpenTemporal;
+
+  return matchesPrice && matchesTheme && (isCurrentlyOpen || isOpenLater);
 });
 
       runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting);
@@ -432,7 +435,10 @@ function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   const sharedVibes = allVibes.filter(v => themeKeywords.includes(v));
   const vibeMatch = sharedVibes.length >= 2;
 
-  return withinRadius && vibeMatch;
+  const currentPart = getCurrentDayPart()[0];
+  const isOpenNow = loc.dayParts.includes(currentPart);
+
+  return withinRadius && vibeMatch && isOpenNow;
 });
 
 if (!checkInitialOptions(initialOptions)) return;
