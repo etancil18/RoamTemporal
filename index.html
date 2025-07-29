@@ -186,58 +186,62 @@ function renderMarkers(events) {
     });
 
     const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
-    marker.ev = ev;
-    markers.push(marker);
-  });
+marker.ev = ev;
+markers.push(marker);
+});
 
-  // Attach popups with static nearby suggestions
-  markers.forEach(marker => {
-    const ev = marker.ev;
-    const latlng = marker.getLatLng();
-    const vibes = Array.isArray(ev.vibe)
-      ? ev.vibe.map(v => v.toLowerCase())
+// Attach popups with static nearby suggestions
+markers.forEach(marker => {
+  const ev = marker.ev;
+  const latlng = marker.getLatLng();
+
+  // Normalize vibes from comma-separated string or array
+  const vibes = typeof ev.vibe === 'string'
+    ? ev.vibe.split(',').map(v => v.trim().toLowerCase()).filter(Boolean)
+    : Array.isArray(ev.vibe)
+      ? ev.vibe.map(v => v.trim().toLowerCase())
       : [];
-    const isOpen = isLocationOpenNow(ev);
 
-    const similar = markers
-  .filter(m => {
-    if (m === marker) return false;
-    const dist = latlng.distanceTo(m.getLatLng());
-    if (dist > 350) return false;
+  const isOpen = isLocationOpenNow(ev);
 
-    const mVibes = Array.isArray(m.ev.vibe)
-      ? m.ev.vibe.map(v => v.toLowerCase())
-      : [];
-    const sharedCount = vibes.filter(v => mVibes.includes(v)).length;
+  const similar = markers
+    .filter(m => {
+      if (m === marker) return false;
+      const dist = latlng.distanceTo(m.getLatLng());
+      if (dist > 350) return false;
 
-    // Accept if they share at least 1 vibe (or change to >=2 if you prefer)
-    return sharedCount >= 1;
-  })
-    // Sort by distance (optional but helpful)
-  .sort((a, b) => latlng.distanceTo(a.getLatLng()) - latlng.distanceTo(b.getLatLng()))
-  // Limit to just three
-  .slice(0, 3);
+      const mVibes = typeof m.ev.vibe === 'string'
+        ? m.ev.vibe.split(',').map(v => v.trim().toLowerCase()).filter(Boolean)
+        : Array.isArray(m.ev.vibe)
+          ? m.ev.vibe.map(v => v.trim().toLowerCase())
+          : [];
 
-    const similarList = similar.length
-  ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
-  : '<em>No similar places nearby.</em>';
+      const sharedCount = vibes.filter(v => mVibes.includes(v)).length;
 
-    const popupContent = `
-      <div style="font-size: 14px; line-height: 1.4;">
-        <strong>${ev.name}</strong><br/>
-        <em>Vibe:</em> ${ev.vibe}<br/>
-        <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
-        <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
-        <a href="${ev.link}" target="_blank">More Info</a>
-        <hr/>
-        <strong>Could also be the move..:</strong>
-        ${similarList}
-      </div>
-    `;
+      return sharedCount >= 1;
+    })
+    .sort((a, b) => latlng.distanceTo(a.getLatLng()) - latlng.distanceTo(b.getLatLng()))
+    .slice(0, 3);
 
-    marker.bindPopup(popupContent).addTo(markerLayer);
-  });
-}
+  const similarList = similar.length
+    ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
+    : '<em>No similar places nearby.</em>';
+
+  const popupContent = `
+    <div style="font-size: 14px; line-height: 1.4;">
+      <strong>${ev.name}</strong><br/>
+      <em>Vibe:</em> ${ev.vibe}<br/>
+      <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
+      <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
+      <a href="${ev.link}" target="_blank">More Info</a>
+      <hr/>
+      <strong>Could also be the move..:</strong>
+      ${similarList}
+    </div>
+  `;
+
+  marker.bindPopup(popupContent).addTo(markerLayer);
+});
 
   function filterMarkersByVibe() {
   const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
