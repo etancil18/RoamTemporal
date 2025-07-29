@@ -192,6 +192,19 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   });
 }
 
+  function filterMarkersByVibe() {
+  const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
+
+  const filteredEvents = globalEvents.filter(ev => {
+    const vibes = Array.isArray(ev.vibe) ? ev.vibe.join(' ') : ev.vibe;
+    const tags = typeof ev.tags === 'string' ? ev.tags : '';
+    return !vibeSearch || (vibes.toLowerCase().includes(vibeSearch) || tags.toLowerCase().includes(vibeSearch));
+  });
+
+  console.log('Filtered count:', filteredEvents.length);
+  renderMarkers(filteredEvents);
+}
+  
 // Global cache for crawl logic
 let globalEvents = [];
 
@@ -360,20 +373,6 @@ function generateCrawlRoute() {
   // ✅ Only trigger crawl logic on button click — no arguments needed
 document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
 
-  function filterMarkersByVibe() {
-  const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
-
-  // Clear all existing markers
-  markerLayer.clearLayers();
-
-  const filteredEvents = globalEvents.filter(ev => {
-    const vibes = typeof ev.vibe === 'string' ? ev.vibe.toLowerCase() : ev.vibe.join(' ');
-    const tags = typeof ev.tags === 'string' ? ev.tags.toLowerCase() : '';
-    return !vibeSearch || vibes.includes(vibeSearch) || tags.includes(vibeSearch);
-  });
-
-  renderMarkers(filteredEvents);
-}
 
 function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   function checkOpenLocations(openLocations) {
