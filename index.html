@@ -428,19 +428,21 @@ for (let loc of remaining) {
 
   if (!checkCrawlRoute(crawlRoute)) return;
 
-  if (window.routeLayer) {
-    map.removeControl(window.routeLayer);
-  }
+const waypoints = crawlRoute.map(loc => L.latLng(loc.lat, loc.lon));
 
-  const waypoints = crawlRoute.map(loc => L.latLng(loc.lat, loc.lon));
-  window.routeLayer = L.Routing.control({
-    waypoints,
-    routeWhileDragging: false,
-    draggableWaypoints: false,
-    addWaypoints: false,
-    show: false
-  }).addTo(map);
+  if (window.routeLayer) {
+  map.removeLayer(window.routeLayer);
 }
+const routeLine = L.polyline(waypoints, {
+  color: 'red',
+  weight: 4,
+  opacity: 0.8,
+  smoothFactor: 1
+}).addTo(map);
+
+map.fitBounds(routeLine.getBounds());
+
+window.routeLayer = routeLine;
 
 // ✅ Only trigger crawl logic on button click — no arguments needed
 document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
