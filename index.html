@@ -157,7 +157,11 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   return currentHour >= hours.open && currentHour < hours.close;
 }
   
-  function renderMarkers(events) {
+  const markerLayer = L.layerGroup().addTo(map);
+
+function renderMarkers(events) {
+  markerLayer.clearLayers();  // ✅ Prevent duplicate markers
+
   const weekdayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
   const todayIndex = new Date().getDay();
   const todayKey = weekdayKeys[todayIndex];
@@ -165,7 +169,11 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   events.forEach(ev => {
     const rawPart = ev.dayParts?.[todayKey];
     const isOpen = isLocationOpenNow(ev);
-    const markerColor = isOpen && rawPart && rawPart !== '-' ? (dayPartColors[rawPart] || 'grey') : 'grey';
+
+    const markerColor =
+      isOpen && rawPart && rawPart !== '-'
+        ? (dayPartColors[rawPart] || 'grey')
+        : 'grey';
 
     const icon = new L.Icon({
       iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
@@ -188,10 +196,27 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 
     L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon })
       .bindPopup(popupContent)
-      .addTo(map);
+      .addTo(markerLayer);  // ✅ Add to managed group
   });
 }
 
+  function filterMarkersByVibe() {
+  const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
+
+  const filteredEvents = globalEvents.filter(ev => {
+    if (!vibeSearch) return true;
+    if (typeof ev.vibe === 'string') {
+      return ev.vibe.toLowerCase().includes(vibeSearch);
+    }
+    if (Array.isArray(ev.vibe)) {
+      return ev.vibe.some(v => v.toLowerCase().includes(vibeSearch));
+    }
+    return false;
+  });
+
+  renderMarkers(filteredEvents);
+}
+  
 // Global cache for crawl logic
 let globalEvents = [];
 
@@ -201,6 +226,7 @@ fetch('events.json')
   .then(events => {
     globalEvents = events;         // Store globally
     renderMarkers(events);         // Render all locations immediately
+    document.getElementById('vibeSearchInput').addEventListener('input', filterMarkersByVibe);
   })
   .catch(err => {
     console.error('Error loading events:', err);
