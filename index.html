@@ -157,25 +157,68 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   return currentHour >= hours.open && currentHour < hours.close;
 }
   
-  const markerLayer = L.layerGroup().addTo(map);
+  let globalEvents = [];
+let allMarkers = [];
+let selectedRoute = [];
+let routeLine = null;
+const maxRouteStops = 5;
+
+// ─── DRAW ROUTE FUNCTION ───────────────────────────────────────────────────────
+function drawRoute() {
+  if (routeLine) {
+    map.removeLayer(routeLine);
+    routeLine = null;
+  }
+  if (selectedRoute.length < 2) return;
+
+  const latlngs = selectedRoute.map(loc => L.latLng(loc.lat, loc.lon));
+  routeLine = L.polyline(latlngs, { color: 'red', weight: 4, opacity: 0.8 }).addTo(map);
+  map.fitBounds(routeLine.getBounds(), { padding: [50, 50] });
+}
+
+// ─── ADD TO ROUTE HANDLER ──────────────────────────────────────────────────────
+function addToRoute(ev) {
+  if (selectedRoute.length >= maxRouteStops) {
+    alert(`You can add up to ${maxRouteStops} stops only.`);
+    return;
+  }
+  if (selectedRoute.some(loc => loc.name === ev.name)) {
+    alert('This location is already in your route.');
+    return;
+  }
+  selectedRoute.push(ev);
+  drawRoute();
+}
+
+// ─── FILTER MARKERS BY VIBE ────────────────────────────────────────────────────
+function filterMarkersByVibe() {
+  const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
+
+  const filtered = globalEvents.filter(ev => {
+    if (!vibeSearch) return true;
+    const vibeString = (ev.vibe || '').toLowerCase();
+    return vibeString.includes(vibeSearch);
+  });
+
+  renderMarkers(filtered);
+}
+
+// ─── RENDER MARKERS (with Similar & Add-To-Route) ──────────────────────────────
+const markerLayer = L.layerGroup().addTo(map);
 
 function renderMarkers(events) {
   markerLayer.clearLayers();
-  allMarkers = []; // Reset global marker store
+  allMarkers = [];
 
   const weekdayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
   const todayIndex = new Date().getDay();
-  const todayKey = weekdayKeys[todayIndex];
 
-  // Create markers and cache
   events.forEach(ev => {
-    const rawPart = ev.dayParts?.[todayKey];
+    const rawPart = ev.dayParts?.[weekdayKeys[todayIndex]];
     const isOpen = isLocationOpenNow(ev);
-
-    const markerColor =
-      isOpen && rawPart && rawPart !== '-'
-        ? (dayPartColors[rawPart] || 'grey')
-        : 'grey';
+    const markerColor = isOpen && rawPart && rawPart !== '-'
+      ? (dayPartColors[rawPart] || 'grey')
+      : 'grey';
 
     const icon = new L.Icon({
       iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
@@ -191,7 +234,6 @@ function renderMarkers(events) {
     allMarkers.push(marker);
   });
 
-  // Attach popups with Nearby Similar logic
   allMarkers.forEach(marker => {
     const ev = marker.ev;
     const latlng = marker.getLatLng();
@@ -218,7 +260,7 @@ function renderMarkers(events) {
       : '<em>No similar places nearby.</em>';
 
     const popupContent = `
-      <div style="font-size: 14px; line-height: 1.4;">
+      <div style="font-size:14px;line-height:1.4;">
         <strong>${ev.name}</strong><br/>
         <em>Vibe:</em> ${ev.vibe}<br/>
         <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
@@ -227,33 +269,20 @@ function renderMarkers(events) {
         <hr/>
         <strong>Could also be the move..:</strong>
         ${similarList}
+        <br/><br/>
+        <button class="add-route-btn">Add to Route</button>
       </div>
     `;
 
     marker.bindPopup(popupContent).addTo(markerLayer);
+
+    marker.on('popupopen', () => {
+      const btn = document.querySelector('.add-route-btn');
+      if (btn) btn.onclick = () => addToRoute(ev);
+    });
   });
 }
-
-  function filterMarkersByVibe() {
-  const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
-
-  const filteredEvents = globalEvents.filter(ev => {
-    if (!vibeSearch) return true;
-    if (typeof ev.vibe === 'string') {
-      return ev.vibe.toLowerCase().includes(vibeSearch);
-    }
-    if (Array.isArray(ev.vibe)) {
-      return ev.vibe.some(v => v.toLowerCase().includes(vibeSearch));
-    }
-    return false;
-  });
-
-  renderMarkers(filteredEvents);
-}
-  
-// Global cache for crawl logic
-let globalEvents = [];
-
+    
 // Initial data fetch + map rendering
 fetch('events.json')
   .then(res => res.json())
