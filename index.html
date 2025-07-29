@@ -355,6 +355,9 @@ function generateCrawlRoute() {
       runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting);
     };
 
+  // ✅ Only trigger crawl logic on button click — no arguments needed
+document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
+
 function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   function checkOpenLocations(openLocations) {
     if (openLocations.length === 0) {
@@ -441,9 +444,6 @@ for (let loc of remaining) {
     show: false
   }).addTo(map);
 }
-
-// ✅ Only trigger crawl logic on button click — no arguments needed
-document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
 
 
 </script>
