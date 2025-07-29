@@ -212,51 +212,51 @@ function renderMarkers(events) {
     });
 
     const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
-    marker.ev = ev;
-    allMarkers.push(marker);
-  });
+marker.ev = ev;
+allMarkers.push(marker);
 
-  // Attach popups after all markers created
-  allMarkers.forEach(marker => {
-    const ev = marker.ev;
-    const latlng = marker.getLatLng();
-    const isOpen = isLocationOpenNow(ev);
+// Attach popups after all markers created
+allMarkers.forEach(marker => {
+  const ev = marker.ev;
+  const latlng = marker.getLatLng();
+  const isOpen = isLocationOpenNow(ev);
 
-    const thisVibes = (typeof ev.vibe === 'string'
-      ? ev.vibe.split(',').map(v => v.trim().toLowerCase())
-      : []).filter(Boolean);
+  const thisVibes = (ev.vibe || '')
+    .split(',')
+    .map(v => v.trim().toLowerCase())
+    .filter(Boolean);
 
-    // Find nearby markers with at least 1 vibe in common
-    const similar = allMarkers
-      .filter(m => m !== marker && latlng.distanceTo(m.getLatLng()) <= 350)
-      .filter(m => {
-        const otherVibes = (typeof m.ev.vibe === 'string'
-          ? m.ev.vibe.split(',').map(v => v.trim().toLowerCase())
-          : []).filter(Boolean);
-        return thisVibes.some(v => otherVibes.includes(v));
-      })
-      .slice(0, 3); // limit to 3
+  // Find nearby markers with at least 1 vibe in common
+  const similar = allMarkers
+    .filter(m => m !== marker && latlng.distanceTo(m.getLatLng()) <= 350)
+    .filter(m => {
+      const otherVibes = (m.ev.vibe || '')
+        .split(',')
+        .map(v => v.trim().toLowerCase())
+        .filter(Boolean);
+      return thisVibes.some(v => otherVibes.includes(v));
+    })
+    .slice(0, 3); // limit to 3
 
-    const similarList = similar.length
-      ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
-      : '<em>No similar places nearby.</em>';
+  const similarList = similar.length
+    ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
+    : '<em>No similar places nearby.</em>';
 
-    const popupContent = `
-      <div style="font-size: 14px; line-height: 1.4;">
-        <strong>${ev.name}</strong><br/>
-        <em>Vibe:</em> ${ev.vibe}<br/>
-        <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
-        <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
-        <a href="${ev.link}" target="_blank">More Info</a>
-        <hr/>
-        <strong>Could also be the move..:</strong>
-        ${similarList}
-      </div>
-    `;
+  const popupContent = `
+    <div style="font-size: 14px; line-height: 1.4;">
+      <strong>${ev.name}</strong><br/>
+      <em>Vibe:</em> ${ev.vibe}<br/>
+      <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
+      <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
+      <a href="${ev.link}" target="_blank">More Info</a>
+      <hr/>
+      <strong>Could also be the move..:</strong>
+      ${similarList}
+    </div>
+  `;
 
-    marker.bindPopup(popupContent).addTo(markerLayer);
-  });
-}
+  marker.bindPopup(popupContent).addTo(markerLayer);
+});
 
   function filterMarkersByVibe() {
   const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
