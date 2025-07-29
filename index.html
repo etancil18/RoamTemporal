@@ -227,6 +227,15 @@ const neighborhoodCenters = {
   "chill hang": ["lounge", "cozy", "relaxed", "intimate", "chill", "sofa", "vintage"],
   "hidden gems": ["speakeasy", "secret", "underground", "niche", "alt", "unmarked", "local"]
 };
+
+function matchesTheme(loc, theme) {
+  const keywords = themeMap[theme] || [];
+  const allTags = [
+    ...(loc.vibe || []),
+    ...(typeof loc.tags === 'string' ? loc.tags.split(',').map(t => t.trim().toLowerCase()) : [])
+  ];
+  return keywords.some(kw => allTags.includes(kw));
+}
   
 function generateCrawlRoute() {
   if (!globalEvents.length) {
@@ -314,10 +323,12 @@ function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   if (!checkOpenLocations(openLocations)) return;
 
   const initialOptions = openLocations.filter(loc => {
-    const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
-    const locLatLng = L.latLng(loc.lat, loc.lon);
-    return center.distanceTo(locLatLng) <= 175;
-  });
+  const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+  const locLatLng = L.latLng(loc.lat, loc.lon);
+  const withinRadius = center.distanceTo(locLatLng) <= 150;
+  const themeMatch = theme ? matchesTheme(loc, theme) : true;
+  return withinRadius && themeMatch;
+});
 
   if (!checkInitialOptions(initialOptions)) return;
 
@@ -330,6 +341,7 @@ function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   const remaining = openLocations.filter(loc => loc !== lastStop);
 
   for (let loc of remaining) {
+    if (theme && !matchesTheme(loc, theme)) continue;
     if (!loc.duration || totalDuration + loc.duration > maxDuration) continue;
     const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
     const locLatLng = L.latLng(loc.lat, loc.lon);
