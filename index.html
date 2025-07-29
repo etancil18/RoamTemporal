@@ -199,19 +199,28 @@ function renderMarkers(events) {
       : [];
     const isOpen = isLocationOpenNow(ev);
 
-    const similar = markers.filter(m => {
-      if (m === marker) return false;
-      const dist = latlng.distanceTo(m.getLatLng());
-      const mVibes = Array.isArray(m.ev.vibe)
-        ? m.ev.vibe.map(v => v.toLowerCase())
-        : [];
-      const shared = vibes.filter(v => mVibes.includes(v));
-      return dist <= 350 && shared.length > 0;
-    });
+    const similar = markers
+  .filter(m => {
+    if (m === marker) return false;
+    const dist = latlng.distanceTo(m.getLatLng());
+    if (dist > 350) return false;
+
+    const mVibes = Array.isArray(m.ev.vibe)
+      ? m.ev.vibe.map(v => v.toLowerCase())
+      : [];
+    const sharedCount = vibes.filter(v => mVibes.includes(v)).length;
+
+    // Accept if they share at least 1 vibe (or change to >=2 if you prefer)
+    return sharedCount >= 1;
+  })
+    // Sort by distance (optional but helpful)
+  .sort((a, b) => latlng.distanceTo(a.getLatLng()) - latlng.distanceTo(b.getLatLng()))
+  // Limit to just three
+  .slice(0, 3);
 
     const similarList = similar.length
-      ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
-      : '<em>No similar places nearby.</em>';
+  ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
+  : '<em>No similar places nearby.</em>';
 
     const popupContent = `
       <div style="font-size: 14px; line-height: 1.4;">
