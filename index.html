@@ -160,20 +160,26 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   let globalEvents = [];
 let allMarkers = [];
 let selectedRoute = [];
-let routeLine = null;
+let currentRoute = null;
 const maxRouteStops = 5;
 
 // ─── DRAW ROUTE FUNCTION ───────────────────────────────────────────────────────
 function drawRoute() {
-  if (routeLine) {
-    map.removeLayer(routeLine);
-    routeLine = null;
+  if (currentRoute) {
+    map.removeControl(currentRoute);
+    currentRoute = null;
   }
   if (selectedRoute.length < 2) return;
 
-  const latlngs = selectedRoute.map(loc => L.latLng(loc.lat, loc.lon));
-  routeLine = L.polyline(latlngs, { color: 'red', weight: 4, opacity: 0.8 }).addTo(map);
-  map.fitBounds(routeLine.getBounds(), { padding: [50, 50] });
+  const waypoints = selectedRoute.map(loc => L.latLng(loc.lat, loc.lon));
+  currentRoute = L.Routing.control({
+    waypoints,
+    routeWhileDragging: false,
+    draggableWaypoints: false,
+    addWaypoints: false,
+    show: false,
+    createMarker: () => null  // Suppress default marker icons
+  }).addTo(map);
 }
 
 // ─── ADD TO ROUTE HANDLER ──────────────────────────────────────────────────────
