@@ -323,6 +323,16 @@ function matchesTheme(loc, theme) {
   ];
   return keywords.some(kw => allTags.includes(kw));
 }
+
+function getCurrentDayPart() {
+  const hour = new Date().getHours();
+  if (hour >= 6 && hour < 11) return ['M'];
+  if (hour >= 11 && hour < 14) return ['MD'];
+  if (hour >= 14 && hour < 16) return ['A'];
+  if (hour >= 16 && hour < 19) return ['HH'];
+  if (hour >= 19 && hour < 22) return ['E'];
+  return ['L']; // Late night or overnight
+}
   
 function generateCrawlRoute() {
   if (!globalEvents.length) {
