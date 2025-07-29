@@ -157,12 +157,14 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   return currentHour >= hours.open && currentHour < hours.close;
 }
   
-  const markerLayer = L.layerGroup().addTo(map);
+ const markerLayer = L.layerGroup().addTo(map);
+const allMarkers = [];
 
 function renderMarkers(events) {
-  markerLayer.clearLayers();  // ✅ Prevent duplicate markers
+  markerLayer.clearLayers();
+  allMarkers.length = 0;
 
-  const weekdayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+  const weekdayKeys = ['sun','mon','tue','wed','thu','fri','sat'];
   const todayIndex = new Date().getDay();
   const todayKey = weekdayKeys[todayIndex];
 
@@ -170,22 +172,21 @@ function renderMarkers(events) {
     const rawPart = ev.dayParts?.[todayKey];
     const isOpen = isLocationOpenNow(ev);
 
-    const markerColor =
-      isOpen && rawPart && rawPart !== '-'
-        ? (dayPartColors[rawPart] || 'grey')
-        : 'grey';
+    const markerColor = isOpen && rawPart && rawPart !== '-'
+      ? (dayPartColors[rawPart] || 'grey')
+      : 'grey';
 
     const icon = new L.Icon({
       iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
-      shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
+      shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png`,
+      iconSize: [25,41],
+      iconAnchor: [12,41],
+      popupAnchor: [1,-34],
+      shadowSize: [41,41]
     });
 
     const popupContent = `
-      <div style="font-size: 14px; line-height: 1.4;">
+      <div style="font-size:14px; line-height:1.4;">
         <strong>${ev.name}</strong><br/>
         <em>Vibe:</em> ${ev.vibe}<br/>
         <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
@@ -194,13 +195,33 @@ function renderMarkers(events) {
       </div>
     `;
 
-    L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon })
+    const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon })
       .bindPopup(popupContent)
-      .addTo(markerLayer);  // ✅ Add to managed group
+      .addTo(markerLayer);
+
+    marker.ev = ev;
+    allMarkers.push(marker);
+
+    // When popup opens: add similar nearby list
+    marker.on('popupopen', () => {
+      const nearby = findNearbySimilar(marker.getLatLng(), ev.vibe);
+      const listHtml = nearby.length
+        ? '<ul>' + nearby.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
+        : '<em>No similar places found nearby.</em>';
+
+      const newContent = `
+        <div>${popupContent}</div>
+        <hr/>
+        <strong>Similar Places Nearby:</strong>
+        ${listHtml}
+      `;
+
+      marker.setPopupContent(newContent);
+    });
   });
 }
 
-  function filterMarkersByVibe() {
+function filterMarkersByVibe() {
   const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
 
   const filteredEvents = globalEvents.filter(ev => {
@@ -215,6 +236,21 @@ function renderMarkers(events) {
   });
 
   renderMarkers(filteredEvents);
+}
+
+function findNearbySimilar(latlng, vibeText = '', radius = 350) {
+  const tags = vibeText.split(',').map(t => t.trim().toLowerCase()).filter(Boolean);
+
+  return allMarkers.filter(marker => {
+    const markerVibe = (marker.ev.vibe || '').toLowerCase();
+    const distance = latlng.distanceTo(marker.getLatLng());
+
+    const vibeMatch = tags.length > 0
+      ? tags.some(tag => markerVibe.includes(tag))
+      : markerVibe.includes(vibeText.toLowerCase());
+
+    return distance <= radius && vibeMatch && !latlng.equals(marker.getLatLng());
+  });
 }
   
 // Global cache for crawl logic
