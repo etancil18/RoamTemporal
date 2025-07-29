@@ -42,7 +42,7 @@
 </head>
 <body>
 <div class="controls">
-  <input type="text" id="vibeSearchInput" placeholder="What's the vibe..." />
+  <input id="map-search" type="text" placeholder="What's the vibe..." />
   <select id="themeDropdown">
   <option value="">Select Theme</option>
   <option value="Date Night">Date Night</option>
@@ -192,19 +192,6 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   });
 }
 
-  function filterMarkersByVibe() {
-  const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
-
-  const filteredEvents = globalEvents.filter(ev => {
-    const vibes = Array.isArray(ev.vibe) ? ev.vibe.join(' ') : ev.vibe;
-    const tags = typeof ev.tags === 'string' ? ev.tags : '';
-    return !vibeSearch || (vibes.toLowerCase().includes(vibeSearch) || tags.toLowerCase().includes(vibeSearch));
-  });
-
-  console.log('Filtered count:', filteredEvents.length);
-  renderMarkers(filteredEvents);
-}
-  
 // Global cache for crawl logic
 let globalEvents = [];
 
@@ -214,7 +201,6 @@ fetch('events.json')
   .then(events => {
     globalEvents = events;         // Store globally
     renderMarkers(events);         // Render all locations immediately
-    document.getElementById('vibeSearchInput').addEventListener('input', filterMarkersByVibe);
   })
   .catch(err => {
     console.error('Error loading events:', err);
@@ -372,7 +358,6 @@ function generateCrawlRoute() {
 
   // ✅ Only trigger crawl logic on button click — no arguments needed
 document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
-
 
 function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting) {
   function checkOpenLocations(openLocations) {
