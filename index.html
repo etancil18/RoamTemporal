@@ -148,7 +148,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   events.forEach(ev => {
     const rawPart = ev.dayParts?.[todayKey];
     const isOpen = isLocationOpenNow(ev);
-    const markerColor = isOpen && rawPart && rawPart !== '-' ? (dayPartColors[rawPart] || 'gray') : 'gray';
+    const markerColor = isOpen && rawPart && rawPart !== '-' ? (dayPartColors[rawPart] || 'grey') : 'grey';
 
     const icon = new L.Icon({
       iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
