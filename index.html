@@ -460,32 +460,46 @@ function generateCrawlRoute() {
 };
   const currentDayParts = themeOverrides[theme] || baseDayParts;
 
-  const openLocations = globalEvents.filter(loc => {
-    const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
-    const normalizedVibes = (loc.vibe || '')
-  .split(',')
-  .map(v => v.trim().toLowerCase())
-  .filter(Boolean);
+  const openLocations = allLocations.filter(loc => {
+  const normalizedVibes = (loc.vibe || '')
+    .split(',')
+    .map(v => v.trim().toLowerCase())
+    .filter(Boolean);
 
-const normalizedTags = (loc.tags || '')
-  .split(',')
-  .map(t => t.trim().toLowerCase())
-  .filter(Boolean);
+  const normalizedTags = (loc.tags || '')
+    .split(',')
+    .map(t => t.trim().toLowerCase())
+    .filter(Boolean);
 
-const allKeywords = [...normalizedVibes, ...normalizedTags];
+  const allKeywords = [...normalizedVibes, ...normalizedTags];
 
-const matchesTheme = !theme || themeKeywords.some(kw =>
-  allKeywords.includes(kw.toLowerCase())
-);
-    const dayPartsArray = Array.isArray(loc.dayParts) ? loc.dayParts : [];
-    const matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
-    return matchesPrice && matchesTheme && matchesDayPart;
-  });
+  const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
+  const matchesTheme = !theme || themeKeywords.some(kw => allKeywords.includes(kw.toLowerCase()));
 
-  if (!openLocations.length) {
-    alert('No matching locations are open now for that theme.');
-    return;
+  const dayPartsArray = Array.isArray(loc.dayParts) ? loc.dayParts : [];
+  const matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
+
+  const passes = matchesPrice && matchesTheme && matchesDayPart;
+
+  if (!passes) {
+    console.warn(`[FILTER OUT]`, {
+      name: loc.name,
+      matchesPrice,
+      matchesTheme,
+      matchesDayPart,
+      currentDayParts,
+      locDayParts: loc.dayParts,
+      allKeywords
+    });
   }
+
+  return passes;
+});
+
+if (!openLocations.length) {
+  alert('No matching locations are open now for that theme.');
+  return;
+}
 
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
