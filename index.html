@@ -559,7 +559,10 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
 );
 
 validLocations.forEach(ev => {
-  const normalizedVibes = (ev.vibe || '').split(',').map(v => v.trim().toLowerCase());
+  const normalizedVibes = Array.isArray(ev.vibe)
+    ? ev.vibe.map(v => v.trim().toLowerCase())
+    : (ev.vibe || '').split(',').map(v => v.trim().toLowerCase());
+
   const normalizedTags = (ev.tags || '').split(',').map(t => t.trim().toLowerCase());
 
   const vibeMatches = normalizedVibes.filter(v => themeKeywords.includes(v));
