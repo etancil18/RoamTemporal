@@ -432,7 +432,9 @@ function generateCrawlRoute() {
   }
 
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
-  const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
+  const rawTheme = document.getElementById('themeDropdown').value;
+const theme = rawTheme.trim().toLowerCase();
+const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
 
   console.log('🧠 Raw Theme:', rawTheme);
 console.log('🎯 Processed Theme:', theme);
