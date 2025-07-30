@@ -563,7 +563,9 @@ validLocations.forEach(ev => {
     ? ev.vibe.map(v => v.trim().toLowerCase())
     : (ev.vibe || '').split(',').map(v => v.trim().toLowerCase());
 
-  const normalizedTags = (ev.tags || '').split(',').map(t => t.trim().toLowerCase());
+  const normalizedTags = Array.isArray(ev.tags)
+    ? ev.tags.map(t => t.trim().toLowerCase())
+    : (ev.tags || '').split(',').map(t => t.trim().toLowerCase());
 
   const vibeMatches = normalizedVibes.filter(v => themeKeywords.includes(v));
   const tagMatches = normalizedTags.filter(t => themeKeywords.includes(t));
