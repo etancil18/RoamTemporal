@@ -463,35 +463,33 @@ function generateCrawlRoute() {
     duration: ev.duration
   }));
 
-      const currentDayParts = getCurrentDayPart();
-      const priceTiers = ['$', '$$', '$$$', '$$$$'];
-      const selectedTierIndex = priceTiers.indexOf(priceFilter);
+  const currentDayParts = getCurrentDayPart();
+  const priceTiers = ['$', '$$', '$$$', '$$$$'];
+  const selectedTierIndex = priceTiers.indexOf(priceFilter);
 
-     const openLocations = allLocations.filter(loc => {
-  const matchesPrice = !priceFilter ||
-    (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
+  const openLocations = allLocations.filter(loc => {
+    const matchesPrice = !priceFilter ||
+      (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
 
-  const themeKeywords = themeMap[theme] || [];
-  const matchesTheme = !theme || themeKeywords.some(kw => {
-    const vibeMatch = loc.vibe?.some(v => v.includes(kw));
-    const tagMatch = typeof loc.tags === 'string' &&
-      loc.tags.toLowerCase().includes(kw);
-    return vibeMatch || tagMatch;
+    const themeKeywords = themeMap[theme] || [];
+    const matchesTheme = !theme || themeKeywords.some(kw => {
+      const vibeMatch = loc.vibe?.some(v => v.includes(kw));
+      const tagMatch = typeof loc.tags === 'string' &&
+        loc.tags.toLowerCase().includes(kw);
+      return vibeMatch || tagMatch;
+    });
+
+    const currentIndex = ['M','MD','A','HH','E','L'].findIndex(p => currentDayParts.includes(p));
+    const futureParts = ['M','MD','A','HH','E','L'].slice(currentIndex);
+    const currentPart = currentDayParts[0];
+    const isCurrentlyOpen = loc.dayParts.includes(currentPart);
+    const isOpenLater = loc.dayParts.some(part => futureParts.includes(part));
+
+    return matchesPrice && matchesTheme && (isCurrentlyOpen || isOpenLater);
   });
 
-  const currentIndex = ['M','MD','A','HH','E','L']
-    .findIndex(p => currentDayParts.includes(p));
-  const futureParts = ['M','MD','A','HH','E','L'].slice(currentIndex);
-  const currentPart = currentDayParts[0];
-  const isCurrentlyOpen = loc.dayParts.includes(currentPart);
-  const isOpenLater = loc.dayParts.some(part =>
-    futureParts.includes(part)
-  );
-
-  return matchesPrice &&
-         matchesTheme &&
-         (isCurrentlyOpen || isOpenLater);
-});
+  runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme);
+}
 
       function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme) {
   const clean = openLocations.filter(loc =>
