@@ -490,7 +490,12 @@ console.log('🎯 Processed Theme:', theme);
     const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
     const matchesTheme = !theme || themeKeywords.some(kw => allKeywords.includes(kw));
     let matchesDayPart = false;
-const dayPartsArray = Array.isArray(loc.dayParts) ? loc.dayParts : [];
+let dayPartsArray = [];
+if (Array.isArray(loc.dayParts)) {
+  dayPartsArray = loc.dayParts;
+} else if (typeof loc.dayParts === 'object' && loc.dayParts !== null) {
+  dayPartsArray = Object.values(loc.dayParts).filter(p => p && p !== '-');
+}
 
 if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
   matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
@@ -550,6 +555,10 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
   openLocations.forEach(ev => {
+  if (isNaN(ev.lat) || isNaN(ev.lon)) {
+    console.warn(`⚠️ Skipping invalid location:`, ev.name);
+    return;
+  }
     const vibeMatches = ev.vibe.filter(v => themeKeywords.includes(v));
     const tagMatches = ev.tags.filter(t => themeKeywords.includes(t));
     const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
