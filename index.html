@@ -558,12 +558,12 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
   ev.lat && ev.lon && !isNaN(ev.lat) && !isNaN(ev.lon)
 );
 
-  if (!ev.lat || !ev.lon || isNaN(ev.lat) || isNaN(ev.lon)) {
-  console.warn('⚠️ Skipping invalid location:', ev.name);
-  return;
-}
-  
 validLocations.forEach(ev => {
+  if (!ev.lat || !ev.lon || isNaN(ev.lat) || isNaN(ev.lon)) {
+    console.warn('⚠️ Skipping invalid location:', ev.name);
+    return;
+  }
+
   const normalizedVibes = Array.isArray(ev.vibe)
     ? ev.vibe.map(v => v.trim().toLowerCase())
     : (ev.vibe || '').split(',').map(v => v.trim().toLowerCase());
