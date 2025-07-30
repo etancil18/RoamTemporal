@@ -554,11 +554,9 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
 
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
-  openLocations.forEach(ev => {
-  if (isNaN(ev.lat) || isNaN(ev.lon)) {
-    console.warn(`⚠️ Skipping invalid location:`, ev.name);
-    return;
-  }
+  openLocations
+  .filter(ev => ev.lat && ev.lon && !isNaN(ev.lat) && !isNaN(ev.lon))
+  .forEach(ev => {
     const vibeMatches = ev.vibe.filter(v => themeKeywords.includes(v));
     const tagMatches = ev.tags.filter(t => themeKeywords.includes(t));
     const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
