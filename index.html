@@ -418,6 +418,8 @@ function generateCrawlRoute() {
     return;
   }
 
+   let center;
+  
   console.log('🚨 generateCrawlRoute() triggered');
 
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
@@ -430,7 +432,7 @@ if (!neighborhoodCenter || !neighborhoodCenter.lat || !neighborhoodCenter.lon) {
   return;
 }
 
-const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
   const rawTheme = document.getElementById('themeDropdown').value;
