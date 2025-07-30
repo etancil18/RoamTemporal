@@ -484,7 +484,7 @@ console.log('🎯 Processed Theme:', theme);
   console.log('🎯 Theme Keywords:', themeKeywords);
   console.log('🕐 Current Day Parts:', currentDayParts);
 
-  const validLocations = allLocations.filter(loc => {
+  const openLocations = allLocations.filter(loc => {
     const allKeywords = [...loc.vibe, ...loc.tags];
 
     const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
@@ -545,9 +545,9 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
     return passes;
   });
 
-  console.log('✅ Matched Locations:', validLocations);
+  console.log('✅ Matched Locations:', openLocations);
 
-  if (!validLocations.length) {
+  if (!openLocations.length) {
     alert('No matching locations are open now for that theme.');
     return;
   }
@@ -559,8 +559,11 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
 );
 
 validLocations.forEach(ev => {
-  const vibeMatches = ev.vibe.filter(v => themeKeywords.includes(v));
-  const tagMatches = ev.tags.filter(t => themeKeywords.includes(t));
+  const normalizedVibes = (ev.vibe || '').split(',').map(v => v.trim().toLowerCase());
+  const normalizedTags = (ev.tags || '').split(',').map(t => t.trim().toLowerCase());
+
+  const vibeMatches = normalizedVibes.filter(v => themeKeywords.includes(v));
+  const tagMatches = normalizedTags.filter(t => themeKeywords.includes(t));
   const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
   ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
 });
