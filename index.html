@@ -430,12 +430,18 @@ function generateCrawlRoute() {
   console.log('📍 Selected Neighborhood:', neighborhood);
 console.log('🧭 Matched Center:', neighborhoodCenters[neighborhood]);
 
-center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
-  
-if (!neighborhoodCenter || !neighborhoodCenter.lat || !neighborhoodCenter.lon) {
+const neighborhoodCenter = neighborhoodCenters[neighborhood];
+
+if (
+  !neighborhoodCenter ||
+  isNaN(neighborhoodCenter.lat) ||
+  isNaN(neighborhoodCenter.lng)
+) {
   alert("Invalid or missing neighborhood center.");
   return;
 }
+
+center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
 
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
   const rawTheme = document.getElementById('themeDropdown').value;
