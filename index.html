@@ -425,10 +425,12 @@ function generateCrawlRoute() {
   const durationSetting = document.getElementById('durationDropdown').value;
   const neighborhoodCenter = neighborhoodCenters[neighborhood];
 
-  if (!neighborhoodCenter) {
-    alert('Select a valid neighborhood.');
-    return;
-  }
+if (!neighborhoodCenter || !neighborhoodCenter.lat || !neighborhoodCenter.lon) {
+  alert("Invalid or missing neighborhood center.");
+  return;
+}
+
+const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
   const rawTheme = document.getElementById('themeDropdown').value;
