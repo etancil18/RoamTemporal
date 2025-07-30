@@ -209,14 +209,17 @@ function addToRoute(ev) {
   drawRoute();
 }
 
-// ─── FILTER MARKERS BY VIBE ────────────────────────────────────────────────────
+// ─── FILTER MARKERS ────────────────────────────────────────────────────
 function filterMarkersByVibe() {
   const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
 
   const filtered = globalEvents.filter(ev => {
     if (!vibeSearch) return true;
-    const vibeString = (ev.vibe || '').toLowerCase();
-    return vibeString.includes(vibeSearch);
+
+    const nameMatch = (ev.name || '').toLowerCase().includes(vibeSearch);
+    const vibeMatch = (ev.vibe || '').toLowerCase().includes(vibeSearch);
+
+    return nameMatch || vibeMatch;
   });
 
   renderMarkers(filtered);
