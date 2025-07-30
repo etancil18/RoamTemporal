@@ -413,9 +413,13 @@ function getCurrentDayPart() {
 }
   
 function generateCrawlRoute() {
+  if (!globalEvents.length) {
+    alert("Locations not loaded yet. Please wait a moment.");
+    return;
+  }
 
   console.log('🚨 generateCrawlRoute() triggered');
-  
+
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
   const priceFilter = document.getElementById('priceFilter').value.trim();
   const theme = document.getElementById('themeDropdown').value.toLowerCase();
@@ -433,96 +437,91 @@ function generateCrawlRoute() {
   const selectedTierIndex = priceTiers.indexOf(priceFilter);
   const baseDayParts = getCurrentDayPart();
   const themeOverrides = {
-  "sunrise start": ["M"],
-  "mindful mornings": ["M", "MD"],
-  "creative kickstart": ["M", "MD"],
-  "midday recharge": ["MD", "A"],
-  "health nut": ["M", "MD", "A"],
-  "work session": ["M", "MD", "A"],
-  "brunch & beyond": ["MD", "A"],
-  "late start legends": ["MD", "A", "HH"],
-  "post-work wind down": ["HH", "E"],
-  "golden hour": ["HH"],
-  "foodie tour": ["A", "HH", "E"],
-  "chill hang": ["A", "HH", "E"],
-  "cheap & cheerful": ["A", "HH", "E"],
-  "date night": ["E"],
-  "rom-com main character": ["E"],
-  "nightcap circuit": ["E", "L"],
-  "party time": ["E", "L"],
-  "saturday surge": ["E", "L"],
-  "weekend warriors": ["L"],
-  "tech bro escape": ["E", "L"],
-  "self-care": ["M", "MD", "A"],
-  "art & culture": ["MD", "A", "E"],
-  "artsy & indie": ["A", "E"],
-  "solo explorer": ["M", "MD", "A"],
-  "rooftops & views": ["HH", "E"],
-  "hidden gems": ["E", "L"],
-  "sunday reset": ["M", "MD", "A"]
-};
+    "sunrise start": ["M"],
+    "mindful mornings": ["M", "MD"],
+    "creative kickstart": ["M", "MD"],
+    "midday recharge": ["MD", "A"],
+    "health nut": ["M", "MD", "A"],
+    "work session": ["M", "MD", "A"],
+    "brunch & beyond": ["MD", "A"],
+    "late start legends": ["MD", "A", "HH"],
+    "post-work wind down": ["HH", "E"],
+    "golden hour": ["HH"],
+    "foodie tour": ["A", "HH", "E"],
+    "chill hang": ["A", "HH", "E"],
+    "cheap & cheerful": ["A", "HH", "E"],
+    "date night": ["E"],
+    "rom-com main character": ["E"],
+    "nightcap circuit": ["E", "L"],
+    "party time": ["E", "L"],
+    "saturday surge": ["E", "L"],
+    "weekend warriors": ["L"],
+    "tech bro escape": ["E", "L"],
+    "self-care": ["M", "MD", "A"],
+    "art & culture": ["MD", "A", "E"],
+    "artsy & indie": ["A", "E"],
+    "solo explorer": ["M", "MD", "A"],
+    "rooftops & views": ["HH", "E"],
+    "hidden gems": ["E", "L"],
+    "sunday reset": ["M", "MD", "A"]
+  };
   const currentDayParts = themeOverrides[theme] || baseDayParts;
+
+  // 🔥 This is the missing piece — define allLocations!
+  const allLocations = globalEvents.map(ev => ({
+    ...ev,
+    vibe: (ev.vibe || '').split(',').map(v => v.trim().toLowerCase()),
+    tags: (ev.tags || '').split(',').map(t => t.trim().toLowerCase())
+  }));
 
   console.log('⚙️ Filtering open locations...');
   console.log('📦 All Locations:', allLocations);
-console.log('🎯 Theme Keywords:', themeKeywords);
-console.log('🕐 Current Day Parts:', currentDayParts);
-  
+  console.log('🎯 Theme Keywords:', themeKeywords);
+  console.log('🕐 Current Day Parts:', currentDayParts);
+
   const openLocations = allLocations.filter(loc => {
-  const normalizedVibes = (loc.vibe || '')
-    .split(',')
-    .map(v => v.trim().toLowerCase())
-    .filter(Boolean);
+    const allKeywords = [...loc.vibe, ...loc.tags];
 
-  const normalizedTags = (loc.tags || '')
-    .split(',')
-    .map(t => t.trim().toLowerCase())
-    .filter(Boolean);
+    const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
+    const matchesTheme = !theme || themeKeywords.some(kw => allKeywords.includes(kw));
+    const dayPartsArray = Array.isArray(loc.dayParts) ? loc.dayParts : [];
+    const matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
+    const passes = matchesPrice && matchesTheme && matchesDayPart;
 
-  const allKeywords = [...normalizedVibes, ...normalizedTags];
+    if (!passes) {
+      console.warn(`[FILTER OUT]`, {
+        name: loc.name,
+        matchesPrice,
+        matchesTheme,
+        matchesDayPart,
+        currentDayParts,
+        locDayParts: loc.dayParts,
+        allKeywords
+      });
+    }
 
-  const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
-  const matchesTheme = !theme || themeKeywords.some(kw => allKeywords.includes(kw.toLowerCase()));
-
-  const dayPartsArray = Array.isArray(loc.dayParts) ? loc.dayParts : [];
-  const matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
-
-  const passes = matchesPrice && matchesTheme && matchesDayPart;
-
-  if (!passes) {
-    console.warn(`[FILTER OUT]`, {
-      name: loc.name,
-      matchesPrice,
-      matchesTheme,
-      matchesDayPart,
-      currentDayParts,
-      locDayParts: loc.dayParts,
-      allKeywords
-    });
-  }
-
-  return passes;
-});
+    return passes;
+  });
 
   console.log('✅ Matched Locations:', openLocations);
-  
-if (!openLocations.length) {
-  alert('No matching locations are open now for that theme.');
-  return;
-}
+
+  if (!openLocations.length) {
+    alert('No matching locations are open now for that theme.');
+    return;
+  }
 
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
   openLocations.forEach(ev => {
-  const vibeMatches = ev.vibe?.filter(v => themeKeywords.includes(v)) || [];
-  const tagMatches = (ev.tags || '').split(',').map(t => t.trim().toLowerCase()).filter(t => themeKeywords.includes(t));
-  const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
-  ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
-});
+    const vibeMatches = ev.vibe.filter(v => themeKeywords.includes(v));
+    const tagMatches = ev.tags.filter(t => themeKeywords.includes(t));
+    const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
+    ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
+  });
 
   const sorted = openLocations
-  .filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500)
-  .sort((a, b) => b._score - a._score);
+    .filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500)
+    .sort((a, b) => b._score - a._score);
 
   const crawlRoute = [];
   let last = sorted[0];
