@@ -181,7 +181,7 @@ function drawRoute() {
   }
   if (selectedRoute.length < 2) return;
 
-  const waypoints = selectedRoute.map(loc => L.latLng(loc.lat, loc.lon));
+  const waypoints = selectedRoute.map(loc => L.latLng(loc.lat, loc.lng));
   currentRoute = L.Routing.control({
     waypoints,
     routeWhileDragging: false,
@@ -251,7 +251,7 @@ function renderMarkers(events) {
       shadowSize: [41, 41]
     });
 
-    const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
+    const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lng)], { icon });
     marker.ev = ev;
     allMarkers.push(marker);
   });
@@ -430,9 +430,9 @@ function generateCrawlRoute() {
   console.log('📍 Selected Neighborhood:', neighborhood);
 console.log('🧭 Matched Center:', neighborhoodCenters[neighborhood]);
 
-center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
   
-if (!neighborhoodCenter || !neighborhoodCenter.lat || !neighborhoodCenter.lon) {
+if (!neighborhoodCenter || !neighborhoodCenter.lat || !neighborhoodCenter.lng) {
   alert("Invalid or missing neighborhood center.");
   return;
 }
@@ -559,14 +559,14 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
     return;
   }
 
-  center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+  center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
 
  const validLocations = openLocations.filter(ev =>
-  ev.lat && ev.lon && !isNaN(ev.lat) && !isNaN(ev.lon)
+  ev.lat && ev.lng && !isNaN(ev.lat) && !isNaN(ev.lng)
 );
 
 validLocations.forEach(ev => {
-  if (!ev.lat || !ev.lon || isNaN(ev.lat) || isNaN(ev.lon)) {
+  if (!ev.lat || !ev.lng || isNaN(ev.lat) || isNaN(ev.lng)) {
     console.warn('⚠️ Skipping invalid location:', ev.name);
     return;
   }
@@ -581,12 +581,12 @@ validLocations.forEach(ev => {
 
   const vibeMatches = normalizedVibes.filter(v => themeKeywords.includes(v));
   const tagMatches = normalizedTags.filter(t => themeKeywords.includes(t));
-  const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
+  const dist = center.distanceTo(L.latLng(ev.lat, ev.lng));
   ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
 });
 
   const sorted = validLocations
-    .filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500)
+    .filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lng)) <= 1500)
     .sort((a, b) => b._score - a._score);
 
   const crawlRoute = [];
@@ -596,9 +596,9 @@ validLocations.forEach(ev => {
   sorted.splice(0, 1);
 
   while (crawlRoute.length < 5 && timeSpent < maxDuration) {
-    const lastLatLng = L.latLng(last.lat, last.lon);
+    const lastLatLng = L.latLng(last.lat, last.lng);
     const next = sorted.find(ev => {
-      const dist = lastLatLng.distanceTo(L.latLng(ev.lat, ev.lon));
+      const dist = lastLatLng.distanceTo(L.latLng(ev.lat, ev.lng));
       const fits = timeSpent + (ev.duration || 1) <= maxDuration;
       return dist <= 500 && fits;
     });
@@ -617,7 +617,7 @@ validLocations.forEach(ev => {
   }
 
   if (window.routeLayer) map.removeControl(window.routeLayer);
-  const waypoints = crawlRoute.map(loc => L.latLng(loc.lat, loc.lon));
+  const waypoints = crawlRoute.map(loc => L.latLng(loc.lat, loc.lng));
   window.routeLayer = L.Routing.control({
     waypoints,
     routeWhileDragging: false,
