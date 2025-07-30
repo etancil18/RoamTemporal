@@ -533,9 +533,9 @@ function generateCrawlRoute() {
 
     if (!isOpenNow) return false;
 
-    const locLatLng = L.latLng(loc.lat, loc.lon);
-const isInRadius = center.distanceTo(locLatLng) < 1500;
-if (!isInRadius) return false;
+    const marker = L.marker([loc.lat, loc.lon]);
+    const isInRadius = center.distanceTo(marker.getLatLng()) < 1500;
+    if (!isInRadius) return false;
 
     const locVibes = Array.isArray(loc.vibe)
       ? loc.vibe.map(v => v.toLowerCase())
@@ -553,6 +553,29 @@ if (!isInRadius) return false;
   const firstStop = candidates[Math.floor(Math.random() * candidates.length)];
   const crawlRoute = [firstStop];
   let totalDuration = firstStop.duration || 0;
+
+  const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
+  let lastStop = firstStop;
+  const remaining = candidates.filter(loc => loc !== firstStop);
+  const distanceLimits = [750, 400, 300];
+  let step = 0;
+
+  while (crawlRoute.length < 5 && totalDuration < maxDuration) {
+    const maxDist = step < distanceLimits.length ? distanceLimits[step] : 300;
+    const lastLatLng = L.latLng(lastStop.lat, lastStop.lon);
+
+    const next = remaining.find(loc => {
+      const dist = lastLatLng.distanceTo(L.latLng(loc.lat, loc.lon));
+      return dist <= maxDist && totalDuration + (loc.duration || 0) <= maxDuration;
+    });
+
+    if (!next) break;
+
+    crawlRoute.push(next);
+    totalDuration += next.duration || 0;
+    lastStop = next;
+    step++;
+  }
 
   if (!checkCrawlRoute(crawlRoute)) return;
 
