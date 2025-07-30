@@ -19583,5 +19583,1891 @@
     "tags": "industrial, live music, rotating taps",
     "price": "$",
     "duration": 2
+  },
+  {
+    "name": "Achilles Heel",
+    "vibe": "Cozy, Trendy, Waterfront, Casual Drinks",
+    "lat": 40.7331765,
+    "lon": -73.9596929,
+    "link": "https://www.instagram.com/achillesheelbk/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 4:00 PM–12:00 AM",
+      "Monday 5:00 PM–12:00 AM",
+      "Tuesday 5:00 PM–12:00 AM",
+      "Wednesday 5:00 PM–12:00 AM",
+      "Thursday 5:00 PM–12:00 AM",
+      "Friday 5:00 PM–1:00 AM",
+      "Saturday 4:00 PM–1:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 16, "close": 24 },
+    "mon": { "open": 17, "close": 24 },
+    "tue": { "open": 17, "close": 24 },
+    "wed": { "open": 17, "close": 24 },
+    "thu": { "open": 17, "close": 24 },
+    "fri": { "open": 17, "close": 25 },
+    "sat": { "open": 16, "close": 25 }
+  },
+  "dayParts": {
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E",
+    "sun": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 2,
+  "tags": "wine bar, dockside, BK night scene",
+    "price": "$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Saint James Libations",
+    "vibe": "Stylish, Cozy, Cocktail Bar, Date Spot",
+    "lat": 40.701737,
+    "lon": -73.9195609,
+    "link": "https://www.instagram.com/saintjameslibations/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–12:00 AM",
+      "Monday Closed",
+      "Tuesday Closed",
+      "Wednesday Closed",
+      "Thursday 5:00 PM–11:00 PM",
+      "Friday 5:00 PM–2:00 AM",
+      "Saturday 5:00 PM–2:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 24 },
+    "mon": null,
+    "tue": null,
+    "wed": null,
+    "thu": { "open": 17, "close": 23 },
+    "fri": { "open": 17, "close": 26 },
+    "sat": { "open": 17, "close": 26 }
+  },
+  "dayParts": {
+    "mon": "-",
+    "tue": "-",
+    "wed": "-",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L",
+    "sun": "E"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 2,
+  "tags": "hidden gem, cocktails, stylish",
+    "price": "$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Hell Phone",
+    "vibe": "Speakeasy, Quirky, Intimate, Hidden Gem",
+    "lat": 40.70423585,
+    "lon": -73.934179,
+    "link": "https://www.instagram.com/hellphonebrooklyn/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 7:00 PM–12:00 AM",
+      "Monday Closed",
+      "Tuesday Closed",
+      "Wednesday 7:00 PM–2:00 AM",
+      "Thursday 7:00 PM–2:00 AM",
+      "Friday 7:00 PM–2:00 AM",
+      "Saturday 7:00 PM–2:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 19, "close": 24 },
+    "mon": null,
+    "tue": null,
+    "wed": { "open": 19, "close": 26 },
+    "thu": { "open": 19, "close": 26 },
+    "fri": { "open": 19, "close": 26 },
+    "sat": { "open": 19, "close": 26 }
+  },
+  "dayParts": {
+    "mon": "-",
+    "tue": "-",
+    "wed": "L",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L",
+    "sun": "E"
+  },
+  "timeCategory": "late night",
+  "energyRamp": 4,
+  "tags": "secret, speakeasy, late night",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Vacations BK",
+    "vibe": "Relaxed, Neighborhood Bar, Casual, Fun, Rooftop",
+    "lat": 40.7082711,
+    "lon": -73.9202317,
+    "link": "https://www.instagram.com/vacationsbk/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 2:00 PM–12:00 AM",
+      "Monday Closed",
+      "Tuesday 5:00 PM–2:00 AM",
+      "Wednesday 5:00 PM–2:00 AM",
+      "Thursday 5:00 PM–2:00 AM",
+      "Friday 5:00 PM–4:00 AM",
+      "Saturday 2:00 PM–4:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 14, "close": 24 },
+    "mon": null,
+    "tue": { "open": 17, "close": 26 },
+    "wed": { "open": 17, "close": 26 },
+    "thu": { "open": 17, "close": 26 },
+    "fri": { "open": 17, "close": 28 },
+    "sat": { "open": 14, "close": 28 }
+  },
+  "dayParts": {
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L",
+    "sun": "E"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 3,
+  "tags": "chill rooftop, neighborhood bar, BK nights",
+    "price": "$",
+    "duration": 1.75
+  },
+  {
+    "name": "Lovejoys",
+    "vibe": "Cozy, Casual, Chill, Friendly",
+    "lat": 40.7067992,
+    "lon": -73.9224982,
+    "link": "https://www.instagram.com/lovejoysnyc/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 3:00 PM–12:00 AM",
+      "Monday Closed",
+      "Tuesday 5:00 PM–12:00 AM",
+      "Wednesday 5:00 PM–12:00 AM",
+      "Thursday 5:00 PM–2:00 AM",
+      "Friday 5:00 PM–4:00 AM",
+      "Saturday 3:00 PM–4:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 15, "close": 24 },
+    "mon": null,
+    "tue": { "open": 17, "close": 24 },
+    "wed": { "open": 17, "close": 24 },
+    "thu": { "open": 17, "close": 26 },
+    "fri": { "open": 17, "close": 28 },
+    "sat": { "open": 15, "close": 28 }
+  },
+  "dayParts": {
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L",
+    "sun": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 2,
+  "tags": "casual drinks, cozy, neighborhood",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Left Hand Path",
+    "vibe": "Creative, Relaxed, Edgy, Cocktail Bar",
+    "lat": 40.7051341,
+    "lon": -73.92023186,
+    "link": "https://www.instagram.com/lefthandpathbk/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–2:00 AM",
+      "Monday 5:00 PM–2:00 AM",
+      "Tuesday 5:00 PM–2:00 AM",
+      "Wednesday 5:00 PM–2:00 AM",
+      "Thursday 5:00 PM–2:00 AM",
+      "Friday 5:00 PM–3:00 AM",
+      "Saturday 5:00 PM–3:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 26 },
+    "mon": { "open": 17, "close": 26 },
+    "tue": { "open": 17, "close": 26 },
+    "wed": { "open": 17, "close": 26 },
+    "thu": { "open": 17, "close": 26 },
+    "fri": { "open": 17, "close": 27 },
+    "sat": { "open": 17, "close": 27 }
+  },
+  "dayParts": {
+    "mon": "L",
+    "tue": "L",
+    "wed": "L",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L",
+    "sun": "L"
+  },
+  "timeCategory": "late night",
+  "energyRamp": 2,
+  "tags": "cocktails, moody, nightcap",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Kato Sake Works",
+    "vibe": "Sake Bar, Brewery",
+    "lat": 40.7059366,
+    "lon": -73.9236866,
+    "link": "https://www.instagram.com/katosakeworks/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 1:00 PM–10:00 PM",
+      "Monday Closed",
+      "Tuesday 5:00 PM–11:00 PM",
+      "Wednesday 5:00 PM–11:00 PM",
+      "Thursday 5:00 PM–11:00 PM",
+      "Friday 5:00 PM–11:00 PM",
+      "Saturday 1:00 PM–11:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 13, "close": 22 },
+    "mon": null,
+    "tue": { "open": 17, "close": 23 },
+    "wed": { "open": 17, "close": 23 },
+    "thu": { "open": 17, "close": 23 },
+    "fri": { "open": 17, "close": 23 },
+    "sat": { "open": 13, "close": 23 }
+  },
+  "dayParts": {
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "HH",
+    "sun": "HH"
+  },
+  "timeCategory": "evening", "happyhour",
+  "energyRamp": 1.25,
+  "tags": "brewery, sake, lowkey",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Lou's Athletic Club",
+    "vibe": "Fun, Neighborhood Spot, Casual, Lively",
+    "lat": 40.700231,
+    "lon": -73.921083,
+    "link": "https://www.instagram.com/lousathleticclub/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 12:00 PM–2:00 AM",
+      "Monday 2:00 PM–2:00 AM",
+      "Tuesday 2:00 PM–2:00 AM",
+      "Wednesday 2:00 PM–2:00 AM",
+      "Thursday 2:00 PM–4:00 AM",
+      "Friday 2:00 PM–4:00 AM",
+      "Saturday 12:00 PM–4:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 12, "close": 26 },
+    "mon": { "open": 14, "close": 26 },
+    "tue": { "open": 14, "close": 26 },
+    "wed": { "open": 14, "close": 26 },
+    "thu": { "open": 14, "close": 28 },
+    "fri": { "open": 14, "close": 28 },
+    "sat": { "open": 12, "close": 28 }
+  },
+  "dayParts": {
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L",
+    "sun": "L"
+  },
+  "timeCategory": "late night",
+  "energyRamp": 4,
+  "tags": "rowdy, sports, late crowd",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "ALPHAVILLE",
+    "vibe": "Trendy, Hip, Live Music, Casual",
+    "lat": 40.700587,
+    "lon": -73.925757,
+    "link": "https://www.instagram.com/alphavillebk/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 4:00 PM–4:00 AM",
+      "Monday 4:00 PM–4:00 AM",
+      "Tuesday 4:00 PM–4:00 AM",
+      "Wednesday 4:00 PM–4:00 AM",
+      "Thursday 4:00 PM–4:00 AM",
+      "Friday 4:00 PM–4:00 AM",
+      "Saturday 4:00 PM–4:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 16, "close": 28 },
+    "mon": { "open": 16, "close": 28 },
+    "tue": { "open": 16, "close": 28 },
+    "wed": { "open": 16, "close": 28 },
+    "thu": { "open": 16, "close": 28 },
+    "fri": { "open": 16, "close": 28 },
+    "sat": { "open": 16, "close": 28 }
+  },
+  "dayParts": {
+    "sun": "L",
+    "mon": "L",
+    "tue": "L",
+    "wed": "L",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "late night",
+  "energyRamp": 3,
+  "tags": "live music, casual hang, neighborhood bar",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "The Narrows",
+    "vibe": "Upscale, Chic, Relaxed, Scenic",
+    "lat": 40.7040945,
+    "lon": -73.93082439,
+    "link": "https://www.instagram.com/thenarrows/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 6:00 PM–2:00 AM",
+      "Monday 6:00 PM–2:00 AM",
+      "Tuesday 6:00 PM–2:00 AM",
+      "Wednesday 6:00 PM–2:00 AM",
+      "Thursday 6:00 PM–2:00 AM",
+      "Friday 6:00 PM–2:00 AM",
+      "Saturday 6:00 PM–2:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 18, "close": 26 },
+    "mon": { "open": 18, "close": 26 },
+    "tue": { "open": 18, "close": 26 },
+    "wed": { "open": 18, "close": 26 },
+    "thu": { "open": 18, "close": 26 },
+    "fri": { "open": 18, "close": 26 },
+    "sat": { "open": 18, "close": 26 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 2,
+  "tags": "date night, chic bar, dimly lit",
+    "price": "$$",
+    "duration": 2
+  },
+  {
+    "name": "Yours Sincerely",
+    "vibe": "Cozy, Cocktail Bar, Trendy, Intimate",
+    "lat": 40.7028281,
+    "lon": -73.929185,
+    "link": "https://www.instagram.com/yourssincerelybk/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–12:00 AM",
+      "Monday 5:00 PM–2:00 AM",
+      "Tuesday 5:00 PM–2:00 AM",
+      "Wednesday 5:00 PM–2:00 AM",
+      "Thursday 5:00 PM–2:00 AM",
+      "Friday 5:00 PM–3:00 AM",
+      "Saturday 5:00 PM–3:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 24 },
+    "mon": { "open": 17, "close": 24 },
+    "tue": { "open": 17, "close": 26 },
+    "wed": { "open": 17, "close": 26 },
+    "thu": { "open": 17, "close": 26 },
+    "fri": { "open": 17, "close": 27 },
+    "sat": { "open": 17, "close": 27 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "L",
+    "wed": "L",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 2,
+  "tags": "affordable cocktails, lowkey, romantic",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Fini Pizza",
+    "vibe": "Casual, Neighborhood Spot, Pizza, Relaxed",
+    "lat": 40.7134723,
+    "lon": -73.9618052,
+    "link": "https://www.instagram.com/finipizza/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 12:00 PM–10:00 PM",
+      "Monday 12:00 PM–10:00 PM",
+      "Tuesday 12:00 PM–10:00 PM",
+      "Wednesday 12:00 PM–10:00 PM",
+      "Thursday 12:00 PM–10:00 PM",
+      "Friday 12:00 PM–10:00 PM",
+      "Saturday 12:00 PM–10:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 12, "close": 22 },
+    "mon": { "open": 12, "close": 22 },
+    "tue": { "open": 12, "close": 22 },
+    "wed": { "open": 12, "close": 22 },
+    "thu": { "open": 12, "close": 22 },
+    "fri": { "open": 12, "close": 22 },
+    "sat": { "open": 12, "close": 22 }
+  },
+  "dayParts": {
+    "sun": "MD",
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD"
+  },
+  "timeCategory": "midday",
+  "energyRamp": 1,
+  "tags": "pizza, no-res, casual bite",
+    "price": "$",
+    "duration": 0.75
+  },
+  {
+    "name": "Fast Times",
+    "vibe": "Retro, Fun, Casual, Coffee",
+    "lat": 40.7216246,
+    "lon": -73.9998097,
+    "link": "https://www.instagram.com/fasttimescoffee/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 8:00 AM–5:00 PM",
+      "Monday 8:00 AM–5:00 PM",
+      "Tuesday 8:00 AM–5:00 PM",
+      "Wednesday 8:00 AM–5:00 PM",
+      "Thursday 8:00 AM–5:00 PM",
+      "Friday 8:00 AM–5:00 PM",
+      "Saturday 8:00 AM–5:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 8, "close": 17 },
+    "mon": { "open": 8, "close": 17 },
+    "tue": { "open": 8, "close": 17 },
+    "wed": { "open": 8, "close": 17 },
+    "thu": { "open": 8, "close": 17 },
+    "fri": { "open": 8, "close": 17 },
+    "sat": { "open": 8, "close": 17 }
+  },
+  "dayParts": {
+    "sun": "MD",
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD"
+  },
+  "timeCategory": "daytime",
+  "energyRamp": 1,
+  "tags": "coffee, casual, retro aesthetic",
+    "price": "$",
+    "duration": 0.5
+  },
+  {
+    "name": "Leonessa",
+    "vibe": "Elegant, Rooftop, Scenic, Italian Food",
+    "lat": 40.7151482,
+    "lon": -74.0156573,
+    "link": "https://www.instagram.com/leonessarooftop/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 4:00 PM–12:00 AM",
+      "Monday 4:00 PM–12:00 AM",
+      "Tuesday 4:00 PM–12:00 AM",
+      "Wednesday 4:00 PM–12:00 AM",
+      "Thursday 4:00 PM–12:00 AM",
+      "Friday 4:00 PM–12:00 AM",
+      "Saturday 4:00 PM–12:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 16, "close": 24 },
+    "mon": { "open": 16, "close": 24 },
+    "tue": { "open": 16, "close": 24 },
+    "wed": { "open": 16, "close": 24 },
+    "thu": { "open": 16, "close": 24 },
+    "fri": { "open": 16, "close": 24 },
+    "sat": { "open": 16, "close": 24 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 3,
+  "tags": "rooftop dining, romantic, skyline views",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "The Five Lamps",
+    "vibe": "Intimate, Cocktail Bar, Cozy, Relaxed",
+    "lat": 40.77421885,
+    "lon": -73.94804036,
+    "link": "https://www.instagram.com/thefivelampsnyc/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 11:00 AM–2:00 AM",
+      "Monday 12:00 PM–2:00 AM",
+      "Tuesday 12:00 PM–2:00 AM",
+      "Wednesday 12:00 PM–2:00 AM",
+      "Thursday 12:00 PM–2:00 AM",
+      "Friday 12:00 PM–3:00 AM",
+      "Saturday 11:00 AM–3:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 11, "close": 26 },
+    "mon": { "open": 12, "close": 26 },
+    "tue": { "open": 12, "close": 26 },
+    "wed": { "open": 12, "close": 26 },
+    "thu": { "open": 12, "close": 26 },
+    "fri": { "open": 12, "close": 27 },
+    "sat": { "open": 11, "close": 27 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 2,
+  "tags": "speakeasy vibes, cocktails, upper east chill",
+    "price": "$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Soda Club",
+    "vibe": "Trendy, Stylish, Cocktail Bar, Vibrant",
+    "lat": 40.7256895,
+    "lon": -73.9840619,
+    "link": "https://www.instagram.com/sodaclubnyc/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 12:30 PM–3:30 PM; 5:00 PM–12:00 AM",
+      "Monday 5:00 PM–12:00 AM",
+      "Tuesday 5:00 PM–12:00 AM",
+      "Wednesday 5:00 PM–12:00 AM",
+      "Thursday 5:00 PM–12:00 AM",
+      "Friday 5:00 PM–12:00 AM",
+      "Saturday 12:30 PM–3:30 PM; 5:00 PM–1:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": [
+      { "open": 12.5, "close": 15.5 },
+      { "open": 17, "close": 24 }
+    ],
+    "mon": { "open": 17, "close": 24 },
+    "tue": { "open": 17, "close": 24 },
+    "wed": { "open": 17, "close": 24 },
+    "thu": { "open": 17, "close": 24 },
+    "fri": { "open": 17, "close": 24 },
+    "sat": [
+      { "open": 12.5, "close": 15.5 },
+      { "open": 17, "close": 25 }
+    ]
+  },
+  "dayParts": {
+    "sun": "MD",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "MD"
+  },
+  "timeCategory": "midday, evening",
+  "energyRamp": 3,
+  "tags": "brunch cocktails, downtown vibes, stylish crowd",
+    "price": "$$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Ha's Snack Bar",
+    "vibe": "Trendy, Asian Food, Casual, Neighborhood Hangout",
+    "lat": 40.7186095,
+    "lon": -73.9921037,
+    "link": "https://www.instagram.com/has_dac_biet/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday Closed",
+      "Monday Closed",
+      "Tuesday 5:30 PM–10:30 PM",
+      "Wednesday 5:30 PM–10:30 PM",
+      "Thursday 5:30 PM–10:30 PM",
+      "Friday 5:30 PM–10:30 PM",
+      "Saturday 5:30 PM–10:30 PM"
+    ],
+    "hoursNumeric": {
+    "sun": null,
+    "mon": null,
+    "tue": { "open": 17.5, "close": 22.5 },
+    "wed": { "open": 17.5, "close": 22.5 },
+    "thu": { "open": 17.5, "close": 22.5 },
+    "fri": { "open": 17.5, "close": 22.5 },
+    "sat": { "open": 17.5, "close": 22.5 }
+  },
+  "dayParts": {
+    "sun": "-",
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 2,
+  "tags": "modern asian, pop-up energy",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "BabySips",
+    "vibe": "LGBTQ+ Friendly, Cozy, Fun, Casual Drinks",
+    "lat": 40.7189528,
+    "lon": -73.9843854,
+    "link": "https://www.instagram.com/babysips.nyc/",
+    "openNow": true,
+    "hours": [
+      "Sunday 3:00 PM–11:00 PM",
+      "Monday Closed",
+      "Tuesday Closed",
+      "Wednesday 3:00 PM–11:00 PM",
+      "Thursday 3:00 PM–11:00 PM",
+      "Friday 3:00 PM–11:00 PM",
+      "Saturday 3:00 PM–11:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 15, "close": 23 },
+    "mon": null,
+    "tue": null,
+    "wed": { "open": 15, "close": 23 },
+    "thu": { "open": 15, "close": 23 },
+    "fri": { "open": 15, "close": 23 },
+    "sat": { "open": 15, "close": 23 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "-",
+    "tue": "-",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 2,
+  "tags": "queer safe space, fun crowd",
+    "price": "$$",
+    "duration": 1.5
+  },
+  {
+    "name": "Brooklyn Granary & Mill",
+    "vibe": "Rustic, Industrial, Cozy, Artisan Coffee, Relaxed Atmosphere",
+    "lat": 40.67557747,
+    "lon": -73.99839929,
+    "link": "https://www.instagram.com/brooklyngranaryandmill/",
+    "openNow": true,
+    "hours": [
+      "Sunday Closed",
+      "Monday 7:30 AM–3:00 PM",
+      "Tuesday 7:30 AM–3:00 PM",
+      "Wednesday 7:30 AM–3:00 PM",
+      "Thursday 7:30 AM–3:00 PM",
+      "Friday 7:30 AM–3:00 PM",
+      "Saturday 7:30 AM–3:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": null,
+    "mon": { "open": 7.5, "close": 15 },
+    "tue": { "open": 7.5, "close": 15 },
+    "wed": { "open": 7.5, "close": 15 },
+    "thu": { "open": 7.5, "close": 15 },
+    "fri": { "open": 7.5, "close": 15 },
+    "sat": { "open": 7.5, "close": 15 }
+  },
+  "dayParts": {
+    "sun": "-",
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD"
+  },
+  "timeCategory": "midday",
+  "energyRamp": 1,
+  "tags": "coffee, rustic charm",
+    "price": "$",
+    "duration": 0.75
+  },
+  {
+    "name": "Olmo",
+    "vibe": "Sleek, Modern, Neighborhood Spot, Casual Dining, Mediterranean-Inspired, Trendy",
+    "lat": 40.6831425,
+    "lon": -73.9170946,
+    "link": "https://www.instagram.com/olmobk/",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:30 PM–10:00 PM",
+      "Monday Closed",
+      "Tuesday Closed",
+      "Wednesday 5:30 PM–10:00 PM",
+      "Thursday 5:30 PM–10:00 PM",
+      "Friday 5:30 PM–11:00 PM",
+      "Saturday 5:30 PM–11:00 PM"
+    ],
+  "hoursNumeric": {
+    "sun": { "open": 17.5, "close": 22 },
+    "mon": null,
+    "tue": null,
+    "wed": { "open": 17.5, "close": 22 },
+    "thu": { "open": 17.5, "close": 22 },
+    "fri": { "open": 17.5, "close": 23 },
+    "sat": { "open": 17.5, "close": 23 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "-",
+    "tue": "-",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 2,
+  "tags": "mediterranean, sleek",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "DOLORES",
+    "vibe": "Vibrant, Artistic, Contemporary, Creative Cocktails, Eclectic, Stylish Ambience, Latin",
+    "lat": 40.683861,
+    "lon": -73.94387,
+    "link": "https://www.instagram.com/dolores.bk/",
+    "openNow": true,
+    "hours": [
+      "Sunday 4:00 PM–12:00 AM",
+      "Monday Closed",
+      "Tuesday Closed",
+      "Wednesday 4:00 PM–12:00 AM",
+      "Thursday 4:00 PM–12:00 AM",
+      "Friday 4:00 PM–1:00 AM",
+      "Saturday 4:00 PM–1:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 16, "close": 24 },
+    "mon": null,
+    "tue": null,
+    "wed": { "open": 16, "close": 24 },
+    "thu": { "open": 16, "close": 24 },
+    "fri": { "open": 16, "close": 25 },
+    "sat": { "open": 16, "close": 25 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "-",
+    "tue": "-",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 2,
+  "tags": "latin energy, upscale cocktails",
+    "price": "$$",
+    "duration": 2
+  },
+  {
+    "name": "kalei nyc",
+    "vibe": "Artistic, Minimalist, Chic, Contemporary, Floral, Coffee and Craft Cocktails",
+    "lat": 40.7195805,
+    "lon": -73.9939956,
+    "link": "https://www.instagram.com/kalei.nyc/",
+    "openNow": true,
+    "hours": [
+      "Sunday 11:00 AM–6:00 PM",
+      "Monday Closed",
+      "Tuesday 11:00 AM–6:00 PM",
+      "Wednesday 11:00 AM–6:00 PM",
+      "Thursday 11:00 AM–6:00 PM",
+      "Friday 11:00 AM–6:00 PM",
+      "Saturday 11:00 AM–6:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 11, "close": 18 },
+    "mon": null,
+    "tue": { "open": 11, "close": 18 },
+    "wed": { "open": 11, "close": 18 },
+    "thu": { "open": 11, "close": 18 },
+    "fri": { "open": 11, "close": 18 },
+    "sat": { "open": 11, "close": 18 }
+  },
+  "dayParts": {
+    "sun": "MD",
+    "mon": "-",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD"
+  },
+  "timeCategory": "daytime",
+  "energyRamp": 1,
+  "tags": "coffee cocktails, artsy vibe",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Demo",
+    "vibe": "Stylish, Trendy, Boutique Bar, Cozy Atmosphere, Exclusive, Craft Cocktails, Hidden Gem",
+    "lat": 40.7299274,
+    "lon": -74.0029971,
+    "link": "https://www.instagram.com/demo.nyc",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–10:00 PM",
+      "Monday 5:00 PM–10:00 PM",
+      "Tuesday 5:00 PM–10:00 PM",
+      "Wednesday 5:00 PM–10:00 PM",
+      "Thursday 5:00 PM–10:00 PM",
+      "Friday 5:00 PM–11:00 PM",
+      "Saturday 5:00 PM–11:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 22 },
+    "mon": { "open": 17, "close": 22 },
+    "tue": { "open": 17, "close": 22 },
+    "wed": { "open": 17, "close": 22 },
+    "thu": { "open": 17, "close": 22 },
+    "fri": { "open": 17, "close": 23 },
+    "sat": { "open": 17, "close": 23 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 3,
+  "tags": "hidden bar, velvet energy",
+    "price": "$$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Sunn's",
+    "vibe": "Cozy, Intimate, Trendy, LGBTQ+ Friendly, Casual Hangout, Contemporary Vibe",
+    "lat": 40.7143881,
+    "lon": -73.99097463,
+    "link": "https://www.instagram.com/sunnsnyc/",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–10:00 PM",
+      "Monday Closed",
+      "Tuesday 5:00 PM–10:00 PM",
+      "Wednesday 5:00 PM–10:00 PM",
+      "Thursday 5:00 PM–10:00 PM",
+      "Friday 5:00 PM–10:00 PM",
+      "Saturday 5:00 PM–10:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 22 },
+    "mon": null,
+    "tue": { "open": 17, "close": 22 },
+    "wed": { "open": 17, "close": 22 },
+    "thu": { "open": 17, "close": 22 },
+    "fri": { "open": 17, "close": 22 },
+    "sat": { "open": 17, "close": 22 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 2,
+  "tags": "queer-friendly, chic cozy bar",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "Banzarbar",
+    "vibe": "Eclectic, Quirky, Hidden Gem, Relaxed, Fun, Creative Cocktails, Unique Experience",
+    "lat": 40.72148537,
+    "lon": -73.99257138,
+    "link": "https://www.instagram.com/banzarbar/",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–10:30 PM",
+      "Monday 5:00 PM–10:30 PM",
+      "Tuesday 5:00 PM–11:30 PM",
+      "Wednesday 5:00 PM–11:30 PM",
+      "Thursday 5:00 PM–11:30 PM",
+      "Friday 5:00 PM–12:30 AM",
+      "Saturday 5:00 PM–12:30 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 22.5 },
+    "mon": { "open": 17, "close": 22.5 },
+    "tue": { "open": 17, "close": 23.5 },
+    "wed": { "open": 17, "close": 23.5 },
+    "thu": { "open": 17, "close": 23.5 },
+    "fri": { "open": 17, "close": 24.5 },
+    "sat": { "open": 17, "close": 24.5 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 1.5,
+  "tags": "creative cocktails, hideaway",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Plug Uglies",
+    "vibe": "Classic, Dive Bar, Sports Bar, Relaxed, Late-Night Vibe, Casual Drinks, Loud Atmosphere",
+    "lat": 40.73843685,
+    "lon": -73.98302223,
+    "link": "https://www.instagram.com/pluguglies/",
+    "openNow": true,
+    "hours": [
+      "Sunday 12:00 PM–4:00 AM",
+      "Monday 2:00 PM–4:00 AM",
+      "Tuesday 2:00 PM–4:00 AM",
+      "Wednesday 2:00 PM–4:00 AM",
+      "Thursday 1:00 PM–4:00 AM",
+      "Friday 1:00 PM–4:00 AM",
+      "Saturday 12:00 PM–4:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 12, "close": 28 },
+    "mon": { "open": 14, "close": 28 },
+    "tue": { "open": 14, "close": 28 },
+    "wed": { "open": 14, "close": 28 },
+    "thu": { "open": 13, "close": 28 },
+    "fri": { "open": 13, "close": 28 },
+    "sat": { "open": 12, "close": 28 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "late night",
+  "energyRamp": 4,
+  "tags": "dive, sports bar, chaotic fun",
+    "price": "$",
+    "duration": 2
+  },
+  {
+    "name": "Unlisted",
+    "vibe": "Exclusive, Hidden Speakeasy, Upscale, Intimate, Trendy Cocktails, Sophisticated Vibe",
+    "lat": 40.72148873,
+    "lon": -73.99256976,
+    "link": "https://www.instagram.com/unlisted.nyc/",
+    "openNow": true,
+    "hours": [
+      "Sunday Closed",
+      "Monday Closed",
+      "Tuesday Closed",
+      "Wednesday 6:00 PM–12:00 AM",
+      "Thursday 6:00 PM–12:00 AM",
+      "Friday 6:00 PM–1:00 AM",
+      "Saturday 6:00 PM–1:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": null,
+    "mon": null,
+    "tue": null,
+    "wed": { "open": 18, "close": 24 },
+    "thu": { "open": 18, "close": 24 },
+    "fri": { "open": 18, "close": 25 },
+    "sat": { "open": 18, "close": 25 }
+  },
+  "dayParts": {
+    "sun": "-",
+    "mon": "-",
+    "tue": "-",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 3,
+  "tags": "hidden, chic, high-end",
+    "price": "$$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Elevated Acre",
+    "vibe": "Outdoor, Scenic Views, Relaxing, Green Space, Peaceful, Urban Escape, Quiet Retreat",
+    "lat": 40.7033361,
+    "lon": -74.0085763,
+    "link": "https://www.instagram.com/explore/locations/1450209791737170/the-elevated-acre/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 7:00 AM–10:00 PM",
+      "Monday 7:00 AM–10:00 PM",
+      "Tuesday 7:00 AM–10:00 PM",
+      "Wednesday 7:00 AM–10:00 PM",
+      "Thursday 7:00 AM–10:00 PM",
+      "Friday 7:00 AM–10:00 PM",
+      "Saturday 7:00 AM–10:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 7, "close": 22 },
+    "mon": { "open": 7, "close": 22 },
+    "tue": { "open": 7, "close": 22 },
+    "wed": { "open": 7, "close": 22 },
+    "thu": { "open": 7, "close": 22 },
+    "fri": { "open": 7, "close": 22 },
+    "sat": { "open": 7, "close": 22 }
+  },
+  "dayParts": {
+    "sun": "A",
+    "mon": "A",
+    "tue": "A",
+    "wed": "A",
+    "thu": "A",
+    "fri": "A",
+    "sat": "A"
+  },
+  "timeCategory": "afternoon",
+  "energyRamp": 1.25,
+  "tags": "scenic, relaxing, urban escape, green space",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Maison Nur",
+    "vibe": "Upscale, Modern, Elegant, Craft Cocktails, Elegant Dining, Artisanal Vibe",
+    "lat": 40.7217163,
+    "lon": -73.9931901,
+    "link": "https://www.instagram.com/maisonnur.nyc/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday Closed",
+      "Monday Closed",
+      "Tuesday 5:00 PM–2:00 AM",
+      "Wednesday 5:00 PM–2:00 AM",
+      "Thursday 5:00 PM–2:00 AM",
+      "Friday 5:00 PM–2:00 AM",
+      "Saturday 5:00 PM–2:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 26 },
+    "mon": null,
+    "tue": null,
+    "wed": { "open": 17, "close": 26 },
+    "thu": { "open": 17, "close": 26 },
+    "fri": { "open": 17, "close": 26 },
+    "sat": { "open": 17, "close": 26 }
+  },
+  "dayParts": {
+    "sun": "L",
+    "mon": "-",
+    "tue": "-",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 3,
+  "tags": "craft cocktails, upscale, elegant",
+    "price": "$$$$",
+    "duration": 2
+  },
+  {
+    "name": "Moonflower",
+    "vibe": "Calm, Intimate, Cozy, Trendy, Modern Design, Artisan Coffee, Relaxed Vibes",
+    "lat": 40.8070452,
+    "lon": -73.9387486,
+    "link": "https://www.instagram.com/moonflower_nyc/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 2:00 PM–10:00 PM",
+      "Monday Closed",
+      "Tuesday 4:00 PM–12:00 AM",
+      "Wednesday 4:00 PM–12:00 AM",
+      "Thursday 4:00 PM–12:00 AM",
+      "Friday 4:00 PM–2:00 AM",
+      "Saturday 2:00 PM–2:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 14, "close": 22 },
+    "mon": null,
+    "tue": { "open": 16, "close": 24 },
+    "wed": { "open": 16, "close": 24 },
+    "thu": { "open": 16, "close": 24 },
+    "fri": { "open": 16, "close": 26 },
+    "sat": { "open": 14, "close": 26 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 1.5,
+  "tags": "intimate, coffee, chic",
+    "price": "$$",
+    "duration": 2
+  },
+  {
+    "name": "Gem Home",
+    "vibe": "Cozy, Trendy, Artistic, Boutique, Homey, Craft Cocktails, Casual Vibe, Vintage Feel",
+    "lat": 40.72069095,
+    "lon": -73.9960831,
+    "link": "https://www.instagram.com/gem.nyc/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday 9:00 AM–6:00 PM",
+      "Monday Closed",
+      "Tuesday Closed",
+      "Wednesday 9:00 AM–6:00 PM",
+      "Thursday 9:00 AM–6:00 PM",
+      "Friday 9:00 AM–6:00 PM",
+      "Saturday 9:00 AM–6:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 9, "close": 18 },
+    "mon": null,
+    "tue": null,
+    "wed": { "open": 9, "close": 18 },
+    "thu": { "open": 9, "close": 18 },
+    "fri": { "open": 9, "close": 18 },
+    "sat": { "open": 9, "close": 18 }
+  },
+  "dayParts": {
+    "sun": "A",
+    "mon": "-",
+    "tue": "-",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD"
+  },
+  "timeCategory": "morning, midday",
+  "energyRamp": 1,
+  "tags": "artsy, boutique, cozy",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Good Guy's",
+    "vibe": "Cozy, Chill, Intimate, Eclectic, Relaxed, Hip Vibe, Casual Drinks, Community Spot",
+    "lat": 40.7188823,
+    "lon": -73.9913742,
+    "link": "https://www.instagram.com/goodguysgoodguys",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–1:00 AM",
+      "Monday 5:00 PM–1:00 AM",
+      "Tuesday 5:00 PM–1:00 AM",
+      "Wednesday 5:00 PM–1:00 AM",
+      "Thursday 5:00 PM–2:00 AM",
+      "Friday 5:00 PM–2:00 AM",
+      "Saturday 5:00 PM–2:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 25 },
+    "mon": { "open": 17, "close": 25 },
+    "tue": { "open": 17, "close": 25 },
+    "wed": { "open": 17, "close": 25 },
+    "thu": { "open": 17, "close": 26 },
+    "fri": { "open": 17, "close": 26 },
+    "sat": { "open": 17, "close": 26 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "L",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "late night",
+  "energyRamp": 2,
+  "tags": "casual drinks, chill, eclectic",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "June",
+    "vibe": "Intimate, Stylish, Cozy, Wine Bar, Cozy Atmosphere, Trendy, Relaxing Vibes",
+    "lat": 40.6860636,
+    "lon": -73.9938871,
+    "link": "https://www.instagram.com/junewinebk/",
+    "openNow": true,
+    "hours": [
+      "Sunday 2:00 PM–12:00 AM",
+      "Monday 5:00 PM–12:00 AM",
+      "Tuesday 5:00 PM–12:00 AM",
+      "Wednesday 5:00 PM–12:00 AM",
+      "Thursday 5:00 PM–12:00 AM",
+      "Friday 4:00 PM–1:00 AM",
+      "Saturday 2:00 PM–1:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 14, "close": 24 },
+    "mon": { "open": 17, "close": 24 },
+    "tue": { "open": 17, "close": 24 },
+    "wed": { "open": 17, "close": 24 },
+    "thu": { "open": 17, "close": 24 },
+    "fri": { "open": 16, "close": 25 },
+    "sat": { "open": 14, "close": 25 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 2,
+  "tags": "wine bar, intimate, relaxing",
+    "price": "$$$",
+    "duration": 1.5
+  },
+  {
+    "name": "Swallow Cafe",
+    "vibe": "Cozy, Chic, Casual, Hip, Relaxed Atmosphere, Wine Bar, Trendy Ambience",
+    "lat": 40.6901367,
+    "lon": -73.994571,
+    "link": "https://www.instagram.com/swallowcafenyc/",
+    "openNow": true,
+    "hours": [
+      "Sunday 7:00 AM–7:00 PM",
+      "Monday 7:00 AM–7:00 PM",
+      "Tuesday 7:00 AM–7:00 PM",
+      "Wednesday 7:00 AM–7:00 PM",
+      "Thursday 7:00 AM–7:00 PM",
+      "Friday 7:00 AM–7:00 PM",
+      "Saturday 7:00 AM–7:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 7, "close": 19 },
+    "mon": { "open": 7, "close": 19 },
+    "tue": { "open": 7, "close": 19 },
+    "wed": { "open": 7, "close": 19 },
+    "thu": { "open": 7, "close": 19 },
+    "fri": { "open": 7, "close": 19 },
+    "sat": { "open": 7, "close": 19 }
+  },
+  "dayParts": {
+    "sun": "MD",
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD"
+  },
+  "timeCategory": "morning, midday",
+  "energyRamp": 1,
+  "tags": "cafe, wine bar, quiet spot",
+    "price": "$",
+    "duration": 0.5
+  },
+  {
+    "name": "6BC Botanical Garden",
+    "vibe": "Outdoors, Greenery, Tranquil, Relaxing, Nature Escape, Urban Garden, Peaceful Retreat",
+    "lat": 40.7237765,
+    "lon": -73.98041122,
+    "link": "https://www.instagram.com/6bcgarden/",
+    "openNow": true,
+    "hours": [
+      "Sunday 12:00 PM–6:00 PM",
+      "Monday Closed",
+      "Tuesday Closed",
+      "Wednesday 4:00 PM–7:00 PM",
+      "Thursday Closed",
+      "Friday 4:00 PM–7:00 PM",
+      "Saturday 12:00 PM–6:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 12, "close": 18 },
+    "mon": null,
+    "tue": null,
+    "wed": { "open": 16, "close": 19 },
+    "thu": null,
+    "fri": { "open": 16, "close": 19 },
+    "sat": { "open": 12, "close": 18 }
+  },
+  "dayParts": {
+    "sun": "A",
+    "mon": "-",
+    "tue": "-",
+    "wed": "HH",
+    "thu": "-",
+    "fri": "HH",
+    "sat": "A"
+  },
+  "timeCategory": "afternoon",
+  "energyRamp": 1,
+  "tags": "green space, relaxing, nature",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Binx",
+    "vibe": "Trendy, Upscale, Lounge, Casual Drinks, Relaxed, Cozy, Artistic Atmosphere",
+    "lat": 40.733941,
+    "lon": -74.00160176,
+    "link": "https://www.instagram.com/binx_nyc/",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–10:00 PM",
+      "Monday Closed",
+      "Tuesday 5:00 PM–12:00 AM",
+      "Wednesday 5:00 PM–12:00 AM",
+      "Thursday 5:00 PM–12:00 AM",
+      "Friday 5:00 PM–1:00 AM",
+      "Saturday 5:00 PM–1:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 22 },
+    "mon": null,
+    "tue": { "open": 17, "close": 24 },
+    "wed": { "open": 17, "close": 24 },
+    "thu": { "open": 17, "close": 24 },
+    "fri": { "open": 17, "close": 25 },
+    "sat": { "open": 17, "close": 25 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 2,
+  "tags": "lounge, trendy, artistic",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Saturn Road",
+    "vibe": "Intimate, Hip, Casual, Coffee & Cocktails, Trendy, Relaxed, Creative Vibes",
+    "lat": 40.6847429,
+    "lon": -73.9949911,
+    "link": "https://www.instagram.com/saturnroadnyc/",
+    "openNow": true,
+    "hours": [
+      "Sunday 8:00 AM–10:00 PM",
+      "Monday 7:00 AM–10:00 PM",
+      "Tuesday 7:00 AM–10:00 PM",
+      "Wednesday 7:00 AM–10:00 PM",
+      "Thursday 7:00 AM–11:00 PM",
+      "Friday 7:00 AM–11:00 PM",
+      "Saturday 7:00 AM–11:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 8, "close": 22 },
+    "mon": { "open": 7, "close": 22 },
+    "tue": { "open": 7, "close": 22 },
+    "wed": { "open": 7, "close": 22 },
+    "thu": { "open": 7, "close": 23 },
+    "fri": { "open": 7, "close": 23 },
+    "sat": { "open": 7, "close": 23 }
+  },
+  "dayParts": {
+    "sun": "M",
+    "mon": "M",
+    "tue": "M",
+    "wed": "M",
+    "thu": "M",
+    "fri": "MD",
+    "sat": "MD"
+  },
+  "timeCategory": "morning, midday",
+  "energyRamp": 1,
+  "tags": "coffee, cocktails, trendy",
+    "price": "$",
+    "duration": 0.5
+  },
+  {
+    "name": "Rose Marie",
+    "vibe": "Cozy, Intimate, Relaxed, Artistic, Trendy, Modern Design, Chill Vibes",
+    "lat": 40.7125159,
+    "lon": -73.9490142,
+    "link": "https://www.instagram.com/rosemariebk/",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–12:00 AM",
+      "Monday 5:00 PM–12:00 AM",
+      "Tuesday 5:00 PM–12:00 AM",
+      "Wednesday 5:00 PM–12:00 AM",
+      "Thursday 5:00 PM–12:00 AM",
+      "Friday 5:00 PM–12:00 AM",
+      "Saturday 5:00 PM–12:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 24 },
+    "mon": { "open": 17, "close": 24 },
+    "tue": { "open": 17, "close": 24 },
+    "wed": { "open": 17, "close": 24 },
+    "thu": { "open": 17, "close": 24 },
+    "fri": { "open": 17, "close": 24 },
+    "sat": { "open": 17, "close": 24 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 2,
+  "tags": "intimate, trendy, artistic",
+    "price": "$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Quick Eternity",
+    "vibe": "Eclectic, Unique, Trendy, Hidden Bar, Artisanal Cocktails, Relaxed Vibe",
+    "lat": 40.7080782,
+    "lon": -74.0020772,
+    "link": "https://www.instagram.com/quicketernity_nyc/",
+    "openNow": true,
+    "hours": [
+      "Sunday 2:00 PM–11:00 PM",
+      "Monday 4:00 PM–12:00 AM",
+      "Tuesday 4:00 PM–12:00 AM",
+      "Wednesday 4:00 PM–12:00 AM",
+      "Thursday 4:00 PM–12:00 AM",
+      "Friday 4:00 PM–12:00 AM",
+      "Saturday 2:00 PM–12:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 14, "close": 23 },
+    "mon": { "open": 16, "close": 24 },
+    "tue": { "open": 16, "close": 24 },
+    "wed": { "open": 16, "close": 24 },
+    "thu": { "open": 16, "close": 24 },
+    "fri": { "open": 16, "close": 24 },
+    "sat": { "open": 14, "close": 24 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 2,
+  "tags": "hidden bar, cocktails, unique",
+    "price": "$$",
+    "duration": 1.5
+  },
+  {
+    "name": "Fandi Mata",
+    "vibe": "Cozy, Trendy, Comfort Food, Laid-back, Relaxed, Artsy, Casual Vibe",
+    "lat": 40.7188471,
+    "lon": -73.9492531,
+    "link": "https://www.instagram.com/fandimatabklyn/",
+    "openNow": true,
+    "hours": [
+      "Sunday 11:00 AM–11:00 PM",
+      "Monday Closed",
+      "Tuesday 5:00 PM–10:00 PM",
+      "Wednesday 5:00 PM–11:00 PM",
+      "Thursday 5:00 PM–11:00 PM",
+      "Friday 5:00 PM–12:00 AM",
+      "Saturday 11:00 AM–12:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 11, "close": 23 },
+    "mon": null,
+    "tue": { "open": 17, "close": 22 },
+    "wed": { "open": 17, "close": 23 },
+    "thu": { "open": 17, "close": 23 },
+    "fri": { "open": 17, "close": 24 },
+    "sat": { "open": 11, "close": 24 }
+  },
+  "dayParts": {
+    "sun": "A",
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "A"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 3,
+  "tags": "artsy, cozy, relaxed",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "Ye's Apothecary 夜莺",
+    "vibe": "Intimate, Relaxing, Sophisticated, Hidden Bar, Unique Vibe, Cocktail Lounge",
+    "lat": 40.71956833,
+    "lon": -73.989608,
+    "link": "https://www.instagram.com/yesapothecary/",
+    "openNow": true,
+    "hours": [
+      "Sunday 5:00 PM–10:00 PM",
+      "Monday Closed",
+      "Tuesday 5:00 PM–12:00 AM",
+      "Wednesday 5:00 PM–12:00 AM",
+      "Thursday 5:00 PM–12:00 AM",
+      "Friday 5:00 PM–1:00 AM",
+      "Saturday 5:00 PM–1:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 17, "close": 22 },
+    "mon": null,
+    "tue": { "open": 17, "close": 24 },
+    "wed": { "open": 17, "close": 24 },
+    "thu": { "open": 17, "close": 24 },
+    "fri": { "open": 17, "close": 25 },
+    "sat": { "open": 17, "close": 25 }
+  },
+  "dayParts": {
+    "sun": "E",
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "evening",
+  "energyRamp": 3,
+  "tags": "hidden, intimate, cocktails",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "New Love City",
+    "vibe": "Chill, Cozy, Unique, Intimate, Eclectic, Relaxing, Vibrant Atmosphere",
+    "lat": 40.7295188,
+    "lon": -73.95824479,
+    "link": "https://www.instagram.com/newlovecity_/",
+    "openNow": true,
+    "hours": [
+      "Sunday 10:00 AM–8:00 PM",
+      "Monday 7:30 AM–8:30 PM",
+      "Tuesday 7:30 AM–9:00 PM",
+      "Wednesday 7:30 AM–8:30 PM",
+      "Thursday 7:30 AM–9:00 PM",
+      "Friday 7:30 AM–7:30 PM",
+      "Saturday 8:00 AM–7:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 10, "close": 20 },
+    "mon": { "open": 7.5, "close": 20.5 },
+    "tue": { "open": 7.5, "close": 21 },
+    "wed": { "open": 7.5, "close": 20.5 },
+    "thu": { "open": 7.5, "close": 21 },
+    "fri": { "open": 7.5, "close": 19.5 },
+    "sat": { "open": 8, "close": 19 }
+  },
+  "dayParts": {
+    "sun": "MD",
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD"
+  },
+  "timeCategory": "daytime, wellness",
+  "energyRamp": 1,
+  "tags": "cozy, unique, wellness",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "OH MERCY",
+    "vibe": "Cozy, Warm, Trendy, Casual Bar, Relaxed Vibes, Quirky, Intimate Cocktails",
+    "lat": 40.7292924,
+    "lon": -73.95735,
+    "link": "https://www.instagram.com/ohmercycafe/",
+    "openNow": true,
+    "hours": [
+      "Sunday 8:00 AM–4:00 PM",
+      "Monday 8:00 AM–4:00 PM",
+      "Tuesday 8:00 AM–4:00 PM",
+      "Wednesday 8:00 AM–4:00 PM",
+      "Thursday 8:00 AM–4:00 PM",
+      "Friday 8:00 AM–4:00 PM",
+      "Saturday 8:00 AM–4:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": { "open": 8, "close": 16 },
+    "mon": { "open": 8, "close": 16 },
+    "tue": { "open": 8, "close": 16 },
+    "wed": { "open": 8, "close": 16 },
+    "thu": { "open": 8, "close": 16 },
+    "fri": { "open": 8, "close": 16 },
+    "sat": { "open": 8, "close": 16 }
+  },
+  "dayParts": {
+    "sun": "MD",
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD"
+  },
+  "timeCategory": "morning, midday",
+  "energyRamp": 1,
+  "tags": "quirky, intimate, cocktails",
+    "price": "$",
+    "duration": 0.5
+  },
+  {
+    "name": "Élysée's",
+    "vibe": "Upscale, Elegant, Cocktail Lounge, Exclusive, Romantic Vibe, Trendy, Intimate",
+    "lat": 40.723611,
+    "lon": -74.010487,
+    "link": "https://www.instagram.com/fouquets.newyork/",
+    "openNow": true,
+    "hours": [
+      "Sunday Closed",
+      "Monday 7:30 AM–4:00 PM",
+      "Tuesday 7:30 AM–4:00 PM",
+      "Wednesday 7:30 AM–4:00 PM",
+      "Thursday 7:30 AM–10:00 PM",
+      "Friday 7:30 AM–10:00 PM",
+      "Saturday 7:30 AM–10:00 PM"
+    ],
+    "hoursNumeric": {
+    "sun": null,
+    "mon": { "open": 7.5, "close": 16 },
+    "tue": { "open": 7.5, "close": 16 },
+    "wed": { "open": 7.5, "close": 16 },
+    "thu": { "open": 7.5, "close": 22 },
+    "fri": { "open": 7.5, "close": 22 },
+    "sat": { "open": 7.5, "close": 22 }
+  },
+  "dayParts": {
+    "sun": "-",
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "midday, evening",
+  "energyRamp": 2,
+  "tags": "exclusive, romantic, upscale",
+    "price": "$$",
+    "duration": 2
+  },
+  {
+    "name": "Wildcard Bar",
+    "vibe": "Fun, Trendy, Speakeasy, Unique Cocktails, Stylish, Relaxed, Intimate Vibe",
+    "lat": 40.7568586,
+    "lon": -73.96814765,
+    "link": "https://www.instagram.com/wildcardbar.nyc/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday Closed",
+      "Monday Closed",
+      "Tuesday 6:00 PM–12:00 AM",
+      "Wednesday 6:00 PM–12:00 AM",
+      "Thursday 6:00 PM–12:00 AM",
+      "Friday 6:00 PM–2:00 AM",
+      "Saturday 6:00 PM–2:00 AM"
+    ],
+     "hoursNumeric": {
+    "sun": null,
+    "mon": null,
+    "tue": { "open": 18, "close": 24 },
+    "wed": { "open": 18, "close": 24 },
+    "thu": { "open": 18, "close": 24 },
+    "fri": { "open": 18, "close": 26 },
+    "sat": { "open": 18, "close": 26 }
+  },
+  "dayParts": {
+    "sun": "-",
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
+    "sat": "L"
+  },
+  "timeCategory": "evening, late night",
+  "energyRamp": 2,
+  "tags": "speakeasy, stylish, cocktails",
+    "price": "$$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Paragon",
+    "vibe": "DJ, Dance, Modern, Neighborhood Spot, Club, Trendy Vibe",
+    "lat": 40.6961288,
+    "lon": -73.934041,
+    "link": "https://www.instagram.com/paragonbroadway/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday Closed",
+      "Monday Closed",
+      "Tuesday Closed",
+      "Wednesday Closed",
+      "Thursday Closed",
+      "Friday Closed",
+      "Saturday Closed"
+    ],
+    "hoursNumeric": {
+    "sun": null,
+    "mon": null,
+    "tue": null,
+    "wed": null,
+    "thu": null,
+    "fri": null,
+    "sat": null
+  },
+  "dayParts": {
+    "sun": "-",
+    "mon": "-",
+    "tue": "-",
+    "wed": "-",
+    "thu": "-",
+    "fri": "-",
+    "sat": "-"
+  },
+  "timeCategory": "late night",
+  "energyRamp": 4,
+  "tags": "club, DJ, dance",
+    "price": "$$",
+    "duration": 4
+  },
+  {
+    "name": "Pearl Street Caviar",
+    "vibe": "Upscale, Luxe, Trendy, Seafood, Modern, Elegant, Cocktail Bar",
+    "lat": 40.6806807,
+    "lon": -74.0081971,
+    "link": "https://www.instagram.com/pearlstreetcaviar/?hl=en",
+    "openNow": true,
+    "hours": [
+      "Sunday Closed",
+      "Monday 11:00 AM–7:00 PM",
+      "Tuesday 11:00 AM–7:00 PM",
+      "Wednesday 11:00 AM–7:00 PM",
+      "Thursday 11:00 AM–11:00 PM",
+      "Friday 11:00 AM–12:00 AM",
+      "Saturday 12:00 PM–12:00 AM"
+    ],
+    "hoursNumeric": {
+    "sun": null,
+    "mon": { "open": 11, "close": 19 },
+    "tue": { "open": 11, "close": 19 },
+    "wed": { "open": 11, "close": 19 },
+    "thu": { "open": 11, "close": 23 },
+    "fri": { "open": 11, "close": 24 },
+    "sat": { "open": 12, "close": 24 }
+  },
+  "dayParts": {
+    "sun": null,
+    "mon": "HH",
+    "tue": "HH",
+    "wed": "HH",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E"
+  },
+  "timeCategory": "happyhour, evening",
+  "energyRamp": 2,
+  "tags": "luxe, upscale, seafood",
+    "price": "$$",
+    "duration": 2
   }
 ]
