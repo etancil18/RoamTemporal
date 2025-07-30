@@ -533,8 +533,9 @@ function generateCrawlRoute() {
 
     if (!isOpenNow) return false;
 
-    const ll = L.latLng(loc.lat, loc.lon);
-    if (center.distanceTo(ll) > 1000) return false;
+    const marker = L.marker([loc.lat, loc.lon]);
+const isInRadius = center.distanceTo(marker.getLatLng()) < 1500;
+if (!isInRadius) return false;
 
     const locVibes = Array.isArray(loc.vibe)
       ? loc.vibe.map(v => v.toLowerCase())
