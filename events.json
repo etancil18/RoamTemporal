@@ -19584,7 +19584,7 @@
     "price": "$",
     "duration": 2
   },
-  {
+   {
     "name": "Achilles Heel",
     "vibe": "Cozy, Trendy, Waterfront, Casual Drinks",
     "lat": 40.7331765,
@@ -19601,26 +19601,26 @@
       "Saturday 4:00 PM–1:00 AM"
     ],
     "hoursNumeric": {
-    "sun": { "open": 16, "close": 24 },
-    "mon": { "open": 17, "close": 24 },
-    "tue": { "open": 17, "close": 24 },
-    "wed": { "open": 17, "close": 24 },
-    "thu": { "open": 17, "close": 24 },
-    "fri": { "open": 17, "close": 25 },
-    "sat": { "open": 16, "close": 25 }
-  },
-  "dayParts": {
-    "mon": "E",
-    "tue": "E",
-    "wed": "E",
-    "thu": "E",
-    "fri": "E",
-    "sat": "E",
-    "sun": "E"
-  },
-  "timeCategory": "evening",
-  "energyRamp": 2,
-  "tags": "wine bar, dockside, BK night scene",
+      "sun": { "open": 16, "close": 24 },
+      "mon": { "open": 17, "close": 24 },
+      "tue": { "open": 17, "close": 24 },
+      "wed": { "open": 17, "close": 24 },
+      "thu": { "open": 17, "close": 24 },
+      "fri": { "open": 17, "close": 25 },
+      "sat": { "open": 16, "close": 25 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "E"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 2,
+    "tags": "wine bar, dockside, BK night scene",
     "price": "$$",
     "duration": 1.75
   },
@@ -19641,26 +19641,26 @@
       "Saturday 5:00 PM–2:00 AM"
     ],
     "hoursNumeric": {
-    "sun": { "open": 17, "close": 24 },
-    "mon": null,
-    "tue": null,
-    "wed": null,
-    "thu": { "open": 17, "close": 23 },
-    "fri": { "open": 17, "close": 26 },
-    "sat": { "open": 17, "close": 26 }
-  },
-  "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "-",
-    "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "E"
-  },
-  "timeCategory": "evening, late night",
-  "energyRamp": 2,
-  "tags": "hidden gem, cocktails, stylish",
+      "sun": { "open": 17, "close": 24 },
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": { "open": 17, "close": 23 },
+      "fri": { "open": 17, "close": 26 },
+      "sat": { "open": 17, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "-",
+      "tue": "-",
+      "wed": "-",
+      "thu": "E",
+      "fri": "L",
+      "sat": "L",
+      "sun": "E"
+    },
+    "timeCategory": "evening, late night",
+    "energyRamp": 2,
+    "tags": "hidden gem, cocktails, stylish",
     "price": "$$",
     "duration": 1.75
   },
@@ -19687,8 +19687,7 @@
     "wed": { "open": 19, "close": 26 },
     "thu": { "open": 19, "close": 26 },
     "fri": { "open": 19, "close": 26 },
-    "sat": { "open": 19, "close": 26 }
-  },
+    "sat": { "open": 19, "close": 26 } },
   "dayParts": {
     "mon": "-",
     "tue": "-",
@@ -19727,8 +19726,7 @@
     "wed": { "open": 17, "close": 26 },
     "thu": { "open": 17, "close": 26 },
     "fri": { "open": 17, "close": 28 },
-    "sat": { "open": 14, "close": 28 }
-  },
+    "sat": { "open": 14, "close": 28 } },
   "dayParts": {
     "mon": "-",
     "tue": "E",
@@ -19767,8 +19765,7 @@
     "wed": { "open": 17, "close": 24 },
     "thu": { "open": 17, "close": 26 },
     "fri": { "open": 17, "close": 28 },
-    "sat": { "open": 15, "close": 28 }
-  },
+    "sat": { "open": 15, "close": 28 } },
   "dayParts": {
     "mon": "-",
     "tue": "E",
@@ -19807,8 +19804,7 @@
     "wed": { "open": 17, "close": 26 },
     "thu": { "open": 17, "close": 26 },
     "fri": { "open": 17, "close": 27 },
-    "sat": { "open": 17, "close": 27 }
-  },
+    "sat": { "open": 17, "close": 27 } },
   "dayParts": {
     "mon": "L",
     "tue": "L",
@@ -19847,8 +19843,7 @@
     "wed": { "open": 17, "close": 23 },
     "thu": { "open": 17, "close": 23 },
     "fri": { "open": 17, "close": 23 },
-    "sat": { "open": 13, "close": 23 }
-  },
+    "sat": { "open": 13, "close": 23 } },
   "dayParts": {
     "mon": "-",
     "tue": "E",
@@ -19858,7 +19853,7 @@
     "sat": "HH",
     "sun": "HH"
   },
-  "timeCategory": "evening", "happyhour",
+  "timeCategory": "evening, happy hour",
   "energyRamp": 1.25,
   "tags": "brewery, sake, lowkey",
     "price": "$",
@@ -19887,8 +19882,7 @@
     "wed": { "open": 14, "close": 26 },
     "thu": { "open": 14, "close": 28 },
     "fri": { "open": 14, "close": 28 },
-    "sat": { "open": 12, "close": 28 }
-  },
+    "sat": { "open": 12, "close": 28 } },
   "dayParts": {
     "mon": "E",
     "tue": "E",
@@ -19927,8 +19921,7 @@
     "wed": { "open": 16, "close": 28 },
     "thu": { "open": 16, "close": 28 },
     "fri": { "open": 16, "close": 28 },
-    "sat": { "open": 16, "close": 28 }
-  },
+    "sat": { "open": 16, "close": 28 } },
   "dayParts": {
     "sun": "L",
     "mon": "L",
@@ -19967,8 +19960,7 @@
     "wed": { "open": 18, "close": 26 },
     "thu": { "open": 18, "close": 26 },
     "fri": { "open": 18, "close": 26 },
-    "sat": { "open": 18, "close": 26 }
-  },
+    "sat": { "open": 18, "close": 26 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -20007,8 +19999,7 @@
     "wed": { "open": 17, "close": 26 },
     "thu": { "open": 17, "close": 26 },
     "fri": { "open": 17, "close": 27 },
-    "sat": { "open": 17, "close": 27 }
-  },
+    "sat": { "open": 17, "close": 27 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -20047,8 +20038,7 @@
     "wed": { "open": 12, "close": 22 },
     "thu": { "open": 12, "close": 22 },
     "fri": { "open": 12, "close": 22 },
-    "sat": { "open": 12, "close": 22 }
-  },
+    "sat": { "open": 12, "close": 22 } },
   "dayParts": {
     "sun": "MD",
     "mon": "MD",
@@ -20087,8 +20077,7 @@
     "wed": { "open": 8, "close": 17 },
     "thu": { "open": 8, "close": 17 },
     "fri": { "open": 8, "close": 17 },
-    "sat": { "open": 8, "close": 17 }
-  },
+    "sat": { "open": 8, "close": 17 } },
   "dayParts": {
     "sun": "MD",
     "mon": "MD",
@@ -20127,8 +20116,7 @@
     "wed": { "open": 16, "close": 24 },
     "thu": { "open": 16, "close": 24 },
     "fri": { "open": 16, "close": 24 },
-    "sat": { "open": 16, "close": 24 }
-  },
+    "sat": { "open": 16, "close": 24 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -20167,8 +20155,7 @@
     "wed": { "open": 12, "close": 26 },
     "thu": { "open": 12, "close": 26 },
     "fri": { "open": 12, "close": 27 },
-    "sat": { "open": 11, "close": 27 }
-  },
+    "sat": { "open": 11, "close": 27 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -20212,9 +20199,7 @@
     "fri": { "open": 17, "close": 24 },
     "sat": [
       { "open": 12.5, "close": 15.5 },
-      { "open": 17, "close": 25 }
-    ]
-  },
+      { "open": 17, "close": 25 }] },
   "dayParts": {
     "sun": "MD",
     "mon": "E",
@@ -20253,8 +20238,7 @@
     "wed": { "open": 17.5, "close": 22.5 },
     "thu": { "open": 17.5, "close": 22.5 },
     "fri": { "open": 17.5, "close": 22.5 },
-    "sat": { "open": 17.5, "close": 22.5 }
-  },
+    "sat": { "open": 17.5, "close": 22.5 } },
   "dayParts": {
     "sun": "-",
     "mon": "-",
@@ -20293,8 +20277,7 @@
     "wed": { "open": 15, "close": 23 },
     "thu": { "open": 15, "close": 23 },
     "fri": { "open": 15, "close": 23 },
-    "sat": { "open": 15, "close": 23 }
-  },
+    "sat": { "open": 15, "close": 23 } },
   "dayParts": {
     "sun": "E",
     "mon": "-",
@@ -20333,8 +20316,7 @@
     "wed": { "open": 7.5, "close": 15 },
     "thu": { "open": 7.5, "close": 15 },
     "fri": { "open": 7.5, "close": 15 },
-    "sat": { "open": 7.5, "close": 15 }
-  },
+    "sat": { "open": 7.5, "close": 15 } },
   "dayParts": {
     "sun": "-",
     "mon": "MD",
@@ -20373,8 +20355,7 @@
     "wed": { "open": 17.5, "close": 22 },
     "thu": { "open": 17.5, "close": 22 },
     "fri": { "open": 17.5, "close": 23 },
-    "sat": { "open": 17.5, "close": 23 }
-  },
+    "sat": { "open": 17.5, "close": 23 } },
   "dayParts": {
     "sun": "E",
     "mon": "-",
@@ -20413,8 +20394,7 @@
     "wed": { "open": 16, "close": 24 },
     "thu": { "open": 16, "close": 24 },
     "fri": { "open": 16, "close": 25 },
-    "sat": { "open": 16, "close": 25 }
-  },
+    "sat": { "open": 16, "close": 25 } },
   "dayParts": {
     "sun": "E",
     "mon": "-",
@@ -20453,8 +20433,7 @@
     "wed": { "open": 11, "close": 18 },
     "thu": { "open": 11, "close": 18 },
     "fri": { "open": 11, "close": 18 },
-    "sat": { "open": 11, "close": 18 }
-  },
+    "sat": { "open": 11, "close": 18 } },
   "dayParts": {
     "sun": "MD",
     "mon": "-",
@@ -20493,8 +20472,7 @@
     "wed": { "open": 17, "close": 22 },
     "thu": { "open": 17, "close": 22 },
     "fri": { "open": 17, "close": 23 },
-    "sat": { "open": 17, "close": 23 }
-  },
+    "sat": { "open": 17, "close": 23 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -20533,8 +20511,7 @@
     "wed": { "open": 17, "close": 22 },
     "thu": { "open": 17, "close": 22 },
     "fri": { "open": 17, "close": 22 },
-    "sat": { "open": 17, "close": 22 }
-  },
+    "sat": { "open": 17, "close": 22 } },
   "dayParts": {
     "sun": "E",
     "mon": "-",
@@ -20573,8 +20550,7 @@
     "wed": { "open": 17, "close": 23.5 },
     "thu": { "open": 17, "close": 23.5 },
     "fri": { "open": 17, "close": 24.5 },
-    "sat": { "open": 17, "close": 24.5 }
-  },
+    "sat": { "open": 17, "close": 24.5 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -20613,8 +20589,7 @@
     "wed": { "open": 14, "close": 28 },
     "thu": { "open": 13, "close": 28 },
     "fri": { "open": 13, "close": 28 },
-    "sat": { "open": 12, "close": 28 }
-  },
+    "sat": { "open": 12, "close": 28 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -20653,8 +20628,7 @@
     "wed": { "open": 18, "close": 24 },
     "thu": { "open": 18, "close": 24 },
     "fri": { "open": 18, "close": 25 },
-    "sat": { "open": 18, "close": 25 }
-  },
+    "sat": { "open": 18, "close": 25 } },
   "dayParts": {
     "sun": "-",
     "mon": "-",
@@ -20693,8 +20667,7 @@
     "wed": { "open": 7, "close": 22 },
     "thu": { "open": 7, "close": 22 },
     "fri": { "open": 7, "close": 22 },
-    "sat": { "open": 7, "close": 22 }
-  },
+    "sat": { "open": 7, "close": 22 } },
   "dayParts": {
     "sun": "A",
     "mon": "A",
@@ -20733,8 +20706,7 @@
     "wed": { "open": 17, "close": 26 },
     "thu": { "open": 17, "close": 26 },
     "fri": { "open": 17, "close": 26 },
-    "sat": { "open": 17, "close": 26 }
-  },
+    "sat": { "open": 17, "close": 26 } },
   "dayParts": {
     "sun": "L",
     "mon": "-",
@@ -20773,8 +20745,7 @@
     "wed": { "open": 16, "close": 24 },
     "thu": { "open": 16, "close": 24 },
     "fri": { "open": 16, "close": 26 },
-    "sat": { "open": 14, "close": 26 }
-  },
+    "sat": { "open": 14, "close": 26 } },
   "dayParts": {
     "sun": "E",
     "mon": "-",
@@ -20813,8 +20784,7 @@
     "wed": { "open": 9, "close": 18 },
     "thu": { "open": 9, "close": 18 },
     "fri": { "open": 9, "close": 18 },
-    "sat": { "open": 9, "close": 18 }
-  },
+    "sat": { "open": 9, "close": 18 } },
   "dayParts": {
     "sun": "A",
     "mon": "-",
@@ -20853,8 +20823,7 @@
     "wed": { "open": 17, "close": 25 },
     "thu": { "open": 17, "close": 26 },
     "fri": { "open": 17, "close": 26 },
-    "sat": { "open": 17, "close": 26 }
-  },
+    "sat": { "open": 17, "close": 26 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -20893,8 +20862,7 @@
     "wed": { "open": 17, "close": 24 },
     "thu": { "open": 17, "close": 24 },
     "fri": { "open": 16, "close": 25 },
-    "sat": { "open": 14, "close": 25 }
-  },
+    "sat": { "open": 14, "close": 25 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -20933,8 +20901,7 @@
     "wed": { "open": 7, "close": 19 },
     "thu": { "open": 7, "close": 19 },
     "fri": { "open": 7, "close": 19 },
-    "sat": { "open": 7, "close": 19 }
-  },
+    "sat": { "open": 7, "close": 19 } },
   "dayParts": {
     "sun": "MD",
     "mon": "MD",
@@ -20973,8 +20940,7 @@
     "wed": { "open": 16, "close": 19 },
     "thu": null,
     "fri": { "open": 16, "close": 19 },
-    "sat": { "open": 12, "close": 18 }
-  },
+    "sat": { "open": 12, "close": 18 } },
   "dayParts": {
     "sun": "A",
     "mon": "-",
@@ -21013,8 +20979,7 @@
     "wed": { "open": 17, "close": 24 },
     "thu": { "open": 17, "close": 24 },
     "fri": { "open": 17, "close": 25 },
-    "sat": { "open": 17, "close": 25 }
-  },
+    "sat": { "open": 17, "close": 25 } },
   "dayParts": {
     "sun": "E",
     "mon": "-",
@@ -21053,8 +21018,7 @@
     "wed": { "open": 7, "close": 22 },
     "thu": { "open": 7, "close": 23 },
     "fri": { "open": 7, "close": 23 },
-    "sat": { "open": 7, "close": 23 }
-  },
+    "sat": { "open": 7, "close": 23 } },
   "dayParts": {
     "sun": "M",
     "mon": "M",
@@ -21093,8 +21057,7 @@
     "wed": { "open": 17, "close": 24 },
     "thu": { "open": 17, "close": 24 },
     "fri": { "open": 17, "close": 24 },
-    "sat": { "open": 17, "close": 24 }
-  },
+    "sat": { "open": 17, "close": 24 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -21133,8 +21096,7 @@
     "wed": { "open": 16, "close": 24 },
     "thu": { "open": 16, "close": 24 },
     "fri": { "open": 16, "close": 24 },
-    "sat": { "open": 14, "close": 24 }
-  },
+    "sat": { "open": 14, "close": 24 } },
   "dayParts": {
     "sun": "E",
     "mon": "E",
@@ -21173,8 +21135,7 @@
     "wed": { "open": 17, "close": 23 },
     "thu": { "open": 17, "close": 23 },
     "fri": { "open": 17, "close": 24 },
-    "sat": { "open": 11, "close": 24 }
-  },
+    "sat": { "open": 11, "close": 24 } },
   "dayParts": {
     "sun": "A",
     "mon": "-",
@@ -21213,8 +21174,7 @@
     "wed": { "open": 17, "close": 24 },
     "thu": { "open": 17, "close": 24 },
     "fri": { "open": 17, "close": 25 },
-    "sat": { "open": 17, "close": 25 }
-  },
+    "sat": { "open": 17, "close": 25 } },
   "dayParts": {
     "sun": "E",
     "mon": "-",
@@ -21253,8 +21213,7 @@
     "wed": { "open": 7.5, "close": 20.5 },
     "thu": { "open": 7.5, "close": 21 },
     "fri": { "open": 7.5, "close": 19.5 },
-    "sat": { "open": 8, "close": 19 }
-  },
+    "sat": { "open": 8, "close": 19 } },
   "dayParts": {
     "sun": "MD",
     "mon": "MD",
@@ -21293,8 +21252,7 @@
     "wed": { "open": 8, "close": 16 },
     "thu": { "open": 8, "close": 16 },
     "fri": { "open": 8, "close": 16 },
-    "sat": { "open": 8, "close": 16 }
-  },
+    "sat": { "open": 8, "close": 16 } },
   "dayParts": {
     "sun": "MD",
     "mon": "MD",
@@ -21333,8 +21291,7 @@
     "wed": { "open": 7.5, "close": 16 },
     "thu": { "open": 7.5, "close": 22 },
     "fri": { "open": 7.5, "close": 22 },
-    "sat": { "open": 7.5, "close": 22 }
-  },
+    "sat": { "open": 7.5, "close": 22 } },
   "dayParts": {
     "sun": "-",
     "mon": "MD",
@@ -21373,8 +21330,7 @@
     "wed": { "open": 18, "close": 24 },
     "thu": { "open": 18, "close": 24 },
     "fri": { "open": 18, "close": 26 },
-    "sat": { "open": 18, "close": 26 }
-  },
+    "sat": { "open": 18, "close": 26 } },
   "dayParts": {
     "sun": "-",
     "mon": "-",
@@ -21413,8 +21369,7 @@
     "wed": null,
     "thu": null,
     "fri": null,
-    "sat": null
-  },
+    "sat": null },
   "dayParts": {
     "sun": "-",
     "mon": "-",
@@ -21453,8 +21408,7 @@
     "wed": { "open": 11, "close": 19 },
     "thu": { "open": 11, "close": 23 },
     "fri": { "open": 11, "close": 24 },
-    "sat": { "open": 12, "close": 24 }
-  },
+    "sat": { "open": 12, "close": 24 } },
   "dayParts": {
     "sun": null,
     "mon": "HH",
