@@ -476,13 +476,16 @@ function generateCrawlRoute() {
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
   openLocations.forEach(ev => {
-    const vibeMatches = ev.vibe?.filter(v => themeKeywords.includes(v)) || [];
-    const tagMatches = (ev.tags || '').split(',').map(t => t.trim().toLowerCase()).filter(t => themeKeywords.includes(t));
-    const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
-    ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
-  });
+  const vibeMatches = ev.vibe?.filter(v => themeKeywords.includes(v)) || [];
+  const tagMatches = (ev.tags || '').split(',').map(t => t.trim().toLowerCase()).filter(t => themeKeywords.includes(t));
+  const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
+  ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
+});
 
-  const sorted = openLocations.sort((a, b) => b._score - a._score);
+  const sorted = openLocations
+  .filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500)
+  .sort((a, b) => b._score - a._score);
+
   const crawlRoute = [];
   let last = sorted[0];
   let timeSpent = last.duration || 1;
