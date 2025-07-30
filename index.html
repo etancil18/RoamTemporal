@@ -413,6 +413,9 @@ function getCurrentDayPart() {
 }
   
 function generateCrawlRoute() {
+
+  console.log('🚨 generateCrawlRoute() triggered');
+  
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
   const priceFilter = document.getElementById('priceFilter').value.trim();
   const theme = document.getElementById('themeDropdown').value.toLowerCase();
@@ -460,6 +463,8 @@ function generateCrawlRoute() {
 };
   const currentDayParts = themeOverrides[theme] || baseDayParts;
 
+  console.log('⚙️ Filtering open locations...');
+  
   const openLocations = allLocations.filter(loc => {
   const normalizedVibes = (loc.vibe || '')
     .split(',')
