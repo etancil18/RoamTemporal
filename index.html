@@ -459,17 +459,19 @@ function generateCrawlRoute() {
 
   const openLocations = globalEvents.filter(loc => {
     const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
-    const normalizedVibes = Array.isArray(loc.vibe)
-  ? loc.vibe.map(v => v.trim().toLowerCase())
-  : (loc.vibe || '').split(',').map(v => v.trim().toLowerCase());
+    const normalizedVibes = (loc.vibe || '')
+  .split(',')
+  .map(v => v.trim().toLowerCase())
+  .filter(Boolean);
 
-const normalizedTags = typeof loc.tags === 'string'
-  ? loc.tags.split(',').map(t => t.trim().toLowerCase())
-  : [];
+const normalizedTags = (loc.tags || '')
+  .split(',')
+  .map(t => t.trim().toLowerCase())
+  .filter(Boolean);
 
 const allKeywords = [...normalizedVibes, ...normalizedTags];
 
-const matchesTheme = !theme || themeKeywords.some(kw => 
+const matchesTheme = !theme || themeKeywords.some(kw =>
   allKeywords.includes(kw.toLowerCase())
 );
     const dayPartsArray = Array.isArray(loc.dayParts) ? loc.dayParts : [];
