@@ -433,6 +433,10 @@ function generateCrawlRoute() {
 
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
   const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
+
+  console.log('🧠 Raw Theme:', rawTheme);
+console.log('🎯 Processed Theme:', theme);
+  
   const priceTiers = ['$', '$$', '$$$', '$$$$'];
   const selectedTierIndex = priceTiers.indexOf(priceFilter);
   const baseDayParts = getCurrentDayPart();
