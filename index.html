@@ -493,59 +493,61 @@ function generateCrawlRoute() {
          (isCurrentlyOpen || isOpenLater);
 });
 
-      runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme);
-} // <-- Closes function generateCrawlRoute()
-
-// Now define helper function separately:
-function isCurrentlyOpen(loc) {
-  const dayKeys = ['sun','mon','tue','wed','thu','fri','sat'];
-  const todayKey = dayKeys[new Date().getDay()];
-  const hoursToday = loc.hoursNumeric?.[todayKey];
-  if (!hoursToday) return false;
-
-  const now = new Date();
-  const currentTime = now.getHours() + now.getMinutes() / 60;
-
-  const intervals = Array.isArray(hoursToday[0])
-    ? hoursToday
-    : [hoursToday];
-
-  return intervals.some(([open, close]) => {
-    if (close <= open) {
-      // Over midnight case
-      return currentTime >= open || currentTime < close;
-    }
-    return currentTime >= open && currentTime < close;
-  });
-}
-
-function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme) {
-  // Remove any with bad coords
+      function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme) {
   const clean = openLocations.filter(loc =>
     typeof loc.lat === 'number' && typeof loc.lon === 'number' &&
     !isNaN(loc.lat) && !isNaN(loc.lon)
   );
 
+  const now = new Date();
+  const currentHour = now.getHours();
+  const currentMinute = now.getMinutes();
+  const currentTimeDecimal = currentHour + currentMinute / 60;
+  const dayKeys = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const today = dayKeys[now.getDay()];
+
   const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
-  // Filter for valid first stops
   const candidates = clean.filter(loc => {
-    if (!isCurrentlyOpen(loc)) return false;
+    const hoursTodayStr = Array.isArray(loc.hours)
+      ? loc.hours.find(h => h.toLowerCase().startsWith(today.toLowerCase()))
+      : null;
+
+    if (!hoursTodayStr || hoursTodayStr.toLowerCase().includes('closed')) return false;
+
+    const timeRangeMatch = hoursTodayStr.match(/\d{1,2}:\d{2}\s*[ap]m\s*[\u2013\-]\s*\d{1,2}:\d{2}\s*[ap]m/i);
+    if (!timeRangeMatch) return false;
+
+    const [startStr, endStr] = timeRangeMatch[0].split(/[\u2013\-]/).map(s => s.trim());
+
+    function parseTime(str) {
+      const [time, meridian] = str.split(/\s+/);
+      let [h, m] = time.split(':').map(Number);
+      if (meridian.toLowerCase() === 'pm' && h !== 12) h += 12;
+      if (meridian.toLowerCase() === 'am' && h === 12) h = 0;
+      return h + m / 60;
+    }
+
+    const startDecimal = parseTime(startStr);
+    const endDecimal = parseTime(endStr);
+    const isOpenNow = currentTimeDecimal >= startDecimal && currentTimeDecimal <= endDecimal;
+
+    if (!isOpenNow) return false;
 
     const ll = L.latLng(loc.lat, loc.lon);
-    if (center.distanceTo(ll) > 150) return false;
+    if (center.distanceTo(ll) > 1000) return false;
 
     const locVibes = Array.isArray(loc.vibe)
       ? loc.vibe.map(v => v.toLowerCase())
       : (loc.vibe || '').split(',').map(v => v.trim().toLowerCase());
 
-    const sharedCount = locVibes.filter(v => themeKeywords.includes(v)).length;
-    return sharedCount >= 1;
+    const shared = locVibes.filter(v => themeKeywords.includes(v));
+    return shared.length >= 1;
   });
 
   if (candidates.length === 0) {
-    alert('No suitable first stop found that’s currently open, theme‑relevant, and nearby.');
+    alert('No suitable first stop found.');
     return;
   }
 
@@ -565,10 +567,7 @@ function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, the
     routeWhileDragging: false,
     draggableWaypoints: false,
     addWaypoints: false,
-    show: false,
-    lineOptions: {
-      styles: [{ color: 'red', opacity: 0.8, weight: 4 }]
-    }
+    show: false
   }).addTo(map);
 }
 
