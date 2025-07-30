@@ -421,72 +421,48 @@ function generateCrawlRoute() {
     return;
   }
 
-  const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
-  const currentDayPart = getCurrentDayPart()[0];
-  const now = new Date();
-  const currentTime = now.getHours() + now.getMinutes() / 60;
-  const dayKeys = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  const today = dayKeys[now.getDay()];
+  const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
   const priceTiers = ['$', '$$', '$$$', '$$$$'];
   const selectedTierIndex = priceTiers.indexOf(priceFilter);
+  const baseDayParts = getCurrentDayPart();
+  const themeOverrides = {
+    "mindful mornings": ["M", "MD"],
+    "creative kickstart": ["M", "MD"]
+  };
+  const currentDayParts = themeOverrides[theme] || baseDayParts;
 
-  const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
-
-  const valid = globalEvents.filter(ev => {
-    if (!ev.lat || !ev.lon || isNaN(ev.lat) || isNaN(ev.lon)) return false;
-
-    // Price filter
-    if (priceFilter && (!ev.price || priceTiers.indexOf(ev.price) > selectedTierIndex)) return false;
-
-    // Theme filter
-    const vibes = (ev.vibe || '').split(',').map(v => v.trim().toLowerCase());
-    const tags = (ev.tags || '').split(',').map(t => t.trim().toLowerCase());
-    const matchesTheme = themeKeywords.some(kw => vibes.includes(kw) || tags.includes(kw));
-    if (!matchesTheme) return false;
-
-    // Open now check
-    const hoursToday = (ev.hours || []).find(h => h.toLowerCase().startsWith(today.toLowerCase()));
-    if (!hoursToday || hoursToday.toLowerCase().includes('closed')) return false;
-
-    const match = hoursToday.match(/\d{1,2}:\d{2}\s*[ap]m\s*[\u2013\-]\s*\d{1,2}:\d{2}\s*[ap]m/i);
-    if (!match) return false;
-    const [start, end] = match[0].split(/[\u2013\-]/).map(s => s.trim());
-
-    const parseTime = str => {
-      const [time, meridian] = str.split(/\s+/);
-      let [h, m] = time.split(':').map(Number);
-      if (meridian.toLowerCase() === 'pm' && h !== 12) h += 12;
-      if (meridian.toLowerCase() === 'am' && h === 12) h = 0;
-      return h + m / 60;
-    };
-
-    const startDec = parseTime(start);
-    const endDec = parseTime(end);
-    return currentTime >= startDec && currentTime <= endDec;
+  const openLocations = globalEvents.filter(loc => {
+    const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
+    const matchesTheme = !theme || themeKeywords.some(kw => {
+      const vibeMatch = loc.vibe?.some(v => v.includes(kw));
+      const tagMatch = typeof loc.tags === 'string' && loc.tags.toLowerCase().includes(kw);
+      return vibeMatch || tagMatch;
+    });
+    const matchesDayPart = loc.dayParts?.some(part => currentDayParts.includes(part));
+    return matchesPrice && matchesTheme && matchesDayPart;
   });
 
-  if (!valid.length) {
-    alert('No matching locations available right now.');
+  if (!openLocations.length) {
+    alert('No matching locations are open now for that theme.');
     return;
   }
 
-  // Rank by keyword match count and proximity
-  valid.forEach(ev => {
-    const vibeMatches = (ev.vibe || '').split(',').map(v => v.trim().toLowerCase()).filter(v => themeKeywords.includes(v));
+  const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+
+  openLocations.forEach(ev => {
+    const vibeMatches = ev.vibe?.filter(v => themeKeywords.includes(v)) || [];
     const tagMatches = (ev.tags || '').split(',').map(t => t.trim().toLowerCase()).filter(t => themeKeywords.includes(t));
     const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
     ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
   });
 
-  const sorted = valid.sort((a, b) => b._score - a._score);
-
+  const sorted = openLocations.sort((a, b) => b._score - a._score);
   const crawlRoute = [];
   let last = sorted[0];
   let timeSpent = last.duration || 1;
   crawlRoute.push(last);
-
-  sorted.splice(0, 1); // remove selected
+  sorted.splice(0, 1);
 
   while (crawlRoute.length < 5 && timeSpent < maxDuration) {
     const lastLatLng = L.latLng(last.lat, last.lon);
@@ -505,11 +481,10 @@ function generateCrawlRoute() {
   }
 
   if (crawlRoute.length < 2) {
-    alert('Could not build a full crawl with available spots.');
+    alert('Could not build a full crawl with available stops.');
     return;
   }
 
-  // Draw the route
   if (window.routeLayer) map.removeControl(window.routeLayer);
   const waypoints = crawlRoute.map(loc => L.latLng(loc.lat, loc.lon));
   window.routeLayer = L.Routing.control({
