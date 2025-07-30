@@ -477,6 +477,9 @@ function generateCrawlRoute() {
     return vibeMatch || tagMatch;
   });
 
+  return matchesPrice && matchesTheme;
+});
+
   const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
   const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
   const currentPart = currentDayParts[0];
@@ -490,31 +493,54 @@ function generateCrawlRoute() {
       runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme);
 }
 
+function isCurrentlyOpen(loc) {
+  const dayKeys = ['sun','mon','tue','wed','thu','fri','sat'];
+  const todayKey = dayKeys[new Date().getDay()];
+  const hoursToday = loc.hoursNumeric?.[todayKey];
+  if (!hoursToday) return false;
+
+  const now = new Date();
+  const currentTime = now.getHours() + now.getMinutes() / 60;
+
+  // Normalize to array of [open, close] pairs
+  const intervals = Array.isArray(hoursToday[0]) ? hoursToday : [hoursToday];
+
+  return intervals.some(([open, close]) => {
+    if (close <= open) {
+      // Wrap around midnight case
+      return currentTime >= open || currentTime < close;
+    }
+    return currentTime >= open && currentTime < close;
+  });
+}
+
 function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme) {
+  // Remove any with bad coords
   const clean = openLocations.filter(loc =>
     typeof loc.lat === 'number' && typeof loc.lon === 'number' &&
     !isNaN(loc.lat) && !isNaN(loc.lon)
   );
 
-  const currentPart = getCurrentDayPart()[0];
   const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
+  // Filter for valid first stops
   const candidates = clean.filter(loc => {
-    if (!loc.dayParts.includes(currentPart)) return false;
+    if (!isCurrentlyOpen(loc)) return false;
+
     const ll = L.latLng(loc.lat, loc.lon);
-    if (center.distanceTo(ll) > 1000) return false;
+    if (center.distanceTo(ll) > 150) return false;
 
     const locVibes = Array.isArray(loc.vibe)
       ? loc.vibe.map(v => v.toLowerCase())
       : (loc.vibe || '').split(',').map(v => v.trim().toLowerCase());
 
-    const shared = locVibes.filter(v => themeKeywords.includes(v));
-    return shared.length >= 1;
+    const sharedCount = locVibes.filter(v => themeKeywords.includes(v)).length;
+    return sharedCount >= 1;
   });
 
   if (candidates.length === 0) {
-    alert('No suitable first stop found.');
+    alert('No suitable first stop found that’s currently open, theme‑relevant, and nearby.');
     return;
   }
 
@@ -534,7 +560,10 @@ function runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, the
     routeWhileDragging: false,
     draggableWaypoints: false,
     addWaypoints: false,
-    show: false
+    show: false,
+    lineOptions: {
+      styles: [{ color: 'red', opacity: 0.8, weight: 4 }]
+    }
   }).addTo(map);
 }
 
