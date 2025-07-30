@@ -464,6 +464,9 @@ function generateCrawlRoute() {
   const currentDayParts = themeOverrides[theme] || baseDayParts;
 
   console.log('⚙️ Filtering open locations...');
+  console.log('📦 All Locations:', allLocations);
+console.log('🎯 Theme Keywords:', themeKeywords);
+console.log('🕐 Current Day Parts:', currentDayParts);
   
   const openLocations = allLocations.filter(loc => {
   const normalizedVibes = (loc.vibe || '')
@@ -501,6 +504,8 @@ function generateCrawlRoute() {
   return passes;
 });
 
+  console.log('✅ Matched Locations:', openLocations);
+  
 if (!openLocations.length) {
   alert('No matching locations are open now for that theme.');
   return;
