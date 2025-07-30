@@ -427,12 +427,15 @@ function generateCrawlRoute() {
   const durationSetting = document.getElementById('durationDropdown').value;
   const neighborhoodCenter = neighborhoodCenters[neighborhood];
 
+  console.log('📍 Selected Neighborhood:', neighborhood);
+console.log('🧭 Matched Center:', neighborhoodCenters[neighborhood]);
+
+center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+  
 if (!neighborhoodCenter || !neighborhoodCenter.lat || !neighborhoodCenter.lon) {
   alert("Invalid or missing neighborhood center.");
   return;
 }
-
-center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
   const rawTheme = document.getElementById('themeDropdown').value;
