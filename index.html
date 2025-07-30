@@ -489,11 +489,18 @@ function generateCrawlRoute() {
   });
 
   function scoreLocation(loc, themeKeywords, center) {
+  if (!center || isNaN(loc.lat) || isNaN(loc.lon)) return 0;
+  
   const vibeMatches = loc.vibe?.filter(v => themeKeywords.includes(v)) || [];
   const tagMatches = (loc.tags || '').split(',').map(t => t.trim().toLowerCase()).filter(t => themeKeywords.includes(t));
   const dist = center.distanceTo(L.latLng(loc.lat, loc.lon));
-  const distScore = 1 / (dist + 1); // Avoid divide by zero
+  const distScore = 1 / (dist + 1);
   return (vibeMatches.length + tagMatches.length) * distScore;
+}
+
+  if (!neighborhoodCenter) {
+  alert('Please select a valid neighborhood.');
+  return;
 }
   
   runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme);
