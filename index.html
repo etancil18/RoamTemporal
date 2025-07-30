@@ -488,6 +488,14 @@ function generateCrawlRoute() {
     return matchesPrice && matchesTheme && (isCurrentlyOpen || isOpenLater);
   });
 
+  function scoreLocation(loc, themeKeywords, center) {
+  const vibeMatches = loc.vibe?.filter(v => themeKeywords.includes(v)) || [];
+  const tagMatches = (loc.tags || '').split(',').map(t => t.trim().toLowerCase()).filter(t => themeKeywords.includes(t));
+  const dist = center.distanceTo(L.latLng(loc.lat, loc.lon));
+  const distScore = 1 / (dist + 1); // Avoid divide by zero
+  return (vibeMatches.length + tagMatches.length) * distScore;
+}
+  
   runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme);
 }
 
@@ -545,12 +553,18 @@ function generateCrawlRoute() {
     return shared.length >= 1;
   });
 
-  if (candidates.length === 0) {
-    alert('No suitable first stop found.');
-    return;
-  }
+ if (candidates.length === 0) {
+  alert('No suitable first stop found.');
+  return;
+}
 
-  const firstStop = candidates[Math.floor(Math.random() * candidates.length)];
+candidates.sort((a, b) => {
+  const scoreA = scoreLocation(a, themeKeywords, center);
+  const scoreB = scoreLocation(b, themeKeywords, center);
+  return scoreB - scoreA;
+});
+
+const firstStop = candidates[0];
   const crawlRoute = [firstStop];
   let totalDuration = firstStop.duration || 0;
 
