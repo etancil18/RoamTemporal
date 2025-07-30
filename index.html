@@ -554,7 +554,7 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
 
   const center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
 
-  const validLocations = validLocations.filter(ev =>
+ const validLocations = openLocations.filter(ev =>
   ev.lat && ev.lon && !isNaN(ev.lat) && !isNaN(ev.lon)
 );
 
