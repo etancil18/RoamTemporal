@@ -489,8 +489,40 @@ console.log('🎯 Processed Theme:', theme);
 
     const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
     const matchesTheme = !theme || themeKeywords.some(kw => allKeywords.includes(kw));
-    const dayPartsArray = Array.isArray(loc.dayParts) ? loc.dayParts : [];
-    const matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
+    let matchesDayPart = false;
+const dayPartsArray = Array.isArray(loc.dayParts) ? loc.dayParts : [];
+
+if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
+  matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
+} else {
+  // fallback to hours string match
+  const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+  const hoursTodayStr = Array.isArray(loc.hours)
+    ? loc.hours.find(h => h.toLowerCase().startsWith(today.toLowerCase()))
+    : null;
+
+  if (hoursTodayStr && !hoursTodayStr.toLowerCase().includes('closed')) {
+    const timeRangeMatch = hoursTodayStr.match(/\d{1,2}:\d{2}\s*[ap]m\s*[\u2013\-]\s*\d{1,2}:\d{2}\s*[ap]m/i);
+    if (timeRangeMatch) {
+      const [startStr, endStr] = timeRangeMatch[0].split(/[\u2013\-]/).map(s => s.trim());
+
+      function parseTime(str) {
+        const [time, meridian] = str.split(/\s+/);
+        let [h, m] = time.split(':').map(Number);
+        if (meridian.toLowerCase() === 'pm' && h !== 12) h += 12;
+        if (meridian.toLowerCase() === 'am' && h === 12) h = 0;
+        return h + m / 60;
+      }
+
+      const now = new Date();
+      const currentTimeDecimal = now.getHours() + now.getMinutes() / 60;
+      const startDecimal = parseTime(startStr);
+      const endDecimal = parseTime(endStr);
+
+      matchesDayPart = currentTimeDecimal >= startDecimal && currentTimeDecimal <= endDecimal;
+    }
+  }
+}
     const passes = matchesPrice && matchesTheme && matchesDayPart;
 
     if (!passes) {
