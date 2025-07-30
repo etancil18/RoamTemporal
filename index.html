@@ -467,32 +467,36 @@ function generateCrawlRoute() {
       const priceTiers = ['$', '$$', '$$$', '$$$$'];
       const selectedTierIndex = priceTiers.indexOf(priceFilter);
 
-      const openLocations = allLocations.filter(loc => {
-  const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
+     const openLocations = allLocations.filter(loc => {
+  const matchesPrice = !priceFilter ||
+    (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
 
   const themeKeywords = themeMap[theme] || [];
   const matchesTheme = !theme || themeKeywords.some(kw => {
     const vibeMatch = loc.vibe?.some(v => v.includes(kw));
-    const tagMatch = typeof loc.tags === 'string' && loc.tags.toLowerCase().includes(kw);
+    const tagMatch = typeof loc.tags === 'string' &&
+      loc.tags.toLowerCase().includes(kw);
     return vibeMatch || tagMatch;
   });
 
-  return matchesPrice && matchesTheme;
-});
-
-  const currentIndex = ['M', 'MD', 'A', 'HH', 'E', 'L'].findIndex(p => currentDayParts.includes(p));
-  const futureParts = ['M', 'MD', 'A', 'HH', 'E', 'L'].slice(currentIndex);
+  const currentIndex = ['M','MD','A','HH','E','L']
+    .findIndex(p => currentDayParts.includes(p));
+  const futureParts = ['M','MD','A','HH','E','L'].slice(currentIndex);
   const currentPart = currentDayParts[0];
   const isCurrentlyOpen = loc.dayParts.includes(currentPart);
-  const isOpenLater = loc.dayParts.some(part => futureParts.includes(part));
+  const isOpenLater = loc.dayParts.some(part =>
+    futureParts.includes(part)
+  );
 
-
-  return matchesPrice && matchesTheme && (isCurrentlyOpen || isOpenLater);
+  return matchesPrice &&
+         matchesTheme &&
+         (isCurrentlyOpen || isOpenLater);
 });
 
       runCrawlPlanner(openLocations, neighborhoodCenter, durationSetting, theme);
-}
+} // <-- Closes function generateCrawlRoute()
 
+// Now define helper function separately:
 function isCurrentlyOpen(loc) {
   const dayKeys = ['sun','mon','tue','wed','thu','fri','sat'];
   const todayKey = dayKeys[new Date().getDay()];
@@ -502,12 +506,13 @@ function isCurrentlyOpen(loc) {
   const now = new Date();
   const currentTime = now.getHours() + now.getMinutes() / 60;
 
-  // Normalize to array of [open, close] pairs
-  const intervals = Array.isArray(hoursToday[0]) ? hoursToday : [hoursToday];
+  const intervals = Array.isArray(hoursToday[0])
+    ? hoursToday
+    : [hoursToday];
 
   return intervals.some(([open, close]) => {
     if (close <= open) {
-      // Wrap around midnight case
+      // Over midnight case
       return currentTime >= open || currentTime < close;
     }
     return currentTime >= open && currentTime < close;
