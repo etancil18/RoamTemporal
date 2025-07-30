@@ -464,7 +464,8 @@ function generateCrawlRoute() {
       const tagMatch = typeof loc.tags === 'string' && loc.tags.toLowerCase().includes(kw);
       return vibeMatch || tagMatch;
     });
-    const matchesDayPart = loc.dayParts?.some(part => currentDayParts.includes(part));
+    const dayPartsArray = Array.isArray(loc.dayParts) ? loc.dayParts : [];
+    const matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
     return matchesPrice && matchesTheme && matchesDayPart;
   });
 
