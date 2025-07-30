@@ -565,12 +565,14 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
     return;
   }
 
-  center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lon);
+  center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
 
  const validLocations = openLocations.filter(ev =>
   ev.lat && ev.lon && !isNaN(ev.lat) && !isNaN(ev.lon)
 );
 
+console.log("📍 Using center:", center);
+  
 validLocations.forEach(ev => {
   if (!ev.lat || !ev.lon || isNaN(ev.lat) || isNaN(ev.lon)) {
     console.warn('⚠️ Skipping invalid location:', ev.name);
