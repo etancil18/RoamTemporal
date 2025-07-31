@@ -215,8 +215,10 @@ function addToRoute(ev) {
 // ─── FILTER MARKERS ────────────────────────────────────────────────────
 function filterMarkersByVibe() {
   const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
+  const onlyLive = document.getElementById('liveToggle').checked;
+  const baseEvents = onlyLive ? eventsToday : globalEvents;
 
-  const filtered = globalEvents.filter(ev => {
+  const filtered = baseEvents.filter(ev => {
     if (!vibeSearch) return true;
 
     const nameMatch = (ev.name || '').toLowerCase().includes(vibeSearch);
@@ -263,6 +265,10 @@ function renderMarkers(events) {
       marker.openPopup();
     });
 
+    if (eventsToday.includes(ev)) {
+  marker.bindTooltip("🔴 Live Today!", { permanent: true }).addTo(map);
+}
+    
     allMarkers.push(marker);
   }); // ✅ CLOSE events.forEach
 
@@ -315,12 +321,23 @@ function renderMarkers(events) {
   }); // ✅ CLOSE allMarkers.forEach
 }
     
-// Initial data fetch + map rendering
 fetch('events.json')
   .then(res => res.json())
   .then(events => {
-    globalEvents = events;         // Store globally
-    renderMarkers(events);         // Render all locations immediately
+    globalEvents = events; // Store globally
+
+    // ✅ Build today's date string in YYYY-MM-DD format
+    const todayStr = new Date().toISOString().slice(0, 10);
+
+    // ✅ Extract locations with events happening today
+    const eventsToday = globalEvents.filter(ev =>
+      ev.dateEvents?.some(e => e.date === todayStr)
+    );
+
+    console.log('📅 Events Today:', eventsToday);
+
+    renderMarkers(globalEvents); // Still rendering all events initially
+
     document.getElementById('vibeSearchInput').addEventListener('input', filterMarkersByVibe);
   })
   .catch(err => {
@@ -521,7 +538,6 @@ console.log('🎯 Processed Theme:', theme);
   };
   const currentDayParts = themeOverrides[theme] || baseDayParts;
 
-  // 🔥 This is the missing piece — define allLocations!
   const allLocations = globalEvents.map(ev => ({
   ...ev,
   lat: parseFloat(ev.lat),
@@ -631,6 +647,8 @@ validLocations.forEach(ev => {
   ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
 });
 
+  ev._score += ev.dateEvents?.some(e => e.date === todayStr) ? 1 : 0;
+  
   const sorted = validLocations
   .filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500)
   .sort((a, b) => b._score - a._score);
