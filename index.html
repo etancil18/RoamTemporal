@@ -239,81 +239,82 @@ function renderMarkers(events) {
   const todayIndex = new Date().getDay();
 
   events.forEach(ev => {
-    const rawPart = ev.dayParts?.[weekdayKeys[todayIndex]];
-    const isOpen = isLocationOpenNow(ev);
-    const markerColor = isOpen && rawPart && rawPart !== '-'
-      ? (dayPartColors[rawPart] || 'grey')
-      : 'grey';
+  const rawPart = ev.dayParts?.[weekdayKeys[todayIndex]];
+  const isOpen = isLocationOpenNow(ev);
+  const markerColor = isOpen && rawPart && rawPart !== '-'
+    ? (dayPartColors[rawPart] || 'grey')
+    : 'grey';
 
-    const icon = new L.Icon({
-      iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
-      shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
-
-    const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
-marker.ev = ev;
-
-// 💬 Attach popup and map recentering on click
-marker.bindPopup(`<strong>${ev.name}</strong><br>${(ev.vibe || '').split(',').map(v => v.trim()).join(', ')}`);
-marker.on('click', () => {
-  map.setView(marker.getLatLng(), 16);
-  marker.openPopup();
-});
-
-allMarkers.push(marker);
-
-  allMarkers.forEach(marker => {
-    const ev = marker.ev;
-    const latlng = marker.getLatLng();
-    const isOpen = isLocationOpenNow(ev);
-
-    const thisVibes = (ev.vibe || '')
-      .split(',')
-      .map(v => v.trim().toLowerCase())
-      .filter(Boolean);
-
-    const similar = allMarkers
-      .filter(m => m !== marker && latlng.distanceTo(m.getLatLng()) <= 350)
-      .filter(m => {
-        const otherVibes = (m.ev.vibe || '')
-          .split(',')
-          .map(v => v.trim().toLowerCase())
-          .filter(Boolean);
-        return thisVibes.some(v => otherVibes.includes(v));
-      })
-      .slice(0, 3);
-
-    const similarList = similar.length
-      ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
-      : '<em>No similar places nearby.</em>';
-
-    const popupContent = `
-      <div style="font-size:14px;line-height:1.4;">
-        <strong>${ev.name}</strong><br/>
-        <em>Vibe:</em> ${ev.vibe}<br/>
-        <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
-        <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
-        <a href="${ev.link}" target="_blank">More Info</a>
-        <hr/>
-        <strong>Could also be the move..:</strong>
-        ${similarList}
-        <br/><br/>
-        <button class="add-route-btn">Add to Route</button>
-      </div>
-    `;
-
-    marker.bindPopup(popupContent).addTo(markerLayer);
-
-    marker.on('popupopen', () => {
-      const btn = document.querySelector('.add-route-btn');
-      if (btn) btn.onclick = () => addToRoute(ev);
-    });
+  const icon = new L.Icon({
+    iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${markerColor}.png`,
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
   });
-})
+
+  const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
+  marker.ev = ev;
+
+  // Attach popup + recentering on click
+  marker.bindPopup(`<strong>${ev.name}</strong><br>${(ev.vibe || '').split(',').map(v => v.trim()).join(', ')}`);
+  marker.on('click', () => {
+    map.setView(marker.getLatLng(), 16);
+    marker.openPopup();
+  });
+
+  allMarkers.push(marker);
+}); // ✅ This closing brace was missing
+
+// Now loop over allMarkers
+allMarkers.forEach(marker => {
+  const ev = marker.ev;
+  const latlng = marker.getLatLng();
+  const isOpen = isLocationOpenNow(ev);
+
+  const thisVibes = (ev.vibe || '')
+    .split(',')
+    .map(v => v.trim().toLowerCase())
+    .filter(Boolean);
+
+  const similar = allMarkers
+    .filter(m => m !== marker && latlng.distanceTo(m.getLatLng()) <= 350)
+    .filter(m => {
+      const otherVibes = (m.ev.vibe || '')
+        .split(',')
+        .map(v => v.trim().toLowerCase())
+        .filter(Boolean);
+      return thisVibes.some(v => otherVibes.includes(v));
+    })
+    .slice(0, 3);
+
+  const similarList = similar.length
+    ? '<ul>' + similar.map(m => `<li>${m.ev.name}</li>`).join('') + '</ul>'
+    : '<em>No similar places nearby.</em>';
+
+  const popupContent = `
+    <div style="font-size:14px;line-height:1.4;">
+      <strong>${ev.name}</strong><br/>
+      <em>Vibe:</em> ${ev.vibe}<br/>
+      <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
+      <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
+      <a href="${ev.link}" target="_blank">More Info</a>
+      <hr/>
+      <strong>Could also be the move..:</strong>
+      ${similarList}
+      <br/><br/>
+      <button class="add-route-btn">Add to Route</button>
+    </div>
+  `;
+
+  marker.bindPopup(popupContent).addTo(markerLayer);
+
+  marker.on('popupopen', () => {
+    const btn = document.querySelector('.add-route-btn');
+    if (btn) btn.onclick = () => addToRoute(ev);
+  });
+});
     
 // Initial data fetch + map rendering
 fetch('events.json')
