@@ -673,30 +673,54 @@ document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRo
 
   // Simple modal HTML injection
 function openFavoritesModal() {
-  let html = '<div id="modal" style="position:fixed;top:10%;left:50%;transform:translateX(-50%);background:white;padding:20px;z-index:2000;border:1px solid #ccc;max-height:80%;overflow:auto;">';
-  html += '<h2>Saved Routes</h2>';
+  let html = `
+    <div id="modal" style="position:fixed;top:10%;left:50%;transform:translateX(-50%);background:white;padding:20px;z-index:2000;border:1px solid #ccc;max-height:80%;overflow:auto;box-shadow:0 0 10px rgba(0,0,0,0.3);border-radius:8px;">
+      <h2>Saved Routes</h2>
+  `;
+
   if (!savedRoutes.length) {
     html += '<p>No routes saved.</p>';
   } else {
     savedRoutes.forEach((route, idx) => {
-      html += `<div><strong>Route #${idx + 1}</strong><ul>`;
+      html += `<div style="margin-bottom:10px;"><strong>Route #${idx + 1}</strong><ul>`;
       route.forEach(loc => {
         html += `<li>${loc.name}</li>`;
       });
-      html += `</ul><button data-idx="${idx}" class="load-route">Load</button></div>`;
+      html += `</ul>
+        <button data-idx="${idx}" class="load-route">Load</button>
+        <button data-idx="${idx}" class="export-route">Export to Google Maps</button>
+      </div>`;
     });
   }
-  html += '<hr><button id="closeModal">Close</button></div>';
+
+  html += `
+    <hr>
+    <button id="closeModal">Close</button>
+    </div>
+  `;
+
   document.body.insertAdjacentHTML('beforeend', html);
 
   document.getElementById('closeModal').onclick = () => {
     document.getElementById('modal').remove();
   };
+
   document.querySelectorAll('.load-route').forEach(btn => {
     btn.onclick = () => {
       selectedRoute = savedRoutes[btn.dataset.idx];
       drawRoute();
       document.getElementById('modal').remove();
+    };
+  });
+
+  document.querySelectorAll('.export-route').forEach(btn => {
+    btn.onclick = () => {
+      const idx = btn.dataset.idx;
+      const route = savedRoutes[idx];
+      const base = "https://www.google.com/maps/dir/";
+      const waypoints = route.map(loc => `${loc.lat},${loc.lng}`).join('/');
+      const url = `${base}${waypoints}`;
+      window.open(url, '_blank');
     };
   });
 }
