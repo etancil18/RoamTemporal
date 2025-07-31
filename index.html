@@ -255,9 +255,14 @@ function renderMarkers(events) {
     });
 
     const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
-    marker.ev = ev;
-    allMarkers.push(marker);
-  });
+marker.ev = ev;
+marker.bindPopup(`<strong>${ev.name}</strong><br>${(ev.vibe || []).join(', ')}`);
+marker.on('click', () => {
+  map.setView(marker.getLatLng(), 16);
+  marker.openPopup();
+});
+allMarkers.push(marker);
+marker.addTo(map);
 
   allMarkers.forEach(marker => {
     const ev = marker.ev;
