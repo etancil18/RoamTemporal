@@ -120,6 +120,9 @@
 <button id="favoritesBtn">My Favorites</button>
 </div>
 <div id="map"></div>
+<div id="crawlSummary" style="display:none; padding: 16px; background: #fff; border: 2px solid #333; max-width: 300px; position: absolute; top: 20px; right: 20px; z-index: 9999; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 8px;">
+    <!-- Populated by JS -->
+  </div>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 <script>
@@ -411,6 +414,34 @@ function getCurrentDayPart() {
   if (hour >= 19 && hour < 22) return ['E'];
   return ['L']; // Late night or overnight
 }
+
+  function showCrawlSummary(crawlRoute) {
+  const summaryDiv = document.getElementById("crawlSummary");
+  summaryDiv.innerHTML = ""; // Clear old content
+
+  const list = document.createElement("ol");
+  crawlRoute.forEach((stop, index) => {
+    const item = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = stop.link || "#";
+    link.textContent = `Stop ${index + 1}: ${stop.name}`;
+    link.target = "_blank";
+    item.appendChild(link);
+    list.appendChild(item);
+  });
+
+  summaryDiv.appendChild(list);
+
+  const saveBtn = document.createElement("button");
+  saveBtn.textContent = "💾 Save to My Favorites";
+  saveBtn.onclick = () => {
+    // Implement saving logic here
+    alert("Crawl saved to favorites (local only for now)!");
+  };
+  summaryDiv.appendChild(saveBtn);
+
+  summaryDiv.style.display = "block"; // Show it
+}
   
 function generateCrawlRoute() {
   if (!globalEvents.length) {
@@ -633,6 +664,8 @@ validLocations.forEach(ev => {
     addWaypoints: false,
     show: false
   }).addTo(map);
+
+  showCrawlSummary(crawlRoute);
 }
 
    // ✅ Only trigger crawl logic on button click — no arguments needed
@@ -668,6 +701,7 @@ function openFavoritesModal() {
   });
 }
 
+  
 </script>
 <div style="position: absolute; bottom: 3px; right: 0px; z-index: 1000; background: rgba(255,255,255,0.8); padding: 4px 8px; border-radius: 4px; font-size: 8px;">
   © 2025 Roam. All rights reserved. The Roam App™ is a trademark of Roam Curated LLC.
