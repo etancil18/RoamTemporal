@@ -632,14 +632,20 @@ validLocations.forEach(ev => {
 });
 
   const sorted = validLocations
-    .filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500)
-    .sort((a, b) => b._score - a._score);
+  .filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500)
+  .sort((a, b) => b._score - a._score);
 
-  const crawlRoute = [];
-  let last = sorted[0];
-  let timeSpent = last.duration || 1;
-  crawlRoute.push(last);
-  sorted.splice(0, 1);
+// 🎲 Randomize among the top 5 scoring candidates
+const topCandidates = sorted.slice(0, 5);
+const randomStart = topCandidates[Math.floor(Math.random() * topCandidates.length)];
+
+const crawlRoute = [];
+let last = randomStart;
+let timeSpent = last.duration || 1;
+crawlRoute.push(last);
+
+// Remove the chosen start from the sorted list
+sorted.splice(sorted.indexOf(randomStart), 1);
 
   while (crawlRoute.length < 5 && timeSpent < maxDuration) {
     const lastLatLng = L.latLng(last.lat, last.lon);
