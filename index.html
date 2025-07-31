@@ -175,6 +175,7 @@ let selectedRoute = [];
 let currentRoute = null;
 const maxRouteStops = 5;
   let savedRoutes = [];
+  let eventsToday = [];
 
 // ─── DRAW ROUTE FUNCTION ───────────────────────────────────────────────────────
 function drawRoute() {
@@ -324,20 +325,16 @@ function renderMarkers(events) {
 fetch('events.json')
   .then(res => res.json())
   .then(events => {
-    globalEvents = events; // Store globally
+    globalEvents = events;
 
-    // ✅ Build today's date string in YYYY-MM-DD format
     const todayStr = new Date().toISOString().slice(0, 10);
-
-    // ✅ Extract locations with events happening today
-    const eventsToday = globalEvents.filter(ev =>
+    eventsToday = globalEvents.filter(ev =>
       ev.dateEvents?.some(e => e.date === todayStr)
     );
 
-    console.log('📅 Events Today:', eventsToday);
+    console.log("📅 Events Today:", eventsToday);
 
-    renderMarkers(globalEvents); // Still rendering all events initially
-
+    renderMarkers(events); // ✅ Now safe
     document.getElementById('vibeSearchInput').addEventListener('input', filterMarkersByVibe);
   })
   .catch(err => {
