@@ -24175,13 +24175,13 @@
     "link": "https://www.instagram.com/meiliwilliamsburg/",
     "openNow": true,
     "hours": {
-      "Sunday: 6:00 PM–12:00 AM",
-      "Monday: Closed",
-      "Tuesday: 6:00 PM–12:00 AM",
-      "Wednesday: 6:00 PM–12:00 AM",
-      "Thursday: 6:00 PM–12:00 AM",
-      "Friday: 6:00 PM–12:00 AM",
-      "Saturday: 6:00 PM–12:00 AM"
+      "Sunday": "6:00 PM–12:00 AM",
+      "Monday": "Closed",
+      "Tuesday": "6:00 PM–12:00 AM",
+      "Wednesday": "6:00 PM–12:00 AM",
+      "Thursday": "6:00 PM–12:00 AM",
+      "Friday": "6:00 PM–12:00 AM",
+      "Saturday": "6:00 PM–12:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24219,13 +24219,13 @@
     "link": "https://www.instagram.com/fellinicoffee/",
     "openNow": true,
     "hours": {
-      "Sunday: 8:00 AM–10:00 PM",
-      "Monday: 8:00 AM–10:00 PM",
-      "Tuesday: 8:00 AM–10:00 PM",
-      "Wednesday: 8:00 AM–10:00 PM",
-      "Thursday: 8:00 AM–10:00 PM",
-      "Friday: 8:00 AM–11:00 PM",
-      "Saturday: 8:00 AM–11:00 PM"
+      "Sunday": "8:00 AM–10:00 PM",
+      "Monday": "8:00 AM–10:00 PM",
+      "Tuesday": "8:00 AM–10:00 PM",
+      "Wednesday": "8:00 AM–10:00 PM",
+      "Thursday": "8:00 AM–10:00 PM",
+      "Friday": "8:00 AM–11:00 PM",
+      "Saturday": "8:00 AM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24263,13 +24263,13 @@
     "link": "https://www.instagram.com/fellinicoffee/",
     "openNow": true,
     "hours": {
-      "Sunday: 8:00 AM–8:00 PM",
-      "Monday: 8:00 AM–8:00 PM",
-      "Tuesday: 8:00 AM–8:00 PM",
-      "Wednesday: 8:00 AM–8:00 PM",
-      "Thursday: 8:00 AM–8:00 PM",
-      "Friday: 8:00 AM–8:00 PM",
-      "Saturday: 8:00 AM–8:00 PM"
+      "Sunday": "8:00 AM–8:00 PM",
+      "Monday": "8:00 AM–8:00 PM",
+      "Tuesday": "8:00 AM–8:00 PM",
+      "Wednesday": "8:00 AM–8:00 PM",
+      "Thursday": "8:00 AM–8:00 PM",
+      "Friday": "8:00 AM–8:00 PM",
+      "Saturday": "8:00 AM–8:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24307,13 +24307,13 @@
     "link": "https://www.instagram.com/apt5ny/",
     "openNow": true,
     "hours": {
-      "Sunday: 6:00 PM–11:00 PM",
-      "Monday: Closed",
-      "Tuesday: 6:00 PM–11:30 PM",
-      "Wednesday: 6:00 PM–11:30 PM",
-      "Thursday: 6:00 PM–12:30 AM",
-      "Friday: 6:00 PM–2:00 AM",
-      "Saturday: 6:00 PM–2:00 AM"
+      "Sunday": "6:00 PM–11:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "6:00 PM–11:30 PM",
+      "Wednesday": "6:00 PM–11:30 PM",
+      "Thursday": "6:00 PM–12:30 AM",
+      "Friday": "6:00 PM–2:00 AM",
+      "Saturday": "6:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24351,13 +24351,13 @@
     "link": "https://www.instagram.com/nazaroma3/",
     "openNow": true,
     "hours": {
-      "Sunday: 9:00 AM–6:00 PM",
-      "Monday: 8:30 AM–6:30 PM",
-      "Tuesday: 8:30 AM–6:30 PM",
-      "Wednesday: 8:30 AM–6:30 PM",
-      "Thursday: 8:30 AM–6:30 PM",
-      "Friday: 8:30 AM–6:30 PM",
-      "Saturday: 8:30 AM–6:30 PM"
+      "Sunday": "9:00 AM–6:00 PM",
+      "Monday": "8:30 AM–6:30 PM",
+      "Tuesday": "8:30 AM–6:30 PM",
+      "Wednesday": "8:30 AM–6:30 PM",
+      "Thursday": "8:30 AM–6:30 PM",
+      "Friday": "8:30 AM–6:30 PM",
+      "Saturday": "8:30 AM–6:30 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24395,13 +24395,13 @@
     "link": "https://www.instagram.com/hiddenpearlbk/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: 5:00 PM–10:00 PM",
-      "Tuesday: 5:00 PM–10:00 PM",
-      "Wednesday: 5:00 PM–10:00 PM",
-      "Thursday: 5:00 PM–10:00 PM",
-      "Friday: 5:00 PM–11:00 PM",
-      "Saturday: 5:00 PM–11:00 PM"
+      "Sunday": "Closed",
+      "Monday": "5:00 PM–10:00 PM",
+      "Tuesday": "5:00 PM–10:00 PM",
+      "Wednesday": "5:00 PM–10:00 PM",
+      "Thursday": "5:00 PM–10:00 PM",
+      "Friday": "5:00 PM–11:00 PM",
+      "Saturday": "5:00 PM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24439,13 +24439,13 @@
     "link": "https://www.instagram.com/laliko.nyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–10:00 PM",
-      "Monday: 12:00 PM–10:00 PM",
-      "Tuesday: 12:00 PM–10:00 PM",
-      "Wednesday: 12:00 PM–10:00 PM",
-      "Thursday: 12:00 PM–10:00 PM",
-      "Friday: 12:00 PM–10:30 PM",
-      "Saturday: 12:00 PM–10:30 PM"
+      "Sunday": "12:00 PM–10:00 PM",
+      "Monday": "12:00 PM–10:00 PM",
+      "Tuesday": "12:00 PM–10:00 PM",
+      "Wednesday": "12:00 PM–10:00 PM",
+      "Thursday": "12:00 PM–10:00 PM",
+      "Friday": "12:00 PM–10:30 PM",
+      "Saturday": "12:00 PM–10:30 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24483,13 +24483,13 @@
     "link": "https://www.instagram.com/yesterdaysnewsbk/",
     "openNow": true,
     "hours": {
-      "Sunday: 9:30 AM–5:30 PM",
-      "Monday: Closed",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–5:45:00 PM",
-      "Thursday: 10:00 AM–5:45:00 PM",
-      "Friday: 10:00 AM–5:45:00 PM",
-      "Saturday: 9:30 AM–5:30 PM"
+      "Sunday": "9:30 AM–5:30 PM",
+      "Monday": "Closed",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–5:45:00 PM",
+      "Thursday": "10:00 AM–5:45:00 PM",
+      "Friday": "10:00 AM–5:45:00 PM",
+      "Saturday": "9:30 AM–5:30 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24527,13 +24527,13 @@
     "link": "https://www.instagram.com/sloanessoho/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–2:00 AM"
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24571,13 +24571,13 @@
     "link": "https://www.instagram.com/bayardsalehouse/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–2:00 AM",
-      "Monday: 4:00 PM–2:00 AM",
-      "Tuesday: 4:00 PM–2:00 AM",
-      "Wednesday: 4:00 PM–2:00 AM",
-      "Thursday: 4:00 PM–4:00 AM",
-      "Friday: 4:00 PM–4:00 AM",
-      "Saturday: 12:00 PM–4:00 AM"
+      "Sunday": "12:00 PM–2:00 AM",
+      "Monday": "4:00 PM–2:00 AM",
+      "Tuesday": "4:00 PM–2:00 AM",
+      "Wednesday": "4:00 PM–2:00 AM",
+      "Thursday": "4:00 PM–4:00 AM",
+      "Friday": "4:00 PM–4:00 AM",
+      "Saturday": "12:00 PM–4:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24615,13 +24615,13 @@
     "link": "https://www.instagram.com/automaticslimsnyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 4:30 PM–12:00 AM",
-      "Monday: Closed",
-      "Tuesday: 4:30 PM–4:00 AM",
-      "Wednesday: 4:30 PM–4:00 AM",
-      "Thursday: 4:30 PM–4:00 AM",
-      "Friday: 4:30 PM–4:00 AM",
-      "Saturday: 4:30 PM–4:00 AM"
+      "Sunday": "4:30 PM–12:00 AM",
+      "Monday": "Closed",
+      "Tuesday": "4:30 PM–4:00 AM",
+      "Wednesday": "4:30 PM–4:00 AM",
+      "Thursday": "4:30 PM–4:00 AM",
+      "Friday": "4:30 PM–4:00 AM",
+      "Saturday": "4:30 PM–4:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24659,13 +24659,13 @@
     "link": "https://www.instagram.com/cheznousmarlton/",
     "openNow": true,
     "hours": {
-      "Sunday: 7:00 AM–11:00 PM",
-      "Monday: 7:00 AM–11:00 PM",
-      "Tuesday: 7:00 AM–11:00 PM",
-      "Wednesday: 7:00 AM–11:00 PM",
-      "Thursday: 7:00 AM–11:00 PM",
-      "Friday: 7:00 AM–1:00 AM",
-      "Saturday: 7:00 AM–1:00 AM"
+      "Sunday": "7:00 AM–11:00 PM",
+      "Monday": "7:00 AM–11:00 PM",
+      "Tuesday": "7:00 AM–11:00 PM",
+      "Wednesday": "7:00 AM–11:00 PM",
+      "Thursday": "7:00 AM–11:00 PM",
+      "Friday": "7:00 AM–1:00 AM",
+      "Saturday": "7:00 AM–1:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24703,13 +24703,13 @@
     "link": "https://www.instagram.com/thewaverlyinnstagram/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 PM–10:45 PM",
-      "Monday: 5:00 PM–10:45 PM",
-      "Tuesday: 5:00 PM–10:45 PM",
-      "Wednesday: 5:00 PM–10:45 PM",
-      "Thursday: 5:00 PM–10:45 PM",
-      "Friday: 5:00 PM–10:45 PM",
-      "Saturday: 5:00 PM–10:45 PM"
+      "Sunday": "5:00 PM–10:45 PM",
+      "Monday": "5:00 PM–10:45 PM",
+      "Tuesday": "5:00 PM–10:45 PM",
+      "Wednesday": "5:00 PM–10:45 PM",
+      "Thursday": "5:00 PM–10:45 PM",
+      "Friday": "5:00 PM–10:45 PM",
+      "Saturday": "5:00 PM–10:45 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24747,13 +24747,13 @@
     "link": "https://www.instagram.com/vinsurvingt_bars/",
     "openNow": true,
     "hours": {
-      "Sunday: 3:00 PM–12:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–1:00 AM",
-      "Friday: 4:00 PM–2:00 AM",
-      "Saturday: 3:00 PM–2:00 AM"
+      "Sunday": "3:00 PM–12:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–1:00 AM",
+      "Friday": "4:00 PM–2:00 AM",
+      "Saturday": "3:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24791,13 +24791,13 @@
     "link": "https://www.instagram.com/arthurstavern_nyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 2:00 PM–2:00 AM",
-      "Monday: 5:00 PM–2:00 AM",
-      "Tuesday: 5:00 PM–2:00 AM",
-      "Wednesday: 5:00 PM–2:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–4:00 AM",
-      "Saturday: 5:00 PM–4:00 AM"
+      "Sunday": "2:00 PM–2:00 AM",
+      "Monday": "5:00 PM–2:00 AM",
+      "Tuesday": "5:00 PM–2:00 AM",
+      "Wednesday": "5:00 PM–2:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–4:00 AM",
+      "Saturday": "5:00 PM–4:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24835,13 +24835,13 @@
     "link": "https://www.instagram.com/sipandguzzlenyc",
     "openNow": true,
     "hours": {
-      "Sunday: 4:00 PM–1:00 AM",
-      "Monday: 4:00 PM–1:00 AM",
-      "Tuesday: 4:00 PM–1:00 AM",
-      "Wednesday: 4:00 PM–2:00 AM",
-      "Thursday: 4:00 PM–2:00 AM",
-      "Friday: 4:00 PM–2:00 AM",
-      "Saturday: 4:00 PM–2:00 AM"
+      "Sunday": "4:00 PM–1:00 AM",
+      "Monday": "4:00 PM–1:00 AM",
+      "Tuesday": "4:00 PM–1:00 AM",
+      "Wednesday": "4:00 PM–2:00 AM",
+      "Thursday": "4:00 PM–2:00 AM",
+      "Friday": "4:00 PM–2:00 AM",
+      "Saturday": "4:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24879,13 +24879,13 @@
     "link": "https://www.instagram.com/johnsofbleeckerstreet/",
     "openNow": true,
     "hours": {
-      "Sunday: 11:30 AM–10:00 PM",
-      "Monday: 11:30 AM–10:00 PM",
-      "Tuesday: 11:30 AM–10:00 PM",
-      "Wednesday: 11:30 AM–10:00 PM",
-      "Thursday: 11:30 AM–10:00 PM",
-      "Friday: 11:30 AM–11:00 PM",
-      "Saturday: 11:30 AM–11:00 PM"
+      "Sunday": "11:30 AM–10:00 PM",
+      "Monday": "11:30 AM–10:00 PM",
+      "Tuesday": "11:30 AM–10:00 PM",
+      "Wednesday": "11:30 AM–10:00 PM",
+      "Thursday": "11:30 AM–10:00 PM",
+      "Friday": "11:30 AM–11:00 PM",
+      "Saturday": "11:30 AM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24923,13 +24923,13 @@
     "link": "https://www.instagram.com/sohocigarbar/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 PM–1:00 AM",
-      "Monday: 5:00 PM–1:00 AM",
-      "Tuesday: 5:00 PM–2:00 AM",
-      "Wednesday: 5:00 PM–2:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–3:00 AM"
+      "Sunday": "5:00 PM–1:00 AM",
+      "Monday": "5:00 PM–1:00 AM",
+      "Tuesday": "5:00 PM–2:00 AM",
+      "Wednesday": "5:00 PM–2:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–3:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -24967,13 +24967,13 @@
     "link": "https://www.instagram.com/houstonhallny/",
     "openNow": true,
     "hours": {
-      "Sunday: 1:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 4:00 PM–11:00 PM",
-      "Wednesday: 4:00 PM–12:00 AM",
-      "Thursday: 6:30 PM–12:00 AM",
-      "Friday: 4:00 PM–1:00 AM",
-      "Saturday: 12:00 PM–2:00 AM"
+      "Sunday": "1:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "4:00 PM–11:00 PM",
+      "Wednesday": "4:00 PM–12:00 AM",
+      "Thursday": "6:30 PM–12:00 AM",
+      "Friday": "4:00 PM–1:00 AM",
+      "Saturday": "12:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25011,13 +25011,13 @@
     "link": "https://www.instagram.com/theearinn/",
     "openNow": true,
     "hours": {
-      "Sunday: 11:30 PM–4:00 AM",
-      "Monday: 11:30 PM–4:00 AM",
-      "Tuesday: 11:30 PM–4:00 AM",
-      "Wednesday: 11:30 PM–4:00 AM",
-      "Thursday: 11:30 PM–4:00 AM",
-      "Friday: 11:30 PM–4:00 AM",
-      "Saturday: 11:30 PM–4:00 AM"
+      "Sunday": "11:30 PM–4:00 AM",
+      "Monday": "11:30 PM–4:00 AM",
+      "Tuesday": "11:30 PM–4:00 AM",
+      "Wednesday": "11:30 PM–4:00 AM",
+      "Thursday": "11:30 PM–4:00 AM",
+      "Friday": "11:30 PM–4:00 AM",
+      "Saturday": "11:30 PM–4:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25055,13 +25055,13 @@
     "link": "https://www.instagram.com/roccosnyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 11:00 AM–1:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–1:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 3:00 PM–2:00 AM",
-      "Saturday: 11:00 AM–2:00 AM"
+      "Sunday": "11:00 AM–1:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–1:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "3:00 PM–2:00 AM",
+      "Saturday": "11:00 AM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25099,13 +25099,13 @@
     "link": "https://www.instagram.com/bleeckerstreetbar/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–2:00 AM",
-      "Monday: 12:00 PM–2:00 AM",
-      "Tuesday: 12:00 PM–2:00 AM",
-      "Wednesday: 12:00 PM–2:00 AM",
-      "Thursday: 12:00 PM–4:00 AM",
-      "Friday: 12:00 PM–4:00 AM",
-      "Saturday: 11:00 AM–4:00 AM"
+      "Sunday": "12:00 PM–2:00 AM",
+      "Monday": "12:00 PM–2:00 AM",
+      "Tuesday": "12:00 PM–2:00 AM",
+      "Wednesday": "12:00 PM–2:00 AM",
+      "Thursday": "12:00 PM–4:00 AM",
+      "Friday": "12:00 PM–4:00 AM",
+      "Saturday": "11:00 AM–4:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25143,13 +25143,13 @@
     "link": "https://www.instagram.com/lei_nyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 PM–12:00 AM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 5:00 PM–12:00 AM"
+      "Sunday": "5:00 PM–12:00 AM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "5:00 PM–12:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25187,13 +25187,13 @@
     "link": "https://www.instagram.com/badaboomnyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 PM–11:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 5:00 PM–11:00 PM",
-      "Thursday: 5:00 PM–11:00 PM",
-      "Friday: 5:00 PM–11:00 PM",
-      "Saturday: 5:00 PM–11:00 PM"
+      "Sunday": "5:00 PM–11:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "5:00 PM–11:00 PM",
+      "Thursday": "5:00 PM–11:00 PM",
+      "Friday": "5:00 PM–11:00 PM",
+      "Saturday": "5:00 PM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25232,13 +25232,13 @@
     "link": "https://www.instagram.com/basculenyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 PM–12:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 5:00 PM–12:00 AM"
+      "Sunday": "5:00 PM–12:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "5:00 PM–12:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25276,13 +25276,13 @@
     "link": "https://www.instagram.com/lechenenyc/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–10:00 PM",
-      "Wednesday: 5:00 PM–10:00 PM",
-      "Thursday: 5:00 PM–10:00 PM",
-      "Friday: 5:00 PM–10:00 PM",
-      "Saturday: 5:00 PM–10:00 PM"
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–10:00 PM",
+      "Wednesday": "5:00 PM–10:00 PM",
+      "Thursday": "5:00 PM–10:00 PM",
+      "Friday": "5:00 PM–10:00 PM",
+      "Saturday": "5:00 PM–10:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25320,13 +25320,13 @@
     "link": "https://www.instagram.com/atelierariana/",
     "openNow": true,
     "hours": {
-      "Sunday: 8:30 AM–5:30 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 7:00 AM–5:30 PM",
-      "Thursday: 7:00 AM–5:30 PM",
-      "Friday: 7:00 AM–5:30 PM",
-      "Saturday: 8:30 AM–5:30 PM"
+      "Sunday": "8:30 AM–5:30 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "7:00 AM–5:30 PM",
+      "Thursday": "7:00 AM–5:30 PM",
+      "Friday": "7:00 AM–5:30 PM",
+      "Saturday": "8:30 AM–5:30 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25364,13 +25364,13 @@
     "link": "https://www.instagram.com/lullasbakery/",
     "openNow": true,
     "hours": {
-      "Sunday: 9:00 AM–5:00 PM",
-      "Monday: 7:00 AM–5:00 PM",
-      "Tuesday: 7:00 AM–5:00 PM",
-      "Wednesday: 7:00 AM–5:00 PM",
-      "Thursday: 7:00 AM–5:00 PM",
-      "Friday: 7:00 AM–12:00 AM",
-      "Saturday: 9:00 AM–12:00 AM"
+      "Sunday": "9:00 AM–5:00 PM",
+      "Monday": "7:00 AM–5:00 PM",
+      "Tuesday": "7:00 AM–5:00 PM",
+      "Wednesday": "7:00 AM–5:00 PM",
+      "Thursday": "7:00 AM–5:00 PM",
+      "Friday": "7:00 AM–12:00 AM",
+      "Saturday": "9:00 AM–12:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25408,13 +25408,13 @@
     "link": "https://www.instagram.com/eckhaus_latta/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–7:00 PM",
-      "Monday: Closed",
-      "Tuesday: 12:00 PM–7:00 PM",
-      "Wednesday: 12:00 PM–7:00 PM",
-      "Thursday: 12:00 PM–7:00 PM",
-      "Friday: 12:00 PM–7:00 PM",
-      "Saturday: 12:00 PM–7:00 PM"
+      "Sunday": "12:00 PM–7:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "12:00 PM–7:00 PM",
+      "Wednesday": "12:00 PM–7:00 PM",
+      "Thursday": "12:00 PM–7:00 PM",
+      "Friday": "12:00 PM–7:00 PM",
+      "Saturday": "12:00 PM–7:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25452,13 +25452,13 @@
     "link": "https://www.instagram.com/oldjewelrystore/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–7:00 PM",
-      "Monday: Closed",
-      "Tuesday: 12:00 PM–7:00 PM",
-      "Wednesday: 12:00 PM–7:00 PM",
-      "Thursday: 12:00 PM–7:00 PM",
-      "Friday: 12:00 PM–7:00 PM",
-      "Saturday: 12:00 PM–7:00 PM"
+      "Sunday": "12:00 PM–7:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "12:00 PM–7:00 PM",
+      "Wednesday": "12:00 PM–7:00 PM",
+      "Thursday": "12:00 PM–7:00 PM",
+      "Friday": "12:00 PM–7:00 PM",
+      "Saturday": "12:00 PM–7:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25496,13 +25496,13 @@
     "link": "https://www.instagram.com/argosybookstore/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: 11:00 AM–6:00 PM",
-      "Tuesday: 11:00 AM–6:00 PM",
-      "Wednesday: 11:00 AM–6:00 PM",
-      "Thursday: 11:00 AM–6:00 PM",
-      "Friday: 11:00 AM–6:00 PM",
-      "Saturday: Closed"
+      "Sunday": "Closed",
+      "Monday": "11:00 AM–6:00 PM",
+      "Tuesday": "11:00 AM–6:00 PM",
+      "Wednesday": "11:00 AM–6:00 PM",
+      "Thursday": "11:00 AM–6:00 PM",
+      "Friday": "11:00 AM–6:00 PM",
+      "Saturday": "Closed"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25540,13 +25540,13 @@
     "link": "https://www.instagram.com/mcnallyjackson/",
     "openNow": true,
     "hours": {
-      "Sunday: 10:00 AM–9:00 PM",
-      "Monday: 10:00 AM–9:00 PM",
-      "Tuesday: 10:00 AM–9:00 PM",
-      "Wednesday: 10:00 AM–9:00 PM",
-      "Thursday: 10:00 AM–9:00 PM",
-      "Friday: 10:00 AM–9:00 PM",
-      "Saturday: 10:00 AM–9:00 PM"
+      "Sunday": "10:00 AM–9:00 PM",
+      "Monday": "10:00 AM–9:00 PM",
+      "Tuesday": "10:00 AM–9:00 PM",
+      "Wednesday": "10:00 AM–9:00 PM",
+      "Thursday": "10:00 AM–9:00 PM",
+      "Friday": "10:00 AM–9:00 PM",
+      "Saturday": "10:00 AM–9:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25584,13 +25584,13 @@
     "link": "https://www.instagram.com/kitchenartsandletters/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: 10:00 AM–6:00 PM",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–6:00 PM",
-      "Thursday: 10:00 AM–6:00 PM",
-      "Friday: 10:00 AM–6:00 PM",
-      "Saturday: 10:00 AM–6:00 PM"
+      "Sunday": "Closed",
+      "Monday": "10:00 AM–6:00 PM",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–6:00 PM",
+      "Thursday": "10:00 AM–6:00 PM",
+      "Friday": "10:00 AM–6:00 PM",
+      "Saturday": "10:00 AM–6:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25628,13 +25628,13 @@
     "link": "https://www.instagram.com/leftbankbooksny/",
     "openNow": false,
     "hours": {
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: Closed",
-      "Friday: Closed",
-      "Saturday: Closed"
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "Closed",
+      "Friday": "Closed",
+      "Saturday": "Closed"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25672,13 +25672,13 @@
     "link": "https://www.instagram.com/rizzolibookstore/",
     "openNow": true,
     "hours": {
-      "Sunday: 11:00 AM–7:00 PM",
-      "Monday: 11:00 AM–8:00 PM",
-      "Tuesday: 11:00 AM–8:00 PM",
-      "Wednesday: 11:00 AM–8:00 PM",
-      "Thursday: 11:00 AM–8:00 PM",
-      "Friday: 11:00 AM–8:00 PM",
-      "Saturday: 11:00 AM–8:00 PM"
+      "Sunday": "11:00 AM–7:00 PM",
+      "Monday": "11:00 AM–8:00 PM",
+      "Tuesday": "11:00 AM–8:00 PM",
+      "Wednesday": "11:00 AM–8:00 PM",
+      "Thursday": "11:00 AM–8:00 PM",
+      "Friday": "11:00 AM–8:00 PM",
+      "Saturday": "11:00 AM–8:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25716,13 +25716,13 @@
     "link": "https://www.instagram.com/albertinebooks/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–6:00 PM",
-      "Thursday: 10:00 AM–6:00 PM",
-      "Friday: 10:00 AM–6:00 PM",
-      "Saturday: 10:00 AM–6:00 PM"
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–6:00 PM",
+      "Thursday": "10:00 AM–6:00 PM",
+      "Friday": "10:00 AM–6:00 PM",
+      "Saturday": "10:00 AM–6:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25760,13 +25760,13 @@
     "link": "https://www.instagram.com/mastbooks/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–8:00 PM",
-      "Monday: 12:00 PM–8:00 PM",
-      "Tuesday: 12:00 PM–8:00 PM",
-      "Wednesday: 12:00 PM–8:00 PM",
-      "Thursday: 12:00 PM–8:00 PM",
-      "Friday: 12:00 PM–8:00 PM",
-      "Saturday: 12:00 PM–8:00 PM"
+      "Sunday": "12:00 PM–8:00 PM",
+      "Monday": "12:00 PM–8:00 PM",
+      "Tuesday": "12:00 PM–8:00 PM",
+      "Wednesday": "12:00 PM–8:00 PM",
+      "Thursday": "12:00 PM–8:00 PM",
+      "Friday": "12:00 PM–8:00 PM",
+      "Saturday": "12:00 PM–8:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25804,13 +25804,13 @@
     "link": "https://www.instagram.com/spoonbillbooks/",
     "openNow": true,
     "hours": {
-      "Sunday: 11:00 AM–9:00 PM",
-      "Monday: 11:00 AM–9:00 PM",
-      "Tuesday: 11:00 AM–9:00 PM",
-      "Wednesday: 11:00 AM–9:00 PM",
-      "Thursday: 11:00 AM–9:00 PM",
-      "Friday: 11:00 AM–9:00 PM",
-      "Saturday: 11:00 AM–9:00 PM"
+      "Sunday": "11:00 AM–9:00 PM",
+      "Monday": "11:00 AM–9:00 PM",
+      "Tuesday": "11:00 AM–9:00 PM",
+      "Wednesday": "11:00 AM–9:00 PM",
+      "Thursday": "11:00 AM–9:00 PM",
+      "Friday": "11:00 AM–9:00 PM",
+      "Saturday": "11:00 AM–9:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25848,13 +25848,13 @@
     "link": "https://www.instagram.com/barcentralenyc/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: 5:00 PM–11:30 PM",
-      "Tuesday: 5:00 PM–11:30 PM",
-      "Wednesday: 5:00 PM–11:30 PM",
-      "Thursday: 5:00 PM–11:30 PM",
-      "Friday: 5:00 PM–11:30 PM",
-      "Saturday: 5:00 PM–11:30 PM"
+      "Sunday": "Closed",
+      "Monday": "5:00 PM–11:30 PM",
+      "Tuesday": "5:00 PM–11:30 PM",
+      "Wednesday": "5:00 PM–11:30 PM",
+      "Thursday": "5:00 PM–11:30 PM",
+      "Friday": "5:00 PM–11:30 PM",
+      "Saturday": "5:00 PM–11:30 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25892,13 +25892,13 @@
     "link": "https://www.instagram.com/lionsmilknyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 8:30 AM–5:00 PM",
-      "Monday: 7:30 AM–4:30 PM",
-      "Tuesday: 7:30 AM–4:30 PM",
-      "Wednesday: 7:30 AM–4:30 PM",
-      "Thursday: 7:30 AM–4:30 PM",
-      "Friday: 7:30 AM–4:30 PM",
-      "Saturday: 8:30 AM–5:00 PM"
+      "Sunday": "8:30 AM–5:00 PM",
+      "Monday": "7:30 AM–4:30 PM",
+      "Tuesday": "7:30 AM–4:30 PM",
+      "Wednesday": "7:30 AM–4:30 PM",
+      "Thursday": "7:30 AM–4:30 PM",
+      "Friday": "7:30 AM–4:30 PM",
+      "Saturday": "8:30 AM–5:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25936,13 +25936,13 @@
     "link": "https://www.instagram.com/intelligentsiacy/",
     "openNow": true,
     "hours": {
-      "Sunday: 7:00 AM–5:00 PM",
-      "Monday: 7:00 AM–5:00 PM",
-      "Tuesday: 7:00 AM–5:00 PM",
-      "Wednesday: 7:00 AM–5:00 PM",
-      "Thursday: 7:00 AM–5:00 PM",
-      "Friday: 7:00 AM–5:00 PM",
-      "Saturday: 7:00 AM–5:00 PM"
+      "Sunday": "7:00 AM–5:00 PM",
+      "Monday": "7:00 AM–5:00 PM",
+      "Tuesday": "7:00 AM–5:00 PM",
+      "Wednesday": "7:00 AM–5:00 PM",
+      "Thursday": "7:00 AM–5:00 PM",
+      "Friday": "7:00 AM–5:00 PM",
+      "Saturday": "7:00 AM–5:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -25980,13 +25980,13 @@
     "link": "https://www.instagram.com/drawingroomny/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–6:00 PM",
-      "Thursday: 10:00 AM–10:00 PM",
-      "Friday: 10:00 AM–7:00 PM",
-      "Saturday: 1:00 PM–7:00 PM"
+      "Sunday": "12:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–6:00 PM",
+      "Thursday": "10:00 AM–10:00 PM",
+      "Friday": "10:00 AM–7:00 PM",
+      "Saturday": "1:00 PM–7:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26024,13 +26024,13 @@
     "link": "https://www.instagram.com/drawingroombk/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–6:00 PM",
-      "Thursday: 10:00 AM–10:00 PM",
-      "Friday: 10:00 AM–7:00 PM",
-      "Saturday: 1:00 PM–7:00 PM"
+      "Sunday": "12:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–6:00 PM",
+      "Thursday": "10:00 AM–10:00 PM",
+      "Friday": "10:00 AM–7:00 PM",
+      "Saturday": "1:00 PM–7:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26068,13 +26068,13 @@
     "link": "https://www.instagram.com/niconecozakkaya/",
     "openNow": true,
     "hours": {
-      "Sunday: 10:00 AM–7:00 PM",
-      "Monday: 9:00 AM–7:00 PM",
-      "Tuesday: 9:00 AM–7:00 PM",
-      "Wednesday: 9:00 AM–7:00 PM",
-      "Thursday: 9:00 AM–7:00 PM",
-      "Friday: 9:00 AM–7:00 PM",
-      "Saturday: 10:00 AM–7:00 PM"
+      "Sunday": "10:00 AM–7:00 PM",
+      "Monday": "9:00 AM–7:00 PM",
+      "Tuesday": "9:00 AM–7:00 PM",
+      "Wednesday": "9:00 AM–7:00 PM",
+      "Thursday": "9:00 AM–7:00 PM",
+      "Friday": "9:00 AM–7:00 PM",
+      "Saturday": "10:00 AM–7:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26112,13 +26112,13 @@
     "link": "https://www.instagram.com/thelongislandbar/",
     "openNow": true,
     "hours": {
-      "Sunday: 2:00 PM–12:00 AM",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 2:00 PM–12:00 AM"
+      "Sunday": "2:00 PM–12:00 AM",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "2:00 PM–12:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26156,13 +26156,13 @@
     "link": "https://www.instagram.com/primosnyc/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 4:00 PM–12:00 AM",
-      "Wednesday: 4:00 PM–12:00 AM",
-      "Thursday: 4:00 PM–2:00 AM",
-      "Friday: 4:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–2:00 AM"
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "4:00 PM–12:00 AM",
+      "Wednesday": "4:00 PM–12:00 AM",
+      "Thursday": "4:00 PM–2:00 AM",
+      "Friday": "4:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26200,13 +26200,13 @@
     "link": "https://www.instagram.com/brass.nyc/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: 5:00 PM–11:00 PM",
-      "Tuesday: 5:00 PM–11:00 PM",
-      "Wednesday: 5:00 PM–11:00 PM",
-      "Thursday: 5:00 PM–11:00 PM",
-      "Friday: 5:00 PM–11:00 PM",
-      "Saturday: 5:00 PM–11:00 PM"
+      "Sunday": "Closed",
+      "Monday": "5:00 PM–11:00 PM",
+      "Tuesday": "5:00 PM–11:00 PM",
+      "Wednesday": "5:00 PM–11:00 PM",
+      "Thursday": "5:00 PM–11:00 PM",
+      "Friday": "5:00 PM–11:00 PM",
+      "Saturday": "5:00 PM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26244,13 +26244,13 @@
     "link": "https://www.instagram.com/gatherbrooklyn/",
     "openNow": true,
     "hours": {
-      "Sunday: 9:00 AM–7:00 PM",
-      "Monday: 8:00 AM–7:00 PM",
-      "Tuesday: 8:00 AM–7:00 PM",
-      "Wednesday: 8:00 AM–7:00 PM",
-      "Thursday: 8:00 AM–11:00 PM",
-      "Friday: 8:00 AM–11:00 PM",
-      "Saturday: 9:00 AM–11:00 PM"
+      "Sunday": "9:00 AM–7:00 PM",
+      "Monday": "8:00 AM–7:00 PM",
+      "Tuesday": "8:00 AM–7:00 PM",
+      "Wednesday": "8:00 AM–7:00 PM",
+      "Thursday": "8:00 AM–11:00 PM",
+      "Friday": "8:00 AM–11:00 PM",
+      "Saturday": "9:00 AM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26288,13 +26288,13 @@
     "link": "https://www.instagram.com/doordivebar/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–4:00 AM",
-      "Monday: 12:00 PM–4:00 AM",
-      "Tuesday: 12:00 PM–4:00 AM",
-      "Wednesday: 12:00 PM–4:00 AM",
-      "Thursday: 12:00 PM–4:00 AM",
-      "Friday: 12:00 PM–4:00 AM",
-      "Saturday: 12:00 PM–4:00 AM"
+      "Sunday": "12:00 PM–4:00 AM",
+      "Monday": "12:00 PM–4:00 AM",
+      "Tuesday": "12:00 PM–4:00 AM",
+      "Wednesday": "12:00 PM–4:00 AM",
+      "Thursday": "12:00 PM–4:00 AM",
+      "Friday": "12:00 PM–4:00 AM",
+      "Saturday": "12:00 PM–4:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26332,13 +26332,13 @@
     "link": "https://www.instagram.com/theswanbk/",
     "openNow": true,
     "hours": {
-      "Sunday: 10:00 AM–2:00 AM",
-      "Monday: 12:00 PM–2:00 AM",
-      "Tuesday: 12:00 PM–2:00 AM",
-      "Wednesday: 12:00 PM–2:00 AM",
-      "Thursday: 12:00 PM–2:00 AM",
-      "Friday: 12:00 PM–4:00 AM",
-      "Saturday: 10:00 AM–4:00 AM"
+      "Sunday": "10:00 AM–2:00 AM",
+      "Monday": "12:00 PM–2:00 AM",
+      "Tuesday": "12:00 PM–2:00 AM",
+      "Wednesday": "12:00 PM–2:00 AM",
+      "Thursday": "12:00 PM–2:00 AM",
+      "Friday": "12:00 PM–4:00 AM",
+      "Saturday": "10:00 AM–4:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26376,13 +26376,13 @@
     "link": "https://www.instagram.com/singerskaraokebar/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 PM–2:00 AM",
-      "Monday: 5:00 PM–2:00 AM",
-      "Tuesday: 5:00 PM–2:00 AM",
-      "Wednesday: 5:00 PM–2:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–3:00 AM",
-      "Saturday: 5:00 PM–3:00 AM"
+      "Sunday": "5:00 PM–2:00 AM",
+      "Monday": "5:00 PM–2:00 AM",
+      "Tuesday": "5:00 PM–2:00 AM",
+      "Wednesday": "5:00 PM–2:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–3:00 AM",
+      "Saturday": "5:00 PM–3:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26420,13 +26420,13 @@
     "link": "https://www.instagram.com/millysbar/",
     "openNow": true,
     "hours": {
-      "Sunday: 4:00 PM–10:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 5:00 PM–12:00 AM"
+      "Sunday": "4:00 PM–10:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "5:00 PM–12:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26464,13 +26464,13 @@
     "link": "https://www.instagram.com/thehollernyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 3:00 PM–12:00 AM",
-      "Monday: 4:00 PM–12:00 AM",
-      "Tuesday: 4:00 PM–12:00 AM",
-      "Wednesday: 4:00 PM–12:00 AM",
-      "Thursday: 4:00 PM–12:00 AM",
-      "Friday: 4:00 PM–2:00 AM",
-      "Saturday: 3:00 PM–2:00 AM"
+      "Sunday": "3:00 PM–12:00 AM",
+      "Monday": "4:00 PM–12:00 AM",
+      "Tuesday": "4:00 PM–12:00 AM",
+      "Wednesday": "4:00 PM–12:00 AM",
+      "Thursday": "4:00 PM–12:00 AM",
+      "Friday": "4:00 PM–2:00 AM",
+      "Saturday": "3:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26508,13 +26508,13 @@
     "link": "https://www.instagram.com/discobirdies/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–6:00 PM",
-      "Monday: Closed",
-      "Tuesday: 6:00 PM–11:00 PM",
-      "Wednesday: 6:00 PM–11:00 PM",
-      "Thursday: 6:00 PM–11:00 PM",
-      "Friday: 6:00 PM–11:00 PM",
-      "Saturday: 6:00 PM–11:00 PM"
+      "Sunday": "12:00 PM–6:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "6:00 PM–11:00 PM",
+      "Wednesday": "6:00 PM–11:00 PM",
+      "Thursday": "6:00 PM–11:00 PM",
+      "Friday": "6:00 PM–11:00 PM",
+      "Saturday": "6:00 PM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26552,13 +26552,13 @@
     "link": "https://www.instagram.com/dynaconyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 4:00 PM–2:00 AM",
-      "Monday: 5:00 PM–2:00 AM",
-      "Tuesday: 5:00 PM–2:00 AM",
-      "Wednesday: 5:00 PM–2:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 4:00 PM–2:00 AM"
+      "Sunday": "4:00 PM–2:00 AM",
+      "Monday": "5:00 PM–2:00 AM",
+      "Tuesday": "5:00 PM–2:00 AM",
+      "Wednesday": "5:00 PM–2:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "4:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26596,13 +26596,13 @@
     "link": "https://www.instagram.com/fanfandoughuts/",
     "openNow": true,
     "hours": {
-      "Sunday: 9:00 AM–6:00 PM",
-      "Monday: 8:00 AM–4:00 PM",
-      "Tuesday: 8:00 AM–4:00 PM",
-      "Wednesday: 8:00 AM–4:00 PM",
-      "Thursday: 8:00 AM–6:00 PM",
-      "Friday: 8:00 AM–6:00 PM",
-      "Saturday: 9:00 AM–6:00 PM"
+      "Sunday": "9:00 AM–6:00 PM",
+      "Monday": "8:00 AM–4:00 PM",
+      "Tuesday": "8:00 AM–4:00 PM",
+      "Wednesday": "8:00 AM–4:00 PM",
+      "Thursday": "8:00 AM–6:00 PM",
+      "Friday": "8:00 AM–6:00 PM",
+      "Saturday": "9:00 AM–6:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26640,13 +26640,13 @@
     "link": "https://www.instagram.com/barlaika/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: 6:00 PM–12:00 AM",
-      "Tuesday: 6:00 PM–12:00 AM",
-      "Wednesday: 6:00 PM–12:00 AM",
-      "Thursday: 6:00 PM–12:00 AM",
-      "Friday: 6:00 PM–1:00 AM",
-      "Saturday: 6:00 PM–1:00 AM"
+      "Sunday": "Closed",
+      "Monday": "6:00 PM–12:00 AM",
+      "Tuesday": "6:00 PM–12:00 AM",
+      "Wednesday": "6:00 PM–12:00 AM",
+      "Thursday": "6:00 PM–12:00 AM",
+      "Friday": "6:00 PM–1:00 AM",
+      "Saturday": "6:00 PM–1:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26684,13 +26684,13 @@
     "link": "https://www.instagram.com/izzyrosebk/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–2:00 AM",
-      "Monday: 3:00 PM–2:00 AM",
-      "Tuesday: 3:00 PM–2:00 AM",
-      "Wednesday: 3:00 PM–2:00 AM",
-      "Thursday: 3:00 PM–2:00 AM",
-      "Friday: 3:00 PM–2:00 AM",
-      "Saturday: 12:00 PM–2:00 AM"
+      "Sunday": "12:00 PM–2:00 AM",
+      "Monday": "3:00 PM–2:00 AM",
+      "Tuesday": "3:00 PM–2:00 AM",
+      "Wednesday": "3:00 PM–2:00 AM",
+      "Thursday": "3:00 PM–2:00 AM",
+      "Friday": "3:00 PM–2:00 AM",
+      "Saturday": "12:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26728,13 +26728,13 @@
     "link": "https://www.instagram.com/placedesfetesbrooklyn/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:30 PM–10:00 PM",
-      "Monday: 5:30 PM–10:00 PM",
-      "Tuesday: 5:30 PM–10:00 PM",
-      "Wednesday: 5:30 PM–10:00 PM",
-      "Thursday: 5:30 PM–10:00 PM",
-      "Friday: 5:30 PM–10:30 PM",
-      "Saturday: 5:30 PM–10:30 PM"
+      "Sunday": "5:30 PM–10:00 PM",
+      "Monday": "5:30 PM–10:00 PM",
+      "Tuesday": "5:30 PM–10:00 PM",
+      "Wednesday": "5:30 PM–10:00 PM",
+      "Thursday": "5:30 PM–10:00 PM",
+      "Friday": "5:30 PM–10:30 PM",
+      "Saturday": "5:30 PM–10:30 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26772,13 +26772,13 @@
     "link": "https://www.instagram.com/locandavinioliinyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 PM–10:00 PM",
-      "Monday: 5:00 PM–10:00 PM",
-      "Tuesday: 5:00 PM–10:00 PM",
-      "Wednesday: 5:00 PM–10:00 PM",
-      "Thursday: 5:00 PM–10:00 PM",
-      "Friday: 5:00 PM–10:00 PM",
-      "Saturday: 5:00 PM–10:00 PM"
+      "Sunday": "5:00 PM–10:00 PM",
+      "Monday": "5:00 PM–10:00 PM",
+      "Tuesday": "5:00 PM–10:00 PM",
+      "Wednesday": "5:00 PM–10:00 PM",
+      "Thursday": "5:00 PM–10:00 PM",
+      "Friday": "5:00 PM–10:00 PM",
+      "Saturday": "5:00 PM–10:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26816,13 +26816,13 @@
     "link": "https://www.instagram.com/speedyromeo/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–9:00 PM",
-      "Monday: 12:00 PM–10:00 PM",
-      "Tuesday: 12:00 PM–10:00 PM",
-      "Wednesday: 12:00 PM–10:00 PM",
-      "Thursday: 12:00 PM–10:00 PM",
-      "Friday: 12:00 PM–11:00 PM",
-      "Saturday: 12:00 PM–11:00 PM"
+      "Sunday": "12:00 PM–9:00 PM",
+      "Monday": "12:00 PM–10:00 PM",
+      "Tuesday": "12:00 PM–10:00 PM",
+      "Wednesday": "12:00 PM–10:00 PM",
+      "Thursday": "12:00 PM–10:00 PM",
+      "Friday": "12:00 PM–11:00 PM",
+      "Saturday": "12:00 PM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26860,13 +26860,13 @@
     "link": "https://www.instagram.com/littlegrenjai/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–3:00 PM; 5:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 12:00 PM–3:00 PM; 5:00 PM–9:00 PM",
-      "Thursday: 12:00 PM–3:00 PM; 5:00 PM–10:00 PM",
-      "Friday: 12:00 PM–3:00 PM; 5:00 PM–10:00 PM",
-      "Saturday: 12:00 PM–3:00 PM; 5:00 PM–10:00 PM"
+      "Sunday": "12:00 PM–3:00 PM; 5:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "12:00 PM–3:00 PM; 5:00 PM–9:00 PM",
+      "Thursday": "12:00 PM–3:00 PM; 5:00 PM–10:00 PM",
+      "Friday": "12:00 PM–3:00 PM; 5:00 PM–10:00 PM",
+      "Saturday": "12:00 PM–3:00 PM; 5:00 PM–10:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26919,13 +26919,13 @@
     "link": "https://www.instagram.com/vanleeuwenicecream/",
     "openNow": true,
     "hours": {
-      "Sunday: 11:00 AM–12:00 AM",
-      "Monday: 11:00 AM–12:00 AM",
-      "Tuesday: 11:00 AM–12:00 AM",
-      "Wednesday: 11:00 AM–12:00 AM",
-      "Thursday: 11:00 AM–12:00 AM",
-      "Friday: 11:00 AM–1:00 AM",
-      "Saturday: 11:00 AM–1:00 AM"
+      "Sunday": "11:00 AM–12:00 AM",
+      "Monday": "11:00 AM–12:00 AM",
+      "Tuesday": "11:00 AM–12:00 AM",
+      "Wednesday": "11:00 AM–12:00 AM",
+      "Thursday": "11:00 AM–12:00 AM",
+      "Friday": "11:00 AM–1:00 AM",
+      "Saturday": "11:00 AM–1:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -26963,13 +26963,13 @@
     "link": "https://www.instagram.com/dickandjanesbar/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 PM–12:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 1:00 PM–1:00 AM"
+      "Sunday": "5:00 PM–12:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "1:00 PM–1:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27007,13 +27007,13 @@
     "link": "https://www.instagram.com/loafersbar/",
     "openNow": true,
     "hours": {
-      "Sunday: 4:00 PM–1:00 AM",
-      "Monday: 5:00 PM–1:00 AM",
-      "Tuesday: 5:00 PM–1:00 AM",
-      "Wednesday: 5:00 PM–1:00 AM",
-      "Thursday: 5:00 PM–1:00 AM",
-      "Friday: 5:00 PM–3:00 AM",
-      "Saturday: 4:00 PM–3:00 AM"
+      "Sunday": "4:00 PM–1:00 AM",
+      "Monday": "5:00 PM–1:00 AM",
+      "Tuesday": "5:00 PM–1:00 AM",
+      "Wednesday": "5:00 PM–1:00 AM",
+      "Thursday": "5:00 PM–1:00 AM",
+      "Friday": "5:00 PM–3:00 AM",
+      "Saturday": "4:00 PM–3:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27051,13 +27051,13 @@
     "link": "https://www.instagram.com/travelbarbk/",
     "openNow": true,
     "hours": {
-      "Sunday: 4:00 PM–10:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 4:00 PM–1:00 AM",
-      "Saturday: 4:00 PM–1:00 AM"
+      "Sunday": "4:00 PM–10:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "4:00 PM–1:00 AM",
+      "Saturday": "4:00 PM–1:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27095,13 +27095,13 @@
     "link": "https://www.instagram.com/nerdbecoolnyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 8:00 AM–4:30 PM",
-      "Monday: 7:30 AM–4:30 PM",
-      "Tuesday: 7:30 AM–4:30 PM",
-      "Wednesday: 7:30 AM–4:30 PM",
-      "Thursday: 7:30 AM–4:30 PM",
-      "Friday: 7:30 AM–4:30 PM",
-      "Saturday: 8:00 AM–4:30 PM"
+      "Sunday": "8:00 AM–4:30 PM",
+      "Monday": "7:30 AM–4:30 PM",
+      "Tuesday": "7:30 AM–4:30 PM",
+      "Wednesday": "7:30 AM–4:30 PM",
+      "Thursday": "7:30 AM–4:30 PM",
+      "Friday": "7:30 AM–4:30 PM",
+      "Saturday": "8:00 AM–4:30 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27139,13 +27139,13 @@
     "link": "https://www.instagram.com/courtstreetgrocers/",
     "openNow": true,
     "hours": {
-      "Sunday: 9:00 AM–5:00 PM",
-      "Monday: 9:00 AM–5:00 PM",
-      "Tuesday: 8:00 AM–5:00 PM",
-      "Wednesday: 8:00 AM–5:00 PM",
-      "Thursday: 8:00 AM–5:00 PM",
-      "Friday: 8:00 AM–5:00 PM",
-      "Saturday: 9:00 AM–5:00 PM"
+      "Sunday": "9:00 AM–5:00 PM",
+      "Monday": "9:00 AM–5:00 PM",
+      "Tuesday": "8:00 AM–5:00 PM",
+      "Wednesday": "8:00 AM–5:00 PM",
+      "Thursday": "8:00 AM–5:00 PM",
+      "Friday": "8:00 AM–5:00 PM",
+      "Saturday": "9:00 AM–5:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27183,13 +27183,13 @@
     "link": "https://www.instagram.com/fandfpizza/",
     "openNow": true,
     "hours": {
-      "Sunday: 4:00 PM–10:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 4:00 PM–10:00 PM",
-      "Thursday: 4:00 PM–10:00 PM",
-      "Friday: 4:00 PM–11:00 PM",
-      "Saturday: 4:00 PM–11:00 PM"
+      "Sunday": "4:00 PM–10:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "4:00 PM–10:00 PM",
+      "Thursday": "4:00 PM–10:00 PM",
+      "Friday": "4:00 PM–11:00 PM",
+      "Saturday": "4:00 PM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27227,13 +27227,13 @@
     "link": "https://www.instagram.com/babylucs/",
     "openNow": true,
     "hours": {
-      "Sunday: 11:30 AM–10:00 PM",
-      "Monday: 12:00 PM–10:00 PM",
-      "Tuesday: 12:00 PM–10:00 PM",
-      "Wednesday: 12:00 PM–10:00 PM",
-      "Thursday: 12:00 PM–10:00 PM",
-      "Friday: 12:00 PM–11:00 PM",
-      "Saturday: 11:30 AM–11:00 PM"
+      "Sunday": "11:30 AM–10:00 PM",
+      "Monday": "12:00 PM–10:00 PM",
+      "Tuesday": "12:00 PM–10:00 PM",
+      "Wednesday": "12:00 PM–10:00 PM",
+      "Thursday": "12:00 PM–10:00 PM",
+      "Friday": "12:00 PM–11:00 PM",
+      "Saturday": "11:30 AM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27271,13 +27271,13 @@
     "link": "https://www.instagram.com/districtbrooklyn/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 AM–9:00 PM",
-      "Monday: 5:00 AM–9:00 PM",
-      "Tuesday: 5:00 AM–9:00 PM",
-      "Wednesday: 5:00 AM–9:00 PM",
-      "Thursday: 5:00 AM–9:00 PM",
-      "Friday: 5:00 AM–9:00 PM",
-      "Saturday: 5:00 AM–9:00 PM"
+      "Sunday": "5:00 AM–9:00 PM",
+      "Monday": "5:00 AM–9:00 PM",
+      "Tuesday": "5:00 AM–9:00 PM",
+      "Wednesday": "5:00 AM–9:00 PM",
+      "Thursday": "5:00 AM–9:00 PM",
+      "Friday": "5:00 AM–9:00 PM",
+      "Saturday": "5:00 AM–9:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27315,13 +27315,13 @@
     "link": "https://www.instagram.com/pklyncafe/",
     "openNow": true,
     "hours": {
-      "Sunday: 7:00 AM–11:00 PM",
-      "Monday: 7:00 AM–11:00 PM",
-      "Tuesday: 7:00 AM–11:00 PM",
-      "Wednesday: 7:00 AM–11:00 PM",
-      "Thursday: 7:00 AM–11:00 PM",
-      "Friday: 7:00 AM–11:00 PM",
-      "Saturday: 7:00 AM–11:00 PM"
+      "Sunday": "7:00 AM–11:00 PM",
+      "Monday": "7:00 AM–11:00 PM",
+      "Tuesday": "7:00 AM–11:00 PM",
+      "Wednesday": "7:00 AM–11:00 PM",
+      "Thursday": "7:00 AM–11:00 PM",
+      "Friday": "7:00 AM–11:00 PM",
+      "Saturday": "7:00 AM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27359,13 +27359,13 @@
     "link": "https://www.instagram.com/cafecitosocial/",
     "openNow": true,
     "hours": {
-      "Sunday: 8:00 AM–4:00 PM",
-      "Monday: 7:00 AM–5:00 PM",
-      "Tuesday: 7:00 AM–5:00 PM",
-      "Wednesday: 7:00 AM–5:00 PM",
-      "Thursday: 7:00 AM–5:00 PM",
-      "Friday: 7:00 AM–5:00 PM",
-      "Saturday: 8:00 AM–4:00 PM"
+      "Sunday": "8:00 AM–4:00 PM",
+      "Monday": "7:00 AM–5:00 PM",
+      "Tuesday": "7:00 AM–5:00 PM",
+      "Wednesday": "7:00 AM–5:00 PM",
+      "Thursday": "7:00 AM–5:00 PM",
+      "Friday": "7:00 AM–5:00 PM",
+      "Saturday": "8:00 AM–4:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27403,13 +27403,13 @@
     "link": "https://www.instagram.com/southbrooklynweight/",
     "openNow": true,
     "hours": {
-      "Sunday: 10:30 AM–1:30 PM",
-      "Monday: 6:30 AM–9:00 PM",
-      "Tuesday: 6:30 AM–9:00 PM",
-      "Wednesday: 6:30 AM–9:00 PM",
-      "Thursday: 6:30 AM–9:00 PM",
-      "Friday: 6:30 AM–7:30 PM",
-      "Saturday: 9:00 AM–12:30 PM"
+      "Sunday": "10:30 AM–1:30 PM",
+      "Monday": "6:30 AM–9:00 PM",
+      "Tuesday": "6:30 AM–9:00 PM",
+      "Wednesday": "6:30 AM–9:00 PM",
+      "Thursday": "6:30 AM–9:00 PM",
+      "Friday": "6:30 AM–7:30 PM",
+      "Saturday": "9:00 AM–12:30 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27447,13 +27447,13 @@
     "link": "https://www.instagram.com/thearmorybk/",
     "openNow": true,
     "hours": {
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–2:00 AM"
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27491,13 +27491,13 @@
     "link": "https://www.instagram.com/parklifebk/",
     "openNow": true,
     "hours": {
-      "Sunday: 2:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–1:00 AM",
-      "Saturday: 2:00 PM–1:00 AM"
+      "Sunday": "2:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–1:00 AM",
+      "Saturday": "2:00 PM–1:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27535,13 +27535,13 @@
     "link": "https://www.instagram.com/royalpalmsshuffle/",
     "openNow": true,
     "hours": {
-      "Sunday: 12:00 PM–10:00 PM",
-      "Monday: 6:00 PM–12:00 AM",
-      "Tuesday: 6:00 PM–12:00 AM",
-      "Wednesday: 6:00 PM–12:00 AM",
-      "Thursday: 3:00 PM–12:00 AM",
-      "Friday: Closed",
-      "Saturday: 12:00 PM–2:00 AM"
+      "Sunday": "12:00 PM–10:00 PM",
+      "Monday": "6:00 PM–12:00 AM",
+      "Tuesday": "6:00 PM–12:00 AM",
+      "Wednesday": "6:00 PM–12:00 AM",
+      "Thursday": "3:00 PM–12:00 AM",
+      "Friday": "Closed",
+      "Saturday": "12:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27579,13 +27579,13 @@
     "link": "https://www.instagram.com/citywellbrooklyn/",
     "openNow": true,
     "hours": {
-      "Sunday: 11:00 AM–5:00 PM",
-      "Monday: 11:00 AM–6:00 PM",
-      "Tuesday: 10:30 AM–8:00 PM",
-      "Wednesday: 10:30 AM–8:00 PM",
-      "Thursday: 10:30 AM–8:00 PM",
-      "Friday: 10:30 AM–8:00 PM",
-      "Saturday: 11:00 AM–8:00 PM"
+      "Sunday": "11:00 AM–5:00 PM",
+      "Monday": "11:00 AM–6:00 PM",
+      "Tuesday": "10:30 AM–8:00 PM",
+      "Wednesday": "10:30 AM–8:00 PM",
+      "Thursday": "10:30 AM–8:00 PM",
+      "Friday": "10:30 AM–8:00 PM",
+      "Saturday": "11:00 AM–8:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27623,13 +27623,13 @@
     "link": "https://www.instagram.com/dirtypreciousbar/",
     "openNow": true,
     "hours": {
-      "Sunday: 4:00 PM–10:30 PM",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–11:00 PM",
-      "Wednesday: 5:00 PM–11:00 PM",
-      "Thursday: 5:00 PM–11:00 PM",
-      "Friday: 5:00 PM–12:30 AM",
-      "Saturday: 5:00 PM–12:30 AM"
+      "Sunday": "4:00 PM–10:30 PM",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–11:00 PM",
+      "Wednesday": "5:00 PM–11:00 PM",
+      "Thursday": "5:00 PM–11:00 PM",
+      "Friday": "5:00 PM–12:30 AM",
+      "Saturday": "5:00 PM–12:30 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27667,13 +27667,13 @@
     "link": "https://www.instagram.com/cotra.nyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 5:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 6:00 PM–10:00 PM",
-      "Wednesday: 6:00 PM–10:00 PM",
-      "Thursday: 6:00 PM–10:00 PM",
-      "Friday: 6:00 PM–11:00 PM",
-      "Saturday: 6:00 PM–11:00 PM"
+      "Sunday": "5:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "6:00 PM–10:00 PM",
+      "Wednesday": "6:00 PM–10:00 PM",
+      "Thursday": "6:00 PM–10:00 PM",
+      "Friday": "6:00 PM–11:00 PM",
+      "Saturday": "6:00 PM–11:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27711,13 +27711,13 @@
     "link": "https://www.instagram.com/logansrun/",
     "openNow": true,
     "hours": {
-      "Sunday: 1:00 PM–4:00 AM",
-      "Monday: 3:00 PM–4:00 AM",
-      "Tuesday: 3:00 PM–4:00 AM",
-      "Wednesday: 3:00 PM–4:00 AM",
-      "Thursday: 3:00 PM–4:00 AM",
-      "Friday: 3:00 PM–4:00 AM",
-      "Saturday: 1:00 PM–4:00 AM"
+      "Sunday": "1:00 PM–4:00 AM",
+      "Monday": "3:00 PM–4:00 AM",
+      "Tuesday": "3:00 PM–4:00 AM",
+      "Wednesday": "3:00 PM–4:00 AM",
+      "Thursday": "3:00 PM–4:00 AM",
+      "Friday": "3:00 PM–4:00 AM",
+      "Saturday": "1:00 PM–4:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27755,13 +27755,13 @@
     "link": "https://www.instagram.com/lofibarnyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 2:00 PM–1:00 AM",
-      "Monday: 4:00 PM–1:00 AM",
-      "Tuesday: 4:00 PM–1:00 AM",
-      "Wednesday: 4:00 PM–1:00 AM",
-      "Thursday: 4:00 PM–1:00 AM",
-      "Friday: 3:00 PM–1:00 AM",
-      "Saturday: 2:00 PM–1:00 AM"
+      "Sunday": "2:00 PM–1:00 AM",
+      "Monday": "4:00 PM–1:00 AM",
+      "Tuesday": "4:00 PM–1:00 AM",
+      "Wednesday": "4:00 PM–1:00 AM",
+      "Thursday": "4:00 PM–1:00 AM",
+      "Friday": "3:00 PM–1:00 AM",
+      "Saturday": "2:00 PM–1:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27799,13 +27799,13 @@
     "link": "https://www.instagram.com/blueprintlounge/",
     "openNow": true,
     "hours": {
-      "Sunday: 3:00 PM–12:00 AM",
-      "Monday: 4:00 PM–12:00 AM",
-      "Tuesday: 4:00 PM–12:00 AM",
-      "Wednesday: 4:00 PM–12:00 AM",
-      "Thursday: 4:00 PM–1:00 AM",
-      "Friday: 4:00 PM–1:00 AM",
-      "Saturday: 3:00 PM–12:00 AM"
+      "Sunday": "3:00 PM–12:00 AM",
+      "Monday": "4:00 PM–12:00 AM",
+      "Tuesday": "4:00 PM–12:00 AM",
+      "Wednesday": "4:00 PM–12:00 AM",
+      "Thursday": "4:00 PM–1:00 AM",
+      "Friday": "4:00 PM–1:00 AM",
+      "Saturday": "3:00 PM–12:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27843,13 +27843,13 @@
     "link": "https://www.instagram.com/vinegarhillhouse/",
     "openNow": true,
     "hours": {
-      "Sunday: 10:00 AM–3:00 PM; 5:30 PM–9:30 PM",
-      "Monday: 5:30 PM–9:30 PM",
-      "Tuesday: 5:30 PM–9:30 PM",
-      "Wednesday: 5:30 PM–9:30 PM",
-      "Thursday: 5:30 PM–9:30 PM",
-      "Friday: 5:30 PM–10:00 PM",
-      "Saturday: 10:00 AM–3:00 PM; 5:30 PM–10:00 PM"
+      "Sunday": "10:00 AM–3:00 PM; 5:30 PM–9:30 PM",
+      "Monday": "5:30 PM–9:30 PM",
+      "Tuesday": "5:30 PM–9:30 PM",
+      "Wednesday": "5:30 PM–9:30 PM",
+      "Thursday": "5:30 PM–9:30 PM",
+      "Friday": "5:30 PM–10:00 PM",
+      "Saturday": "10:00 AM–3:00 PM; 5:30 PM–10:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27903,13 +27903,13 @@
     "link": "https://www.instagram.com/archiviorecords/",
     "openNow": false,
     "hours": {
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: Closed",
-      "Friday: Closed",
-      "Saturday: Closed"
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "Closed",
+      "Friday": "Closed",
+      "Saturday": "Closed"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27947,13 +27947,13 @@
     "link": "https://www.instagram.com/cafemadonow/",
     "openNow": true,
     "hours": {
-      "Sunday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
-      "Monday: 8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: 8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
-      "Friday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
-      "Saturday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM"
+      "Sunday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
+      "Monday": "8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
+      "Friday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
+      "Saturday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27991,13 +27991,13 @@
     "link": "https://www.instagram.com/rialtograndenyc/",
     "openNow": true,
     "hours": {
-      "Sunday: 4:00 PM–12:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–1:00 AM",
-      "Wednesday: 5:00 PM–1:00 AM",
-      "Thursday: 5:00 PM–1:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 4:00 PM–2:00 AM"
+      "Sunday": "4:00 PM–12:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–1:00 AM",
+      "Wednesday": "5:00 PM–1:00 AM",
+      "Thursday": "5:00 PM–1:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "4:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -28035,13 +28035,13 @@
     "link": "https://www.instagram.com/kissakissa/",
     "openNow": true,
     "hours": {
-      "Sunday: 3:00 PM–11:00 PM",
-      "Monday: 5:30 PM–12:00 AM",
-      "Tuesday: 5:30 PM–12:00 AM",
-      "Wednesday: 5:30 PM–12:30 AM",
-      "Thursday: 5:30 PM–1:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–2:00 AM"
+      "Sunday": "3:00 PM–11:00 PM",
+      "Monday": "5:30 PM–12:00 AM",
+      "Tuesday": "5:30 PM–12:00 AM",
+      "Wednesday": "5:30 PM–12:30 AM",
+      "Thursday": "5:30 PM–1:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–2:00 AM"
     },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -28071,4 +28071,3 @@
     "duration": 1.75
   }
 ]
-  ]
