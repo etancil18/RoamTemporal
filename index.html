@@ -115,6 +115,7 @@
   <button id="saveRouteBtn">Save Route</button>
 <button id="clearRouteBtn">Clear Route</button>
 <button id="favoritesBtn">My Favorites</button>
+<label><input type="checkbox" id="liveToggle" /> Only Show Live</label>
 </div>
 <div id="map"></div>
 <div id="crawlSummary" style="display:none; padding: 16px; background: #fff; border: 2px solid #333; max-width: 300px; position: absolute; top: 20px; right: 20px; z-index: 9999; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 8px;">
@@ -134,7 +135,10 @@ const defaultIcon = L.icon({
 
   let allLocations = [];
   
-const map = L.map('map').setView([40.72, -73.98], 12);
+const map = L.map('map', {
+  zoomControl: false
+}).setView([40.72, -73.98], 12);
+  L.control.zoom({ position: 'bottomleft' }).addTo(map);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap contributors & Carto',
   subdomains: 'abcd',
@@ -249,7 +253,7 @@ function filterMarkersByVibe() {
 // ─── RENDER MARKERS (with Similar & Add-To-Route) ──────────────────────────────
 const markerLayer = L.layerGroup().addTo(map);
 
-function renderMarkers(events) {
+function renderMarkers(events, crawlMode = false) {
   markerLayer.clearLayers();
   allMarkers = [];
 
@@ -281,17 +285,22 @@ function renderMarkers(events) {
       marker.openPopup();
     });
 
-    if (eventsToday.includes(ev)) {
-  marker.bindTooltip("🔴 Live Today!", { permanent: true }).addTo(map);
-}
-    
+    if (!crawlMode && eventsToday.includes(ev)) {
+      marker.bindTooltip("🔴 Live Today!", { permanent: true }).addTo(map);
+    }
+
     allMarkers.push(marker);
-  }); // ✅ CLOSE events.forEach
+  });
 
   allMarkers.forEach(marker => {
     const ev = marker.ev;
     const latlng = marker.getLatLng();
     const isOpen = isLocationOpenNow(ev);
+
+    if (crawlMode) {
+      marker.addTo(markerLayer); // skip extra logic
+      return;
+    }
 
     const thisVibes = (ev.vibe || '')
       .split(',')
@@ -334,7 +343,7 @@ function renderMarkers(events) {
       const btn = document.querySelector('.add-route-btn');
       if (btn) btn.onclick = () => addToRoute(ev);
     });
-  }); // ✅ CLOSE allMarkers.forEach
+  });
 }
     
 fetch('events.json')
@@ -349,30 +358,65 @@ fetch('events.json')
 
     console.log("📅 Events Today:", eventsToday);
 
-    renderMarkers(events); // ✅ Now safe
-    document.getElementById('vibeSearchInput').addEventListener('input', filterMarkersByVibe);
+   const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has('crawl')) {
+  try {
+    const crawl = JSON.parse(decodeURIComponent(urlParams.get('crawl')));
+    console.log("🔗 Loaded crawl from URL:", crawl);
+
+    renderMarkers(crawl, true); // ✅ pass crawlMode = true
+    selectedRoute = [...crawl];
+    drawRoute();
+    showCrawlSummary(crawl);
+
+    document.querySelector('.controls').style.display = 'none'; // ✅ Hide controls for clean viewer
+
+    return; // ⛔ Skip default render if crawl loaded
+  } catch (e) {
+    console.error("Invalid crawl link:", e);
+  }
+}
+
+    // fallback to default view
+    renderMarkers(events);
   })
   .catch(err => {
     console.error('Error loading events:', err);
     alert('Failed to load locations.');
   });
 
-document.getElementById('clearRouteBtn').addEventListener('click', () => {
-  selectedRoute = [];
-  if (currentRoute) map.removeControl(currentRoute);
-});
 
+const savedFromStorage = localStorage.getItem('savedRoutes');
+if (savedFromStorage) {
+  savedRoutes = JSON.parse(savedFromStorage);
+}
+  
 document.getElementById('saveRouteBtn').addEventListener('click', () => {
+  console.log('🧭 selectedRoute at time of save:', selectedRoute); // ✅ moved inside event
+
   if (selectedRoute.length < 2) {
     alert('Add at least 2 locations to save a route.');
     return;
   }
+
   savedRoutes.push([...selectedRoute]);
+  localStorage.setItem('savedRoutes', JSON.stringify(savedRoutes)); // ✅ persist to localStorage
+  console.log('🔐 Saved to localStorage:', savedRoutes);
   alert('Route saved to favorites.');
 });
 
 document.getElementById('favoritesBtn').addEventListener('click', () => {
   openFavoritesModal();
+});
+
+document.getElementById('favoritesBtn').addEventListener('click', () => {
+  openFavoritesModal();
+});
+
+  document.getElementById('vibeSearchInput').addEventListener('input', () => {
+  if (globalEvents.length > 0) {
+    filterMarkersByVibe();
+  }
 });
   
 const neighborhoodCenters = {
@@ -468,10 +512,46 @@ function getCurrentDayPart() {
   const saveBtn = document.createElement("button");
   saveBtn.textContent = "💾 Save to My Favorites";
   saveBtn.onclick = () => {
-    // Implement saving logic here
+    if (crawlRoute.length < 2) {
+      alert('Add at least 2 stops to save a route.');
+      return;
+    }
+    const existing = localStorage.getItem('savedRoutes');
+    const routes = existing ? JSON.parse(existing) : [];
+    routes.push([...crawlRoute]);
+    localStorage.setItem('savedRoutes', JSON.stringify(routes));
     alert("Crawl saved to favorites (local only for now)!");
   };
   summaryDiv.appendChild(saveBtn);
+
+  const exportBtn = document.createElement("button");
+  exportBtn.textContent = "Export to Google Maps";
+  exportBtn.onclick = () => {
+    const base = "https://www.google.com/maps/dir/";
+    const waypoints = crawlRoute.map(stop => `${stop.lat},${stop.lng}`).join('/');
+    const url = `${base}${waypoints}`;
+    window.open(url, "_blank");
+  };
+  summaryDiv.appendChild(exportBtn);
+
+  const shareBtn = document.createElement("button");
+  shareBtn.textContent = "Copy Crawl Link";
+  shareBtn.onclick = () => {
+    const baseUrl = window.location.origin + window.location.pathname;
+    const encoded = encodeURIComponent(JSON.stringify(crawlRoute));
+    const link = `${baseUrl}?crawl=${encoded}`;
+    navigator.clipboard.writeText(link).then(() => {
+      alert("Link copied to clipboard!");
+    });
+  };
+  summaryDiv.appendChild(shareBtn);
+
+  const closeBtn = document.createElement("button");
+  closeBtn.textContent = "Close";
+  closeBtn.onclick = () => {
+    summaryDiv.style.display = "none";
+  };
+  summaryDiv.appendChild(closeBtn);
 
   summaryDiv.style.display = "block"; // Show it
 }
@@ -714,6 +794,7 @@ sorted.splice(sorted.indexOf(randomStart), 1);
     show: false
   }).addTo(map);
 
+  selectedRoute = [...crawlRoute];
   showCrawlSummary(crawlRoute);
 }
 
@@ -722,15 +803,20 @@ document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRo
 
   // Simple modal HTML injection
 function openFavoritesModal() {
+  const savedFromStorage = localStorage.getItem('savedRoutes');
+  const routes = savedFromStorage ? JSON.parse(savedFromStorage) : [];
+
+  console.log('📦 Routes from localStorage:', routes);
+
   let html = `
     <div id="modal" style="position:fixed;top:10%;left:50%;transform:translateX(-50%);background:white;padding:20px;z-index:2000;border:1px solid #ccc;max-height:80%;overflow:auto;box-shadow:0 0 10px rgba(0,0,0,0.3);border-radius:8px;">
       <h2>Saved Routes</h2>
   `;
 
-  if (!savedRoutes.length) {
+  if (!routes.length) {
     html += '<p>No routes saved.</p>';
   } else {
-    savedRoutes.forEach((route, idx) => {
+    routes.forEach((route, idx) => {
       html += `<div style="margin-bottom:10px;"><strong>Route #${idx + 1}</strong><ul>`;
       route.forEach(loc => {
         html += `<li>${loc.name}</li>`;
@@ -748,6 +834,7 @@ function openFavoritesModal() {
     </div>
   `;
 
+  document.getElementById('modal')?.remove(); // ensure no duplicate modals
   document.body.insertAdjacentHTML('beforeend', html);
 
   document.getElementById('closeModal').onclick = () => {
@@ -756,7 +843,7 @@ function openFavoritesModal() {
 
   document.querySelectorAll('.load-route').forEach(btn => {
     btn.onclick = () => {
-      selectedRoute = savedRoutes[btn.dataset.idx];
+      selectedRoute = routes[btn.dataset.idx];
       drawRoute();
       document.getElementById('modal').remove();
     };
@@ -765,7 +852,7 @@ function openFavoritesModal() {
   document.querySelectorAll('.export-route').forEach(btn => {
     btn.onclick = () => {
       const idx = btn.dataset.idx;
-      const route = savedRoutes[idx];
+      const route = routes[idx];
       const base = "https://www.google.com/maps/dir/";
       const waypoints = route.map(loc => `${loc.lat},${loc.lng}`).join('/');
       const url = `${base}${waypoints}`;
