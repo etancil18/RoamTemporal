@@ -557,16 +557,13 @@ function getCurrentDayPart() {
 }
   
 function generateCrawlRoute() {
-
-const todayStr = new Date().toISOString().slice(0, 10);
-
+  const todayStr = new Date().toISOString().slice(0, 10);
   if (!globalEvents.length) {
     alert("Locations not loaded yet. Please wait a moment.");
     return;
   }
 
-   let center;
-  
+  let center;
   console.log('🚨 generateCrawlRoute() triggered');
 
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
@@ -575,27 +572,22 @@ const todayStr = new Date().toISOString().slice(0, 10);
   const neighborhoodCenter = neighborhoodCenters[neighborhood];
 
   console.log('📍 Selected Neighborhood:', neighborhood);
-console.log('🧭 Matched Center:', neighborhoodCenters[neighborhood]);
+  console.log('🧭 Matched Center:', neighborhoodCenters[neighborhood]);
 
-if (
-  !neighborhoodCenter ||
-  isNaN(neighborhoodCenter.lat) ||
-  isNaN(neighborhoodCenter.lng)
-) {
-  alert("Invalid or missing neighborhood center.");
-  return;
-}
+  if (!neighborhoodCenter || isNaN(neighborhoodCenter.lat) || isNaN(neighborhoodCenter.lng)) {
+    alert("Invalid or missing neighborhood center.");
+    return;
+  }
 
-center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
-
+  center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
   const rawTheme = document.getElementById('themeDropdown').value;
-const theme = rawTheme.trim().toLowerCase();
-const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
+  const theme = rawTheme.trim().toLowerCase();
+  const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
 
   console.log('🧠 Raw Theme:', rawTheme);
-console.log('🎯 Processed Theme:', theme);
-  
+  console.log('🎯 Processed Theme:', theme);
+
   const priceTiers = ['$', '$$', '$$$', '$$$$'];
   const selectedTierIndex = priceTiers.indexOf(priceFilter);
   const baseDayParts = getCurrentDayPart();
@@ -631,12 +623,12 @@ console.log('🎯 Processed Theme:', theme);
   const currentDayParts = themeOverrides[theme] || baseDayParts;
 
   const allLocations = globalEvents.map(ev => ({
-  ...ev,
-  lat: parseFloat(ev.lat),
-  lng: parseFloat(ev.lon), // ✅ convert 'lon' to 'lng' for Leaflet
-  vibe: (ev.vibe || '').split(',').map(v => v.trim().toLowerCase()),
-  tags: (ev.tags || '').split(',').map(t => t.trim().toLowerCase())
-}));
+    ...ev,
+    lat: parseFloat(ev.lat),
+    lng: parseFloat(ev.lon),
+    vibe: (ev.vibe || '').split(',').map(v => v.trim().toLowerCase()),
+    tags: (ev.tags || '').split(',').map(t => t.trim().toLowerCase())
+  }));
 
   console.log('⚙️ Filtering open locations...');
   console.log('📦 All Locations:', allLocations);
@@ -645,48 +637,47 @@ console.log('🎯 Processed Theme:', theme);
 
   const openLocations = allLocations.filter(loc => {
     const allKeywords = [...loc.vibe, ...loc.tags];
-
     const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
     const matchesTheme = !theme || themeKeywords.some(kw => allKeywords.includes(kw));
     let matchesDayPart = false;
-let dayPartsArray = [];
-if (Array.isArray(loc.dayParts)) {
-  dayPartsArray = loc.dayParts;
-} else if (typeof loc.dayParts === 'object' && loc.dayParts !== null) {
-  dayPartsArray = Object.values(loc.dayParts).filter(p => p && p !== '-');
-}
-
-if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
-  matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
-} else {
-  // fallback to hours string match
-  const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-  const hoursTodayStr = Array.isArray(loc.hours)
-    ? loc.hours.find(h => h.toLowerCase().startsWith(today.toLowerCase()))
-    : null;
-
-  if (hoursTodayStr && !hoursTodayStr.toLowerCase().includes('closed')) {
-    const timeRangeMatch = hoursTodayStr.match(/\d{1,2}:\d{2}\s*[ap]m\s*[\u2013\-]\s*\d{1,2}:\d{2}\s*[ap]m/i);
-    if (timeRangeMatch) {
-      const [startStr, endStr] = timeRangeMatch[0].split(/[\u2013\-]/).map(s => s.trim());
-
-      function parseTime(str) {
-        const [time, meridian] = str.split(/\s+/);
-        let [h, m] = time.split(':').map(Number);
-        if (meridian.toLowerCase() === 'pm' && h !== 12) h += 12;
-        if (meridian.toLowerCase() === 'am' && h === 12) h = 0;
-        return h + m / 60;
-      }
-
-      const now = new Date();
-      const currentTimeDecimal = now.getHours() + now.getMinutes() / 60;
-      const startDecimal = parseTime(startStr);
-      const endDecimal = parseTime(endStr);
-
-      matchesDayPart = currentTimeDecimal >= startDecimal && currentTimeDecimal <= endDecimal;
+    let dayPartsArray = [];
+    if (Array.isArray(loc.dayParts)) {
+      dayPartsArray = loc.dayParts;
+    } else if (typeof loc.dayParts === 'object' && loc.dayParts !== null) {
+      dayPartsArray = Object.values(loc.dayParts).filter(p => p && p !== '-');
     }
-  }
-}
+
+    if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
+      matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
+    } else {
+      const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+      const hoursTodayStr = Array.isArray(loc.hours)
+        ? loc.hours.find(h => h.toLowerCase().startsWith(today.toLowerCase()))
+        : null;
+
+      if (hoursTodayStr && !hoursTodayStr.toLowerCase().includes('closed')) {
+        const timeRangeMatch = hoursTodayStr.match(/\d{1,2}:\d{2}\s*[ap]m\s*[\u2013\-]\s*\d{1,2}:\d{2}\s*[ap]m/i);
+        if (timeRangeMatch) {
+          const [startStr, endStr] = timeRangeMatch[0].split(/[\u2013\-]/).map(s => s.trim());
+
+          function parseTime(str) {
+            const [time, meridian] = str.split(/\s+/);
+            let [h, m] = time.split(':').map(Number);
+            if (meridian.toLowerCase() === 'pm' && h !== 12) h += 12;
+            if (meridian.toLowerCase() === 'am' && h === 12) h = 0;
+            return h + m / 60;
+          }
+
+          const now = new Date();
+          const currentTimeDecimal = now.getHours() + now.getMinutes() / 60;
+          const startDecimal = parseTime(startStr);
+          const endDecimal = parseTime(endStr);
+
+          matchesDayPart = currentTimeDecimal >= startDecimal && currentTimeDecimal <= endDecimal;
+        }
+      }
+    }
+
     const passes = matchesPrice && matchesTheme && matchesDayPart;
 
     if (!passes) {
@@ -705,7 +696,6 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
   });
 
   console.log('✅ Matched Locations:', openLocations);
-
   if (!openLocations.length) {
     alert('No matching locations are open now for that theme.');
     return;
@@ -713,69 +703,39 @@ if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
 
   center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
 
- const validLocations = openLocations.filter(ev =>
-  ev.lat && ev.lon && !isNaN(ev.lat) && !isNaN(ev.lon)
-);
+  const validLocations = openLocations.filter(ev => ev.lat && ev.lon && !isNaN(ev.lat) && !isNaN(ev.lon));
 
-console.log("📍 Using center:", center);
-  
-validLocations.forEach(ev => {
-  if (!ev.lat || !ev.lon || isNaN(ev.lat) || isNaN(ev.lon)) {
-    console.warn('⚠️ Skipping invalid location:', ev.name);
-    return;
-  }
+  validLocations.forEach(ev => {
+    const vibeMatches = ev.vibe.filter(v => themeKeywords.includes(v));
+    const tagMatches = ev.tags.filter(t => themeKeywords.includes(t));
+    const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
+    ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
+    ev._score += ev.dateEvents?.some(e => e.date === todayStr) ? 1 : 0;
+  });
 
-  const normalizedVibes = Array.isArray(ev.vibe)
-    ? ev.vibe.map(v => v.trim().toLowerCase())
-    : (ev.vibe || '').split(',').map(v => v.trim().toLowerCase());
+  const sorted = validLocations.filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500).sort((a, b) => b._score - a._score);
 
-  const normalizedTags = Array.isArray(ev.tags)
-    ? ev.tags.map(t => t.trim().toLowerCase())
-    : (ev.tags || '').split(',').map(t => t.trim().toLowerCase());
+  const crawlStages = crawlFlows[theme] || [];
+  const crawlRoute = [];
+  let timeSpent = 0;
+  let lastPoint = center;
 
-  const vibeMatches = normalizedVibes.filter(v => themeKeywords.includes(v));
-  const tagMatches = normalizedTags.filter(t => themeKeywords.includes(t));
-  const dist = center.distanceTo(L.latLng(ev.lat, ev.lon));
-  ev._score = (vibeMatches.length + tagMatches.length) / (dist + 1);
-
-  ev._score += ev.dateEvents?.some(e => e.date === todayStr) ? 1 : 0;
-});
-
-  
-  const sorted = validLocations
-  .filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500)
-  .sort((a, b) => b._score - a._score);
-  
-// 🎲 Randomize among the top 5 scoring candidates
-const topCandidates = sorted.slice(0, 5);
-const randomStart = topCandidates[Math.floor(Math.random() * topCandidates.length)];
-
-  if (!randomStart) {
-  alert('Unable to select a valid starting point.');
-  return;
-}
-
-const crawlRoute = [];
-let last = randomStart;
-let timeSpent = (last?.duration !== undefined && !isNaN(last.duration)) ? last.duration : 1;
-crawlRoute.push(last);
-
-// Remove the chosen start from the sorted list
-sorted.splice(sorted.indexOf(randomStart), 1);
-
-  while (crawlRoute.length < 5 && timeSpent < maxDuration) {
-    const lastLatLng = L.latLng(last.lat, last.lon);
-    const next = sorted.find(ev => {
-      const dist = lastLatLng.distanceTo(L.latLng(ev.lat, ev.lon));
-      const fits = timeSpent + (ev.duration || 1) <= maxDuration;
-      return dist <= 500 && fits;
+  for (let stage of crawlStages) {
+    const stageCandidates = sorted.filter(loc => {
+      const vibeAndTags = [...(loc.vibe || []), ...(loc.tags || [])];
+      const matchesType = loc.type === stage;
+      const matchesVibe = themeKeywords.some(kw => vibeAndTags.includes(kw));
+      const withinDistance = lastPoint.distanceTo(L.latLng(loc.lat, loc.lon)) <= 800;
+      const fitsTime = timeSpent + (loc.duration || 1) <= maxDuration;
+      return matchesType && matchesVibe && withinDistance && fitsTime;
     });
 
-    if (!next) break;
+    if (stageCandidates.length === 0) continue;
 
+    const next = stageCandidates[0];
     crawlRoute.push(next);
     timeSpent += next.duration || 1;
-    last = next;
+    lastPoint = L.latLng(next.lat, next.lon);
     sorted.splice(sorted.indexOf(next), 1);
   }
 
