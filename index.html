@@ -745,29 +745,37 @@ function generateCrawlRoute() {
 
   const sorted = validLocations.filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500).sort((a, b) => b._score - a._score);
 
-  const crawlStages = crawlFlows[theme] || [];
-  const crawlRoute = [];
-  let timeSpent = 0;
-  let lastPoint = center;
+  let crawlRoute = [];
+let timeSpent = 0;
+let lastPoint = center;
+let startingStageIndex = crawlStages.findIndex(stage => {
+  return sorted.some(loc => loc.type === stage && themeKeywords.some(kw => [...loc.vibe, ...loc.tags].includes(kw)));
+});
 
-  for (let stage of crawlStages) {
-    const stageCandidates = sorted.filter(loc => {
-      const vibeAndTags = [...(loc.vibe || []), ...(loc.tags || [])];
-      const matchesType = loc.type === stage;
-      const matchesVibe = themeKeywords.some(kw => vibeAndTags.includes(kw));
-      const withinDistance = lastPoint.distanceTo(L.latLng(loc.lat, loc.lon)) <= 800;
-      const fitsTime = timeSpent + (loc.duration || 1) <= maxDuration;
-      return matchesType && matchesVibe && withinDistance && fitsTime;
-    });
+if (startingStageIndex === -1) {
+  alert("No suitable starting point found for this theme.");
+  return;
+}
 
-    if (stageCandidates.length === 0) continue;
+for (let i = startingStageIndex; i < crawlStages.length; i++) {
+  const stage = crawlStages[i];
+  const stageCandidates = sorted.filter(loc => {
+    const vibeAndTags = [...(loc.vibe || []), ...(loc.tags || [])];
+    const matchesType = loc.type === stage;
+    const matchesVibe = themeKeywords.some(kw => vibeAndTags.includes(kw));
+    const withinDistance = lastPoint.distanceTo(L.latLng(loc.lat, loc.lon)) <= 800;
+    const fitsTime = timeSpent + (loc.duration || 1) <= maxDuration;
+    return matchesType && matchesVibe && withinDistance && fitsTime;
+  });
 
-    const next = stageCandidates[0];
-    crawlRoute.push(next);
-    timeSpent += next.duration || 1;
-    lastPoint = L.latLng(next.lat, next.lon);
-    sorted.splice(sorted.indexOf(next), 1);
-  }
+  if (!stageCandidates.length) continue;
+
+  const next = stageCandidates[Math.floor(Math.random() * stageCandidates.length)];
+  crawlRoute.push(next);
+  timeSpent += next.duration || 1;
+  lastPoint = L.latLng(next.lat, next.lon);
+  sorted.splice(sorted.indexOf(next), 1);
+}
 
   if (crawlRoute.length < 2) {
     alert('Could not build a full crawl with available stops.');
