@@ -321,13 +321,13 @@ function showRouteControls() {
   const popup = document.querySelector('.leaflet-popup-content');
   console.log("Popup element:", popup);
   console.log("showRouteControls: popup content found?", !!popup);
-  
+
   if (!popup) return;
 
   const existingSaveBtn = popup.querySelector('.save-route-btn');
-const existingExportBtn = popup.querySelector('.export-route-btn');
-if (existingSaveBtn) existingSaveBtn.remove();
-if (existingExportBtn) existingExportBtn.remove();
+  const existingExportBtn = popup.querySelector('.export-route-btn');
+  if (existingSaveBtn) existingSaveBtn.remove();
+  if (existingExportBtn) existingExportBtn.remove();
 
   if (selectedRoute.length >= 2) {
     const saveBtn = document.createElement("button");
@@ -442,13 +442,17 @@ function renderMarkers(events, crawlMode = false) {
     marker.bindPopup(popupContent).addTo(markerLayer);
 
     marker.on('popupopen', () => {
-      const btn = document.querySelector('.add-route-btn');
-      if (btn) btn.onclick = () => {
-        addToRoute(ev);
-        if (selectedRoute.length >= 2) {
-          showRouteControls();
-        }
-      };
+      const popup = marker._popup.getElement();
+      const btn = popup.querySelector('.add-route-btn');
+      if (btn) {
+        console.log("✅ Add to Route button found for:", ev.name);
+        btn.onclick = () => {
+          console.log("🟢 Add to Route clicked for:", ev.name);
+          addToRoute(ev);
+        };
+      } else {
+        console.warn("❌ Add to Route button not found in popup");
+      }
     });
   });
 }
