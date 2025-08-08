@@ -1,3 +1,4 @@
+
 <head>
   <title>NYC Roam Temporal Map</title>
   <meta charset="utf-8" />
@@ -5,15 +6,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
-/>
-<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
   <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.min.js"></script>
 
   <style>
@@ -324,33 +316,7 @@ function filterMarkersByVibe() {
 }
 
 // ─── RENDER MARKERS (with Similar & Add-To-Route) ──────────────────────────────
-const markerLayer = L.markerClusterGroup({
-  iconCreateFunction: cluster => {
-    const childMarkers = cluster.getAllChildMarkers();
-
-    // Count marker colors
-    const counts = {};
-    childMarkers.forEach(m => {
-      const iconUrl = m.options.icon.options.iconUrl;
-      const match = iconUrl.match(/marker-icon-2x-(\w+)\.png/);
-      const color = match ? match[1] : 'grey';
-      counts[color] = (counts[color] || 0) + 1;
-    });
-
-    // Determine majority color
-    const majorityColor = Object.keys(counts).reduce((a, b) =>
-      counts[a] > counts[b] ? a : b
-    );
-
-    return L.divIcon({
-      html: `<div class="cluster-marker ${majorityColor}">${cluster.getChildCount()}</div>`,
-      className: `custom-cluster ${majorityColor}`,
-      iconSize: [40, 40]
-    });
-  }
-});
-
-map.addLayer(markerLayer);
+const markerLayer = L.layerGroup().addTo(map);
 
 function showRouteControls() {
   const popup = document.querySelector('.leaflet-popup-content');
