@@ -215,6 +215,8 @@ const maxRouteStops = 5;
 
 // ─── DRAW ROUTE FUNCTION ───────────────────────────────────────────────────────
 function drawRoute() {
+console.log("Redrawing route for stops:", selectedRoute);
+  
   if (currentRoute) {
     map.removeControl(currentRoute);
     currentRoute = null;
@@ -269,27 +271,29 @@ function drawRoute() {
 
 // ─── ADD TO ROUTE HANDLER ──────────────────────────────────────────────────────
 function addToRoute(ev) {
+  console.log("addToRoute invoked", ev.name, selectedRoute.length);
+
   if (selectedRoute.length >= maxRouteStops) {
     alert(`You can add up to ${maxRouteStops} stops only.`);
     return;
   }
+
   if (selectedRoute.some(loc => loc.name === ev.name)) {
     alert('This location is already in your route.');
     return;
   }
 
   selectedRoute.push(ev);
-  updateRoutePreview();
-
-  // ✅ Insert debug logs here
-  console.log("addToRoute called, selectedRoute length:", selectedRoute.length);
-  console.log("selectedRoute:", selectedRoute);
+  console.log("✅ Location added to route:", ev.name);
+  console.log("🧭 Route now has:", selectedRoute.map(s => s.name));
 
   drawRoute();
 
   if (selectedRoute.length >= 2) {
     setTimeout(showRouteControls, 100); // ensures DOM is ready
   }
+
+  updateRoutePreview(); // this shows the list of stops on the right side
 }
 
 // ─── FILTER MARKERS ────────────────────────────────────────────────────
