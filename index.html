@@ -121,6 +121,23 @@
 <div id="crawlSummary" style="display:none; padding: 16px; background: #fff; border: 2px solid #333; max-width: 300px; position: absolute; top: 20px; right: 20px; z-index: 9999; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 8px;">
     <!-- Populated by JS -->
   </div>
+  <div id="routePreview" style="
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 250px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-left: 2px solid #ccc;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+">
+  <h4>🧭 Route Preview</h4>
+  <ol id="routeList"></ol>
+</div>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 <script>
@@ -218,6 +235,38 @@ function drawRoute() {
   }).addTo(map);
 }
 
+  // ─── ROUTE PREVIEW FUNCTION ───────────────────────────────────────────────────────
+  function updateRoutePreview() {
+  const container = document.getElementById('routePreview');
+  const list = document.getElementById('routeList');
+
+  if (selectedRoute.length === 0) {
+    container.style.display = 'none';
+    list.innerHTML = '';
+    return;
+  }
+
+  container.style.display = 'block';
+  list.innerHTML = '';
+
+  selectedRoute.forEach((stop, idx) => {
+    const item = document.createElement('li');
+    item.textContent = stop.name;
+
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = '❌';
+    removeBtn.style.marginLeft = '10px';
+    removeBtn.onclick = () => {
+      selectedRoute.splice(idx, 1);
+      drawRoute();
+      updateRoutePreview();
+    };
+
+    item.appendChild(removeBtn);
+    list.appendChild(item);
+  });
+}
+
 // ─── ADD TO ROUTE HANDLER ──────────────────────────────────────────────────────
 function addToRoute(ev) {
   if (selectedRoute.length >= maxRouteStops) {
@@ -230,6 +279,7 @@ function addToRoute(ev) {
   }
 
   selectedRoute.push(ev);
+  updateRoutePreview();
 
   // ✅ Insert debug logs here
   console.log("addToRoute called, selectedRoute length:", selectedRoute.length);
