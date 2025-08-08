@@ -228,12 +228,17 @@ function addToRoute(ev) {
     alert('This location is already in your route.');
     return;
   }
+
   selectedRoute.push(ev);
+
+  // ✅ Insert debug logs here
+  console.log("addToRoute called, selectedRoute length:", selectedRoute.length);
+  console.log("selectedRoute:", selectedRoute);
+
   drawRoute();
 
-  //  Enable UI controls if this is the 2nd stop
   if (selectedRoute.length >= 2) {
-    showRouteControls();
+    setTimeout(showRouteControls, 100); // ensures DOM is ready
   }
 }
 
@@ -260,36 +265,40 @@ const markerLayer = L.layerGroup().addTo(map);
 
 function showRouteControls() {
   const popup = document.querySelector('.leaflet-popup-content');
+  console.log("Popup element:", popup);
+  console.log("showRouteControls: popup content found?", !!popup);
+  
   if (!popup) return;
 
-  popup.querySelector('.save-route-btn')?.remove();
-  popup.querySelector('.export-route-btn')?.remove();
+  const existingSaveBtn = popup.querySelector('.save-route-btn');
+const existingExportBtn = popup.querySelector('.export-route-btn');
+if (existingSaveBtn) existingSaveBtn.remove();
+if (existingExportBtn) existingExportBtn.remove();
 
-  const saveBtn = document.createElement('button');
-  saveBtn.textContent = "💾 Save Route";
-  saveBtn.className = 'save-route-btn';
-  saveBtn.onclick = () => {
-    if (selectedRoute.length < 2) return;
-    const existing = localStorage.getItem('savedRoutes');
-    const routes = existing ? JSON.parse(existing) : [];
-    routes.push([...selectedRoute]);
-    localStorage.setItem('savedRoutes', JSON.stringify(routes));
-    alert("Route saved to My Favorites.");
-  };
+  if (selectedRoute.length >= 2) {
+    const saveBtn = document.createElement("button");
+    saveBtn.textContent = "💾 Save to My Favorites";
+    saveBtn.className = "save-route-btn";
+    saveBtn.onclick = () => {
+      const existing = localStorage.getItem('savedRoutes');
+      const routes = existing ? JSON.parse(existing) : [];
+      routes.push([...selectedRoute]);
+      localStorage.setItem('savedRoutes', JSON.stringify(routes));
+      alert("Crawl saved to favorites!");
+    };
+    popup.appendChild(saveBtn);
 
-  const exportBtn = document.createElement('button');
-  exportBtn.textContent = "Export to Google Maps";
-  exportBtn.className = 'export-route-btn';
-  exportBtn.onclick = () => {
-    const base = "https://www.google.com/maps/dir/";
-    const waypoints = selectedRoute.map(stop => `${stop.lat},${stop.lng}`).join('/');
-    const url = `${base}${waypoints}`;
-    window.open(url, "_blank");
-  };
-
-  popup.appendChild(document.createElement('br'));
-  popup.appendChild(saveBtn);
-  popup.appendChild(exportBtn);
+    const exportBtn = document.createElement("button");
+    exportBtn.textContent = "Export to Google Maps";
+    exportBtn.className = "export-route-btn";
+    exportBtn.onclick = () => {
+      const base = "https://www.google.com/maps/dir/";
+      const waypoints = selectedRoute.map(stop => `${stop.lat},${stop.lon}`).join('/');
+      const url = `${base}${waypoints}`;
+      window.open(url, "_blank");
+    };
+    popup.appendChild(exportBtn);
+  }
 }
 
 function renderMarkers(events, crawlMode = false) {
