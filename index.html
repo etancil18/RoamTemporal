@@ -442,18 +442,20 @@ function renderMarkers(events, crawlMode = false) {
     marker.bindPopup(popupContent).addTo(markerLayer);
 
     marker.on('popupopen', () => {
-      const popup = marker._popup.getElement();
-      const btn = popup.querySelector('.add-route-btn');
-      if (btn) {
-        console.log("✅ Add to Route button found for:", ev.name);
-        btn.onclick = () => {
-          console.log("🟢 Add to Route clicked for:", ev.name);
-          addToRoute(ev);
-        };
-      } else {
-        console.warn("❌ Add to Route button not found in popup");
-      }
-    });
+  setTimeout(() => {
+    const popup = marker._popup.getElement();
+    const btn = popup.querySelector('.add-route-btn');
+    if (btn) {
+      console.log("✅ Add to Route button found for:", ev.name);
+      btn.onclick = () => {
+        console.log("🟢 Add to Route clicked for:", ev.name);
+        addToRoute(ev);
+      };
+    } else {
+      console.warn("❌ Add to Route button not found in popup");
+    }
+  }, 50); // Slight delay ensures DOM is ready
+});
   });
 }
     
