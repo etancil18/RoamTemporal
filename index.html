@@ -230,6 +230,11 @@ function addToRoute(ev) {
   }
   selectedRoute.push(ev);
   drawRoute();
+
+  //  Enable UI controls if this is the 2nd stop
+  if (selectedRoute.length >= 2) {
+    showRouteControls();
+  }
 }
 
 // ─── FILTER MARKERS ────────────────────────────────────────────────────
@@ -252,6 +257,40 @@ function filterMarkersByVibe() {
 
 // ─── RENDER MARKERS (with Similar & Add-To-Route) ──────────────────────────────
 const markerLayer = L.layerGroup().addTo(map);
+
+function showRouteControls() {
+  const popup = document.querySelector('.leaflet-popup-content');
+  if (!popup) return;
+
+  popup.querySelector('.save-route-btn')?.remove();
+  popup.querySelector('.export-route-btn')?.remove();
+
+  const saveBtn = document.createElement('button');
+  saveBtn.textContent = "💾 Save Route";
+  saveBtn.className = 'save-route-btn';
+  saveBtn.onclick = () => {
+    if (selectedRoute.length < 2) return;
+    const existing = localStorage.getItem('savedRoutes');
+    const routes = existing ? JSON.parse(existing) : [];
+    routes.push([...selectedRoute]);
+    localStorage.setItem('savedRoutes', JSON.stringify(routes));
+    alert("Route saved to My Favorites.");
+  };
+
+  const exportBtn = document.createElement('button');
+  exportBtn.textContent = "Export to Google Maps";
+  exportBtn.className = 'export-route-btn';
+  exportBtn.onclick = () => {
+    const base = "https://www.google.com/maps/dir/";
+    const waypoints = selectedRoute.map(stop => `${stop.lat},${stop.lng}`).join('/');
+    const url = `${base}${waypoints}`;
+    window.open(url, "_blank");
+  };
+
+  popup.appendChild(document.createElement('br'));
+  popup.appendChild(saveBtn);
+  popup.appendChild(exportBtn);
+}
 
 function renderMarkers(events, crawlMode = false) {
   markerLayer.clearLayers();
@@ -298,7 +337,7 @@ function renderMarkers(events, crawlMode = false) {
     const isOpen = isLocationOpenNow(ev);
 
     if (crawlMode) {
-      marker.addTo(markerLayer); // skip extra logic
+      marker.addTo(markerLayer);
       return;
     }
 
@@ -341,7 +380,12 @@ function renderMarkers(events, crawlMode = false) {
 
     marker.on('popupopen', () => {
       const btn = document.querySelector('.add-route-btn');
-      if (btn) btn.onclick = () => addToRoute(ev);
+      if (btn) btn.onclick = () => {
+        addToRoute(ev);
+        if (selectedRoute.length >= 2) {
+          showRouteControls();
+        }
+      };
     });
   });
 }
