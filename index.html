@@ -47,33 +47,45 @@
   <input type="text" id="vibeSearchInput" placeholder="What's the vibe..." />
   <select id="themeDropdown">
   <option value="">Select Theme</option>
-  <option value="date night">Date Night</option>
-  <option value="work session">Work Session</option>
-  <option value="party time">Party Time</option>
-  <option value="mindful mornings">Mindful Mornings</option>
-  <option value="creative kickstart">Creative Kickstart</option>
-  <option value="self-care">Self-Care</option>
-  <option value="art & culture">Art & Culture</option>
-  <option value="cheap & cheerful">Cheap & Cheerful</option>
-  <option value="rooftops & views">Rooftops & Views</option>
-  <option value="foodie tour">Foodie Tour</option>
-  <option value="chill hang">Chill Hang</option>
-  <option value="hidden gems">Hidden Gems</option>
-  <option value="sunrise start">Sunrise Start</option>
-  <option value="golden hour">Golden Hour</option>
-  <option value="nightcap circuit">Nightcap Circuit</option>
-  <option value="post-work wind down">Post-Work Wind Down</option>
-  <option value="midday recharge">Midday Recharge</option>
-  <option value="health nut">Health Nut</option>
-  <option value="artsy & indie">Artsy & Indie</option>
-  <option value="tech bro escape">Tech Bro Escape</option>
-  <option value="rom-com main character">Rom-Com Main Character</option>
-  <option value="solo explorer">Solo Explorer</option>
-  <option value="brunch & beyond">Brunch & Beyond</option>
-  <option value="saturday surge">Saturday Surge</option>
-  <option value="sunday reset">Sunday Reset</option>
-  <option value="weekend warriors">Weekend Warriors</option>
-  <option value="late start legends">Late Start Legends</option>
+<option value="art & culture">Art & Culture</option>
+<option value="artsy & indie">Artsy & Indie</option>
+<option value="brunch & beyond">Brunch & Beyond</option>
+<option value="cheap & cheerful">Cheap & Cheerful</option>
+<option value="chill hang">Chill Hang</option>
+<option value="creative kickstart">Creative Kickstart</option>
+<option value="date day">Date Day</option>
+<option value="date night">Date Night</option>
+<option value="foodie tour">Foodie Tour</option>
+<option value="friends night out">Friends Night Out</option>
+<option value="gallery crawl">Gallery Crawl</option>
+<option value="golden hour">Golden Hour</option>
+<option value="health nut">Health Nut</option>
+<option value="hidden gems">Hidden Gems</option>
+<option value="late start legends">Late Start Legends</option>
+<option value="luxe life">Luxe Life</option>
+<option value="midday recharge">Midday Recharge</option>
+<option value="mindful mornings">Mindful Mornings</option>
+<option value="neighborhood sampler">Neighborhood Sampler</option>
+<option value="nightcap circuit">Nightcap Circuit</option>
+<option value="party time">Party Time</option>
+<option value="post-work wind down">Post-Work Wind Down</option>
+<option value="quiet escape">Quiet Escape</option>
+<option value="rom-com main character">Rom-Com Main Character</option>
+<option value="rooftops & views">Rooftops & Views</option>
+<option value="saturday surge">Saturday Surge</option>
+<option value="self-care">Self-Care</option>
+<option value="solo explorer">Solo Explorer</option>
+<option value="sports day">Sports Day</option>
+<option value="street food safari">Street Food Safari</option>
+<option value="summer splash">Summer Splash</option>
+<option value="sunrise start">Sunrise Start</option>
+<option value="sunset lovers">Sunset Lovers</option>
+<option value="sunday reset">Sunday Reset</option>
+<option value="tech bro escape">Tech Bro Escape</option>
+<option value="vintage vibes">Vintage Vibes</option>
+<option value="weekend warriors">Weekend Warriors</option>
+<option value="winter warm-up">Winter Warm-Up</option>
+<option value="work session">Work Session</option>
   </select>
   <select id="neighborhood-input">
   <option value="">Select Neighborhood</option>
@@ -558,63 +570,87 @@ const neighborhoodCenters = {
 };
 
   const crawlFlows = {
-  "date night": ["dinner", "cocktail", "music", "speakeasy"],
-  "work session": ["coffee", "workspace", "cafe", "cocktail"],
-  "party time": ["bar", "dinner", "club", "late-night"],
-  "mindful mornings": ["wellness", "coffee", "garden", "spa"],
-  "creative kickstart": ["coffee", "gallery", "bookstore", "coffee"],
-  "self-care": ["spa", "tea", "bookstore", "park"],
-  "art & culture": ["gallery", "gallery", "cocktail", "music"],
-  "cheap & cheerful": ["coffee", "bookstore", "random gem", "gallery", "dinner", "bar"],
-  "rooftops & views": ["rooftop", "cocktail", "dinner"],
-  "foodie tour": ["lunch", "cocktail", "dinner", "dessert"],
-  "chill hang": ["coffee", "bookstore", "random gem", "lifestyle", "bar"],
-  "hidden gems": ["random gem", "restaurant", "speakeasy", "bar"],
-  "sunrise start": ["bakery", "coffee", "park", "brunch"],
-  "golden hour": ["rooftop", "cocktail", "dinner"],
-  "nightcap circuit": ["cocktail", "speakeasy", "lounge"],
-  "post-work wind down": ["bar", "dinner", "cocktail"],
-  "midday recharge": ["coffee", "lunch", "park"],
-  "health nut": ["fitness", "spa", "garden"],
-  "artsy & indie": ["gallery", "random gem", "bookstore", "wine bar", "music"],
-  "tech bro escape": ["cocktail", "rooftop", "dinner", "club"],
-  "rom-com main character": ["coffee", "gallery", "wine bar", "speakeasy"],
-  "solo explorer": ["cafe", "random gem", "bookstore", "random gem", "park", "rooftop"],
-  "brunch & beyond": ["brunch", "rooftop", "bar"],
-  "saturday surge": ["activity", "bar", "dinner", "bar", "club"],
-  "sunday reset": ["fitness", "market", "lifestyle", "dinner"],
-  "weekend warriors": ["bar", "speakeasy", "bar", "club"],
-  "late start legends": ["brunch", "bar", "bar", "dinner", "speakeasy"]
+  "art & culture": ["gallery", "museum", "cocktail", "music", "dessert"],
+  "artsy & indie": ["gallery", "random gem", "bookstore", "wine bar", "music", "cafe"],
+  "brunch & beyond": ["brunch", "market", "rooftop", "bar", "dessert"],
+  "cheap & cheerful": ["coffee", "market", "random gem", "gallery", "dinner", "bar"],
+  "chill hang": ["coffee", "bookstore", "random gem", "lifestyle", "bar", "dessert"],
+  "creative kickstart": ["coffee", "gallery", "random gem", "bookstore", "cafe"],
+  "date day": ["brunch", "park", "random gem", "cocktail", "dessert"],
+  "date night": ["cafe", "dinner", "cocktail", "music", "speakeasy", "dessert"],
+  "foodie tour": ["market", "lunch", "cocktail", "dinner", "dessert"],
+  "friends night out": ["bar", "bar", "dinner", "club", "late-night"],
+  "gallery crawl": ["gallery", "gallery", "cafe", "wine bar", "music"],
+  "golden hour": ["rooftop", "cocktail", "wine bar", "dinner"],
+  "health nut": ["fitness", "juice bar", "spa", "garden"],
+  "hidden gems": ["random gem", "cafe", "restaurant", "speakeasy", "bar"],
+  "late start legends": ["brunch", "bar", "cocktail", "dinner", "speakeasy", "lounge"],
+  "luxe life": ["lounge", "fine dining", "cocktail", "rooftop"],
+  "midday recharge": ["coffee", "lunch", "park", "gallery"],
+  "mindful mornings": ["wellness", "coffee", "garden", "market", "spa"],
+  "neighborhood sampler": ["cafe", "random gem", "lunch", "gallery", "bar"],
+  "nightcap circuit": ["cocktail", "speakeasy", "lounge", "dessert"],
+  "party time": ["bar", "dinner", "bar", "club", "late-night"],
+  "post-work wind down": ["bar", "dinner", "cocktail", "lounge"],
+  "quiet escape": ["bookstore", "tea", "park", "random gem", "lounge"],
+  "rom-com main character": ["coffee", "gallery", "wine bar", "rooftop", "speakeasy"],
+  "rooftops & views": ["rooftop", "cocktail", "dinner", "lounge"],
+  "saturday surge": ["activity", "bar", "dinner", "bar", "club", "late-night"],
+  "self-care": ["fitness", "spa", "tea", "bookstore", "park"],
+  "solo explorer": ["cafe", "random gem", "bookstore", "market", "park", "rooftop"],
+  "sports day": ["fitness", "activity", "bar", "dinner"],
+  "street food safari": ["market", "street food", "cocktail", "dessert"],
+  "summer splash": ["pool", "juice bar", "rooftop", "dinner", "late-night"],
+  "sunrise start": ["bakery", "coffee", "park", "market", "brunch"],
+  "sunset lovers": ["park", "view", "cocktail", "rooftop", "dinner"],
+  "sunday reset": ["fitness", "market", "lifestyle", "tea", "dinner"],
+  "tech bro escape": ["cocktail", "rooftop", "dinner", "club", "late-night"],
+  "vintage vibes": ["thrift store", "coffee", "random gem", "cocktail"],
+  "weekend warriors": ["bar", "speakeasy", "bar", "club", "late-night"],
+  "winter warm-up": ["cafe", "museum", "cocktail", "speakeasy"],
+  "work session": ["coffee", "workspace", "lunch", "coffee", "cocktail"]
 };
   
   const themeMap = {
-  "date night": ["romantic", "cocktail", "jazz", "twilight", "vibe", "wine", "dim", "moody"],
-  "work session": ["cafe", "wifi", "coffee", "focus", "quiet", "workspace", "daytime"],
-  "party time": ["club", "dance", "beats", "late", "dj", "loud", "drinks", "bar"],
-  "mindful mornings": ["yoga", "meditation", "spa", "sunlight", "tea", "calm", "minimal", "introspective", "garden", "journal", "wellness"],
-  "creative kickstart": ["studio", "journal", "sketch", "gallery", "quiet", "inspiration", "café", "bookstore", "sunny", "vinyl", "art", "notebook"],
-  "self-care": ["spa", "relax", "yoga", "meditation", "serenity", "retreat", "tea"],
-  "art & culture": ["gallery", "museum", "art", "exhibit", "creative", "theater", "film"],
-  "cheap & cheerful": ["diner", "cheap", "budget", "street", "casual", "$", "bite", "fast"],
-  "rooftops & views": ["rooftop", "view", "skyline", "sunset", "elevated", "balcony", "overlook"],
-  "foodie tour": ["restaurant", "tasting", "chef", "bistro", "eats", "gastro", "brunch"],
-  "chill hang": ["lounge", "cozy", "relaxed", "intimate", "chill", "sofa", "vintage"],
-  "hidden gems": ["speakeasy", "secret", "underground", "niche", "alt", "unmarked", "local"],
-  "sunrise start": ["coffee", "matcha", "sunrise", "morning", "café", "bakery", "brunch", "acai", "patio", "quiet"],
-  "golden hour": ["rooftop", "patio", "sunset", "cocktail", "wine", "view", "outdoor", "aperitif", "photogenic"],
-  "nightcap circuit": ["speakeasy", "whiskey", "jazz", "cozy", "lounge", "low light", "late", "neat", "intimate"],
-  "post-work wind down": ["happy hour", "bar", "tapas", "light bite", "craft beer", "after work", "relax", "casual"],
-  "midday recharge": ["lunch", "coffee", "café", "juice", "quick bite", "park", "sunlight", "relaxed", "low key", "grab-and-go"],
-  "health nut": ["wellness", "juice", "smoothie", "matcha", "organic", "spa", "bathhouse", "vegan", "yoga", "light bite"],
-  "artsy & indie": ["gallery", "vinyl", "underground", "zine", "eclectic", "alt", "poetry", "studio", "indie", "niche"],
-  "tech bro escape": ["steakhouse", "cocktail", "crypto", "rooftop", "sleek", "bourbon", "high-end", "modern", "rare", "network"],
-  "rom-com main character": ["twilight", "charming", "patio", "vintage", "wine", "candlelit", "walkable", "cozy", "date", "serendipity"],
-  "solo explorer": ["bookstore", "quiet", "scenic", "café", "park", "rooftop", "garden", "introspective", "nook", "wander"],
-  "brunch & beyond": ["brunch", "mimosa", "day party", "pancakes", "bistro", "patio", "sunny", "casual", "daytime"],
-  "saturday surge": ["dance", "dj", "crowded", "club", "party", "high energy", "beats", "rooftop", "late", "scene"],
-  "sunday reset": ["garden", "tea", "spa", "quiet", "book", "relax", "wellness", "reflection", "meditation", "sunlight"],
-  "weekend warriors": ["dive bar", "after hours", "shots", "karaoke", "late night", "chaotic", "party", "crowd", "open late"],
-  "late start legends": ["brunch", "cocktails", "twilight", "pre-game", "vibe", "evening", "casual", "low key", "date"]
+  "art & culture": ["gallery", "museum", "art", "exhibit", "creative", "theater", "film", "architecture", "history", "design", "photography"],
+  "artsy & indie": ["gallery", "vinyl", "underground", "zine", "eclectic", "alt", "poetry", "studio", "indie", "niche", "handmade", "crafts", "bohemian"],
+  "brunch & beyond": ["brunch", "mimosa", "day party", "pancakes", "bistro", "patio", "sunny", "casual", "daytime", "weekend", "outdoor", "social"],
+  "cheap & cheerful": ["diner", "cheap", "budget", "street", "casual", "$", "bite", "fast", "local", "market", "takeout", "food truck"],
+  "chill hang": ["lounge", "cozy", "relaxed", "intimate", "chill", "sofa", "vintage", "casual", "warm", "neighborhood", "laid-back", "friendly"],
+  "creative kickstart": ["studio", "journal", "sketch", "gallery", "quiet", "inspiration", "café", "bookstore", "sunny", "vinyl", "art", "notebook", "design", "creative space", "makers"],
+  "date day": ["brunch", "park", "casual", "romantic", "patio", "stroll", "serendipity", "daytime", "garden", "outdoor", "café", "dessert"],
+  "date night": ["romantic", "cocktail", "jazz", "twilight", "vibe", "wine", "dim", "moody", "candlelit", "intimate", "charming", "slow-paced"],
+  "foodie tour": ["restaurant", "tasting", "chef", "bistro", "eats", "gastro", "brunch", "dining", "flavors", "street food", "multi-course", "local cuisine"],
+  "friends night out": ["loud", "crowded", "bar", "dinner", "club", "dj", "party", "scene", "drinks", "late-night", "social", "vibrant"],
+  "gallery crawl": ["gallery", "exhibit", "art", "creative", "museum", "vernissage", "opening", "culture", "fine art", "contemporary", "showcase", "art walk"],
+  "golden hour": ["rooftop", "patio", "sunset", "cocktail", "wine", "view", "outdoor", "aperitif", "photogenic", "skyline", "twilight", "glow"],
+  "health nut": ["wellness", "juice", "smoothie", "matcha", "organic", "spa", "bathhouse", "vegan", "yoga", "light bite", "gym", "meditation", "fresh"],
+  "hidden gems": ["speakeasy", "secret", "underground", "niche", "alt", "unmarked", "local", "offbeat", "exclusive", "rare", "quirky", "low-profile"],
+  "late start legends": ["brunch", "cocktails", "twilight", "pre-game", "vibe", "evening", "casual", "low key", "date", "nightlife", "urban", "chill"],
+  "luxe life": ["fine dining", "exclusive", "high-end", "rooftop", "wine", "luxury", "private", "VIP", "premium", "gourmet", "opulent", "exclusive view"],
+  "midday recharge": ["lunch", "coffee", "café", "juice", "quick bite", "park", "sunlight", "relaxed", "low key", "grab-and-go", "outdoor", "break"],
+  "mindful mornings": ["yoga", "meditation", "spa", "sunlight", "tea", "calm", "minimal", "introspective", "garden", "journal", "wellness", "fresh air", "stretch"],
+  "neighborhood sampler": ["walkable", "local", "market", "coffee", "casual", "random gem", "community vibe", "shops", "restaurants", "street life", "hidden spot", "corner café"],
+  "nightcap circuit": ["speakeasy", "whiskey", "jazz", "cozy", "lounge", "low light", "late", "neat", "intimate", "bar", "cigar", "smooth"],
+  "party time": ["club", "dance", "beats", "late", "dj", "loud", "drinks", "bar", "crowded", "energy", "flashy", "after hours"],
+  "post-work wind down": ["happy hour", "bar", "tapas", "light bite", "craft beer", "after work", "relax", "casual", "patio", "drinks", "evening", "mingle"],
+  "quiet escape": ["tea", "bookstore", "park", "quiet", "introspective", "relaxed", "cozy", "minimal", "serene", "slow", "niche", "retreat"],
+  "rom-com main character": ["twilight", "charming", "patio", "vintage", "wine", "candlelit", "walkable", "cozy", "date", "serendipity", "scenic", "whimsical"],
+  "rooftops & views": ["rooftop", "view", "skyline", "sunset", "elevated", "balcony", "overlook", "outdoor", "cocktail", "scenic", "glamorous", "night lights"],
+  "saturday surge": ["dance", "dj", "crowded", "club", "party", "high energy", "beats", "rooftop", "late", "scene", "vibrant", "after hours"],
+  "self-care": ["spa", "relax", "yoga", "meditation", "serenity", "retreat", "tea", "calm", "detox", "massage", "rejuvenate", "peace"],
+  "solo explorer": ["bookstore", "quiet", "scenic", "café", "park", "rooftop", "garden", "introspective", "nook", "wander", "hidden spot", "photo walk"],
+  "sports day": ["active", "game", "match", "fitness", "team", "outdoor", "energy", "training", "stadium", "competition", "field", "spectator"],
+  "street food safari": ["market", "street", "casual", "cheap", "local", "spicy", "crowd", "quick bite", "vendor", "takeout", "night market", "pop-up"],
+  "summer splash": ["pool", "juice", "sun", "cocktail", "rooftop", "warm weather", "chill", "beach", "lounge", "bar", "outdoor", "day party"],
+  "sunrise start": ["coffee", "matcha", "sunrise", "morning", "café", "bakery", "brunch", "acai", "patio", "quiet", "fresh", "early"],
+  "sunset lovers": ["park", "view", "golden hour", "romantic", "cocktail", "outdoor", "patio", "date", "skyline", "twilight", "serene", "photogenic"],
+  "sunday reset": ["garden", "tea", "spa", "quiet", "book", "relax", "wellness", "reflection", "meditation", "sunlight", "fresh", "slow"],
+  "tech bro escape": ["steakhouse", "cocktail", "crypto", "rooftop", "sleek", "bourbon", "high-end", "modern", "rare", "network", "exclusive", "private"],
+  "vintage vibes": ["thrift", "retro", "vintage", "coffee", "vinyl", "nostalgic", "eclectic", "antique", "boho", "quirky", "retro bar", "record shop"],
+  "weekend warriors": ["dive bar", "after hours", "shots", "karaoke", "late night", "chaotic", "party", "crowd", "open late", "wild", "rowdy", "social"],
+  "winter warm-up": ["café", "cozy", "fireplace", "museum", "speakeasy", "cocktail", "chill", "seasonal", "warm drinks", "snug", "intimate", "soft light"],
+  "work session": ["cafe", "wifi", "coffee", "focus", "quiet", "workspace", "daytime", "study", "productive", "neighborhood", "light music", "comfortable seating"]
 };
 
 function matchesTheme(loc, theme) {
