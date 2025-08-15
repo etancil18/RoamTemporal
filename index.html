@@ -1,6 +1,7 @@
 
+
 <head>
-  <title>NYC Roam Temporal Map</title>
+  <title>ATL Roam Temporal Map</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -47,69 +48,77 @@
   <input type="text" id="vibeSearchInput" placeholder="What's the vibe..." />
   <select id="themeDropdown">
   <option value="">Select Theme</option>
-<option value="art & culture">Art & Culture</option>
-<option value="artsy & indie">Artsy & Indie</option>
-<option value="brunch & beyond">Brunch & Beyond</option>
-<option value="cheap & cheerful">Cheap & Cheerful</option>
-<option value="chill hang">Chill Hang</option>
-<option value="creative kickstart">Creative Kickstart</option>
-<option value="date day">Date Day</option>
-<option value="date night">Date Night</option>
-<option value="foodie tour">Foodie Tour</option>
-<option value="friends night out">Friends Night Out</option>
-<option value="gallery crawl">Gallery Crawl</option>
-<option value="golden hour">Golden Hour</option>
-<option value="health nut">Health Nut</option>
-<option value="hidden gems">Hidden Gems</option>
-<option value="late start legends">Late Start Legends</option>
-<option value="luxe life">Luxe Life</option>
-<option value="midday recharge">Midday Recharge</option>
-<option value="mindful mornings">Mindful Mornings</option>
-<option value="neighborhood sampler">Neighborhood Sampler</option>
-<option value="nightcap circuit">Nightcap Circuit</option>
-<option value="party time">Party Time</option>
-<option value="post-work wind down">Post-Work Wind Down</option>
-<option value="quiet escape">Quiet Escape</option>
-<option value="rom-com main character">Rom-Com Main Character</option>
-<option value="rooftops & views">Rooftops & Views</option>
-<option value="saturday surge">Saturday Surge</option>
-<option value="self-care">Self-Care</option>
-<option value="solo explorer">Solo Explorer</option>
-<option value="sports day">Sports Day</option>
-<option value="street food safari">Street Food Safari</option>
-<option value="summer splash">Summer Splash</option>
-<option value="sunrise start">Sunrise Start</option>
-<option value="sunset lovers">Sunset Lovers</option>
-<option value="sunday reset">Sunday Reset</option>
-<option value="tech bro escape">Tech Bro Escape</option>
-<option value="vintage vibes">Vintage Vibes</option>
-<option value="weekend warriors">Weekend Warriors</option>
-<option value="winter warm-up">Winter Warm-Up</option>
-<option value="work session">Work Session</option>
+  <option value="al fresco all day">Al Fresco All Day</option>
+  <option value="art & culture">Art & Culture</option>
+  <option value="art to afterparty">Art to Afterparty</option>
+  <option value="artsy & indie">Artsy & Indie</option>
+  <option value="brunch & beyond">Brunch & Beyond</option>
+  <option value="cheap & cheerful">Cheap & Cheerful</option>
+  <option value="chill hang">Chill Hang</option>
+  <option value="creative kickstart">Creative Kickstart</option>
+  <option value="date day">Date Day</option>
+  <option value="date night">Date Night</option>
+  <option value="foodie tour">Foodie Tour</option>
+  <option value="friends night out">Friends Night Out</option>
+  <option value="gallery crawl">Gallery Crawl</option>
+  <option value="health nut">Health Nut</option>
+  <option value="hidden gems">Hidden Gems</option>
+  <option value="last call">Last Call</option>
+  <option value="late start legends">Late Start Legends</option>
+  <option value="luxe life">Luxe Life</option>
+  <option value="midday recharge">Midday Recharge</option>
+  <option value="mindful mornings">Mindful Mornings</option>
+  <option value="music mile">Music Mile</option>
+  <option value="neighborhood sampler">Neighborhood Sampler</option>
+  <option value="nightcap circuit">Nightcap Circuit</option>
+  <option value="pages to pours">Pages to Pours</option>
+  <option value="party time">Party Time</option>
+  <option value="patio perfection">Patio Perfection</option>
+  <option value="post-work wind down">Post-Work Wind Down</option>
+  <option value="quiet escape">Quiet Escape</option>
+  <option value="rom-com main character">Rom-Com Main Character</option>
+  <option value="rooftops & views">Rooftops & Views</option>
+  <option value="saturday surge">Saturday Surge</option>
+  <option value="self-care">Self-Care</option>
+  <option value="solo explorer">Solo Explorer</option>
+  <option value="sports day">Sports Day</option>
+  <option value="street food safari">Street Food Safari</option>
+  <option value="stretch, shop, sip">Stretch, Shop, Sip</option>
+  <option value="sunrise start">Sunrise Start</option>
+  <option value="sunset lovers">Sunset Lovers</option>
+  <option value="sunday reset">Sunday Reset</option>
+  <option value="tech bro escape">Tech Bro Escape</option>
+  <option value="vintage vibes">Vintage Vibes</option>
+  <option value="weekend warriors">Weekend Warriors</option>
+  <option value="work session">Work Session</option>
   </select>
   <select id="neighborhood-input">
-  <option value="">Select Neighborhood</option>
-  <option value="alphabet city">Alphabet City</option>
-  <option value="bedstuy">BedStuy</option>
-  <option value="bushwick">Bushwick</option>
-  <option value="chelsea">Chelsea</option>
-  <option value="chinatown">Chinatown</option>
-  <option value="clinton hill">Clinton Hill</option>
-  <option value="downtown brooklyn">Downtown Brooklyn</option>
-  <option value="dumbo">Dumbo</option>
-  <option value="east village">East Village</option>
-  <option value="gramercy">Gramercy</option>
-  <option value="greenpoint">Greenpoint</option>
-  <option value="greenwich village">Greenwich Village</option>
-  <option value="lower east side">Lower East Side</option>
-  <option value="long island city">Long Island City</option>
-  <option value="midtown">Midtown</option>
-  <option value="soho">SoHo</option>
-  <option value="tribeca">Tribeca</option>
-  <option value="upper east side">Upper East Side</option>
-  <option value="upper west side">Upper West Side</option>
-  <option value="west village">West Village</option>
-  <option value="williamsburg">Williamsburg</option>
+<option value="">Select Neighborhood</option>
+<option value="alphabet city">Alphabet City</option>
+<option value="bedstuy">BedStuy</option>
+<option value="bushwick">Bushwick</option>
+<option value="chelsea">Chelsea</option>
+<option value="chinatown">Chinatown</option>
+<option value="clinton hill">Clinton Hill</option>
+<option value="crown heights">Crown Heights</option>
+<option value="downtown brooklyn">Downtown Brooklyn</option>
+<option value="dumbo">Dumbo</option>
+<option value="east village">East Village</option>
+<option value="fort greene">Fort Greene</option>
+<option value="gowanus">Gowanus</option>
+<option value="gramercy">Gramercy</option>
+<option value="greenpoint">Greenpoint</option>
+<option value="greenwich village">Greenwich Village</option>
+<option value="long island city">Long Island City</option>
+<option value="lower east side">Lower East Side</option>
+<option value="midtown">Midtown</option>
+<option value="red hook">Red Hook</option>
+<option value="soho">SoHo</option>
+<option value="tribeca">Tribeca</option>
+<option value="upper east side">Upper East Side</option>
+<option value="upper west side">Upper West Side</option>
+<option value="west village">West Village</option>
+<option value="williamsburg">Williamsburg</option>
 </select>
   <select id="priceFilter">
     <option value="">Price</option>
@@ -329,6 +338,8 @@ function filterMarkersByVibe() {
 
 // ─── RENDER MARKERS (with Similar & Add-To-Route) ──────────────────────────────
 const markerLayer = L.layerGroup().addTo(map);
+// 🔹 Global cache for all markers (used by the route filter)
+window.allMarkers = window.allMarkers || [];
 
 function showRouteControls() {
   const popup = document.querySelector('.leaflet-popup-content');
@@ -370,7 +381,8 @@ function showRouteControls() {
 
 function renderMarkers(events, crawlMode = false) {
   markerLayer.clearLayers();
-  allMarkers = [];
+  // 🔹 Reset and rebuild the global marker cache each render
+  window.allMarkers = [];
 
   const weekdayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
   const todayIndex = new Date().getDay();
@@ -391,7 +403,9 @@ function renderMarkers(events, crawlMode = false) {
       shadowSize: [41, 41]
     });
 
-    const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon });
+    // 🔹 Tag each marker with a stable venueId (used for route filtering)
+    const venueId = ev.id || ev.name;
+    const marker = L.marker([parseFloat(ev.lat), parseFloat(ev.lon)], { icon, venueId });
     marker.ev = ev;
 
     marker.bindPopup(`<strong>${ev.name}</strong><br>${(ev.vibe || '').split(',').map(v => v.trim()).join(', ')}`);
@@ -404,15 +418,17 @@ function renderMarkers(events, crawlMode = false) {
       marker.bindTooltip("🔴 Live Today!", { permanent: true }).addTo(map);
     }
 
-    allMarkers.push(marker);
+    // 🔹 Keep an authoritative list of all markers
+    window.allMarkers.push(marker);
   });
 
-  allMarkers.forEach(marker => {
+  window.allMarkers.forEach(marker => {
     const ev = marker.ev;
     const latlng = marker.getLatLng();
     const isOpen = isLocationOpenNow(ev);
 
     if (crawlMode) {
+      // In crawl mode, just add the markers you passed in
       marker.addTo(markerLayer);
       return;
     }
@@ -422,7 +438,7 @@ function renderMarkers(events, crawlMode = false) {
       .map(v => v.trim().toLowerCase())
       .filter(Boolean);
 
-    const similar = allMarkers
+    const similar = window.allMarkers
       .filter(m => m !== marker && latlng.distanceTo(m.getLatLng()) <= 350)
       .filter(m => {
         const otherVibes = (m.ev.vibe || '')
@@ -455,23 +471,225 @@ function renderMarkers(events, crawlMode = false) {
     marker.bindPopup(popupContent).addTo(markerLayer);
 
     marker.on('popupopen', () => {
-  setTimeout(() => {
-    const popup = marker._popup.getElement();
-    const btn = popup.querySelector('.add-route-btn');
-    if (btn) {
-      console.log("✅ Add to Route button found for:", ev.name);
-      btn.onclick = () => {
-        console.log("🟢 Add to Route clicked for:", ev.name);
-        addToRoute(ev);
-      };
-    } else {
-      console.warn("❌ Add to Route button not found in popup");
+      setTimeout(() => {
+        const popup = marker._popup.getElement();
+        const btn = popup.querySelector('.add-route-btn');
+        if (btn) {
+          console.log("✅ Add to Route button found for:", ev.name);
+          btn.onclick = () => {
+            console.log("🟢 Add to Route clicked for:", ev.name);
+            addToRoute(ev);
+          };
+        } else {
+          console.warn("❌ Add to Route button not found in popup");
+        }
+      }, 50); // Slight delay ensures DOM is ready
+    });
+  });
+
+  // ─── 🔒 Keep shared views filtered post-render (if ?route= is present) ───
+  try {
+    const params = new URLSearchParams(location.search);
+    const q = params.get('route');
+    if (q) {
+      const ids = q.split(',').map(s => s.trim()).filter(Boolean);
+      showOnlyRouteMarkers(map, window.allMarkers || [], ids);
     }
-  }, 50); // Slight delay ensures DOM is ready
+  } catch (e) {
+    console.warn('Post-render route filter failed:', e);
+  }
+
+  // ─── 🔔 Signal once that markers are fully rendered ───
+  window.dispatchEvent(new CustomEvent('markers:rendered'));
+}
+
+  // --- Bootstrap: apply route from URL after markers exist ---
+function getRouteIdsFromURL() {
+  try {
+    const params = new URLSearchParams(location.search);
+    const q = params.get('route');
+    return q ? q.split(',').map(s => s.trim()).filter(Boolean) : [];
+  } catch { return []; }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const routeIds = getRouteIdsFromURL();
+  if (!routeIds.length) return;
+
+  // Apply immediately if markers already exist...
+  const tryApply = () => {
+    if ((window.allMarkers || []).length) {
+      applyRouteFromURL();                 // your existing function (now sets selectedRoute + enables clear)
+      window.removeEventListener('markers:rendered', tryApply);
+    }
+  };
+
+  // ...otherwise wait for renderMarkers to finish
+  window.addEventListener('markers:rendered', tryApply);
+  tryApply();
 });
+
+
+  function applyRouteFromURL(){
+  const params = new URLSearchParams(location.search);
+  const route = params.get('route');
+  if (!route) return;
+
+  const routeIds = route.split(',').map(s => s.trim()).filter(Boolean);
+
+  // Hide non-route markers immediately
+  showOnlyRouteMarkers(map, window.allMarkers || [], routeIds);
+
+  // Rebuild waypoints / route line if desired
+  const byId = new Map(globalEvents.map(ev => [ev.id || ev.name, ev]));
+  const matchedEvents = routeIds.map(id => byId.get(id)).filter(Boolean);
+
+  // Keep selectedRoute in sync
+  window.selectedRoute = matchedEvents;
+
+  const waypoints = matchedEvents.map(loc => 
+    L.latLng(parseFloat(loc.lat), parseFloat(loc.lon))
+  );
+
+  if (window.routeLayer) map.removeControl(window.routeLayer);
+  if (waypoints.length >= 2) {
+    window.routeLayer = L.Routing.control({
+      waypoints,
+      routeWhileDragging: false,
+      draggableWaypoints: false,
+      addWaypoints: false,
+      show: false
+    }).addTo(map);
+  }
+
+  // ✅ Enable Clear Route button since a route is now active
+  if (typeof setClearRouteButtonEnabled === 'function') {
+    setClearRouteButtonEnabled(true);
+  }
+}
+
+
+// 🔹 Route filtering helpers (keep only markers that are part of the route)
+function showOnlyRouteMarkers(map, markers, routeIds) {
+  const routeSet = new Set(routeIds);
+  markerLayer.clearLayers(); // 🔑 reset the group to avoid ghosts
+
+  (markers || []).forEach(m => {
+    const onRoute = routeSet.has(m.options && m.options.venueId);
+    if (onRoute) {
+      markerLayer.addLayer(m); // 🔑 add back into the same group
+    }
   });
 }
-    
+
+// 🔹 Convenience: call this right after you set selectedRoute in generateCrawlRoute()
+function filterMapToRoute() {
+  try {
+    const routeIds = (selectedRoute || []).map(l => l.id || l.name);
+    showOnlyRouteMarkers(map, window.allMarkers || [], routeIds);
+  } catch (e) {
+    console.warn('Marker filtering failed:', e);
+  }
+}
+
+  // --- Ensure expected globals exist ---
+window.allMarkers   = window.allMarkers   || [];   // filled by renderMarkers()
+window.routeLayer   = window.routeLayer   || null; // L.Routing.control instance
+window.routeGroup   = window.routeGroup   || null; // optional LayerGroup for route-only pins
+window.selectedRoute= window.selectedRoute|| [];   // your in-memory route array
+
+// Bring all markers back into the visible layer group
+function restoreAllMarkers(map, markers) {
+  if (!window.markerLayer) {
+    console.warn('markerLayer not found; creating a new one');
+    window.markerLayer = L.layerGroup().addTo(map);
+  }
+  markerLayer.clearLayers();
+  (markers || []).forEach(m => markerLayer.addLayer(m));
+}
+
+// Full clear: remove route line/control, restore markers, reset state + URL
+// --- bring all markers back into the visible layer group (NEW) ---
+function restoreAllMarkers(map, markers) {
+  if (!window.markerLayer) {
+    console.warn('markerLayer not found; creating a new one');
+    window.markerLayer = L.layerGroup().addTo(map);
+  }
+  markerLayer.clearLayers();
+  (markers || []).forEach(m => markerLayer.addLayer(m));
+}
+
+function clearRoute(){
+  // 1) Remove the route line / control
+  if (window.routeLayer) {
+    try { map.removeControl(window.routeLayer); } catch(_) {}
+    window.routeLayer = null;
+  }
+
+  // 2) Restore ALL markers to the map (via markerLayer)
+  restoreAllMarkers(map, window.allMarkers || []);
+
+  // 3) If you used a dedicated route-only group, clear it
+  if (window.routeGroup) { try { window.routeGroup.clearLayers(); } catch(_) {} }
+
+  // 4) Reset in-memory route state
+  window.selectedRoute = [];
+
+  // 5) Strip ?route= from the URL so reloads don't re-filter the map
+  try {
+    const url = new URL(location.href);
+    if (url.searchParams.has('route')) {
+      url.searchParams.delete('route');
+      history.replaceState(null, '', url.toString());
+    }
+  } catch (e) {
+    console.warn('URL cleanup failed:', e);
+  }
+
+  // 6) (Optional) clear any UI summary
+  if (typeof showCrawlSummary === 'function') {
+    try { showCrawlSummary([]); } catch(_) {}
+  }
+
+  // 7) (Optional) disable the clear button until a new route is built
+  setClearRouteButtonEnabled(false);
+
+  console.log('🧹 Route cleared and markers restored');
+}
+
+// Utility: enable/disable the Clear Route button for good UX
+function setClearRouteButtonEnabled(enabled) {
+  const btn = document.getElementById('clearRouteBtn');
+  if (!btn) return;
+  btn.disabled = !enabled;
+  btn.style.opacity = enabled ? '1' : '0.6';
+  btn.style.cursor  = enabled ? 'pointer' : 'not-allowed';
+}
+
+// Wire the Clear Route button (robust to DOM timing) (UPDATED)
+(function wireClearRouteButton(){
+  const hook = () => {
+    const btn = document.getElementById('clearRouteBtn');
+    if (!btn) { console.warn('#clearRouteBtn not found in DOM'); return; }
+    btn.addEventListener('click', clearRoute);
+    // Start disabled until a route exists
+    setClearRouteButtonEnabled(!!(window.selectedRoute && window.selectedRoute.length));
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', hook);
+  } else {
+    hook();
+  }
+})();
+
+// Call this AFTER you generate a route to enable the button automatically.
+// Example: after `selectedRoute = [...crawlRoute]; showCrawlSummary(crawlRoute);`
+function onRouteGenerated() {
+  setClearRouteButtonEnabled(true);
+}
+
+
+  
 fetch('events.json')
   .then(res => res.json())
   .then(events => {
@@ -552,15 +770,19 @@ const neighborhoodCenters = {
   "chelsea": L.latLng(40.7465, -74.0014),
   "chinatown": L.latLng(40.7158, -73.9970),
   "clinton hill": L.latLng(40.6896, -73.9606),
+  "crown heights": L.latLng(40.6681, -73.9448),
   "downtown brooklyn": L.latLng(40.6928, -73.9903),
   "dumbo": L.latLng(40.7033, -73.9881),
   "east village": L.latLng(40.7260, -73.9816),
+  "fort greene": L.latLng(40.6870, -73.9750),
+  "gowanus": L.latLng(40.6753, -73.9911),
   "gramercy": L.latLng(40.7376, -73.9857),
   "greenpoint": L.latLng(40.7301, -73.9546),
   "greenwich village": L.latLng(40.7336, -74.0027),
   "lower east side": L.latLng(40.7150, -73.9843),
   "long island city": L.latLng(40.7440, -73.9488),
   "midtown": L.latLng(40.7549, -73.9840),
+  "red hook": L.latLng(40.6770, -74.0110),
   "soho": L.latLng(40.7233, -74.0030),
   "tribeca": L.latLng(40.7163, -74.0086),
   "upper east side": L.latLng(40.7736, -73.9566),
@@ -570,49 +792,54 @@ const neighborhoodCenters = {
 };
 
   const crawlFlows = {
+  "al fresco all day": ["brunch", "garden", "patio", "cocktail", "dinner"],
   "art & culture": ["gallery", "museum", "cocktail", "music", "dessert"],
-  "artsy & indie": ["gallery", "random gem", "bookstore", "wine bar", "music", "cafe"],
+  "art to afterparty": ["gallery", "exhibit", "wine bar", "dinner", "club"],
+  "artsy & indie": ["gallery", "random gem", "bookstore", "wine bar", "dinner", "music"],
   "brunch & beyond": ["brunch", "market", "rooftop", "bar", "dessert"],
   "cheap & cheerful": ["coffee", "market", "random gem", "gallery", "dinner", "bar"],
   "chill hang": ["coffee", "bookstore", "random gem", "lifestyle", "bar", "dessert"],
-  "creative kickstart": ["coffee", "gallery", "random gem", "bookstore", "cafe"],
-  "date day": ["brunch", "park", "random gem", "cocktail", "dessert"],
-  "date night": ["cafe", "dinner", "cocktail", "music", "speakeasy", "dessert"],
+  "creative kickstart": ["coffee", "gallery", "random gem", "bookstore", "lunch"],
+  "date day": ["brunch", "park", "random gem", "lifestyle", "dinner", "dessert"],
+  "date night": ["dinner", "music", "speakeasy", "dessert"],
   "foodie tour": ["market", "lunch", "cocktail", "dinner", "dessert"],
   "friends night out": ["bar", "bar", "dinner", "club", "late-night"],
-  "gallery crawl": ["gallery", "gallery", "cafe", "wine bar", "music"],
-  "golden hour": ["rooftop", "cocktail", "wine bar", "dinner"],
+  "gallery crawl": ["gallery", "gallery", "lunch", "wine bar", "music"],
   "health nut": ["fitness", "juice bar", "spa", "garden"],
   "hidden gems": ["random gem", "cafe", "restaurant", "speakeasy", "bar"],
+  "last call": ["bar", "club", "late-night", "speakeasy", "lounge", "after hours"],
   "late start legends": ["brunch", "bar", "cocktail", "dinner", "speakeasy", "lounge"],
-  "luxe life": ["lounge", "fine dining", "cocktail", "rooftop"],
+  "luxe life": ["gallery", "dinner", "cocktail", "lounge"],
   "midday recharge": ["coffee", "lunch", "park", "gallery"],
   "mindful mornings": ["wellness", "coffee", "garden", "market", "spa"],
-  "neighborhood sampler": ["cafe", "random gem", "lunch", "gallery", "bar"],
+  "music mile": ["live music", "bar", "dinner", "cocktail", "club"],
+  "neighborhood sampler": ["coffee", "random gem", "lunch", "gallery", "bar"],
   "nightcap circuit": ["cocktail", "speakeasy", "lounge", "dessert"],
+  "pages to pours": ["bookstore", "coffee", "gallery", "wine bar", "lounge"],
   "party time": ["bar", "dinner", "bar", "club", "late-night"],
+  "patio perfection": ["brunch", "rooftop", "cocktail", "dinner", "dessert"],
   "post-work wind down": ["bar", "dinner", "cocktail", "lounge"],
   "quiet escape": ["bookstore", "tea", "park", "random gem", "lounge"],
   "rom-com main character": ["coffee", "gallery", "wine bar", "rooftop", "speakeasy"],
   "rooftops & views": ["rooftop", "cocktail", "dinner", "lounge"],
   "saturday surge": ["activity", "bar", "dinner", "bar", "club", "late-night"],
   "self-care": ["fitness", "spa", "tea", "bookstore", "park"],
-  "solo explorer": ["cafe", "random gem", "bookstore", "market", "park", "rooftop"],
-  "sports day": ["fitness", "activity", "bar", "dinner"],
+  "solo explorer": ["coffee", "random gem", "bookstore", "market", "park", "rooftop"],
+  "sports day": ["fitness", "activity", "lunch", "bar", "dinner"],
   "street food safari": ["market", "street food", "cocktail", "dessert"],
-  "summer splash": ["pool", "juice bar", "rooftop", "dinner", "late-night"],
-  "sunrise start": ["bakery", "coffee", "park", "market", "brunch"],
-  "sunset lovers": ["park", "view", "cocktail", "rooftop", "dinner"],
+  "stretch, shop, sip": ["yoga", "lifestyle", "juice bar", "brunch", "dessert"],
+  "sunrise start": ["fitness", "bakery", "coffee", "market", "park"],
+  "sunset lovers": ["park", "rooftop", "dinner", "cocktail"],
   "sunday reset": ["fitness", "market", "lifestyle", "tea", "dinner"],
   "tech bro escape": ["cocktail", "rooftop", "dinner", "club", "late-night"],
   "vintage vibes": ["thrift store", "coffee", "random gem", "cocktail"],
   "weekend warriors": ["bar", "speakeasy", "bar", "club", "late-night"],
-  "winter warm-up": ["cafe", "museum", "cocktail", "speakeasy"],
-  "work session": ["coffee", "workspace", "lunch", "coffee", "cocktail"]
+  "work session": ["coffee", "lunch", "coffee", "cocktail"]
 };
+
   
   const themeMap = {
-  "art & culture": ["gallery", "museum", "art", "exhibit", "creative", "theater", "film", "architecture", "history", "design", "photography"],
+  "art & culture": ["gallery", "aesthetic", "museum", "art", "exhibit", "creative", "theater", "film", "architecture", "history", "design", "photography"],
   "artsy & indie": ["gallery", "vinyl", "underground", "zine", "eclectic", "alt", "poetry", "studio", "indie", "niche", "handmade", "crafts", "bohemian"],
   "brunch & beyond": ["brunch", "mimosa", "day party", "pancakes", "bistro", "patio", "sunny", "casual", "daytime", "weekend", "outdoor", "social"],
   "cheap & cheerful": ["diner", "cheap", "budget", "street", "casual", "$", "bite", "fast", "local", "market", "takeout", "food truck"],
@@ -622,12 +849,12 @@ const neighborhoodCenters = {
   "date night": ["romantic", "cocktail", "jazz", "twilight", "vibe", "wine", "dim", "moody", "candlelit", "intimate", "charming", "slow-paced"],
   "foodie tour": ["restaurant", "tasting", "chef", "bistro", "eats", "gastro", "brunch", "dining", "flavors", "street food", "multi-course", "local cuisine"],
   "friends night out": ["loud", "crowded", "bar", "dinner", "club", "dj", "party", "scene", "drinks", "late-night", "social", "vibrant"],
-  "gallery crawl": ["gallery", "exhibit", "art", "creative", "museum", "vernissage", "opening", "culture", "fine art", "contemporary", "showcase", "art walk"],
-  "golden hour": ["rooftop", "patio", "sunset", "cocktail", "wine", "view", "outdoor", "aperitif", "photogenic", "skyline", "twilight", "glow"],
-  "health nut": ["wellness", "juice", "smoothie", "matcha", "organic", "spa", "bathhouse", "vegan", "yoga", "light bite", "gym", "meditation", "fresh"],
+  "gallery crawl": ["gallery", "exhibit", "art", "creative", "museum", "opening", "culture", "fine art", "contemporary", "showcase", "art walk"],
+  "health nut": ["wellness", "juice", "smoothie", "matcha", "organic", "spa", "bathhouse", "vegan", "yoga", "fitness", "light bite", "gym", "meditation", "fresh"],
   "hidden gems": ["speakeasy", "secret", "underground", "niche", "alt", "unmarked", "local", "offbeat", "exclusive", "rare", "quirky", "low-profile"],
+  "last call": ["late-night", "karaoke", "after hours", "lively", "spontaneous", "gritty", "unfiltered", "nocturnal", "dance", "dark", "shots", "underground", "loose", "unhinged", "boozy", "nightcap"],
   "late start legends": ["brunch", "cocktails", "twilight", "pre-game", "vibe", "evening", "casual", "low key", "date", "nightlife", "urban", "chill"],
-  "luxe life": ["fine dining", "exclusive", "high-end", "rooftop", "wine", "luxury", "private", "VIP", "premium", "gourmet", "opulent", "exclusive view"],
+  "luxe life": ["fine dining", "aesthetic", "exclusive", "high-end", "rooftop", "wine", "luxury", "private", "VIP", "premium", "gourmet", "opulent", "exclusive view"],
   "midday recharge": ["lunch", "coffee", "café", "juice", "quick bite", "park", "sunlight", "relaxed", "low key", "grab-and-go", "outdoor", "break"],
   "mindful mornings": ["yoga", "meditation", "spa", "sunlight", "tea", "calm", "minimal", "introspective", "garden", "journal", "wellness", "fresh air", "stretch"],
   "neighborhood sampler": ["walkable", "local", "market", "coffee", "casual", "random gem", "community vibe", "shops", "restaurants", "street life", "hidden spot", "corner café"],
@@ -642,16 +869,21 @@ const neighborhoodCenters = {
   "solo explorer": ["bookstore", "quiet", "scenic", "café", "park", "rooftop", "garden", "introspective", "nook", "wander", "hidden spot", "photo walk"],
   "sports day": ["active", "game", "match", "fitness", "team", "outdoor", "energy", "training", "stadium", "competition", "field", "spectator"],
   "street food safari": ["market", "street", "casual", "cheap", "local", "spicy", "crowd", "quick bite", "vendor", "takeout", "night market", "pop-up"],
-  "summer splash": ["pool", "juice", "sun", "cocktail", "rooftop", "warm weather", "chill", "beach", "lounge", "bar", "outdoor", "day party"],
   "sunrise start": ["coffee", "matcha", "sunrise", "morning", "café", "bakery", "brunch", "acai", "patio", "quiet", "fresh", "early"],
   "sunset lovers": ["park", "view", "golden hour", "romantic", "cocktail", "outdoor", "patio", "date", "skyline", "twilight", "serene", "photogenic"],
   "sunday reset": ["garden", "tea", "spa", "quiet", "book", "relax", "wellness", "reflection", "meditation", "sunlight", "fresh", "slow"],
   "tech bro escape": ["steakhouse", "cocktail", "crypto", "rooftop", "sleek", "bourbon", "high-end", "modern", "rare", "network", "exclusive", "private"],
   "vintage vibes": ["thrift", "retro", "vintage", "coffee", "vinyl", "nostalgic", "eclectic", "antique", "boho", "quirky", "retro bar", "record shop"],
   "weekend warriors": ["dive bar", "after hours", "shots", "karaoke", "late night", "chaotic", "party", "crowd", "open late", "wild", "rowdy", "social"],
-  "winter warm-up": ["café", "cozy", "fireplace", "museum", "speakeasy", "cocktail", "chill", "seasonal", "warm drinks", "snug", "intimate", "soft light"],
-  "work session": ["cafe", "wifi", "coffee", "focus", "quiet", "workspace", "daytime", "study", "productive", "neighborhood", "light music", "comfortable seating"]
+  "work session": ["cafe", "wifi", "coffee", "focus", "quiet", "workspace", "daytime", "study", "productive", "neighborhood", "light music", "comfortable seating"],
+   "patio perfection": ["patio", "al fresco", "open-air", "sunny", "shade", "breezy", "terrace", "brunchy", "plants", "outdoor", "chill", "garden", "social", "view", "loungy", "relaxed"],
+  "art to afterparty": ["gallery", "creative", "art", "edgy", "expressive", "cocktail", "night", "music", "mood", "chic", "theater", "neon", "bold", "late", "styled", "scene"],
+  "pages to pours": ["bookstore", "quiet", "cozy", "literary", "analog", "warm", "vintage", "library", "indie", "wine", "reflective", "moody", "ink", "writerly", "poetic", "sips"],
+  "al fresco all day": ["sunny", "bloom", "green", "garden", "light", "fresh", "outdoor", "easy", "brunch", "picnic", "open-air", "dog-friendly", "mellow", "daytime", "leisure", "floral", "relaxing"],
+  "music mile": ["live", "sound", "vinyl", "stage", "dance", "band", "DJ", "retro", "acoustic", "loud", "rhythm", "bass", "eclectic", "energy", "jam", "neon", "beat"],
+  "stretch, shop, sip": ["yoga", "fit", "lifestyle", "luxe", "local", "boutique", "intentional", "wellness", "fresh", "feminine", "spa", "curated", "flow", "soft", "leisure", "balance"]
 };
+
 
 function matchesTheme(loc, theme) {
   const keywords = themeMap[theme] || [];
@@ -670,6 +902,54 @@ function getCurrentDayPart() {
   if (hour >= 16 && hour < 19) return ['HH'];
   if (hour >= 19 && hour < 22) return ['E'];
   return ['L']; // Late night or overnight
+}
+
+ // day key from Date object
+function _dayKey(d) {
+  return ["sun","mon","tue","wed","thu","fri","sat"][d.getDay()];
+}
+
+// normalize to array of {open, close} objects
+function _ranges(x) {
+  if (!x) return [];
+  return Array.isArray(x) ? x : [x];
+}
+
+// Get actual open/close Date objects for a given date
+function _intervalsForDate(d, hours) {
+  const y = d.getFullYear(), m = d.getMonth(), day = d.getDate();
+  const zero = new Date(y, m, day);
+  zero.setHours(0, 0, 0, 0);
+
+  const at = h => new Date(zero.getTime() + h * 3600 * 1000);
+
+  const out = [];
+  // today's ranges
+  (_ranges(hours[_dayKey(d)])).forEach(r => {
+    out.push([at(r.open), at(r.close)]);
+  });
+
+  // yesterday's late ranges (>24h close)
+  const yst = new Date(zero);
+  yst.setDate(zero.getDate() - 1);
+  (_ranges(hours[_dayKey(yst)])).forEach(r => {
+    if (r.close > 24) {
+      const yZero = new Date(yst);
+      yZero.setHours(0, 0, 0, 0);
+      out.push([
+        new Date(yZero.getTime() + r.open * 3600 * 1000),
+        new Date(yZero.getTime() + r.close * 3600 * 1000)
+      ]);
+    }
+  });
+
+  return out;
+}
+
+// Check if a location is open at a given datetime
+function isOpenAt(loc, when) {
+  const hours = loc.hoursNumeric || {};
+  return _intervalsForDate(when, hours).some(([o, c]) => when >= o && when < c);
 }
 
   function showCrawlSummary(crawlRoute) {
@@ -714,16 +994,21 @@ function getCurrentDayPart() {
   };
   summaryDiv.appendChild(exportBtn);
 
-  const shareBtn = document.createElement("button");
-  shareBtn.textContent = "Copy Crawl Link";
-  shareBtn.onclick = () => {
-    const baseUrl = window.location.origin + window.location.pathname;
-    const encoded = encodeURIComponent(JSON.stringify(crawlRoute));
-    const link = `${baseUrl}?crawl=${encoded}`;
-    navigator.clipboard.writeText(link).then(() => {
-      alert("Link copied to clipboard!");
-    });
-  };
+  function copyShareableRouteLink(crawlRoute){
+  const ids = (crawlRoute || []).map(l => l.id || l.name).join(',');
+  const url = new URL(location.href);
+  url.searchParams.set('route', ids);   // short & robust
+  navigator.clipboard.writeText(url.toString()).then(() => {
+    alert('Route link copied!');
+  }).catch(err => console.warn('Copy failed:', err));
+}
+
+// Replace your existing shareBtn.onclick with this:
+const shareBtn = document.createElement("button");
+shareBtn.textContent = "Copy Crawl Link";
+shareBtn.onclick = () => {
+  copyShareableRouteLink(selectedRoute || []);
+};
   summaryDiv.appendChild(shareBtn);
 
   const closeBtn = document.createElement("button");
@@ -745,6 +1030,11 @@ function generateCrawlRoute() {
 
   let center;
   console.log('🚨 generateCrawlRoute() triggered');
+
+  // Crawl timing
+const crawlStart = new Date();      // or read from a UI input if you expose one
+const bufferHours = 1;              // your D+1 rule (“+1” hour buffer between stops)
+
 
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
   const priceFilter = document.getElementById('priceFilter').value.trim();
@@ -895,9 +1185,13 @@ function generateCrawlRoute() {
   const sorted = validLocations.filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500).sort((a, b) => b._score - a._score);
 
   const crawlStages = crawlFlows[theme] || [];
-  const crawlRoute = [];
-  let timeSpent = 0;
-  let lastPoint = center;
+const crawlRoute = [];
+let timeSpent = 0;
+let lastPoint = center;
+
+// D+1 timing state
+let lastStopStartTime = new Date(crawlStart); // first stop begins at crawlStart
+let lastStopDuration = 0;                     // populated after picking a stop
 
   let startingStageIndex = crawlStages.findIndex(stage => {
     return sorted.some(loc => loc.type === stage && themeKeywords.some(kw => [...loc.vibe, ...loc.tags].includes(kw)));
@@ -909,24 +1203,59 @@ function generateCrawlRoute() {
   }
 
   for (let i = startingStageIndex; i < crawlStages.length; i++) {
-    const stage = crawlStages[i];
-    const stageCandidates = sorted.filter(loc => {
-      const vibeAndTags = [...(loc.vibe || []), ...(loc.tags || [])];
-      const matchesType = loc.type === stage;
-      const matchesVibe = themeKeywords.some(kw => vibeAndTags.includes(kw));
-      const withinDistance = lastPoint.distanceTo(L.latLng(loc.lat, loc.lon)) <= 800;
-      const fitsTime = timeSpent + (loc.duration || 1) <= maxDuration;
-      return matchesType && matchesVibe && withinDistance && fitsTime;
-    });
+  const stage = crawlStages[i];
 
-    if (!stageCandidates.length) continue;
+  const stageCandidates = sorted.filter(loc => {
+    const vibeAndTags = [...(loc.vibe || []), ...(loc.tags || [])];
+    const matchesType = loc.type === stage;
+    const matchesVibe = themeKeywords.some(kw => vibeAndTags.includes(kw));
+    const withinDistance = lastPoint.distanceTo(L.latLng(loc.lat, loc.lon)) <= 800;
+    const fitsTime = timeSpent + (loc.duration || 1) <= maxDuration;
 
-    const next = stageCandidates[Math.floor(Math.random() * stageCandidates.length)];
-    crawlRoute.push(next);
-    timeSpent += next.duration || 1;
-    lastPoint = L.latLng(next.lat, next.lon);
-    sorted.splice(sorted.indexOf(next), 1);
-  }
+    // D+1 arrival time (no travel time per your requirement)
+    // Rule: only enforce D+1 *after* the initial stop.
+    // If crawlRoute.length === 0, we're selecting the very first stop—skip D+1 check.
+    let passesDPlusOne = true;
+    if (crawlRoute.length > 0) {
+      const arrivalD1 = new Date(
+        lastStopStartTime.getTime()
+        + (lastStopDuration || (crawlRoute[crawlRoute.length-1]?.duration || 1))*3600_000
+        + (1 * 3600_000) // +1 hour buffer
+      );
+      passesDPlusOne = isOpenAt(loc, arrivalD1);
+      // Optional: store debug data for summary logs
+      loc._arrivalCheck = arrivalD1.toISOString();
+      loc._arrivalPass = passesDPlusOne;
+    }
+
+    return matchesType && matchesVibe && withinDistance && fitsTime && passesDPlusOne;
+  });
+
+  if (!stageCandidates.length) continue;
+
+  const next = stageCandidates[Math.floor(Math.random() * stageCandidates.length)];
+
+console.log('[D+1 CHECK]', {
+  candidate: next.name,
+  arrivalAt: next._arrivalCheck || '(first stop)',
+  passed: next._arrivalPass ?? true
+});
+    
+  crawlRoute.push(next);
+
+  // update timing state for next hop
+  lastStopStartTime = (crawlRoute.length === 1) ? new Date(crawlStart) : new Date(
+    lastStopStartTime.getTime()
+    + (lastStopDuration || (crawlRoute[crawlRoute.length-2]?.duration || 1))*3600_000
+    + (bufferHours * 3600_000) // D+1 buffer between previous and this stop
+  );
+  lastStopDuration = next.duration || 1;
+
+  timeSpent += next.duration || 1;
+  lastPoint = L.latLng(next.lat, next.lon);
+  sorted.splice(sorted.indexOf(next), 1);
+}
+
 
   if (crawlRoute.length < 2) {
     alert('Could not build a full crawl with available stops.');
@@ -945,6 +1274,16 @@ function generateCrawlRoute() {
 
   selectedRoute = [...crawlRoute];
   showCrawlSummary(crawlRoute);
+  filterMapToRoute();
+  setClearRouteButtonEnabled(selectedRoute.length >= 2);
+
+  // Hide other locations on the map
+try {
+  const routeIds = crawlRoute.map(l => l.id || l.name); // whatever your marker uses
+  showOnlyRouteMarkers(map, window.allMarkers || [], routeIds);
+} catch (e) {
+  console.warn('Marker filtering failed:', e);
+}
 }
 
    // ✅ Only trigger crawl logic on button click — no arguments needed
