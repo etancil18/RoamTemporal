@@ -318,6 +318,42 @@ function addToRoute(ev) {
   updateRoutePreview(); // this shows the list of stops on the right side
 }
 
+// Save a single venue to "My Favorites" ──────────────────────────────────────────────────────
+function saveVenueToFavorites(ev) {
+  try {
+    const key = 'savedFavorites'; // keep routes under 'savedRoutes' and singles under 'savedFavorites'
+    const existing = localStorage.getItem(key);
+    const favorites = existing ? JSON.parse(existing) : [];
+
+    // de-dupe by id or name
+    const vid = ev.id || ev.name;
+    const already = favorites.some(f => (f.id || f.name) === vid);
+    if (already) {
+      alert('Already in My Favorites.');
+      return;
+    }
+
+    // store a compact record (extend if you want)
+    favorites.push({
+      id: ev.id || null,
+      name: ev.name,
+      lat: parseFloat(ev.lat),
+      lon: parseFloat(ev.lon),
+      link: ev.link || '',
+      vibe: ev.vibe || '',
+      price: ev.price || '',
+      tags: ev.tags || '',
+      addedAt: Date.now()
+    });
+
+    localStorage.setItem(key, JSON.stringify(favorites));
+    alert(`Added “${ev.name}” to My Favorites!`);
+  } catch (e) {
+    console.warn('saveVenueToFavorites failed:', e);
+    alert('Could not save to favorites.');
+  }
+}
+
 // ─── FILTER MARKERS ────────────────────────────────────────────────────
 function filterMarkersByVibe() {
   const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
@@ -454,38 +490,56 @@ function renderMarkers(events, crawlMode = false) {
       : '<em>No similar places nearby.</em>';
 
     const popupContent = `
-      <div style="font-size:14px;line-height:1.4;">
-        <strong>${ev.name}</strong><br/>
-        <em>Vibe:</em> ${ev.vibe}<br/>
-        <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
-        <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
-        <a href="${ev.link}" target="_blank">More Info</a>
-        <hr/>
-        <strong>Could also be the move..:</strong>
-        ${similarList}
-        <br/><br/>
-        <button class="add-route-btn">Add to Route</button>
-      </div>
-    `;
+  <div style="font-size:14px;line-height:1.4;">
+    <strong>${ev.name}</strong><br/>
+    <em>Vibe:</em> ${ev.vibe}<br/>
+    <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
+    <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
+    <a href="${ev.link}" target="_blank">More Info</a>
+    <hr/>
+    <strong>Could also be the move..</strong>
+    ${similarList}
+    <br/><br/>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <button class="add-route-btn">Add to Route</button>
+      <button class="add-fav-btn">Add to Favorites</button>
+    </div>
+  </div>
+`;
+
 
     marker.bindPopup(popupContent).addTo(markerLayer);
 
     marker.on('popupopen', () => {
-      setTimeout(() => {
-        const popup = marker._popup.getElement();
-        const btn = popup.querySelector('.add-route-btn');
-        if (btn) {
-          console.log("✅ Add to Route button found for:", ev.name);
-          btn.onclick = () => {
-            console.log("🟢 Add to Route clicked for:", ev.name);
-            addToRoute(ev);
-          };
-        } else {
-          console.warn("❌ Add to Route button not found in popup");
-        }
-      }, 50); // Slight delay ensures DOM is ready
-    });
-  });
+  setTimeout(() => {
+    const popup = marker._popup.getElement();
+
+    // Existing: Add to Route
+    const btn = popup.querySelector('.add-route-btn');
+    if (btn) {
+      console.log("✅ Add to Route button found for:", ev.name);
+      btn.onclick = () => {
+        console.log("🟢 Add to Route clicked for:", ev.name);
+        addToRoute(ev);
+      };
+    } else {
+      console.warn("❌ Add to Route button not found in popup");
+    }
+
+    // ⬇️ NEW: Add to Favorites (from #3)
+    const favBtn = popup.querySelector('.add-fav-btn');
+    if (favBtn) {
+      console.log("✅ Add to Favorites button found for:", ev.name);
+      favBtn.onclick = () => {
+        console.log("⭐ Add to Favorites clicked for:", ev.name);
+        saveVenueToFavorites(ev);
+      };
+    } else {
+      console.warn("❌ Add to Favorites button not found in popup");
+    }
+  }, 50); // Slight delay ensures DOM is ready
+});
+
 
   // ─── 🔒 Keep shared views filtered post-render (if ?route= is present) ───
   try {
@@ -687,7 +741,6 @@ function setClearRouteButtonEnabled(enabled) {
 function onRouteGenerated() {
   setClearRouteButtonEnabled(true);
 }
-
 
   
 fetch('events.json')
