@@ -1661,7 +1661,7 @@ function openFavoritesModal() {
         <a href="${href}" target="_blank" rel="noopener">${safeName}</a>
         <div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;">
           <button data-idx="${idx}" class="center-fav">Center on Map</button>
-          <button class="build-route-from-fav" data-idx="${idx}">Build Route From This</button>
+          <button data-idx="${idx}" class="build-route-from-fav">Build Route From This</button>
           <button data-idx="${idx}" class="remove-fav">Remove</button>
         </div>
       </li>
@@ -1783,20 +1783,21 @@ document.querySelectorAll('.center-fav').forEach(btn => {
   };
 });
 
-// ✅ NEW: Build a route starting from this favorite (UI hook for the engine)
+// Build a route starting from this favorite
 document.querySelectorAll('.build-route-from-fav').forEach(btn => {
   btn.onclick = () => {
     const idx = +btn.dataset.idx;
+    const favs = JSON.parse(localStorage.getItem('savedFavorites') || '[]');
     const f = favs[idx];
     if (!f) return;
 
-    // Kick off the favorite-based crawl (engine must be defined globally)
+    // Your engine entry point (must be defined globally)
     startCrawlFromFavorite(f.id || f.name, { maxStops: 6, startTime: new Date() });
 
-    // Close modal after launching the route (optional)
-    document.getElementById('modal')?.remove();
+    document.getElementById('modal')?.remove(); // optional: close modal
   };
 });
+
 
 document.querySelectorAll('.remove-fav').forEach(btn => {
   btn.onclick = () => {
