@@ -490,54 +490,53 @@ function renderMarkers(events, crawlMode = false) {
       : '<em>No similar places nearby.</em>';
 
     const popupContent = `
-  <div style="font-size:14px;line-height:1.4;">
-    <strong>${ev.name}</strong><br/>
-    <em>Vibe:</em> ${ev.vibe}<br/>
-    <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
-    <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
-    <a href="${ev.link}" target="_blank">More Info</a>
-    <hr/>
-    <strong>Could also be the move..:</strong>
-    ${similarList}
-    <br/><br/>
-    <button class="add-route-btn">Add to Route</button>
-    <button class="add-fav-btn">Add to Favorites</button>
-  </div>
-`;
+      <div style="font-size:14px;line-height:1.4;">
+        <strong>${ev.name}</strong><br/>
+        <em>Vibe:</em> ${ev.vibe}<br/>
+        <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
+        <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
+        <a href="${ev.link}" target="_blank">More Info</a>
+        <hr/>
+        <strong>Could also be the move..:</strong>
+        ${similarList}
+        <br/><br/>
+        <button class="add-route-btn">Add to Route</button>
+        <button class="add-fav-btn">Add to Favorites</button>
+      </div>
+    `;
 
-marker.bindPopup(popupContent).addTo(markerLayer);
+    marker.bindPopup(popupContent).addTo(markerLayer);
 
-marker.on('popupopen', () => {
-  setTimeout(() => {
-    const popup = marker._popup.getElement();
+    marker.on('popupopen', () => {
+      setTimeout(() => {
+        const popup = marker._popup.getElement();
 
-    // Add to Route
-    const btn = popup.querySelector('.add-route-btn');
-    if (btn) {
-      console.log("✅ Add to Route button found for:", ev.name);
-      btn.onclick = () => {
-        console.log("🟢 Add to Route clicked for:", ev.name);
-        addToRoute(ev);
-      };
-    } else {
-      console.warn("❌ Add to Route button not found in popup");
-    }
+        // Add to Route
+        const btn = popup.querySelector('.add-route-btn');
+        if (btn) {
+          console.log("✅ Add to Route button found for:", ev.name);
+          btn.onclick = () => {
+            console.log("🟢 Add to Route clicked for:", ev.name);
+            addToRoute(ev);
+          };
+        } else {
+          console.warn("❌ Add to Route button not found in popup");
+        }
 
-    // Add to Favorites
-    const favBtn = popup.querySelector('.add-fav-btn');
-    if (favBtn) {
-      console.log("✅ Add to Favorites button found for:", ev.name);
-      favBtn.onclick = () => {
-        console.log("⭐ Add to Favorites clicked for:", ev.name);
-        saveVenueToFavorites(ev);
-      };
-    } else {
-      console.warn("❌ Add to Favorites button not found in popup");
-    }
-  }, 50);
-});
-
-
+        // Add to Favorites
+        const favBtn = popup.querySelector('.add-fav-btn');
+        if (favBtn) {
+          console.log("✅ Add to Favorites button found for:", ev.name);
+          favBtn.onclick = () => {
+            console.log("⭐ Add to Favorites clicked for:", ev.name);
+            saveVenueToFavorites(ev);
+          };
+        } else {
+          console.warn("❌ Add to Favorites button not found in popup");
+        }
+      }, 50);
+    });
+  }); // ← missing brace fixed here
 
   // ─── 🔒 Keep shared views filtered post-render (if ?route= is present) ───
   try {
@@ -554,6 +553,7 @@ marker.on('popupopen', () => {
   // ─── 🔔 Signal once that markers are fully rendered ───
   window.dispatchEvent(new CustomEvent('markers:rendered'));
 }
+
 
   // --- Bootstrap: apply route from URL after markers exist ---
 function getRouteIdsFromURL() {
