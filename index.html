@@ -497,24 +497,21 @@ function renderMarkers(events, crawlMode = false) {
     <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
     <a href="${ev.link}" target="_blank">More Info</a>
     <hr/>
-    <strong>Could also be the move..</strong>
+    <strong>Could also be the move..:</strong>
     ${similarList}
     <br/><br/>
-    <div style="display:flex; gap:8px; flex-wrap:wrap;">
-      <button class="add-route-btn">Add to Route</button>
-      <button class="add-fav-btn">Add to Favorites</button>
-    </div>
+    <button class="add-route-btn">Add to Route</button>
+    <button class="add-fav-btn">Add to Favorites</button>
   </div>
 `;
 
+marker.bindPopup(popupContent).addTo(markerLayer);
 
-    marker.bindPopup(popupContent).addTo(markerLayer);
-
-    marker.on('popupopen', () => {
+marker.on('popupopen', () => {
   setTimeout(() => {
     const popup = marker._popup.getElement();
 
-    // Existing: Add to Route
+    // Add to Route
     const btn = popup.querySelector('.add-route-btn');
     if (btn) {
       console.log("✅ Add to Route button found for:", ev.name);
@@ -526,7 +523,7 @@ function renderMarkers(events, crawlMode = false) {
       console.warn("❌ Add to Route button not found in popup");
     }
 
-    // ⬇️ NEW: Add to Favorites (from #3)
+    // Add to Favorites
     const favBtn = popup.querySelector('.add-fav-btn');
     if (favBtn) {
       console.log("✅ Add to Favorites button found for:", ev.name);
@@ -537,8 +534,9 @@ function renderMarkers(events, crawlMode = false) {
     } else {
       console.warn("❌ Add to Favorites button not found in popup");
     }
-  }, 50); // Slight delay ensures DOM is ready
+  }, 50);
 });
+
 
 
   // ─── 🔒 Keep shared views filtered post-render (if ?route= is present) ───
