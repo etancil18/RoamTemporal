@@ -639,6 +639,252 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 }
 
+// =========================
+// Route from a Favorite
+// =========================
+
+// --- Config ---
+const STAGE_GROUPS = [
+  ["coffee","bakery"],                              // 1
+  ["fitness"],                                      // 2
+  ["market","breakfast","brunch"],                  // 3
+  ["park","bookstore","gallery"],                   // 4
+  ["lifestyle","random gem"],                       // 5
+  ["lunch"],                                        // 6
+  ["park","bookstore","gallery","activity"],        // 7
+  ["cocktail","random gem"],                        // 8
+  ["dinner"],                                       // 9
+  ["bar","cocktail","speakeasy","lounge"]           // 10
+];
+
+// distance caps (meters)
+const DIST_CAP_DEFAULT = 500;
+const DIST_CAP_MEAL    = 1000; // breakfast/brunch/lunch/dinner types
+
+// How long to linger and buffer between stops
+const DEFAULT_DURATION_HOURS = 1;     // fallbacks if missing
+const BUFFER_HOURS = 1;               // your D+1 rule from earlier
+
+// --- Time helpers you already use elsewhere ---
+function _dayKey(d) { return ["sun","mon","tue","wed","thu","fri","sat"][d.getDay()]; }
+function _ranges(x){ if(!x) return []; return Array.isArray(x)?x:[x]; }
+function _intervalsForDate(d, hours){
+  const y=d.getFullYear(), m=d.getMonth(), day=d.getDate();
+  const zero = new Date(y,m,day); zero.setHours(0,0,0,0);
+  const at = h=> new Date(zero.getTime() + h*3600*1000);
+  const out=[];
+  _ranges(hours[_dayKey(d)]||[]).forEach(r=>out.push([at(r.open), at(r.close)]));
+  const yst = new Date(zero); yst.setDate(zero.getDate()-1);
+  _ranges(hours[_dayKey(yst)]||[]).forEach(r=>{
+    if(r.close>24){
+      const yz = new Date(yst); yz.setHours(0,0,0,0);
+      out.push([new Date(yz.getTime()+r.open*3600*1000), new Date(yz.getTime()+r.close*3600*1000)]);
+    }
+  });
+  return out;
+}
+function isOpenAt(loc, when){
+  const hours = loc.hoursNumeric || {};
+  return _intervalsForDate(when, hours).some(([o,c])=> when>=o && when<c);
+}
+
+// --- Geo helper ---
+function distanceMeters(aLat,aLon,bLat,bLon){
+  const R=6371000, toRad=d=>d*Math.PI/180;
+  const dLat = toRad(bLat-aLat), dLon = toRad(bLon-aLon);
+  const la1=toRad(aLat), la2=toRad(bLat);
+  const h = Math.sin(dLat/2)**2 + Math.cos(la1)*Math.cos(la2)*Math.sin(dLon/2)**2;
+  return 2*R*Math.asin(Math.sqrt(h));
+}
+
+// --- Vibes overlap helper ---
+function vibesArray(loc){
+  const v = (loc.vibe || '').split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
+  const t = (loc.tags || '').split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
+  // de-dupe
+  return Array.from(new Set([...v, ...t]));
+}
+function vibeOverlapCount(a,b){
+  const A = new Set(vibesArray(a));
+  let c=0; vibesArray(b).forEach(x=>{ if(A.has(x)) c++;});
+  return c;
+}
+
+// --- Type normalization (so "bar, dinner" matches "bar") ---
+function hasType(loc, desired){
+  const types = (loc.type || '').split(',').map(s=>s.trim().toLowerCase());
+  return types.some(t => desired.includes(t));
+}
+function isMealType(loc){
+  const meals = ["breakfast","brunch","lunch","dinner"];
+  const types = (loc.type || '').split(',').map(s=>s.trim().toLowerCase());
+  return types.some(t => meals.includes(t));
+}
+
+// --- Daypart sanity: avoid morning-only when it’s afternoon, etc. ---
+function daypartAllowedForNow(loc, now){
+  // If loc.dayParts is an object of {sun:'M',...}, read today’s letter.
+  // If array or string, fall back to hoursNumeric check only.
+  const dp = (typeof loc.dayParts === 'object' && loc.dayParts !== null && !Array.isArray(loc.dayParts))
+    ? loc.dayParts[_dayKey(now)]
+    : null;
+  if (!dp || dp === '-' ) return true; // unknown; let hoursNumeric gating do the work
+
+  const hour = now.getHours() + now.getMinutes()/60;
+  const letter = String(dp).toUpperCase();
+
+  // Rough mapping windows (tune if you have stricter rules):
+  const windowByLetter = {
+    M:  [5, 12],        // Morning
+    MD: [10, 15],       // Midday / Lunch
+    A:  [12, 17],       // Afternoon
+    HH: [16, 19],       // Happy Hour / early evening
+    E:  [17, 24],       // Evening
+    L:  [22, 28],       // Late (wrap past midnight)
+  };
+  const w = windowByLetter[letter];
+  if (!w) return true;
+  const [start, end] = w;
+  if (end <= 24) return hour >= start && hour < end;
+  // handle late-night wrap
+  return (hour >= start && hour <= 24) || (hour < (end-24));
+}
+
+// --- Build sequence starting at the best index for current time ---
+function sequencedStagesForNow(now){
+  // Basic heuristic: morning bias start near index 0; evening near dinner/bar.
+  const h = now.getHours() + now.getMinutes()/60;
+  let startIdx = 0;
+  if (h >= 10.5 && h < 13) startIdx = 2;        // late morning → breakfast/brunch
+  else if (h >= 13 && h < 16) startIdx = 4;     // early afternoon → lifestyle/random gem
+  else if (h >= 16 && h < 19) startIdx = 7;     // HH → cocktail/random
+  else if (h >= 19 && h < 22) startIdx = 8;     // dinner
+  else if (h >= 22 || h < 3) startIdx = 9;      // late → bar/cocktail/speakeasy
+  // rotate sequence to start at startIdx but still keep order
+  return STAGE_GROUPS.slice(startIdx).concat(STAGE_GROUPS.slice(0,startIdx));
+}
+
+// --- Core: generate from a single favorite ---
+function generateRouteFromFavorite(favorite, opts = {}) {
+  const now = opts.startTime || new Date();
+  const maxStops = opts.maxStops || 6;
+
+  // 1) map favorite to a globalEvents entry (so we have full fields like hoursNumeric)
+  const byId = new Map(globalEvents.map(ev => [ev.id || ev.name, ev]));
+  const start = byId.get(favorite.id || favorite.name) || favorite; // fall back to favorite object
+
+  // 2) seed route with the favorite as first stop
+  const route = [start];
+  let last = start;
+  let lastStart = new Date(now);
+  let lastDuration = Number(start.duration) || DEFAULT_DURATION_HOURS;
+
+  // 3) build stage plan relative to current time, but ensure the first stage group
+  //    is compatible with the favorite's type (otherwise treat favorite as "pre-stage" and proceed)
+  const stagePlan = sequencedStagesForNow(now);
+
+  // 4) Precompute candidates pool with coords and vibes
+  const pool = globalEvents
+    .filter(ev => (ev.lat && ev.lon))
+    .map(ev => ({...ev, lat: parseFloat(ev.lat), lon: parseFloat(ev.lon)}))
+    .filter(ev => (ev.id || ev.name) !== (start.id || start.name));
+
+  // 5) iterative pick
+  for (let i = 0; i < stagePlan.length && route.length < maxStops; i++) {
+    const desiredTypes = stagePlan[i]; // e.g., ["cocktail","random gem"]
+    // arrival time for NEXT stop: previousStart + previousDuration + buffer (no travel time by your rule)
+    const arrival = new Date(lastStart.getTime() + (lastDuration + BUFFER_HOURS) * 3600 * 1000);
+
+    // Filter candidates by: type, distance, open at arrival, vibe overlap, daypart sanity
+    let candidates = pool.filter(ev => {
+      const matchesType = hasType(ev, desiredTypes);
+      if (!matchesType) return false;
+
+      const cap = isMealType(ev) ? DIST_CAP_MEAL : DIST_CAP_DEFAULT;
+      const dist = distanceMeters(last.lat, last.lon, ev.lat, ev.lon);
+      if (dist > cap) return false;
+
+      if (!daypartAllowedForNow(ev, arrival)) return false;
+      if (!isOpenAt(ev, arrival)) return false;
+
+      // require at least 1 common vibe/tag with the previous stop
+      if (vibeOverlapCount(ev, last) < 1) return false;
+
+      return true;
+    });
+
+    if (!candidates.length) continue;
+
+    // Score: closer + more vibe overlap preferred
+    candidates.forEach(ev => {
+      const dist = distanceMeters(last.lat, last.lon, ev.lat, ev.lon);
+      const overlap = vibeOverlapCount(ev, last);
+      ev.__score = (overlap * 1000) - dist; // arbitrary: 1 vibe ~= 1km advantage
+    });
+    candidates.sort((a,b)=> (b.__score - a.__score));
+
+    const next = candidates[0];
+    route.push(next);
+
+    // advance time & state
+    last = next;
+    lastStart = arrival; // we “start” the next stop at arrival (D+1 rule)
+    lastDuration = Number(next.duration) || DEFAULT_DURATION_HOURS;
+
+    // remove chosen from pool
+    const idx = pool.findIndex(p => (p.id||p.name) === (next.id||next.name));
+    if (idx >= 0) pool.splice(idx,1);
+  }
+
+  return route;
+}
+
+// --- Render route + keep only route markers ---
+function renderRouteOnMapFromList(route){
+  if (!route || !route.length) return;
+  window.selectedRoute = route;
+
+  const ids = route.map(l => l.id || l.name);
+  showOnlyRouteMarkers(map, window.allMarkers || [], ids);
+
+  if (window.routeLayer) map.removeControl(window.routeLayer);
+  const waypoints = route.map(loc => L.latLng(parseFloat(loc.lat), parseFloat(loc.lon)));
+  if (waypoints.length >= 2) {
+    window.routeLayer = L.Routing.control({
+      waypoints,
+      routeWhileDragging: false,
+      draggableWaypoints: false,
+      addWaypoints: false,
+      show: false
+    }).addTo(map);
+    try {
+      const bounds = L.latLngBounds(waypoints);
+      if (bounds.isValid()) map.fitBounds(bounds.pad(0.2));
+    } catch(_){}
+  }
+
+  if (typeof setClearRouteButtonEnabled === 'function') setClearRouteButtonEnabled(true);
+
+  // update URL (?route=...) so it’s shareable
+  try {
+    const url = new URL(location.href);
+    url.searchParams.set('route', ids.join(','));
+    history.replaceState(null, '', url.toString());
+  } catch(_){}
+}
+
+// --- Public entry: start a crawl from a saved favorite by id or name ---
+function startCrawlFromFavorite(favIdOrName, options = {}) {
+  // fetch favorite from localStorage
+  const favs = (() => { try { return JSON.parse(localStorage.getItem('savedFavorites')||'[]'); } catch { return []; }})();
+  const fav = favs.find(f => (f.id || f.name) === favIdOrName);
+  if (!fav) { alert('Favorite not found.'); return; }
+
+  const route = generateRouteFromFavorite(fav, options);
+  if (!route || route.length < 1) { alert('Could not build a route from that favorite.'); return; }
+  renderRouteOnMapFromList(route);
+}
+
 
 // 🔹 Route filtering helpers (keep only markers that are part of the route)
 function showOnlyRouteMarkers(map, markers, routeIds) {
@@ -1404,24 +1650,26 @@ function openFavoritesModal() {
   `;
 
   if (!favs.length) {
-    html += '<p style="margin:0 0 8px;"><em>No saved places yet.</em></p>';
-  } else {
-    html += '<ul style="padding-left:18px;margin:0 0 8px;">';
-    favs.forEach((f, idx) => {
-      const safeName = (f.name || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-      const href = f.link || '#';
-      html += `
-        <li style="margin-bottom:10px;">
-          <a href="${href}" target="_blank" rel="noopener">${safeName}</a>
-          <div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;">
-            <button data-idx="${idx}" class="center-fav">Center on Map</button>
-            <button data-idx="${idx}" class="remove-fav">Remove</button>
-          </div>
-        </li>
-      `;
-    });
-    html += '</ul>';
-  }
+  html += '<p style="margin:0 0 8px;"><em>No saved places yet.</em></p>';
+} else {
+  html += '<ul style="padding-left:18px;margin:0 0 8px;">';
+  favs.forEach((f, idx) => {
+    const safeName = (f.name || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    const href = f.link || '#';
+    html += `
+      <li style="margin-bottom:10px;">
+        <a href="${href}" target="_blank" rel="noopener">${safeName}</a>
+        <div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;">
+          <button data-idx="${idx}" class="center-fav">Center on Map</button>
+          <button class="build-route-from-fav" data-idx="${idx}">Build Route From This</button>
+          <button data-idx="${idx}" class="remove-fav">Remove</button>
+        </div>
+      </li>
+    `;
+  });
+  html += '</ul>';
+}
+
 
   html += `
       <hr style="margin:12px 0;">
@@ -1518,31 +1766,46 @@ function openFavoritesModal() {
     };
   });
 
-  // --- Wire FAVORITE (single place) actions ---
-  document.querySelectorAll('.center-fav').forEach(btn => {
-    btn.onclick = () => {
-      const idx = +btn.dataset.idx;
-      const f = favs[idx];
-      if (!f) return;
-      const lat = parseFloat(f.lat), lon = parseFloat(f.lon);
-      if (isFinite(lat) && isFinite(lon)) map.setView([lat, lon], 16);
+ // --- Wire FAVORITE (single place) actions ---
+document.querySelectorAll('.center-fav').forEach(btn => {
+  btn.onclick = () => {
+    const idx = +btn.dataset.idx;
+    const f = favs[idx];
+    if (!f) return;
+    const lat = parseFloat(f.lat), lon = parseFloat(f.lon);
+    if (isFinite(lat) && isFinite(lon)) map.setView([lat, lon], 16);
 
-      // Try to open its existing marker popup if present
-      const m = (window.allMarkers || []).find(mk => (mk.options?.venueId === (f.id || f.name)));
-      if (m) m.openPopup();
-      // Keep modal open so user can act on others, or close if you prefer:
-      // document.getElementById('modal').remove();
-    };
-  });
+    // Try to open its existing marker popup if present
+    const m = (window.allMarkers || []).find(mk => (mk.options?.venueId === (f.id || f.name)));
+    if (m) m.openPopup();
+    // Keep modal open so user can act on others, or close if you prefer:
+    // document.getElementById('modal').remove();
+  };
+});
 
-  document.querySelectorAll('.remove-fav').forEach(btn => {
-    btn.onclick = () => {
-      const idx = +btn.dataset.idx;
-      favs.splice(idx, 1);
-      localStorage.setItem('savedFavorites', JSON.stringify(favs));
-      openFavoritesModal(); // re-render modal
-    };
-  });
+// ✅ NEW: Build a route starting from this favorite (UI hook for the engine)
+document.querySelectorAll('.build-route-from-fav').forEach(btn => {
+  btn.onclick = () => {
+    const idx = +btn.dataset.idx;
+    const f = favs[idx];
+    if (!f) return;
+
+    // Kick off the favorite-based crawl (engine must be defined globally)
+    startCrawlFromFavorite(f.id || f.name, { maxStops: 6, startTime: new Date() });
+
+    // Close modal after launching the route (optional)
+    document.getElementById('modal')?.remove();
+  };
+});
+
+document.querySelectorAll('.remove-fav').forEach(btn => {
+  btn.onclick = () => {
+    const idx = +btn.dataset.idx;
+    favs.splice(idx, 1);
+    localStorage.setItem('savedFavorites', JSON.stringify(favs));
+    openFavoritesModal(); // re-render modal
+  };
+});
 }
 
 
