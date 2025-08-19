@@ -354,6 +354,25 @@ function saveVenueToFavorites(ev) {
   }
 }
 
+function getSavedRoutes() {
+  try { return JSON.parse(localStorage.getItem('savedRoutes') || '[]'); } catch { return []; }
+}
+function setSavedRoutes(list) { localStorage.setItem('savedRoutes', JSON.stringify(list || [])); }
+
+function getSavedFavorites() {
+  try { return JSON.parse(localStorage.getItem('savedFavorites') || '[]'); } catch { return []; }
+}
+function setSavedFavorites(list) { localStorage.setItem('savedFavorites', JSON.stringify(list || [])); }
+
+function buildRouteIds(routeArr) {
+  return (routeArr || []).map(x => (x.id || x.name)).join(',');
+}
+function buildRouteShareUrl(routeArr) {
+  const url = new URL(location.href);
+  url.searchParams.set('route', buildRouteIds(routeArr));
+  return url.toString();
+}
+  
 // ─── FILTER MARKERS ────────────────────────────────────────────────────
 function filterMarkersByVibe() {
   const vibeSearch = document.getElementById('vibeSearchInput').value.trim().toLowerCase();
@@ -1340,65 +1359,192 @@ try {
    // ✅ Only trigger crawl logic on button click — no arguments needed
 document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
 
-  // Simple modal HTML injection
+  // Simple modal HTML injection (routes + single-place favorites)
 function openFavoritesModal() {
-  const savedFromStorage = localStorage.getItem('savedRoutes');
-  const routes = savedFromStorage ? JSON.parse(savedFromStorage) : [];
+  const routes = (() => {
+    try { return JSON.parse(localStorage.getItem('savedRoutes') || '[]'); } catch { return []; }
+  })();
+  const favs = (() => {
+    try { return JSON.parse(localStorage.getItem('savedFavorites') || '[]'); } catch { return []; }
+  })();
 
   console.log('📦 Routes from localStorage:', routes);
+  console.log('⭐ Favorites from localStorage:', favs);
 
   let html = `
-    <div id="modal" style="position:fixed;top:10%;left:50%;transform:translateX(-50%);background:white;padding:20px;z-index:2000;border:1px solid #ccc;max-height:80%;overflow:auto;box-shadow:0 0 10px rgba(0,0,0,0.3);border-radius:8px;">
-      <h2>Saved Routes</h2>
+    <div id="modal" style="position:fixed;top:10%;left:50%;transform:translateX(-50%);background:white;padding:20px;z-index:2000;border:1px solid #ccc;max-height:80%;overflow:auto;box-shadow:0 0 10px rgba(0,0,0,0.3);border-radius:8px;min-width:320px;">
+      <h2 style="margin-top:0;">My Favorites</h2>
+
+      <h3 style="margin:12px 0 6px;">Saved Routes</h3>
   `;
 
   if (!routes.length) {
-    html += '<p>No routes saved.</p>';
+    html += '<p style="margin:0 0 8px;"><em>No routes saved.</em></p>';
   } else {
+    html += '<ul style="padding-left:18px;margin:0 0 8px;">';
     routes.forEach((route, idx) => {
-      html += `<div style="margin-bottom:10px;"><strong>Route #${idx + 1}</strong><ul>`;
-      route.forEach(loc => {
-        html += `<li>${loc.name}</li>`;
-      });
-      html += `</ul>
-        <button data-idx="${idx}" class="load-route">Load</button>
-        <button data-idx="${idx}" class="export-route">Export to Google Maps</button>
-      </div>`;
+      const title = route[0]?.name ? route[0].name : `Route #${idx + 1}`;
+      html += `
+        <li style="margin-bottom:10px;">
+          <strong>${title}</strong> <em>(${route.length} stops)</em>
+          <div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;">
+            <button data-idx="${idx}" class="copy-route">Copy Link</button>
+            <button data-idx="${idx}" class="load-route">Load</button>
+            <button data-idx="${idx}" class="export-route">Open in Google Maps</button>
+            <button data-idx="${idx}" class="remove-route">Remove</button>
+          </div>
+        </li>
+      `;
     });
+    html += '</ul>';
   }
 
   html += `
-    <hr>
-    <button id="closeModal">Close</button>
+      <h3 style="margin:12px 0 6px;">Saved Places</h3>
+  `;
+
+  if (!favs.length) {
+    html += '<p style="margin:0 0 8px;"><em>No saved places yet.</em></p>';
+  } else {
+    html += '<ul style="padding-left:18px;margin:0 0 8px;">';
+    favs.forEach((f, idx) => {
+      const safeName = (f.name || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      const href = f.link || '#';
+      html += `
+        <li style="margin-bottom:10px;">
+          <a href="${href}" target="_blank" rel="noopener">${safeName}</a>
+          <div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;">
+            <button data-idx="${idx}" class="center-fav">Center on Map</button>
+            <button data-idx="${idx}" class="remove-fav">Remove</button>
+          </div>
+        </li>
+      `;
+    });
+    html += '</ul>';
+  }
+
+  html += `
+      <hr style="margin:12px 0;">
+      <div style="text-align:right;">
+        <button id="closeModal">Close</button>
+      </div>
     </div>
   `;
 
   document.getElementById('modal')?.remove(); // ensure no duplicate modals
   document.body.insertAdjacentHTML('beforeend', html);
 
+  // Close
   document.getElementById('closeModal').onclick = () => {
     document.getElementById('modal').remove();
   };
 
+  // --- Wire ROUTE actions ---
+  // Copy shareable link (?route=ID,ID,...)
+  document.querySelectorAll('.copy-route').forEach(btn => {
+    btn.onclick = () => {
+      const idx = +btn.dataset.idx;
+      const route = routes[idx] || [];
+      const ids = route.map(l => l.id || l.name).join(',');
+      const url = new URL(location.href);
+      url.searchParams.set('route', ids);
+      navigator.clipboard.writeText(url.toString()).then(() => alert('Route link copied!'));
+    };
+  });
+
+  // Load on map (filter to route markers, draw line, enable clear)
   document.querySelectorAll('.load-route').forEach(btn => {
     btn.onclick = () => {
-      selectedRoute = routes[btn.dataset.idx];
-      drawRoute();
+      const idx = +btn.dataset.idx;
+      const route = routes[idx] || [];
+      if (!route.length) return;
+
+      window.selectedRoute = route;
+
+      // Filter markers to route only
+      const routeIds = route.map(l => l.id || l.name);
+      showOnlyRouteMarkers(map, window.allMarkers || [], routeIds);
+
+      // Build routing line
+      if (window.routeLayer) map.removeControl(window.routeLayer);
+      const waypoints = route.map(loc => L.latLng(parseFloat(loc.lat), parseFloat(loc.lon)));
+      if (waypoints.length >= 2) {
+        window.routeLayer = L.Routing.control({
+          waypoints,
+          routeWhileDragging: false,
+          draggableWaypoints: false,
+          addWaypoints: false,
+          show: false
+        }).addTo(map);
+      }
+
+      // Recenter and enable Clear
+      try {
+        const bounds = L.latLngBounds(waypoints);
+        if (bounds.isValid()) map.fitBounds(bounds.pad(0.2));
+      } catch(_) {}
+      if (typeof setClearRouteButtonEnabled === 'function') setClearRouteButtonEnabled(true);
+
+      // Update URL for shareability
+      try {
+        const url = new URL(location.href);
+        url.searchParams.set('route', routeIds.join(','));
+        history.replaceState(null, '', url.toString());
+      } catch(_) {}
+
       document.getElementById('modal').remove();
     };
   });
 
+  // Export to Google Maps (fix: use lon, not lng)
   document.querySelectorAll('.export-route').forEach(btn => {
     btn.onclick = () => {
-      const idx = btn.dataset.idx;
-      const route = routes[idx];
+      const idx = +btn.dataset.idx;
+      const route = routes[idx] || [];
       const base = "https://www.google.com/maps/dir/";
-      const waypoints = route.map(loc => `${loc.lat},${loc.lng}`).join('/');
+      const waypoints = route.map(loc => `${loc.lat},${loc.lon}`).join('/'); // ✅ lon
       const url = `${base}${waypoints}`;
       window.open(url, '_blank');
     };
   });
+
+  // Remove route
+  document.querySelectorAll('.remove-route').forEach(btn => {
+    btn.onclick = () => {
+      const idx = +btn.dataset.idx;
+      routes.splice(idx, 1);
+      localStorage.setItem('savedRoutes', JSON.stringify(routes));
+      openFavoritesModal(); // re-render modal
+    };
+  });
+
+  // --- Wire FAVORITE (single place) actions ---
+  document.querySelectorAll('.center-fav').forEach(btn => {
+    btn.onclick = () => {
+      const idx = +btn.dataset.idx;
+      const f = favs[idx];
+      if (!f) return;
+      const lat = parseFloat(f.lat), lon = parseFloat(f.lon);
+      if (isFinite(lat) && isFinite(lon)) map.setView([lat, lon], 16);
+
+      // Try to open its existing marker popup if present
+      const m = (window.allMarkers || []).find(mk => (mk.options?.venueId === (f.id || f.name)));
+      if (m) m.openPopup();
+      // Keep modal open so user can act on others, or close if you prefer:
+      // document.getElementById('modal').remove();
+    };
+  });
+
+  document.querySelectorAll('.remove-fav').forEach(btn => {
+    btn.onclick = () => {
+      const idx = +btn.dataset.idx;
+      favs.splice(idx, 1);
+      localStorage.setItem('savedFavorites', JSON.stringify(favs));
+      openFavoritesModal(); // re-render modal
+    };
+  });
 }
+
 
   
 </script>
