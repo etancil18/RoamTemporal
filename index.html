@@ -839,6 +839,49 @@ function generateRouteFromFavorite(favorite, opts = {}) {
   return route;
 }
 
+// Reuse-safe: only define if not already present
+if (typeof buildGoogleMapsDirUrl !== 'function') {
+  function buildGoogleMapsDirUrl(events){
+    const base = "https://www.google.com/maps/dir/";
+    const waypoints = (events || []).map(e => `${e.lat},${e.lon}`).join('/');
+    return `${base}${waypoints}`;
+  }
+}
+
+function showRouteSummaryPopup(events, title = 'Your Crawl'){
+  const items = (events || []).map((e, i) => {
+    const safeName = (e.name || `Stop ${i+1}`).replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    const href = e.link || '#';
+    return `<li><a href="${href}" target="_blank" rel="noopener">${safeName}</a></li>`;
+  }).join('');
+
+  const html = `
+    <div style="font:14px/1.35 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width:320px;">
+      <div style="font-weight:700; margin-bottom:6px;">${title}</div>
+      <ol style="padding-left:18px; margin:0 0 8px;">${items}</ol>
+      <button id="exportGmapsBtn" style="display:inline-block;padding:6px 10px;border:1px solid #ccc;background:#fff;border-radius:6px;cursor:pointer;">
+        Open in Google Maps
+      </button>
+    </div>
+  `;
+
+  // Fit bounds to route and anchor popup near center
+  let center = map.getCenter();
+  try {
+    const bounds = L.latLngBounds(events.map(e => L.latLng(parseFloat(e.lat), parseFloat(e.lon))));
+    if (bounds.isValid()) { map.fitBounds(bounds.pad(0.2)); center = bounds.getCenter(); }
+  } catch(_){}
+
+  L.popup({ maxWidth: 360 }).setLatLng(center).setContent(html).openOn(map);
+
+  // Wire export
+  setTimeout(() => {
+    const btn = document.getElementById('exportGmapsBtn');
+    if (btn) btn.onclick = () => window.open(buildGoogleMapsDirUrl(events), '_blank');
+  }, 0);
+}
+
+  
 // --- Render route + keep only route markers ---
 function renderRouteOnMapFromList(route){
   if (!route || !route.length) return;
@@ -871,6 +914,9 @@ function renderRouteOnMapFromList(route){
     url.searchParams.set('route', ids.join(','));
     history.replaceState(null, '', url.toString());
   } catch(_){}
+
+  // ✅ Show ordered, linked stop list + Google export
+  showRouteSummaryPopup(route, 'Route from Favorite');
 }
 
 // --- Public entry: start a crawl from a saved favorite by id or name ---
