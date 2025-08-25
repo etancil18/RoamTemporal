@@ -217,7 +217,7 @@
   {
     "name": "Honey's",
     "vibe": "Vibrant, Chic, Social, Cocktails, Dance Floor, Rooftop",
-    "type": "rooftop",
+    "type": "rooftop, cocktail",
         "lat": "40.710449",
     "lon": "-73.9231575",
     "link": "https://www.instagram.com/honeysbrooklyn/?hl=en",
@@ -303,7 +303,7 @@
   {
     "name": "Freemans",
     "vibe": "Rustic, Intimate, Hidden Gem",
-    "type": "restaurant",
+    "type": "brunch, lunch, dinner",
         "lat": "40.7219458",
     "lon": "-73.9924678",
     "link": "https://www.instagram.com/freemansrestaurant/?hl=en",
@@ -346,7 +346,7 @@
   {
     "name": "Blue-Sun Record Store",
     "vibe": "Vintage, Vinyl, Lifestyle, Music",
-    "type": "music",
+    "type": "music, lifestyle",
         "lat": "40.7093019",
     "lon": "-73.9516441",
     "link": "https://www.instagram.com/bluesun_nyc/?hl=en",
@@ -389,7 +389,7 @@
   {
     "name": "Carousel",
     "vibe": "Laid-Back, Eclectic, Disco Ball, DJ, Hip, Pool Table, Social",
-    "type": "bar",
+    "type": "bar, cocktail",
         "lat": "40.7058463",
     "lon": "-73.9221354",
     "link": "https://www.instagram.com/carousel_bk/?hl=en",
@@ -475,7 +475,7 @@
   {
     "name": "Waiting on a Friend",
     "vibe": "Lively, Eclectic, Aesthetic, Social, Disco Ball, Cocktails",
-    "type": "cocktail",
+    "type": "cocktail, lounge",
         "lat": "40.7294609",
     "lon": "-73.9807284",
     "link": "https://www.instagram.com/waitingonafriend/?hl=en",
@@ -604,7 +604,7 @@
   {
     "name": "Rucola",
     "vibe": "Italian, Rustic, Sunday Dinner, Wine",
-    "type": "dinner",
+    "type": "lunch, dinner, cocktail",
         "lat": "40.6856132",
     "lon": "-73.9858591",
     "link": "https://www.instagram.com/rucolanyc/?hl=en",
@@ -669,7 +669,7 @@
   {
     "name": "Dead Letter No. 9",
     "vibe": "Speakeasy, Intimate, Cocktails, Social, Theatrical, After-Hours",
-    "type": "speakeasy",
+    "type": "cocktail, dj",
         "lat": "40.716096",
     "lon": "-73.964839",
     "link": "https://www.instagram.com/no9nyc/?hl=en",
@@ -712,7 +712,7 @@
   {
     "name": "HOMERUN NYC",
     "vibe": "Trendy, Creative, Vibrant, Lifestyle",
-    "type": "random gem",
+    "type": "random gem, lifestyle",
         "lat": "40.71536325",
     "lon": "-73.94424366",
     "link": "https://www.instagram.com/homerunnyc/?hl=en",
@@ -755,7 +755,7 @@
   {
     "name": "The Cactus Shop",
     "vibe": "Quirky, Patio, Latin, Hidden Gem, Speakeasy",
-    "type": "speakeasy",
+    "type": "speakeasy, cocktail",
         "lat": "40.71669275",
     "lon": "-73.96538125",
     "link": "https://www.instagram.com/thecactusshopnyc/?hl=en",
@@ -841,7 +841,7 @@
   {
     "name": "Nightly's",
     "vibe": "Sophisticated, Intimate, Sunday Dinner, Bistro, Neighborhood Spot",
-    "type": "dinner",
+    "type": "dinner, cocktail",
         "lat": "40.7724775",
     "lon": "-73.9554399",
     "link": "https://www.instagram.com/nightlysnyc/?hl=en",
@@ -934,7 +934,7 @@
   {
     "name": "Wo Hop",
     "vibe": "Classic, Iconic, Chinese, Group Dinner",
-    "type": "dinner",
+    "type": "dinner, lunch",
         "lat": "40.71420566",
     "lon": "-73.99886037",
     "link": "https://www.instagram.com/wohop17/?hl=en",
@@ -977,7 +977,7 @@
   {
     "name": "L'Appartement 4F",
     "vibe": "Cozy, Charming, French, Natural Wine, Bakery",
-    "type": "bakery",
+    "type": "bakery, wine bar",
         "lat": "40.6950814",
     "lon": "-73.9948457",
     "link": "https://www.instagram.com/lappartement4f/?hl=en",
@@ -1033,7 +1033,7 @@
   {
     "name": "Cafe Mogador",
     "vibe": "Laid-Back, Moroccan, Outdoor Seating, Brunch",
-    "type": "brunch",
+    "type": "brunch, lunch, dinner",
         "lat": "40.7273469",
     "lon": "-73.984402",
     "link": "https://www.instagram.com/cafemogadornyc/?hl=en",
@@ -1162,7 +1162,7 @@
   {
     "name": "Million Goods",
     "vibe": "Eclectic, Creative, Social, Wine, DJ, Lifestyle, Patio",
-    "type": "bar",
+    "type": "bar, wine bar, dj",
         "lat": "40.7275193",
     "lon": "-73.9570584",
     "link": "https://www.instagram.com/million.goods/?hl=en",
@@ -1248,7 +1248,7 @@
   {
     "name": "The Se7en",
     "vibe": "Stylish, Laid-Back, Trendy, Lounge, Social",
-    "type": "lounge",
+    "type": "lounge, dj",
         "lat": "40.676976",
     "lon": "-73.9634407",
     "link": "https://www.instagram.com/se7en.bk/?hl=en",
@@ -1291,7 +1291,7 @@
   {
     "name": "Experimental Cocktail Club",
     "vibe": "Elegant, Lively, Craft Cocktails, Piano, Vinyl",
-    "type": "cocktail",
+    "type": "cocktail, Lounge",
         "lat": "40.7424861",
     "lon": "-73.99034942",
     "link": "https://www.instagram.com/experimentalcocktailclubnyc/?hl=en",
@@ -1334,7 +1334,7 @@
   {
     "name": "So & So's Neighborhood Piano Bar",
     "vibe": "Cozy, Vintage, Ambiance, Piano Bar, Relaxed",
-    "type": "lounge",
+    "type": "lounge, music",
         "lat": "40.76355292",
     "lon": "-73.98543914",
     "link": "https://www.instagram.com/soandso.nyc/?hl=en",
@@ -1377,7 +1377,7 @@
   {
     "name": "LunÀtico",
     "vibe": "Eclectic, Date Spot, Live Music, Jazz",
-    "type": "music",
+    "type": "music, cocktail",
         "lat": "40.68337885",
     "lon": "-73.93467864",
     "link": "https://www.instagram.com/barlunatico/?hl=en",
@@ -1463,7 +1463,7 @@
   {
     "name": "The Tusk Bar",
     "vibe": "Chic, Aesthetic, Trendy, Upscale, Oysters, Cocktails",
-    "type": "cocktail",
+    "type": "cocktail, lounge, dinner",
         "lat": "40.7440135",
     "lon": "-73.9869451",
     "link": "https://www.instagram.com/brass_tuskbar/?hl=en",
@@ -1506,9 +1506,9 @@
   {
     "name": "Codex",
     "vibe": "Bookstore, Cozy, Intellectual, Espresso Bar",
-    "type": "bookstore",
-        "lat": "40.7254162",
-    "lon": "-73.9924344",
+    "type": "bookstore, coffee",
+        "lat": "40.692626",
+    "lon": "-73.923672",
     "link": "https://www.instagram.com/codexbooks/?hl=en",
     "openNow": "TRUE",
     "hours": [
@@ -1592,7 +1592,7 @@
   {
     "name": "Botanica Bar",
     "vibe": "Botanical, Cozy, Trendy, DJ, Lively",
-    "type": "bar",
+    "type": "bar, cocktail, dj",
         "lat": "40.7246217",
     "lon": "-73.9947736",
     "link": "https://www.instagram.com/botanicabar/?hl=en",
@@ -1635,7 +1635,7 @@
   {
     "name": "Bibliotheque",
     "vibe": "Literary, Cozy, Wine, Café",
-    "type": "wine bar",
+    "type": "bookstore, wine bar, cafe",
         "lat": "40.7218082",
     "lon": "-74.0007476",
     "link": "https://www.instagram.com/bibliothequenyc/?hl=en",
@@ -1721,7 +1721,7 @@
   {
     "name": "Tuffet",
     "vibe": "Laid-Back, Cozy, Bar, Outdoor Fireplace, Patio",
-    "type": "bar",
+    "type": "bar, cocktail",
         "lat": "40.7121269",
     "lon": "-73.94375126",
     "link": "https://www.instagram.com/tuffetbar/?hl=en",
@@ -1806,8 +1806,8 @@
   },
   {
     "name": "Superbueno",
-    "vibe": "Vibrant, Fun, Cocktails Mexican",
-    "type": "cocktail",
+    "vibe": "Vibrant, Fun, Cocktails, Mexican",
+    "type": "cocktail, dinner",
         "lat": "40.7234538",
     "lon": "-73.9885506",
     "link": "https://www.instagram.com/superbuenonyc/?hl=en",
@@ -1850,7 +1850,7 @@
   {
     "name": "Bar Mario",
     "vibe": "Cozy, Neighborhood Bar, Italian",
-    "type": "bar",
+    "type": "bar, dinner",
         "lat": "40.6766251",
     "lon": "-74.0135326",
     "link": "https://www.instagram.com/barmariobk/?hl=en",
@@ -1892,8 +1892,8 @@
   },
   {
     "name": "Milady's",
-    "vibe": "Classic, Neighborhood Bar, Vibrant",
-    "type": "bar",
+    "vibe": "Classic, Neighborhood Bar, Vibrant, LGBTQ+",
+    "type": "cocktail",
         "lat": "40.7259071",
     "lon": "-74.0014471",
     "link": "https://www.instagram.com/miladysnyc/?hl=en",
@@ -1936,7 +1936,7 @@
   {
     "name": "Pepe Rosso",
     "vibe": "Traditional, Casual, Italian, Comfort Food",
-    "type": "dinner",
+    "type": "dinner, lunch",
         "lat": "40.7279209",
     "lon": "-74.0013375",
     "link": "https://www.instagram.com/peperossotogo/?hl=en",
@@ -2022,7 +2022,7 @@
   {
     "name": "Brooklyn Social",
     "vibe": "Beer, Casual, Neighborhood Spot, Speakeasy, Cocktails, Back Patio",
-    "type": "speakeasy",
+    "type": "bar",
         "lat": "40.6804846",
     "lon": "-73.9945351",
     "link": "https://www.instagram.com/brooklynsocialbar/?hl=en",
@@ -2151,7 +2151,7 @@
   {
     "name": "Antidote",
     "vibe": "Chinese, Sichuan, Intimate, Sophisticated, Creative Cocktails, Hidden, Date Spot",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": "40.7142684",
     "lon": "-73.9654775",
     "link": "https://www.instagram.com/antidote__nyc/?hl=en",
@@ -2194,7 +2194,7 @@
   {
     "name": "Sake Bar Decibel",
     "vibe": "Hidden Gem, Japanese, Sake, Cocktails, Authentic, Intimate",
-    "type": "speakeasy",
+    "type": "speakeasy, cocktail",
         "lat": "40.7292871",
     "lon": "-73.9877312",
     "link": "https://www.instagram.com/sakebar.decibel/?hl=en",
@@ -2279,7 +2279,7 @@
   },
   {
     "name": "Ichibantei",
-    "vibe": "Authentic, Japanese, Soul Food, Bar, Movie Night",
+    "vibe": "Authentic, Japanese, Soul Food, Bar, Cinema-Themed",
     "type": "dinner",
         "lat": "40.7324491",
     "lon": "-73.9880197",
@@ -2323,7 +2323,7 @@
   {
     "name": "Ask For Janice",
     "vibe": "Speakeasy, Intimate, Pizza, Hip, Cocktails, Small Bites",
-    "type": "speakeasy",
+    "type": "speakeasy, cocktail",
         "lat": "40.7241881",
     "lon": "-73.9508843",
     "link": "https://www.instagram.com/askforjanice.nyc/?hl=en",
@@ -2409,7 +2409,7 @@
   {
     "name": "Samurai Mama",
     "vibe": "Japanese, Comfort Food, Udon Noodles, Cozy, Casual",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7141481",
     "lon": "-73.96014",
     "link": "https://www.instagram.com/samuraimama_bk/?hl=en",
@@ -2474,7 +2474,7 @@
   {
     "name": "Birds of a Feather",
     "vibe": "Sichuan, Social, Group Dinner, Sharable Plates",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7143133",
     "lon": "-73.9605332",
     "link": "https://www.instagram.com/birdsofafeatherbk/?hl=en",
@@ -2517,7 +2517,7 @@
   {
     "name": "ACRE",
     "vibe": "Health-Conscious, Plant, Japanese, Comfort Food, Back Patio",
-    "type": "dinner",
+    "type": "brunch, lunch, dinner",
         "lat": "40.72624105",
     "lon": "-73.95466646",
     "link": "https://www.instagram.com/acre_nyc/?hl=en",
@@ -2646,7 +2646,7 @@
   {
     "name": "Angel’s Share",
     "vibe": "Sophisticated, Intimate, Craft cocktails, Hidden",
-    "type": "cocktail",
+    "type": "cocktail, speakeasy",
         "lat": "40.73301145",
     "lon": "-74.00432961",
     "link": "https://www.instagram.com/angelssharenyc/?hl=en",
@@ -2689,7 +2689,7 @@
   {
     "name": "Layla",
     "vibe": "Cozy, Stylish, European, Back Patio, Date Spot",
-    "type": "cocktail",
+    "type": "cocktail, patio",
         "lat": "40.71232145",
     "lon": "-73.96295099",
     "link": "https://www.instagram.com/layla_nyc_/?hl=en",
@@ -2732,7 +2732,7 @@
   {
     "name": "Taqueria Ramirez",
     "vibe": "Vibrant, Casual, Mexican, Street Tacos, Authentic, Neighborhood Gem",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7278816",
     "lon": "-73.9569597",
     "link": "https://www.instagram.com/taqueria_ramirez_/?hl=en",
@@ -2775,7 +2775,7 @@
   {
     "name": "Madeline's Martini",
     "vibe": "Elegant, Cozy, Martini, Aesthetic",
-    "type": "cocktail",
+    "type": "cocktail, lounge",
         "lat": "40.7263349",
     "lon": "-73.9775392",
     "link": "https://www.instagram.com/madelinesmartini/?hl=en",
@@ -2817,7 +2817,7 @@
   },
   {
     "name": "MONO+MONO",
-    "vibe": "Chic, Cozy, Korean, Vinyl, Date Spot",
+    "vibe": "Chic, Cozy, Korean, Vinyl, Floral, Date Spot",
     "type": "dinner",
         "lat": "40.7254822",
     "lon": "-73.9880334",
@@ -2861,7 +2861,7 @@
   {
     "name": "Romeos",
     "vibe": "Casual, Eclectic, Cocktails, Red Lighting",
-    "type": "cocktail",
+    "type": "cocktail, bar, late-night",
         "lat": "40.726959",
     "lon": "-73.984037",
     "link": "https://www.instagram.com/romeosnyc/?hl=en",
@@ -2904,7 +2904,7 @@
   {
     "name": "Simple",
     "vibe": "French, Brunch, Bistro, Relaxed, Cozy, Neighborhood, Wine",
-    "type": "brunch",
+    "type": "brunch, lunch, dinner",
         "lat": "40.71242",
     "lon": "-73.962782",
     "link": "https://www.instagram.com/simplecafebrooklyn/?hl=en",
@@ -2947,7 +2947,7 @@
   {
     "name": "The Belfry",
     "vibe": "Cocktail, Live Music, Intimate, Cozy, Dimly Lit",
-    "type": "cocktail",
+    "type": "cocktail, music",
         "lat": "40.732743",
     "lon": "-73.986294",
     "link": "https://www.instagram.com/belfrynyc/?hl=en",
@@ -3033,7 +3033,7 @@
   {
     "name": "Nightmoves",
     "vibe": "Social, Hidden, Dance, Nightlife, DJ, Disco",
-    "type": "club",
+    "type": "club, dj",
         "lat": "40.7130756",
     "lon": "-73.9572969",
     "link": "https://www.instagram.com/everybodyiknowcanbefoundhere/?hl=en",
@@ -3162,7 +3162,7 @@
   {
     "name": "Sauced",
     "vibe": "Cozy, Spacious, Wine Bar, Outdoor Patio, DJ",
-    "type": "wine bar",
+    "type": "wine bar, patio",
         "lat": "40.71263565",
     "lon": "-73.9622739",
     "link": "https://www.instagram.com/saucedbklyn/?hl=en",
@@ -3205,7 +3205,7 @@
   {
     "name": "Ponyboy",
     "vibe": "Hip, Dance floor, Lively, Social, Disco Ball, DJ",
-    "type": "club",
+    "type": "club, dj",
         "lat": "40.7239657",
     "lon": "-73.9507806",
     "link": "https://www.instagram.com/ponyboyny/?hl=en",
@@ -3248,7 +3248,7 @@
   {
     "name": "Twins Lounge",
     "vibe": "Relaxed, Intimate, Neighborhood Bar, Pool Table, Upstairs Patio, Photo Booth",
-    "type": "bar",
+    "type": "bar, patio, cocktail",
         "lat": "40.7263236",
     "lon": "-73.95193139",
     "link": "https://www.instagram.com/twinsloungenyc/?hl=en",
@@ -3334,7 +3334,7 @@
   {
     "name": "Studio 151",
     "vibe": "Hidden, Cozy, Vinyl, Sushi, DJ",
-    "type": "speakeasy",
+    "type": "speakeasy, cocktail, dj",
         "lat": "40.7256585",
     "lon": "-73.9780286",
     "link": "https://www.instagram.com/studio151nyc/?hl=en",
@@ -3377,7 +3377,7 @@
   {
     "name": "Joyface",
     "vibe": "Lively, Disco Ball, Throwback Music, Social, Dance",
-    "type": "club",
+    "type": "club, dj",
         "lat": "40.723859",
     "lon": "-73.9787539",
     "link": "https://www.instagram.com/joyfacenyc/?hl=en",
@@ -3463,7 +3463,7 @@
   {
     "name": "Bar Blondeau",
     "vibe": "Chic, Rooftop, Skyline Views, Cocktails",
-    "type": "cocktail",
+    "type": "cocktail, rooftop",
         "lat": "40.7219036",
     "lon": "-73.9580608",
     "link": "https://www.instagram.com/barblondeau/?hl=en",
@@ -3506,7 +3506,7 @@
   {
     "name": "Night of Joy",
     "vibe": "Chill, Rooftop, Neighborhood Bar, Cozy",
-    "type": "bar",
+    "type": "bar, rooftop, cocktail",
         "lat": "40.7169821",
     "lon": "-73.9499766",
     "link": "https://www.instagram.com/nightofjoy/?hl=en",
@@ -3635,7 +3635,7 @@
   {
     "name": "Pollyn",
     "vibe": "Artistic, Eclectic, Plant-Filled",
-    "type": "coffee",
+    "type": "garden, coffee",
         "lat": "40.7104488",
     "lon": "-73.9644726",
     "link": "https://www.instagram.com/pollyn.nyc/?hl=en",
@@ -3721,7 +3721,7 @@
   {
     "name": "Casa Magazines",
     "vibe": "Vintage, Cozy, Magazines, Newspaper",
-    "type": "bookstore",
+    "type": "bookstore, random gem, lifestyle",
         "lat": "40.737675",
     "lon": "-74.0044663",
     "link": "https://www.instagram.com/casamagazinesnyc/?hl=en",
@@ -3764,7 +3764,7 @@
   {
     "name": "Café-Flor / Bar 21",
     "vibe": "Plants, Coffee, Cozy, Lo-Fi",
-    "type": "coffee",
+    "type": "coffee, cocktail",
         "lat": "40.744122",
     "lon": "-73.99921644",
     "link": "https://www.instagram.com/cafeflornyc/?hl=en",
@@ -3850,7 +3850,7 @@
   {
     "name": "Au Cheval",
     "vibe": "Trendy, Hip, American, Diner, Craft Cocktails",
-    "type": "dinner",
+    "type": "dinner, cocktail",
         "lat": "40.7180421",
     "lon": "-74.0019638",
     "link": "https://www.instagram.com/auchevaldiner/?hl=en",
@@ -3893,7 +3893,7 @@
   {
     "name": "Casa Mono",
     "vibe": "Upscale, Michelin-Star, Wine, Intimate, Spanish, Tapas",
-    "type": " dinner",
+    "type": "lunch, dinner",
         "lat": "40.7359257",
     "lon": "-73.9871655",
     "link": "https://www.instagram.com/casamonobarjamon/?hl=en",
@@ -3979,7 +3979,7 @@
   {
     "name": "Cherry on Top",
     "vibe": "Cozy, Natural Wine, Rooftop",
-    "type": "wine bar",
+    "type": "wine bar, rooftop",
         "lat": "40.7049007",
     "lon": "-73.92135392",
     "link": "https://www.instagram.com/cherry.on.top.nyc/?hl=en",
@@ -4280,7 +4280,7 @@
   {
     "name": "Yan's Antique Jewelry Inc.",
     "vibe": "Elegant, Vintage, Watches, Jewelry",
-    "type": "random gem",
+    "type": "random gem, lifestyle",
         "lat": "40.7149056",
     "lon": "-73.998684",
     "link": "https://www.instagram.com/yansantiquejewelry/?hl=en",
@@ -4495,7 +4495,7 @@
   {
     "name": "Bungee Space",
     "vibe": "Artistic, Creative, Magazines, Art Books, Hidden Gem, Coffee, Unique",
-    "type": "coffee",
+    "type": "random gem, coffee",
         "lat": "40.7224818",
     "lon": "-73.9923162",
     "link": "https://www.instagram.com/bungee.space/?hl=en",
@@ -4581,7 +4581,7 @@
   {
     "name": "Cafe Erzulie",
     "vibe": "Cozy, Jazz, Hip, Live Music, Social, Dance, Laid-Back",
-    "type": "music",
+    "type": "music, bar",
         "lat": "40.6978902",
     "lon": "-73.9371547",
     "link": "https://www.instagram.com/cafe.erzulie/?hl=en",
@@ -4590,7 +4590,7 @@
     "Sunday: 4:00 PM–11:00 PM",
     "Monday: Closed",
     "Tuesday: Closed",
-    "Wednesday: 7 PM–11:00 PM",
+    "Wednesday: 7:00 PM–11:00 PM",
     "Thursday: 7:00 PM–2:00 AM",
     "Friday: 7:00 PM–4:00 AM",
     "Saturday: 4:00 PM–4:00 AM"
@@ -4624,7 +4624,7 @@
   {
     "name": "Mr. Melo",
     "vibe": "Listening Bar, DJ, Vinyl, Relaxed, Lounge, Cocktails",
-    "type": "lounge",
+    "type": "bar, lounge",
         "lat": "40.7169978",
     "lon": "-73.9501191",
     "link": "https://www.instagram.com/mr.melobar/?hl=en",
@@ -4667,7 +4667,7 @@
   {
     "name": "Nem's Japandi Bistro",
     "vibe": "Minimalist, Smoothie, Brunch, Japanese, Outdoor Seating",
-    "type": "brunch",
+    "type": "brunch, lunch, dinner",
         "lat": "40.7189664",
     "lon": "-73.9612431",
     "link": "https://www.instagram.com/nemsbistro/?hl=en",
@@ -4710,7 +4710,7 @@
   {
     "name": "Milk & Roses",
     "vibe": "Cozy, Rustic, Intimate, Bistro, Outdoor Patio, Jazz Nights",
-    "type": "brunch",
+    "type": "brunch, patio, dinner, cocktail",
         "lat": "40.737425",
     "lon": "-73.9550647",
     "link": "https://www.instagram.com/milkandrosesbistro/?hl=en",
@@ -4882,7 +4882,7 @@
   {
     "name": "The Office of Mr. Moto",
     "vibe": "Speakeasy, Hidden Gem, Japanese, Gallery, Cocktails",
-    "type": "speakeasy",
+    "type": "speakeasy, dinner",
         "lat": "40.7268131",
     "lon": "-73.984036",
     "link": "https://www.instagram.com/dear.mr.moto/?hl=en",
@@ -4968,7 +4968,7 @@
   {
     "name": "A-1 Record Shop",
     "vibe": "Classic, Large Collection, Vinyl",
-    "type": "random gem",
+    "type": "random gem, lifestyle",
         "lat": "40.7257903",
     "lon": "-73.9844558",
     "link": "https://www.instagram.com/a1recordshop/?hl=en",
@@ -5011,7 +5011,7 @@
   {
     "name": "The Lot Radio",
     "vibe": "Hip, DJ, Radio Station, Outdoors, Beer",
-    "type": "music",
+    "type": "music, patio, bar, dj",
         "lat": "40.722668",
     "lon": "-73.954374",
     "link": "https://www.instagram.com/thelotradio/?hl=en",
@@ -5054,7 +5054,7 @@
   {
     "name": "Rule of Thirds",
     "vibe": "Artistic, Cozy, Creative, Brunch, Group Dinner, Japanese",
-    "type": "brunch",
+    "type": "brunch, lunch, dinner",
         "lat": "40.7247377",
     "lon": "-73.9552053",
     "link": "https://www.instagram.com/thirdsbk/?hl=en",
@@ -5144,7 +5144,7 @@
   {
     "name": "Lexington Candy Shop",
     "vibe": "Classic, Nostalgic, Retro, Diner",
-    "type": "brunch",
+    "type": "breakfast, lunch",
         "lat": "40.7775102",
     "lon": "-73.9572158",
     "link": "https://www.instagram.com/lexingtoncandyshop/?hl=en",
@@ -5292,7 +5292,7 @@
   {
     "name": "Kam Man Market",
     "vibe": "Traditional, Asian Market",
-    "type": "random gem",
+    "type": "random gem, lunch",
         "lat": "40.7168494",
     "lon": "-73.9983694",
     "link": "https://www.instagram.com/kamman.canal/?hl=en",
@@ -5378,7 +5378,7 @@
   {
     "name": "Le Veau d'Or",
     "vibe": "Elegant, French, Bistro, Old-School, Classic Dining",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.763157",
     "lon": "-73.968135",
     "link": "https://www.instagram.com/leveaudor/?hl=en",
@@ -5433,7 +5433,7 @@
   {
     "name": "Cafe Regular",
     "vibe": "Cozy, European, Neighborhood, Café",
-    "type": "coffee",
+    "type": "coffee, breakfast",
         "lat": "40.67509325",
     "lon": "-73.9755335",
     "link": "https://www.instagram.com/caferegular/?hl=en",
@@ -5648,7 +5648,7 @@
   {
     "name": "Bricolage",
     "vibe": "Eclectic, Creative, Artsy, Vietnamese, French, Gastropub",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.6778967",
     "lon": "-73.9796265",
     "link": "https://www.instagram.com/bricolagebk/?hl=en",
@@ -5756,7 +5756,7 @@
   {
     "name": "Public Records",
     "vibe": "Upscale, Lounge, DJ, Dancing, Multiple Rooms, Hi-Fi",
-    "type": "club",
+    "type": "club, cocktail, late-night",
         "lat": "40.6821013",
     "lon": "-73.9865223",
     "link": "https://www.instagram.com/publicrecordsnyc/?hl=en",
@@ -5809,7 +5809,7 @@
   {
     "name": "Casino",
     "vibe": "Intimate, Date, Cocktails, Aesthetic, Trendy",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": "40.7139367",
     "lon": "-73.9896705",
     "link": "https://www.instagram.com/casino.ny/?hl=en",
@@ -6239,7 +6239,7 @@
   {
     "name": "Amsterdam Billiards Club",
     "vibe": "Lively, Social, Pool Tables, Bar",
-    "type": "bar",
+    "type": "bar, activity",
         "lat": "40.7317233",
     "lon": "-73.9898254",
     "link": "https://www.instagram.com/amsterdambilliards/?hl=en",
@@ -6282,7 +6282,7 @@
   {
     "name": "colbo",
     "vibe": "Cozy, Coffee, Vinyl, Clothing, Lifestyle",
-    "type": "coffee",
+    "type": "coffee, lifestyle, dj",
         "lat": "40.7165595",
     "lon": "-73.9912397",
     "link": "https://www.instagram.com/colbo.nyc/?hl=en",
@@ -6368,7 +6368,7 @@
   {
     "name": "St Jardim",
     "vibe": "Cozy, Brunch Spot, Coffee, Natural Wine, Bar",
-    "type": "brunch",
+    "type": "coffee, wine bar, brunch",
         "lat": "40.7343755",
     "lon": "-74.0028479",
     "link": "https://www.instagram.com/stjardimnyc/?hl=en",
@@ -6497,7 +6497,7 @@
   {
     "name": "Paquita",
     "vibe": "Cozy, intimate, Tea, Coffee, Plants",
-    "type": "tea",
+    "type": "tea, coffee",
         "lat": "40.7336769",
     "lon": "-74.0057112",
     "link": "https://www.instagram.com/paquita.nyc/?hl=en",
@@ -6540,7 +6540,7 @@
   {
     "name": "Bar Orai",
     "vibe": "Speakeasy, Vinyl, Soul, Japanese, Whiskey, DJ",
-    "type": "speakeasy",
+    "type": "speakeasy, dj",
         "lat": "40.75658145",
     "lon": "-73.96929948",
     "link": "https://www.instagram.com/bar.orai/?hl=en",
@@ -6712,7 +6712,7 @@
   {
     "name": "Quarters",
     "vibe": "Cozy, Warm, Wine, Aesthetic, Hidden, Showroom",
-    "type": "wine bar",
+    "type": "wine bar, gallery",
         "lat": "40.71821778",
     "lon": "-74.00301211",
     "link": "https://www.instagram.com/shopquarters/?hl=en",
@@ -6755,7 +6755,7 @@
   {
     "name": "Sullaluna",
     "vibe": "Charming, Cozy, Bookshop, Italian Bistro",
-    "type": "dinner",
+    "type": "dinner, bookstore",
         "lat": "40.73018045",
     "lon": "-74.00362275",
     "link": "https://www.instagram.com/sullaluna.nyc/?hl=en",
@@ -7013,7 +7013,7 @@
   {
     "name": "Silence Please",
     "vibe": "Café, Hi-Fi, Listening Room, Tea House, Spacious",
-    "type": "tea",
+    "type": "tea, music",
         "lat": "40.7189289",
     "lon": "-73.9948154",
     "link": "https://www.instagram.com/silenceplease/?hl=en",
@@ -7099,7 +7099,7 @@
   {
     "name": "Chess Forum",
     "vibe": "Classic, Games, Backgammon and Chess",
-    "type": "random gem",
+    "type": "random gem, activity",
         "lat": "40.7291544",
     "lon": "-73.9992134",
     "link": "https://www.instagram.com/chessforum/?hl=en",
@@ -7314,7 +7314,7 @@
   {
     "name": "la milagrosa",
     "vibe": "Speakeasy, Hidden Gem, Nightlife, DJ",
-    "type": "speakeasy",
+    "type": "speakeasy, late-night",
         "lat": "40.7117087",
     "lon": "-73.9573417",
     "link": "https://www.instagram.com/mezcaleriamilagrosa/",
@@ -7400,7 +7400,7 @@
   {
     "name": "Pearlbox",
     "vibe": "Cozy, intimate, Stylish, Hidden, Aesthetic",
-    "type": "speakeasy",
+    "type": "speakeasy, cocktail",
         "lat": "40.72289975",
     "lon": "-74.00298799",
     "link": "https://www.instagram.com/pearlboxnyc/",
@@ -7486,7 +7486,7 @@
   {
     "name": "Oxomoco",
     "vibe": "Trendy, Mexican-Inspired, Modern dining, Michelin Star",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.72977",
     "lon": "-73.95546035",
     "link": "https://www.instagram.com/_oxomoco_/",
@@ -7529,7 +7529,7 @@
   {
     "name": "Frog",
     "vibe": "Artsy, Eclectic, Natural Wine Bar, Outdoor Area",
-    "type": "wine bar",
+    "type": "wine bar, patio",
         "lat": "40.6848704",
     "lon": "-73.9385509",
     "link": "https://www.instagram.com/frogwinebar/",
@@ -7572,7 +7572,7 @@
   {
     "name": "Apotheke Chinatown",
     "vibe": "Experimental Cocktail, Speakeasy, Social",
-    "type": "speakeasy",
+    "type": "speakeasy, cocktail",
         "lat": "40.7144",
     "lon": "-73.999818",
     "link": "https://www.instagram.com/apothekenyc/?hl=en",
@@ -7787,7 +7787,7 @@
   {
     "name": "Gran Torino",
     "vibe": "Dining, Italian-inspired, Outdoor Seating, Bar",
-    "type": "dinner",
+    "type": "lunch, dinner, patio",
         "lat": "40.7183923",
     "lon": "-73.9588733",
     "link": "https://www.instagram.com/grantorinonyc/?hl=en",
@@ -7829,7 +7829,7 @@
   },
   {
     "name": "Cafe Balearica",
-    "vibe": "Disco Ball, Cocktails, Salsa Dancing, DJ, Social, Nightlife",
+    "vibe": "Disco Ball, Cocktails, Dancing, DJ, Social, Nightlife",
     "type": "club",
         "lat": "40.7210681",
     "lon": "-73.9567687",
@@ -7873,7 +7873,7 @@
   {
     "name": "Juliette Restaurant",
     "vibe": "Rooftop, French Dining, Date Spot, Wine",
-    "type": "dinner",
+    "type": "lunch, dinner, rooftop",
         "lat": "40.716997",
     "lon": "-73.9591501",
     "link": "https://www.instagram.com/juliettebkny/?hl=en",
@@ -7916,7 +7916,7 @@
   {
     "name": "MIDNIGHTS",
     "vibe": "Back Patio, Intimate, Cocktails, Bar, DJ",
-    "type": "cocktail",
+    "type": "cocktail, patio, dj",
         "lat": "40.7174706",
     "lon": "-73.9584368",
     "link": "https://www.instagram.com/midnightsbrooklyn/?hl=en",
@@ -7959,7 +7959,7 @@
   {
     "name": "Skinny Dennis",
     "vibe": "Country, Live Music, Dive Bar, Outdoor Seating",
-    "type": "music",
+    "type": "music, bar",
         "lat": "40.7158872",
     "lon": "-73.9621335",
     "link": "https://www.instagram.com/skinnydennis/?hl=en",
@@ -8088,7 +8088,7 @@
   {
     "name": "Record Room",
     "vibe": "Bar, Lounge, DJ, Cocktails, Vinyl",
-    "type": "lounge",
+    "type": "lounge, dj",
         "lat": "40.74574039",
     "lon": "-73.9571733",
     "link": "https://www.instagram.com/recordroom/?hl=en",
@@ -8346,7 +8346,7 @@
   {
     "name": "Petit Paulette",
     "vibe": "Cozy, Casual, French Bistro, Natural Wine, Outdoor Seating",
-    "type": "brunch",
+    "type": "wine bar",
         "lat": "40.689612",
     "lon": "-73.9757378",
     "link": "https://www.instagram.com/petitpaulettebk/",
@@ -8432,7 +8432,7 @@
   {
     "name": "Bouquet",
     "vibe": "Wine, Cozy, DJ, Social, Backyard Patio",
-    "type": "wine bar",
+    "type": "wine bar, patio",
         "lat": "40.73538615",
     "lon": "-73.9553597",
     "link": "https://www.instagram.com/bouquetwinebar/",
@@ -8475,7 +8475,7 @@
   {
     "name": "Diamond Lil",
     "vibe": "Dive bar, Cocktails, Neighborhood Gem, Backyard Patio, Date Spot",
-    "type": "cocktail",
+    "type": "cocktail, patio",
         "lat": "40.725437",
     "lon": "-73.946085",
     "link": "https://www.instagram.com/diamondlilbar/",
@@ -8561,7 +8561,7 @@
   {
     "name": "BABA on Withers",
     "vibe": "Hidden Gem, Cozy, Creative Cocktails, Wine",
-    "type": "cocktail",
+    "type": "wine bar, patio",
         "lat": "40.717003",
     "lon": "-73.95074",
     "link": "https://www.instagram.com/babaonwithers/",
@@ -8604,7 +8604,7 @@
   {
     "name": "Plus de Vin",
     "vibe": "Cozy, Wine, Rustic, Back Patio",
-    "type": "wine bar",
+    "type": "wine bar, patio",
         "lat": "40.7185124",
     "lon": "-73.9451974",
     "link": "https://www.instagram.com/pdvnyc/",
@@ -8647,7 +8647,7 @@
   {
     "name": "Woodhul Wine Bar",
     "vibe": "Cozy, Small Bites, Wine, Cocktails, Craft Beers",
-    "type": "wine bar",
+    "type": "wine bar, cocktail",
         "lat": "40.7149932",
     "lon": "-73.9587858",
     "link": "https://www.instagram.com/woodhulwinebar/",
@@ -9034,7 +9034,7 @@
   {
     "name": "Maison Premiere",
     "vibe": "Elegant, Classic, Cocktail Lounge, Seafood",
-    "type": "cocktail",
+    "type": "cocktail, patio, dinner",
         "lat": "40.7142409",
     "lon": "-73.9616034",
     "link": "https://www.instagram.com/maisonpremiere/",
@@ -9205,7 +9205,7 @@
   },
   {
     "name": "Mansions",
-    "vibe": "Wine Bar, Club, Fog Room, Social, Dance",
+    "vibe": "Club, Fog Room, Social, Dance",
     "type": "club",
         "lat": "40.713964",
     "lon": "-73.921365",
@@ -9335,7 +9335,7 @@
   {
     "name": "PUBLIC Hotel",
     "vibe": "Modern, Trendy, Rooftop, DJ, Cocktails",
-    "type": "cocktail",
+    "type": "cocktail, rooftop",
         "lat": "40.723034",
     "lon": "-73.9920355",
     "link": "https://www.instagram.com/publichotels/",
@@ -9421,7 +9421,7 @@
   {
     "name": "Fig. 19",
     "vibe": "Cozy, Trendy, Hidden Gem, Cocktails",
-    "type": "cocktail",
+    "type": "cocktail, speakeasy",
         "lat": "40.71951185",
     "lon": "-73.99353903",
     "link": "https://www.instagram.com/fig19nyc/",
@@ -9464,7 +9464,7 @@
   {
     "name": "Attaboy",
     "vibe": "Chic, Upscale, Speakeasy, Classic Cocktails",
-    "type": "speakeasy",
+    "type": "cocktail",
         "lat": "40.7188823",
     "lon": "-73.9913742",
     "link": "https://www.instagram.com/attaboy134/",
@@ -9679,7 +9679,7 @@
   {
     "name": "Dear Irving Gramercy",
     "vibe": "Classic, Elegant, Speakeasy, Cocktail Bar",
-    "type": "speakeasy",
+    "type": "cocktail",
         "lat": "40.7361878",
     "lon": "-73.9873741",
     "link": "https://www.instagram.com/dearirving/",
@@ -9722,7 +9722,7 @@
   {
     "name": "Raines Law Room Chelsea",
     "vibe": "Sophisticated, Elegant, Speakeasy, Cocktails",
-    "type": "speakeasy",
+    "type": "cocktail, speakeasy",
         "lat": "40.7387302",
     "lon": "-73.9945926",
     "link": "https://www.instagram.com/raineslawroom/",
@@ -9807,7 +9807,7 @@
   },
   {
     "name": "The Coyote Club",
-    "vibe": "Cozy, Low-key, Neighborhood Bar, Dive",
+    "vibe": "Cozy, Low-key, Neighborhood Bar, Dive, Photo Booth",
     "type": "bar",
         "lat": "40.6886088",
     "lon": "-73.9418208",
@@ -10023,7 +10023,7 @@
   {
     "name": "Little Fino",
     "vibe": "Casual, Cafe, Italian, Neighborhood Bar",
-    "type": "dinner",
+    "type": "breakfast, lunch, dinner, cocktail",
         "lat": "40.7220606",
     "lon": "-73.9568097",
     "link": "https://www.instagram.com/littlefinonyc/",
@@ -10797,7 +10797,7 @@
   {
     "name": "The Jazz Gallery",
     "vibe": "Artsy, Intimate, Live Music, Jazz, Cozy",
-    "type": "gallery",
+    "type": "music",
         "lat": "40.7445908",
     "lon": "-73.988682",
     "link": "https://www.instagram.com/thejazzgallery/",
@@ -10926,7 +10926,7 @@
   {
     "name": "Mr. Purple",
     "vibe": "Rooftop Bar, Trendy, Social, Cool Vibes",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.7216444",
     "lon": "-73.9883116",
     "link": "https://www.instagram.com/mrpurplenyc/",
@@ -11055,7 +11055,7 @@
   {
     "name": "Make Believe",
     "vibe": "Rooftop, Dance, DJ, Trendy",
-    "type": "club",
+    "type": "club, rooftop, dj",
         "lat": "40.7218303",
     "lon": "-73.98927365",
     "link": "https://www.instagram.com/makebelieve/",
@@ -11098,7 +11098,7 @@
   {
     "name": "River Deli",
     "vibe": "Cozy, Intimate, Italian, Casual Dining, Sunday Dinner",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.6936542",
     "lon": "-73.9984656",
     "link": "https://www.instagram.com/riverdelibrooklyn/",
@@ -11184,7 +11184,7 @@
   {
     "name": "Chimito's",
     "vibe": "Casual, Dominican, Comfort Food, Community Spot",
-    "type": "lunch",
+    "type": "lunch, dinner",
         "lat": "40.740812",
     "lon": "-73.853837",
     "link": "https://www.instagram.com/chimitosnyc/",
@@ -11227,7 +11227,7 @@
   {
     "name": "Krispy Pizza- Brooklyn, NY",
     "vibe": "Casual, Classic, Comfort Food, Pizza",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.622363",
     "lon": "-74.005499",
     "link": "https://www.instagram.com/krispypizza/",
@@ -11356,7 +11356,7 @@
   {
     "name": "Lovers of Today",
     "vibe": "Hidden, Intimate, Romantic, Craft Cocktails",
-    "type": "speakeasy",
+    "type": "speakeasy, cocktail, late-night",
         "lat": "40.7258254",
     "lon": "-73.9834216",
     "link": "https://www.instagram.com/loversoftodaynyc/",
@@ -11485,7 +11485,7 @@
   {
     "name": "Ding-a-ling",
     "vibe": "Fun, Social, Lively Bar, DJ, Disco Ball",
-    "type": "club",
+    "type": "club, dj",
         "lat": "40.7243198",
     "lon": "-73.9784447",
     "link": "https://www.instagram.com/dingalingcocktaillounge/",
@@ -11651,7 +11651,7 @@
   {
     "name": "Dante West Village",
     "vibe": "Classic, Trendy, Cocktails, Martini, Aperitivo, People Watching",
-    "type": "cocktail",
+    "type": "brunch, lunch, cocktail",
         "lat": "40.7352204",
     "lon": "-74.0062506",
     "link": "https://www.instagram.com/dantewestvillage/",
@@ -11780,7 +11780,7 @@
   {
     "name": "Ma•dé",
     "vibe": "Padang Dining, Group Dinner, Artistic, Trendy, Hidden Gem",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7214053",
     "lon": "-73.9951726",
     "link": "https://www.instagram.com/ma_de.nyc/",
@@ -11823,7 +11823,7 @@
   {
     "name": "The Mulberry",
     "vibe": "Aesthetic, Cozy, Speakeasy, Casual, Hidden Bar",
-    "type": "speakeasy",
+    "type": "speakeasy, cocktail",
         "lat": "40.72278985",
     "lon": "-73.9957122",
     "link": "https://www.instagram.com/themulberrybar/",
@@ -11866,7 +11866,7 @@
   {
     "name": "Café Leon Dore",
     "vibe": "Stylish, Trendy, Modern Café, Coffee",
-    "type": "coffee",
+    "type": "coffee, lifestyle",
         "lat": "40.72221429",
     "lon": "-73.99605",
     "link": "https://www.instagram.com/explore/search/keyword/?q=Caf%C3%A9%20Leon%20Dore",
@@ -11909,7 +11909,7 @@
   {
     "name": "Torrisi",
     "vibe": "Chic, Modern, Italian, Upscale Dining, Dinner",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.724217",
     "lon": "-73.9954001",
     "link": "https://www.instagram.com/richtorrisi/",
@@ -11968,7 +11968,7 @@
   {
     "name": "Lil' Frankie's",
     "vibe": "Energy, Italian, Neighborhood, Casual Dining, Group Dinner",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7235847",
     "lon": "-73.9884552",
     "link": "https://www.instagram.com/lilfrankies/",
@@ -12011,7 +12011,7 @@
   {
     "name": "Mission Ceviche",
     "vibe": "Bright, Latin, Trendy, Casual Dining, Brunch, Weekend DJ",
-    "type": "brunch",
+    "type": "lunch, dinner",
         "lat": "40.76924287",
     "lon": "-73.95791763",
     "link": "https://www.instagram.com/missionceviche/",
@@ -12054,7 +12054,7 @@
   {
     "name": "Xolo",
     "vibe": "Trendy, Dog-Friendly, Latin-inspired, Brunch, Relaxed",
-    "type": "brunch",
+    "type": "dinner",
         "lat": "40.711594",
     "lon": "-73.967379",
     "link": "https://www.instagram.com/xolobk/",
@@ -12140,7 +12140,7 @@
   {
     "name": "Le French Diner",
     "vibe": "Cozy, French Bistro, Eat at the Bar, Casual, Small Kitchen",
-    "type": "dinner",
+    "type": "dinner, cocktail",
         "lat": "40.7220477",
     "lon": "-73.9880873",
     "link": "https://www.instagram.com/lefrenchdiner/",
@@ -12183,7 +12183,7 @@
   {
     "name": "(SUB)MERCER",
     "vibe": "Trendy, Exclusive, Chic, Cocktail Bar, Lounge, Hidden, Speakeasy",
-    "type": "speakeasy",
+    "type": "speakeasy, lounge",
         "lat": "40.7249122",
     "lon": "-73.9986434",
     "link": "https://www.instagram.com/submercer/",
@@ -12224,7 +12224,7 @@
   {
     "name": "COQODAQ",
     "vibe": "Cozy, Trendy, Modern Dining, Fried Chicken, Champagne",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7400751",
     "lon": "-73.98874859",
     "link": "https://www.instagram.com/coqodaq/",
@@ -12332,10 +12332,10 @@
   {
     "name": "Shoo Shoo Nolita",
     "vibe": "Chic, Lunch, Brunch, Cozy, Cocktail Bar, Outdoor Dining",
-    "type": "brunch",
+    "type": "brunch, lunch, dinner",
         "lat": "40.7201124",
     "lon": "-73.9961673",
-    "link": "https://www.instagram.com/shooshoonolita/",
+    "link": "https://www.instagram.com/shooshoo_nyc/",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:30 AM–10:00 PM",
@@ -12461,7 +12461,7 @@
   {
     "name": "The Flower Shop Rooftop",
     "vibe": "Chic, Trendy, Rooftop, Scenic Views",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.718348",
     "lon": "-74.00214",
     "link": "https://www.instagram.com/walkerrooftop/",
@@ -12586,7 +12586,7 @@
   {
     "name": "Ammazzacaffè",
     "vibe": "Italian, Coffee, Espresso Bar, Aperitifs, Casual",
-    "type": "coffee",
+    "type": "lunch, dinner",
         "lat": "40.7114031",
     "lon": "-73.9446152",
     "link": "https://www.instagram.com/ammazzacaffe.nyc/",
@@ -12638,8 +12638,8 @@
   },
   {
     "name": "Alice",
-    "vibe": "Farm To Table, Brunch, European-style Café, Relaxed",
-    "type": "brunch",
+    "vibe": "Farm To Table, European-style Café, Relaxed",
+    "type": "dinner",
         "lat": "40.7371073",
     "lon": "-73.9986308",
     "link": "https://www.instagram.com/alicerestaurantnyc/",
@@ -12725,7 +12725,7 @@
   {
     "name": "Saint Tuesday",
     "vibe": "Speakeasy, Jazz, Lounge, Relaxed, Cocktail Bar",
-    "type": "speakeasy",
+    "type": "speakeasy, music",
         "lat": "40.718348",
     "lon": "-74.00214",
     "link": "https://www.instagram.com/sainttuesday_nyc/",
@@ -12811,7 +12811,7 @@
   {
     "name": "Scarr's Pizza",
     "vibe": "Trendy, Casual, Classic, NYC-style Pizza, Neighborhood Favorite",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7157403",
     "lon": "-73.9915692",
     "link": "https://www.instagram.com/scarrspizza/",
@@ -12897,7 +12897,7 @@
   {
     "name": "NURA",
     "vibe": "Cozy, Dinner, Brunch, Hip, Intimate, Date, Plants",
-    "type": "brunch",
+    "type": "brunch, dinner",
         "lat": "40.7246593",
     "lon": "-73.9537088",
     "link": "https://www.instagram.com/nurabrooklyn/",
@@ -12947,7 +12947,7 @@
   {
     "name": "Casa Ora",
     "vibe": "Cozy, Relaxed, Intimate, Mediterranean Vibe, Date",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.70783935",
     "lon": "-73.9437523",
     "link": "https://www.instagram.com/casaoranyc/",
@@ -12997,7 +12997,7 @@
   {
     "name": "JIMMY",
     "vibe": "Rooftop Bar, Social, Trendy, Upscale",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.72244",
     "lon": "-74.004816",
     "link": "https://www.instagram.com/jimmy.soho/",
@@ -13126,7 +13126,7 @@
   {
     "name": "Ms. Yoo",
     "vibe": "Cocktail, Trendy, Intimate, Korean Dining, Disco Ball",
-    "type": "cocktail",
+    "type": "cocktail, lounge",
         "lat": "40.7212083",
     "lon": "-73.9897713",
     "link": "https://www.instagram.com/ms.yoo/",
@@ -13169,7 +13169,7 @@
   {
     "name": "NR",
     "vibe": "Cocktail, Trendy, Upscale, Elegant Dining, Asian",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": "40.7371073",
     "lon": "-73.9549709",
     "link": "https://www.instagram.com/nr_nyc/",
@@ -13177,8 +13177,8 @@
     "hours": [
     "Sunday: 12:00 PM–10:00 PM",
     "Monday: 5:00 PM–11:00 PM",
-    "Tuesday: 5–11:00 PM",
-    "Wednesday: 5–11:00 PM",
+    "Tuesday: 5:00 PM–11:00 PM",
+    "Wednesday: 5:00 PM–11:00 PM",
     "Thursday: 5:00 PM–12:00 AM",
     "Friday: 5:00 PM–12:00 AM",
     "Saturday: 12:00 PM–12:00 AM"
@@ -13384,7 +13384,7 @@
   {
     "name": "Lucien",
     "vibe": "Chic, Trendy, Upscale, Fine Dining, French",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.72334135",
     "lon": "-73.988076",
     "link": "https://www.instagram.com/lucien.nyc/",
@@ -13427,7 +13427,7 @@
   {
     "name": "Glass Ceiling Rooftop",
     "vibe": "Trendy, Rooftop Bar, Scenic Views",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.7462694",
     "lon": "-73.9883642",
     "link": "https://www.instagram.com/glassceilingrooftop/",
@@ -13513,7 +13513,7 @@
   {
     "name": "Electric Lemon",
     "vibe": "Upscale, Rooftop Bar, Stylish, Scenic Views",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.7545577",
     "lon": "-74.00200571",
     "link": "https://www.instagram.com/electriclemonnyc/",
@@ -13642,7 +13642,7 @@
   {
     "name": "JANE Motorcycles",
     "vibe": "Cool, Artsy, Auto, Coffee",
-    "type": "random gem",
+    "type": "random gem, coffee, lifestyle",
         "lat": "40.7125186",
     "lon": "-73.9660797",
     "link": "https://www.instagram.com/janemotorcycles/",
@@ -13685,7 +13685,7 @@
   {
     "name": "Tokyo Record Bar",
     "vibe": "Trendy, Japanese, Music, Vinyl, Fun",
-    "type": "music",
+    "type": "music, dinner",
         "lat": "40.7306295",
     "lon": "-74.00015175",
     "link": "https://www.instagram.com/tokyorecordbar/",
@@ -13943,7 +13943,7 @@
   {
     "name": "The Monkey King",
     "vibe": "Sleek, Social, Asian-Inspired, Wine Bar",
-    "type": "wine bar",
+    "type": "dinner, cocktail",
         "lat": "40.7061629",
     "lon": "-73.9210971",
     "link": "https://www.instagram.com/themonkeykingnyc/",
@@ -14029,7 +14029,7 @@
   {
     "name": "Sereneco",
     "vibe": "Elegant, Bright, Brunch Spot, Outdoor Seating, Cocktails",
-    "type": "brunch",
+    "type": "brunch, dinner, cocktail",
         "lat": "40.7303713",
     "lon": "-73.9578334",
     "link": "https://www.instagram.com/sereneconyc/",
@@ -14072,7 +14072,7 @@
   {
     "name": "Cozy Royale",
     "vibe": "Sandwiches, Burger, Hotdog, Laid-Back, Neighborhood Dining",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7169346",
     "lon": "-73.9429324",
     "link": "https://www.instagram.com/cozyroyalebk/",
@@ -14208,7 +14208,7 @@
   {
     "name": "Mắm",
     "vibe": "Intimate, Authentic, Vietnamese Street Food, Outdoor Seating",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7170163",
     "lon": "-73.99325241",
     "link": "https://www.instagram.com/mam.nyc/",
@@ -14251,7 +14251,7 @@
   {
     "name": "Cosenza's Fish Market",
     "vibe": "Not A Sit Down, Oyster, Seafood Market",
-    "type": "random gem",
+    "type": "random gem, lunch",
         "lat": "40.8545359",
     "lon": "-73.88819948",
     "link": "https://www.instagram.com/explore/locations/8494296/cosenzas-fish-mkt/",
@@ -14337,7 +14337,7 @@
   {
     "name": "Roy's Fish Market",
     "vibe": "Local, No-Frills, Seafood Spot, Sushi",
-    "type": "random gem",
+    "type": "random gem, lunch",
         "lat": "40.76172155",
     "lon": "-73.9601005",
     "link": "https://www.instagram.com/explore/locations/362855481/roys-fish-market/",
@@ -14423,7 +14423,7 @@
   {
     "name": "Ella Funt",
     "vibe": "Cozy, Cocktails, Hip, Group Dinner, Vinyl",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": "40.7262314",
     "lon": "-73.9900046",
     "link": "https://www.instagram.com/ellafunt.nyc/",
@@ -14466,7 +14466,7 @@
   {
     "name": "Troost",
     "vibe": "Laid-back, Cocktails, Neighborhood Bar, Live Music",
-    "type": "bar",
+    "type": "cocktail, music",
         "lat": "40.7334503",
     "lon": "-73.9549611",
     "link": "https://www.instagram.com/troostnyc/",
@@ -14595,7 +14595,7 @@
   {
     "name": "Ketchy Shuby",
     "vibe": "Hip, Group Dinner, Lively, Eclectic Lounge, Dance, DJ, Hidden Party",
-    "type": "club",
+    "type": "club, brunch, cocktail",
         "lat": "40.7210382",
     "lon": "-73.9977804",
     "link": "https://www.instagram.com/ketchyshuby.nyc/",
@@ -14642,9 +14642,9 @@
   {
     "name": "Arlo Williamsburg",
     "vibe": "Nightlife, DJ, Swimming Pool, Rooftop, Skyline Views",
-    "type": "club",
-        "lat": "40.71304885",
-    "lon": "-73.96577513",
+    "type": "club, rooftop",
+        "lat": "40.7215045",
+    "lon": "-73.9587016",
     "link": "https://www.instagram.com/arloafterdark/",
     "openNow": "TRUE",
     "hours": [
@@ -14685,7 +14685,7 @@
   {
     "name": "Westlight",
     "vibe": "Upscale, Rooftop, Skyline Views, Cocktails, Social, Restaurant",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.722297",
     "lon": "-73.9565396",
     "link": "https://www.instagram.com/westlightnyc/",
@@ -14771,7 +14771,7 @@
   {
     "name": "Good Room",
     "vibe": "Nightlife, DJ, Dance, Multiple Rooms, Club",
-    "type": "club",
+    "type": "club, late-night",
         "lat": "40.7269085",
     "lon": "-73.9528103",
     "link": "https://www.instagram.com/goodroombk/",
@@ -14857,7 +14857,7 @@
   {
     "name": "PIPS",
     "vibe": "Cozy, Intimate, Speakeasy, Chill, Retro, Natural Wine",
-    "type": "speakeasy",
+    "type": "dinner, wine bar",
         "lat": "40.6908713",
     "lon": "-73.99573195",
     "link": "https://www.instagram.com/pipsbrooklyn/?hl=en",
@@ -14986,7 +14986,7 @@
   {
     "name": "Elsa",
     "vibe": "Modern, Sleek, Casual, Chic, Inviting",
-    "type": "cocktail",
+    "type": "cocktail, patio",
         "lat": "40.6902868",
     "lon": "-73.99534426",
     "link": "https://www.instagram.com/elsabarnyc/?hl=en",
@@ -15115,7 +15115,7 @@
   {
     "name": "Ophelia Lounge NYC",
     "vibe": "Glamorous, Lounge, Rooftop, Upscale, Elegant, Scenic, Luxurious",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.7533299",
     "lon": "-73.966171",
     "link": "https://www.instagram.com/opheliany/?hl=en",
@@ -15201,7 +15201,7 @@
   {
     "name": "Bridges",
     "vibe": "Modern, Stylish, Eclectic, Chill, Urban",
-    "type": "bar",
+    "type": "dinner",
         "lat": "40.7140307",
     "lon": "-73.9980719",
     "link": "https://www.instagram.com/bridges.nyc/?hl=en",
@@ -15244,7 +15244,7 @@
   {
     "name": "Hildur",
     "vibe": "Intimate, Cozy, Chic, Sophisticated, Patio",
-    "type": "wine bar",
+    "type": "wine bar, patio",
         "lat": "40.7026903",
     "lon": "-73.9931263",
     "link": "https://www.instagram.com/hildur.brooklyn/?hl=en",
@@ -15324,7 +15324,7 @@
   {
     "name": "Winona's",
     "vibe": "Casual, Laid-back, Neighborhood, Inviting",
-    "type": "bar",
+    "type": "dinner, brunch, wine bar",
         "lat": "40.7000476",
     "lon": "-73.9457873",
     "link": "https://www.instagram.com/winonasbk/?hl=en",
@@ -15447,7 +15447,7 @@
   {
     "name": "Father Knows Best",
     "vibe": "Divey, Eclectic, Funky, Local",
-    "type": "bar",
+    "type": "brunch, lunch, cocktail",
         "lat": "40.6902212",
     "lon": "-73.9070274",
     "link": "https://www.instagram.com/fathersbk/?hl=en",
@@ -15576,7 +15576,7 @@
   {
     "name": "Roberta's",
     "vibe": "Hip, Casual, Cozy, Local Favorite",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7050062",
     "lon": "-73.9335894",
     "link": "https://www.instagram.com/robertaspizza/?hl=en",
@@ -15618,7 +15618,7 @@
   },
   {
     "name": "Mood Ring",
-    "vibe": "Colorful, Whimsical, Experimental, Quirky",
+    "vibe": "Colorful, Whimsical, Experimental, Quirky, LGBTQ+",
     "type": "club",
         "lat": "40.6977941",
     "lon": "-73.9269769",
@@ -15662,7 +15662,7 @@
   {
     "name": "Goldie's Bar",
     "vibe": "Intimate, Fun, Craft Cocktails, Chill",
-    "type": "cocktail",
+    "type": "cocktail, patio",
         "lat": "40.7256573",
     "lon": "-73.9451403",
     "link": "https://www.instagram.com/goldiesbrooklyn/?hl=en",
@@ -15670,7 +15670,7 @@
     "hours": [
     "Sunday: 2:00 PM–3:00 AM",
     "Monday: 4:00 PM–3:00 AM",
-    "Tuesday: 4 PM – 3:00 AM",
+    "Tuesday: 4:00 PM–3:00 AM",
     "Wednesday: 4:00 PM–3:00 AM",
     "Thursday: 4:00 PM–4:00 AM",
     "Friday: 3:00 PM–4:00 AM",
@@ -15705,7 +15705,7 @@
   {
     "name": "Razor-N-Tape",
     "vibe": "Vintage, Laid-back, Vinyl, Retro",
-    "type": "music",
+    "type": "music, lifestyle",
         "lat": "40.72707645",
     "lon": "-73.95230534",
     "link": "https://www.instagram.com/razorntape/?hl=en",
@@ -15791,7 +15791,7 @@
   {
     "name": "Rocka Rolla ",
     "vibe": "Rock Bar, Divey, Casual Hangout, Locals",
-    "type": "bar",
+    "type": "bar, patio",
         "lat": "40.7139355",
     "lon": "-73.952822",
     "link": "https://www.instagram.com/rockarolla_bk/",
@@ -15919,7 +15919,7 @@
   },
   {
     "name": "Ray's Hometown Bar ",
-    "vibe": "Classic NYC Bar, Casual Date, Dive Bar",
+    "vibe": "Western, Casual Date, Dive Bar",
     "type": "bar",
         "lat": "40.7235334",
     "lon": "-73.9518146",
@@ -15961,7 +15961,7 @@
     "duration": 1.25
   },
   {
-    "name": "Good Bar ",
+    "name": "Good Bar",
     "vibe": "Sports Bar, Laid-Back, Social Games",
     "type": "bar",
         "lat": "40.7238537",
@@ -16006,7 +16006,7 @@
   {
     "name": "Berry Park ",
     "vibe": "Rooftop, Sports Bar, Euro Vibes, Brunch",
-    "type": "bar",
+    "type": "bar, rooftop",
         "lat": "40.7224689",
     "lon": "-73.95525274",
     "link": "https://www.instagram.com/berryparkbk/",
@@ -16047,9 +16047,9 @@
     "duration": 1.75
   },
   {
-    "name": "The Gutter ",
+    "name": "The Gutter",
     "vibe": "Bowling Bar, Retro, Group Hang, Divey",
-    "type": "activity",
+    "type": "bar, activity",
         "lat": "40.7227408",
     "lon": "-73.9554759",
     "link": "https://www.instagram.com/gutterbar/",
@@ -16090,9 +16090,9 @@
     "duration": 2
   },
   {
-    "name": "Brooklyn Billiards ",
+    "name": "Brooklyn Billiards",
     "vibe": "Pool Hall, Sports, Late Night, Competitive",
-    "type": "activity",
+    "type": "bar, activity",
         "lat": "40.721591",
     "lon": "-73.957999",
     "link": "https://www.instagram.com/bkbilliards/",
@@ -16133,7 +16133,7 @@
     "duration": 2
   },
   {
-    "name": "Bathhouse Williamsburg ",
+    "name": "Bathhouse Williamsburg",
     "vibe": "Spa, Date Night, Wellness, Upscale Relaxation",
     "type": "spa",
         "lat": "40.720582",
@@ -16176,9 +16176,9 @@
     "duration": 2.25
   },
   {
-    "name": "Juicery Kitchen ",
+    "name": "Juicery Kitchen",
     "vibe": "Juice Bar, Health Food, Breakfast, Clean Eating",
-    "type": "coffee",
+    "type": "coffee, juice bar",
         "lat": "40.71778365",
     "lon": "-73.95182439",
     "link": "https://www.instagram.com/juicerykitchen/",
@@ -16262,7 +16262,7 @@
     "duration": 1.5
   },
   {
-    "name": "Little Rascal Bar ",
+    "name": "Little Rascal Bar",
     "vibe": "Cocktail Bar, Trendy, Date Spot, Chill",
     "type": "cocktail",
         "lat": "40.729358",
@@ -16307,7 +16307,7 @@
   {
     "name": "Paulie Gee's Slice Shop ",
     "vibe": "Pizza, Quick Bite, NYC Classic, Late Night",
-    "type": "lunch",
+    "type": "lunch, dinner",
         "lat": "40.7283593",
     "lon": "-73.9571898",
     "link": "https://www.instagram.com/pauliegees_sliceshop/",
@@ -16350,7 +16350,7 @@
   {
     "name": "Bk Backyard Bar ",
     "vibe": "Outdoor Bar, Casual, Group Hang, Music",
-    "type": "bar",
+    "type": "bar, patio",
         "lat": "40.72407826",
     "lon": "-73.95487861",
     "link": "https://www.instagram.com/bkbackyardbar/",
@@ -16391,9 +16391,9 @@
     "duration": 1.75
   },
   {
-    "name": "Beco ",
+    "name": "Beco",
     "vibe": "Brazilian, Happy Hour, Local Gem, Chill Vibe",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.718569",
     "lon": "-73.946201",
     "link": "https://www.instagram.com/becobar/",
@@ -16477,9 +16477,9 @@
     "duration": 0.5
   },
   {
-    "name": "Hide & Seek ",
+    "name": "Hide & Seek",
     "vibe": "Coffee + Bar Hybrid, Creative Crowd, Low-key Drinks",
-    "type": "coffee",
+    "type": "coffee, lounge",
         "lat": "40.7229766",
     "lon": "-73.950475",
     "link": "https://www.instagram.com/hideandseekbk/",
@@ -16522,7 +16522,7 @@
   {
     "name": "Birdee ",
     "vibe": "Coffee Shop, Trendy, Dog-Friendly, Good Lighting",
-    "type": "coffee",
+    "type": "coffee, breakfast",
         "lat": "40.71364545",
     "lon": "-73.9671479",
     "link": "https://www.instagram.com/birdeenyc/",
@@ -16651,7 +16651,7 @@
   {
     "name": "Barcade ",
     "vibe": "Arcade Bar, Nostalgia, Craft Beer, Group Hang, Geek Chic",
-    "type": "bar",
+    "type": "bar, activity",
         "lat": "40.7120257",
     "lon": "-73.951117",
     "link": "https://www.instagram.com/barcade/",
@@ -16738,8 +16738,8 @@
     "name": "Union Square Greenmarket ",
     "vibe": "Farmers Market, Local Produce, Seasonal",
     "type": "market",
-        "lat": "40.7365303",
-    "lon": "-73.9903945",
+        "lat": "40.66337083",
+    "lon": "-73.99072543",
     "link": "https://www.instagram.com/unionsqmarket/",
     "openNow": "TRUE",
     "hours": [
@@ -17253,7 +17253,7 @@
   {
     "name": "Grand Banks Park ",
     "vibe": "Oyster Bar, Waterfront, Summer Vibe, Date Night",
-    "type": "wine bar",
+    "type": "cocktail, lunch, dinner",
         "lat": "40.7215197",
     "lon": "-74.0123696",
     "link": "https://www.instagram.com/grandbanksnyc/",
@@ -17296,7 +17296,7 @@
   {
     "name": "The Water Tower Bar ",
     "vibe": "Rooftop, Fancy Cocktails, Views, Hotel Bar",
-    "type": "cocktail",
+    "type": "cocktail, rooftop",
         "lat": "40.7215151",
     "lon": "-73.9588044",
     "link": "https://www.instagram.com/thewatertowerbar/",
@@ -17339,7 +17339,7 @@
   {
     "name": "elNico ",
     "vibe": "Rooftop, Modern Mexican, Upscale, Scenic",
-    "type": "cocktail",
+    "type": "cocktail, rooftop",
         "lat": "40.71575715",
     "lon": "-73.95307469",
     "link": "https://www.instagram.com/elnicony/",
@@ -17382,7 +17382,7 @@
   {
     "name": "Pineapple Club",
     "vibe": "Cozy, Cocktails, Laid-back, Intimate Vibe",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": "40.72533265",
     "lon": "-73.98322251",
     "link": "https://www.instagram.com/pineappleclubnyc/",
@@ -17425,7 +17425,7 @@
   {
     "name": "Book Club Bar",
     "vibe": "Literary-themed, Relaxed Atmosphere, Casual",
-    "type": "bar",
+    "type": "bookstore, bar",
         "lat": "40.72297255",
     "lon": "-73.98323789",
     "link": "https://www.instagram.com/bookclubbar/",
@@ -17554,7 +17554,7 @@
   {
     "name": "Commune Cafe + Wine Bar",
     "vibe": "Wine Bar, Coffee, Neighborhood-friendly, Outdoor Seating",
-    "type": "wine bar",
+    "type": "wine bar, coffee, breakfast",
         "lat": "40.6868109",
     "lon": "-73.9594329",
     "link": "https://www.instagram.com/communenyc/?hl=en",
@@ -17897,8 +17897,8 @@
   },
   {
     "name": "Wiggle Room",
-    "vibe": "Funky, Lively, LGBTQ+ friendly, Playful, Hidden",
-    "type": "speakeasy",
+    "vibe": "Funky, Lively, Dance, DJ, Playful, Hidden",
+    "type": "club",
         "lat": "40.7226631",
     "lon": "-73.9863232",
     "link": "https://www.instagram.com/wiggleroom.bar/",
@@ -17941,7 +17941,7 @@
   {
     "name": "Broken Shaker",
     "vibe": "Chic, Rooftop, Views, Trendy",
-    "type": "cocktail",
+    "type": "cocktail, rooftop",
         "lat": "40.7395891",
     "lon": "-73.9844966",
     "link": "https://www.instagram.com/brokenshaker/",
@@ -18026,8 +18026,8 @@
   },
   {
     "name": "Tara Rose",
-    "vibe": "Speakeasy, Moody, Intimate, Craft Cocktails, Refined",
-    "type": "speakeasy",
+    "vibe": "Brunch, Irish, Craft Cocktails, Refined",
+    "type": "brunch, cocktail",
         "lat": "40.7417705",
     "lon": "-73.9812603",
     "link": "https://www.instagram.com/tararosenyc/",
@@ -18070,7 +18070,7 @@
   {
     "name": "Tavern 29",
     "vibe": "Rustic, Cocktails, Relaxed",
-    "type": "bar",
+    "type": "rooftop, bar",
         "lat": "40.7445031",
     "lon": "-73.9846308",
     "link": "https://www.instagram.com/tavern29/",
@@ -18113,7 +18113,7 @@
   {
     "name": "Amélie west village Restaurant, Bistro & Wine Bar",
     "vibe": "French-inspired, Intimate, Romantic, Wine",
-    "type": "wine bar",
+    "type": "wine bar, cocktail",
         "lat": "40.7326969",
     "lon": "-73.9976557",
     "link": "https://www.instagram.com/ameliebistronyc/",
@@ -18156,7 +18156,7 @@
   {
     "name": "Zona Rosa Brooklyn",
     "vibe": "Modern, Vibrant, Lively, Mexican, Casual",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7139332",
     "lon": "-73.94957827",
     "link": "https://www.instagram.com/zonarosabrooklyn",
@@ -18198,8 +18198,8 @@
   },
   {
     "name": "Pally",
-    "vibe": "Trendy, Sleek, Intimate, Creative cocktails, Stylish",
-    "type": "cocktail",
+    "vibe": "Trendy, Sleek, Intimate, Creative Cocktails, Stylish",
+    "type": "coffee, wine bar, cocktail",
         "lat": "40.7168987",
     "lon": "-73.9652375",
     "link": "https://www.instagram.com/pallynyc/",
@@ -18242,7 +18242,7 @@
   {
     "name": "Pan Pan",
     "vibe": "Bakery, Wine, Spanish, Minimalist, Relaxed Atmosphere",
-    "type": "bakery",
+    "type": "bakery, wine bar",
         "lat": "40.72593",
     "lon": "-73.949881",
     "link": "https://www.instagram.com/panpanbrooklyn/",
@@ -18500,7 +18500,7 @@
   {
     "name": "Tompkins Square Bagels",
     "vibe": "Iconic, Breakfast, Quick Bite, Neighborhood Gem",
-    "type": "bakery",
+    "type": "bakery, breakfast",
         "lat": "40.7281762",
     "lon": "-73.9821791",
     "link": "https://www.instagram.com/tompkinssquarebagels/",
@@ -18543,7 +18543,7 @@
   {
     "name": "Maison Close Restaurant",
     "vibe": "French-inspired, Chic, Wine, Romantic",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": "40.7232195",
     "lon": "-74.00367915",
     "link": "https://www.instagram.com/maisoncloserestaurant/tagged/",
@@ -18586,7 +18586,7 @@
   {
     "name": "Scarlet Lounge",
     "vibe": "Neighborhood Bar, Relaxed, Intimate Atmosphere, Creative Cocktails, Low-key but Stylish",
-    "type": "cocktail",
+    "type": "cocktail, lounge, music",
         "lat": "40.7855628",
     "lon": "-73.9767913",
     "link": "https://www.instagram.com/scarletloungenyc/",
@@ -18629,7 +18629,7 @@
   {
     "name": "Baretto New York",
     "vibe": "Jazz, European, Wine, Refined, Moderate Energy, Intimate",
-    "type": "wine bar",
+    "type": "music",
         "lat": "40.7567686",
     "lon": "-73.9755276",
     "link": "https://www.instagram.com/barettonyc/",
@@ -18758,7 +18758,7 @@
   {
     "name": "Easy Lover",
     "vibe": "Hidden Gem, Cocktails, Low to Moderate Energy, Chic",
-    "type": "cocktail",
+    "type": "bar",
         "lat": "40.7145615",
     "lon": "-73.9425485",
     "link": "https://www.instagram.com/easyloverbk/",
@@ -18801,7 +18801,7 @@
   {
     "name": "Prima Brooklyn",
     "vibe": "Italian Bistro, Romantic, Moderate Energy, Stylish",
-    "type": "dinner",
+    "type": "coffee, wine bar, lunch, dinner",
         "lat": "40.6867938",
     "lon": "-73.9662119",
     "link": "https://www.instagram.com/primabrooklyn/",
@@ -18844,7 +18844,7 @@
   {
     "name": "The Riff Raff Club",
     "vibe": "Rooftop Club, Chic, High Energy, Trendy, Upscale",
-    "type": "club",
+    "type": "club, rooftop",
         "lat": "40.74647695",
     "lon": "-73.98885781",
     "link": "https://www.instagram.com/theriffraffclub/",
@@ -18887,7 +18887,7 @@
   {
     "name": "Silver Lining Lounge",
     "vibe": "Speakeasy, Cocktails, Intimate, Relaxed",
-    "type": "speakeasy",
+    "type": "lounge",
         "lat": "40.71906775",
     "lon": "-73.99414258",
     "link": "https://www.instagram.com/silverlininglounge/",
@@ -18930,7 +18930,7 @@
   {
     "name": "Castell Rooftop Lounge",
     "vibe": "Rooftop Bar, City Views, Chic, Upscale, Lively",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.755533",
     "lon": "-73.9902804",
     "link": "https://www.instagram.com/castellnyc/",
@@ -18972,8 +18972,8 @@
   },
   {
     "name": "Selva",
-    "vibe": "Latin, Wine, Artistic, Moderate Energy",
-    "type": "wine bar",
+    "vibe": "Latin, Vinyl, Artistic, Cafe, Cocktail",
+    "type": "bar, coffee, lifestyle, gallery",
         "lat": "40.7063004",
     "lon": "-73.92111013",
     "link": "https://www.instagram.com/selva_nyc/",
@@ -19016,7 +19016,7 @@
   {
     "name": "Daintree",
     "vibe": "Rooftop Bar, High Energy, Chic, Upscale Cocktails",
-    "type": "cocktail",
+    "type": "cocktail, rooftop",
         "lat": "40.7518932",
     "lon": "-73.9840991",
     "link": "https://www.instagram.com/daintreenyc/",
@@ -19102,7 +19102,7 @@
   {
     "name": "Che",
     "vibe": "Cozy, Neighborhood Spot, Authentic, Lively, Latin",
-    "type": "dinner",
+    "type": "breakfast, lunch, dinner",
         "lat": "40.6825223",
     "lon": "-73.9291165",
     "link": "https://www.instagram.com/che_brooklyn/",
@@ -19232,7 +19232,7 @@
   {
     "name": "Tadpole",
     "vibe": "Laid-back, Neighborhood Spot, Cocktails",
-    "type": "bar",
+    "type": "bar, cocktail",
         "lat": "40.68482895",
     "lon": "-73.938632",
     "link": "https://www.instagram.com/tadpole.bk/",
@@ -19273,52 +19273,9 @@
     "duration": 1.75
   },
   {
-    "name": "Bohemien Bar",
-    "vibe": "Cozy, Eclectic, Intimate, Casual Drinks, Bohemian, Neighborhood Hangout",
-    "type": "cocktail",
-        "lat": "40.69123245",
-    "lon": "-73.99701044",
-    "link": "https://www.instagram.com/bohemienbar/",
-    "openNow": "TRUE",
-    "hours": [
-    "Sunday: 4:00 PM–12:00 AM",
-    "Monday: 5:00 PM–12:00 AM",
-    "Tuesday: 5:00 PM–12:00 AM",
-    "Wednesday: 5:00 PM–12:00 AM",
-    "Thursday: 5:00 PM–1:00 AM",
-    "Friday: 4:00 PM–2:00 AM",
-    "Saturday: 4:00 PM–2:00 AM"
-    ],
-  "dateEvents": [
-  { "date": "-", "title": "-", "time": "-" },
-  { "date": "-", "title": "-", "time": "-" }
-],
-  "hoursNumeric": {"sun": { "open": 16, "close": 24 },
-    "mon": { "open": 17, "close": 24 },
-    "tue": { "open": 17, "close": 24 },
-    "wed": { "open": 17, "close": 24 },
-    "thu": { "open": 17, "close": 25 },
-    "fri": { "open": 16, "close": 26 },
-    "sat": { "open": 16, "close": 26 } },
-    "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "HH",
-    "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "E"
-  },
-  "timeCategory": "night",
-    "energyRamp": 4,
-    "tags": "dark, vibey, late-night",
-    "price": "$$",
-    "duration": 1.5
-  },
-  {
     "name": "Reservoir",
     "vibe": "Casual, Trendy, Laid-back, Craft Beer, Cozy, Rustic",
-    "type": "cocktail",
+    "type": "lunch, bar, cocktail",
         "lat": "40.7331707",
     "lon": "-73.9936418",
     "link": "https://www.instagram.com/reservoirny/",
@@ -19361,7 +19318,7 @@
   {
     "name": "The Skylark - Rooftop Bar",
     "vibe": "Chic, Sophisticated, Panoramic Views, Upscale, Cocktail Lounge",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.7540102",
     "lon": "-73.9888897",
     "link": "https://www.instagram.com/theskylarknyc/",
@@ -19404,7 +19361,7 @@
   {
     "name": "Iggy's",
     "vibe": "Dive Bar, Relaxed, Casual, Live Music, Gritty Atmosphere",
-    "type": "bar",
+    "type": "bar, late-night",
         "lat": "40.7711285",
     "lon": "-73.9564384",
     "link": "https://www.instagram.com/iggysbarnyc/",
@@ -19447,7 +19404,7 @@
   {
     "name": "Space Karaoke Bar & Lounge | Koreatown NYC",
     "vibe": "Lively, Karaoke, Party Vibe, Casual, Group-friendly, Energetic",
-    "type": "club",
+    "type": "activity, late-night",
         "lat": "40.7477981",
     "lon": "-73.9872728",
     "link": "https://www.instagram.com/spacekaraokenyc/",
@@ -19576,7 +19533,7 @@
   {
     "name": "Reforesters Laboratory",
     "vibe": "Innovative, Eco-conscious, Casual, Neighborhood Cafe, Artisanal Coffee, Creative Space",
-    "type": "coffee",
+    "type": "coffee, lifestyle",
         "lat": "40.7161422",
     "lon": "-73.9620296",
     "link": "https://www.instagram.com/reforesters.io/",
@@ -19748,7 +19705,7 @@
   {
     "name": "Birria-Landia",
     "vibe": "Mexican Street Food, Tacos, Casual, Quick Bites, Late-night, Authentic",
-    "type": "dinner",
+    "type": "dinner, late-night",
         "lat": "40.71398192",
     "lon": "-73.95204547",
     "link": "https://www.instagram.com/birria_landia/",
@@ -19791,7 +19748,7 @@
   {
     "name": "The Commodore",
     "vibe": "Fun, Dive Bar, Casual Hangout, Retro Feel, Lively",
-    "type": "bar",
+    "type": "bar, late-night",
         "lat": "40.7139513",
     "lon": "-73.9558034",
     "link": "https://www.instagram.com/thecommodorebars/",
@@ -19877,7 +19834,7 @@
   {
     "name": "Tabare Williamsburg",
     "vibe": "Cozy, South American Flavors, Intimate, Lively, Dimly Lit",
-    "type": "bar",
+    "type": "brunch, lunch, dinner",
         "lat": "40.7129782",
     "lon": "-73.9589272",
     "link": "https://www.instagram.com/tabarenyc/",
@@ -19963,7 +19920,7 @@
   {
     "name": "TBA Brooklyn",
     "vibe": "Hidden Gem, DJ, Dance, Nightlife, Cocktails",
-    "type": "club",
+    "type": "club, late-night",
         "lat": "40.7111986",
     "lon": "-73.9663773",
     "link": "https://www.instagram.com/tbabrooklyn/",
@@ -20092,7 +20049,7 @@
   {
     "name": "On The 7 - Where Manhattan Meets LIC",
     "vibe": "Relaxed, Live Music, Jazz, Oysters, Wine",
-    "type": "music",
+    "type": "music, bar",
         "lat": "40.74262675",
     "lon": "-73.95438051",
     "link": "https://www.instagram.com/onthe7lic/",
@@ -20178,7 +20135,7 @@
   {
     "name": "Lost in Paradise Rooftop",
     "vibe": "Rooftop Lounge, Scenic Views, Tropical Vibe, Laid-back",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.751801",
     "lon": "-73.947672",
     "link": "https://www.instagram.com/lostinparadiserooftop/",
@@ -20221,7 +20178,7 @@
   {
     "name": "Anable Basin Sailing Bar & Grill",
     "vibe": "Waterfront Bar, Laid-back, Outdoor Seating, Casual",
-    "type": "bar",
+    "type": "bar, patio",
         "lat": "40.7494671",
     "lon": "-73.9552271",
     "link": "https://www.instagram.com/anablebasin/",
@@ -20264,7 +20221,7 @@
   {
     "name": "The Gutter Bar LIC",
     "vibe": "Dive Bar, Chill Vibe, Classic, Bowling, Active",
-    "type": "bar",
+    "type": "bar, activity",
         "lat": "40.7465899",
     "lon": "-73.9518102",
     "link": "https://www.instagram.com/thegutterlic/?hl=en",
@@ -20350,7 +20307,7 @@
   {
     "name": "Darling",
     "vibe": "Upscale, Rooftop Bar, Glamorous, Sophisticated Cocktails, Scenic Views, Trendy",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.764621",
     "lon": "-73.9753353",
     "link": "https://www.instagram.com/darlingrooftop/",
@@ -20565,7 +20522,7 @@
   {
     "name": "Huuma",
     "vibe": "Upscale, Cozy, Intimate, Craft Cocktails, Trendy, Sleek Design, Bao",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": "40.7178259",
     "lon": "-73.9979942",
     "link": "https://www.instagram.com/huuma_nyc/",
@@ -20694,7 +20651,7 @@
   {
     "name": "Harriet's Rooftop",
     "vibe": "Rooftop, Sophisticated, Cocktails, Scenic Views",
-    "type": "lounge",
+    "type": "lounge, rooftop",
         "lat": "40.7024228",
     "lon": "-73.9955097",
     "link": "https://www.instagram.com/harrietsbk/?hl=en",
@@ -20737,7 +20694,7 @@
   {
     "name": "Brooklyn Crab",
     "vibe": "Seafood, Waterfront, Family-friendly, Fun",
-    "type": "bar",
+    "type": "lunch, dinner, patio",
         "lat": "40.6753603",
     "lon": "-74.0165403",
     "link": "https://www.instagram.com/brooklyn_crab/?hl=en",
@@ -20780,7 +20737,7 @@
   {
     "name": "All Blues",
     "vibe": "Trendy, Stylish, Cocktail Lounge, Classy, Dimly Lit",
-    "type": "lounge",
+    "type": "lounge, music",
         "lat": "40.7178766",
     "lon": "-74.0015815",
     "link": "https://www.instagram.com/allbluesnyc/?hl=en",
@@ -20822,8 +20779,8 @@
   },
   {
     "name": "TIME AGAIN",
-    "vibe": "Hidden Gem, Speakeasy, Intimate, Cozy, Cocktail Bar",
-    "type": "speakeasy",
+    "vibe": "Lively, Small Bites, Natural Wine, Cozy, Cocktail Bar",
+    "type": "bar",
         "lat": "40.7156747",
     "lon": "-73.9940649",
     "link": "https://www.instagram.com/timeagainbar/?hl=en",
@@ -20909,7 +20866,7 @@
   {
     "name": "Barely Disfigured",
     "vibe": "Artisanal, Quirky, Casual, Creative Space, Laid-back",
-    "type": "cocktail",
+    "type": "cocktail, patio",
         "lat": "40.6830816",
     "lon": "-73.9927916",
     "link": "https://www.instagram.com/barelydisfigured/?hl=en",
@@ -20951,8 +20908,8 @@
   },
   {
     "name": "Bar Valentina",
-    "vibe": "Cozy, Intimate, Stylish, Hidden Gem, Dimly Lit",
-    "type": "speakeasy",
+    "vibe": "Cozy, Intimate, Stylish, Outdoor Seating, Dimly Lit",
+    "type": "bar, dinner",
         "lat": "40.7180749",
     "lon": "-73.9903709",
     "link": "https://www.instagram.com/barvalentinanyc/?hl=en",
@@ -21124,7 +21081,7 @@
   {
     "name": "Dae",
     "vibe": "Hip, Casual, Laid-back, Neighborhood Spot, Creative",
-    "type": "bar",
+    "type": "cocktail, lifestyle",
         "lat": "40.6785539",
     "lon": "-73.9958031",
     "link": "https://www.instagram.com/dae.bk.newyork/?hl=en",
@@ -21167,7 +21124,7 @@
   {
     "name": "Rude Mouth",
     "vibe": "Casual, Artsy, Loud, Fun, Playful",
-    "type": "bar",
+    "type": "wine bar, patio",
         "lat": "40.714274",
     "lon": "-73.95596384",
     "link": "https://www.instagram.com/rudemouthbk/?hl=en",
@@ -21253,7 +21210,7 @@
   {
     "name": "San Tokki Studio (Appt. only)",
     "vibe": "Creative, Plants, Floral",
-    "type": "random gem",
+    "type": "random gem, lifestyle",
         "lat": "40.676984",
     "lon": "-74.01425526",
     "link": "https://www.instagram.com/santokkistudio/?hl=en",
@@ -21339,7 +21296,7 @@
   {
     "name": "Double Chicken Please",
     "vibe": "Casual, Quirky, Late-night, Fun, Interactive, Cocktails",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": "40.7195842",
     "lon": "-73.9904912",
     "link": "https://www.instagram.com/doublechickenpleasenyc/?hl=en",
@@ -21424,7 +21381,7 @@
   },
   {
     "name": "Julius'",
-    "vibe": "Sports Bar, Chill, Classic, Dive Bar, Historic",
+    "vibe": "LGBTQ+, Dive Bar, Historic",
     "type": "bar",
         "lat": "40.7345416",
     "lon": "-74.0015246",
@@ -21510,7 +21467,7 @@
   },
   {
     "name": "ANIMAL",
-    "vibe": "Casual, Laid-back, Fun, Neighborhood Bar, Vintage",
+    "vibe": "LGBTQ+, Casual, Laid-back, Fun, Neighborhood Bar, Vintage",
     "type": "club",
         "lat": "40.71870937",
     "lon": "-73.94714459",
@@ -21683,7 +21640,7 @@
   {
     "name": "Elizabeth Street Garden",
     "vibe": "Outdoors, Garden, Relaxing, Scenic, Tranquil, Greenery",
-    "type": "park",
+    "type": "park, garden",
         "lat": "40.720326",
     "lon": "-73.995084",
     "link": "https://www.instagram.com/elizabethstreetgarden/?hl=en",
@@ -21726,7 +21683,7 @@
   {
     "name": "Brooklyn Botanic Garden",
     "vibe": "Tranquil, Natural, Scenic, Botanical, Relaxing",
-    "type": "park",
+    "type": "park, garden",
         "lat": "40.6676619",
     "lon": "-73.96362613",
     "link": "https://www.instagram.com/brooklynbotanic/?hl=en",
@@ -21812,7 +21769,7 @@
   {
     "name": "The Clocktower",
     "vibe": "Upscale, Artsy, Elegant, Historic, Modern Design",
-    "type": "dinner",
+    "type": "breakfast, lunch, dinner",
         "lat": "40.7413262",
     "lon": "-73.9874695",
     "link": "https://www.instagram.com/clocktowernyc/?hl=en",
@@ -22228,7 +22185,7 @@
   {
     "name": "Vacations BK",
     "vibe": "Relaxed, Neighborhood Bar, Casual, Fun, Rooftop",
-    "type": "bar",
+    "type": "bar, rooftop",
         "lat": 40.7082711,
     "lon": -73.9202317,
     "link": "https://www.instagram.com/vacationsbk/?hl=en",
@@ -22316,7 +22273,7 @@
   {
     "name": "Left Hand Path",
     "vibe": "Creative, Relaxed, Edgy, Cocktail Bar",
-    "type": " cocktail",
+    "type": "cocktail",
         "lat": 40.7051341,
     "lon": -73.92023186,
     "link": "https://www.instagram.com/lefthandpathbk/?hl=en",
@@ -22448,7 +22405,7 @@
   {
     "name": "ALPHAVILLE",
     "vibe": "Trendy, Hip, Live Music, Casual",
-    "type": "music",
+    "type": "bar",
         "lat": 40.700587,
     "lon": -73.925757,
     "link": "https://www.instagram.com/alphavillebk/?hl=en",
@@ -22580,7 +22537,7 @@
   {
     "name": "Fini Pizza",
     "vibe": "Casual, Neighborhood Spot, Pizza, Relaxed",
-    "type": "dinner",
+    "type": "lunch, dinner",
         "lat": 40.7134723,
     "lon": -73.9618052,
     "link": "https://www.instagram.com/finipizza/?hl=en",
@@ -22624,7 +22581,7 @@
   {
     "name": "Fast Times",
     "vibe": "Retro, Fun, Casual, Coffee",
-    "type": "coffee",
+    "type": "coffee, bookstore, lifestyle",
         "lat": 40.7216246,
     "lon": -73.9998097,
     "link": "https://www.instagram.com/fasttimescoffee/?hl=en",
@@ -22756,7 +22713,7 @@
   {
     "name": "Soda Club",
     "vibe": "Trendy, Stylish, Cocktail Bar, Vibrant",
-    "type": "cocktail",
+    "type": "brunch, cocktail",
         "lat": 40.7256895,
     "lon": -73.9840619,
     "link": "https://www.instagram.com/sodaclubnyc/?hl=en",
@@ -22849,7 +22806,7 @@
   {
     "name": "BabySips",
     "vibe": "LGBTQ+ Friendly, Cozy, Fun, Casual Drinks",
-    "type": "bar",
+    "type": "wine bar",
         "lat": 40.7189528,
     "lon": -73.9843854,
     "link": "https://www.instagram.com/babysips.nyc/",
@@ -22893,7 +22850,7 @@
   {
     "name": "Brooklyn Granary & Mill",
     "vibe": "Rustic, Industrial, Cozy, Artisan Coffee, Relaxed Atmosphere",
-    "type": "coffee",
+    "type": "coffee, bakery",
         "lat": 40.67557747,
     "lon": -73.99839929,
     "link": "https://www.instagram.com/brooklyngranaryandmill/",
@@ -22938,8 +22895,8 @@
     "name": "Olmo",
     "vibe": "Sleek, Modern, Neighborhood Spot, Casual Dining, Mediterranean-Inspired, Trendy",
     "type": "dinner",
-        "lat": 40.6831458,
-    "lon": -73.9170735,
+        "lat": 40.6831425,
+    "lon": -73.9170946,
     "link": "https://www.instagram.com/olmobk/",
     "openNow": true,
     "hours": [
@@ -22981,7 +22938,7 @@
   {
     "name": "DOLORES",
     "vibe": "Vibrant, Artistic, Contemporary, Creative Cocktails, Eclectic, Stylish Ambience, Latin",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": 40.683861,
     "lon": -73.94387,
     "link": "https://www.instagram.com/dolores.bk/",
@@ -23025,7 +22982,7 @@
   {
     "name": "kalei nyc",
     "vibe": "Artistic, Minimalist, Chic, Contemporary, Floral, Coffee and Craft Cocktails",
-    "type": "coffee",
+    "type": "gallery, coffee",
         "lat": 40.7195805,
     "lon": -73.9939956,
     "link": "https://www.instagram.com/kalei.nyc/",
@@ -23069,7 +23026,7 @@
   {
     "name": "Demo",
     "vibe": "Stylish, Trendy, Boutique Bar, Cozy Atmosphere, Exclusive, Craft Cocktails, Hidden Gem",
-    "type": "cocktail",
+    "type": "dinner, cocktail",
         "lat": 40.7299274,
     "lon": -74.0029971,
     "link": "https://www.instagram.com/demo.nyc",
@@ -23112,8 +23069,8 @@
   },
   {
     "name": "Sunn's",
-    "vibe": "Cozy, Intimate, Trendy, LGBTQ+ Friendly, Casual Hangout, Contemporary Vibe",
-    "type": "bar",
+    "vibe": "Cozy, Intimate, Trendy, Wine, Banchan, Contemporary Vibe",
+    "type": "dinner, wine bar",
         "lat": 40.7143881,
     "lon": -73.99097463,
     "link": "https://www.instagram.com/sunnsnyc/",
@@ -23245,7 +23202,7 @@
   {
     "name": "Unlisted",
     "vibe": "Exclusive, Hidden Speakeasy, Upscale, Intimate, Trendy Cocktails, Sophisticated Vibe",
-    "type": "speakeasy",
+    "type": "speakeasy, rooftop",
         "lat": 40.72148873,
     "lon": -73.99256976,
     "link": "https://www.instagram.com/unlisted.nyc/",
@@ -23333,7 +23290,7 @@
   {
     "name": "Maison Nur",
     "vibe": "Upscale, Modern, Elegant, Craft Cocktails, Elegant Dining, Artisanal Vibe",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": 40.7217163,
     "lon": -73.9931901,
     "link": "https://www.instagram.com/maisonnur.nyc/?hl=en",
@@ -23377,7 +23334,7 @@
   {
     "name": "Moonflower",
     "vibe": "Calm, Intimate, Cozy, Trendy, Modern Design, Artisan Coffee, Relaxed Vibes",
-    "type": "coffee",
+    "type": "wine bar, dj",
         "lat": 40.8070452,
     "lon": -73.9387486,
     "link": "https://www.instagram.com/moonflower_nyc/?hl=en",
@@ -23421,7 +23378,7 @@
   {
     "name": "Gem Home",
     "vibe": "Cozy, Trendy, Artistic, Boutique, Homey, Craft Cocktails, Casual Vibe, Vintage Feel",
-    "type": "cocktail",
+    "type": "lifestyle, lunch, wine bar",
         "lat": 40.72069095,
     "lon": -73.9960831,
     "link": "https://www.instagram.com/gem.nyc/?hl=en",
@@ -23465,7 +23422,7 @@
   {
     "name": "Good Guy's",
     "vibe": "Cozy, Chill, Intimate, Eclectic, Relaxed, Hip Vibe, Casual Drinks, Community Spot",
-    "type": "bar",
+    "type": "wine bar, cocktail",
         "lat": 40.7188823,
     "lon": -73.9913742,
     "link": "https://www.instagram.com/goodguysgoodguys",
@@ -23552,8 +23509,8 @@
   },
   {
     "name": "Swallow Cafe",
-    "vibe": "Cozy, Chic, Casual, Hip, Relaxed Atmosphere, Wine Bar, Trendy Ambience",
-    "type": "wine bar",
+    "vibe": "Cozy, Chic, Casual, Hip, Relaxed Atmosphere, Trendy Ambience",
+    "type": "coffee, breakfast, lunch",
         "lat": 40.6901367,
     "lon": -73.994571,
     "link": "https://www.instagram.com/swallowcafenyc/",
@@ -23597,7 +23554,7 @@
   {
     "name": "6BC Botanical Garden",
     "vibe": "Outdoors, Greenery, Tranquil, Relaxing, Nature Escape, Urban Garden, Peaceful Retreat",
-    "type": "park",
+    "type": "park, garden",
         "lat": 40.7237765,
     "lon": -73.98041122,
     "link": "https://www.instagram.com/6bcgarden/",
@@ -23685,7 +23642,7 @@
   {
     "name": "Saturn Road",
     "vibe": "Intimate, Hip, Casual, Coffee & Cocktails, Trendy, Relaxed, Creative Vibes",
-    "type": "cocktail",
+    "type": "coffee, wine, cocktail, patio",
         "lat": 40.6847429,
     "lon": -73.9949911,
     "link": "https://www.instagram.com/saturnroadnyc/",
@@ -23729,7 +23686,7 @@
   {
     "name": "Rose Marie",
     "vibe": "Cozy, Intimate, Relaxed, Artistic, Trendy, Modern Design, Chill Vibes",
-    "type": "cocktail",
+    "type": "cocktail, lunch, dinner",
         "lat": 40.7125159,
     "lon": -73.9490142,
     "link": "https://www.instagram.com/rosemariebk/",
@@ -23773,7 +23730,7 @@
   {
     "name": "Quick Eternity",
     "vibe": "Eclectic, Unique, Trendy, Hidden Bar, Artisanal Cocktails, Relaxed Vibe",
-    "type": "speakeasy",
+    "type": "dinner, cocktail",
         "lat": 40.7080782,
     "lon": -74.0020772,
     "link": "https://www.instagram.com/quicketernity_nyc/",
@@ -23817,7 +23774,7 @@
   {
     "name": "Fandi Mata",
     "vibe": "Cozy, Trendy, Comfort Food, Laid-back, Relaxed, Artsy, Casual Vibe",
-    "type": "dinner",
+    "type": "brunch, dinner",
         "lat": 40.7188471,
     "lon": -73.9492531,
     "link": "https://www.instagram.com/fandimatabklyn/",
@@ -23905,7 +23862,7 @@
   {
     "name": "New Love City",
     "vibe": "Chill, Cozy, Unique, Intimate, Eclectic, Relaxing, Vibrant Atmosphere",
-    "type": "fitness",
+    "type": "fitness, yoga",
         "lat": 40.7295188,
     "lon": -73.95824479,
     "link": "https://www.instagram.com/newlovecity_/",
@@ -23993,7 +23950,7 @@
   {
     "name": "Élysée's",
     "vibe": "Upscale, Elegant, Cocktail Lounge, Exclusive, Romantic Vibe, Trendy, Intimate",
-    "type": "cocktail",
+    "type": "cocktail, dinner",
         "lat": 40.723611,
     "lon": -74.010487,
     "link": "https://www.instagram.com/fouquets.newyork/",
@@ -24125,7 +24082,7 @@
   {
     "name": "Pearl Street Caviar",
     "vibe": "Upscale, Luxe, Trendy, Seafood, Modern, Elegant, Cocktail Bar",
-    "type": "cocktail",
+    "type": "cocktail, lunch, dinner",
         "lat": 40.6806807,
     "lon": -74.0081971,
     "link": "https://www.instagram.com/pearlstreetcaviar/?hl=en",
@@ -24166,23 +24123,23 @@
     "price": "$$",
     "duration": 2
   },
-{
+  {
     "name": "MEILI Rooftop",
     "vibe": "Trendy, Scenic, Chill, Rooftop Bar, Williamsburg Views, Stylish",
-    "type": "cocktail",
+    "type": "cocktail, rooftop",
     "lat": 40.7209065,
     "lon": -73.955531,
     "link": "https://www.instagram.com/meiliwilliamsburg/",
     "openNow": true,
-    "hours": [
-      "Sunday: 6:00 PM–12:00 AM",
-      "Monday: Closed",
-      "Tuesday: 6:00 PM–12:00 AM",
-      "Wednesday: 6:00 PM–12:00 AM",
-      "Thursday: 6:00 PM–12:00 AM",
-      "Friday: 6:00 PM–12:00 AM",
-      "Saturday: 6:00 PM–12:00 AM"
-    ],
+    "hours": {
+      "Sunday": "6:00 PM–12:00 AM",
+      "Monday": "Closed",
+      "Tuesday": "6:00 PM–12:00 AM",
+      "Wednesday": "6:00 PM–12:00 AM",
+      "Thursday": "6:00 PM–12:00 AM",
+      "Friday": "6:00 PM–12:00 AM",
+      "Saturday": "6:00 PM–12:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24213,20 +24170,20 @@
   {
     "name": "Fellini Cucina",
     "vibe": "Cozy, Casual, Italian, Friendly, Coffeehouse, Neighborhood Gem",
-    "type": "dinner",
+    "type": "coffee, lunch, dinner",
     "lat": 40.735914,
     "lon": -74.0016986,
     "link": "https://www.instagram.com/fellinicoffee/",
     "openNow": true,
-    "hours": [
-      "Sunday: 8:00 AM–10:00 PM",
-      "Monday: 8:00 AM–10:00 PM",
-      "Tuesday: 8:00 AM–10:00 PM",
-      "Wednesday: 8:00 AM–10:00 PM",
-      "Thursday: 8:00 AM–10:00 PM",
-      "Friday: 8:00 AM–11:00 PM",
-      "Saturday: 8:00 AM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "8:00 AM–10:00 PM",
+      "Monday": "8:00 AM–10:00 PM",
+      "Tuesday": "8:00 AM–10:00 PM",
+      "Wednesday": "8:00 AM–10:00 PM",
+      "Thursday": "8:00 AM–10:00 PM",
+      "Friday": "8:00 AM–11:00 PM",
+      "Saturday": "8:00 AM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24262,15 +24219,15 @@
     "lon": -74.00157,
     "link": "https://www.instagram.com/fellinicoffee/",
     "openNow": true,
-    "hours": [
-      "Sunday: 8:00 AM–8:00 PM",
-      "Monday: 8:00 AM–8:00 PM",
-      "Tuesday: 8:00 AM–8:00 PM",
-      "Wednesday: 8:00 AM–8:00 PM",
-      "Thursday: 8:00 AM–8:00 PM",
-      "Friday: 8:00 AM–8:00 PM",
-      "Saturday: 8:00 AM–8:00 PM"
-    ],
+    "hours": {
+      "Sunday": "8:00 AM–8:00 PM",
+      "Monday": "8:00 AM–8:00 PM",
+      "Tuesday": "8:00 AM–8:00 PM",
+      "Wednesday": "8:00 AM–8:00 PM",
+      "Thursday": "8:00 AM–8:00 PM",
+      "Friday": "8:00 AM–8:00 PM",
+      "Saturday": "8:00 AM–8:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24300,21 +24257,21 @@
   },
   {
     "name": "Apartment 5",
-    "vibe": "Intimate, Low-Key, Hidden Gem, Chill, Boutique, Cozy Drinks",
-    "type": "speakeasy",
+    "vibe": "Intimate, Low-Key, Hidden Gem, Chill, Boutique, Artsy, Cozy Drinks",
+    "type": "speakeasy, cocktail",
     "lat": 40.72100615,
     "lon": -73.9881241,
     "link": "https://www.instagram.com/apt5ny/",
     "openNow": true,
-    "hours": [
-      "Sunday: 6:00 PM–11:00 PM",
-      "Monday: Closed",
-      "Tuesday: 6:00 PM–11:30 PM",
-      "Wednesday: 6:00 PM–11:30 PM",
-      "Thursday: 6:00 PM–12:30 AM",
-      "Friday: 6:00 PM–2:00 AM",
-      "Saturday: 6:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "6:00 PM–11:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "6:00 PM–11:30 PM",
+      "Wednesday": "6:00 PM–11:30 PM",
+      "Thursday": "6:00 PM–12:30 AM",
+      "Friday": "6:00 PM–2:00 AM",
+      "Saturday": "6:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24344,21 +24301,21 @@
   },
   {
     "name": "NAZ AROMA INC",
-    "vibe": "Authentic, Aromatic, Cozy, Middle Eastern, Unique Flavors, Family-Owned",
-    "type": "dinner",
+    "vibe": "Hidden Gem, Aromatic, Perfume, Family-Owned",
+    "type": "random gem, lifestyle",
     "lat": 40.7473764,
     "lon": -73.98740086,
     "link": "https://www.instagram.com/nazaroma3/",
     "openNow": true,
-    "hours": [
-      "Sunday: 9:00 AM–6:00 PM",
-      "Monday: 8:30 AM–6:30 PM",
-      "Tuesday: 8:30 AM–6:30 PM",
-      "Wednesday: 8:30 AM–6:30 PM",
-      "Thursday: 8:30 AM–6:30 PM",
-      "Friday: 8:30 AM–6:30 PM",
-      "Saturday: 8:30 AM–6:30 PM"
-    ],
+    "hours": {
+      "Sunday": "9:00 AM–6:00 PM",
+      "Monday": "8:30 AM–6:30 PM",
+      "Tuesday": "8:30 AM–6:30 PM",
+      "Wednesday": "8:30 AM–6:30 PM",
+      "Thursday": "8:30 AM–6:30 PM",
+      "Friday": "8:30 AM–6:30 PM",
+      "Saturday": "8:30 AM–6:30 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24394,15 +24351,15 @@
     "lon": -73.95079645,
     "link": "https://www.instagram.com/hiddenpearlbk/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: 5:00 PM–10:00 PM",
-      "Tuesday: 5:00 PM–10:00 PM",
-      "Wednesday: 5:00 PM–10:00 PM",
-      "Thursday: 5:00 PM–10:00 PM",
-      "Friday: 5:00 PM–11:00 PM",
-      "Saturday: 5:00 PM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "5:00 PM–10:00 PM",
+      "Tuesday": "5:00 PM–10:00 PM",
+      "Wednesday": "5:00 PM–10:00 PM",
+      "Thursday": "5:00 PM–10:00 PM",
+      "Friday": "5:00 PM–11:00 PM",
+      "Saturday": "5:00 PM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24433,20 +24390,20 @@
   {
     "name": "LALIKO",
     "vibe": "Chic, Modern, Wine Bar, Trendy, Upscale, European Charm",
-    "type": "wine bar",
+    "type": "wine bar, dinner",
     "lat": 40.7294493,
     "lon": -74.0049438,
     "link": "https://www.instagram.com/laliko.nyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–10:00 PM",
-      "Monday: 12:00 PM–10:00 PM",
-      "Tuesday: 12:00 PM–10:00 PM",
-      "Wednesday: 12:00 PM–10:00 PM",
-      "Thursday: 12:00 PM–10:00 PM",
-      "Friday: 12:00 PM–10:30 PM",
-      "Saturday: 12:00 PM–10:30 PM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–10:00 PM",
+      "Monday": "12:00 PM–10:00 PM",
+      "Tuesday": "12:00 PM–10:00 PM",
+      "Wednesday": "12:00 PM–10:00 PM",
+      "Thursday": "12:00 PM–10:00 PM",
+      "Friday": "12:00 PM–10:30 PM",
+      "Saturday": "12:00 PM–10:30 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24477,20 +24434,20 @@
   {
     "name": "Yesterday's News Antiques and Collectibles",
     "vibe": "Nostalgic, Vintage, Quirky, Antique, Eclectic, Hidden Treasures",
-    "type": "random gem",
+    "type": "random gem, lifestyle",
     "lat": 40.6792892,
     "lon": -73.9975798,
     "link": "https://www.instagram.com/yesterdaysnewsbk/",
     "openNow": true,
-    "hours": [
-      "Sunday: 9:30 AM–5:30 PM",
-      "Monday: Closed",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–5:45:00 PM",
-      "Thursday: 10:00 AM–5:45:00 PM",
-      "Friday: 10:00 AM–5:45:00 PM",
-      "Saturday: 9:30 AM–5:30 PM"
-    ],
+    "hours": {
+      "Sunday": "9:30 AM–5:30 PM",
+      "Monday": "Closed",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–5:45:00 PM",
+      "Thursday": "10:00 AM–5:45:00 PM",
+      "Friday": "10:00 AM–5:45:00 PM",
+      "Saturday": "9:30 AM–5:30 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24521,20 +24478,20 @@
   {
     "name": "Sloane's",
     "vibe": "Artistic, Cozy, Wine Bar, SoHo Vibes, Intimate, Relaxed",
-    "type": "wine bar",
+    "type": "cocktail",
     "lat": 40.72407133,
     "lon": -74.003176,
     "link": "https://www.instagram.com/sloanessoho/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24570,15 +24527,15 @@
     "lon": -74.0063829,
     "link": "https://www.instagram.com/bayardsalehouse/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–2:00 AM",
-      "Monday: 4:00 PM–2:00 AM",
-      "Tuesday: 4:00 PM–2:00 AM",
-      "Wednesday: 4:00 PM–2:00 AM",
-      "Thursday: 4:00 PM–4:00 AM",
-      "Friday: 4:00 PM–4:00 AM",
-      "Saturday: 12:00 PM–4:00 AM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–2:00 AM",
+      "Monday": "4:00 PM–2:00 AM",
+      "Tuesday": "4:00 PM–2:00 AM",
+      "Wednesday": "4:00 PM–2:00 AM",
+      "Thursday": "4:00 PM–4:00 AM",
+      "Friday": "4:00 PM–4:00 AM",
+      "Saturday": "12:00 PM–4:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24614,15 +24571,15 @@
     "lon": -74.0081723,
     "link": "https://www.instagram.com/automaticslimsnyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 4:30 PM–12:00 AM",
-      "Monday: Closed",
-      "Tuesday: 4:30 PM–4:00 AM",
-      "Wednesday: 4:30 PM–4:00 AM",
-      "Thursday: 4:30 PM–4:00 AM",
-      "Friday: 4:30 PM–4:00 AM",
-      "Saturday: 4:30 PM–4:00 AM"
-    ],
+    "hours": {
+      "Sunday": "4:30 PM–12:00 AM",
+      "Monday": "Closed",
+      "Tuesday": "4:30 PM–4:00 AM",
+      "Wednesday": "4:30 PM–4:00 AM",
+      "Thursday": "4:30 PM–4:00 AM",
+      "Friday": "4:30 PM–4:00 AM",
+      "Saturday": "4:30 PM–4:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24653,20 +24610,20 @@
   {
     "name": "Margaux",
     "vibe": "Elegant, Upscale, Sophisticated, French-Inspired, Cozy, Refined Dining",
-    "type": "dinner",
+    "type": "breakfast, lunch, dinner",
     "lat": 40.7326395,
     "lon": -73.9967993,
     "link": "https://www.instagram.com/cheznousmarlton/",
     "openNow": true,
-    "hours": [
-      "Sunday: 7:00 AM–11:00 PM",
-      "Monday: 7:00 AM–11:00 PM",
-      "Tuesday: 7:00 AM–11:00 PM",
-      "Wednesday: 7:00 AM–11:00 PM",
-      "Thursday: 7:00 AM–11:00 PM",
-      "Friday: 7:00 AM–1:00 AM",
-      "Saturday: 7:00 AM–1:00 AM"
-    ],
+    "hours": {
+      "Sunday": "7:00 AM–11:00 PM",
+      "Monday": "7:00 AM–11:00 PM",
+      "Tuesday": "7:00 AM–11:00 PM",
+      "Wednesday": "7:00 AM–11:00 PM",
+      "Thursday": "7:00 AM–11:00 PM",
+      "Friday": "7:00 AM–1:00 AM",
+      "Saturday": "7:00 AM–1:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24702,15 +24659,15 @@
     "lon": -74.002226,
     "link": "https://www.instagram.com/thewaverlyinnstagram/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 PM–10:45 PM",
-      "Monday: 5:00 PM–10:45 PM",
-      "Tuesday: 5:00 PM–10:45 PM",
-      "Wednesday: 5:00 PM–10:45 PM",
-      "Thursday: 5:00 PM–10:45 PM",
-      "Friday: 5:00 PM–10:45 PM",
-      "Saturday: 5:00 PM–10:45 PM"
-    ],
+    "hours": {
+      "Sunday": "5:00 PM–10:45 PM",
+      "Monday": "5:00 PM–10:45 PM",
+      "Tuesday": "5:00 PM–10:45 PM",
+      "Wednesday": "5:00 PM–10:45 PM",
+      "Thursday": "5:00 PM–10:45 PM",
+      "Friday": "5:00 PM–10:45 PM",
+      "Saturday": "5:00 PM–10:45 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24746,15 +24703,15 @@
     "lon": -74.001501,
     "link": "https://www.instagram.com/vinsurvingt_bars/",
     "openNow": true,
-    "hours": [
-      "Sunday: 3:00 PM–12:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–1:00 AM",
-      "Friday: 4:00 PM–2:00 AM",
-      "Saturday: 3:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "3:00 PM–12:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–1:00 AM",
+      "Friday": "4:00 PM–2:00 AM",
+      "Saturday": "3:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24790,15 +24747,15 @@
     "lon": -74.0034508,
     "link": "https://www.instagram.com/arthurstavern_nyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 2:00 PM–2:00 AM",
-      "Monday: 5:00 PM–2:00 AM",
-      "Tuesday: 5:00 PM–2:00 AM",
-      "Wednesday: 5:00 PM–2:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–4:00 AM",
-      "Saturday: 5:00 PM–4:00 AM"
-    ],
+    "hours": {
+      "Sunday": "2:00 PM–2:00 AM",
+      "Monday": "5:00 PM–2:00 AM",
+      "Tuesday": "5:00 PM–2:00 AM",
+      "Wednesday": "5:00 PM–2:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–4:00 AM",
+      "Saturday": "5:00 PM–4:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24834,15 +24791,15 @@
     "lon": -74.002447,
     "link": "https://www.instagram.com/sipandguzzlenyc",
     "openNow": true,
-    "hours": [
-      "Sunday: 4:00 PM–1:00 AM",
-      "Monday: 4:00 PM–1:00 AM",
-      "Tuesday: 4:00 PM–1:00 AM",
-      "Wednesday: 4:00 PM–2:00 AM",
-      "Thursday: 4:00 PM–2:00 AM",
-      "Friday: 4:00 PM–2:00 AM",
-      "Saturday: 4:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "4:00 PM–1:00 AM",
+      "Monday": "4:00 PM–1:00 AM",
+      "Tuesday": "4:00 PM–1:00 AM",
+      "Wednesday": "4:00 PM–2:00 AM",
+      "Thursday": "4:00 PM–2:00 AM",
+      "Friday": "4:00 PM–2:00 AM",
+      "Saturday": "4:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24873,20 +24830,20 @@
   {
     "name": "John's of Bleecker Street",
     "vibe": "Iconic, Classic, Pizzeria, Old-School, Casual, Authentic NYC Pizza",
-    "type": "dinner",
+    "type": "lunch, dinner",
     "lat": 40.7316098,
     "lon": -74.0033416,
     "link": "https://www.instagram.com/johnsofbleeckerstreet/",
     "openNow": true,
-    "hours": [
-      "Sunday: 11:30 AM–10:00 PM",
-      "Monday: 11:30 AM–10:00 PM",
-      "Tuesday: 11:30 AM–10:00 PM",
-      "Wednesday: 11:30 AM–10:00 PM",
-      "Thursday: 11:30 AM–10:00 PM",
-      "Friday: 11:30 AM–11:00 PM",
-      "Saturday: 11:30 AM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "11:30 AM–10:00 PM",
+      "Monday": "11:30 AM–10:00 PM",
+      "Tuesday": "11:30 AM–10:00 PM",
+      "Wednesday": "11:30 AM–10:00 PM",
+      "Thursday": "11:30 AM–10:00 PM",
+      "Friday": "11:30 AM–11:00 PM",
+      "Saturday": "11:30 AM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24917,20 +24874,20 @@
   {
     "name": "SoHo Cigar Bar",
     "vibe": "Loungey, Vintage, Upscale, Dimly Lit, Classic NYC, Masculine Energy",
-    "type": "bar",
+    "type": "lounge",
     "lat": 40.7236175,
     "lon": -74.0022271,
     "link": "https://www.instagram.com/sohocigarbar/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 PM–1:00 AM",
-      "Monday: 5:00 PM–1:00 AM",
-      "Tuesday: 5:00 PM–2:00 AM",
-      "Wednesday: 5:00 PM–2:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–3:00 AM"
-    ],
+    "hours": {
+      "Sunday": "5:00 PM–1:00 AM",
+      "Monday": "5:00 PM–1:00 AM",
+      "Tuesday": "5:00 PM–2:00 AM",
+      "Wednesday": "5:00 PM–2:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–3:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -24961,20 +24918,20 @@
   {
     "name": "Houston Hall",
     "vibe": "Rustic, Lively, Beer Hall, Social, Loud, Communal Tables",
-    "type": "beer hall",
+    "type": "bar",
     "lat": 40.732383,
     "lon": -74.006396,
     "link": "https://www.instagram.com/houstonhallny/",
     "openNow": true,
-    "hours": [
-      "Sunday: 1:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 4:00 PM–11:00 PM",
-      "Wednesday: 4:00 PM–12:00 AM",
-      "Thursday: 6:30 PM–12:00 AM",
-      "Friday: 4:00 PM–1:00 AM",
-      "Saturday: 12:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "1:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "4:00 PM–11:00 PM",
+      "Wednesday": "4:00 PM–12:00 AM",
+      "Thursday": "6:30 PM–12:00 AM",
+      "Friday": "4:00 PM–1:00 AM",
+      "Saturday": "12:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25010,15 +24967,15 @@
     "lon": -74.0079097,
     "link": "https://www.instagram.com/theearinn/",
     "openNow": true,
-    "hours": [
-      "Sunday: 11:30 PM–4:00 AM",
-      "Monday: 11:30 PM–4:00 AM",
-      "Tuesday: 11:30 PM–4:00 AM",
-      "Wednesday: 11:30 PM–4:00 AM",
-      "Thursday: 11:30 PM–4:00 AM",
-      "Friday: 11:30 PM–4:00 AM",
-      "Saturday: 11:30 PM–4:00 AM"
-    ],
+    "hours": {
+      "Sunday": "11:30 PM–4:00 AM",
+      "Monday": "11:30 PM–4:00 AM",
+      "Tuesday": "11:30 PM–4:00 AM",
+      "Wednesday": "11:30 PM–4:00 AM",
+      "Thursday": "11:30 PM–4:00 AM",
+      "Friday": "11:30 PM–4:00 AM",
+      "Saturday": "11:30 PM–4:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25054,15 +25011,15 @@
     "lon": -74.0008879,
     "link": "https://www.instagram.com/roccosnyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 11:00 AM–1:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–1:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 3:00 PM–2:00 AM",
-      "Saturday: 11:00 AM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "11:00 AM–1:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–1:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "3:00 PM–2:00 AM",
+      "Saturday": "11:00 AM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25098,15 +25055,15 @@
     "lon": -74.0024387,
     "link": "https://www.instagram.com/bleeckerstreetbar/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–2:00 AM",
-      "Monday: 12:00 PM–2:00 AM",
-      "Tuesday: 12:00 PM–2:00 AM",
-      "Wednesday: 12:00 PM–2:00 AM",
-      "Thursday: 12:00 PM–4:00 AM",
-      "Friday: 12:00 PM–4:00 AM",
-      "Saturday: 11:00 AM–4:00 AM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–2:00 AM",
+      "Monday": "12:00 PM–2:00 AM",
+      "Tuesday": "12:00 PM–2:00 AM",
+      "Wednesday": "12:00 PM–2:00 AM",
+      "Thursday": "12:00 PM–4:00 AM",
+      "Friday": "12:00 PM–4:00 AM",
+      "Saturday": "11:00 AM–4:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25137,20 +25094,20 @@
   {
     "name": "Lei",
     "vibe": "Chill, Modern, Tropical-Inspired, Date Spot, Hidden Gem",
-    "type": "cocktail",
-    "lat": 40.714595,
-    "lon": -73.998267,
+    "type": "wine bar",
+    "lat": 40.723616,
+    "lon": -74.000643,
     "link": "https://www.instagram.com/lei_nyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 PM–12:00 AM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 5:00 PM–12:00 AM"
-    ],
+    "hours": {
+      "Sunday": "5:00 PM–12:00 AM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "5:00 PM–12:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25180,21 +25137,21 @@
   },
   {
     "name": "BADABOOM",
-    "vibe": "Trendy, Elevated Lounge, Latin Energy, Bottle Service, Dressy",
-    "type": "club",
-    "lat": 40.6824474,
-    "lon": -73.9200645,
+    "vibe": "French, Wine, Chicken Rotisserie, Casual",
+    "type": "dinner",
+    "lat": 40.728442,
+    "lon": -74.004673,
     "link": "https://www.instagram.com/badaboomnyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 PM–11:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 5:00 PM–11:00 PM",
-      "Thursday: 5:00 PM–11:00 PM",
-      "Friday: 5:00 PM–11:00 PM",
-      "Saturday: 5:00 PM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "5:00 PM–11:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "5:00 PM–11:00 PM",
+      "Thursday": "5:00 PM–11:00 PM",
+      "Friday": "5:00 PM–11:00 PM",
+      "Saturday": "5:00 PM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25227,19 +25184,19 @@
     "name": "Bascule",
     "vibe": "Intimate, Sophisticated, French-Inspired, Hidden Gem, Romantic",
     "type": "wine bar",
-    "lat": 40.7187849,
-    "lon": -73.9641617,
+    "lat": 40.727163,
+    "lon": -74.000832,
     "link": "https://www.instagram.com/basculenyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 PM–12:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 5:00 PM–12:00 AM"
-    ],
+    "hours": {
+      "Sunday": "5:00 PM–12:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "5:00 PM–12:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25269,21 +25226,21 @@
   },
   {
     "name": "Le Chêne",
-    "vibe": "Refined, Romantic, French Dining, Upscale, Quiet",
+    "vibe": "Refined, Wine List, Romantic, French Dining, Upscale, Quiet",
     "type": "dinner",
     "lat": 40.732182,
     "lon": -74.000915,
     "link": "https://www.instagram.com/lechenenyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–10:00 PM",
-      "Wednesday: 5:00 PM–10:00 PM",
-      "Thursday: 5:00 PM–10:00 PM",
-      "Friday: 5:00 PM–10:00 PM",
-      "Saturday: 5:00 PM–10:00 PM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–10:00 PM",
+      "Wednesday": "5:00 PM–10:00 PM",
+      "Thursday": "5:00 PM–10:00 PM",
+      "Friday": "5:00 PM–10:00 PM",
+      "Saturday": "5:00 PM–10:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25313,21 +25270,21 @@
   },
   {
     "name": "Atelier Ariana",
-    "vibe": "Aromatic, Artistic, Boutique, Middle Eastern Fragrance, Handcrafted",
-    "type": "perfume studio",
+    "vibe": "Parisian, Artistic, Boutique, Bakery, Cafe",
+    "type": "coffee, bakery",
     "lat": 40.748201,
     "lon": -73.985845,
     "link": "https://www.instagram.com/atelierariana/",
     "openNow": true,
-    "hours": [
-      "Sunday: 8:30 AM–5:30 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 7:00 AM–5:30 PM",
-      "Thursday: 7:00 AM–5:30 PM",
-      "Friday: 7:00 AM–5:30 PM",
-      "Saturday: 8:30 AM–5:30 PM"
-    ],
+    "hours": {
+      "Sunday": "8:30 AM–5:30 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "7:00 AM–5:30 PM",
+      "Thursday": "7:00 AM–5:30 PM",
+      "Friday": "7:00 AM–5:30 PM",
+      "Saturday": "8:30 AM–5:30 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25351,27 +25308,27 @@
     },
     "timeCategory": "midday",
     "energyRamp": 2,
-    "tags": "perfume making, scent bar, fragrance curation",
+    "tags": "coffee, bakery, French, breakfast",
     "price": "$$",
     "duration": 1.25
   },
   {
     "name": "Lulla's Bakery - Grand Café & Cocktails",
     "vibe": "Cozy, Day-to-Night, Stylish, Baked Goods & Cocktails, Social",
-    "type": "café",
+    "type": "bakery, breakfast, lunch, cocktail",
     "lat": 40.718912,
     "lon": -73.992741,
     "link": "https://www.instagram.com/lullasbakery/",
     "openNow": true,
-    "hours": [
-      "Sunday: 9:00 AM–5:00 PM",
-      "Monday: 7:00 AM–5:00 PM",
-      "Tuesday: 7:00 AM–5:00 PM",
-      "Wednesday: 7:00 AM–5:00 PM",
-      "Thursday: 7:00 AM–5:00 PM",
-      "Friday: 7:00 AM–12:00 AM",
-      "Saturday: 9:00 AM–12:00 AM"
-    ],
+    "hours": {
+      "Sunday": "9:00 AM–5:00 PM",
+      "Monday": "7:00 AM–5:00 PM",
+      "Tuesday": "7:00 AM–5:00 PM",
+      "Wednesday": "7:00 AM–5:00 PM",
+      "Thursday": "7:00 AM–5:00 PM",
+      "Friday": "7:00 AM–12:00 AM",
+      "Saturday": "9:00 AM–12:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25402,20 +25359,20 @@
   {
     "name": "Eckhaus Latta",
     "vibe": "Avant-Garde, Minimalist, Fashion-Forward, Conceptual, Indie Cool",
-    "type": "fashion retail",
+    "type": "lifestyle",
     "lat": 40.719774,
     "lon": -73.992294,
     "link": "https://www.instagram.com/eckhaus_latta/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–7:00 PM",
-      "Monday: Closed",
-      "Tuesday: 12:00 PM–7:00 PM",
-      "Wednesday: 12:00 PM–7:00 PM",
-      "Thursday: 12:00 PM–7:00 PM",
-      "Friday: 12:00 PM–7:00 PM",
-      "Saturday: 12:00 PM–7:00 PM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–7:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "12:00 PM–7:00 PM",
+      "Wednesday": "12:00 PM–7:00 PM",
+      "Thursday": "12:00 PM–7:00 PM",
+      "Friday": "12:00 PM–7:00 PM",
+      "Saturday": "12:00 PM–7:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25446,20 +25403,20 @@
   {
     "name": "OLD JEWELRY STORE",
     "vibe": "Eclectic, Nostalgic, Artistic, Vintage Finds, Hidden Gem",
-    "type": "vintage shop",
+    "type": "lifestyle",
     "lat": 40.721033,
     "lon": -73.994205,
     "link": "https://www.instagram.com/oldjewelrystore/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–7:00 PM",
-      "Monday: Closed",
-      "Tuesday: 12:00 PM–7:00 PM",
-      "Wednesday: 12:00 PM–7:00 PM",
-      "Thursday: 12:00 PM–7:00 PM",
-      "Friday: 12:00 PM–7:00 PM",
-      "Saturday: 12:00 PM–7:00 PM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–7:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "12:00 PM–7:00 PM",
+      "Wednesday": "12:00 PM–7:00 PM",
+      "Thursday": "12:00 PM–7:00 PM",
+      "Friday": "12:00 PM–7:00 PM",
+      "Saturday": "12:00 PM–7:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25495,15 +25452,15 @@
     "lon": -73.972028,
     "link": "https://www.instagram.com/argosybookstore/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: 11:00 AM–6:00 PM",
-      "Tuesday: 11:00 AM–6:00 PM",
-      "Wednesday: 11:00 AM–6:00 PM",
-      "Thursday: 11:00 AM–6:00 PM",
-      "Friday: 11:00 AM–6:00 PM",
-      "Saturday: Closed"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "11:00 AM–6:00 PM",
+      "Tuesday": "11:00 AM–6:00 PM",
+      "Wednesday": "11:00 AM–6:00 PM",
+      "Thursday": "11:00 AM–6:00 PM",
+      "Friday": "11:00 AM–6:00 PM",
+      "Saturday": "Closed"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25539,15 +25496,15 @@
     "lon": -74.003632,
     "link": "https://www.instagram.com/mcnallyjackson/",
     "openNow": true,
-    "hours": [
-      "Sunday: 10:00 AM–9:00 PM",
-      "Monday: 10:00 AM–9:00 PM",
-      "Tuesday: 10:00 AM–9:00 PM",
-      "Wednesday: 10:00 AM–9:00 PM",
-      "Thursday: 10:00 AM–9:00 PM",
-      "Friday: 10:00 AM–9:00 PM",
-      "Saturday: 10:00 AM–9:00 PM"
-    ],
+    "hours": {
+      "Sunday": "10:00 AM–9:00 PM",
+      "Monday": "10:00 AM–9:00 PM",
+      "Tuesday": "10:00 AM–9:00 PM",
+      "Wednesday": "10:00 AM–9:00 PM",
+      "Thursday": "10:00 AM–9:00 PM",
+      "Friday": "10:00 AM–9:00 PM",
+      "Saturday": "10:00 AM–9:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25583,15 +25540,15 @@
     "lon": -73.951021,
     "link": "https://www.instagram.com/kitchenartsandletters/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: 10:00 AM–6:00 PM",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–6:00 PM",
-      "Thursday: 10:00 AM–6:00 PM",
-      "Friday: 10:00 AM–6:00 PM",
-      "Saturday: 10:00 AM–6:00 PM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "10:00 AM–6:00 PM",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–6:00 PM",
+      "Thursday": "10:00 AM–6:00 PM",
+      "Friday": "10:00 AM–6:00 PM",
+      "Saturday": "10:00 AM–6:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25627,15 +25584,15 @@
     "lon": -74.001049,
     "link": "https://www.instagram.com/leftbankbooksny/",
     "openNow": false,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: Closed",
-      "Friday: Closed",
-      "Saturday: Closed"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "Closed",
+      "Friday": "Closed",
+      "Saturday": "Closed"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25671,15 +25628,15 @@
     "lon": -73.982927,
     "link": "https://www.instagram.com/rizzolibookstore/",
     "openNow": true,
-    "hours": [
-      "Sunday: 11:00 AM–7:00 PM",
-      "Monday: 11:00 AM–8:00 PM",
-      "Tuesday: 11:00 AM–8:00 PM",
-      "Wednesday: 11:00 AM–8:00 PM",
-      "Thursday: 11:00 AM–8:00 PM",
-      "Friday: 11:00 AM–8:00 PM",
-      "Saturday: 11:00 AM–8:00 PM"
-    ],
+    "hours": {
+      "Sunday": "11:00 AM–7:00 PM",
+      "Monday": "11:00 AM–8:00 PM",
+      "Tuesday": "11:00 AM–8:00 PM",
+      "Wednesday": "11:00 AM–8:00 PM",
+      "Thursday": "11:00 AM–8:00 PM",
+      "Friday": "11:00 AM–8:00 PM",
+      "Saturday": "11:00 AM–8:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25715,15 +25672,15 @@
     "lon": -73.963589,
     "link": "https://www.instagram.com/albertinebooks/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–6:00 PM",
-      "Thursday: 10:00 AM–6:00 PM",
-      "Friday: 10:00 AM–6:00 PM",
-      "Saturday: 10:00 AM–6:00 PM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–6:00 PM",
+      "Thursday": "10:00 AM–6:00 PM",
+      "Friday": "10:00 AM–6:00 PM",
+      "Saturday": "10:00 AM–6:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25759,15 +25716,15 @@
     "lon": -73.985553,
     "link": "https://www.instagram.com/mastbooks/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–8:00 PM",
-      "Monday: 12:00 PM–8:00 PM",
-      "Tuesday: 12:00 PM–8:00 PM",
-      "Wednesday: 12:00 PM–8:00 PM",
-      "Thursday: 12:00 PM–8:00 PM",
-      "Friday: 12:00 PM–8:00 PM",
-      "Saturday: 12:00 PM–8:00 PM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–8:00 PM",
+      "Monday": "12:00 PM–8:00 PM",
+      "Tuesday": "12:00 PM–8:00 PM",
+      "Wednesday": "12:00 PM–8:00 PM",
+      "Thursday": "12:00 PM–8:00 PM",
+      "Friday": "12:00 PM–8:00 PM",
+      "Saturday": "12:00 PM–8:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25803,15 +25760,15 @@
     "lon": -73.958029,
     "link": "https://www.instagram.com/spoonbillbooks/",
     "openNow": true,
-    "hours": [
-      "Sunday: 11:00 AM–9:00 PM",
-      "Monday: 11:00 AM–9:00 PM",
-      "Tuesday: 11:00 AM–9:00 PM",
-      "Wednesday: 11:00 AM–9:00 PM",
-      "Thursday: 11:00 AM–9:00 PM",
-      "Friday: 11:00 AM–9:00 PM",
-      "Saturday: 11:00 AM–9:00 PM"
-    ],
+    "hours": {
+      "Sunday": "11:00 AM–9:00 PM",
+      "Monday": "11:00 AM–9:00 PM",
+      "Tuesday": "11:00 AM–9:00 PM",
+      "Wednesday": "11:00 AM–9:00 PM",
+      "Thursday": "11:00 AM–9:00 PM",
+      "Friday": "11:00 AM–9:00 PM",
+      "Saturday": "11:00 AM–9:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25847,15 +25804,15 @@
     "lon": -73.987632,
     "link": "https://www.instagram.com/barcentralenyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: 5:00 PM–11:30 PM",
-      "Tuesday: 5:00 PM–11:30 PM",
-      "Wednesday: 5:00 PM–11:30 PM",
-      "Thursday: 5:00 PM–11:30 PM",
-      "Friday: 5:00 PM–11:30 PM",
-      "Saturday: 5:00 PM–11:30 PM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "5:00 PM–11:30 PM",
+      "Tuesday": "5:00 PM–11:30 PM",
+      "Wednesday": "5:00 PM–11:30 PM",
+      "Thursday": "5:00 PM–11:30 PM",
+      "Friday": "5:00 PM–11:30 PM",
+      "Saturday": "5:00 PM–11:30 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25886,20 +25843,20 @@
   {
     "name": "Lion's Milk",
     "vibe": "Chill, Trendy, Global, Coffeehouse, Stylish",
-    "type": "coffee",
+    "type": "coffee, patio",
     "lat": 40.717875,
     "lon": -73.956691,
     "link": "https://www.instagram.com/lionsmilknyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 8:30 AM–5:00 PM",
-      "Monday: 7:30 AM–4:30 PM",
-      "Tuesday: 7:30 AM–4:30 PM",
-      "Wednesday: 7:30 AM–4:30 PM",
-      "Thursday: 7:30 AM–4:30 PM",
-      "Friday: 7:30 AM–4:30 PM",
-      "Saturday: 8:30 AM–5:00 PM"
-    ],
+    "hours": {
+      "Sunday": "8:30 AM–5:00 PM",
+      "Monday": "7:30 AM–4:30 PM",
+      "Tuesday": "7:30 AM–4:30 PM",
+      "Wednesday": "7:30 AM–4:30 PM",
+      "Thursday": "7:30 AM–4:30 PM",
+      "Friday": "7:30 AM–4:30 PM",
+      "Saturday": "8:30 AM–5:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25935,15 +25892,15 @@
     "lon": -74.0014,
     "link": "https://www.instagram.com/intelligentsiacy/",
     "openNow": true,
-    "hours": [
-      "Sunday: 7:00 AM–5:00 PM",
-      "Monday: 7:00 AM–5:00 PM",
-      "Tuesday: 7:00 AM–5:00 PM",
-      "Wednesday: 7:00 AM–5:00 PM",
-      "Thursday: 7:00 AM–5:00 PM",
-      "Friday: 7:00 AM–5:00 PM",
-      "Saturday: 7:00 AM–5:00 PM"
-    ],
+    "hours": {
+      "Sunday": "7:00 AM–5:00 PM",
+      "Monday": "7:00 AM–5:00 PM",
+      "Tuesday": "7:00 AM–5:00 PM",
+      "Wednesday": "7:00 AM–5:00 PM",
+      "Thursday": "7:00 AM–5:00 PM",
+      "Friday": "7:00 AM–5:00 PM",
+      "Saturday": "7:00 AM–5:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -25974,20 +25931,20 @@
   {
     "name": "Drawing Room Midtown: Creative Living",
     "vibe": "Styled interior, Curated goods, Pop-up design shop, Light creative crowd",
-    "type": "concept retail",
+    "type": "random gem, activity",
     "lat": 40.7527,
     "lon": -73.9819,
     "link": "https://www.instagram.com/drawingroomny/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–6:00 PM",
-      "Thursday: 10:00 AM–10:00 PM",
-      "Friday: 10:00 AM–7:00 PM",
-      "Saturday: 1:00 PM–7:00 PM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–6:00 PM",
+      "Thursday": "10:00 AM–10:00 PM",
+      "Friday": "10:00 AM–7:00 PM",
+      "Saturday": "1:00 PM–7:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26018,20 +25975,20 @@
   {
     "name": "Drawing Room Williamsburg: Creative Living",
     "vibe": "Brooklyn designers, Maker market, Design‑forward, Casual browse",
-    "type": "concept retail",
+    "type": "random gem, activity",
     "lat": 40.7105,
     "lon": -73.9570,
     "link": "https://www.instagram.com/drawingroombk/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 10:00 AM–6:00 PM",
-      "Wednesday: 10:00 AM–6:00 PM",
-      "Thursday: 10:00 AM–10:00 PM",
-      "Friday: 10:00 AM–7:00 PM",
-      "Saturday: 1:00 PM–7:00 PM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "10:00 AM–6:00 PM",
+      "Wednesday": "10:00 AM–6:00 PM",
+      "Thursday": "10:00 AM–10:00 PM",
+      "Friday": "10:00 AM–7:00 PM",
+      "Saturday": "1:00 PM–7:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26062,20 +26019,20 @@
   {
     "name": "Loaf on Paper by niconeco zakkaya",
     "vibe": "Japanese stationery, Aesthetic gifts, Minimal, Artful, Boutique",
-    "type": "stationery",
+    "type": "coffee, random gem",
     "lat": 40.7240,
     "lon": -73.9958,
     "link": "https://www.instagram.com/niconecozakkaya/",
     "openNow": true,
-    "hours": [
-      "Sunday: 10:00 AM–7:00 PM",
-      "Monday: 9:00 AM–7:00 PM",
-      "Tuesday: 9:00 AM–7:00 PM",
-      "Wednesday: 9:00 AM–7:00 PM",
-      "Thursday: 9:00 AM–7:00 PM",
-      "Friday: 9:00 AM–7:00 PM",
-      "Saturday: 10:00 AM–7:00 PM"
-    ],
+    "hours": {
+      "Sunday": "10:00 AM–7:00 PM",
+      "Monday": "9:00 AM–7:00 PM",
+      "Tuesday": "9:00 AM–7:00 PM",
+      "Wednesday": "9:00 AM–7:00 PM",
+      "Thursday": "9:00 AM–7:00 PM",
+      "Friday": "9:00 AM–7:00 PM",
+      "Saturday": "10:00 AM–7:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26111,15 +26068,15 @@
     "lon": -73.9966,
     "link": "https://www.instagram.com/thelongislandbar/",
     "openNow": true,
-    "hours": [
-      "Sunday: 2:00 PM–12:00 AM",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 2:00 PM–12:00 AM"
-    ],
+    "hours": {
+      "Sunday": "2:00 PM–12:00 AM",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "2:00 PM–12:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26150,20 +26107,20 @@
   {
     "name": "Primo's",
     "vibe": "Swanky, Vintage, Loungey, Sophisticated, Scene-y, Late‑Night",
-    "type": "cocktail",
+    "type": "lounge, cocktail",
     "lat": 40.7174,
     "lon": -74.0111,
     "link": "https://www.instagram.com/primosnyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 4:00 PM–12:00 AM",
-      "Wednesday: 4:00 PM–12:00 AM",
-      "Thursday: 4:00 PM–2:00 AM",
-      "Friday: 4:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "4:00 PM–12:00 AM",
+      "Wednesday": "4:00 PM–12:00 AM",
+      "Thursday": "4:00 PM–2:00 AM",
+      "Friday": "4:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26199,15 +26156,15 @@
     "lon": -73.9939,
     "link": "https://www.instagram.com/brass.nyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: 5:00 PM–11:00 PM",
-      "Tuesday: 5:00 PM–11:00 PM",
-      "Wednesday: 5:00 PM–11:00 PM",
-      "Thursday: 5:00 PM–11:00 PM",
-      "Friday: 5:00 PM–11:00 PM",
-      "Saturday: 5:00 PM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "5:00 PM–11:00 PM",
+      "Tuesday": "5:00 PM–11:00 PM",
+      "Wednesday": "5:00 PM–11:00 PM",
+      "Thursday": "5:00 PM–11:00 PM",
+      "Friday": "5:00 PM–11:00 PM",
+      "Saturday": "5:00 PM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26243,15 +26200,15 @@
     "lon": -73.9646,
     "link": "https://www.instagram.com/gatherbrooklyn/",
     "openNow": true,
-    "hours": [
-      "Sunday: 9:00 AM–7:00 PM",
-      "Monday: 8:00 AM–7:00 PM",
-      "Tuesday: 8:00 AM–7:00 PM",
-      "Wednesday: 8:00 AM–7:00 PM",
-      "Thursday: 8:00 AM–11:00 PM",
-      "Friday: 8:00 AM–11:00 PM",
-      "Saturday: 9:00 AM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "9:00 AM–7:00 PM",
+      "Monday": "8:00 AM–7:00 PM",
+      "Tuesday": "8:00 AM–7:00 PM",
+      "Wednesday": "8:00 AM–7:00 PM",
+      "Thursday": "8:00 AM–11:00 PM",
+      "Friday": "8:00 AM–11:00 PM",
+      "Saturday": "9:00 AM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26287,15 +26244,15 @@
     "lon": -73.9576,
     "link": "https://www.instagram.com/doordivebar/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–4:00 AM",
-      "Monday: 12:00 PM–4:00 AM",
-      "Tuesday: 12:00 PM–4:00 AM",
-      "Wednesday: 12:00 PM–4:00 AM",
-      "Thursday: 12:00 PM–4:00 AM",
-      "Friday: 12:00 PM–4:00 AM",
-      "Saturday: 12:00 PM–4:00 AM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–4:00 AM",
+      "Monday": "12:00 PM–4:00 AM",
+      "Tuesday": "12:00 PM–4:00 AM",
+      "Wednesday": "12:00 PM–4:00 AM",
+      "Thursday": "12:00 PM–4:00 AM",
+      "Friday": "12:00 PM–4:00 AM",
+      "Saturday": "12:00 PM–4:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26327,19 +26284,19 @@
     "name": "The Swan",
     "vibe": "Trendy, Versatile, Crowd-Pleaser, Hip Decor, Multi-Vibe",
     "type": "bar",
-    "lat": 40.6890943,
-    "lon": -73.9552778,
+    "lat": 40.7083,
+    "lon": -73.9648,
     "link": "https://www.instagram.com/theswanbk/",
     "openNow": true,
-    "hours": [
-      "Sunday: 10:00 AM–2:00 AM",
-      "Monday: 12:00 PM–2:00 AM",
-      "Tuesday: 12:00 PM–2:00 AM",
-      "Wednesday: 12:00 PM–2:00 AM",
-      "Thursday: 12:00 PM–2:00 AM",
-      "Friday: 12:00 PM–4:00 AM",
-      "Saturday: 10:00 AM–4:00 AM"
-    ],
+    "hours": {
+      "Sunday": "10:00 AM–2:00 AM",
+      "Monday": "12:00 PM–2:00 AM",
+      "Tuesday": "12:00 PM–2:00 AM",
+      "Wednesday": "12:00 PM–2:00 AM",
+      "Thursday": "12:00 PM–2:00 AM",
+      "Friday": "12:00 PM–4:00 AM",
+      "Saturday": "10:00 AM–4:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26370,20 +26327,20 @@
   {
     "name": "Singers",
     "vibe": "Rowdy, Karaoke, Fun Crowd, Casual, Unpretentious, Dive Vibes, LGBTQ",
-    "type": "karaoke",
+    "type": "activity",
     "lat": 40.7092,
     "lon": -73.9604,
     "link": "https://www.instagram.com/singerskaraokebar/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 PM–2:00 AM",
-      "Monday: 5:00 PM–2:00 AM",
-      "Tuesday: 5:00 PM–2:00 AM",
-      "Wednesday: 5:00 PM–2:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–3:00 AM",
-      "Saturday: 5:00 PM–3:00 AM"
-    ],
+    "hours": {
+      "Sunday": "5:00 PM–2:00 AM",
+      "Monday": "5:00 PM–2:00 AM",
+      "Tuesday": "5:00 PM–2:00 AM",
+      "Wednesday": "5:00 PM–2:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–3:00 AM",
+      "Saturday": "5:00 PM–3:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26419,15 +26376,15 @@
     "lon": -73.9297,
     "link": "https://www.instagram.com/millysbar/",
     "openNow": true,
-    "hours": [
-      "Sunday: 4:00 PM–10:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 5:00 PM–12:00 AM"
-    ],
+    "hours": {
+      "Sunday": "4:00 PM–10:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "5:00 PM–12:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26463,15 +26420,15 @@
     "lon": -73.9550,
     "link": "https://www.instagram.com/thehollernyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 3:00 PM–12:00 AM",
-      "Monday: 4:00 PM–12:00 AM",
-      "Tuesday: 4:00 PM–12:00 AM",
-      "Wednesday: 4:00 PM–12:00 AM",
-      "Thursday: 4:00 PM–12:00 AM",
-      "Friday: 4:00 PM–2:00 AM",
-      "Saturday: 3:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "3:00 PM–12:00 AM",
+      "Monday": "4:00 PM–12:00 AM",
+      "Tuesday": "4:00 PM–12:00 AM",
+      "Wednesday": "4:00 PM–12:00 AM",
+      "Thursday": "4:00 PM–12:00 AM",
+      "Friday": "4:00 PM–2:00 AM",
+      "Saturday": "3:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26507,15 +26464,15 @@
     "lon": -73.9602,
     "link": "https://www.instagram.com/discobirdies/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–6:00 PM",
-      "Monday: Closed",
-      "Tuesday: 6:00 PM–11:00 PM",
-      "Wednesday: 6:00 PM–11:00 PM",
-      "Thursday: 6:00 PM–11:00 PM",
-      "Friday: 6:00 PM–11:00 PM",
-      "Saturday: 6:00 PM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–6:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "6:00 PM–11:00 PM",
+      "Wednesday": "6:00 PM–11:00 PM",
+      "Thursday": "6:00 PM–11:00 PM",
+      "Friday": "6:00 PM–11:00 PM",
+      "Saturday": "6:00 PM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26545,21 +26502,21 @@
   },
   {
     "name": "Dynaco",
-    "vibe": "Queer-friendly, Candlelit, Intimate, Vintage Interiors, Club Vibe",
+    "vibe": "LGBTQ+ friendly, Candlelit, Intimate, Vintage Interiors, Club Vibe",
     "type": "bar",
     "lat": 40.7093,
     "lon": -73.9525,
     "link": "https://www.instagram.com/dynaconyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 4:00 PM–2:00 AM",
-      "Monday: 5:00 PM–2:00 AM",
-      "Tuesday: 5:00 PM–2:00 AM",
-      "Wednesday: 5:00 PM–2:00 AM",
-      "Thursday: 5:00 PM–2:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 4:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "4:00 PM–2:00 AM",
+      "Monday": "5:00 PM–2:00 AM",
+      "Tuesday": "5:00 PM–2:00 AM",
+      "Wednesday": "5:00 PM–2:00 AM",
+      "Thursday": "5:00 PM–2:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "4:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26595,15 +26552,15 @@
     "lon": -73.9577,
     "link": "https://www.instagram.com/fanfandoughuts/",
     "openNow": true,
-    "hours": [
-      "Sunday: 9:00 AM–6:00 PM",
-      "Monday: 8:00 AM–4:00 PM",
-      "Tuesday: 8:00 AM–4:00 PM",
-      "Wednesday: 8:00 AM–4:00 PM",
-      "Thursday: 8:00 AM–6:00 PM",
-      "Friday: 8:00 AM–6:00 PM",
-      "Saturday: 9:00 AM–6:00 PM"
-    ],
+    "hours": {
+      "Sunday": "9:00 AM–6:00 PM",
+      "Monday": "8:00 AM–4:00 PM",
+      "Tuesday": "8:00 AM–4:00 PM",
+      "Wednesday": "8:00 AM–4:00 PM",
+      "Thursday": "8:00 AM–6:00 PM",
+      "Friday": "8:00 AM–6:00 PM",
+      "Saturday": "9:00 AM–6:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26634,20 +26591,20 @@
    {
     "name": "Bar Laika by e-flux",
     "vibe": "Artsy, Experimental, Intellectual, Avant-garde, Low-key",
-    "type": "bar",
+    "type": "cocktail",
     "lat": 40.6978,
     "lon": -73.9303,
     "link": "https://www.instagram.com/barlaika/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: 6:00 PM–12:00 AM",
-      "Tuesday: 6:00 PM–12:00 AM",
-      "Wednesday: 6:00 PM–12:00 AM",
-      "Thursday: 6:00 PM–12:00 AM",
-      "Friday: 6:00 PM–1:00 AM",
-      "Saturday: 6:00 PM–1:00 AM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "6:00 PM–12:00 AM",
+      "Tuesday": "6:00 PM–12:00 AM",
+      "Wednesday": "6:00 PM–12:00 AM",
+      "Thursday": "6:00 PM–12:00 AM",
+      "Friday": "6:00 PM–1:00 AM",
+      "Saturday": "6:00 PM–1:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26683,15 +26640,15 @@
     "lon": -73.9667,
     "link": "https://www.instagram.com/izzyrosebk/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–2:00 AM",
-      "Monday: 3:00 PM–2:00 AM",
-      "Tuesday: 3:00 PM–2:00 AM",
-      "Wednesday: 3:00 PM–2:00 AM",
-      "Thursday: 3:00 PM–2:00 AM",
-      "Friday: 3:00 PM–2:00 AM",
-      "Saturday: 12:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–2:00 AM",
+      "Monday": "3:00 PM–2:00 AM",
+      "Tuesday": "3:00 PM–2:00 AM",
+      "Wednesday": "3:00 PM–2:00 AM",
+      "Thursday": "3:00 PM–2:00 AM",
+      "Friday": "3:00 PM–2:00 AM",
+      "Saturday": "12:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26727,15 +26684,15 @@
     "lon": -73.9568,
     "link": "https://www.instagram.com/placedesfetesbrooklyn/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:30 PM–10:00 PM",
-      "Monday: 5:30 PM–10:00 PM",
-      "Tuesday: 5:30 PM–10:00 PM",
-      "Wednesday: 5:30 PM–10:00 PM",
-      "Thursday: 5:30 PM–10:00 PM",
-      "Friday: 5:30 PM–10:30 PM",
-      "Saturday: 5:30 PM–10:30 PM"
-    ],
+    "hours": {
+      "Sunday": "5:30 PM–10:00 PM",
+      "Monday": "5:30 PM–10:00 PM",
+      "Tuesday": "5:30 PM–10:00 PM",
+      "Wednesday": "5:30 PM–10:00 PM",
+      "Thursday": "5:30 PM–10:00 PM",
+      "Friday": "5:30 PM–10:30 PM",
+      "Saturday": "5:30 PM–10:30 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26771,15 +26728,15 @@
     "lon": -73.9619,
     "link": "https://www.instagram.com/locandavinioliinyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 PM–10:00 PM",
-      "Monday: 5:00 PM–10:00 PM",
-      "Tuesday: 5:00 PM–10:00 PM",
-      "Wednesday: 5:00 PM–10:00 PM",
-      "Thursday: 5:00 PM–10:00 PM",
-      "Friday: 5:00 PM–10:00 PM",
-      "Saturday: 5:00 PM–10:00 PM"
-    ],
+    "hours": {
+      "Sunday": "5:00 PM–10:00 PM",
+      "Monday": "5:00 PM–10:00 PM",
+      "Tuesday": "5:00 PM–10:00 PM",
+      "Wednesday": "5:00 PM–10:00 PM",
+      "Thursday": "5:00 PM–10:00 PM",
+      "Friday": "5:00 PM–10:00 PM",
+      "Saturday": "5:00 PM–10:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26810,20 +26767,20 @@
   {
     "name": "Speedy Romeo",
     "vibe": "Lively, Industrial, Wood-Fired, Local Favorite, Brooklyn Vibe",
-    "type": "dinner",
+    "type": "wine bar, lunch, dinner",
     "lat": 40.686205,
     "lon": -73.958271,
     "link": "https://www.instagram.com/speedyromeo/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–9:00 PM",
-      "Monday: 12:00 PM–10:00 PM",
-      "Tuesday: 12:00 PM–10:00 PM",
-      "Wednesday: 12:00 PM–10:00 PM",
-      "Thursday: 12:00 PM–10:00 PM",
-      "Friday: 12:00 PM–11:00 PM",
-      "Saturday: 12:00 PM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–9:00 PM",
+      "Monday": "12:00 PM–10:00 PM",
+      "Tuesday": "12:00 PM–10:00 PM",
+      "Wednesday": "12:00 PM–10:00 PM",
+      "Thursday": "12:00 PM–10:00 PM",
+      "Friday": "12:00 PM–11:00 PM",
+      "Saturday": "12:00 PM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26854,20 +26811,20 @@
   {
     "name": "Little Grenjai",
     "vibe": "Minimalist, Thai, Charming, Small Plates, Cozy",
-    "type": "dinner",
+    "type": "lunch, dinner",
     "lat": 40.6903,
     "lon": -73.9706,
     "link": "https://www.instagram.com/littlegrenjai/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–3:00 PM; 5:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 12:00 PM–3:00 PM; 5:00 PM–9:00 PM",
-      "Thursday: 12:00 PM–3:00 PM; 5:00 PM–10:00 PM",
-      "Friday: 12:00 PM–3:00 PM; 5:00 PM–10:00 PM",
-      "Saturday: 12:00 PM–3:00 PM; 5:00 PM–10:00 PM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–3:00 PM; 5:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "12:00 PM–3:00 PM; 5:00 PM–9:00 PM",
+      "Thursday": "12:00 PM–3:00 PM; 5:00 PM–10:00 PM",
+      "Friday": "12:00 PM–3:00 PM; 5:00 PM–10:00 PM",
+      "Saturday": "12:00 PM–3:00 PM; 5:00 PM–10:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26914,19 +26871,19 @@
     "name": "Van Leeuwen Ice Cream",
     "vibe": "Sweet, Colorful, Family-Friendly, Classic Treat, Trendy",
     "type": "dessert",
-    "lat": 40.703191,
-    "lon": -73.9947458,
+    "lat": 40.6864,
+    "lon": -73.9669,
     "link": "https://www.instagram.com/vanleeuwenicecream/",
     "openNow": true,
-    "hours": [
-      "Sunday: 11:00 AM–12:00 AM",
-      "Monday: 11:00 AM–12:00 AM",
-      "Tuesday: 11:00 AM–12:00 AM",
-      "Wednesday: 11:00 AM–12:00 AM",
-      "Thursday: 11:00 AM–12:00 AM",
-      "Friday: 11:00 AM–1:00 AM",
-      "Saturday: 11:00 AM–1:00 AM"
-    ],
+    "hours": {
+      "Sunday": "11:00 AM–12:00 AM",
+      "Monday": "11:00 AM–12:00 AM",
+      "Tuesday": "11:00 AM–12:00 AM",
+      "Wednesday": "11:00 AM–12:00 AM",
+      "Thursday": "11:00 AM–12:00 AM",
+      "Friday": "11:00 AM–1:00 AM",
+      "Saturday": "11:00 AM–1:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26962,15 +26919,15 @@
     "lon": -73.9703,
     "link": "https://www.instagram.com/dickandjanesbar/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 PM–12:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–12:00 AM",
-      "Saturday: 1:00 PM–1:00 AM"
-    ],
+    "hours": {
+      "Sunday": "5:00 PM–12:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–12:00 AM",
+      "Saturday": "1:00 PM–1:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27000,21 +26957,21 @@
   },
   {
     "name": "Loafers Cocktail Bar",
-    "vibe": "Low-Key, Dimly Lit, Retro Vibes, Neighborhood Favorite, Chill",
+    "vibe": "Low-Key, Dimly Lit, Retro Vibes, Neighborhood Favorite, Chill, LGTBQ+",
     "type": "cocktail",
     "lat": 40.6868,
     "lon": -73.9699,
     "link": "https://www.instagram.com/loafersbar/",
     "openNow": true,
-    "hours": [
-      "Sunday: 4:00 PM–1:00 AM",
-      "Monday: 5:00 PM–1:00 AM",
-      "Tuesday: 5:00 PM–1:00 AM",
-      "Wednesday: 5:00 PM–1:00 AM",
-      "Thursday: 5:00 PM–1:00 AM",
-      "Friday: 5:00 PM–3:00 AM",
-      "Saturday: 4:00 PM–3:00 AM"
-    ],
+    "hours": {
+      "Sunday": "4:00 PM–1:00 AM",
+      "Monday": "5:00 PM–1:00 AM",
+      "Tuesday": "5:00 PM–1:00 AM",
+      "Wednesday": "5:00 PM–1:00 AM",
+      "Thursday": "5:00 PM–1:00 AM",
+      "Friday": "5:00 PM–3:00 AM",
+      "Saturday": "4:00 PM–3:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27045,20 +27002,20 @@
   {
     "name": "Travel Bar",
     "vibe": "Relaxed, Whiskey-Focused, Unpretentious, Local Feel, Classic",
-    "type": "bar",
+    "type": "bar, cocktail",
     "lat": 40.6807,
     "lon": -73.9852,
     "link": "https://www.instagram.com/travelbarbk/",
     "openNow": true,
-    "hours": [
-      "Sunday: 4:00 PM–10:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 4:00 PM–1:00 AM",
-      "Saturday: 4:00 PM–1:00 AM"
-    ],
+    "hours": {
+      "Sunday": "4:00 PM–10:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "4:00 PM–1:00 AM",
+      "Saturday": "4:00 PM–1:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27094,15 +27051,15 @@
     "lon": -73.9843,
     "link": "https://www.instagram.com/nerdbecoolnyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 8:00 AM–4:30 PM",
-      "Monday: 7:30 AM–4:30 PM",
-      "Tuesday: 7:30 AM–4:30 PM",
-      "Wednesday: 7:30 AM–4:30 PM",
-      "Thursday: 7:30 AM–4:30 PM",
-      "Friday: 7:30 AM–4:30 PM",
-      "Saturday: 8:00 AM–4:30 PM"
-    ],
+    "hours": {
+      "Sunday": "8:00 AM–4:30 PM",
+      "Monday": "7:30 AM–4:30 PM",
+      "Tuesday": "7:30 AM–4:30 PM",
+      "Wednesday": "7:30 AM–4:30 PM",
+      "Thursday": "7:30 AM–4:30 PM",
+      "Friday": "7:30 AM–4:30 PM",
+      "Saturday": "8:00 AM–4:30 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27138,15 +27095,15 @@
     "lon": -73.9945,
     "link": "https://www.instagram.com/courtstreetgrocers/",
     "openNow": true,
-    "hours": [
-      "Sunday: 9:00 AM–5:00 PM",
-      "Monday: 9:00 AM–5:00 PM",
-      "Tuesday: 8:00 AM–5:00 PM",
-      "Wednesday: 8:00 AM–5:00 PM",
-      "Thursday: 8:00 AM–5:00 PM",
-      "Friday: 8:00 AM–5:00 PM",
-      "Saturday: 9:00 AM–5:00 PM"
-    ],
+    "hours": {
+      "Sunday": "9:00 AM–5:00 PM",
+      "Monday": "9:00 AM–5:00 PM",
+      "Tuesday": "8:00 AM–5:00 PM",
+      "Wednesday": "8:00 AM–5:00 PM",
+      "Thursday": "8:00 AM–5:00 PM",
+      "Friday": "8:00 AM–5:00 PM",
+      "Saturday": "9:00 AM–5:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27182,15 +27139,15 @@
     "lon": -73.9912,
     "link": "https://www.instagram.com/fandfpizza/",
     "openNow": true,
-    "hours": [
-      "Sunday: 4:00 PM–10:00 PM",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: 4:00 PM–10:00 PM",
-      "Thursday: 4:00 PM–10:00 PM",
-      "Friday: 4:00 PM–11:00 PM",
-      "Saturday: 4:00 PM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "4:00 PM–10:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "4:00 PM–10:00 PM",
+      "Thursday": "4:00 PM–10:00 PM",
+      "Friday": "4:00 PM–11:00 PM",
+      "Saturday": "4:00 PM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27221,20 +27178,20 @@
   {
     "name": "Baby Luc's",
     "vibe": "Trendy, Colorful, Brooklyn Cool, Pizza & Drinks, Casual Fun",
-    "type": "pizza",
-    "lat": 40.6800784,
-    "lon": -73.9968577,
+    "type": "lunch, dinner",
+    "lat": 40.6752,
+    "lon": -73.9906,
     "link": "https://www.instagram.com/babylucs/",
     "openNow": true,
-    "hours": [
-      "Sunday: 11:30 AM–10:00 PM",
-      "Monday: 12:00 PM–10:00 PM",
-      "Tuesday: 12:00 PM–10:00 PM",
-      "Wednesday: 12:00 PM–10:00 PM",
-      "Thursday: 12:00 PM–10:00 PM",
-      "Friday: 12:00 PM–11:00 PM",
-      "Saturday: 11:30 AM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "11:30 AM–10:00 PM",
+      "Monday": "12:00 PM–10:00 PM",
+      "Tuesday": "12:00 PM–10:00 PM",
+      "Wednesday": "12:00 PM–10:00 PM",
+      "Thursday": "12:00 PM–10:00 PM",
+      "Friday": "12:00 PM–11:00 PM",
+      "Saturday": "11:30 AM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27264,21 +27221,21 @@
   },
   {
     "name": "DISTRICT",
-    "vibe": "Modern, Functional, Early Morning Vibes, Clean Aesthetic, Health-Driven",
-    "type": "cafe",
+    "vibe": "Gym, Movement, Early Morning Vibes, Clean Aesthetic, Health-Driven",
+    "type": "fitness",
     "lat": 40.6839,
     "lon": -73.9794,
     "link": "https://www.instagram.com/districtbrooklyn/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 AM–9:00 PM",
-      "Monday: 5:00 AM–9:00 PM",
-      "Tuesday: 5:00 AM–9:00 PM",
-      "Wednesday: 5:00 AM–9:00 PM",
-      "Thursday: 5:00 AM–9:00 PM",
-      "Friday: 5:00 AM–9:00 PM",
-      "Saturday: 5:00 AM–9:00 PM"
-    ],
+    "hours": {
+      "Sunday": "5:00 AM–9:00 PM",
+      "Monday": "5:00 AM–9:00 PM",
+      "Tuesday": "5:00 AM–9:00 PM",
+      "Wednesday": "5:00 AM–9:00 PM",
+      "Thursday": "5:00 AM–9:00 PM",
+      "Friday": "5:00 AM–9:00 PM",
+      "Saturday": "5:00 AM–9:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27308,21 +27265,21 @@
   },
   {
     "name": "PKLYN",
-    "vibe": "Clean, Sleek, Tech-Friendly, All-Day Work Spot, Coffee & Food",
-    "type": "cafe",
+    "vibe": "Athletic, Pickleball, Active, Community",
+    "type": "activity",
     "lat": 40.6863,
     "lon": -73.9741,
     "link": "https://www.instagram.com/pklyncafe/",
     "openNow": true,
-    "hours": [
-      "Sunday: 7:00 AM–11:00 PM",
-      "Monday: 7:00 AM–11:00 PM",
-      "Tuesday: 7:00 AM–11:00 PM",
-      "Wednesday: 7:00 AM–11:00 PM",
-      "Thursday: 7:00 AM–11:00 PM",
-      "Friday: 7:00 AM–11:00 PM",
-      "Saturday: 7:00 AM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "7:00 AM–11:00 PM",
+      "Monday": "7:00 AM–11:00 PM",
+      "Tuesday": "7:00 AM–11:00 PM",
+      "Wednesday": "7:00 AM–11:00 PM",
+      "Thursday": "7:00 AM–11:00 PM",
+      "Friday": "7:00 AM–11:00 PM",
+      "Saturday": "7:00 AM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27353,20 +27310,20 @@
    {
     "name": "Cafecito Social",
     "vibe": "Bright, Latin‑inspired, Community café, Chill, Coffee shop",
-    "type": "café",
+    "type": "coffee",
     "lat": 40.6827,
     "lon": -73.9751,
     "link": "https://www.instagram.com/cafecitosocial/",
     "openNow": true,
-    "hours": [
-      "Sunday: 8:00 AM–4:00 PM",
-      "Monday: 7:00 AM–5:00 PM",
-      "Tuesday: 7:00 AM–5:00 PM",
-      "Wednesday: 7:00 AM–5:00 PM",
-      "Thursday: 7:00 AM–5:00 PM",
-      "Friday: 7:00 AM–5:00 PM",
-      "Saturday: 8:00 AM–4:00 PM"
-    ],
+    "hours": {
+      "Sunday": "8:00 AM–4:00 PM",
+      "Monday": "7:00 AM–5:00 PM",
+      "Tuesday": "7:00 AM–5:00 PM",
+      "Wednesday": "7:00 AM–5:00 PM",
+      "Thursday": "7:00 AM–5:00 PM",
+      "Friday": "7:00 AM–5:00 PM",
+      "Saturday": "8:00 AM–4:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27397,20 +27354,20 @@
   {
     "name": "South Brooklyn Weightlifting Club",
     "vibe": "Gritty, Athletic, Community, Old‑school gym, Strength training focus",
-    "type": "gym",
+    "type": "fitness",
     "lat": 40.6801,
     "lon": -73.9912,
     "link": "https://www.instagram.com/southbrooklynweight/",
     "openNow": true,
-    "hours": [
-      "Sunday: 10:30 AM–1:30 PM",
-      "Monday: 6:30 AM–9:00 PM",
-      "Tuesday: 6:30 AM–9:00 PM",
-      "Wednesday: 6:30 AM–9:00 PM",
-      "Thursday: 6:30 AM–9:00 PM",
-      "Friday: 6:30 AM–7:30 PM",
-      "Saturday: 9:00 AM–12:30 PM"
-    ],
+    "hours": {
+      "Sunday": "10:30 AM–1:30 PM",
+      "Monday": "6:30 AM–9:00 PM",
+      "Tuesday": "6:30 AM–9:00 PM",
+      "Wednesday": "6:30 AM–9:00 PM",
+      "Thursday": "6:30 AM–9:00 PM",
+      "Friday": "6:30 AM–7:30 PM",
+      "Saturday": "9:00 AM–12:30 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27440,21 +27397,21 @@
   },
   {
     "name": "The Armory",
-    "vibe": "Industrial, Multi‑purpose venue, Music & events, Hip, Edgy",
-    "type": "venue",
-    "lat": 40.6793157,
-    "lon": -73.9814255,
+    "vibe": "Cozy, Exposed Brick, Cocktails, Small Bites",
+    "type": "cocktail",
+    "lat": 40.7050,
+    "lon": -73.9735,
     "link": "https://www.instagram.com/thearmorybk/",
     "openNow": true,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27484,21 +27441,21 @@
   },
   {
     "name": "Parklife",
-    "vibe": "Outdoor, Community bar, Ping‑pong, Festival‑style, Group energy",
-    "type": "bar",
+    "vibe": "Outdoor, Community bar, Ping‑pong, Texas Longhorns, Group energy",
+    "type": "bar, patio",
     "lat": 40.6830,
     "lon": -73.9792,
     "link": "https://www.instagram.com/parklifebk/",
     "openNow": true,
-    "hours": [
-      "Sunday: 2:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–12:00 AM",
-      "Wednesday: 5:00 PM–12:00 AM",
-      "Thursday: 5:00 PM–12:00 AM",
-      "Friday: 5:00 PM–1:00 AM",
-      "Saturday: 2:00 PM–1:00 AM"
-    ],
+    "hours": {
+      "Sunday": "2:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–12:00 AM",
+      "Wednesday": "5:00 PM–12:00 AM",
+      "Thursday": "5:00 PM–12:00 AM",
+      "Friday": "5:00 PM–1:00 AM",
+      "Saturday": "2:00 PM–1:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27529,20 +27486,20 @@
    {
     "name": "Royal Palms Shuffleboard Club",
     "vibe": "Playful, Retro, Group fun, Competitive, Social Club",
-    "type": "bar",
-    "lat": 40.6786376,
-    "lon": -73.9869098,
+    "type": "bar, activity",
+    "lat": 40.6792,
+    "lon": -73.9911,
     "link": "https://www.instagram.com/royalpalmsshuffle/",
     "openNow": true,
-    "hours": [
-      "Sunday: 12:00 PM–10:00 PM",
-      "Monday: 6:00 PM–12:00 AM",
-      "Tuesday: 6:00 PM–12:00 AM",
-      "Wednesday: 6:00 PM–12:00 AM",
-      "Thursday: 3:00 PM–12:00 AM",
-      "Friday: Closed",
-      "Saturday: 12:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "12:00 PM–10:00 PM",
+      "Monday": "6:00 PM–12:00 AM",
+      "Tuesday": "6:00 PM–12:00 AM",
+      "Wednesday": "6:00 PM–12:00 AM",
+      "Thursday": "3:00 PM–12:00 AM",
+      "Friday": "Closed",
+      "Saturday": "12:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27574,19 +27531,19 @@
     "name": "cityWell brooklyn",
     "vibe": "Wellness, Serene, Soothing, Spa, Relaxation, Hidden Oasis",
     "type": "spa",
-    "lat": 40.6778803,
-    "lon": -73.9868536,
+    "lat": 40.6786,
+    "lon": -73.9784,
     "link": "https://www.instagram.com/citywellbrooklyn/",
     "openNow": true,
-    "hours": [
-      "Sunday: 11:00 AM–5:00 PM",
-      "Monday: 11:00 AM–6:00 PM",
-      "Tuesday: 10:30 AM–8:00 PM",
-      "Wednesday: 10:30 AM–8:00 PM",
-      "Thursday: 10:30 AM–8:00 PM",
-      "Friday: 10:30 AM–8:00 PM",
-      "Saturday: 11:00 AM–8:00 PM"
-    ],
+    "hours": {
+      "Sunday": "11:00 AM–5:00 PM",
+      "Monday": "11:00 AM–6:00 PM",
+      "Tuesday": "10:30 AM–8:00 PM",
+      "Wednesday": "10:30 AM–8:00 PM",
+      "Thursday": "10:30 AM–8:00 PM",
+      "Friday": "10:30 AM–8:00 PM",
+      "Saturday": "11:00 AM–8:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27618,19 +27575,19 @@
     "name": "Dirty Precious",
     "vibe": "Funky, Underground, Date Night, Candlelit, Divey Chic",
     "type": "cocktail",
-    "lat": 40.6763139,
-    "lon": -73.9866667,
+    "lat": 40.6870,
+    "lon": -73.9815,
     "link": "https://www.instagram.com/dirtypreciousbar/",
     "openNow": true,
-    "hours": [
-      "Sunday: 4:00 PM–10:30 PM",
-      "Monday: Closed",
-      "Tuesday: 5:00 PM–11:00 PM",
-      "Wednesday: 5:00 PM–11:00 PM",
-      "Thursday: 5:00 PM–11:00 PM",
-      "Friday: 5:00 PM–12:30 AM",
-      "Saturday: 5:00 PM–12:30 AM"
-    ],
+    "hours": {
+      "Sunday": "4:00 PM–10:30 PM",
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM–11:00 PM",
+      "Wednesday": "5:00 PM–11:00 PM",
+      "Thursday": "5:00 PM–11:00 PM",
+      "Friday": "5:00 PM–12:30 AM",
+      "Saturday": "5:00 PM–12:30 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27660,21 +27617,21 @@
   },
   {
     "name": "Cotra",
-    "vibe": "Minimalist, Design‑forward, Calm, Natural Wine, Low‑key",
-    "type": "wine bar",
-    "lat": 40.6775859,
-    "lon": -73.9872039,
+    "vibe": "Minimalist, Design‑forward, Calm, Small Bites, Japanese, Low‑key",
+    "type": "cocktail, dinner",
+    "lat": 40.7061,
+    "lon": -73.9412,
     "link": "https://www.instagram.com/cotra.nyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 5:00 PM–9:00 PM",
-      "Monday: Closed",
-      "Tuesday: 6:00 PM–10:00 PM",
-      "Wednesday: 6:00 PM–10:00 PM",
-      "Thursday: 6:00 PM–10:00 PM",
-      "Friday: 6:00 PM–11:00 PM",
-      "Saturday: 6:00 PM–11:00 PM"
-    ],
+    "hours": {
+      "Sunday": "5:00 PM–9:00 PM",
+      "Monday": "Closed",
+      "Tuesday": "6:00 PM–10:00 PM",
+      "Wednesday": "6:00 PM–10:00 PM",
+      "Thursday": "6:00 PM–10:00 PM",
+      "Friday": "6:00 PM–11:00 PM",
+      "Saturday": "6:00 PM–11:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27705,20 +27662,20 @@
    {
     "name": "Logan's Run",
     "vibe": "Retro neon, All‑night dance, Electronic vibes, Surreal, Immersive",
-    "type": "club",
-    "lat": 40.6710497,
-    "lon": -73.9844495,
+    "type": "cocktail",
+    "lat": 40.7220,
+    "lon": -73.9800,
     "link": "https://www.instagram.com/logansrun/",
     "openNow": true,
-    "hours": [
-      "Sunday: 1:00 PM–4:00 AM",
-      "Monday: 3:00 PM–4:00 AM",
-      "Tuesday: 3:00 PM–4:00 AM",
-      "Wednesday: 3:00 PM–4:00 AM",
-      "Thursday: 3:00 PM–4:00 AM",
-      "Friday: 3:00 PM–4:00 AM",
-      "Saturday: 1:00 PM–4:00 AM"
-    ],
+    "hours": {
+      "Sunday": "1:00 PM–4:00 AM",
+      "Monday": "3:00 PM–4:00 AM",
+      "Tuesday": "3:00 PM–4:00 AM",
+      "Wednesday": "3:00 PM–4:00 AM",
+      "Thursday": "3:00 PM–4:00 AM",
+      "Friday": "3:00 PM–4:00 AM",
+      "Saturday": "1:00 PM–4:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27750,19 +27707,19 @@
     "name": "LoFI Bar",
     "vibe": "Chill beats, DJ sets, Underground, Artistic, Hip‑hop playlist",
     "type": "bar",
-    "lat": 40.6736217,
-    "lon": -73.9829477,
+    "lat": 40.7300,
+    "lon": -73.9570,
     "link": "https://www.instagram.com/lofibarnyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 2:00 PM–1:00 AM",
-      "Monday: 4:00 PM–1:00 AM",
-      "Tuesday: 4:00 PM–1:00 AM",
-      "Wednesday: 4:00 PM–1:00 AM",
-      "Thursday: 4:00 PM–1:00 AM",
-      "Friday: 3:00 PM–1:00 AM",
-      "Saturday: 2:00 PM–1:00 AM"
-    ],
+    "hours": {
+      "Sunday": "2:00 PM–1:00 AM",
+      "Monday": "4:00 PM–1:00 AM",
+      "Tuesday": "4:00 PM–1:00 AM",
+      "Wednesday": "4:00 PM–1:00 AM",
+      "Thursday": "4:00 PM–1:00 AM",
+      "Friday": "3:00 PM–1:00 AM",
+      "Saturday": "2:00 PM–1:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27794,19 +27751,19 @@
     "name": "Blueprint",
     "vibe": "Modern lounge, Craft cocktails, Fashionably late, Couples crowd",
     "type": "cocktail",
-    "lat": 40.6736217,
-    "lon": -73.9829477,
+    "lat": 40.7255,
+    "lon": -73.9921,
     "link": "https://www.instagram.com/blueprintlounge/",
     "openNow": true,
-    "hours": [
-      "Sunday: 3:00 PM–12:00 AM",
-      "Monday: 4:00 PM–12:00 AM",
-      "Tuesday: 4:00 PM–12:00 AM",
-      "Wednesday: 4:00 PM–12:00 AM",
-      "Thursday: 4:00 PM–1:00 AM",
-      "Friday: 4:00 PM–1:00 AM",
-      "Saturday: 3:00 PM–12:00 AM"
-    ],
+    "hours": {
+      "Sunday": "3:00 PM–12:00 AM",
+      "Monday": "4:00 PM–12:00 AM",
+      "Tuesday": "4:00 PM–12:00 AM",
+      "Wednesday": "4:00 PM–12:00 AM",
+      "Thursday": "4:00 PM–1:00 AM",
+      "Friday": "4:00 PM–1:00 AM",
+      "Saturday": "3:00 PM–12:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27837,20 +27794,20 @@
   {
     "name": "Vinegar Hill House",
     "vibe": "Rustic, Romantic, Seasonal dining, Hidden courtyard, Neighborhood gem",
-    "type": "dinner",
-    "lat": 40.7027648,
-    "lon": -73.9812524,
+    "type": "lunch, dinner",
+    "lat": 40.7025,
+    "lon": -73.9697,
     "link": "https://www.instagram.com/vinegarhillhouse/",
     "openNow": true,
-    "hours": [
-      "Sunday: 10:00 AM–3:00 PM; 5:30 PM–9:30 PM",
-      "Monday: 5:30 PM–9:30 PM",
-      "Tuesday: 5:30 PM–9:30 PM",
-      "Wednesday: 5:30 PM–9:30 PM",
-      "Thursday: 5:30 PM–9:30 PM",
-      "Friday: 5:30 PM–10:00 PM",
-      "Saturday: 10:00 AM–3:00 PM; 5:30 PM–10:00 PM"
-    ],
+    "hours": {
+      "Sunday": "10:00 AM–3:00 PM; 5:30 PM–9:30 PM",
+      "Monday": "5:30 PM–9:30 PM",
+      "Tuesday": "5:30 PM–9:30 PM",
+      "Wednesday": "5:30 PM–9:30 PM",
+      "Thursday": "5:30 PM–9:30 PM",
+      "Friday": "5:30 PM–10:00 PM",
+      "Saturday": "10:00 AM–3:00 PM; 5:30 PM–10:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27897,20 +27854,20 @@
    {
     "name": "Archivio Records",
     "vibe": "Vintage vinyl, Curated collection, Music lovers, Indie cred",
-    "type": "music store",
-    "lat": 40.7031,
-    "lon": -73.984034,
+    "type": "random gem, lifestyle",
+    "lat": 40.7173,
+    "lon": -73.9609,
     "link": "https://www.instagram.com/archiviorecords/",
     "openNow": false,
-    "hours": [
-      "Sunday: Closed",
-      "Monday: Closed",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: Closed",
-      "Friday: Closed",
-      "Saturday: Closed"
-    ],
+    "hours": {
+      "Sunday": "Closed",
+      "Monday": "Closed",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "Closed",
+      "Friday": "Closed",
+      "Saturday": "Closed"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27941,20 +27898,20 @@
   {
     "name": "Cafe Mado",
     "vibe": "Korean café, Brunch spot, Sweet & savory pastries, Cozy",
-    "type": "café",
-    "lat": 40.6729083,
-    "lon": -73.9626279,
+    "type": "breakfast, lunch, dinner",
+    "lat": 40.7166,
+    "lon": -73.9584,
     "link": "https://www.instagram.com/cafemadonow/",
     "openNow": true,
-    "hours": [
-      "Sunday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
-      "Monday: 8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
-      "Tuesday: Closed",
-      "Wednesday: Closed",
-      "Thursday: 8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
-      "Friday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
-      "Saturday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM"
-    ],
+    "hours": {
+      "Sunday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
+      "Monday": "8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
+      "Tuesday": "Closed",
+      "Wednesday": "Closed",
+      "Thursday": "8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
+      "Friday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
+      "Saturday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27985,20 +27942,20 @@
   {
     "name": "Rialto Grande",
     "vibe": "Bustling Italian spot, Seafood, Family-friendly, Energetic service",
-    "type": "dinner",
-    "lat": 40.6763469,
-    "lon": -73.9561648,
+    "type": "cocktail, wine bar",
+    "lat": 40.6850,
+    "lon": -73.9740,
     "link": "https://www.instagram.com/rialtograndenyc/",
     "openNow": true,
-    "hours": [
-      "Sunday: 4:00 PM–12:00 AM",
-      "Monday: 5:00 PM–12:00 AM",
-      "Tuesday: 5:00 PM–1:00 AM",
-      "Wednesday: 5:00 PM–1:00 AM",
-      "Thursday: 5:00 PM–1:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 4:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "4:00 PM–12:00 AM",
+      "Monday": "5:00 PM–12:00 AM",
+      "Tuesday": "5:00 PM–1:00 AM",
+      "Wednesday": "5:00 PM–1:00 AM",
+      "Thursday": "5:00 PM–1:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "4:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -28029,20 +27986,20 @@
   {
     "name": "Kissa Kissa",
     "vibe": "Japanese café, Green tea lounge, Matcha cocktails, Elegant, Quiet",
-    "type": "café",
-    "lat": 40.6756639,
-    "lon": -73.9559666,
+    "type": "cocktail",
+    "lat": 40.7097,
+    "lon": -73.9734,
     "link": "https://www.instagram.com/kissakissa/",
     "openNow": true,
-    "hours": [
-      "Sunday: 3:00 PM–11:00 PM",
-      "Monday: 5:30 PM–12:00 AM",
-      "Tuesday: 5:30 PM–12:00 AM",
-      "Wednesday: 5:30 PM–12:30 AM",
-      "Thursday: 5:30 PM–1:00 AM",
-      "Friday: 5:00 PM–2:00 AM",
-      "Saturday: 5:00 PM–2:00 AM"
-    ],
+    "hours": {
+      "Sunday": "3:00 PM–11:00 PM",
+      "Monday": "5:30 PM–12:00 AM",
+      "Tuesday": "5:30 PM–12:00 AM",
+      "Wednesday": "5:30 PM–12:30 AM",
+      "Thursday": "5:30 PM–1:00 AM",
+      "Friday": "5:00 PM–2:00 AM",
+      "Saturday": "5:00 PM–2:00 AM"
+    },
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
