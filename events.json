@@ -26333,13 +26333,13 @@
     "link": "https://www.instagram.com/singerskaraokebar/",
     "openNow": true,
     "hours": [
-      "Sunday": "5:00 PM–2:00 AM",
-      "Monday": "5:00 PM–2:00 AM",
-      "Tuesday": "5:00 PM–2:00 AM",
-      "Wednesday": "5:00 PM–2:00 AM",
-      "Thursday": "5:00 PM–2:00 AM",
-      "Friday": "5:00 PM–3:00 AM",
-      "Saturday": "5:00 PM–3:00 AM"
+      "Sunday: 5:00 PM–2:00 AM",
+      "Monday: 5:00 PM–2:00 AM",
+      "Tuesday: 5:00 PM–2:00 AM",
+      "Wednesday: 5:00 PM–2:00 AM",
+      "Thursday: 5:00 PM–2:00 AM",
+      "Friday: 5:00 PM–3:00 AM",
+      "Saturday: 5:00 PM–3:00 AM"
     ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27756,13 +27756,13 @@
     "link": "https://www.instagram.com/vinegarhillhouse/",
     "openNow": true,
     "hours": [
-      "Sunday": "10:00 AM–3:00 PM; 5:30 PM–9:30 PM",
-      "Monday": "5:30 PM–9:30 PM",
-      "Tuesday": "5:30 PM–9:30 PM",
-      "Wednesday": "5:30 PM–9:30 PM",
-      "Thursday": "5:30 PM–9:30 PM",
-      "Friday": "5:30 PM–10:00 PM",
-      "Saturday": "10:00 AM–3:00 PM; 5:30 PM–10:00 PM"
+      "Sunday: 10:00 AM–3:00 PM; 5:30 PM–9:30 PM",
+      "Monday: 5:30 PM–9:30 PM",
+      "Tuesday: 5:30 PM–9:30 PM",
+      "Wednesday: 5:30 PM–9:30 PM",
+      "Thursday: 5:30 PM–9:30 PM",
+      "Friday: 5:30 PM–10:00 PM",
+      "Saturday: 10:00 AM–3:00 PM; 5:30 PM–10:00 PM"
     ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27860,13 +27860,13 @@
     "link": "https://www.instagram.com/cafemadonow/",
     "openNow": true,
     "hours": [
-      "Sunday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
-      "Monday": "8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
-      "Tuesday": "Closed",
-      "Wednesday": "Closed",
-      "Thursday": "8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
-      "Friday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
-      "Saturday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM"
+      "Sunday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
+      "Monday: 8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
+      "Friday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
+      "Saturday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM"
     ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27904,13 +27904,13 @@
     "link": "https://www.instagram.com/rialtograndenyc/",
     "openNow": true,
     "hours": [
-      "Sunday": "4:00 PM–12:00 AM",
-      "Monday": "5:00 PM–12:00 AM",
-      "Tuesday": "5:00 PM–1:00 AM",
-      "Wednesday": "5:00 PM–1:00 AM",
-      "Thursday": "5:00 PM–1:00 AM",
-      "Friday": "5:00 PM–2:00 AM",
-      "Saturday": "4:00 PM–2:00 AM"
+      "Sunday: 4:00 PM–12:00 AM",
+      "Monday: 5:00 PM–12:00 AM",
+      "Tuesday: 5:00 PM–1:00 AM",
+      "Wednesday: 5:00 PM–1:00 AM",
+      "Thursday: 5:00 PM–1:00 AM",
+      "Friday: 5:00 PM–2:00 AM",
+      "Saturday: 4:00 PM–2:00 AM"
     ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -27948,13 +27948,13 @@
     "link": "https://www.instagram.com/kissakissa/",
     "openNow": true,
     "hours": [
-      "Sunday": "3:00 PM–11:00 PM",
-      "Monday": "5:30 PM–12:00 AM",
-      "Tuesday": "5:30 PM–12:00 AM",
-      "Wednesday": "5:30 PM–12:30 AM",
-      "Thursday": "5:30 PM–1:00 AM",
-      "Friday": "5:00 PM–2:00 AM",
-      "Saturday": "5:00 PM–2:00 AM"
+      "Sunday: 3:00 PM–11:00 PM",
+      "Monday: 5:30 PM–12:00 AM",
+      "Tuesday: 5:30 PM–12:00 AM",
+      "Wednesday: 5:30 PM–12:30 AM",
+      "Thursday": 5:30 PM–1:00 AM",
+      "Friday: 5:00 PM–2:00 AM",
+      "Saturday: 5:00 PM–2:00 AM"
     ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
