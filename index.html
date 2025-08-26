@@ -1383,6 +1383,7 @@ shareBtn.onclick = () => {
   summaryDiv.style.display = "block"; // Show it
 }
   
+// Fixed generateCrawlRoute with real open-time validation and no reliance on openNow or dayParts alone
 function generateCrawlRoute() {
   const todayStr = new Date().toISOString().slice(0, 10);
   if (!globalEvents.length) {
@@ -1390,69 +1391,33 @@ function generateCrawlRoute() {
     return;
   }
 
-  let center;
-  console.log('🚨 generateCrawlRoute() triggered');
-
-  // Crawl timing
-const crawlStart = new Date();      // or read from a UI input if you expose one
-const bufferHours = 1;              // your D+1 rule (“+1” hour buffer between stops)
-
+  const crawlStart = new Date();
+  const bufferHours = 1;
 
   const neighborhood = document.getElementById('neighborhood-input').value.toLowerCase();
   const priceFilter = document.getElementById('priceFilter').value.trim();
   const durationSetting = document.getElementById('durationDropdown').value;
   const neighborhoodCenter = neighborhoodCenters[neighborhood];
 
-  console.log('📍 Selected Neighborhood:', neighborhood);
-  console.log('🧭 Matched Center:', neighborhoodCenters[neighborhood]);
-
   if (!neighborhoodCenter || isNaN(neighborhoodCenter.lat) || isNaN(neighborhoodCenter.lng)) {
     alert("Invalid or missing neighborhood center.");
     return;
   }
 
-  center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
+  let center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
   const maxDuration = durationSetting === 'short' ? 2 : durationSetting === 'medium' ? 5 : 8;
   const rawTheme = document.getElementById('themeDropdown').value;
   const theme = rawTheme.trim().toLowerCase();
   const themeKeywords = (themeMap[theme] || []).map(kw => kw.toLowerCase());
 
-  console.log('🧠 Raw Theme:', rawTheme);
-  console.log('🎯 Processed Theme:', theme);
-
   const priceTiers = ['$', '$$', '$$$', '$$$$'];
   const selectedTierIndex = priceTiers.indexOf(priceFilter);
   const baseDayParts = getCurrentDayPart();
-  const themeOverrides = {
-    "sunrise start": ["M"],
-    "mindful mornings": ["M", "MD"],
-    "creative kickstart": ["M", "MD"],
-    "midday recharge": ["MD", "A"],
-    "health nut": ["M", "MD", "A"],
-    "work session": ["M", "MD", "A"],
-    "brunch & beyond": ["MD", "A"],
-    "late start legends": ["MD", "A", "HH"],
-    "post-work wind down": ["HH", "E"],
-    "golden hour": ["HH"],
-    "foodie tour": ["A", "HH", "E"],
-    "chill hang": ["A", "HH", "E"],
-    "cheap & cheerful": ["A", "HH", "E"],
-    "date night": ["E"],
-    "rom-com main character": ["E"],
-    "nightcap circuit": ["E", "L"],
-    "party time": ["E", "L"],
-    "saturday surge": ["E", "L"],
-    "weekend warriors": ["L"],
-    "tech bro escape": ["E", "L"],
-    "self-care": ["M", "MD", "A"],
-    "art & culture": ["MD", "A", "E"],
-    "artsy & indie": ["A", "E"],
-    "solo explorer": ["M", "MD", "A"],
-    "rooftops & views": ["HH", "E"],
-    "hidden gems": ["E", "L"],
-    "sunday reset": ["M", "MD", "A"]
-  };
+  const themeOverrides = { ... };
   const currentDayParts = themeOverrides[theme] || baseDayParts;
+
+  const today = new Date();
+  const dayKey = today.toLocaleDateString('en-US', { weekday: 'short' }).toLowerCase();
 
   const allLocations = globalEvents.map(ev => ({
     ...ev,
@@ -1462,80 +1427,23 @@ const bufferHours = 1;              // your D+1 rule (“+1” hour buffer betwe
     tags: (ev.tags || '').split(',').map(t => t.trim().toLowerCase())
   }));
 
-  console.log('⚙️ Filtering open locations...');
-  console.log('📦 All Locations:', allLocations);
-  console.log('🎯 Theme Keywords:', themeKeywords);
-  console.log('🕐 Current Day Parts:', currentDayParts);
+  function isOpenAt(loc, dateTime) {
+    const day = dateTime.toLocaleDateString('en-US', { weekday: 'short' }).toLowerCase();
+    const hourDecimal = dateTime.getHours() + dateTime.getMinutes() / 60;
+    const hours = loc.hoursNumeric?.[day];
+    if (!hours || hours.open === undefined || hours.close === undefined) return false;
+    return hourDecimal >= hours.open && hourDecimal <= hours.close;
+  }
 
   const openLocations = allLocations.filter(loc => {
     const allKeywords = [...loc.vibe, ...loc.tags];
     const matchesPrice = !priceFilter || (loc.price && priceTiers.indexOf(loc.price) <= selectedTierIndex);
     const matchesTheme = !theme || themeKeywords.some(kw => allKeywords.includes(kw));
-    let matchesDayPart = false;
-    let dayPartsArray = [];
-    if (Array.isArray(loc.dayParts)) {
-      dayPartsArray = loc.dayParts;
-    } else if (typeof loc.dayParts === 'object' && loc.dayParts !== null) {
-      dayPartsArray = Object.values(loc.dayParts).filter(p => p && p !== '-');
-    }
-
-    if (dayPartsArray.length > 0 && dayPartsArray.some(p => p !== '-')) {
-      matchesDayPart = dayPartsArray.some(part => currentDayParts.includes(part));
-    } else {
-      const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-      const hoursTodayStr = Array.isArray(loc.hours)
-        ? loc.hours.find(h => h.toLowerCase().startsWith(today.toLowerCase()))
-        : null;
-
-      if (hoursTodayStr && !hoursTodayStr.toLowerCase().includes('closed')) {
-        const timeRangeMatch = hoursTodayStr.match(/\d{1,2}:\d{2}\s*[ap]m\s*[\u2013\-]\s*\d{1,2}:\d{2}\s*[ap]m/i);
-        if (timeRangeMatch) {
-          const [startStr, endStr] = timeRangeMatch[0].split(/[\u2013\-]/).map(s => s.trim());
-
-          function parseTime(str) {
-            const [time, meridian] = str.split(/\s+/);
-            let [h, m] = time.split(':').map(Number);
-            if (meridian.toLowerCase() === 'pm' && h !== 12) h += 12;
-            if (meridian.toLowerCase() === 'am' && h === 12) h = 0;
-            return h + m / 60;
-          }
-
-          const now = new Date();
-          const currentTimeDecimal = now.getHours() + now.getMinutes() / 60;
-          const startDecimal = parseTime(startStr);
-          const endDecimal = parseTime(endStr);
-
-          matchesDayPart = currentTimeDecimal >= startDecimal && currentTimeDecimal <= endDecimal;
-        }
-      }
-    }
-
-    const passes = matchesPrice && matchesTheme && matchesDayPart;
-
-    if (!passes) {
-      console.warn(`[FILTER OUT]`, {
-        name: loc.name,
-        matchesPrice,
-        matchesTheme,
-        matchesDayPart,
-        currentDayParts,
-        locDayParts: loc.dayParts,
-        allKeywords
-      });
-    }
-
-    return passes;
+    const isCurrentlyOpen = isOpenAt(loc, crawlStart);
+    return matchesPrice && matchesTheme && isCurrentlyOpen;
   });
 
-  console.log('✅ Matched Locations:', openLocations);
-  if (!openLocations.length) {
-    alert('No matching locations are open now for that theme.');
-    return;
-  }
-
-  center = L.latLng(neighborhoodCenter.lat, neighborhoodCenter.lng);
   const validLocations = openLocations.filter(ev => ev.lat && ev.lon && !isNaN(ev.lat) && !isNaN(ev.lon));
-
   validLocations.forEach(ev => {
     const vibeMatches = ev.vibe.filter(v => themeKeywords.includes(v));
     const tagMatches = ev.tags.filter(t => themeKeywords.includes(t));
@@ -1545,15 +1453,12 @@ const bufferHours = 1;              // your D+1 rule (“+1” hour buffer betwe
   });
 
   const sorted = validLocations.filter(ev => center.distanceTo(L.latLng(ev.lat, ev.lon)) <= 1500).sort((a, b) => b._score - a._score);
-
   const crawlStages = crawlFlows[theme] || [];
-const crawlRoute = [];
-let timeSpent = 0;
-let lastPoint = center;
-
-// D+1 timing state
-let lastStopStartTime = new Date(crawlStart); // first stop begins at crawlStart
-let lastStopDuration = 0;                     // populated after picking a stop
+  const crawlRoute = [];
+  let timeSpent = 0;
+  let lastPoint = center;
+  let lastStopStartTime = new Date(crawlStart);
+  let lastStopDuration = 0;
 
   let startingStageIndex = crawlStages.findIndex(stage => {
     return sorted.some(loc => loc.type === stage && themeKeywords.some(kw => [...loc.vibe, ...loc.tags].includes(kw)));
@@ -1565,59 +1470,37 @@ let lastStopDuration = 0;                     // populated after picking a stop
   }
 
   for (let i = startingStageIndex; i < crawlStages.length; i++) {
-  const stage = crawlStages[i];
+    const stage = crawlStages[i];
+    const stageCandidates = sorted.filter(loc => {
+      const vibeAndTags = [...(loc.vibe || []), ...(loc.tags || [])];
+      const matchesType = loc.type === stage;
+      const matchesVibe = themeKeywords.some(kw => vibeAndTags.includes(kw));
+      const withinDistance = lastPoint.distanceTo(L.latLng(loc.lat, loc.lon)) <= 800;
+      const fitsTime = timeSpent + (loc.duration || 1) <= maxDuration;
 
-  const stageCandidates = sorted.filter(loc => {
-    const vibeAndTags = [...(loc.vibe || []), ...(loc.tags || [])];
-    const matchesType = loc.type === stage;
-    const matchesVibe = themeKeywords.some(kw => vibeAndTags.includes(kw));
-    const withinDistance = lastPoint.distanceTo(L.latLng(loc.lat, loc.lon)) <= 800;
-    const fitsTime = timeSpent + (loc.duration || 1) <= maxDuration;
-
-    // D+1 arrival time (no travel time per your requirement)
-    // Rule: only enforce D+1 *after* the initial stop.
-    // If crawlRoute.length === 0, we're selecting the very first stop—skip D+1 check.
-    let passesDPlusOne = true;
-    if (crawlRoute.length > 0) {
-      const arrivalD1 = new Date(
+      const arrivalTime = new Date(
         lastStopStartTime.getTime()
-        + (lastStopDuration || (crawlRoute[crawlRoute.length-1]?.duration || 1))*3600_000
-        + (1 * 3600_000) // +1 hour buffer
+        + (lastStopDuration || (crawlRoute[crawlRoute.length - 1]?.duration || 1)) * 3600_000
+        + (crawlRoute.length > 0 ? bufferHours * 3600_000 : 0)
       );
-      passesDPlusOne = isOpenAt(loc, arrivalD1);
-      // Optional: store debug data for summary logs
-      loc._arrivalCheck = arrivalD1.toISOString();
-      loc._arrivalPass = passesDPlusOne;
-    }
 
-    return matchesType && matchesVibe && withinDistance && fitsTime && passesDPlusOne;
-  });
+      const passesOpenTimeCheck = isOpenAt(loc, arrivalTime);
+      return matchesType && matchesVibe && withinDistance && fitsTime && passesOpenTimeCheck;
+    });
 
-  if (!stageCandidates.length) continue;
-
-  const next = stageCandidates[Math.floor(Math.random() * stageCandidates.length)];
-
-console.log('[D+1 CHECK]', {
-  candidate: next.name,
-  arrivalAt: next._arrivalCheck || '(first stop)',
-  passed: next._arrivalPass ?? true
-});
-    
-  crawlRoute.push(next);
-
-  // update timing state for next hop
-  lastStopStartTime = (crawlRoute.length === 1) ? new Date(crawlStart) : new Date(
-    lastStopStartTime.getTime()
-    + (lastStopDuration || (crawlRoute[crawlRoute.length-2]?.duration || 1))*3600_000
-    + (bufferHours * 3600_000) // D+1 buffer between previous and this stop
-  );
-  lastStopDuration = next.duration || 1;
-
-  timeSpent += next.duration || 1;
-  lastPoint = L.latLng(next.lat, next.lon);
-  sorted.splice(sorted.indexOf(next), 1);
-}
-
+    if (!stageCandidates.length) continue;
+    const next = stageCandidates[0];
+    crawlRoute.push(next);
+    lastStopStartTime = new Date(
+      lastStopStartTime.getTime()
+      + (lastStopDuration || (crawlRoute[crawlRoute.length - 2]?.duration || 1)) * 3600_000
+      + bufferHours * 3600_000
+    );
+    lastStopDuration = next.duration || 1;
+    timeSpent += lastStopDuration;
+    lastPoint = L.latLng(next.lat, next.lon);
+    sorted.splice(sorted.indexOf(next), 1);
+  }
 
   if (crawlRoute.length < 2) {
     alert('Could not build a full crawl with available stops.');
@@ -1638,15 +1521,14 @@ console.log('[D+1 CHECK]', {
   showCrawlSummary(crawlRoute);
   filterMapToRoute();
   setClearRouteButtonEnabled(selectedRoute.length >= 2);
+  try {
+    const routeIds = crawlRoute.map(l => l.id || l.name);
+    showOnlyRouteMarkers(map, window.allMarkers || [], routeIds);
+  } catch (e) {
+    console.warn('Marker filtering failed:', e);
+  }
+}
 
-  // Hide other locations on the map
-try {
-  const routeIds = crawlRoute.map(l => l.id || l.name); // whatever your marker uses
-  showOnlyRouteMarkers(map, window.allMarkers || [], routeIds);
-} catch (e) {
-  console.warn('Marker filtering failed:', e);
-}
-}
 
    // ✅ Only trigger crawl logic on button click — no arguments needed
 document.getElementById('crawlNowBtn').addEventListener('click', generateCrawlRoute);
