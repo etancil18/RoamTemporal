@@ -28,8 +28,8 @@
   "fri": { "open": 17, "close": 24 },
   "sat": { "open": 17, "close": 24 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "HH",
     "thu": "E",
     "fri": "L",
@@ -26282,10 +26282,10 @@
   },
   {
     "name": "The Swan",
-    "vibe": "Trendy, Versatile, Crowd-Pleaser, Hip Decor, Multi-Vibe",
+    "vibe": "Sports Bar, Lively, Soccer, Fun, Energetic",
     "type": "bar",
-    "lat": 40.7083,
-    "lon": -73.9648,
+    "lat": 40.6890943,
+    "lon": -73.9552778,
     "link": "https://www.instagram.com/theswanbk/",
     "openNow": true,
     "hours": {
@@ -26326,13 +26326,13 @@
   },
   {
     "name": "Singers",
-    "vibe": "Rowdy, Karaoke, Fun Crowd, Casual, Unpretentious, Dive Vibes, LGBTQ",
-    "type": "activity",
-    "lat": 40.7092,
-    "lon": -73.9604,
+    "vibe": "Casual, Chic, Cocktail, Patio, LGBTQ",
+    "type": "bar",
+    "lat": 40.6902169,
+    "lon": -73.9541333,
     "link": "https://www.instagram.com/singerskaraokebar/",
     "openNow": true,
-    "hours": {
+    "hours": [
       "Sunday": "5:00 PM–2:00 AM",
       "Monday": "5:00 PM–2:00 AM",
       "Tuesday": "5:00 PM–2:00 AM",
@@ -26340,7 +26340,7 @@
       "Thursday": "5:00 PM–2:00 AM",
       "Friday": "5:00 PM–3:00 AM",
       "Saturday": "5:00 PM–3:00 AM"
-    },
+    ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -26502,7 +26502,7 @@
   },
   {
     "name": "Dynaco",
-    "vibe": "LGBTQ+ friendly, Candlelit, Intimate, Vintage Interiors, Club Vibe",
+    "vibe": "Hideaway, Candlelit, Intimate, Vintage Interiors, Warm, Fireplace, Relaxed",
     "type": "bar",
     "lat": 40.6866784,
     "lon": -73.954747,
@@ -27755,7 +27755,7 @@
     "lon": -73.9812524,
     "link": "https://www.instagram.com/vinegarhillhouse/",
     "openNow": true,
-    "hours": {
+    "hours": [
       "Sunday": "10:00 AM–3:00 PM; 5:30 PM–9:30 PM",
       "Monday": "5:30 PM–9:30 PM",
       "Tuesday": "5:30 PM–9:30 PM",
@@ -27763,7 +27763,7 @@
       "Thursday": "5:30 PM–9:30 PM",
       "Friday": "5:30 PM–10:00 PM",
       "Saturday": "10:00 AM–3:00 PM; 5:30 PM–10:00 PM"
-    },
+    ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27859,7 +27859,7 @@
     "lon": -73.9626279,
     "link": "https://www.instagram.com/cafemadonow/",
     "openNow": true,
-    "hours": {
+    "hours": [
       "Sunday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
       "Monday": "8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
       "Tuesday": "Closed",
@@ -27867,7 +27867,7 @@
       "Thursday": "8:30 AM–3:00 PM; 5:00 PM–9:00 PM",
       "Friday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
       "Saturday": "8:30 AM–3:00 PM; 5:00 PM–10:00 PM"
-    },
+    ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27903,7 +27903,7 @@
     "lon": -73.9561648,
     "link": "https://www.instagram.com/rialtograndenyc/",
     "openNow": true,
-    "hours": {
+    "hours": [
       "Sunday": "4:00 PM–12:00 AM",
       "Monday": "5:00 PM–12:00 AM",
       "Tuesday": "5:00 PM–1:00 AM",
@@ -27911,7 +27911,7 @@
       "Thursday": "5:00 PM–1:00 AM",
       "Friday": "5:00 PM–2:00 AM",
       "Saturday": "4:00 PM–2:00 AM"
-    },
+    ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
@@ -27947,7 +27947,7 @@
     "lon": -73.9559666,
     "link": "https://www.instagram.com/kissakissa/",
     "openNow": true,
-    "hours": {
+    "hours": [
       "Sunday": "3:00 PM–11:00 PM",
       "Monday": "5:30 PM–12:00 AM",
       "Tuesday": "5:30 PM–12:00 AM",
@@ -27955,7 +27955,7 @@
       "Thursday": "5:30 PM–1:00 AM",
       "Friday": "5:00 PM–2:00 AM",
       "Saturday": "5:00 PM–2:00 AM"
-    },
+    ],
     "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
