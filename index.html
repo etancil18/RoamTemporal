@@ -1413,7 +1413,35 @@ function generateCrawlRoute() {
   const priceTiers = ['$', '$$', '$$$', '$$$$'];
   const selectedTierIndex = priceTiers.indexOf(priceFilter);
   const baseDayParts = getCurrentDayPart();
-  const themeOverrides = { ... };
+  const themeOverrides = {
+  "sunrise start": ["M"],
+  "mindful mornings": ["M", "MD"],
+  "creative kickstart": ["M", "MD"],
+  "midday recharge": ["MD", "A"],
+  "health nut": ["M", "MD", "A"],
+  "work session": ["M", "MD", "A"],
+  "brunch & beyond": ["MD", "A"],
+  "late start legends": ["MD", "A", "HH"],
+  "post-work wind down": ["HH", "E"],
+  "golden hour": ["HH"],
+  "foodie tour": ["A", "HH", "E"],
+  "chill hang": ["A", "HH", "E"],
+  "cheap & cheerful": ["A", "HH", "E"],
+  "date night": ["E"],
+  "rom-com main character": ["E"],
+  "nightcap circuit": ["E", "L"],
+  "party time": ["E", "L"],
+  "saturday surge": ["E", "L"],
+  "weekend warriors": ["L"],
+  "tech bro escape": ["E", "L"],
+  "self-care": ["M", "MD", "A"],
+  "art & culture": ["MD", "A", "E"],
+  "artsy & indie": ["A", "E"],
+  "solo explorer": ["M", "MD", "A"],
+  "rooftops & views": ["HH", "E"],
+  "hidden gems": ["E", "L"],
+  "sunday reset": ["M", "MD", "A"]
+};
   const currentDayParts = themeOverrides[theme] || baseDayParts;
 
   const today = new Date();
