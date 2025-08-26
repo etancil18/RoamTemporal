@@ -791,27 +791,27 @@ function generateRouteFromFavorite(favorite, opts = {}) {
 
   // 5) iterative pick
   for (let i = 0; i < stagePlan.length && route.length < maxStops; i++) {
-    const desiredTypes = stagePlan[i]; // e.g., ["cocktail","random gem"]
-    // arrival time for NEXT stop: previousStart + previousDuration + buffer (no travel time by your rule)
-    const arrival = new Date(lastStart.getTime() + (lastDuration + BUFFER_HOURS) * 3600 * 1000);
+  const desiredTypes = stagePlan[i]; // e.g., ["cocktail","random gem"]
+  const arrival = new Date(lastStart.getTime() + (lastDuration + BUFFER_HOURS) * 3600 * 1000);
 
-    // Filter candidates by: type, distance, open at arrival, vibe overlap, daypart sanity
-    let candidates = pool.filter(ev => {
-      const matchesType = hasType(ev, desiredTypes);
-      if (!matchesType) return false;
+  let candidates = pool.filter(ev => {
+    const evTypes = Array.isArray(ev.type)
+      ? ev.type.map(t => t.toLowerCase())
+      : String(ev.type || '').split(',').map(t => t.trim().toLowerCase());
 
-      const cap = isMealType(ev) ? DIST_CAP_MEAL : DIST_CAP_DEFAULT;
-      const dist = distanceMeters(last.lat, last.lon, ev.lat, ev.lon);
-      if (dist > cap) return false;
+    const matchesType = desiredTypes.some(type => evTypes.includes(type.toLowerCase()));
+    if (!matchesType) return false;
 
-      if (!daypartAllowedForNow(ev, arrival)) return false;
-      if (!isOpenAt(ev, arrival)) return false;
+    const cap = isMealType(ev) ? DIST_CAP_MEAL : DIST_CAP_DEFAULT;
+    const dist = distanceMeters(last.lat, last.lon, ev.lat, ev.lon);
+    if (dist > cap) return false;
 
-      // require at least 1 common vibe/tag with the previous stop
-      if (vibeOverlapCount(ev, last) < 1) return false;
+    if (!daypartAllowedForNow(ev, arrival)) return false;
+    if (!isOpenAt(ev, arrival)) return false;
+    if (vibeOverlapCount(ev, last) < 1) return false;
 
-      return true;
-    });
+    return true;
+  });
 
     if (!candidates.length) continue;
 
@@ -1519,7 +1519,8 @@ function generateCrawlRoute() {
     const stage = crawlStages[i];
     const stageCandidates = sorted.filter(loc => {
       const vibeAndTags = [...(loc.vibe || []), ...(loc.tags || [])];
-      const matchesType = loc.type === stage;
+      const typeArray = Array.isArray(loc.type) ? loc.type : String(loc.type).split(',').map(s => s.trim().toLowerCase());
+      const matchesType = typeArray.includes(stage.toLowerCase());
       const matchesVibe = themeKeywords.some(kw => vibeAndTags.includes(kw));
       const withinDistance = lastPoint.distanceTo(L.latLng(loc.lat, loc.lon)) <= 800;
       const fitsTime = timeSpent + (loc.duration || 1) <= maxDuration;
