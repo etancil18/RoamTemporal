@@ -1383,7 +1383,7 @@ shareBtn.onclick = () => {
   summaryDiv.style.display = "block"; // Show it
 }
   
-// Fixed generateCrawlRoute with real open-time validation and no reliance on openNow or dayParts alone
+// Fixed generateCrawlRoute with real open-time validation and after-midnight handling
 function generateCrawlRoute() {
   const todayStr = new Date().toISOString().slice(0, 10);
   if (!globalEvents.length) {
@@ -1414,34 +1414,34 @@ function generateCrawlRoute() {
   const selectedTierIndex = priceTiers.indexOf(priceFilter);
   const baseDayParts = getCurrentDayPart();
   const themeOverrides = {
-  "sunrise start": ["M"],
-  "mindful mornings": ["M", "MD"],
-  "creative kickstart": ["M", "MD"],
-  "midday recharge": ["MD", "A"],
-  "health nut": ["M", "MD", "A"],
-  "work session": ["M", "MD", "A"],
-  "brunch & beyond": ["MD", "A"],
-  "late start legends": ["MD", "A", "HH"],
-  "post-work wind down": ["HH", "E"],
-  "golden hour": ["HH"],
-  "foodie tour": ["A", "HH", "E"],
-  "chill hang": ["A", "HH", "E"],
-  "cheap & cheerful": ["A", "HH", "E"],
-  "date night": ["E"],
-  "rom-com main character": ["E"],
-  "nightcap circuit": ["E", "L"],
-  "party time": ["E", "L"],
-  "saturday surge": ["E", "L"],
-  "weekend warriors": ["L"],
-  "tech bro escape": ["E", "L"],
-  "self-care": ["M", "MD", "A"],
-  "art & culture": ["MD", "A", "E"],
-  "artsy & indie": ["A", "E"],
-  "solo explorer": ["M", "MD", "A"],
-  "rooftops & views": ["HH", "E"],
-  "hidden gems": ["E", "L"],
-  "sunday reset": ["M", "MD", "A"]
-};
+    "sunrise start": ["M"],
+    "mindful mornings": ["M", "MD"],
+    "creative kickstart": ["M", "MD"],
+    "midday recharge": ["MD", "A"],
+    "health nut": ["M", "MD", "A"],
+    "work session": ["M", "MD", "A"],
+    "brunch & beyond": ["MD", "A"],
+    "late start legends": ["MD", "A", "HH"],
+    "post-work wind down": ["HH", "E"],
+    "golden hour": ["HH"],
+    "foodie tour": ["A", "HH", "E"],
+    "chill hang": ["A", "HH", "E"],
+    "cheap & cheerful": ["A", "HH", "E"],
+    "date night": ["E"],
+    "rom-com main character": ["E"],
+    "nightcap circuit": ["E", "L"],
+    "party time": ["E", "L"],
+    "saturday surge": ["E", "L"],
+    "weekend warriors": ["L"],
+    "tech bro escape": ["E", "L"],
+    "self-care": ["M", "MD", "A"],
+    "art & culture": ["MD", "A", "E"],
+    "artsy & indie": ["A", "E"],
+    "solo explorer": ["M", "MD", "A"],
+    "rooftops & views": ["HH", "E"],
+    "hidden gems": ["E", "L"],
+    "sunday reset": ["M", "MD", "A"]
+  };
   const currentDayParts = themeOverrides[theme] || baseDayParts;
 
   const today = new Date();
@@ -1456,11 +1456,29 @@ function generateCrawlRoute() {
   }));
 
   function isOpenAt(loc, dateTime) {
-    const day = dateTime.toLocaleDateString('en-US', { weekday: 'short' }).toLowerCase();
-    const hourDecimal = dateTime.getHours() + dateTime.getMinutes() / 60;
-    const hours = loc.hoursNumeric?.[day];
-    if (!hours || hours.open === undefined || hours.close === undefined) return false;
-    return hourDecimal >= hours.open && hourDecimal <= hours.close;
+    const weekday = dateTime.toLocaleDateString('en-US', { weekday: 'short' }).toLowerCase();
+    const prevWeekday = new Date(dateTime.getTime() - 86400000).toLocaleDateString('en-US', { weekday: 'short' }).toLowerCase();
+    const timeDecimal = dateTime.getHours() + dateTime.getMinutes() / 60;
+
+    const todayHours = loc.hoursNumeric?.[weekday];
+    const prevHours = loc.hoursNumeric?.[prevWeekday];
+
+    // Check current day normally
+    if (todayHours && todayHours.open !== undefined && todayHours.close !== undefined) {
+      if (todayHours.close > todayHours.open) {
+        if (timeDecimal >= todayHours.open && timeDecimal <= todayHours.close) return true;
+      } else {
+        // after-midnight case (e.g. 22 to 26)
+        if (timeDecimal >= todayHours.open || timeDecimal <= (todayHours.close % 24)) return true;
+      }
+    }
+
+    // Check if current time falls into after-midnight window from previous day
+    if (prevHours && prevHours.close > 24 && timeDecimal <= (prevHours.close % 24)) {
+      return timeDecimal <= (prevHours.close % 24);
+    }
+
+    return false;
   }
 
   const openLocations = allLocations.filter(loc => {
@@ -1556,6 +1574,7 @@ function generateCrawlRoute() {
     console.warn('Marker filtering failed:', e);
   }
 }
+
 
 
    // ✅ Only trigger crawl logic on button click — no arguments needed
