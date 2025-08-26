@@ -30,13 +30,13 @@
     "dayParts": {
     "mon": "E",
     "tue": "E",
-    "wed": "HH",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
     "sun": "E"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 2,
     "tags": "hidden gem, speakeasy",
     "price": "$$",
@@ -243,7 +243,7 @@
   "fri": { "open": 17, "close": 26 },
   "sat": { "open": 17, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
     "wed": "HH",
     "thu": "E",
@@ -334,7 +334,7 @@
     "wed": "MD",
     "thu": "E",
     "fri": "E",
-    "sat": "MD",
+    "sat": "E",
     "sun": "MD"
   },
   "timeCategory": "midday, evening",
@@ -373,7 +373,7 @@
   "sat": { "open": 12, "close": 20 } },
     "dayParts": {
     "mon": "A",
-    "tue": "A",
+    "tue": "-",
     "wed": "A",
     "thu": "A",
     "fri": "A",
@@ -415,8 +415,8 @@
   "fri": { "open": 14, "close": 26 },
   "sat": { "open": 14, "close": 26 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "HH",
+    "tue": "HH",
     "wed": "HH",
     "thu": "HH",
     "fri": "L",
@@ -450,11 +450,11 @@
   { "date": "-", "title": "-", "time": "-" },
   { "date": "-", "title": "-", "time": "-" }
 ],
-  "hoursNumeric": {"sun": { "open": 17.5, "close": 23.5 },
-  "mon": { "open": 17.5, "close": 23.5 },
-  "tue": { "open": 17.5, "close": 23.5 },
-  "wed": { "open": 17.5, "close": 23.5 },
-  "thu": { "open": 17.5, "close": 23.5 },
+  "hoursNumeric": {"sun": { "open": 17.5, "close": 22.5 },
+  "mon": { "open": 17.5, "close": 22.5 },
+  "tue": { "open": 17.5, "close": 22.5 },
+  "wed": { "open": 17.5, "close": 22.5 },
+  "thu": { "open": 17.5, "close": 22.5 },
   "fri": { "open": 17.5, "close": 23.5 },
   "sat": { "open": 17.5, "close": 23.5 } },
     "dayParts": {
@@ -587,8 +587,8 @@
   "fri": { "open": 11.5, "close": 23 },
   "sat": { "open": 11.5, "close": 23 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
@@ -657,8 +657,8 @@
     "wed": "MD",
     "thu": "MD",
     "fri": "E",
-    "sat": "MD",
-    "sun": "MD"
+    "sat": "E",
+    "sun": "E"
   },
   "timeCategory": "midday, evening",
     "energyRamp": 1,
@@ -695,8 +695,8 @@
   "fri": { "open": 17, "close": 26 },
   "sat": { "open": 16, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
+    "mon": "-",
+    "tue": "-",
     "wed": "HH",
     "thu": "E",
     "fri": "L",
@@ -738,7 +738,7 @@
   "fri": { "open": 11, "close": 19 },
   "sat": { "open": 11, "close": 19 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
@@ -781,17 +781,17 @@
   "fri": { "open": 14, "close": 25 },
   "sat": { "open": 12, "close": 25 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
-    "wed": "A",
-    "thu": "A",
-    "fri": "A",
+    "mon": "-",
+    "tue": "HH",
+    "wed": "HH",
+    "thu": "HH",
+    "fri": "E",
     "sat": "A",
     "sun": "A"
   },
-  "timeCategory": "afternoon",
+  "timeCategory": "happyhour, evening, afternoon",
     "energyRamp": 1,
-    "tags": "plant, design",
+    "tags": "plant, design, Mexican",
     "price": "$$",
     "duration": 1
   },
@@ -824,13 +824,13 @@
   "fri": { "open": 11, "close": 17 },
   "sat": { "open": 11, "close": 17 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -874,15 +874,15 @@
   ]
 },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "HH",
-    "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "L"
+    "thu": "HH",
+    "fri": "E",
+    "sat": "E",
+    "sun": "E"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "happyhour, evening",
     "energyRamp": 1,
     "tags": "speakeasy, velvet vibe",
     "price": "$$$",
@@ -917,7 +917,7 @@
   "fri": { "open": 16, "close": 25 },
   "sat": { "open": 16, "close": 25 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
     "wed": "HH",
     "thu": "HH",
@@ -960,15 +960,15 @@
   "fri": { "open": 10.5, "close": 22 },
   "sat": { "open": 10.5, "close": 22 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "-",
-    "thu": "L",
-    "fri": "L",
-    "sat": "L",
-    "sun": "L"
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E",
+    "sun": "E"
   },
-  "timeCategory": "late",
+  "timeCategory": "evening",
     "energyRamp": 2,
     "tags": "Chinese, late night",
     "price": "$",
@@ -1102,13 +1102,13 @@
   "fri": { "open": 9.5, "close": 18 },
   "sat": { "open": 10, "close": 17 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -1188,7 +1188,7 @@
   "fri": { "open": 12, "close": 24 },
   "sat": { "open": 12, "close": 24 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
@@ -1275,7 +1275,7 @@
   "sat": { "open": 16, "close": 26 } },
     "dayParts": {
     "mon": "-",
-    "tue": "-",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
@@ -1317,10 +1317,10 @@
   "fri": { "open": 17, "close": 25 },
   "sat": { "open": 17, "close": 25 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "HH",
-    "thu": "HH",
+    "mon": "HH",
+    "tue": "HH",
+    "wed": "E",
+    "thu": "E",
     "fri": "L",
     "sat": "L",
     "sun": "L"
@@ -1360,8 +1360,8 @@
   "fri": { "open": 17, "close": 25 },
   "sat": { "open": 17, "close": 25 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
+    "mon": "-",
+    "tue": "-",
     "wed": "HH",
     "thu": "E",
     "fri": "L",
@@ -1452,7 +1452,7 @@
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -1489,10 +1489,10 @@
   "fri": { "open": 16, "close": 24 },
   "sat": { "open": 16, "close": 24 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "HH",
-    "thu": "HH",
+    "mon": "HH",
+    "tue": "HH",
+    "wed": "E",
+    "thu": "E",
     "fri": "L",
     "sat": "L",
     "sun": "L"
@@ -1532,17 +1532,17 @@
   "fri": { "open": 12, "close": 19 },
   "sat": { "open": 12, "close": 19 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "HH",
-    "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "L"
+    "mon": "A",
+    "tue": "A",
+    "wed": "A",
+    "thu": "A",
+    "fri": "A",
+    "sat": "MD",
+    "sun": "MD"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "midday, afternoon",
     "energyRamp": 2,
-    "tags": "underground, speakeasy",
+    "tags": "coffee, literary",
     "price": "$",
     "duration": 0.5
   },
@@ -1575,8 +1575,8 @@
   "fri": { "open": 12, "close": 19 },
   "sat": { "open": 12, "close": 19 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
+    "mon": "-",
+    "tue": "-",
     "wed": "A",
     "thu": "A",
     "fri": "A",
@@ -1585,7 +1585,7 @@
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
-    "tags": "art, edgy",
+    "tags": "art, edgy, exhibit",
     "price": "",
     "duration": 0.75
   },
@@ -1620,8 +1620,8 @@
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
-    "wed": "HH",
-    "thu": "HH",
+    "wed": "E",
+    "thu": "E",
     "fri": "L",
     "sat": "L",
     "sun": "HH"
@@ -1635,7 +1635,7 @@
   {
     "name": "Bibliotheque",
     "vibe": "Literary, Cozy, Wine, Café",
-    "type": "bookstore, wine bar, cafe",
+    "type": "bookstore, wine bar, coffee",
         "lat": "40.7218082",
     "lon": "-74.0007476",
     "link": "https://www.instagram.com/bibliothequenyc/?hl=en",
@@ -1661,17 +1661,17 @@
   "fri": { "open": 10, "close": 23 },
   "sat": { "open": 10, "close": 23 } },
     "dayParts": {
-    "mon": "M",
-    "tue": "M",
-    "wed": "M",
-    "thu": "M",
-    "fri": "M",
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "A",
+    "fri": "A",
     "sat": "MD",
     "sun": "MD"
   },
-  "timeCategory": "morning, midday",
+  "timeCategory": "midday, afternoon",
     "energyRamp": 2,
-    "tags": "cafe, Japanese minimalism",
+    "tags": "cafe, minimalism, books",
     "price": "$$$",
     "duration": 1
   },
@@ -1796,9 +1796,9 @@
     "thu": "E",
     "fri": "E",
     "sat": "E",
-    "sun": "MD"
+    "sun": "E"
   },
-  "timeCategory": "midday, evening",
+  "timeCategory": "evening",
     "energyRamp": 2,
     "tags": "date night, French",
     "price": "$$",
@@ -1806,7 +1806,7 @@
   },
   {
     "name": "Superbueno",
-    "vibe": "Vibrant, Fun, Cocktails, Mexican",
+    "vibe": "Vibrant, Fun, Cocktails, Mexican, Small Bites, Red Lighting",
     "type": "cocktail, dinner",
         "lat": "40.7234538",
     "lon": "-73.9885506",
@@ -1876,7 +1876,7 @@
   "fri": { "open": 16.5, "close": 23 },
   "sat": { "open": 14, "close": 23 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
     "wed": "HH",
     "thu": "E",
@@ -1966,11 +1966,11 @@
     "tue": "MD",
     "wed": "MD",
     "thu": "MD",
-    "fri": "MD",
-    "sat": "MD",
+    "fri": "E",
+    "sat": "E",
     "sun": "MD"
   },
-  "timeCategory": "midday",
+  "timeCategory": "midday, evening",
     "energyRamp": 1,
     "tags": "Italian, quick bite",
     "price": "$$",
@@ -2091,8 +2091,8 @@
   "fri": { "open": 17, "close": 25 },
   "sat": { "open": 11, "close": 25 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
@@ -2136,8 +2136,8 @@
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
-    "wed": "HH",
-    "thu": "HH",
+    "wed": "E",
+    "thu": "E",
     "fri": "E",
     "sat": "E",
     "sun": "HH"
@@ -2177,10 +2177,10 @@
   "fri": { "open": 12.25, "close": 22 },
   "sat": { "open": 12.25, "close": 22 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
     "fri": "E",
     "sat": "E",
     "sun": "HH"
@@ -2221,7 +2221,7 @@
   "sat": { "open": 18, "close": 26 } },
     "dayParts": {
     "mon": "-",
-    "tue": "-",
+    "tue": "HH",
     "wed": "HH",
     "thu": "E",
     "fri": "L",
@@ -2306,8 +2306,8 @@
   "fri": { "open": 18, "close": 27 },
   "sat": { "open": 11, "close": 27 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "HH",
     "wed": "HH",
     "thu": "E",
     "fri": "L",
@@ -2354,10 +2354,10 @@
     "wed": "HH",
     "thu": "E",
     "fri": "E",
-    "sat": "E",
+    "sat": "L",
     "sun": "HH"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "happyhour, evening, late",
     "energyRamp": 1,
     "tags": "wine, natural, small plates",
     "price": "$$",
@@ -2396,8 +2396,8 @@
     "tue": "-",
     "wed": "HH",
     "thu": "HH",
-    "fri": "L",
-    "sat": "L",
+    "fri": "E",
+    "sat": "E",
     "sun": "HH"
   },
   "timeCategory": "happyhour, evening, late",
@@ -2502,11 +2502,11 @@
     "dayParts": {
     "mon": "MD",
     "tue": "MD",
-    "wed": "MD",
+    "wed": "E",
     "thu": "E",
     "fri": "E",
     "sat": "E",
-    "sun": "MD"
+    "sun": "E"
   },
   "timeCategory": "midday, evening",
     "energyRamp": 1,
@@ -2586,8 +2586,8 @@
   "fri": { "open": 14, "close": 27.5 },
   "sat": { "open": 14, "close": 27.5 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
@@ -2629,15 +2629,15 @@
   "fri": { "open": 18, "close": 26 },
   "sat": { "open": 18, "close": 26 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
     "sun": "L"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 2,
     "tags": "jazz, intimate",
     "price": "$$",
@@ -2645,7 +2645,7 @@
   },
   {
     "name": "Angel’s Share",
-    "vibe": "Sophisticated, Intimate, Craft cocktails, Hidden",
+    "vibe": "Sophisticated, Intimate, Craft Cocktails, Hidden",
     "type": "cocktail, speakeasy",
         "lat": "40.73301145",
     "lon": "-74.00432961",
@@ -2674,13 +2674,13 @@
     "dayParts": {
     "mon": "-",
     "tue": "-",
-    "wed": "HH",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "L"
+    "sun": "E"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 2,
     "tags": "speakeasy, high-end",
     "price": "$$$",
@@ -2758,7 +2758,7 @@
   "fri": { "open": 12, "close": 22 },
   "sat": { "open": 12, "close": 22 } },
     "dayParts": {
-    "mon": "MD",
+    "mon": "-",
     "tue": "MD",
     "wed": "MD",
     "thu": "MD",
@@ -2801,15 +2801,15 @@
   "fri": { "open": 18, "close": 28 },
   "sat": { "open": 18, "close": 28 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "HH",
-    "fri": "E",
+    "mon": "-",
+    "tue": "-",
+    "wed": "E",
+    "thu": "E",
+    "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "-"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 2,
     "tags": "cocktails, stylish",
     "price": "$$",
@@ -2931,8 +2931,8 @@
   "sat": { "open": 10, "close": 22 } },
     "dayParts": {
     "mon": "M",
-    "tue": "M",
-    "wed": "M",
+    "tue": "-",
+    "wed": "-",
     "thu": "M",
     "fri": "M",
     "sat": "MD",
@@ -3107,10 +3107,10 @@
     "wed": "HH",
     "thu": "HH",
     "fri": "E",
-    "sat": "E",
-    "sun": "HH"
+    "sat": "A",
+    "sun": "A"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "afternoon, happyhour, evening",
     "energyRamp": 2,
     "tags": "beerhall, social",
     "price": "$$",
@@ -3147,11 +3147,11 @@
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
-    "wed": "HH",
+    "wed": "E",
     "thu": "E",
-    "fri": "L",
+    "fri": "E",
     "sat": "L",
-    "sun": "L"
+    "sun": "E"
   },
   "timeCategory": "happyhour, evening, late",
     "energyRamp": 2,
@@ -3191,12 +3191,12 @@
     "mon": "HH",
     "tue": "HH",
     "wed": "HH",
-    "thu": "HH",
+    "thu": "E",
     "fri": "E",
     "sat": "E",
-    "sun": "HH"
+    "sun": "A"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "afternoon, happyhour, evening",
     "energyRamp": 1,
     "tags": "natural wine, fun vibe",
     "price": "$$",
@@ -3360,17 +3360,17 @@
   "fri": { "open": 18.75, "close": 28 },
   "sat": { "open": 18.75, "close": 28 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
     "sun": "L"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 3,
-    "tags": "sushi + DJ, hybrid",
+    "tags": "sushi, DJ, small bites",
     "price": "$$$$",
     "duration": 1.25
   },
@@ -3403,7 +3403,7 @@
   "fri": { "open": 19, "close": 27 },
   "sat": { "open": 19, "close": 27 } },
     "dayParts": {
-    "mon": "-",
+    "mon": "E",
     "tue": "-",
     "wed": "E",
     "thu": "E",
@@ -3446,15 +3446,15 @@
   "fri": { "open": 17, "close": 25 },
   "sat": { "open": 17, "close": 25 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
-    "fri": "E",
-    "sat": "E",
-    "sun": "HH"
+    "fri": "L",
+    "sat": "L",
+    "sun": "E"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "evening, late",
     "energyRamp": 1,
     "tags": "cocktail, serious bar",
     "price": "$$",
@@ -3489,15 +3489,15 @@
   "fri": { "open": 17, "close": 24 },
   "sat": { "open": 14, "close": 24 } },
     "dayParts": {
-    "mon": "E",
-    "tue": "E",
-    "wed": "E",
-    "thu": "E",
+    "mon": "HH",
+    "tue": "HH",
+    "wed": "HH",
+    "thu": "HH",
     "fri": "E",
     "sat": "E",
     "sun": "E"
   },
-  "timeCategory": "evening",
+  "timeCategory": "happyhour, evening",
     "energyRamp": 2,
     "tags": "scenic, upscale",
     "price": "$$$",
@@ -3532,10 +3532,10 @@
   "fri": { "open": 17, "close": 28 },
   "sat": { "open": 17, "close": 28 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
-    "wed": "HH",
-    "thu": "HH",
+    "wed": "E",
+    "thu": "E",
     "fri": "L",
     "sat": "L",
     "sun": "HH"
@@ -3575,15 +3575,15 @@
   "fri": { "open": 8, "close": 16 },
   "sat": { "open": 9, "close": 16 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "E",
-    "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "L"
+    "mon": "M",
+    "tue": "M",
+    "wed": "M",
+    "thu": "M",
+    "fri": "M",
+    "sat": "MD",
+    "sun": "MD"
   },
-  "timeCategory": "evening, late",
+  "timeCategory": "morning, midday",
     "energyRamp": 3,
     "tags": "nightlife, queer-forward",
     "price": "$",
@@ -3618,15 +3618,15 @@
   "fri": { "open": 17, "close": 22 },
   "sat": { "open": 15, "close": 23 } },
     "dayParts": {
-    "mon": "E",
+    "mon": "-",
     "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "E",
     "sat": "E",
-    "sun": "MD"
+    "sun": "A"
   },
-  "timeCategory": "midday, evening",
+  "timeCategory": "afternoon, evening",
     "energyRamp": 1,
     "tags": "Italian, dinner spot",
     "price": "$$",
@@ -3705,14 +3705,14 @@
   "sat": { "open": 16, "close": 23 } },
     "dayParts": {
     "mon": "-",
-    "tue": "-",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "L"
+    "fri": "E",
+    "sat": "HH",
+    "sun": "HH"
   },
-  "timeCategory": "evening, late",
+  "timeCategory": "happyhour, evening",
     "energyRamp": 1,
     "tags": "casual, post-drink",
     "price": "$$",
@@ -3882,7 +3882,7 @@
     "thu": "E",
     "fri": "E",
     "sat": "E",
-    "sun": "MD"
+    "sun": "E"
   },
   "timeCategory": "midday, evening",
     "energyRamp": 2,
@@ -4005,8 +4005,8 @@
   "fri": { "open": 17, "close": 24 },
   "sat": { "open": 14, "close": 24 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "HH",
+    "tue": "HH",
     "wed": "HH",
     "thu": "HH",
     "fri": "E",
@@ -4048,7 +4048,7 @@
   "fri": { "open": 17, "close": 24 },
   "sat": { "open": 17, "close": 24 } },
     "dayParts": {
-    "mon": "-",
+    "mon": "E",
     "tue": "-",
     "wed": "E",
     "thu": "E",
@@ -4092,7 +4092,7 @@
   "sat": { "open": 11, "close": 18 } },
     "dayParts": {
     "mon": "-",
-    "tue": "A",
+    "tue": "-",
     "wed": "A",
     "thu": "A",
     "fri": "A",
@@ -4134,9 +4134,9 @@
   "fri": { "open": 12, "close": 18 },
   "sat": { "open": 12, "close": 18 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "A",
-    "wed": "A",
+    "mon": "A",
+    "tue": "-",
+    "wed": "-",
     "thu": "A",
     "fri": "A",
     "sat": "A",
@@ -4182,8 +4182,8 @@
     "wed": "A",
     "thu": "A",
     "fri": "A",
-    "sat": "A",
-    "sun": "A"
+    "sat": "-",
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -4220,13 +4220,13 @@
   "fri": { "open": 11, "close": 18 },
   "sat": { "open": 11, "close": 18 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
+    "mon": "-",
+    "tue": "-",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -4268,8 +4268,8 @@
     "wed": "A",
     "thu": "A",
     "fri": "A",
-    "sat": "A",
-    "sun": "A"
+    "sat": "-",
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -4349,10 +4349,10 @@
   "fri": { "open": 11.5, "close": 17.5 },
   "sat": { "open": 11.5, "close": 17.5 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
-    "thu": "A",
+    "thu": "-",
     "fri": "A",
     "sat": "A",
     "sun": "A"
@@ -4398,7 +4398,7 @@
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -4521,7 +4521,7 @@
   "fri": { "open": 11, "close": 19 },
   "sat": { "open": 11, "close": 19 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
@@ -4564,13 +4564,13 @@
   "fri": { "open": 16, "close": 26 },
   "sat": { "open": 16, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
+    "mon": "-",
+    "tue": "-",
     "wed": "HH",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "-"
   },
   "timeCategory": "happyhour, evening, late",
     "energyRamp": 1,
@@ -4607,13 +4607,13 @@
   "fri": { "open": 19, "close": 28 },
   "sat": { "open": 16, "close": 28 } },
     "dayParts": {
-    "mon": "M",
-    "tue": "M",
-    "wed": "HH",
-    "thu": "HH",
+    "mon": "-",
+    "tue": "-",
+    "wed": "E",
+    "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "MD"
+    "sun": "HH"
   },
   "timeCategory": "morning, midday, happyhour, late",
     "energyRamp": 4,
@@ -4650,7 +4650,7 @@
   "fri": { "open": 17, "close": 26 },
   "sat": { "open": 17, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
     "wed": "HH",
     "thu": "E",
@@ -4659,8 +4659,8 @@
     "sun": "HH"
   },
   "timeCategory": "happyhour, evening, late",
-    "energyRamp": 2,
-    "tags": "barbershop + bar, vibe spot",
+    "energyRamp": 3,
+    "tags": "bar, vibe spot",
     "price": "$$",
     "duration": 1.25
   },
@@ -4867,13 +4867,13 @@
     "dayParts": {
     "mon": "-",
     "tue": "-",
-    "wed": "HH",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "L"
+    "sun": "-"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 2,
     "tags": "sultry bar, ambient",
     "price": "$$$",
@@ -4908,15 +4908,15 @@
   "fri": { "open": 18, "close": 24 },
   "sat": { "open": 18, "close": 24 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "L"
+    "fri": "E",
+    "sat": "E",
+    "sun": "E"
   },
-  "timeCategory": "evening, late",
+  "timeCategory": "evening",
     "energyRamp": 2,
     "tags": "immersive tasting, speakeasy",
     "price": "$$$$",
@@ -4951,7 +4951,7 @@
   "fri": { "open": 17, "close": 24 },
   "sat": { "open": 17, "close": 24 } },
     "dayParts": {
-    "mon": "E",
+    "mon": "-",
     "tue": "E",
     "wed": "E",
     "thu": "E",
@@ -5037,15 +5037,15 @@
   "fri": { "open": 8, "close": 24 },
   "sat": { "open": 10, "close": 24 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
-    "wed": "HH",
-    "thu": "HH",
-    "fri": "L",
-    "sat": "L",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "HH",
+    "sat": "A",
     "sun": "A"
   },
-  "timeCategory": "afternoon, happyhour, late",
+  "timeCategory": "afternoon, happyhour, evening",
     "energyRamp": 3,
     "tags": "music, outdoor, community",
     "price": "$",
@@ -5066,7 +5066,7 @@
     "Wednesday: 5:00 PM–10:00 PM",
     "Thursday: 5:00 PM–10:00 PM",
     "Friday: 5:00 PM–11:00 PM",
-    "Saturday: 10:00 AM–3 PM; 5 PM–11:00 PM"
+    "Saturday: 10:00 AM–3 PM; 5:00 PM–11:00 PM"
     ],
   "dateEvents": [
   { "date": "-", "title": "-", "time": "-" },
@@ -5127,9 +5127,9 @@
   "fri": { "open": 10, "close": 17 },
   "sat": { "open": 10, "close": 17 } },
     "dayParts": {
-    "mon": "-",
+    "mon": "A",
     "tue": "A",
-    "wed": "A",
+    "wed": "-",
     "thu": "A",
     "fri": "A",
     "sat": "A",
@@ -5232,7 +5232,7 @@
   ]
 },
     "dayParts": {
-    "mon": "E",
+    "mon": "-",
     "tue": "E",
     "wed": "E",
     "thu": "E",
@@ -5275,7 +5275,7 @@
   "fri": { "open": 16.5, "close": 22.5 },
   "sat": { "open": 16.5, "close": 22.5 } },
     "dayParts": {
-    "mon": "MD",
+    "mon": "-",
     "tue": "MD",
     "wed": "MD",
     "thu": "E",
@@ -5361,13 +5361,13 @@
   "fri": { "open": 7.5, "close": 20 },
   "sat": { "open": 7.5, "close": 20 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "E",
-    "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "L"
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD",
+    "sun": "MD"
   },
   "timeCategory": "evening, late",
     "energyRamp": 1,
@@ -5416,13 +5416,13 @@
   ],
   "sat": { "open": 17, "close": 22 } },
     "dayParts": {
-    "mon": "E",
+    "mon": "-",
     "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "E",
     "sat": "E",
-    "sun": "MD"
+    "sun": "-"
   },
   "timeCategory": "midday, evening",
     "energyRamp": 1,
@@ -5502,15 +5502,15 @@
   "fri": { "open": 16, "close": 24 },
   "sat": { "open": 16, "close": 24 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
-    "wed": "A",
-    "thu": "A",
-    "fri": "A",
-    "sat": "A",
-    "sun": "A"
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E",
+    "sun": "E"
   },
-  "timeCategory": "afternoon",
+  "timeCategory": "evening",
     "energyRamp": 1,
     "tags": "conceptual, niche retail",
     "price": "$$",
@@ -5588,7 +5588,7 @@
   "fri": { "open": 9, "close": 19 },
   "sat": { "open": 9, "close": 19 } },
     "dayParts": {
-    "mon": "-",
+    "mon": "A",
     "tue": "A",
     "wed": "A",
     "thu": "A",
@@ -5739,15 +5739,15 @@
   "fri": { "open": 18, "close": 25 },
   "sat": { "open": 18, "close": 25 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "-",
+    "tue": "-",
+    "wed": "E",
     "thu": "E",
-    "fri": "E",
-    "sat": "E",
-    "sun": "HH"
+    "fri": "L",
+    "sat": "L",
+    "sun": "E"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "evening, late",
     "energyRamp": 1,
     "tags": "sleek, design-forward café bar",
     "price": "$$",
@@ -5792,15 +5792,15 @@
   ]
 },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "E",
+    "mon": "-",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
     "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "A"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "midday, afternoon, late",
     "energyRamp": 3,
     "tags": "music, design, café/bar hybrid",
     "price": "$$",
@@ -5836,12 +5836,12 @@
   "sat": { "open": 17, "close": 24 } },
     "dayParts": {
     "mon": "-",
-    "tue": "-",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "L"
+    "sun": "E"
   },
   "timeCategory": "evening, late",
     "energyRamp": 4,
@@ -5989,7 +5989,7 @@
     "hours": [
     "Sunday: 12:00 PM–7:00 PM",
     "Monday: 12:00 PM–7:00 PM",
-    "Tuesday: 12–7:00 PM",
+    "Tuesday: 12:00 PM–7:00 PM",
     "Wednesday: 12:00 PM–7:00 PM",
     "Thursday: 12:00 PM–7:00 PM",
     "Friday: 12:00 PM–7:00 PM",
@@ -6007,13 +6007,13 @@
   "fri": { "open": 12, "close": 19 },
   "sat": { "open": 12, "close": 19 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "E",
-    "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "L"
+    "mon": "A",
+    "tue": "A",
+    "wed": "A",
+    "thu": "A",
+    "fri": "A",
+    "sat": "A",
+    "sun": "A"
   },
   "timeCategory": "evening, late",
     "energyRamp": 5,
@@ -6228,11 +6228,11 @@
     "thu": "M",
     "fri": "M",
     "sat": "MD",
-    "sun": "MD"
+    "sun": "-"
   },
   "timeCategory": "morning, midday",
     "energyRamp": 1,
-    "tags": "nature-inspired calm",
+    "tags": "fitness, rooftop, activity",
     "price": "$",
     "duration": 1.25
   },
@@ -6313,12 +6313,12 @@
     "wed": "A",
     "thu": "A",
     "fri": "A",
-    "sat": "A",
-    "sun": "A"
+    "sat": "MD",
+    "sun": "MD"
   },
-  "timeCategory": "afternoon",
+  "timeCategory": "afternoon, midday",
     "energyRamp": 1,
-    "tags": "fashion x culture hybrid space",
+    "tags": "fashion, culture",
     "price": "$$",
     "duration": 0.5
   },
@@ -6352,7 +6352,7 @@
   "sat": { "open": 12, "close": 19 } },
     "dayParts": {
     "mon": "A",
-    "tue": "A",
+    "tue": "-",
     "wed": "A",
     "thu": "A",
     "fri": "A",
@@ -6437,11 +6437,11 @@
   "fri": null,
   "sat": { "open": 12, "close": 17 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
-    "wed": "A",
-    "thu": "A",
-    "fri": "A",
+    "mon": "-",
+    "tue": "-",
+    "wed": "-",
+    "thu": "-",
+    "fri": "-",
     "sat": "A",
     "sun": "A"
   },
@@ -6480,13 +6480,13 @@
   "fri": { "open": 10, "close": 18 },
   "sat": { "open": 12, "close": 18 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "E",
-    "thu": "E",
-    "fri": "L",
-    "sat": "L",
-    "sun": "L"
+    "mon": "A",
+    "tue": "A",
+    "wed": "A",
+    "thu": "A",
+    "fri": "A",
+    "sat": "A",
+    "sun": "-"
   },
   "timeCategory": "evening, late",
     "energyRamp": 2,
@@ -6523,15 +6523,15 @@
   "fri": { "open": 9, "close": 20 },
   "sat": { "open": 9, "close": 20 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "E",
-    "fri": "E",
-    "sat": "E",
-    "sun": "HH"
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD",
+    "sun": "MD"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "midday",
     "energyRamp": 2,
     "tags": "Spanish vermouth bar",
     "price": "$",
@@ -6566,15 +6566,15 @@
   "fri": { "open": 18, "close": 24 },
   "sat": { "open": 18, "close": 24 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "E",
     "sat": "E",
-    "sun": "HH"
+    "sun": "-"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "evening",
     "energyRamp": 1,
     "tags": "cocktails, minimal chic",
     "price": "$$",
@@ -6610,12 +6610,12 @@
   "sat": { "open": 18, "close": 26 } },
     "dayParts": {
     "mon": "-",
-    "tue": "-",
-    "wed": "HH",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "L"
+    "sun": "-"
   },
   "timeCategory": "happyhour, evening, late",
     "energyRamp": 2,
@@ -6652,8 +6652,8 @@
   "fri": { "open": 17.5, "close": 25 },
   "sat": { "open": 17.5, "close": 25 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
@@ -6668,7 +6668,7 @@
   },
   {
     "name": "Sun at Six Gallery",
-    "vibe": "Artistic, Furniture, Contemporary, Showroom",
+    "vibe": "Artistic, Furniture, Contemporary, Showroom, By Appointment",
     "type": "gallery",
         "lat": "40.6742921",
     "lon": "-73.96260438",
@@ -6738,15 +6738,15 @@
   "fri": { "open": 11, "close": 18 },
   "sat": { "open": 11, "close": 18 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "E",
-    "fri": "E",
-    "sat": "E",
-    "sun": "HH"
+    "mon": "-",
+    "tue": "A",
+    "wed": "A",
+    "thu": "A",
+    "fri": "HH",
+    "sat": "HH",
+    "sun": "-"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "afternoon, happyhour",
     "energyRamp": 3,
     "tags": "wine & snacks, mellow",
     "price": "$$",
@@ -6824,7 +6824,7 @@
   "fri": { "open": 15, "close": 22 },
   "sat": { "open": 15, "close": 22 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
     "wed": "HH",
     "thu": "HH",
@@ -6867,8 +6867,8 @@
   "fri": { "open": 17, "close": 24 },
   "sat": { "open": 13, "close": 24 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
@@ -6910,15 +6910,15 @@
   "fri": { "open": 18, "close": 28 },
   "sat": { "open": 18, "close": 28 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
-    "wed": "A",
-    "thu": "A",
-    "fri": "A",
-    "sat": "A",
-    "sun": "A"
+    "mon": "-",
+    "tue": "-",
+    "wed": "E",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L",
+    "sun": "E"
   },
-  "timeCategory": "afternoon",
+  "timeCategory": "evening, late",
     "energyRamp": 2,
     "tags": "mystic retail + spiritual layer",
     "price": "$$$",
@@ -6953,13 +6953,13 @@
   "fri": { "open": 10, "close": 18 },
   "sat": { "open": 10, "close": 18 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -7039,7 +7039,7 @@
   "fri": { "open": 10, "close": 18 },
   "sat": { "open": 10, "close": 18 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
@@ -7082,15 +7082,15 @@
   "fri": { "open": 8, "close": 19 },
   "sat": { "open": 8, "close": 19 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
-    "wed": "A",
-    "thu": "A",
-    "fri": "A",
-    "sat": "A",
-    "sun": "A"
+    "mon": "M",
+    "tue": "M",
+    "wed": "M",
+    "thu": "MD",
+    "fri": "MD",
+    "sat": "MD",
+    "sun": "M"
   },
-  "timeCategory": "afternoon",
+  "timeCategory": "morning, midday",
     "energyRamp": 2,
     "tags": "scent & concept retail",
     "price": "$",
@@ -7170,13 +7170,13 @@
     "dayParts": {
     "mon": "-",
     "tue": "-",
-    "wed": "HH",
-    "thu": "HH",
+    "wed": "E",
+    "thu": "E",
     "fri": "L",
     "sat": "L",
     "sun": "L"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 2,
     "tags": "speakeasy, lush",
     "price": "$$$",
@@ -7211,9 +7211,9 @@
   "fri": { "open": 14, "close": 25 },
   "sat": { "open": 13, "close": 25 } },
     "dayParts": {
-    "mon": "MD",
-    "tue": "MD",
-    "wed": "MD",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "E",
     "sat": "E",
@@ -7227,7 +7227,7 @@
   },
   {
     "name": "High Valley Books",
-    "vibe": "Vintage, Books, Coffee Table Gems, Hidden",
+    "vibe": "Vintage, Books, Coffee Table Gems, Hidden, By Appointment",
     "type": "bookstore",
         "lat": "40.7229711",
     "lon": "-73.95114043",
@@ -7297,15 +7297,15 @@
   "fri": { "open": 17, "close": 23.5 },
   "sat": { "open": 16, "close": 23.5 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
-    "fri": "L",
-    "sat": "L",
+    "fri": "E",
+    "sat": "E",
     "sun": "HH"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "happyhour, evening",
     "energyRamp": 2,
     "tags": "dive, locals only",
     "price": "$$",
@@ -7340,10 +7340,10 @@
   "fri": { "open": 0, "close": 4 },
   "sat": { "open": 0, "close": 4 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "HH",
-    "thu": "E",
+    "mon": "L",
+    "tue": "L",
+    "wed": "L",
+    "thu": "L",
     "fri": "L",
     "sat": "L",
     "sun": "L"
@@ -7426,13 +7426,13 @@
     "fri": { "open": 17.5, "close": 24 },
     "sat": { "open": 17.5, "close": 24 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
-    "wed": "A",
-    "thu": "A",
-    "fri": "A",
-    "sat": "A",
-    "sun": "A"
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E",
+    "sun": "E"
   },
   "timeCategory": "afternoon",
     "energyRamp": 2,
@@ -7469,13 +7469,13 @@
     "fri": { "open": 17, "close": 27 },
     "sat": { "open": 16, "close": 27 } },
     "dayParts": {
-    "mon": "M",
-    "tue": "M",
-    "wed": "M",
-    "thu": "M",
-    "fri": "M",
-    "sat": "MD",
-    "sun": "MD"
+    "mon": "L",
+    "tue": "L",
+    "wed": "L",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L",
+    "sun": "L"
   },
   "timeCategory": "morning, midday",
     "energyRamp": 1,
@@ -7598,13 +7598,13 @@
     "fri": { "open": 18.5, "close": 26 },
     "sat": { "open": 18.5, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "E"
   },
   "timeCategory": "happyhour, evening, late",
     "energyRamp": 2,
@@ -7641,13 +7641,13 @@
     "fri": { "open": 17, "close": 26 },
     "sat": { "open": 17, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "E"
   },
   "timeCategory": "happyhour, evening, late",
     "energyRamp": 2,
@@ -7688,11 +7688,11 @@
     "tue": "HH",
     "wed": "HH",
     "thu": "E",
-    "fri": "E",
-    "sat": "E",
+    "fri": "L",
+    "sat": "L",
     "sun": "HH"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "happyhour, evening, late",
     "energyRamp": 2,
     "tags": "bar, warm neighborhood feel",
     "price": "$$",
@@ -7727,15 +7727,15 @@
     "fri": { "open": 8, "close": 23 },
     "sat": { "open": 8, "close": 23 } },
     "dayParts": {
-    "mon": "MD",
-    "tue": "MD",
+    "mon": "M",
+    "tue": "M",
     "wed": "MD",
     "thu": "HH",
     "fri": "E",
     "sat": "E",
     "sun": "MD"
   },
-  "timeCategory": "midday, happyhour, evening",
+  "timeCategory": "morning, midday, happyhour, evening",
     "energyRamp": 1,
     "tags": "botanical, brunch to bar shift",
     "price": "$",
@@ -7770,8 +7770,8 @@
     "fri": { "open": 8, "close": 26 },
     "sat": { "open": 7, "close": 26 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "HH",
     "thu": "HH",
     "fri": "L",
@@ -7819,9 +7819,9 @@
     "thu": "E",
     "fri": "E",
     "sat": "E",
-    "sun": "MD"
+    "sun": "A"
   },
-  "timeCategory": "midday, evening",
+  "timeCategory": "midday, afternoon, evening",
     "energyRamp": 2,
     "tags": "Italian, group-friendly",
     "price": "$$",
@@ -7856,13 +7856,13 @@
     "fri": { "open": 17, "close": 28 },
     "sat": { "open": 14, "close": 28 } },
     "dayParts": {
-    "mon": "M",
-    "tue": "M",
-    "wed": "HH",
+    "mon": "-",
+    "tue": "-",
+    "wed": "-",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "MD"
+    "sun": "E"
   },
   "timeCategory": "morning, midday, evening, late",
     "energyRamp": 3,
@@ -7902,7 +7902,7 @@
     "mon": "MD",
     "tue": "MD",
     "wed": "MD",
-    "thu": "MD",
+    "thu": "E",
     "fri": "E",
     "sat": "E",
     "sun": "MD"
@@ -7942,8 +7942,8 @@
     "fri": { "open": 16, "close": 27.5 },
     "sat": { "open": 14, "close": 27.5 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
@@ -8034,7 +8034,7 @@
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "E"
   },
   "timeCategory": "happyhour, evening, late",
     "energyRamp": 3,
@@ -8071,9 +8071,9 @@
     "fri": { "open": 12, "close": 18 },
     "sat": { "open": 10, "close": 18 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "A",
-    "wed": "A",
+    "mon": "A",
+    "tue": "-",
+    "wed": "-",
     "thu": "A",
     "fri": "A",
     "sat": "A",
@@ -8115,14 +8115,14 @@
     "sat": { "open": 18, "close": 25 } },
     "dayParts": {
     "mon": "-",
-    "tue": "-",
-    "wed": "HH",
-    "thu": "HH",
+    "tue": "E",
+    "wed": "E",
+    "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "L"
+    "sun": "E"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 2,
     "tags": "DJ bar, niche vinyl scene",
     "price": "$$",
@@ -8157,7 +8157,7 @@
     "fri": { "open": 16, "close": 26 },
     "sat": { "open": 16, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
     "wed": "HH",
     "thu": "E",
@@ -8243,7 +8243,7 @@
     "fri": { "open": 17, "close": 24 },
     "sat": { "open": 17, "close": 24 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
     "wed": "HH",
     "thu": "E",
@@ -8286,7 +8286,7 @@
     "fri": { "open": 17, "close": 24 },
     "sat": { "open": 15, "close": 24 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
     "wed": "HH",
     "thu": "E",
@@ -8458,8 +8458,8 @@
     "fri": { "open": 17, "close": 23 },
     "sat": { "open": 14, "close": 23 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
+    "mon": "-",
+    "tue": "-",
     "wed": "HH",
     "thu": "E",
     "fri": "E",
@@ -8501,9 +8501,9 @@
     "fri": { "open": 16, "close": 28 },
     "sat": { "open": 14, "close": 28 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
@@ -8545,7 +8545,7 @@
     "sat": { "open": 13, "close": 24 } },
     "dayParts": {
     "mon": "-",
-    "tue": "-",
+    "tue": "HH",
     "wed": "HH",
     "thu": "HH",
     "fri": "E",
@@ -8761,7 +8761,7 @@
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
-    "wed": "HH",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
@@ -8931,7 +8931,7 @@
     "fri": { "open": 17, "close": 26 },
     "sat": { "open": 15, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
     "wed": "HH",
     "thu": "E",
@@ -9064,11 +9064,11 @@
     "tue": "HH",
     "wed": "HH",
     "thu": "E",
-    "fri": "L",
-    "sat": "L",
+    "fri": "E",
+    "sat": "E",
     "sun": "HH"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "happyhour, evening",
     "energyRamp": 2,
     "tags": "oysters, absinthe, drama",
     "price": "$$$",
@@ -9103,8 +9103,8 @@
     "fri": { "open": 12, "close": 28 },
     "sat": { "open": 12, "close": 28 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
+    "mon": "E",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
@@ -9147,12 +9147,12 @@
     "sat": { "open": 19, "close": 28 } },
     "dayParts": {
     "mon": "-",
-    "tue": "-",
+    "tue": "E",
     "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "L"
+    "sun": "E"
   },
   "timeCategory": "evening, late",
     "energyRamp": 4,
@@ -9232,13 +9232,13 @@
     "fri": { "open": 20, "close": 28 },
     "sat": { "open": 20, "close": 28 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "E",
+    "mon": "-",
+    "tue": "-",
+    "wed": "-",
+    "thu": "L",
     "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "L"
   },
   "timeCategory": "happyhour, evening, late",
     "energyRamp": 5,
@@ -9318,13 +9318,13 @@
     "fri": { "open": 7, "close": 15 },
     "sat": { "open": 8, "close": 16 } },
     "dayParts": {
-    "mon": "M",
-    "tue": "M",
+    "mon": "-",
+    "tue": "-",
     "wed": "M",
     "thu": "M",
     "fri": "M",
-    "sat": "MD",
-    "sun": "MD"
+    "sat": "M",
+    "sun": "M"
   },
   "timeCategory": "morning, midday",
     "energyRamp": 1,
@@ -9357,19 +9357,19 @@
     "mon": { "open": 17, "close": 26 },
     "tue": { "open": 17, "close": 26 },
     "wed": { "open": 17, "close": 26 },
-    "thu": { "open": 17, "close": 29 },
-    "fri": { "open": 17, "close": 29 },
-    "sat": { "open": 17, "close": 29 } },
+    "thu": { "open": 17, "close": 28 },
+    "fri": { "open": 17, "close": 28 },
+    "sat": { "open": 17, "close": 28 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "HH",
-    "thu": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "L",
     "fri": "L",
     "sat": "L",
     "sun": "L"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 4,
     "tags": "sleek chaos, entry to nightlife layers",
     "price": "$$$$",
@@ -9447,13 +9447,13 @@
     "fri": { "open": 18, "close": 28 },
     "sat": { "open": 18, "close": 28 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "E",
+    "mon": "-",
+    "tue": "E",
+    "wed": "E",
+    "thu": "L",
     "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "E"
   },
   "timeCategory": "happyhour, evening, late",
     "energyRamp": 2,
@@ -9491,9 +9491,9 @@
     "sat": { "open": 17, "close": 27 } },
     "dayParts": {
     "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "L",
     "fri": "L",
     "sat": "L",
     "sun": "HH"
@@ -9533,9 +9533,9 @@
     "fri": { "open": 17, "close": 26 },
     "sat": { "open": 17, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
-    "wed": "HH",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
@@ -9619,15 +9619,15 @@
     "fri": { "open": 12, "close": 21.5 },
     "sat": { "open": 12, "close": 21.5 } },
     "dayParts": {
-    "mon": "MD",
-    "tue": "MD",
-    "wed": "MD",
-    "thu": "MD",
-    "fri": "MD",
-    "sat": "MD",
-    "sun": "MD"
+    "mon": "A",
+    "tue": "A",
+    "wed": "A",
+    "thu": "E",
+    "fri": "E",
+    "sat": "E",
+    "sun": "-"
   },
-  "timeCategory": "midday",
+  "timeCategory": "afternoon, evening",
     "energyRamp": 1,
     "tags": "low-key ramen with quiet aesthetic",
     "price": "$$",
@@ -9662,15 +9662,15 @@
     "fri": { "open": 18, "close": 27 },
     "sat": { "open": 18, "close": 27 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "E"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 2,
     "tags": "speakeasy, hidden behind toy shop",
     "price": "$$",
@@ -9705,15 +9705,15 @@
     "fri": { "open": 17, "close": 26 },
     "sat": { "open": 16, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
-    "fri": "E",
-    "sat": "E",
+    "fri": "L",
+    "sat": "L",
     "sun": "HH"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "happyhour, evening, late",
     "energyRamp": 2,
     "tags": "glam speakeasy, intimacy-focused",
     "price": "$$$",
@@ -9748,15 +9748,15 @@
     "fri": { "open": 17, "close": 26 },
     "sat": { "open": 16, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
-    "fri": "E",
-    "sat": "E",
+    "fri": "L",
+    "sat": "L",
     "sun": "HH"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "happyhour, evening, late",
     "energyRamp": 2,
     "tags": "elite speakeasy, ultra-curated service",
     "price": "$$",
@@ -9791,15 +9791,15 @@
     "fri": { "open": 18, "close": 26 },
     "sat": { "open": 18, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
-    "sun": "HH"
+    "sun": "E"
   },
-  "timeCategory": "happyhour, evening, late",
+  "timeCategory": "evening, late",
     "energyRamp": 3,
     "tags": "cocktail bar in subway station",
     "price": "$$",
@@ -9834,13 +9834,13 @@
     "fri": { "open": 16, "close": 28 },
     "sat": { "open": 14, "close": 28 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "E",
-    "fri": "E",
-    "sat": "E",
-    "sun": "HH"
+    "mon": "L",
+    "tue": "L",
+    "wed": "L",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L",
+    "sun": "L"
   },
   "timeCategory": "happyhour, evening",
     "energyRamp": 4,
@@ -9877,9 +9877,9 @@
     "fri": { "open": 16, "close": 28 },
     "sat": { "open": 14, "close": 28 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
@@ -9920,15 +9920,15 @@
     "fri": { "open": 10, "close": 19 },
     "sat": { "open": 10, "close": 19 } },
     "dayParts": {
-    "mon": "HH",
-    "tue": "HH",
-    "wed": "HH",
-    "thu": "E",
-    "fri": "E",
-    "sat": "E",
-    "sun": "HH"
+    "mon": "MD",
+    "tue": "MD",
+    "wed": "MD",
+    "thu": "A",
+    "fri": "A",
+    "sat": "A",
+    "sun": "MD"
   },
-  "timeCategory": "happyhour, evening",
+  "timeCategory": "midday, afternoon",
     "energyRamp": 2,
     "tags": "refined, upscale hidden bar",
     "price": "$",
@@ -9964,7 +9964,7 @@
     "sat": { "open": 17, "close": 24 } },
     "dayParts": {
     "mon": "HH",
-    "tue": "HH",
+    "tue": "-",
     "wed": "HH",
     "thu": "E",
     "fri": "E",
@@ -10006,15 +10006,15 @@
     "fri": { "open": 14, "close": 26 },
     "sat": { "open": 12, "close": 26 } },
     "dayParts": {
-    "mon": "M",
-    "tue": "M",
+    "mon": "E",
+    "tue": "E",
     "wed": "HH",
     "thu": "HH",
     "fri": "E",
     "sat": "E",
-    "sun": "MD"
+    "sun": "A"
   },
-  "timeCategory": "morning, midday, happyhour",
+  "timeCategory": "afternoon, happyhour, evening",
     "energyRamp": 1,
     "tags": "espresso & aperitivo crossover",
     "price": "$$$",
@@ -10092,15 +10092,15 @@
     "fri": { "open": 17, "close": 25 },
     "sat": { "open": 17, "close": 25 } },
     "dayParts": {
-    "mon": "A",
-    "tue": "A",
-    "wed": "A",
-    "thu": "A",
-    "fri": "HH",
-    "sat": "HH",
-    "sun": "HH"
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "L",
+    "fri": "L",
+    "sat": "L",
+    "sun": "L"
   },
-  "timeCategory": "afternoon, happyhour",
+  "timeCategory": "evening, late",
     "energyRamp": 1,
     "tags": "hybrid café/bar, contemporary Latino art",
     "price": "$$$",
@@ -10223,7 +10223,7 @@
     "dayParts": {
     "mon": "A",
     "tue": "A",
-    "wed": "A",
+    "wed": "-",
     "thu": "A",
     "fri": "A",
     "sat": "A",
@@ -10308,7 +10308,7 @@
     "sat": { "open": 11, "close": 18 } },
     "dayParts": {
     "mon": "A",
-    "tue": "A",
+    "tue": "-",
     "wed": "A",
     "thu": "A",
     "fri": "A",
@@ -10394,7 +10394,7 @@
     "sat": { "open": 10.5, "close": 18 } },
     "dayParts": {
     "mon": "A",
-    "tue": "A",
+    "tue": "-",
     "wed": "A",
     "thu": "A",
     "fri": "A",
@@ -10485,7 +10485,7 @@
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10522,13 +10522,13 @@
     "fri": { "open": 10, "close": 18 },
     "sat": { "open": 10, "close": 18 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10565,13 +10565,13 @@
     "fri": { "open": 11, "close": 18 },
     "sat": { "open": 11, "close": 18 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10608,13 +10608,13 @@
     "fri": { "open": 10, "close": 18 },
     "sat": { "open": 10, "close": 18 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10651,13 +10651,13 @@
     "fri": { "open": 10, "close": 18 },
     "sat": null },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
-    "sat": "A",
-    "sun": "A"
+    "sat": "-",
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10694,13 +10694,13 @@
     "fri": { "open": 10, "close": 18 },
     "sat": { "open": 10, "close": 18 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10742,8 +10742,8 @@
     "wed": "A",
     "thu": "A",
     "fri": "A",
-    "sat": "A",
-    "sun": "A"
+    "sat": "-",
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10780,13 +10780,13 @@
     "fri": { "open": 10, "close": 18 },
     "sat": { "open": 10, "close": 18 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10825,11 +10825,11 @@
     "dayParts": {
     "mon": "-",
     "tue": "-",
-    "wed": "HH",
+    "wed": "E",
     "thu": "E",
     "fri": "E",
     "sat": "E",
-    "sun": "HH"
+    "sun": "-"
   },
   "timeCategory": "happyhour, evening",
     "energyRamp": 2,
@@ -10866,13 +10866,13 @@
     "fri": { "open": 10, "close": 18 },
     "sat": { "open": 10, "close": 18 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10909,13 +10909,13 @@
     "fri": { "open": 11, "close": 18 },
     "sat": { "open": 11, "close": 18 } },
     "dayParts": {
-    "mon": "A",
+    "mon": "-",
     "tue": "A",
     "wed": "A",
     "thu": "A",
     "fri": "A",
     "sat": "A",
-    "sun": "A"
+    "sun": "-"
   },
   "timeCategory": "afternoon",
     "energyRamp": 1,
@@ -10954,7 +10954,7 @@
     "dayParts": {
     "mon": "HH",
     "tue": "HH",
-    "wed": "HH",
+    "wed": "E",
     "thu": "E",
     "fri": "L",
     "sat": "L",
@@ -11038,9 +11038,9 @@
     "fri": { "open": 17, "close": 26 },
     "sat": { "open": 17, "close": 26 } },
     "dayParts": {
-    "mon": "HH",
+    "mon": "-",
     "tue": "HH",
-    "wed": "HH",
+    "wed": "E",
     "thu": "E",
     "fri": "E",
     "sat": "E",
@@ -11081,13 +11081,13 @@
     "fri": { "open": 18, "close": 28 },
     "sat": { "open": 14, "close": 28 } },
     "dayParts": {
-    "mon": "-",
-    "tue": "-",
-    "wed": "HH",
-    "thu": "E",
+    "mon": "E",
+    "tue": "E",
+    "wed": "E",
+    "thu": "L",
     "fri": "L",
     "sat": "L",
-    "sun": "L"
+    "sun": "HH"
   },
   "timeCategory": "happyhour, evening, late",
     "energyRamp": 4,
@@ -11168,7 +11168,7 @@
     "sat": { "open": 8, "close": 20 } },
     "dayParts": {
     "mon": "M",
-    "tue": "M",
+    "tue": "-",
     "wed": "M",
     "thu": "M",
     "fri": "M",
@@ -27952,7 +27952,7 @@
       "Monday: 5:30 PM–12:00 AM",
       "Tuesday: 5:30 PM–12:00 AM",
       "Wednesday: 5:30 PM–12:30 AM",
-      "Thursday: 5:30 PM–1:00 AM",
+      "Thursday": 5:30 PM–1:00 AM",
       "Friday: 5:00 PM–2:00 AM",
       "Saturday: 5:00 PM–2:00 AM"
     ],
