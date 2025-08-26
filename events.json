@@ -27982,5 +27982,2975 @@
     "tags": "matcha bar, Japanese tea lounge, serene vibe",
     "price": "$$",
     "duration": 1.75
+  },
+    {
+    "name": "Welcome Home",
+    "vibe": "cozy, nostalgic, neighborly, baked-goods, morning spot, homey, community-driven, relaxed, minimalist, heartfelt",
+    "type": "bakery",
+    "lat": "40.6881459",
+    "lon": "-73.9546863",
+    "link": "https://www.instagram.com/welcomehome.bk/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 8:00 AM–4:00 PM",
+      "Monday: 8:00 AM–4:00 PM",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 8:00 AM–4:00 PM",
+      "Friday: 8:00 AM–4:00 PM",
+      "Saturday: 8:00 AM–4:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 8, "close": 16 },
+      "mon": { "open": 8, "close": 16 },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": null, "close": null },
+      "thu": { "open": 8, "close": 16 },
+      "fri": { "open": 8, "close": 16 },
+      "sat": { "open": 8, "close": 16 }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "MD",
+      "wed": "–",
+      "thu": "–",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "warm nostalgia, small-batch charm, slow mornings, cozy retreat, heartfelt simplicity",
+    "price": "$",
+    "duration": 0.5
+  },
+  {
+    "name": "Misi",
+    "vibe": "refined, pasta-focused, sleek, date-night, trendy, upscale, culinary artistry, intimate, seasonal, Brooklyn-chic",
+    "type": "dinner",
+    "lat": "40.71157626",
+    "lon": "-73.96830152",
+    "link": "https://www.instagram.com/misinewyork/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 4:30 PM–9:30 PM",
+      "Monday: 5:00 PM–9:30 PM",
+      "Tuesday: 5:00 PM–9:30 PM",
+      "Wednesday: 5:00 PM–9:30 PM",
+      "Thursday: 5:00 PM–9:30 PM",
+      "Friday: 4:30 PM–9:30 PM",
+      "Saturday: 4:30 PM–9:30 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 16.5, "close": 21.5 },
+      "mon": { "open": 17, "close": 21.5 },
+      "tue": { "open": 17, "close": 21.5 },
+      "wed": { "open": 17, "close": 21.5 },
+      "thu": { "open": 17, "close": 21.5 },
+      "fri": { "open": 16.5, "close": 21.5 },
+      "sat": { "open": 16.5, "close": 21.5 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "E"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 3,
+    "tags": "pasta shrine, Brooklyn icon, foodies’ gem, stylish dining, modern Italian",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "Blinky’s",
+    "vibe": "moody, cocktail-forward, late-night, eclectic, intimate, underground, dim-lit, cool crowd, creative energy, Brooklyn edge",
+    "type": "bar, patio",
+    "lat": "40.711399",
+    "lon": "-73.9477785",
+    "link": "https://www.instagram.com/blinkysbar/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 2:00 PM–1:00 AM",
+      "Monday: 5:00 PM–1:00 AM",
+      "Tuesday: 5:00 PM–1:00 AM",
+      "Wednesday: 5:00 PM–1:00 AM",
+      "Thursday: 5:00 PM–1:00 AM",
+      "Friday: 4:00 PM–4:00 AM",
+      "Saturday: 2:00 PM–4:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 14, "close": 25 },
+      "mon": { "open": 17, "close": 25 },
+      "tue": { "open": 17, "close": 25 },
+      "wed": { "open": 17, "close": 25 },
+      "thu": { "open": 17, "close": 25 },
+      "fri": { "open": 16, "close": 28 },
+      "sat": { "open": 14, "close": 28 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 4,
+    "tags": "low-lit hideaway, craft-forward, local gem, indie energy, Brooklyn nightspot",
+    "price": "$",
+    "duration": 1.25
+  },
+  {
+    "name": "Comal",
+    "vibe": "rustic-modern, Mexican-inspired, vibrant, artisanal, foodie destination, communal, colorful, cultural fusion, warm ambiance, inventive",
+    "type": "dinner",
+    "lat": "40.7191233",
+    "lon": "-73.9921624",
+    "link": "https://www.instagram.com/comalnyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: 5:00 PM–12:00 AM",
+      "Wednesday: 5:00 PM–12:00 AM",
+      "Thursday: 5:00 PM–12:00 AM",
+      "Friday: 5:00 PM–12:00 AM",
+      "Saturday: 5:00 PM–12:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 17, "close": 24 },
+      "wed": { "open": 17, "close": 24 },
+      "thu": { "open": 17, "close": 24 },
+      "fri": { "open": 17, "close": 24 },
+      "sat": { "open": 17, "close": 24 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "–"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 3,
+    "tags": "upscale Mexican, cultural dining, artisanal kitchen, Brooklyn fusion, bold flavors",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "King Cole Bar",
+    "vibe": "historic, iconic, upscale, martini vibes, refined, Midtown classic, business crowd, timeless, leather + wood, old New York",
+    "type": "cocktail",
+    "lat": "40.761289",
+    "lon": "-73.9743901",
+    "link": "https://www.instagram.com/stregisnewyork/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 4:00 PM–11:00 PM",
+      "Monday: 4:00 PM–11:00 PM",
+      "Tuesday: 4:00 PM–11:00 PM",
+      "Wednesday: 4:00 PM–11:00 PM",
+      "Thursday: 4:00 PM–11:00 PM",
+      "Friday: 4:00 PM–11:00 PM",
+      "Saturday: 4:00 PM–11:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 16, "close": 23 },
+      "mon": { "open": 16, "close": 23 },
+      "tue": { "open": 16, "close": 23 },
+      "wed": { "open": 16, "close": 23 },
+      "thu": { "open": 16, "close": 23 },
+      "fri": { "open": 16, "close": 23 },
+      "sat": { "open": 16, "close": 23 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "E"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 3,
+    "tags": "cocktail classic, storied venue, upscale Midtown, New York legacy, timeless drinks",
+    "price": "$$$",
+    "duration": 1.66
+  },
+  {
+    "name": "Lobby Bar at The Hotel Chelsea",
+    "vibe": "artistic, legendary, bohemian, stylish, storied, eclectic crowd, intimate, literary vibes, curated cocktails, cultural landmark",
+    "type": "cocktail",
+    "lat": "40.744428",
+    "lon": "-73.996881",
+    "link": "https://www.instagram.com/hotelchelsea/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 11:00 AM–2:00 AM",
+      "Monday: 11:00 AM–2:00 AM",
+      "Tuesday: 11:00 AM–2:00 AM",
+      "Wednesday: 11:00 AM–2:00 AM",
+      "Thursday: 11:00 AM–2:00 AM",
+      "Friday: 11:00 AM–2:00 AM",
+      "Saturday: 11:00 AM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 11, "close": 26 },
+      "mon": { "open": 11, "close": 26 },
+      "tue": { "open": 11, "close": 26 },
+      "wed": { "open": 11, "close": 26 },
+      "thu": { "open": 11, "close": 26 },
+      "fri": { "open": 11, "close": 26 },
+      "sat": { "open": 11, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 3,
+    "tags": "artsy landmark, cultural hotspot, historic bohemia, intimate lounge, literary spirit",
+    "price": "$$$",
+    "duration": 1.5
+  },
+  {
+    "name": "Hank’s Bar",
+    "vibe": "divey, unpretentious, casual, locals hangout, cheap drinks, gritty, authentic Brooklyn, friendly, jukebox vibes, no-frills",
+    "type": "bar",
+    "lat": "40.6985858",
+    "lon": "-73.9342066",
+    "link": "https://www.instagram.com/hanksbk/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 2:00 PM–12:00 AM",
+      "Monday: 4:00 PM–2:00 AM",
+      "Tuesday: 4:00 PM–2:00 AM",
+      "Wednesday: 4:00 PM–2:00 AM",
+      "Thursday: 4:00 PM–2:00 AM",
+      "Friday: 4:00 PM–2:00 AM",
+      "Saturday: 2:00 PM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 14, "close": 24 },
+      "mon": { "open": 16, "close": 26 },
+      "tue": { "open": 16, "close": 26 },
+      "wed": { "open": 16, "close": 26 },
+      "thu": { "open": 16, "close": 26 },
+      "fri": { "open": 16, "close": 26 },
+      "sat": { "open": 14, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 3,
+    "tags": "gritty local, jukebox energy, dive staple, cheap fun, authentic Brooklyn",
+    "price": "$$",
+    "duration": 1.25
+  },
+  {
+    "name": "Birdy’s",
+    "vibe": "quirky, eclectic, artsy crowd, affordable, dive-bar feel, colorful, indie, late-night, neighborhood energy, unpretentious",
+    "type": "bar",
+    "lat": "40.6975171",
+    "lon": "-73.9314536",
+    "link": "https://www.instagram.com/birdysbushwick/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 2:00 PM–4:00 AM",
+      "Monday: 2:00 PM–4:00 AM",
+      "Tuesday: 2:00 PM–4:00 AM",
+      "Wednesday: 2:00 PM–4:00 AM",
+      "Thursday: 2:00 PM–4:00 AM",
+      "Friday: 2:00 PM–4:00 AM",
+      "Saturday: 2:00 PM–4:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 14, "close": 28 },
+      "mon": { "open": 14, "close": 28 },
+      "tue": { "open": 14, "close": 28 },
+      "wed": { "open": 14, "close": 28 },
+      "thu": { "open": 14, "close": 28 },
+      "fri": { "open": 14, "close": 28 },
+      "sat": { "open": 14, "close": 28 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 3,
+    "tags": "hipster haunt, eclectic neighborhood, late-night dive, colorful hang, indie social",
+    "price": "$",
+    "duration": 1.25
+  },
+  {
+    "name": "El Vez and Burrito Bar",
+    "vibe": "lively, colorful, fun, group-friendly, casual dining, tequila-heavy, festive, energetic, playful, social",
+    "type": "lunch, dinner",
+    "lat": "40.714811",
+    "lon": "-74.015811",
+    "link": "https://www.instagram.com/elveznyc/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 11:00 AM–10:00 PM",
+      "Monday: 11:30 AM–10:00 PM",
+      "Tuesday: 11:30 AM–10:00 PM",
+      "Wednesday: 11:30 AM–10:00 PM",
+      "Thursday: 11:30 AM–10:00 PM",
+      "Friday: 11:30 AM–11:00 PM",
+      "Saturday: 11:00 AM–11:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 11, "close": 22 },
+      "mon": { "open": 11.5, "close": 22 },
+      "tue": { "open": 11.5, "close": 22 },
+      "wed": { "open": 11.5, "close": 22 },
+      "thu": { "open": 11.5, "close": 22 },
+      "fri": { "open": 11.5, "close": 23 },
+      "sat": { "open": 11, "close": 23 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "E"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 3,
+    "tags": "tequila-fueled, fiesta vibe, casual fun, group-friendly energy, colorful scene",
+    "price": "$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Bushwick Country Club",
+    "vibe": "kitschy, ironic, hipster dive, outdoor hang, cheap drinks, quirky games, casual, irreverent, punk energy, hidden gem",
+    "type": "bar",
+    "lat": "40.7111521",
+    "lon": "-73.947767",
+    "link": "https://www.instagram.com/bushwick_country_club/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 3:00 PM–4:00 AM",
+      "Monday: 5:00 PM–4:00 AM",
+      "Tuesday: 5:00 PM–4:00 AM",
+      "Wednesday: 5:00 PM–4:00 AM",
+      "Thursday: 5:00 PM–4:00 AM",
+      "Friday: 5:00 PM–4:00 AM",
+      "Saturday: 3:00 PM–4:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 15, "close": 28 },
+      "mon": { "open": 17, "close": 28 },
+      "tue": { "open": 17, "close": 28 },
+      "wed": { "open": 17, "close": 28 },
+      "thu": { "open": 17, "close": 28 },
+      "fri": { "open": 17, "close": 28 },
+      "sat": { "open": 15, "close": 28 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 4,
+    "tags": "ironic dive, hipster haven, quirky games, backyard bar, Brooklyn offbeat",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "recess grove",
+    "vibe": "serene, artsy, cafe-culture, contemplative, creative, plant-filled, modern minimalist, community feel, peaceful, soft aesthetic",
+    "type": "activity, random gem",
+    "lat": "40.71274685",
+    "lon": "-73.95630666",
+    "link": "https://www.instagram.com/recessgrove/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: 2:00 PM–10:00 PM",
+      "Wednesday: 2:00 PM–10:00 PM",
+      "Thursday: 2:00 PM–10:00 PM",
+      "Friday: Closed",
+      "Saturday: Closed"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 14, "close": 22 },
+      "wed": { "open": 14, "close": 22 },
+      "thu": { "open": 14, "close": 22 },
+      "fri": { "open": null, "close": null },
+      "sat": { "open": null, "close": null }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "–",
+      "sat": "–",
+      "sun": "–"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 2,
+    "tags": "mindful space, creative calm, artistic haven, slow-living, neighborhood niche",
+    "price": "$$",
+    "duration": 1.66
+  },
+  {
+    "name": "St. Mazie Bar & Supper Club",
+    "vibe": "romantic, vintage, candlelit, jazz-heavy, supper-club vibe, old-world charm, sultry, intimate, timeless, atmospheric",
+    "type": "music, dinner, cocktail",
+    "lat": "40.7125929",
+    "lon": "-73.9558255",
+    "link": "https://www.instagram.com/stmazie/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 6:00 PM–1:00 AM",
+      "Monday: 6:00 PM–1:00 AM",
+      "Tuesday: 6:00 PM–1:00 AM",
+      "Wednesday: 6:00 PM–1:00 AM",
+      "Thursday: 6:00 PM–1:00 AM",
+      "Friday: 6:00 PM–2:00 AM",
+      "Saturday: 5:00 PM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 18, "close": 25 },
+      "mon": { "open": 18, "close": 25 },
+      "tue": { "open": 18, "close": 25 },
+      "wed": { "open": 18, "close": 25 },
+      "thu": { "open": 18, "close": 25 },
+      "fri": { "open": 18, "close": 26 },
+      "sat": { "open": 17, "close": 26 }
+    ],
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 3,
+    "tags": "old-world romance, vintage charm, jazz hideaway, candlelit vibe, sultry setting",
+    "price": "$$",
+    "duration": 2
+  },
+  {
+    "name": "Fred's Dog House",
+    "vibe": "playful, quirky, neighborhood-friendly, dive-bar charm, live music, casual, funky, approachable, dog-loving, eclectic crowd",
+    "type": "music, bar",
+    "lat": "40.71224115",
+    "lon": "-73.95596088",
+    "link": "https://www.instagram.com/fredsdoghousebk/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 6:00 PM–1:00 AM",
+      "Monday: Closed",
+      "Tuesday: 6:00 PM–1:00 AM",
+      "Wednesday: 6:00 PM–1:00 AM",
+      "Thursday: 6:00 PM–2:00 AM",
+      "Friday: 6:00 PM–2:00 AM",
+      "Saturday: 6:00 PM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 18, "close": 25 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 18, "close": 25 },
+      "wed": { "open": 18, "close": 25 },
+      "thu": { "open": 18, "close": 26 },
+      "fri": { "open": 18, "close": 26 },
+      "sat": { "open": 18, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 4,
+    "tags": "funky dive, playful neighborhood, quirky crowd, casual hangout, eclectic energy",
+    "price": "$",
+    "duration": 2
+  },
+  {
+    "name": "Canary Cafe",
+    "vibe": "cozy, airy, neighborhood-friendly, artistic, modern café, warm lighting, creative, plant-filled, casual hangout, welcoming",
+    "type": "coffee, breakfast",
+    "lat": "40.7113494",
+    "lon": "-73.961145",
+    "link": "https://www.instagram.com/canarybrooklyn/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 8:00 AM–4:00 PM",
+      "Monday: 8:00 AM–4:00 PM",
+      "Tuesday: 8:00 AM–4:00 PM",
+      "Wednesday: 8:00 AM–4:00 PM",
+      "Thursday: 8:00 AM–4:00 PM",
+      "Friday: 8:00 AM–4:00 PM",
+      "Saturday: 8:00 AM–4:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 8, "close": 16 },
+      "mon": { "open": 8, "close": 16 },
+      "tue": { "open": 8, "close": 16 },
+      "wed": { "open": 8, "close": 16 },
+      "thu": { "open": 8, "close": 16 },
+      "fri": { "open": 8, "close": 16 },
+      "sat": { "open": 8, "close": 16 }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 2,
+    "tags": "artsy nook, modern coffeehouse, Brooklyn-friendly, warm vibe, intimate charm",
+    "price": "$",
+    "duration": 0.75
+  },
+  {
+    "name": "Whim Golf Club",
+    "vibe": "experimental, ironic, social-club vibe, Brooklyn cool, playful, curated aesthetic, offbeat, niche community, hip, concept-driven",
+    "type": "activity, random gem",
+    "lat": "40.7188441",
+    "lon": "-73.99175809",
+    "link": "https://www.instagram.com/whimgolfclub/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 12:00 PM–6:00 PM",
+      "Monday: Closed",
+      "Tuesday: 12:00 PM–6:00 PM",
+      "Wednesday: 12:00 PM–6:00 PM",
+      "Thursday: 12:00 PM–6:00 PM",
+      "Friday: 12:00 PM–6:00 PM",
+      "Saturday: 12:00 PM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 12, "close": 18 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 12, "close": 18 },
+      "wed": { "open": 12, "close": 18 },
+      "thu": { "open": 12, "close": 18 },
+      "fri": { "open": 12, "close": 18 },
+      "sat": { "open": 12, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "A",
+      "wed": "A",
+      "thu": "A",
+      "fri": "A",
+      "sat": "A",
+      "sun": "A"
+    },
+    "timeCategory": "afternoon",
+    "energyRamp": 3,
+    "tags": "playful experiment, ironic club, conceptual space, alternative social, indie edge",
+    "price": "$",
+    "duration": 0.75
+  },
+  {
+    "name": "Outer Heaven",
+    "vibe": "underground, edgy, nightlife-heavy, techno-forward, gritty, experimental, youth-driven, late-night energy, immersive, raw",
+    "type": "club",
+    "lat": "40.7219976",
+    "lon": "-73.9922737",
+    "link": "https://www.instagram.com/outerheaven.nyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 8:00 PM–2:00 AM",
+      "Thursday: 8:00 PM–3:00 AM",
+      "Friday: 8:00 PM–4:00 AM",
+      "Saturday: 8:00 PM–4:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": 20, "close": 26 },
+      "thu": { "open": 20, "close": 27 },
+      "fri": { "open": 20, "close": 28 },
+      "sat": { "open": 20, "close": 28 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "–"
+    },
+    "timeCategory": "late",
+    "energyRamp": 5,
+    "tags": "underground nightlife, raw energy, Brooklyn rave, edgy youth, immersive beats",
+    "price": "$$$",
+    "duration": 2.5
+  },
+  {
+    "name": "Celene's",
+    "vibe": "moody, niche, intimate, casual cocktails, artsy, hidden-away, quirky, mellow, neighborhood energy, understated",
+    "type": "cocktail",
+    "lat": "40.7410183",
+    "lon": "-73.9929415",
+    "link": "https://www.instagram.com/celenesnyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 7:00 PM–2:00 AM",
+      "Friday: 7:00 PM–4:00 AM",
+      "Saturday: 7:00 PM–4:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": null, "close": null },
+      "thu": { "open": 19, "close": 26 },
+      "fri": { "open": 19, "close": 28 },
+      "sat": { "open": 19, "close": 28 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "–",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "–"
+    },
+    "timeCategory": "late",
+    "energyRamp": 5,
+    "tags": "quiet bar, mellow hideout, artsy nook, quirky cocktails, intimate local",
+    "price": "$$$",
+    "duration": 2.5
+  },
+  {
+    "name": "Sweet Pickle Books",
+    "vibe": "whimsical, indie, book-lover friendly, quirky, literary, creative, playful branding, niche community, artsy, cozy",
+    "type": "bookstore",
+    "lat": "40.7164063",
+    "lon": "-73.9912317",
+    "link": "https://www.instagram.com/sweetpicklebooks/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 10:00 AM–8:00 PM",
+      "Monday: 10:00 AM–8:00 PM",
+      "Tuesday: 10:00 AM–8:00 PM",
+      "Wednesday: 10:00 AM–8:00 PM",
+      "Thursday: 10:00 AM–8:00 PM",
+      "Friday: 10:00 AM–8:00 PM",
+      "Saturday: 10:00 AM–8:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 10, "close": 20 },
+      "mon": { "open": 10, "close": 20 },
+      "tue": { "open": 10, "close": 20 },
+      "wed": { "open": 10, "close": 20 },
+      "thu": { "open": 10, "close": 20 },
+      "fri": { "open": 10, "close": 20 },
+      "sat": { "open": 10, "close": 20 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "E"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 2,
+    "tags": "indie bookstore, playful spirit, quirky cultural, literary niche, whimsical vibes",
+    "price": "$",
+    "duration": 0.5
+  },
+  {
+    "name": "Paley Park",
+    "vibe": "tranquil, pocket-park, urban escape, waterfall sounds, intimate, relaxing, minimalist, contemplative, green retreat, peaceful",
+    "type": "park, garden",
+    "lat": "40.7602575",
+    "lon": "-73.9750532",
+    "link": "https://www.instagram.com/explore/search/keyword/?q=paley%20park",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 8:00 AM–8:00 PM",
+      "Monday: 8:00 AM–8:00 PM",
+      "Tuesday: 8:00 AM–8:00 PM",
+      "Wednesday: 8:00 AM–8:00 PM",
+      "Thursday: 8:00 AM–8:00 PM",
+      "Friday: 8:00 AM–8:00 PM",
+      "Saturday: 8:00 AM–8:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 8, "close": 20 },
+      "mon": { "open": 8, "close": 20 },
+      "tue": { "open": 8, "close": 20 },
+      "wed": { "open": 8, "close": 20 },
+      "thu": { "open": 8, "close": 20 },
+      "fri": { "open": 8, "close": 20 },
+      "sat": { "open": 8, "close": 20 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "E"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 1,
+    "tags": "hidden oasis, city calm, meditative space, waterfall serenity, pocket retreat",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Greenacre Park",
+    "vibe": "lush, urban hideaway, serene, waterfall feature, Midtown escape, contemplative, well-designed, refreshing, intimate, calm energy",
+    "type": "park, garden",
+    "lat": "40.7562408",
+    "lon": "-73.9692841",
+    "link": "https://www.instagram.com/greenacreparkny/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 8:00 AM–8:00 PM",
+      "Monday: Closed",
+      "Tuesday: 8:00 AM–8:00 PM",
+      "Wednesday: 8:00 AM–8:00 PM",
+      "Thursday: 8:00 AM–8:00 PM",
+      "Friday: 8:00 AM–8:00 PM",
+      "Saturday: 8:00 AM–8:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 8, "close": 20 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 8, "close": 20 },
+      "wed": { "open": 8, "close": 20 },
+      "thu": { "open": 8, "close": 20 },
+      "fri": { "open": 8, "close": 20 },
+      "sat": { "open": 8, "close": 20 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "secret Midtown, lush urban, water feature, reflective hideaway, quiet charm",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Bobo",
+    "vibe": "chic, French-inspired, romantic, garden vibe, elegant, hidden gem, stylish, intimate, West Village charm, sophisticated",
+    "type": "brunch, dinner",
+    "lat": "40.7344552",
+    "lon": "-74.0026304",
+    "link": "https://www.instagram.com/boborestaurant/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 11:00 AM–10:00 PM",
+      "Monday: 5:00 PM–10:00 PM",
+      "Tuesday: 5:00 PM–10:00 PM",
+      "Wednesday: 5:00 PM–10:00 PM",
+      "Thursday: 5:00 PM–10:00 PM",
+      "Friday: 5:00 PM–12:00 AM",
+      "Saturday: 11:00 AM–12:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 11, "close": 22 },
+      "mon": { "open": 17, "close": 22 },
+      "tue": { "open": 17, "close": 22 },
+      "wed": { "open": 17, "close": 22 },
+      "thu": { "open": 17, "close": 22 },
+      "fri": { "open": 17, "close": 24 },
+      "sat": { "open": 11, "close": 24 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "evening, late",
+    "energyRamp": 3,
+    "tags": "romantic garden, stylish West Village, chic French, elegant hideaway, intimate dining",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "VALERIE",
+    "vibe": "sleek, cocktail-forward, elegant, modern classic, social hub, refined, lively, Midtown energy, cosmopolitan, date spot",
+    "type": "cocktail",
+    "lat": "40.7563426",
+    "lon": "-73.9811274",
+    "link": "https://www.instagram.com/valerienewyorkcity/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 11:00 AM–12:00 AM",
+      "Monday: 11:30 AM–12:00 AM",
+      "Tuesday: 11:30 AM–2:00 AM",
+      "Wednesday: 11:30 AM–2:00 AM",
+      "Thursday: 11:30 AM–2:00 AM",
+      "Friday: 11:30 AM–2:00 AM",
+      "Saturday: 11:00 AM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 11, "close": 24 },
+      "mon": { "open": 11.5, "close": 24 },
+      "tue": { "open": 11.5, "close": 26 },
+      "wed": { "open": 11.5, "close": 26 },
+      "thu": { "open": 11.5, "close": 26 },
+      "fri": { "open": 11.5, "close": 26 },
+      "sat": { "open": 11, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 4,
+    "tags": "Midtown cocktail hub, sleek social, upscale bar, lively energy, cosmopolitan spot",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "Turks & Frogs",
+    "vibe": "eclectic, cozy, vintage décor, romantic, Old World vibe, intimate, candlelit, wine-forward, quirky, tucked-away gem",
+    "type": "cocktail, wine bar",
+    "lat": "40.7357449",
+    "lon": "-74.0073406",
+    "link": "https://www.instagram.com/turksandfrogs/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 3:00 PM–11:00 PM",
+      "Monday: Closed",
+      "Tuesday: 5:00 PM–12:00 AM",
+      "Wednesday: 5:00 PM–12:00 AM",
+      "Thursday: 5:00 PM–12:00 AM",
+      "Friday: 5:00 PM–1:00 AM",
+      "Saturday: 5:00 PM–1:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 15, "close": 23 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 17, "close": 24 },
+      "wed": { "open": 17, "close": 24 },
+      "thu": { "open": 17, "close": 24 },
+      "fri": { "open": 17, "close": 25 },
+      "sat": { "open": 17, "close": 25 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "HH"
+    },
+    "timeCategory": "happy hour, late",
+    "energyRamp": 3,
+    "tags": "candlelit bar, vintage charm, Old World romance, tucked-away nook, eclectic vibe",
+    "price": "$",
+    "duration": 1.75
+  },
+  {
+    "name": "Orient Express Cocktail Bar",
+    "vibe": "themed, train-inspired, moody, unique cocktails, intimate, speakeasy vibe, transportive, stylish, atmospheric, niche experience",
+    "type": "cocktail",
+    "lat": "40.7358256",
+    "lon": "-74.00747899",
+    "link": "https://www.instagram.com/orient_express_bar/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 3:00 PM–11:00 PM",
+      "Monday: 5:00 PM–12:00 AM",
+      "Tuesday: 5:00 PM–12:00 AM",
+      "Wednesday: 5:00 PM–12:00 AM",
+      "Thursday: 5:00 PM–1:00 AM",
+      "Friday: 5:00 PM–2:00 AM",
+      "Saturday: 5:00 PM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 15, "close": 23 },
+      "mon": { "open": 17, "close": 24 },
+      "tue": { "open": 17, "close": 24 },
+      "wed": { "open": 17, "close": 24 },
+      "thu": { "open": 17, "close": 25 },
+      "fri": { "open": 17, "close": 26 },
+      "sat": { "open": 17, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "HH"
+    },
+    "timeCategory": "happy hour, late",
+    "energyRamp": 3,
+    "tags": "themed speakeasy, transportive vibe, design-forward, vintage train charm, atmospheric escape",
+    "price": "$$",
+    "duration": 1.66
+  },
+  {
+    "name": "Fairfax",
+    "vibe": "modern, chic, brunch-friendly, airy, European café vibes, stylish, social, bright, welcoming, West Village charm",
+    "type": "brunch, lunch, dinner",
+    "lat": "40.734351",
+    "lon": "-74.0031358",
+    "link": "https://www.instagram.com/fairfaxnyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 9:30 AM–10:00 PM",
+      "Monday: 9:30 AM–10:00 PM",
+      "Tuesday: 9:30 AM–11:00 PM",
+      "Wednesday: 9:30 AM–11:30 PM",
+      "Thursday: 9:30 AM–11:30 PM",
+      "Friday: 9:30 AM–11:30 PM",
+      "Saturday: 9:30 AM–11:30 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 9.5, "close": 22 },
+      "mon": { "open": 9.5, "close": 22 },
+      "tue": { "open": 9.5, "close": 23 },
+      "wed": { "open": 9.5, "close": 23.5 },
+      "thu": { "open": 9.5, "close": 23.5 },
+      "fri": { "open": 9.5, "close": 23.5 },
+      "sat": { "open": 9.5, "close": 23.5 }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "E",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "MD"
+    },
+    "timeCategory": "midday, evening, late",
+    "energyRamp": 3,
+    "tags": "chic café, brunch hotspot, stylish corner, airy social, modern neighborhood",
+    "price": "$$",
+    "duration": 2
+  },
+  {
+    "name": "Cellar Dog",
+    "vibe": "basement vibe, retro games, casual, beer-heavy, unpretentious, social hang, quirky, playful, dive energy, nostalgic",
+    "type": "bar",
+    "lat": "40.7336334",
+    "lon": "-74.0032842",
+    "link": "https://www.instagram.com/cellardognyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 2:00 PM–1:00 AM",
+      "Monday: 4:00 PM–1:00 AM",
+      "Tuesday: 4:00 PM–1:00 AM",
+      "Wednesday: 4:00 PM–1:00 AM",
+      "Thursday: 4:00 PM–3:00 AM",
+      "Friday: 4:00 PM–4:00 AM",
+      "Saturday: 2:00 PM–4:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 14, "close": 25 },
+      "mon": { "open": 16, "close": 25 },
+      "tue": { "open": 16, "close": 25 },
+      "wed": { "open": 16, "close": 25 },
+      "thu": { "open": 16, "close": 27 },
+      "fri": { "open": 16, "close": 28 },
+      "sat": { "open": 14, "close": 28 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 4,
+    "tags": "quirky basement, retro games, casual fun, playful dive, unpretentious hang",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Dia Chelsea",
+    "vibe": "minimalist, contemporary art, intellectual, clean-lined, cultural hub, thoughtful, avant-garde, creative, contemplative, design-focused",
+    "type": "gallery",
+    "lat": "40.7478387",
+    "lon": "-74.0063018",
+    "link": "https://www.instagram.com/diaartfoundation/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 12:00 PM–6:00 PM",
+      "Thursday: 12:00 PM–6:00 PM",
+      "Friday: 12:00 PM–6:00 PM",
+      "Saturday: 12:00 PM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": 12, "close": 18 },
+      "thu": { "open": 12, "close": 18 },
+      "fri": { "open": 12, "close": 18 },
+      "sat": { "open": 12, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "–"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "cultural hub, avant-garde space, intellectual art, minimalist design, contemporary edge",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "RHYTHM ZERO",
+    "vibe": "creative café, indie, minimalist, artsy, intimate, modern, community-driven, peaceful, offbeat, curated vibes",
+    "type": "coffee",
+    "lat": "40.7332909",
+    "lon": "-74.0043095",
+    "link": "https://www.instagram.com/rhythmzeronyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 8:00 AM–4:00 PM",
+      "Monday: 7:00 AM–4:00 PM",
+      "Tuesday: 7:00 AM–4:00 PM",
+      "Wednesday: 7:00 AM–4:00 PM",
+      "Thursday: 7:00 AM–4:00 PM",
+      "Friday: 7:00 AM–4:00 PM",
+      "Saturday: 8:00 AM–4:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 8, "close": 16 },
+      "mon": { "open": 7, "close": 16 },
+      "tue": { "open": 7, "close": 16 },
+      "wed": { "open": 7, "close": 16 },
+      "thu": { "open": 7, "close": 16 },
+      "fri": { "open": 7, "close": 16 },
+      "sat": { "open": 8, "close": 16 }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 2,
+    "tags": "indie coffeehouse, creative nook, peaceful corner, minimalist energy, community-driven",
+    "price": "$",
+    "duration": 0.75
+  },
+  {
+    "name": "Little Owl",
+    "vibe": "cozy, iconic, West Village charm, intimate, foodie destination, understated, neighborhood favorite, rustic, warm, classic NYC",
+    "type": "lunch, dinner",
+    "lat": "40.7322791",
+    "lon": "-74.0052939",
+    "link": "https://www.instagram.com/littleowlnyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 10:00 AM–2:30 PM; 5:00 PM–10:00 PM",
+      "Monday: 10:00 AM–2:30 PM; 5:00 PM–10:00 PM",
+      "Tuesday: 11:00 AM–2:30 PM; 5:00 PM–10:00 PM",
+      "Wednesday: 11:00 AM–2:30 PM; 5:00 PM–10:00 PM",
+      "Thursday: 11:00 AM–2:30 PM; 5:00 PM–10:00 PM",
+      "Friday: 10:00 AM–2:30 PM; 5:00 PM–10:00 PM",
+      "Saturday: 10:00 AM–2:30 PM; 5:00 PM–10:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 10, "close": 22 },
+      "mon": { "open": 10, "close": 22 },
+      "tue": { "open": 11, "close": 22 },
+      "wed": { "open": 11, "close": 22 },
+      "thu": { "open": 11, "close": 22 },
+      "fri": { "open": 10, "close": 22 },
+      "sat": { "open": 10, "close": 22 }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 3,
+    "tags": "West Village icon, cozy dining, rustic chic, foodie favorite, intimate charm",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "The Commerce Inn",
+    "vibe": "Shaker-inspired, refined, historic-feel, minimalist, culinary artistry, contemplative, upscale, thoughtful design, intimate, unique",
+    "type": "breakfast, brunch, lunch, dinner",
+    "lat": "40.731477",
+    "lon": "-74.0056977",
+    "link": "https://www.instagram.com/commerceinn/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 9:00 AM–3:00 PM; 4:00 PM–11:00 PM",
+      "Monday: 9:00 AM–3:00 PM; 4:00 PM–11:00 PM",
+      "Tuesday: 9:00 AM–3:00 PM; 4:00 PM–11:00 PM",
+      "Wednesday: 9:00 AM–3:00 PM; 4:00 PM–11:00 PM",
+      "Thursday: 9:00 AM–3:00 PM; 4:00 PM–11:00 PM",
+      "Friday: 9:00 AM–3:00 PM; 4:00 PM–11:00 PM",
+      "Saturday: 9:00 AM–3:00 PM; 4:00 PM–11:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 9, "close": 23 },
+      "mon": { "open": 9, "close": 23 },
+      "tue": { "open": 9, "close": 23 },
+      "wed": { "open": 9, "close": 23 },
+      "thu": { "open": 9, "close": 23 },
+      "fri": { "open": 9, "close": 23 },
+      "sat": { "open": 9, "close": 23 }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 3,
+    "tags": "historic-inspired, minimalist dining, thoughtful concept, upscale rustic, contemplative vibe",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "Tía Pol",
+    "vibe": "tapas-focused, lively, intimate, Spanish influence, wine-heavy, West Chelsea gem, foodie-oriented, cozy, authentic, stylish",
+    "type": "brunch, dinner",
+    "lat": "40.74728",
+    "lon": "-74.0047984",
+    "link": "https://www.instagram.com/tia_pol/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 12:00 PM–4:00 PM; 5:00 PM–9:00 PM",
+      "Monday: Closed",
+      "Tuesday: 3:00 PM–10:00 PM",
+      "Wednesday: 3:00 PM–10:00 PM",
+      "Thursday: 3:00 PM–10:00 PM",
+      "Friday: 3:00 PM–11:00 PM",
+      "Saturday: 12:00 PM–4:00 PM; 5:00 PM–11:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 12, "close": 21 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 15, "close": 22 },
+      "wed": { "open": 15, "close": 22 },
+      "thu": { "open": 15, "close": 22 },
+      "fri": { "open": 15, "close": 23 },
+      "sat": { "open": 12, "close": 23 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "HH",
+      "wed": "HH",
+      "thu": "HH",
+      "fri": "HH",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday, happyhour",
+    "energyRamp": 3,
+    "tags": "authentic Spanish, tapas haven, lively bar, cozy eatery, Chelsea gem",
+    "price": "$$$",
+    "duration": 1.66
+  },
+  {
+    "name": "Chantelle NYC",
+    "vibe": "flashy, rooftop vibes, clubby, social scene, late-night, bottle service, trendy, energetic, young crowd, loud",
+    "type": "club",
+    "lat": "40.718386",
+    "lon": "-73.98895335",
+    "link": "https://www.instagram.com/hotelchantelle/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: 5:00 PM–4:00 AM",
+      "Saturday: 5:00 PM–4:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": null, "close": null },
+      "thu": { "open": null, "close": null },
+      "fri": { "open": 17, "close": 28 },
+      "sat": { "open": 17, "close": 28 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "–",
+      "thu": "–",
+      "fri": "L",
+      "sat": "L",
+      "sun": "–"
+    },
+    "timeCategory": "late",
+    "energyRamp": 5,
+    "tags": "flashy club, rooftop party, nightlife staple, bottle-service scene, young energy",
+    "price": "$$",
+    "duration": 2
+  },
+  {
+    "name": "The Dancer",
+    "vibe": "intimate, cocktail-heavy, dim-lit, artistic, moody, curated crowd, indie, underground, Brooklyn edge, late-night",
+    "type": "cocktail",
+    "lat": "40.7139726",
+    "lon": "-73.9870319",
+    "link": "https://www.instagram.com/thedancernyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 6:00 PM–2:00 AM",
+      "Monday: 6:00 PM–2:00 AM",
+      "Tuesday: 6:00 PM–2:00 AM",
+      "Wednesday: 6:00 PM–2:00 AM",
+      "Thursday: 6:00 PM–2:00 AM",
+      "Friday: 6:00 PM–2:00 AM",
+      "Saturday: 6:00 PM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 18, "close": 26 },
+      "mon": { "open": 18, "close": 26 },
+      "tue": { "open": 18, "close": 26 },
+      "wed": { "open": 18, "close": 26 },
+      "thu": { "open": 18, "close": 26 },
+      "fri": { "open": 18, "close": 26 },
+      "sat": { "open": 18, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 3,
+    "tags": "sultry, hidden gem, intimate energy, cocktail lounge, artistic crowd",
+    "price": "$",
+    "duration": 1.66
+  },
+  {
+    "name": "Happy Medium",
+    "vibe": "artsy, experimental, café-gallery hybrid, playful, creative hub, community-oriented, indie, colorful, modern, cozy",
+    "type": "activity, random gem",
+    "lat": "40.7119043",
+    "lon": "-73.9944565",
+    "link": "https://www.instagram.com/gethappymedium/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 12:00 PM–9:00 PM",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 5:30 PM–10:00 PM",
+      "Friday: 12:00 PM–11:00 PM",
+      "Saturday: 12:00 PM–9:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 12, "close": 21 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": null, "close": null },
+      "thu": { "open": 17.5, "close": 22 },
+      "fri": { "open": 12, "close": 23 },
+      "sat": { "open": 12, "close": 21 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "–",
+      "thu": "HH",
+      "fri": "L",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday, late",
+    "energyRamp": 2,
+    "tags": "whimsical, creative lab, niche hangout, vibrant, DIY vibes",
+    "price": "$$",
+    "duration": 1.66
+  },
+  {
+    "name": "Overstory",
+    "vibe": "upscale, skyline views, luxe cocktails, sleek, romantic, modern classic, NYC glamour, date spot, high-rise vibe, polished",
+    "type": "cocktail",
+    "lat": "40.7065765",
+    "lon": "-74.0080763",
+    "link": "https://www.instagram.com/overstory/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 4:00 PM–12:00 AM",
+      "Monday: 5:00 PM–12:00 AM",
+      "Tuesday: 5:00 PM–12:00 AM",
+      "Wednesday: 5:00 PM–12:00 AM",
+      "Thursday: 4:00 PM–1:00 AM",
+      "Friday: 4:00 PM–1:00 AM",
+      "Saturday: 4:00 PM–1:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 16, "close": 24 },
+      "mon": { "open": 17, "close": 24 },
+      "tue": { "open": 17, "close": 24 },
+      "wed": { "open": 17, "close": 24 },
+      "thu": { "open": 16, "close": 25 },
+      "fri": { "open": 16, "close": 25 },
+      "sat": { "open": 16, "close": 25 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 3,
+    "tags": "panoramic, luxury, cocktail temple, glamorous, refined",
+    "price": "$$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Café Colmado",
+    "vibe": "cozy, artisanal, coffee-forward, indie, neighborhood charm, creative energy, airy, plant-filled, relaxed, minimalist",
+    "type": "coffee",
+    "lat": "40.71862695",
+    "lon": "-73.99141395",
+    "link": "https://www.instagram.com/colmadocoffee/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 9:00 AM–6:00 PM",
+      "Monday: 9:00 AM–5:00 PM",
+      "Tuesday: 9:00 AM–5:00 PM",
+      "Wednesday: 9:00 AM–5:00 PM",
+      "Thursday: 9:00 AM–5:00 PM",
+      "Friday: 9:00 AM–5:00 PM",
+      "Saturday: 9:00 AM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 9, "close": 18 },
+      "mon": { "open": 9, "close": 17 },
+      "tue": { "open": 9, "close": 17 },
+      "wed": { "open": 9, "close": 17 },
+      "thu": { "open": 9, "close": 17 },
+      "fri": { "open": 9, "close": 17 },
+      "sat": { "open": 9, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 2,
+    "tags": "indie charm, cultural cafe, slow-living, neighborhood favorite, artisan-driven",
+    "price": "$",
+    "duration": 0.75
+  },
+  {
+    "name": "124 Old Rabbit Club",
+    "vibe": "underground, secretive, beer-focused, moody, quirky, divey, niche, intimate, countercultural, eclectic",
+    "type": "bar",
+    "lat": "40.729905",
+    "lon": "-74.000246",
+    "link": "https://www.instagram.com/124rabbitclub/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 5:00 PM–1:00 AM",
+      "Monday: 6:00 PM–2:00 AM",
+      "Tuesday: 6:00 PM–2:00 AM",
+      "Wednesday: 5:00 PM–2:00 AM",
+      "Thursday: 5:00 PM–2:00 AM",
+      "Friday: 5:00 PM–2:00 AM",
+      "Saturday: 5:00 PM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 17, "close": 25 },
+      "mon": { "open": 18, "close": 26 },
+      "tue": { "open": 18, "close": 26 },
+      "wed": { "open": 17, "close": 26 },
+      "thu": { "open": 17, "close": 26 },
+      "fri": { "open": 17, "close": 26 },
+      "sat": { "open": 17, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 4,
+    "tags": "hidden gem, Euro-inspired, vintage charm, rebellious, character-filled",
+    "price": "$$",
+    "duration": 1.5
+  },
+  {
+    "name": "Off the Wagon",
+    "vibe": "fratty, lively, student-heavy, cheap drinks, sportsy, chaotic, loud, casual, rowdy, social hangout",
+    "type": "bar",
+    "lat": "40.7299118",
+    "lon": "-74.0008153",
+    "link": "https://www.instagram.com/offthewagonnyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 12:00 PM–4:00 AM",
+      "Monday: 12:00 PM–4:00 AM",
+      "Tuesday: 12:00 PM–4:00 AM",
+      "Wednesday: 12:00 PM–4:00 AM",
+      "Thursday: 12:00 PM–4:00 AM",
+      "Friday: 12:00 PM–4:00 AM",
+      "Saturday: 12:00 PM–4:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 12, "close": 28 },
+      "mon": { "open": 12, "close": 28 },
+      "tue": { "open": 12, "close": 28 },
+      "wed": { "open": 12, "close": 28 },
+      "thu": { "open": 12, "close": 28 },
+      "fri": { "open": 12, "close": 28 },
+      "sat": { "open": 12, "close": 28 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 4,
+    "tags": "beer-fueled, messy fun, young crowd, social chaos, late-night heavy",
+    "price": "$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Copper & Oak",
+    "vibe": "warm, rustic-modern, upscale bar vibe, wood-forward, stylish, casual chic, date-friendly, craft cocktails, mellow, intimate",
+    "type": "cocktail",
+    "lat": "40.7210247",
+    "lon": "-73.9897308",
+    "link": "https://www.instagram.com/copperandoak/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 4:00 PM–1:00 AM",
+      "Friday: 4:00 PM–1:00 AM",
+      "Saturday: 4:00 PM–1:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": null, "close": null },
+      "thu": { "open": 16, "close": 25 },
+      "fri": { "open": 16, "close": 25 },
+      "sat": { "open": 16, "close": 25 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "–",
+      "thu": "HH",
+      "fri": "HH",
+      "sat": "HH",
+      "sun": "–"
+    },
+    "timeCategory": "happy hour",
+    "energyRamp": 3,
+    "tags": "earthy, modern rustic, lounge vibe, approachable luxury, warm energy",
+    "price": "$$",
+    "duration": 1.5
+  },
+  {
+    "name": "George Bang Bang",
+    "vibe": "eclectic, cocktail-driven, edgy, playful, youthful energy, vibrant, moody lighting, hip, stylish, creative vibe",
+    "type": "cocktail",
+    "lat": "40.7457045",
+    "lon": "-73.985371",
+    "link": "https://www.instagram.com/gbbnewyork/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 6:00 PM–1:00 AM",
+      "Monday: Closed",
+      "Tuesday: 6:00 PM–1:00 AM",
+      "Wednesday: 6:00 PM–2:00 AM",
+      "Thursday: 6:00 PM–2:00 AM",
+      "Friday: 6:00 PM–2:00 AM",
+      "Saturday: 6:00 PM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 18, "close": 25 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 18, "close": 25 },
+      "wed": { "open": 18, "close": 26 },
+      "thu": { "open": 18, "close": 26 },
+      "fri": { "open": 18, "close": 26 },
+      "sat": { "open": 18, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 4,
+    "tags": "hipster-chic, buzzy, fashion-forward, expressive, social mixer",
+    "price": "$$",
+    "duration": 1.6
+  },
+  {
+    "name": "Aldo Sohm Wine Bar",
+    "vibe": "sophisticated, wine-centric, refined, relaxed luxury, European-inspired, intimate, polished, sleek, date-night, sommelier-driven",
+    "type": "wine bar",
+    "lat": "40.76120496",
+    "lon": "-73.98136302",
+    "link": "https://www.instagram.com/sohmbar/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: 12:00 PM–11:00 PM",
+      "Tuesday: 12:00 PM–11:00 PM",
+      "Wednesday: 12:00 PM–11:00 PM",
+      "Thursday: 12:00 PM–11:00 PM",
+      "Friday: 12:00 PM–11:30 PM",
+      "Saturday: 4:00 PM–11:30 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": 12, "close": 23 },
+      "tue": { "open": 12, "close": 23 },
+      "wed": { "open": 12, "close": 23 },
+      "thu": { "open": 12, "close": 23 },
+      "fri": { "open": 12, "close": 23.5 },
+      "sat": { "open": 16, "close": 23.5 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "–"
+    },
+    "timeCategory": "late",
+    "energyRamp": 3,
+    "tags": "cultured, polished, European lounge, wine library, chic escape",
+    "price": "$$$",
+    "duration": 1.66
+  },
+  {
+    "name": "nuar",
+    "vibe": "minimalist, dessert-forward, elegant, stylish, modern, artsy, chic, niche foodie, quiet, curated",
+    "type": "dessert",
+    "lat": "40.7449414",
+    "lon": "-73.99040864",
+    "link": "https://www.instagram.com/nuarnyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 10:30 AM–8:00 PM",
+      "Monday: 10:00 AM–7:30 PM",
+      "Tuesday: 10:00 AM–7:30 PM",
+      "Wednesday: 10:00 AM–7:30 PM",
+      "Thursday: 10:00 AM–7:30 PM",
+      "Friday: 10:00 AM–7:30 PM",
+      "Saturday: 10:30 AM–8:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 10.5, "close": 20 },
+      "mon": { "open": 10, "close": 19.5 },
+      "tue": { "open": 10, "close": 19.5 },
+      "wed": { "open": 10, "close": 19.5 },
+      "thu": { "open": 10, "close": 19.5 },
+      "fri": { "open": 10, "close": 19.5 },
+      "sat": { "open": 10.5, "close": 20 }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 2,
+    "tags": "boutique, luxury dessert, sleek design, foodie niche, quiet indulgence",
+    "price": "$",
+    "duration": 0.5
+  },
+  {
+    "name": "Lisbonata",
+    "vibe": "cozy, bakery vibes, Portuguese charm, authentic, warm, artisanal, nostalgic, sweet, inviting, homey",
+    "type": "bakery",
+    "lat": "40.672615",
+    "lon": "-73.95766996",
+    "link": "https://www.instagram.com/lisbonatanyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 8:00 AM–6:00 PM",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 8:00 AM–6:00 PM",
+      "Thursday: 8:00 AM–6:00 PM",
+      "Friday: 8:00 AM–6:00 PM",
+      "Saturday: 8:00 AM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 8, "close": 18 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": 8, "close": 18 },
+      "thu": { "open": 8, "close": 18 },
+      "fri": { "open": 8, "close": 18 },
+      "sat": { "open": 8, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 2,
+    "tags": "artisanal, charming, nostalgic bakery, sweet escape, warm authenticity",
+    "price": "$",
+    "duration": 0.75
+  },
+  {
+    "name": "Pil Pil",
+    "vibe": "lively, tapas-focused, Spanish-inspired, social, authentic, group-friendly, wine-heavy, colorful, modern, stylish",
+    "type": "brunch, lunch, dinner",
+    "lat": "40.7729328",
+    "lon": "-73.9558793",
+    "link": "https://www.instagram.com/pilpilnyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 11:00 AM–12:00 AM",
+      "Monday: 12:00 PM–12:00 AM",
+      "Tuesday: 12:00 PM–12:00 AM",
+      "Wednesday: 12:00 PM–12:00 AM",
+      "Thursday: 12:00 PM–12:00 AM",
+      "Friday: 12:00 PM–12:00 AM",
+      "Saturday: 11:00 AM–12:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 11, "close": 24 },
+      "mon": { "open": 12, "close": 24 },
+      "tue": { "open": 12, "close": 24 },
+      "wed": { "open": 12, "close": 24 },
+      "thu": { "open": 12, "close": 24 },
+      "fri": { "open": 12, "close": 24 },
+      "sat": { "open": 11, "close": 24 }
+    },
+    "dayParts": {
+      "mon": "L",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 3,
+    "tags": "festive, flavorful, wine-social, casual-elegant, intimate dining",
+    "price": "$$",
+    "duration": 2
+  },
+  {
+    "name": "Jeremy's",
+    "vibe": "casual, neighborhood bar, cozy, intimate, friendly, unpretentious, mellow, creative cocktails, artsy, approachable",
+    "type": "cocktail",
+    "lat": "40.777496",
+    "lon": "-73.95168979",
+    "link": "https://www.instagram.com/jeremysnyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 5:00 PM–12:00 AM",
+      "Monday: Closed",
+      "Tuesday: 5:00 PM–1:00 AM",
+      "Wednesday: 5:00 PM–1:00 AM",
+      "Thursday: 5:00 PM–1:00 AM",
+      "Friday: 5:00 PM–2:00 AM",
+      "Saturday: 5:00 PM–2:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 17, "close": 24 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 17, "close": 25 },
+      "wed": { "open": 17, "close": 25 },
+      "thu": { "open": 17, "close": 25 },
+      "fri": { "open": 17, "close": 26 },
+      "sat": { "open": 17, "close": 26 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "L",
+      "sun": "L"
+    },
+    "timeCategory": "late",
+    "energyRamp": 3,
+    "tags": "no-frills, relaxed, warm social, local regulars, friendly casual",
+    "price": "$$",
+    "duration": 1.75
+  },
+  {
+    "name": "Sunday to Sunday",
+    "vibe": "brunch-heavy, American comfort, relaxed, casual chic, bright, friendly, modern, neighborhood vibe, warm, social",
+    "type": "breakfast, lunch, dinner",
+    "lat": "40.7180119",
+    "lon": "-73.9901723",
+    "link": "https://www.instagram.com/sundaytosundaynyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 8:00 AM–9:00 PM",
+      "Monday: 8:00 AM–7:00 PM",
+      "Tuesday: 8:00 AM–7:00 PM",
+      "Wednesday: 8:00 AM–7:00 PM",
+      "Thursday: 8:00 AM–10:00 PM",
+      "Friday: 8:00 AM–11:00 PM",
+      "Saturday: 8:00 AM–11:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 8, "close": 21 },
+      "mon": { "open": 8, "close": 19 },
+      "tue": { "open": 8, "close": 19 },
+      "wed": { "open": 8, "close": 19 },
+      "thu": { "open": 8, "close": 22 },
+      "fri": { "open": 8, "close": 23 },
+      "sat": { "open": 8, "close": 23 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "E"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 3,
+    "tags": "everyday comfort, weekend vibe, wholesome, easygoing, social brunch",
+    "price": "$$",
+    "duration": 1.5
+  },
+  {
+    "name": "Chalk Gyms",
+    "vibe": "modern, fitness-forward, clean, minimalist, social gym, functional, high-energy, boutique vibe, disciplined, community-driven",
+    "type": "fitness",
+    "lat": "40.718347",
+    "lon": "-73.955376",
+    "link": "https://www.instagram.com/chalkgyms/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 8:00 AM–8:00 PM",
+      "Monday: 7:00 AM–3:00 PM",
+      "Tuesday: 5:00 AM–11:00 PM",
+      "Wednesday: 5:00 AM–11:00 PM",
+      "Thursday: 5:00 AM–11:00 PM",
+      "Friday: 5:00 AM–11:00 PM",
+      "Saturday: 7:00 AM–8:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 8, "close": 20 },
+      "mon": { "open": 7, "close": 15 },
+      "tue": { "open": 5, "close": 23 },
+      "wed": { "open": 5, "close": 23 },
+      "thu": { "open": 5, "close": 23 },
+      "fri": { "open": 5, "close": 23 },
+      "sat": { "open": 7, "close": 20 }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "L",
+      "wed": "L",
+      "thu": "L",
+      "fri": "L",
+      "sat": "MD",
+      "sun": "MD"
+    },
+    "timeCategory": "midday, late",
+    "energyRamp": 2,
+    "tags": "boutique fitness, serious training, clean design, wellness-forward, tight-knit",
+    "price": "$$",
+    "duration": 1.5
+  },
+  {
+    "name": "Serpentine",
+    "vibe": "cocktail-forward, intimate, sleek, stylish, creative, moody, Brooklyn-chic, social, sophisticated, curated crowd",
+    "type": "cocktail",
+    "lat": "40.7361304",
+    "lon": "-74.00060185",
+    "link": "https://www.instagram.com/serpentinenyc/",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 2:30 PM–12:00 AM",
+      "Monday: 5:00 PM–12:00 AM",
+      "Tuesday: 5:00 PM–12:00 AM",
+      "Wednesday: 5:00 PM–12:00 AM",
+      "Thursday: 5:00 PM–12:00 AM",
+      "Friday: 4:00 PM–1:00 AM",
+      "Saturday: 2:30 PM–1:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 14.5, "close": 24 },
+      "mon": { "open": 17, "close": 24 },
+      "tue": { "open": 17, "close": 24 },
+      "wed": { "open": 17, "close": 24 },
+      "thu": { "open": 17, "close": 24 },
+      "fri": { "open": 16, "close": 25 },
+      "sat": { "open": 14.5, "close": 25 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "L",
+      "sat": "L",
+      "sun": "E"
+    },
+    "timeCategory": "evening, late",
+    "energyRamp": 3,
+    "tags": "crafted cocktails, sleek intimacy, moody chic, stylish bar, trendy edge",
+    "price": "$$",
+    "duration": 1.5
+  },
+  {
+    "name": "StudioTwentySeven",
+    "vibe": "contemporary, minimalist, design-driven, intellectual, curated, creative hub, stylish, modern art, thoughtful, cultural",
+    "type": "gallery",
+    "lat": "40.7174008",
+    "lon": "-74.0057855",
+    "link": "https://www.instagram.com/studiotwentyseven/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: 9:00 AM–6:00 PM",
+      "Tuesday: 9:00 AM–6:00 PM",
+      "Wednesday: 9:00 AM–6:00 PM",
+      "Thursday: 9:00 AM–6:00 PM",
+      "Friday: 9:00 AM–6:00 PM",
+      "Saturday: Closed"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": 9, "close": 18 },
+      "tue": { "open": 9, "close": 18 },
+      "wed": { "open": 9, "close": 18 },
+      "thu": { "open": 9, "close": 18 },
+      "fri": { "open": 9, "close": 18 },
+      "sat": { "open": null, "close": null }
+    },
+    "dayParts": {
+      "mon": "A",
+      "tue": "A",
+      "wed": "A",
+      "thu": "A",
+      "fri": "A",
+      "sat": "–",
+      "sun": "–"
+    },
+    "timeCategory": "afternoon",
+    "energyRamp": 1,
+    "tags": "design-centric, architectural, high-end, modernist, curated",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Sargent's Daughters",
+    "vibe": "contemporary art, thoughtful, emerging artists, creative, intimate gallery, cultural hub, experimental, clean-lined, intellectual, boutique",
+    "type": "gallery",
+    "lat": "40.717639",
+    "lon": "-74.003176",
+    "link": "https://www.instagram.com/sargentsdaughters/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: 10:00 AM–6:00 PM",
+      "Wednesday: 10:00 AM–6:00 PM",
+      "Thursday: 10:00 AM–6:00 PM",
+      "Friday: 10:00 AM–6:00 PM",
+      "Saturday: 10:00 AM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 10, "close": 18 },
+      "wed": { "open": 10, "close": 18 },
+      "thu": { "open": 10, "close": 18 },
+      "fri": { "open": 10, "close": 18 },
+      "sat": { "open": 10, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "–"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "cultural niche, progressive art, contemporary-focused, small-scale, refined",
+    "price": "$",
+    "duration": 1.33
+  },
+  {
+    "name": "The Vilcek Foundation",
+    "vibe": "philanthropic, cultural, contemporary art, nonprofit-driven, educational, thoughtful, intellectual, socially conscious, curated, inspiring",
+    "type": "gallery",
+    "lat": "40.77076085",
+    "lon": "-73.96647639",
+    "link": "https://www.instagram.com/vilcekfoundation/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: Closed",
+      "Saturday: Closed"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": null, "close": null },
+      "thu": { "open": null, "close": null },
+      "fri": { "open": null, "close": null },
+      "sat": { "open": null, "close": null }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "–",
+      "thu": "–",
+      "fri": "–",
+      "sat": "–",
+      "sun": "–"
+    },
+    "timeCategory": "",
+    "energyRamp": 1,
+    "tags": "cultural heritage, socially aware, thought-leadership, prestigious, mission-driven",
+    "price": "$",
+    "duration": 1.33
+  },
+  {
+    "name": "Tappeto Volante",
+    "vibe": "underground art, experimental, avant-garde, edgy, indie, creative, grassroots, raw, community vibe, niche",
+    "type": "gallery",
+    "lat": "40.6693268",
+    "lon": "-73.9938805",
+    "link": "https://www.instagram.com/tvprojects.bk/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 1:00 PM–6:00 PM",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: 1:00 PM–6:00 PM",
+      "Friday: 1:00 PM–6:00 PM",
+      "Saturday: 1:00 PM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 13, "close": 18 },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": null, "close": null },
+      "thu": { "open": 13, "close": 18 },
+      "fri": { "open": 13, "close": 18 },
+      "sat": { "open": 13, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "–",
+      "thu": "A",
+      "fri": "A",
+      "sat": "A",
+      "sun": "A"
+    },
+    "timeCategory": "afternoon",
+    "energyRamp": 1,
+    "tags": "grassroots, local art, alternative, emerging voices, Brooklyn indie",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Ricco/Maresca Gallery",
+    "vibe": "contemporary, outsider art, eclectic, curated, thought-provoking, niche, artistic, intellectual, creative, cultural hub",
+    "type": "gallery",
+    "lat": "40.7465171",
+    "lon": "-74.0068656",
+    "link": "https://www.instagram.com/riccomaresca/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: Closed",
+      "Thursday: Closed",
+      "Friday: Closed",
+      "Saturday: Closed"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": null, "close": null },
+      "thu": { "open": null, "close": null },
+      "fri": { "open": null, "close": null },
+      "sat": { "open": null, "close": null }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "–",
+      "thu": "–",
+      "fri": "–",
+      "sat": "–",
+      "sun": "–"
+    },
+    "timeCategory": "",
+    "energyRamp": 1,
+    "tags": "eclectic taste, cultural bridge, collector’s gem, bold, artistic soul",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Karma Gallery",
+    "vibe": "trendy, contemporary art, youthful, stylish, curated, experimental, creative, Brooklyn-chic, modern, social art scene",
+    "type": "gallery",
+    "lat": "40.7224564",
+    "lon": "-73.9841125",
+    "link": "https://www.instagram.com/karmakarma9/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: 10:00 AM–6:00 PM",
+      "Wednesday: 10:00 AM–6:00 PM",
+      "Thursday: 10:00 AM–6:00 PM",
+      "Friday: 10:00 AM–6:00 PM",
+      "Saturday: 10:00 AM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 10, "close": 18 },
+      "wed": { "open": 10, "close": 18 },
+      "thu": { "open": 10, "close": 18 },
+      "fri": { "open": 10, "close": 18 },
+      "sat": { "open": 10, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "–"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "fashionable, scene-driven, cultural buzz, progressive art, youthful",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Judd Foundation",
+    "vibe": "minimalist, architectural, design-driven, contemplative, intellectual, art-world landmark, modernist, clean, thoughtful, cultural",
+    "type": "gallery",
+    "lat": "40.7235189",
+    "lon": "-73.9994085",
+    "link": "https://www.instagram.com/juddfoundation/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: 10:00 AM–6:00 PM",
+      "Wednesday: 10:00 AM–6:00 PM",
+      "Thursday: 10:00 AM–6:00 PM",
+      "Friday: 10:00 AM–6:00 PM",
+      "Saturday: 10:00 AM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 10, "close": 18 },
+      "wed": { "open": 10, "close": 18 },
+      "thu": { "open": 10, "close": 18 },
+      "fri": { "open": 10, "close": 18 },
+      "sat": { "open": 10, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "–"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "iconic, purist, art-historical, timeless, landmark",
+    "price": "$",
+    "duration": 1.33
+  },
+  {
+    "name": "Isabel Sullivan Gallery",
+    "vibe": "intimate, contemporary art, boutique, experimental, stylish, curated, creative, intellectual, emerging artists, modern",
+    "type": "gallery",
+    "lat": "40.7198682",
+    "lon": "-74.00334",
+    "link": "https://www.instagram.com/is.gallery.nyc/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: 11:00 AM–6:00 PM",
+      "Wednesday: 11:00 AM–6:00 PM",
+      "Thursday: 11:00 AM–6:00 PM",
+      "Friday: 11:00 AM–6:00 PM",
+      "Saturday: 11:00 AM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 11, "close": 18 },
+      "wed": { "open": 11, "close": 18 },
+      "thu": { "open": 11, "close": 18 },
+      "fri": { "open": 11, "close": 18 },
+      "sat": { "open": 11, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "–"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "fresh, boutique experience, contemporary lean, cultural taste, stylish edge",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Hollis Taggart",
+    "vibe": "refined, contemporary art, blue-chip, intellectual, professional, polished, traditional-modern, cultural hub, creative, upscale",
+    "type": "gallery",
+    "lat": "40.7502048",
+    "lon": "-74.003717",
+    "link": "https://www.instagram.com/hollistaggart/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: 11:00 AM–5:00 PM",
+      "Tuesday: 11:00 AM–5:00 PM",
+      "Wednesday: 11:00 AM–5:00 PM",
+      "Thursday: 11:00 AM–5:00 PM",
+      "Friday: 11:00 AM–5:00 PM",
+      "Saturday: Closed"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": 11, "close": 17 },
+      "tue": { "open": 11, "close": 17 },
+      "wed": { "open": 11, "close": 17 },
+      "thu": { "open": 11, "close": 17 },
+      "fri": { "open": 11, "close": 17 },
+      "sat": { "open": null, "close": null }
+    },
+    "dayParts": {
+      "mon": "MD",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "–",
+      "sun": "–"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "established, blue-chip energy, polished professionalism, heritage-driven, curatorial depth",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Hashimoto Contemporary",
+    "vibe": "urban, contemporary art, street-influenced, edgy, youthful, experimental, creative, moody, modern, gallery scene",
+    "type": "gallery",
+    "lat": "40.7165192",
+    "lon": "-73.9900744",
+    "link": "https://www.instagram.com/hashimotocontemporary/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: 10:00 AM–6:00 PM",
+      "Wednesday: 10:00 AM–6:00 PM",
+      "Thursday: 10:00 AM–6:00 PM",
+      "Friday: 10:00 AM–6:00 PM",
+      "Saturday: 10:00 AM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 10, "close": 18 },
+      "wed": { "open": 10, "close": 18 },
+      "thu": { "open": 10, "close": 18 },
+      "fri": { "open": 10, "close": 18 },
+      "sat": { "open": 10, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "–"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "urban art, gallery cool, streetwise, gritty-inspired, subcultural",
+    "price": "$",
+    "duration": 1.33
+  },
+  {
+    "name": "François Ghebaly New York",
+    "vibe": "avant-garde, conceptual, contemporary art, experimental, cutting-edge, cultural, intellectual, modern, creative, niche",
+    "type": "gallery",
+    "lat": "40.71621114",
+    "lon": "-73.98787743",
+    "link": "https://www.instagram.com/francoisghebaly/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 11:00 AM–6:00 PM",
+      "Thursday: 11:00 AM–6:00 PM",
+      "Friday: 11:00 AM–6:00 PM",
+      "Saturday: 11:00 AM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": 11, "close": 18 },
+      "thu": { "open": 11, "close": 18 },
+      "fri": { "open": 11, "close": 18 },
+      "sat": { "open": 11, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "–"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "bold voices, risk-taking, visionary, creative pulse, conceptual art",
+    "price": "$",
+    "duration": 1.33
+  },
+  {
+    "name": "CUE Art Foundation",
+    "vibe": "nonprofit, experimental, emerging artists, contemporary, cultural, community-driven, creative, educational, thoughtful, independent",
+    "type": "gallery",
+    "lat": "40.74471363",
+    "lon": "-73.9928982",
+    "link": "https://www.instagram.com/cueart/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: Closed",
+      "Wednesday: 12:00 PM–6:00 PM",
+      "Thursday: 12:00 PM–6:00 PM",
+      "Friday: 12:00 PM–6:00 PM",
+      "Saturday: 12:00 PM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": null, "close": null },
+      "wed": { "open": 12, "close": 18 },
+      "thu": { "open": 12, "close": 18 },
+      "fri": { "open": 12, "close": 18 },
+      "sat": { "open": 12, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "–",
+      "wed": "A",
+      "thu": "A",
+      "fri": "A",
+      "sat": "A",
+      "sun": "–"
+    },
+    "timeCategory": "afternoon",
+    "energyRamp": 1,
+    "tags": "grassroots, non-mainstream, inclusive, artist-first, culture-builder",
+    "price": "$",
+    "duration": 1.33
+  },
+  {
+    "name": "Broadway Gallery",
+    "vibe": "intimate, boutique gallery, creative, experimental, cultural hub, modern art, niche, intellectual, stylish, artistic",
+    "type": "gallery",
+    "lat": "40.7178927",
+    "lon": "-74.0033515",
+    "link": "https://www.instagram.com/broadwaygallerynyc/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: Closed",
+      "Tuesday: 11:00 AM–6:00 PM",
+      "Wednesday: 11:00 AM–6:00 PM",
+      "Thursday: 11:00 AM–6:00 PM",
+      "Friday: 11:00 AM–6:00 PM",
+      "Saturday: 11:00 AM–6:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": null, "close": null },
+      "tue": { "open": 11, "close": 18 },
+      "wed": { "open": 11, "close": 18 },
+      "thu": { "open": 11, "close": 18 },
+      "fri": { "open": 11, "close": 18 },
+      "sat": { "open": 11, "close": 18 }
+    },
+    "dayParts": {
+      "mon": "–",
+      "tue": "MD",
+      "wed": "MD",
+      "thu": "MD",
+      "fri": "MD",
+      "sat": "MD",
+      "sun": "–"
+    },
+    "timeCategory": "midday",
+    "energyRamp": 1,
+    "tags": "cozy gallery, indie art, discovery-driven, neighborhood cultural spot, contemporary lean",
+    "price": "$",
+    "duration": 1
+  },
+  {
+    "name": "Fort Greene Park",
+    "vibe": "green, community hub, historic, relaxed, lively, local charm, picnic vibe, social, peaceful, cultural gathering",
+    "type": "park",
+    "lat": "40.6914322",
+    "lon": "-73.975246",
+    "link": "https://www.instagram.com/fortgreenepark/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 6:00 AM–1:00 AM",
+      "Monday: 6:00 AM–1:00 AM",
+      "Tuesday: 6:00 AM–1:00 AM",
+      "Wednesday: 6:00 AM–1:00 AM",
+      "Thursday: 6:00 AM–1:00 AM",
+      "Friday: 6:00 AM–1:00 AM",
+      "Saturday: 6:00 AM–1:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 6, "close": 25 },
+      "mon": { "open": 6, "close": 25 },
+      "tue": { "open": 6, "close": 25 },
+      "wed": { "open": 6, "close": 25 },
+      "thu": { "open": 6, "close": 25 },
+      "fri": { "open": 6, "close": 25 },
+      "sat": { "open": 6, "close": 25 }
+    },
+    "dayParts": {
+      "mon": "M",
+      "tue": "M",
+      "wed": "M",
+      "thu": "M",
+      "fri": "M",
+      "sat": "M",
+      "sun": "M"
+    },
+    "timeCategory": "morning",
+    "energyRamp": 1,
+    "tags": "family-friendly, historic vibe, gathering space, lively greenery, cultural hub",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Brooklyn Bridge Park",
+    "vibe": "iconic, waterfront, scenic, tourist-heavy, family-friendly, lively, expansive, vibrant, photogenic, community hub",
+    "type": "park",
+    "lat": "40.7022422",
+    "lon": "-73.9958601",
+    "link": "https://www.instagram.com/brooklynbridgepark/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 6:00 AM–1:00 AM",
+      "Monday: 6:00 AM–1:00 AM",
+      "Tuesday: 6:00 AM–1:00 AM",
+      "Wednesday: 6:00 AM–1:00 AM",
+      "Thursday: 6:00 AM–1:00 AM",
+      "Friday: 6:00 AM–1:00 AM",
+      "Saturday: 6:00 AM–1:00 AM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 6, "close": 25 },
+      "mon": { "open": 6, "close": 25 },
+      "tue": { "open": 6, "close": 25 },
+      "wed": { "open": 6, "close": 25 },
+      "thu": { "open": 6, "close": 25 },
+      "fri": { "open": 6, "close": 25 },
+      "sat": { "open": 6, "close": 25 }
+    },
+    "dayParts": {
+      "mon": "M",
+      "tue": "M",
+      "wed": "M",
+      "thu": "M",
+      "fri": "M",
+      "sat": "M",
+      "sun": "M"
+    },
+    "timeCategory": "morning",
+    "energyRamp": 1,
+    "tags": "iconic NYC, outdoorsy, waterfront leisure, tourist draw, vibrant culture",
+    "price": "$",
+    "duration": 1.5
+  },
+  {
+    "name": "Clover Smoothie&Tea",
+    "vibe": "fresh, colorful, juice-forward, casual, plant-based, youthful, trendy, health-conscious, cozy, cheerful",
+    "type": "juice bar, tea",
+    "lat": "40.68717215",
+    "lon": "-73.99039447",
+    "link": "https://www.instagram.com/cloversmoothie_tea/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 7:30 AM–8:00 PM",
+      "Monday: 7:30 AM–8:00 PM",
+      "Tuesday: 7:30 AM–8:00 PM",
+      "Wednesday: 7:30 AM–8:00 PM",
+      "Thursday: 7:30 AM–8:00 PM",
+      "Friday: 7:30 AM–8:00 PM",
+      "Saturday: 7:30 AM–8:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 7.5, "close": 20 },
+      "mon": { "open": 7.5, "close": 20 },
+      "tue": { "open": 7.5, "close": 20 },
+      "wed": { "open": 7.5, "close": 20 },
+      "thu": { "open": 7.5, "close": 20 },
+      "fri": { "open": 7.5, "close": 20 },
+      "sat": { "open": 7.5, "close": 20 }
+    },
+    "dayParts": {
+      "mon": "M",
+      "tue": "M",
+      "wed": "M",
+      "thu": "M",
+      "fri": "M",
+      "sat": "M",
+      "sun": "M"
+    },
+    "timeCategory": "morning",
+    "energyRamp": 1,
+    "tags": "colorful, fresh vibes, youthful energy, cheerful, health scene",
+    "price": "$",
+    "duration": 0.5
+  },
+  {
+    "name": "Swoony's",
+    "vibe": "elevated, American cuisine, modern chic, date-night, stylish, Brooklyn energy, vibrant, foodie destination, intimate, polished",
+    "type": "dinner",
+    "lat": "40.6847163",
+    "lon": "-74.0027028",
+    "link": "https://www.instagram.com/swoonysbrooklyn/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: Closed",
+      "Monday: 5:00 PM–10:00 PM",
+      "Tuesday: 5:00 PM–10:00 PM",
+      "Wednesday: 5:00 PM–10:00 PM",
+      "Thursday: 5:00 PM–10:00 PM",
+      "Friday: 5:00 PM–10:00 PM",
+      "Saturday: 5:00 PM–10:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": null, "close": null },
+      "mon": { "open": 17, "close": 22 },
+      "tue": { "open": 17, "close": 22 },
+      "wed": { "open": 17, "close": 22 },
+      "thu": { "open": 17, "close": 22 },
+      "fri": { "open": 17, "close": 22 },
+      "sat": { "open": 17, "close": 22 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "–"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 3,
+    "tags": "Brooklyn stylish, foodie chic, American-modern, polished atmosphere, trend-driven",
+    "price": "$$$",
+    "duration": 2
+  },
+  {
+    "name": "Alma BK",
+    "vibe": "colorful, Mexican-inspired, rooftop views, lively, festive, group-friendly, casual, trendy, tequila-forward, Brooklyn charm",
+    "type": "lunch, dinner",
+    "lat": "40.6855707",
+    "lon": "-74.0021592",
+    "link": "https://www.instagram.com/almabklyn/?hl=en",
+    "openNow": "TRUE",
+    "hours": [
+      "Sunday: 11:00 AM–9:00 PM",
+      "Monday: 5:00 PM–10:00 PM",
+      "Tuesday: 5:00 PM–10:00 PM",
+      "Wednesday: 5:00 PM–10:00 PM",
+      "Thursday: 5:00 PM–10:00 PM",
+      "Friday: 5:00 PM–10:00 PM",
+      "Saturday: 11:00 AM–11:00 PM"
+    ],
+    "dateEvents": [
+      { "date": "-", "title": "-", "time": "-" },
+      { "date": "-", "title": "-", "time": "-" }
+    ],
+    "hoursNumeric": {
+      "sun": { "open": 11, "close": 21 },
+      "mon": { "open": 17, "close": 22 },
+      "tue": { "open": 17, "close": 22 },
+      "wed": { "open": 17, "close": 22 },
+      "thu": { "open": 17, "close": 22 },
+      "fri": { "open": 17, "close": 22 },
+      "sat": { "open": 11, "close": 23 }
+    },
+    "dayParts": {
+      "mon": "E",
+      "tue": "E",
+      "wed": "E",
+      "thu": "E",
+      "fri": "E",
+      "sat": "E",
+      "sun": "E"
+    },
+    "timeCategory": "evening",
+    "energyRamp": 3,
+    "tags": "rooftop festive, cultural fusion, lively social, tequila scene, upbeat",
+    "price": "$$",
+    "duration": 2
   }
 ]
