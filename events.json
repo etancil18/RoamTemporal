@@ -28507,7 +28507,7 @@
       "thu": { "open": 18, "close": 25 },
       "fri": { "open": 18, "close": 26 },
       "sat": { "open": 17, "close": 26 }
-    ],
+    },
     "dayParts": {
       "mon": "L",
       "tue": "L",
