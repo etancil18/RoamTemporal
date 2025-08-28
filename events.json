@@ -1,7 +1,7 @@
 [
   {
     "name": "StEight(behind KUNIYA HAIR)",
-    "vibe": "Speakeasy, Japanese, Jazz, Eclectic, Cozy",
+    "vibe": "Speakeasy, Japanese, Jazz, Eclectic, Cozy, Moody, Hidden, Niche, Lowkey",
     "type": "speakeasy",
         "lat": "40.718182",
     "lon": "-73.991684",
@@ -44,7 +44,7 @@
   },
   {
     "name": "Doris",
-    "vibe": "Hip, Patio, Neighborhood Spot, Vinyl, Dimly Lit",
+    "vibe": "Hip, Patio, Neighborhood Spot, Vinyl, Dimly Lit, Retro, Stylish, Intimate, Groovy, Lounge",
     "type": "bar",
         "lat": "40.68121",
     "lon": "-73.957443",
@@ -87,7 +87,7 @@
   },
   {
     "name": "Abe's Pagoda Bar",
-    "vibe": "Laid-back, Quirky, Pool Table, Disco Ball, DJ",
+    "vibe": "Laid-back, Quirky, Pool Table, Disco Ball, DJ, Playful, Funky, Nostalgic, Boozy, Energetic",
     "type": "bar",
         "lat": "40.703831",
     "lon": "-73.918953",
@@ -130,7 +130,7 @@
   },
   {
     "name": "Carmelo’s",
-    "vibe": "Casual, Pool Table, Red Lighting, Neighborhood Spot",
+    "vibe": "Casual, Pool Table, Red Lighting, Neighborhood Spot, Authentic, Welcoming, Gritty, Unpretentious, Nostalgic",
     "type": "bar",
         "lat": "40.7027604",
     "lon": "-73.9205215",
@@ -173,7 +173,7 @@
   },
   {
     "name": "Saturdays NYC Crosby St",
-    "vibe": "Modern, stylish, Lifestyle, Patio",
+    "vibe": "Modern, Stylish, Lifestyle, Patio, Curated, Sunny, Trendy, Minimal, Urban",
     "type": "lifestyle",
         "lat": "40.7207453",
     "lon": "-73.9993515",
@@ -216,7 +216,7 @@
   },
   {
     "name": "Honey's",
-    "vibe": "Vibrant, Chic, Social, Cocktails, Dance Floor, Rooftop",
+    "vibe": "Vibrant, Chic, Social, Cocktails, Dance Floor, Rooftop, Electric, Glam, Bubbly, Party, Elevated",
     "type": ["rooftop", "cocktail"],
         "lat": "40.710449",
     "lon": "-73.9231575",
@@ -259,7 +259,7 @@
   },
   {
     "name": "La Cabra",
-    "vibe": "Contemporary, Outdoor Seating, Artisanal, Coffee",
+    "vibe": "Contemporary, Outdoor Seating, Artisanal, Coffee, Bright, Fresh, Minimal, Design-forward, Chic",
     "type": "coffee",
         "lat": "40.7065032",
     "lon": "-73.9209374",
@@ -302,7 +302,7 @@
   },
   {
     "name": "Freemans",
-    "vibe": "Rustic, Intimate, Hidden Gem",
+    "vibe": "Rustic, Intimate, Hidden Gem, Woodsy, Historic, Dim, Romantic, Timeless",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7219458",
     "lon": "-73.9924678",
@@ -345,7 +345,7 @@
   },
   {
     "name": "Blue-Sun Record Store",
-    "vibe": "Vintage, Vinyl, Lifestyle, Music",
+    "vibe": "Vintage, Vinyl, Lifestyle, Music, Dusty, Eclectic, Indie, Curated, Nostalgic",
     "type": ["music", "lifestyle"],
         "lat": "40.7093019",
     "lon": "-73.9516441",
@@ -388,7 +388,7 @@
   },
   {
     "name": "Carousel",
-    "vibe": "Laid-Back, Eclectic, Disco Ball, DJ, Hip, Pool Table, Social",
+    "vibe": "Laid-Back, Eclectic, Disco Ball, DJ, Hip, Pool Table, Social, Retro, Playful, Boisterous, Quirky, Nostalgic",
     "type": ["bar", "cocktail"],
         "lat": "40.7058463",
     "lon": "-73.9221354",
@@ -431,7 +431,7 @@
   },
   {
     "name": "Kanoyama",
-    "vibe": "Intimate, Authentic, Japanese, Omakase, Michelin, Sake",
+    "vibe": "Intimate, Authentic, Japanese, Omakase, Michelin, Sake, Precise, Minimal, Quiet, Cultured",
     "type": "dinner",
         "lat": "40.7306669",
     "lon": "-73.9864792",
@@ -474,7 +474,7 @@
   },
   {
     "name": "Waiting on a Friend",
-    "vibe": "Lively, Eclectic, Aesthetic, Social, Disco Ball, Cocktails",
+    "vibe": "Lively, Eclectic, Aesthetic, Social, Disco Ball, Cocktails, Vintage, Flirty, Art-scene, Buzzy, Playful",
     "type": ["cocktail", "lounge"],
         "lat": "40.7294609",
     "lon": "-73.9807284",
@@ -517,7 +517,7 @@
   },
   {
     "name": "Bakeri",
-    "vibe": "Cozy, Bakery, European, Café",
+    "vibe": "Cozy, Bakery, European, Café, Homey, Aromatic, Sunlit, Soft, Handcrafted",
     "type": "bakery",
         "lat": "40.7200222",
     "lon": "-73.96010291",
@@ -560,7 +560,7 @@
   },
   {
     "name": "Red Sorghum 夜宴",
-    "vibe": "Dimly Lit, Intimate, Szechuan, Authentic",
+    "vibe": "Dimly Lit, Intimate, Szechuan, Authentic, Spicy, Moody, Bold, Sultry, Textured",
     "type": "dinner",
         "lat": "40.7484928",
     "lon": "-73.9390719",
@@ -603,7 +603,7 @@
   },
   {
     "name": "Rucola",
-    "vibe": "Italian, Rustic, Sunday Dinner, Wine",
+    "vibe": "Italian, Rustic, Sunday Dinner, Wine, Hearty, Timeless, Homestyle, Soothing",
     "type": ["lunch", "dinner", "cocktail"],
         "lat": "40.6856132",
     "lon": "-73.9858591",
@@ -668,7 +668,7 @@
   },
   {
     "name": "Dead Letter No. 9",
-    "vibe": "Speakeasy, Intimate, Cocktails, Social, Theatrical, After-Hours",
+    "vibe": "Speakeasy, Intimate, Cocktails, Social, Theatrical, After-Hours, Dramatic, Edgy, Whispered, Hidden, Vintage",
     "type": ["cocktail", "dj"],
         "lat": "40.716096",
     "lon": "-73.964839",
@@ -711,7 +711,7 @@
   },
   {
     "name": "HOMERUN NYC",
-    "vibe": "Trendy, Creative, Vibrant, Lifestyle",
+    "vibe": "Trendy, Creative, Vibrant, Lifestyle, Dynamic, Urban, Youthful, Bold, Cinematic",
     "type": ["random gem", "lifestyle"],
         "lat": "40.71536325",
     "lon": "-73.94424366",
@@ -754,7 +754,7 @@
   },
   {
     "name": "The Cactus Shop",
-    "vibe": "Quirky, Patio, Latin, Hidden Gem, Speakeasy",
+    "vibe": "Quirky, Patio, Latin, Hidden Gem, Speakeasy, Succulent, Colorful, Sunny, Eclectic",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.71669275",
     "lon": "-73.96538125",
@@ -797,7 +797,7 @@
   },
   {
     "name": "Chisholm Larsson Gallery",
-    "vibe": "Artistic, Vintage, Gallery, Posters, Décor",
+    "vibe": "Artistic, Vintage, Gallery, Posters, Décor, Curated, Retro, Inspirational, Print-Forward, Creative",
     "type": "gallery",
         "lat": "40.7419044",
     "lon": "-74.0012093",
@@ -840,7 +840,7 @@
   },
   {
     "name": "Nightly's",
-    "vibe": "Sophisticated, Intimate, Sunday Dinner, Bistro, Neighborhood Spot",
+    "vibe": "Sophisticated, Intimate, Sunday Dinner, Bistro, Neighborhood Spot, Timeless, Understated, Whispered, Velvet, Moody",
     "type": ["dinner", "cocktail"],
         "lat": "40.7724775",
     "lon": "-73.9554399",
@@ -890,7 +890,7 @@
   },
   {
     "name": "schmuck.",
-    "vibe": "Eclectic, Trendy, Hip, Cocktails",
+    "vibe": "Eclectic, Trendy, Hip, Cocktails, Edgy, Curated, Bold, Lounge, Artful",
     "type": "cocktail",
         "lat": "40.7263723",
     "lon": "-73.9864184",
@@ -933,7 +933,7 @@
   },
   {
     "name": "Wo Hop",
-    "vibe": "Classic, Iconic, Chinese, Group Dinner",
+    "vibe": "Classic, Iconic, Chinese, Group Dinner, Authentic, Bustling, Heritage, Casual",
     "type": ["dinner", "lunch"],
         "lat": "40.71420566",
     "lon": "-73.99886037",
@@ -976,7 +976,7 @@
   },
   {
     "name": "L'Appartement 4F",
-    "vibe": "Cozy, Charming, French, Natural Wine, Bakery",
+    "vibe": "Cozy, Charming, French, Natural Wine, Bakery, Elegant, Refined, Intimate, Sunny, Whimsical",
     "type": ["bakery, wine bar"],
         "lat": "40.6950814",
     "lon": "-73.9948457",
@@ -1032,7 +1032,7 @@
   },
   {
     "name": "Cafe Mogador",
-    "vibe": "Laid-Back, Moroccan, Outdoor Seating, Brunch",
+    "vibe": "Laid-Back, Moroccan, Outdoor Seating, Brunch, Warm, Inviting, Sunlit, Flavorful, Airy",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7273469",
     "lon": "-73.984402",
@@ -1075,7 +1075,7 @@
   },
   {
     "name": "Skarstedt Gallery",
-    "vibe": "Artistic, High-End, Contemporary",
+    "vibe": "Artistic, High-End, Contemporary, Sleek, Curated, Elevated, Minimalist, Avant-Garde",
     "type": "gallery",
         "lat": "40.7762331",
     "lon": "-73.96251428",
@@ -1118,7 +1118,7 @@
   },
   {
     "name": "BrownstoneJAZZ",
-    "vibe": "Relaxed, Intimate, Hidden Gem, Jazz",
+    "vibe": "Relaxed, Intimate, Hidden Gem, Jazz, Moody, Smooth, Sultry, Underground, Soulful",
     "type": "music",
         "lat": "40.68156285",
     "lon": "-73.9470527",
@@ -1161,7 +1161,7 @@
   },
   {
     "name": "Million Goods",
-    "vibe": "Eclectic, Creative, Social, Wine, DJ, Lifestyle, Patio",
+    "vibe": "Eclectic, Creative, Social, Wine, DJ, Lifestyle, Patio, Vibrant, Local, Artistic, Cozy, Community",
     "type": ["bar", "wine bar", "dj"],
         "lat": "40.7275193",
     "lon": "-73.9570584",
@@ -1204,7 +1204,7 @@
   },
   {
     "name": "El Pingüino",
-    "vibe": "Cozy, Hidden Gem, Spanish, Seafood, Oysters, Patio",
+    "vibe": "Cozy, Hidden Gem, Spanish, Seafood, Oysters, Patio, Rustic, Seaside, Exclusive, Romantic, Leisurely",
     "type": "dinner",
         "lat": "40.7298408",
     "lon": "-73.95978875",
@@ -1247,7 +1247,7 @@
   },
   {
     "name": "The Se7en",
-    "vibe": "Stylish, Laid-Back, Trendy, Lounge, Social",
+    "vibe": "Stylish, Laid-Back, Trendy, Lounge, Social, Sleek, Assertive, Urbane, Chic, Spirited",
     "type": ["lounge", "dj"],
         "lat": "40.676976",
     "lon": "-73.9634407",
@@ -1290,7 +1290,7 @@
   },
   {
     "name": "Experimental Cocktail Club",
-    "vibe": "Elegant, Lively, Craft Cocktails, Piano, Vinyl",
+    "vibe": "Elegant, Lively, Craft Cocktails, Piano, Vinyl, Swanky, Immersive, Jazzy, Refined, Vibrant",
     "type": ["cocktail", "lounge"],
         "lat": "40.7424861",
     "lon": "-73.99034942",
@@ -1333,7 +1333,7 @@
   },
   {
     "name": "So & So's Neighborhood Piano Bar",
-    "vibe": "Cozy, Vintage, Ambiance, Piano Bar, Relaxed",
+    "vibe": "Cozy, Vintage, Ambiance, Piano Bar, Relaxed, Nostalgic, Melodic, Communal, Mellow, Retro",
     "type": ["lounge", "music"],
         "lat": "40.76355292",
     "lon": "-73.98543914",
@@ -1376,7 +1376,7 @@
   },
   {
     "name": "LunÀtico",
-    "vibe": "Eclectic, Date Spot, Live Music, Jazz",
+    "vibe": "Eclectic, Date Spot, Live Music, Jazz, Enchanted, Aesthetic, Seductive, Moody, Artistic",
     "type": ["music", "cocktail"],
         "lat": "40.68337885",
     "lon": "-73.93467864",
@@ -1419,7 +1419,7 @@
   },
   {
     "name": "Carpenters Workshop Gallery",
-    "vibe": "High-end, Artistic, Gallery, Showroom",
+    "vibe": "High-End, Artistic, Gallery, Showroom, Sculptural, Exclusive, Polished, Minimalist, Architectural",
     "type": "gallery",
         "lat": "40.7611603",
     "lon": "-73.9748539",
@@ -1462,7 +1462,7 @@
   },
   {
     "name": "The Tusk Bar",
-    "vibe": "Chic, Aesthetic, Trendy, Upscale, Oysters, Cocktails",
+    "vibe": "Chic, Aesthetic, Trendy, Upscale, Oysters, Cocktails, Refined, Sleek, Contemporary, Oceanic, Luxe",
     "type": ["cocktail", "lounge", "dinner"],
         "lat": "40.7440135",
     "lon": "-73.9869451",
@@ -1505,7 +1505,7 @@
   },
   {
     "name": "Codex",
-    "vibe": "Bookstore, Cozy, Intellectual, Espresso Bar",
+    "vibe": "Bookstore, Cozy, Intellectual, Espresso Bar, Studious, Quiet, Aromatic, Niche, Thoughtful",
     "type": ["bookstore", "coffee"],
         "lat": "40.692626",
     "lon": "-73.923672",
@@ -1548,7 +1548,7 @@
   },
   {
     "name": "The Hole",
-    "vibe": "Contemporary, Artistic, Gallery",
+    "vibe": "Contemporary, Artistic, Gallery, Avant-Garde, Edgy, Provocative, Raw, Conceptual",
     "type": "gallery",
         "lat": "40.7250551",
     "lon": "-73.9925494",
@@ -1591,7 +1591,7 @@
   },
   {
     "name": "Botanica Bar",
-    "vibe": "Botanical, Cozy, Trendy, DJ, Lively",
+    "vibe": "Botanical, Cozy, Trendy, DJ, Lively, Lush, Verdant, Energetic, Modern, Inventive",
     "type": ["bar", "cocktail", "dj"],
         "lat": "40.7246217",
     "lon": "-73.9947736",
@@ -1634,7 +1634,7 @@
   },
   {
     "name": "Bibliotheque",
-    "vibe": "Literary, Cozy, Wine, Café",
+    "vibe": "Literary, Cozy, Wine, Café, Wistful, Reflective, Ambient, Tucked-In, Classic",
     "type": ["bookstore", "wine bar", "coffee"],
         "lat": "40.7218082",
     "lon": "-74.0007476",
@@ -1677,7 +1677,7 @@
   },
   {
     "name": "% Arabica",
-    "vibe": "Minimalist, Coffee, Stylish",
+    "vibe": "Minimalist, Coffee, Clean, Refined, Elegant, Focused, Geometric",
     "type": "coffee",
         "lat": "40.7025899",
     "lon": "-73.9941507",
@@ -1720,7 +1720,7 @@
   },
   {
     "name": "Tuffet",
-    "vibe": "Laid-Back, Cozy, Bar, Outdoor Fireplace, Patio",
+    "vibe": "Laid-Back, Cozy, Bar, Outdoor Fireplace, Patio, Serene, Embers, Retreat, Moody, Intimate",
     "type": ["bar", "cocktail"],
         "lat": "40.7121269",
     "lon": "-73.94375126",
@@ -1763,7 +1763,7 @@
   },
   {
     "name": "Bisou",
-    "vibe": "Sophisticated, Chic, Intimate, Wine, Red Lighting, Aesthetic",
+    "vibe": "Sophisticated, Chic, Intimate, Wine, Red Lighting, Aesthetic, Sensual, Plush, Moody, Romantic, Alluring",
     "type": "wine bar",
         "lat": "40.723743",
     "lon": "-74.004462",
@@ -1806,7 +1806,7 @@
   },
   {
     "name": "Superbueno",
-    "vibe": "Vibrant, Fun, Cocktails, Mexican, Small Bites, Red Lighting",
+    "vibe": "Vibrant, Fun, Cocktails, Mexican, Small-Bites, Red-Lighting, Energetic, Social, Lively, Bold, Festive, Colorful",
     "type": ["cocktail", "dinner"],
         "lat": "40.7234538",
     "lon": "-73.9885506",
@@ -1849,7 +1849,7 @@
   },
   {
     "name": "Bar Mario",
-    "vibe": "Cozy, Neighborhood Bar, Italian",
+    "vibe": "Cozy, Neighborhood Bar, Italian, Warm, Classic, Rustic, Intimate, Familiar, Inviting, Hearth",
     "type": ["bar", "dinner"],
         "lat": "40.6766251",
     "lon": "-74.0135326",
@@ -1892,7 +1892,7 @@
   },
   {
     "name": "Milady's",
-    "vibe": "Classic, Neighborhood Bar, Vibrant, LGBTQ+",
+    "vibe": "Classic, Neighborhood Bar, Vibrant, Retro, Charming, Sociable, Timeless, Welcoming, Nostalgic, LGBTQ+ Friendly",
     "type": "cocktail",
         "lat": "40.7259071",
     "lon": "-74.0014471",
@@ -1935,7 +1935,7 @@
   },
   {
     "name": "Pepe Rosso",
-    "vibe": "Traditional, Casual, Italian, Comfort Food",
+    "vibe": "Traditional, Casual, Italian, Comfort Food, Hearty, Rustic, Homestyle, Soulful, Welcoming, Familiar",
     "type": ["dinner", "lunch"],
         "lat": "40.7279209",
     "lon": "-74.0013375",
@@ -1978,7 +1978,7 @@
   },
   {
     "name": "Clover Club",
-    "vibe": "Upscale, Neighborhood Bar, Craft Cocktails",
+    "vibe": "Upscale, Neighborhood Bar, Craft Cocktails, Refined, Stylish, Polished, Elegant, Curation, Sophisticated, Urban",
     "type": "cocktail",
         "lat": "40.6845677",
     "lon": "-73.9920784",
@@ -2021,7 +2021,7 @@
   },
   {
     "name": "Brooklyn Social",
-    "vibe": "Beer, Casual, Neighborhood Spot, Speakeasy, Cocktails, Back Patio",
+    "vibe": "Beer, Casual, Neighborhood Spot, Speakeasy, Cocktails, Back Patio, Chill, Friendly, Local, Relaxed",
     "type": "bar",
         "lat": "40.6804846",
     "lon": "-73.9945351",
@@ -2064,7 +2064,7 @@
   },
   {
     "name": "Hard to Explain",
-    "vibe": "Creative, Eclectic, Japanese, Speakeasy, Cozy",
+    "vibe": "Creative, Eclectic, Japanese, Speakeasy, Cozy, Artsy, Quirky, Intimate, Cozy, Inviting",
     "type": "speakeasy",
         "lat": "40.7291261",
     "lon": "-73.9856038",
@@ -2107,7 +2107,7 @@
   },
   {
     "name": "Have & Meyer",
-    "vibe": "Italian, Natural Wine, Outdoor Seating, Sunday Dinner",
+    "vibe": "Italian, Natural Wine, Outdoor Seating, Sunday Dinner, Laid-back, Charming, Seasonal, Relaxed",
     "type": "dinner",
         "lat": "40.7132253",
     "lon": "-73.9563783",
@@ -2150,7 +2150,7 @@
   },
   {
     "name": "Antidote",
-    "vibe": "Chinese, Sichuan, Intimate, Sophisticated, Creative Cocktails, Hidden, Date Spot",
+    "vibe": "Chinese, Sichuan, Intimate, Sophisticated, Creative Cocktails, Hidden, Flavors, Refined, Moody, Authentic",
     "type": ["cocktail", "dinner"],
         "lat": "40.7142684",
     "lon": "-73.9654775",
@@ -2193,7 +2193,7 @@
   },
   {
     "name": "Sake Bar Decibel",
-    "vibe": "Hidden Gem, Japanese, Sake, Cocktails, Authentic, Intimate",
+    "vibe": "Hidden Gem, Japanese, Sake, Cocktails, Authentic, Intimate, Refined, Quiet, Cultured, Subtle",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.7292871",
     "lon": "-73.9877312",
@@ -2236,7 +2236,7 @@
   },
   {
     "name": "Raku",
-    "vibe": "Casual, Traditional, Japanese, Udon Noodles, Date Spot",
+    "vibe": "Casual, Traditional, Japanese, Udon Noodles, Date Spot, Warm, Cozy, Simple, Comforting, Homestyle",
     "type": "dinner",
         "lat": "40.7273101",
     "lon": "-74.0025925",
@@ -2279,7 +2279,7 @@
   },
   {
     "name": "Ichibantei",
-    "vibe": "Authentic, Japanese, Soul Food, Bar, Cinema-Themed",
+    "vibe": "Authentic, Japanese, Soul Food, Bar, Movie Night, Nostalgic, Vibrant, Unique, Fun, Youthful",
     "type": "dinner",
         "lat": "40.7324491",
     "lon": "-73.9880197",
@@ -2322,7 +2322,7 @@
   },
   {
     "name": "Ask For Janice",
-    "vibe": "Speakeasy, Intimate, Pizza, Hip, Cocktails, Small Bites",
+    "vibe": "Speakeasy, Intimate, Pizza, Hip, Cocktails, Small Bites, Understated, Cool, Secret, Relaxed",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.7241881",
     "lon": "-73.9508843",
@@ -2365,7 +2365,7 @@
   },
   {
     "name": "With Others",
-    "vibe": "Casual, Social, Wine, Back Patio, Girl's Night",
+    "vibe": "Casual, Social, Wine, Back Patio, Girl’s Night, Friendly, Laid-back, Gossip, Cozy, Inclusive",
     "type": "wine bar",
         "lat": "40.7128073",
     "lon": "-73.9625685",
@@ -2408,7 +2408,7 @@
   },
   {
     "name": "Samurai Mama",
-    "vibe": "Japanese, Comfort Food, Udon Noodles, Cozy, Casual",
+    "vibe": "Japanese, Comfort Food, Udon Noodles, Cozy, Casual, Upbeat, Homestyle, Familial, Laid-back, Satisfying",
     "type": ["lunch", "dinner"],
         "lat": "40.7141481",
     "lon": "-73.96014",
@@ -2473,7 +2473,7 @@
   },
   {
     "name": "Birds of a Feather",
-    "vibe": "Sichuan, Social, Group Dinner, Sharable Plates",
+    "vibe": "Sichuan, Social, Group Dinner, Sharable Plates, Bold, Communal, Shared, Lively, Spice-forward, Festive",
     "type": ["lunch", "dinner"],
         "lat": "40.7143133",
     "lon": "-73.9605332",
@@ -2516,7 +2516,7 @@
   },
   {
     "name": "ACRE",
-    "vibe": "Health-Conscious, Plant, Japanese, Comfort Food, Back Patio",
+    "vibe": "Health-Conscious, Plant, Japanese, Comfort Food, Back Patio, Fresh, Clean, Green, Wholesome, Balanced",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.72624105",
     "lon": "-73.95466646",
@@ -2559,7 +2559,7 @@
   },
   {
     "name": "Smalls Jazz Club",
-    "vibe": "Intimate, Live Music, Jazz",
+    "vibe": "Intimate, Live Music, Jazz, Moody, Rhythmic, Low-lit, Classic, Soulful, Cozy, Immersive",
     "type": "music",
         "lat": "40.7343811",
     "lon": "-74.0027295",
@@ -2602,7 +2602,7 @@
   },
   {
     "name": "Ornithology Jazz Club",
-    "vibe": "Artistic, Live Music, Laid-Back, Jazz",
+    "vibe": "Artistic, Live Music, Laid-Back, Jazz, Eclectic, Creative, Nostalgic, Smooth, Lush, Inventive",
     "type": "music",
         "lat": "40.6955322",
     "lon": "-73.9320225",
@@ -2645,7 +2645,7 @@
   },
   {
     "name": "Angel’s Share",
-    "vibe": "Sophisticated, Intimate, Craft Cocktails, Hidden",
+    "vibe": "Sophisticated, Intimate, Craft Cocktails, Hidden, Refined, Elegant, Atmospheric, Luxe, Quiet, Exclusive",
     "type": ["cocktail", "speakeasy"],
         "lat": "40.73301145",
     "lon": "-74.00432961",
@@ -2688,7 +2688,7 @@
   },
   {
     "name": "Layla",
-    "vibe": "Cozy, Stylish, European, Back Patio, Date Spot",
+    "vibe": "Cozy, Stylish, European, Back Patio, Date Spot, Chic, Romantic, Ambient, Cultured, Welcoming",
     "type": ["cocktail", "patio"],
         "lat": "40.71232145",
     "lon": "-73.96295099",
@@ -2731,7 +2731,7 @@
   },
   {
     "name": "Taqueria Ramirez",
-    "vibe": "Vibrant, Casual, Mexican, Street Tacos, Authentic, Neighborhood Gem",
+    "vibe": "Vibrant, Casual, Mexican, Street Tacos, Authentic, Neighborhood Gem, Flavorful, Laid-back, Colorful",
     "type": ["lunch", "dinner"],
         "lat": "40.7278816",
     "lon": "-73.9569597",
@@ -2774,7 +2774,7 @@
   },
   {
     "name": "Madeline's Martini",
-    "vibe": "Elegant, Cozy, Martini, Aesthetic",
+    "vibe": "Elegant, Cozy, Martini, Aesthetic, Refined, Luxurious, Soft-Lit, Tasteful, Inviting, Sleek",
     "type": ["cocktail", "lounge"],
         "lat": "40.7263349",
     "lon": "-73.9775392",
@@ -2817,7 +2817,7 @@
   },
   {
     "name": "MONO+MONO",
-    "vibe": "Chic, Cozy, Korean, Vinyl, Floral, Date Spot",
+    "vibe": "Chic, Cozy, Korean, Vinyl, Date Spot, Minimalist, Local, Curated, Polished",
     "type": "dinner",
         "lat": "40.7254822",
     "lon": "-73.9880334",
@@ -2860,7 +2860,7 @@
   },
   {
     "name": "Romeos",
-    "vibe": "Casual, Eclectic, Cocktails, Red Lighting",
+    "vibe": "Casual, Eclectic, Cocktails, Red Lighting, Bold, Urban, Lively, Neon, Welcoming, Stylish",
     "type": ["cocktail", "bar", "late-night"],
         "lat": "40.726959",
     "lon": "-73.984037",
@@ -2903,7 +2903,7 @@
   },
   {
     "name": "Simple",
-    "vibe": "French, Brunch, Bistro, Relaxed, Cozy, Neighborhood, Wine",
+    "vibe": "French, Brunch, Bistro, Relaxed, Cozy, Neighborhood, Wine, Fresh, Light, Calm, Timeless",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.71242",
     "lon": "-73.962782",
@@ -2946,7 +2946,7 @@
   },
   {
     "name": "The Belfry",
-    "vibe": "Cocktail, Live Music, Intimate, Cozy, Dimly Lit",
+    "vibe": "Cocktail, Live Music, Intimate, Cozy, Dimly Lit, Jazz, Understated, Warm, Romantic, Moody",
     "type": ["cocktail", "music"],
         "lat": "40.732743",
     "lon": "-73.986294",
@@ -2989,7 +2989,7 @@
   },
   {
     "name": "Spectacle",
-    "vibe": "Indie Films, Intimate, Cinema, Movies, Hidden Gem",
+    "vibe": "Indie Films, Intimate, Cinema, Movies, Hidden Gem, Artsy, Nostalgic, Low-Key, Poetic, Secret",
     "type": "random gem",
         "lat": "40.7125158",
     "lon": "-73.9629051",
@@ -3032,7 +3032,7 @@
   },
   {
     "name": "Nightmoves",
-    "vibe": "Social, Hidden, Dance, Nightlife, DJ, Disco",
+    "vibe": "Social, Hidden, Dance, Nightlife, DJ, Disco, Energetic, Glowing, Pulsating, Clubby",
     "type": ["club", "dj"],
         "lat": "40.7130756",
     "lon": "-73.9572969",
@@ -3075,7 +3075,7 @@
   },
   {
     "name": "Radegast Hall & Biergarten",
-    "vibe": "Lively, Beer Garden, Casual Hangout",
+    "vibe": "Lively, Beer Garden, Casual Hangout, Outdoor, Cheerful, Rustic, Communal, Spacious, Welcoming, Laid-Back",
     "type": "bar",
         "lat": "40.7167708",
     "lon": "-73.9615252",
@@ -3118,7 +3118,7 @@
   },
   {
     "name": "Deux Chats",
-    "vibe": "Cozy, Chic, Martini, Intimate",
+    "vibe": "Cozy, Chic, Martini, Intimate, Plush, Elegant, Sleek, Quiet, Refined, Tasteful",
     "type": "cocktail",
         "lat": "40.7108795",
     "lon": "-73.9677352",
@@ -3161,7 +3161,7 @@
   },
   {
     "name": "Sauced",
-    "vibe": "Cozy, Spacious, Wine Bar, Outdoor Patio, DJ",
+    "vibe": "Cozy, Spacious, Wine Bar, Outdoor Patio, DJ, Breezy, Relaxed, Ambient, Modern, Social",
     "type": ["wine bar", "patio"],
         "lat": "40.71263565",
     "lon": "-73.9622739",
@@ -3204,7 +3204,7 @@
   },
   {
     "name": "Ponyboy",
-    "vibe": "Hip, Dance floor, Lively, Social, Disco Ball, DJ",
+    "vibe": "Hip, Dance Floor, Lively, Social, Disco Ball, DJ, Rowdy, Electric, Flashy, Exciting",
     "type": ["club", "dj"],
         "lat": "40.7239657",
     "lon": "-73.9507806",
@@ -3247,7 +3247,7 @@
   },
   {
     "name": "Twins Lounge",
-    "vibe": "Relaxed, Intimate, Neighborhood Bar, Pool Table, Upstairs Patio, Photo Booth",
+    "vibe": "Relaxed, Intimate, Neighborhood Bar, Pool Table, Upstairs Patio, Photo Booth, Nostalgic, Comfortable, Local",
     "type": ["bar", "patio", "cocktail"],
         "lat": "40.7263236",
     "lon": "-73.95193139",
@@ -3290,7 +3290,7 @@
   },
   {
     "name": "Hotel Delmano",
-    "vibe": "Cocktails, Intimate, Date Spot, People Watch",
+    "vibe": "Cocktails, Intimate, Date Spot, People Watch, Vintage, Refined, Quiet, Old-School, Charming, Elegant",
     "type": "cocktail",
         "lat": "40.7197084",
     "lon": "-73.9580192",
@@ -3333,7 +3333,7 @@
   },
   {
     "name": "Studio 151",
-    "vibe": "Hidden, Cozy, Vinyl, Sushi, DJ",
+    "vibe": "Hidden, Cozy, Vinyl, Sushi, DJ, Niche, Serene, Stylish, Understated, Trendy",
     "type": ["speakeasy", "cocktail", "dj"],
         "lat": "40.7256585",
     "lon": "-73.9780286",
@@ -3376,7 +3376,7 @@
   },
   {
     "name": "Joyface",
-    "vibe": "Lively, Disco Ball, Throwback Music, Social, Dance",
+    "vibe": "Lively, Disco Ball, Throwback Music, Social, Dance, Retro, Energetic, Flashy, Fun, Uplifting",
     "type": ["club", "dj"],
         "lat": "40.723859",
     "lon": "-73.9787539",
@@ -3419,7 +3419,7 @@
   },
   {
     "name": "Fresh Kills Bar",
-    "vibe": "Creative, Cocktails, Laid-Back, Date Spot",
+    "vibe": "Creative, Cocktails, Laid-Back, Date Spot, Artistic, Eclectic, Chill, Cozy, Unique, Trendy",
     "type": "cocktail",
         "lat": "40.7147822",
     "lon": "-73.9615254",
@@ -3462,7 +3462,7 @@
   },
   {
     "name": "Bar Blondeau",
-    "vibe": "Chic, Rooftop, Skyline Views, Cocktails",
+    "vibe": "Chic, Rooftop, Skyline Views, Cocktails, Elegant, Scenic, Sophisticated, Breezy, Polished, Urban",
     "type": ["cocktail", "rooftop"],
         "lat": "40.7219036",
     "lon": "-73.9580608",
@@ -3505,7 +3505,7 @@
   },
   {
     "name": "Night of Joy",
-    "vibe": "Chill, Rooftop, Neighborhood Bar, Cozy",
+    "vibe": "Chill, Rooftop, Neighborhood Bar, Cozy, Laid-Back, Urban, Sweet, Quiet, Inviting, Warm",
     "type": ["bar", "rooftop", "cocktail"],
         "lat": "40.7169821",
     "lon": "-73.9499766",
@@ -3548,7 +3548,7 @@
   },
   {
     "name": "PPL",
-    "vibe": "Relaxed, Coffee, Plant-Filled",
+    "vibe": "Relaxed, Coffee, Plant-Filled, Green, Calm, Quiet, Tranquil, Cozy, Fresh, Casual",
     "type": "coffee",
         "lat": "40.712872",
     "lon": "-73.958497",
@@ -3591,7 +3591,7 @@
   },
   {
     "name": "Barano",
-    "vibe": "Sunday Dinner, Italian, Outdoor Seating, View",
+    "vibe": "Sunday Dinner, Italian, Outdoor Seating, View, Spacious, Sunlit, Rustic, Charming, Green, Warm",
     "type": "dinner",
         "lat": "40.7105655",
     "lon": "-73.96788",
@@ -3634,7 +3634,7 @@
   },
   {
     "name": "Pollyn",
-    "vibe": "Artistic, Eclectic, Plant-Filled",
+    "vibe": "Artistic, Eclectic, Plant-Filled, Creative, Bohemian, Whimsical, Colorful, Inviting, Green, Unique",
     "type": ["garden", "coffee"],
         "lat": "40.7104488",
     "lon": "-73.9644726",
@@ -3677,7 +3677,7 @@
   },
   {
     "name": "Fan Fried Rice Bar",
-    "vibe": "Fun, Taiwanese, Creative, Asian, Comfort Food, Projector",
+    "vibe": "Fun, Taiwanese, Creative, Asian, Comfort Food, Projector, Quirky, Bright, Playful, Bold",
     "type": "dinner",
         "lat": "40.712665",
     "lon": "-73.9607387",
@@ -3720,7 +3720,7 @@
   },
   {
     "name": "Casa Magazines",
-    "vibe": "Vintage, Cozy, Magazines, Newspaper",
+    "vibe": "Vintage, Cozy, Magazines, Newspaper, Nostalgic, Laid-Back, Quiet, Retro, Reflective",
     "type": ["bookstore", "random gem", "lifestyle"],
         "lat": "40.737675",
     "lon": "-74.0044663",
@@ -3763,7 +3763,7 @@
   },
   {
     "name": "Café-Flor / Bar 21",
-    "vibe": "Plants, Coffee, Cozy, Lo-Fi",
+    "vibe": "Plants, Coffee, Cozy, Lo‑Fi, Calm, Quaint, Green, Relaxed, Intimate",
     "type": ["coffee", "cocktail"],
         "lat": "40.744122",
     "lon": "-73.99921644",
@@ -3806,7 +3806,7 @@
   },
   {
     "name": "Frevo",
-    "vibe": "Hidden, Art, Gallery, Sophisticated, Brazilian, Chef's Counter, Dining",
+    "vibe": "Hidden, Art, Gallery, Sophisticated, Brazilian, Chef’s Counter, Dining, Elegant, Creative, Curated, Stylish, Refined",
     "type": "dinner",
         "lat": "40.73449485",
     "lon": "-73.99520423",
@@ -3849,7 +3849,7 @@
   },
   {
     "name": "Au Cheval",
-    "vibe": "Trendy, Hip, American, Diner, Craft Cocktails",
+    "vibe": "Trendy, Hip, American, Diner, Craft Cocktails, Bold, Retro, Upbeat, Nostalgic, Chic",
     "type": ["dinner", "cocktail"],
         "lat": "40.7180421",
     "lon": "-74.0019638",
@@ -3892,7 +3892,7 @@
   },
   {
     "name": "Casa Mono",
-    "vibe": "Upscale, Michelin-Star, Wine, Intimate, Spanish, Tapas",
+    "vibe": "Upscale, Michelin‑Star, Wine, Intimate, Spanish, Tapas, Elegant, Refined, Lush, Romantic, Elevated",
     "type": ["lunch", "dinner"],
         "lat": "40.7359257",
     "lon": "-73.9871655",
@@ -3935,7 +3935,7 @@
   },
   {
     "name": "Ampersand",
-    "vibe": "Chic, Warm, Cocktails, Neighborhood Bar, Date Spot",
+    "vibe": "Chic, Warm, Cocktails, Neighborhood Bar, Date Spot, Inviting, Stylish, Mellow, Sociable, Glow",
     "type": "cocktail",
         "lat": "40.7386819",
     "lon": "-73.9834817",
@@ -3978,7 +3978,7 @@
   },
   {
     "name": "Cherry on Top",
-    "vibe": "Cozy, Natural Wine, Rooftop",
+    "vibe": "Cozy, Natural Wine, Rooftop, Airy, Sunset‑Ready, Soft, Intimate, Radiant",
     "type": ["wine bar", "rooftop"],
         "lat": "40.7049007",
     "lon": "-73.92135392",
@@ -4021,7 +4021,7 @@
   },
   {
     "name": "Close Up",
-    "vibe": "Jazz, Live Music, Intimate, Vibrant",
+    "vibe": "Jazz, Live Music, Intimate, Vibrant, Soulful, Lively, Sophisticated, Warm, Engaging",
     "type": "music",
         "lat": "40.72079935",
     "lon": "-73.9886623",
@@ -4064,7 +4064,7 @@
   },
   {
     "name": "The Noguchi Museum",
-    "vibe": "Artistic, Serene, Japanese, Cultural, Sculpture",
+    "vibe": "Artistic, Serene, Japanese, Cultural, Sculpture, Meditative, Minimalist, Peaceful, Reflective, Pure",
     "type": "gallery",
         "lat": "40.76699005",
     "lon": "-73.93760723",
@@ -4107,7 +4107,7 @@
   },
   {
     "name": "SculptureCenter",
-    "vibe": "Artistic, Sculpture, Contemporary",
+    "vibe": "Artistic, Sculpture, Contemporary, Bold, Monolithic, Curatorial, Modern, Thought-Provoking",
     "type": "gallery",
         "lat": "40.7469077",
     "lon": "-73.9408643",
@@ -4150,7 +4150,7 @@
   },
   {
     "name": "Glenn Marlowe Sculpture Studio and Gallery",
-    "vibe": "Artistic, Creative, Gallery, Sculpture",
+    "vibe": "Artistic, Creative, Gallery, Sculpture, Imaginative, Unique, Inspiring, Craft, Visionary",
     "type": "gallery",
         "lat": "40.7496655",
     "lon": "-73.9494444",
@@ -4193,7 +4193,7 @@
   },
   {
     "name": "Salon 94",
-    "vibe": "Upscale, Contemporary, Artistic, Gallery, Aesthetic",
+    "vibe": "Upscale, Contemporary, Artistic, Gallery, Aesthetic, Polished, Stylish, Trendy, Elegant, Designer",
     "type": "gallery",
         "lat": "40.78344811",
     "lon": "-73.95873594",
@@ -4236,7 +4236,7 @@
   },
   {
     "name": "APPARATUS",
-    "vibe": "Sophisticated, Design-focused, Aesthetic, Showroom",
+    "vibe": "Sophisticated, Design‑focused, Aesthetic, Showroom, Sleek, Minimalist, Curated, Neutral, Modern",
     "type": "gallery",
         "lat": "40.7476547",
     "lon": "-73.9907793",
@@ -4279,7 +4279,7 @@
   },
   {
     "name": "Yan's Antique Jewelry Inc.",
-    "vibe": "Elegant, Vintage, Watches, Jewelry",
+    "vibe": "Elegant, Vintage, Watches, Jewelry, Timeless, Crafted, Collectible, Refined, Heritage",
     "type": ["random gem", "lifestyle"],
         "lat": "40.7149056",
     "lon": "-73.998684",
@@ -4322,7 +4322,7 @@
   },
   {
     "name": "Magic Jewelry",
-    "vibe": "Mystical, Aura Photo, Crystals Unique, Jewelry, Date Idea",
+    "vibe": "Mystical, Aura Photo, Crystals, Unique, Jewelry, Date Idea, Ethereal, Sparkly, Enchanting, Dreamlike, Magical",
     "type": "random gem",
         "lat": "40.71807671",
     "lon": "-74.00019657",
@@ -4365,7 +4365,7 @@
   },
   {
     "name": "Philip Williams Posters",
-    "vibe": "Artistic, Vintage, Posters, Collectibles, Creative",
+    "vibe": "Artistic, Vintage, Posters, Collectibles, Creative, Graphic, Retro, Textured, Iconic, Nostalgic",
     "type": "random gem",
         "lat": "40.7149888",
     "lon": "-74.00890916",
@@ -4408,7 +4408,7 @@
   },
   {
     "name": "Westsider Rare & Used Books Inc.",
-    "vibe": "Cozy, Rare Finds, Books",
+    "vibe": "Cozy, Rare Finds, Books, Quiet, Curated, Historic, Intellectual",
     "type": "bookstore",
         "lat": "40.7846803",
     "lon": "-73.9790284",
@@ -4451,7 +4451,7 @@
   },
   {
     "name": "niconeco zakkaya",
-    "vibe": "Stationary, Whimsical, Japanese, Unique, Gifts",
+    "vibe": "Stationary, Whimsical, Japanese, Unique, Gifts, Playful, Charming, Quirky, Delightful, Crafted",
     "type": "random gem",
         "lat": "40.7284229",
     "lon": "-73.9833099",
@@ -4494,7 +4494,7 @@
   },
   {
     "name": "Bungee Space",
-    "vibe": "Artistic, Creative, Magazines, Art Books, Hidden Gem, Coffee, Unique",
+    "vibe": "Artistic, Creative, Magazines, Art Books, Hidden Gem, Coffee, Unique, Bohemian, Eclectic, Nurturing, Tucked‑In, Cultured",
     "type": ["random gem", "coffee"],
         "lat": "40.7224818",
     "lon": "-73.9923162",
@@ -4537,7 +4537,7 @@
   },
   {
     "name": "Brandy Library",
-    "vibe": "Sophisticated, Cozy, Whiskey, Spirits",
+    "vibe": "Sophisticated, Cozy, Whiskey, Spirits, Moody, Elegant, Low‑Lit, Cultured, Lounge",
     "type": "cocktail",
         "lat": "40.7199472",
     "lon": "-74.007213",
@@ -4580,7 +4580,7 @@
   },
   {
     "name": "Cafe Erzulie",
-    "vibe": "Cozy, Jazz, Hip, Live Music, Social, Dance, Laid-Back",
+    "vibe": "Cozy, Jazz, Hip, Live Music, Social, Dance, Laid‑Back, Rhythmic, Cool, Warm, Soulful, Expressive",
     "type": ["music", "bar"],
         "lat": "40.6978902",
     "lon": "-73.9371547",
@@ -4623,7 +4623,7 @@
   },
   {
     "name": "Mr. Melo",
-    "vibe": "Listening Bar, DJ, Vinyl, Relaxed, Lounge, Cocktails",
+    "vibe": "Listening Bar, DJ, Vinyl, Relaxed, Lounge, Cocktails, Retro, Vinyl‑Rich, Chill, Groovy, Smooth",
     "type": ["bar", "lounge"],
         "lat": "40.7169978",
     "lon": "-73.9501191",
@@ -4666,7 +4666,7 @@
   },
   {
     "name": "Nem's Japandi Bistro",
-    "vibe": "Minimalist, Smoothie, Brunch, Japanese, Outdoor Seating",
+    "vibe": "Minimalist, Smoothie, Brunch, Japanese, Outdoor Seating, Zen, Light, Clean, Fresh, Calm",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7189664",
     "lon": "-73.9612431",
@@ -4709,7 +4709,7 @@
   },
   {
     "name": "Milk & Roses",
-    "vibe": "Cozy, Rustic, Intimate, Bistro, Outdoor Patio, Jazz Nights",
+    "vibe": "Cozy, Rustic, Intimate, Bistro, Outdoor Patio, Jazz Nights, Warm, Homestyle, Sunset, Breezy, Charming",
     "type": ["brunch", "patio", "dinner", "cocktail"],
         "lat": "40.737425",
     "lon": "-73.9550647",
@@ -4752,7 +4752,7 @@
   },
   {
     "name": "Tula House",
-    "vibe": "Cactus, Plant, Garden, Home Décor",
+    "vibe": "Cactus, Plant, Garden, Home Décor, Green, Botanical, Tranquil, Artsy, Nurturing",
     "type": "random gem",
         "lat": "40.7263995",
     "lon": "-73.95507429",
@@ -4795,7 +4795,7 @@
   },
   {
     "name": "Death & Co East Village",
-    "vibe": "Dimly Lit, Intimate, Moody, Craft Cocktails, Lively",
+    "vibe": "Dimly Lit, Intimate, Moody, Craft Cocktails, Lively, Sultry, Refined, Hidden, Elegant, Dramatic",
     "type": "cocktail",
         "lat": "40.725936",
     "lon": "-73.98465537",
@@ -4838,7 +4838,7 @@
   },
   {
     "name": "Midnight Blue",
-    "vibe": "Intimate, Jazz, Cocktails, Whiskey, Live Music",
+    "vibe": "Intimate, Jazz, Cocktails, Whiskey, Live Music, Smoky, Smooth, Classic, Nighttime, Soulful",
     "type": "music",
         "lat": "40.7371981",
     "lon": "-73.9874568",
@@ -4881,7 +4881,7 @@
   },
   {
     "name": "The Office of Mr. Moto",
-    "vibe": "Speakeasy, Hidden Gem, Japanese, Gallery, Cocktails",
+    "vibe": "Speakeasy, Hidden Gem, Japanese, Gallery, Cocktails, Secret, Curated, Artful, Quiet, Sleek",
     "type": ["speakeasy", "dinner"],
         "lat": "40.7268131",
     "lon": "-73.984036",
@@ -4924,7 +4924,7 @@
   },
   {
     "name": "Jones Street Wine Bar & Chefs Tasting Counter",
-    "vibe": "Cozy, intimate, Natural Wine, Wine Tasting",
+    "vibe": "Cozy, Intimate, Natural Wine, Wine Tasting, Earthy, Refined, Savoring, Chic, Floral",
     "type": "wine bar",
         "lat": "40.72618255",
     "lon": "-73.98427166",
@@ -4967,7 +4967,7 @@
   },
   {
     "name": "A-1 Record Shop",
-    "vibe": "Classic, Large Collection, Vinyl",
+    "vibe": "Classic, Large Collection, Vinyl, Analog, Retro, Nostalgic, Curated, Music‑Lover",
     "type": ["random gem", "lifestyle"],
         "lat": "40.7257903",
     "lon": "-73.9844558",
@@ -5010,7 +5010,7 @@
   },
   {
     "name": "The Lot Radio",
-    "vibe": "Hip, DJ, Radio Station, Outdoors, Beer",
+    "vibe": "Hip, DJ, Radio Station, Outdoors, Beer, Urban, Vibrant, Open‑Air, Community, Chill",
     "type": ["music", "patio", "bar", "dj"],
         "lat": "40.722668",
     "lon": "-73.954374",
@@ -5053,7 +5053,7 @@
   },
   {
     "name": "Rule of Thirds",
-    "vibe": "Artistic, Cozy, Creative, Brunch, Group Dinner, Japanese",
+    "vibe": "Artistic, Cozy, Creative, Brunch, Group Dinner, Japanese, Whimsical, Bright, Social, Fusion, Inviting",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7247377",
     "lon": "-73.9552053",
@@ -5100,7 +5100,7 @@
   },
   {
     "name": "The Met Cloisters",
-    "vibe": "Historic, Serene, Cultural, Art",
+    "vibe": "Historic, Serene, Cultural, Art, Monastic, Lush, Timeless, Iconic, Reflective",
     "type": "gallery",
         "lat": "40.8648684",
     "lon": "-73.9319228",
@@ -5143,7 +5143,7 @@
   },
   {
     "name": "Lexington Candy Shop",
-    "vibe": "Classic, Nostalgic, Retro, Diner",
+    "vibe": "Classic, Nostalgic, Retro, Diner, Timeless, Sweet, Local, Vintage, Charming",
     "type": ["breakfast", "lunch"],
         "lat": "40.7775102",
     "lon": "-73.9572158",
@@ -5186,7 +5186,7 @@
   },
   {
     "name": "Tsumo Omakase",
-    "vibe": "Intimate, Sushi, Omakase",
+    "vibe": "Intimate, Sushi, Omakase, Minimal, Precise, Luxe, Quiet, Refined",
     "type": "dinner",
         "lat": "40.74235215",
     "lon": "-73.9822272",
@@ -5248,7 +5248,7 @@
   },
   {
     "name": "Piccola Strada",
-    "vibe": "Cozy, BYOB, Hidden Gem, Sunday Dinner",
+    "vibe": "Cozy, BYOB (wine), Hidden Gem, Sunday Dinner, Hearty, Welcoming, Rustic, Family‑style, Comfortable",
     "type": "dinner",
         "lat": "40.7267074",
     "lon": "-73.9901283",
@@ -5291,7 +5291,7 @@
   },
   {
     "name": "Kam Man Market",
-    "vibe": "Traditional, Asian Market",
+    "vibe": "Traditional, Asian Market, Bustling, Fresh, Authentic, Colorful, Local",
     "type": ["random gem", "lunch"],
         "lat": "40.7168494",
     "lon": "-73.9983694",
@@ -5334,7 +5334,7 @@
   },
   {
     "name": "Kai Feng Fu Dumpling House",
-    "vibe": "Authentic, Casual, Dumplings",
+    "vibe": "Authentic, Casual, Dumplings, Savory, Comforting, Street‑wise, No‑frills, Welcoming",
     "type": "lunch",
         "lat": "40.64200185",
     "lon": "-74.00239612",
@@ -5377,7 +5377,7 @@
   },
   {
     "name": "Le Veau d'Or",
-    "vibe": "Elegant, French, Bistro, Old-School, Classic Dining",
+    "vibe": "Elegant, French, Bistro, Old-School, Classic Dining, Polished, Luxurious, Soft‑lit, Romantic, Refined",
     "type": ["lunch", "dinner"],
         "lat": "40.763157",
     "lon": "-73.968135",
@@ -5432,7 +5432,7 @@
   },
   {
     "name": "Cafe Regular",
-    "vibe": "Cozy, European, Neighborhood, Café",
+    "vibe": "Cozy, European, Neighborhood, Café, Simple, Warm, Local, Charming, Steady",
     "type": ["coffee", "breakfast"],
         "lat": "40.67509325",
     "lon": "-73.9755335",
@@ -5475,7 +5475,7 @@
   },
   {
     "name": "NBetween",
-    "vibe": "Chill, Vinyl, Relaxed, Hidden, Cocktails",
+    "vibe": "Chill, Vinyl, Relaxed, Hidden, Cocktails, Groovy, Low‑key, Niche",
     "type": "cocktail",
         "lat": "40.743558",
     "lon": "-73.979469",
@@ -5518,7 +5518,7 @@
   },
   {
     "name": "Craftsman Ave",
-    "vibe": "Creative, Rustic, Crafts, Date",
+    "vibe": "Creative, Rustic, Crafts, Date, Artistic, Handcrafted, Earthy, Warm, Inviting",
     "type": "random gem",
         "lat": "40.6711851",
     "lon": "-73.9937056",
@@ -5561,7 +5561,7 @@
   },
   {
     "name": "Untermyer Gardens",
-    "vibe": "Serene, Historic Gardens",
+    "vibe": "Serene, Historic Gardens, Peaceful, Scenic, Lush, Elegant, Tranquil",
     "type": "garden",
         "lat": "40.96599465",
     "lon": "-73.88601742",
@@ -5604,7 +5604,7 @@
   },
   {
     "name": "Dahing Plants",
-    "vibe": "Botanical, Plant Shop, Garden",
+    "vibe": "Botanical, Plant Shop, Garden, Green, Fresh, Growing, Nurturing, Secluded",
     "type": "random gem",
         "lat": "40.7175216",
     "lon": "-73.9924393",
@@ -5647,7 +5647,7 @@
   },
   {
     "name": "Bricolage",
-    "vibe": "Eclectic, Creative, Artsy, Vietnamese, French, Gastropub",
+    "vibe": "Eclectic, Creative, Artsy, Vietnamese, French, Gastropub, Fusion, Unique, Vibrant, Experimental, Crafty",
     "type": ["lunch", "dinner"],
         "lat": "40.6778967",
     "lon": "-73.9796265",
@@ -5712,7 +5712,7 @@
   },
   {
     "name": "The Bar at Café Kitsuné",
-    "vibe": "Chic, Minimalist, Vinyl, Cocktails",
+    "vibe": "Chic, Minimalist, Vinyl, Cocktails, Urban, Sleek, Rhythmic, Stylish, Hip",
     "type": "cocktail",
         "lat": "40.686585",
     "lon": "-73.985173",
@@ -5755,7 +5755,7 @@
   },
   {
     "name": "Public Records",
-    "vibe": "Upscale, Lounge, DJ, Dancing, Multiple Rooms, Hi-Fi",
+    "vibe": "Upscale, Lounge, DJ, Dancing, Multiple Rooms, Hi‑Fi, Modern, Stylish, Multi‑level, Nightlife",
     "type": ["club", "cocktail", "late-night"],
         "lat": "40.6821013",
     "lon": "-73.9865223",
@@ -5808,7 +5808,7 @@
   },
   {
     "name": "Casino",
-    "vibe": "Intimate, Date, Cocktails, Aesthetic, Trendy",
+    "vibe": "Intimate, Date, Cocktails, Aesthetic, Trendy, Romantic, Sleek, Plush, Chic, Mood-setting",
     "type": ["cocktail", "dinner"],
         "lat": "40.7139367",
     "lon": "-73.9896705",
@@ -5851,7 +5851,7 @@
   },
   {
     "name": "Bode Men’s",
-    "vibe": "Upscale, Trendy, Fashion, Aesthetic, Lifestyle",
+    "vibe": "Upscale, Trendy, Fashion, Aesthetic, Lifestyle, Polished, Curated, Stylish, Refined, Oversize",
     "type": "lifestyle",
         "lat": "40.715837",
     "lon": "-73.990996",
@@ -5894,7 +5894,7 @@
   },
   {
     "name": "Desert Vintage",
-    "vibe": "Unique, Curated, Vintage, Fashion, Aesthetic, Lifestyle",
+    "vibe": "Unique, Curated, Vintage, Fashion, Aesthetic, Lifestyle, Boho, Eclectic, Retro, Artful, Nostalgic",
     "type": "lifestyle",
         "lat": "40.71573925",
     "lon": "-73.9912318",
@@ -5937,7 +5937,7 @@
   },
   {
     "name": "Regina's Grocery",
-    "vibe": "Casual, Neighborhood Spot, Sandwich, Deli",
+    "vibe": "Casual, Neighborhood Spot, Sandwich, Deli, Wholesome, Local, Quaint, Laid‑back, Fresh",
     "type": "lunch",
         "lat": "40.7154868",
     "lon": "-73.9917005",
@@ -5980,7 +5980,7 @@
   },
   {
     "name": "TUMBAO",
-    "vibe": "Latin-inspired, Fashion, Vibe",
+    "vibe": "Latin‑inspired, Fashion, Vibe, Rhythmic, Bold, Colorful, Energetic, Streetwise",
     "type": "lifestyle",
         "lat": "40.7152638",
     "lon": "-73.991428",
@@ -6023,7 +6023,7 @@
   },
   {
     "name": "Sommwhere",
-    "vibe": "Pop-Up, Event Venue",
+    "vibe": "Pop‑Up, Event Venue, Immersive, Dynamic, Curated, Trendsetting, Experimental",
     "type": "random gem",
         "lat": "40.7162588",
     "lon": "-73.9902028",
@@ -6066,7 +6066,7 @@
   },
   {
     "name": "Old Friend Photobooth",
-    "vibe": "Fun, Quirky, Photo Booth",
+    "vibe": "Fun, Quirky, Photo Booth, Playful, Nostalgic, Flashy, Retro, Interactive",
     "type": "random gem",
         "lat": "40.7204819",
     "lon": "-73.9900143",
@@ -6109,7 +6109,7 @@
   },
   {
     "name": "The Little Shop",
-    "vibe": "Hidden, Speakeasy, Cocktails, Vinyl",
+    "vibe": "Hidden, Speakeasy, Cocktails, Vinyl, Secretive, Moody, Indie, Retro, Delicate",
     "type": "speakeasy",
         "lat": "40.7083307",
     "lon": "-74.00090579",
@@ -6152,7 +6152,7 @@
   },
   {
     "name": "Cellar 36",
-    "vibe": "Cozy, intimate, Natural Wine, Small Plates",
+    "vibe": "Cozy, Intimate, Natural Wine, Small Plates, Rustic, Romantic, Lush, Artisanal",
     "type": "wine bar",
         "lat": "40.71256495",
     "lon": "-73.99415102",
@@ -6195,7 +6195,7 @@
   },
   {
     "name": "the Ground",
-    "vibe": "Soccer, Casual, Sports, DJ",
+    "vibe": "Soccer, Casual, Sports, DJ, Energetic, Communal, Cheerful, Playful, Grassroots",
     "type": "random gem",
         "lat": "40.71209225",
     "lon": "-73.99373305",
@@ -6238,7 +6238,7 @@
   },
   {
     "name": "Amsterdam Billiards Club",
-    "vibe": "Lively, Social, Pool Tables, Bar",
+    "vibe": "Lively, Social, Pool Tables, Bar, Vintage, Gritty, Bold, No‑frills, Friendly",
     "type": ["bar", "activity"],
         "lat": "40.7317233",
     "lon": "-73.9898254",
@@ -6281,7 +6281,7 @@
   },
   {
     "name": "colbo",
-    "vibe": "Cozy, Coffee, Vinyl, Clothing, Lifestyle",
+    "vibe": "Cozy, Coffee, Vinyl, Clothing, Lifestyle, Trendy, Hip, Textural, Local, Artisanal",
     "type": ["coffee", "lifestyle", "dj"],
         "lat": "40.7165595",
     "lon": "-73.9912397",
@@ -6324,7 +6324,7 @@
   },
   {
     "name": "tearoom by calmplex",
-    "vibe": "Calm, Minimalist, Japanese, Tea",
+    "vibe": "Calm, Minimalist, Japanese, Tea, Serene, Meditative, Zen, Refined, Soft",
     "type": "tea",
         "lat": "40.7555061",
     "lon": "-73.96942222",
@@ -6367,7 +6367,7 @@
   },
   {
     "name": "St Jardim",
-    "vibe": "Cozy, Brunch Spot, Coffee, Natural Wine, Bar",
+    "vibe": "Cozy, Brunch Spot, Coffee, Natural Wine, Bar, Sunny, Rustic, Nourishing, Low‑key, Artisan",
     "type": ["coffee", "wine bar", "brunch"],
         "lat": "40.7343755",
     "lon": "-74.0028479",
@@ -6410,7 +6410,7 @@
   },
   {
     "name": "renewfinds",
-    "vibe": "Eclectic, Curated, Vintage",
+    "vibe": "Eclectic, Curated, Vintage, Upcycled, Funky, Quirky, Sustainable, One‑of‑a‑kind",
     "type": "random gem",
         "lat": "40.7274515",
     "lon": "-73.95784981",
@@ -6453,7 +6453,7 @@
   },
   {
     "name": "Bury Your Dead Downwind",
-    "vibe": "Artistic, Display, Furniture, Aesthetic",
+    "vibe": "Artistic, Display, Furniture, Aesthetic, Crafted, Raw, Inspired, Avant‑garde, Understated",
     "type": "lifestyle",
         "lat": "40.7194984",
     "lon": "-74.0002831",
@@ -6496,7 +6496,7 @@
   },
   {
     "name": "Paquita",
-    "vibe": "Cozy, intimate, Tea, Coffee, Plants",
+    "vibe": "Cozy, Intimate, Tea, Coffee, Plants, Botanical, Homey, Relaxing, Whisper‑soft, Green",
     "type": ["tea", "coffee"],
         "lat": "40.7336769",
     "lon": "-74.0057112",
@@ -6539,7 +6539,7 @@
   },
   {
     "name": "Bar Orai",
-    "vibe": "Speakeasy, Vinyl, Soul, Japanese, Whiskey, DJ",
+    "vibe": "Speakeasy, Vinyl, Soul, Japanese, Whiskey, DJ, Understated, Urban, Smooth, Comfortable, Hip",
     "type": ["speakeasy", "dj"],
         "lat": "40.75658145",
     "lon": "-73.96929948",
@@ -6582,7 +6582,7 @@
   },
   {
     "name": "Sake Bar Asoko",
-    "vibe": "Intimate, Japanese, Cozy, Sake, Retro Video Games",
+    "vibe": "Intimate, Japanese, Cozy, Sake, Retro Video Games, Nostalgic, Arcady, Retro, Playful, Underground",
     "type": "speakeasy",
         "lat": "40.7136931",
     "lon": "-73.99196929",
@@ -6625,7 +6625,7 @@
   },
   {
     "name": "Mezzrow",
-    "vibe": "Intimate, Live Music, Jazz, Bar",
+    "vibe": "Intimate, Live Music, Jazz, Bar, Smoky, Classic, Soulful, Warm, Nightcap",
     "type": "music",
         "lat": "40.7345395",
     "lon": "-74.0018374",
@@ -6668,7 +6668,7 @@
   },
   {
     "name": "Sun at Six Gallery",
-    "vibe": "Artistic, Furniture, Contemporary, Showroom, By Appointment",
+    "vibe": "Artistic, Furniture, Contemporary, Showroom, By Appointment, Clean, Modernist, Bright, Curated",
     "type": "gallery",
         "lat": "40.6742921",
     "lon": "-73.96260438",
@@ -6711,7 +6711,7 @@
   },
   {
     "name": "Quarters",
-    "vibe": "Cozy, Warm, Wine, Aesthetic, Hidden, Showroom",
+    "vibe": "Cozy, Warm, Wine, Aesthetic, Hidden, Showroom, Chic, Subtle, Designer, Ambient",
     "type": ["wine bar", "gallery"],
         "lat": "40.71821778",
     "lon": "-74.00301211",
@@ -6754,7 +6754,7 @@
   },
   {
     "name": "Sullaluna",
-    "vibe": "Charming, Cozy, Bookshop, Italian Bistro",
+    "vibe": "Charming, Cozy, Bookshop, Italian Bistro, Warm, Inviting, Literary, Sunny, Relaxed",
     "type": ["dinner", "bookstore"],
         "lat": "40.73018045",
     "lon": "-74.00362275",
@@ -6797,7 +6797,7 @@
   },
   {
     "name": "Parcelle Chinatown",
-    "vibe": "Casual, Wine, Date, Trendy, Outdoor Seating",
+    "vibe": "Casual, Wine, Date, Trendy, Outdoor Seating, Laid-Back, Chic, Breezy, Local, Stylish",
     "type": "wine bar",
         "lat": "40.71437695",
     "lon": "-73.9911555",
@@ -6840,7 +6840,7 @@
   },
   {
     "name": "Mao Mao",
-    "vibe": "Retro, Thai, Cinema, Fun Date, Lively, Cool",
+    "vibe": "Retro, Thai, Cinema, Fun Date, Lively, Cool, Playful, Neon, Energetic, Quirky, Vintage",
     "type": "dinner",
         "lat": "40.695805",
     "lon": "-73.9334721",
@@ -6883,7 +6883,7 @@
   },
   {
     "name": "Damballa",
-    "vibe": "Relaxed, Cool, Creative Cocktails, Hip, Vinyl, Dance",
+    "vibe": "Relaxed, Cool, Creative Cocktails, Hip, Vinyl, Dance, Bohemian, Funky, Rhythmic, Artistic, Nightly",
     "type": "cocktail",
         "lat": "40.69811855",
     "lon": "-73.93688719",
@@ -6926,7 +6926,7 @@
   },
   {
     "name": "Lévy Gorvy Dayan",
-    "vibe": "High-End, Contemporary, Art Gallery, Aesthetic",
+    "vibe": "High-End, Contemporary, Art Gallery, Aesthetic, Polished, Curated, Elegant, Modern, Refined",
     "type": "gallery",
         "lat": "40.767004",
     "lon": "-73.9693969",
@@ -6969,7 +6969,7 @@
   },
   {
     "name": "Dream Fishing Tackle",
-    "vibe": "Vintage, Furniture, Artistic, Quirky, Records",
+    "vibe": "Vintage, Furniture, Artistic, Quirky, Records, Crafty, Nostalgic, Offbeat, Eclectic, Authentically-Retro",
     "type": "random gem",
         "lat": "40.7250097",
     "lon": "-73.953394",
@@ -7012,7 +7012,7 @@
   },
   {
     "name": "Silence Please",
-    "vibe": "Café, Hi-Fi, Listening Room, Tea House, Spacious",
+    "vibe": "Café, Hi-Fi, Listening Room, Tea House, Spacious, Serene, Intimate, Quiet, Audio, Minimalist",
     "type": ["tea", "music"],
         "lat": "40.7189289",
     "lon": "-73.9948154",
@@ -7055,7 +7055,7 @@
   },
   {
     "name": "le gaz",
-    "vibe": "Relaxed, Hip, Coffee, DJ",
+    "vibe": "Relaxed, Hip, Coffee, DJ, Weekend, Ambient, Smooth, Urban, Chill",
     "type": "coffee",
         "lat": "40.7150483",
     "lon": "-73.9919913",
@@ -7098,7 +7098,7 @@
   },
   {
     "name": "Chess Forum",
-    "vibe": "Classic, Games, Backgammon and Chess",
+    "vibe": "Classic, Games, Backgammon, Chess, Strategic, Nostalgic, Brainy, Casual, Timeless",
     "type": ["random gem", "activity"],
         "lat": "40.7291544",
     "lon": "-73.9992134",
@@ -7141,7 +7141,7 @@
   },
   {
     "name": "Early Terrible [New York City]",
-    "vibe": "Cocktails, Sophisticated, Welcoming, Girls Night Out, Disco Ball",
+    "vibe": "Cocktails, Sophisticated, Welcoming, Girls Night Out, Disco Ball, Glam, Glitter, Social, Inclusive, Upbeat",
     "type": "cocktail",
         "lat": "40.71951196",
     "lon": "-73.99459486",
@@ -7184,7 +7184,7 @@
   },
   {
     "name": "Elvis",
-    "vibe": "French, Chic, Cozy, Wine Bar, Outdoor Seating",
+    "vibe": "French, Chic, Cozy, Wine Bar, Outdoor Seating, Romantic, Elegant, Quaint, Midnight, Refined",
     "type": "wine bar",
         "lat": "40.7267174",
     "lon": "-73.9921853",
@@ -7227,7 +7227,7 @@
   },
   {
     "name": "High Valley Books",
-    "vibe": "Vintage, Books, Coffee Table Gems, Hidden, By Appointment",
+    "vibe": "Vintage, Books, Coffee Table Gems, Hidden, Quiet, Magazine, Niche, Rustic, Curated, By Appointment",
     "type": "bookstore",
         "lat": "40.7229711",
     "lon": "-73.95114043",
@@ -7270,7 +7270,7 @@
   },
   {
     "name": "Ed’s Elbow Room",
-    "vibe": "Cozy, Comfort Food, Sunday Dinner",
+    "vibe": "Cozy, Comfort Food, Sunday Dinner, Classic, Homey, Friendly, Warm, Casual",
     "type": "dinner",
         "lat": "40.7723172",
     "lon": "-73.9550167",
@@ -7313,7 +7313,7 @@
   },
   {
     "name": "la milagrosa",
-    "vibe": "Speakeasy, Hidden Gem, Nightlife, DJ",
+    "vibe": "Speakeasy, Hidden Gem, Nightlife, DJ, Mysterious, Lush, Rhythmic, Nocturnal, Underground",
     "type": ["speakeasy", "late-night"],
         "lat": "40.7117087",
     "lon": "-73.9573417",
@@ -7356,7 +7356,7 @@
   },
   {
     "name": "Film Noir Cinema",
-    "vibe": "Indie, Film, Intimate, Cinema",
+    "vibe": "Indie, Film, Intimate, Cinema, Moody, Retro, Deep, Distracted, Nostalgic",
     "type": "random gem",
         "lat": "40.7273136",
     "lon": "-73.951608",
@@ -7399,7 +7399,7 @@
   },
   {
     "name": "Pearlbox",
-    "vibe": "Cozy, intimate, Stylish, Hidden, Aesthetic",
+    "vibe": "Cozy, Intimate, Stylish, Hidden, Aesthetic, Boutique, Chic, Velvet, Ambient, Refined",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.72289975",
     "lon": "-74.00298799",
@@ -7442,7 +7442,7 @@
   },
   {
     "name": "We Got Company",
-    "vibe": "Cocktails, Date, Intimate, Creative",
+    "vibe": "Cocktails, Date, Intimate, Creative, Cultured, Artistic, Thoughtful, Ambient, Romantic",
     "type": "cocktail",
         "lat": "40.7141936",
     "lon": "-73.9539085",
@@ -7485,7 +7485,7 @@
   },
   {
     "name": "Oxomoco",
-    "vibe": "Trendy, Mexican-Inspired, Modern dining, Michelin Star",
+    "vibe": "Trendy, Mexican‑Inspired, Modern Dining, Michelin Star, Vibrant, Fresh, Bold, Innovative, Elevated",
     "type": ["lunch", "dinner"],
         "lat": "40.72977",
     "lon": "-73.95546035",
@@ -7528,7 +7528,7 @@
   },
   {
     "name": "Frog",
-    "vibe": "Artsy, Eclectic, Natural Wine Bar, Outdoor Area",
+    "vibe": "Artsy, Eclectic, Natural Wine Bar, Outdoor Area, Bohemian, Relaxed, Green, Experimental, Local",
     "type": ["wine bar", "patio"],
         "lat": "40.6848704",
     "lon": "-73.9385509",
@@ -7571,7 +7571,7 @@
   },
   {
     "name": "Apotheke Chinatown",
-    "vibe": "Experimental Cocktail, Speakeasy, Social",
+    "vibe": "Experimental Cocktail, Speakeasy, Social, Hypnotic, Avant-Garde, Mysterious, Chic, Urban",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.7144",
     "lon": "-73.999818",
@@ -7614,7 +7614,7 @@
   },
   {
     "name": "Patent Pending",
-    "vibe": "Speakeasy, Moody, Creative Cocktails",
+    "vibe": "Speakeasy, Moody, Creative Cocktails, Introspective, Bold, Artistic, Dramatic, Stylish",
     "type": "speakeasy",
         "lat": "40.7453222",
     "lon": "-73.9902716",
@@ -7657,7 +7657,7 @@
   },
   {
     "name": "Wilfie & Nell",
-    "vibe": "Cozy, Rustic, Neighborhood Bar",
+    "vibe": "Cozy, Rustic, Neighborhood Bar, Warm, Familiar, Welcoming, Rooted, Friendly",
     "type": "bar",
         "lat": "40.734068",
     "lon": "-74.0030242",
@@ -7700,7 +7700,7 @@
   },
   {
     "name": "Rosecrans Cafe & Wine Bar",
-    "vibe": "Coffee, Chic, Cozy Café, Flowers, Wine",
+    "vibe": "Coffee, Chic, Cozy Café, Flowers, Wine, Inviting, Floral, Mellow, Quaint, Relaxed",
     "type": "coffee",
         "lat": "40.7341712",
     "lon": "-73.9998463",
@@ -7743,7 +7743,7 @@
   },
   {
     "name": "Sunshine Laundromat",
-    "vibe": "Hidden Gem, Casual, Arcade Bar",
+    "vibe": "Hidden Gem, Casual, Arcade Bar, Playful, Nostalgic, Quirky, Low‑Key, Fun",
     "type": "random gem",
         "lat": "40.7292851",
     "lon": "-73.953737",
@@ -7786,7 +7786,7 @@
   },
   {
     "name": "Gran Torino",
-    "vibe": "Dining, Italian-inspired, Outdoor Seating, Bar",
+    "vibe": "Dining, Italian‑inspired, Outdoor Seating, Bar, Hearty, Sunny, Communal, Rustic, Welcoming",
     "type": ["lunch", "dinner", "patio"],
         "lat": "40.7183923",
     "lon": "-73.9588733",
@@ -7829,7 +7829,7 @@
   },
   {
     "name": "Cafe Balearica",
-    "vibe": "Disco Ball, Cocktails, Dancing, DJ, Social, Nightlife",
+    "vibe": "Disco Ball, Cocktails, Salsa Dancing, DJ, Social, Nightlife, Festive, Rhythmic, Wild, Colorful, Lively",
     "type": "club",
         "lat": "40.7210681",
     "lon": "-73.9567687",
@@ -7872,7 +7872,7 @@
   },
   {
     "name": "Juliette Restaurant",
-    "vibe": "Rooftop, French Dining, Date Spot, Wine",
+    "vibe": "Rooftop, French Dining, Date Spot, Wine, Romantic, Elegant, Elevated, City‑Lit, Sunset",
     "type": ["lunch", "dinner", "rooftop"],
         "lat": "40.716997",
     "lon": "-73.9591501",
@@ -7915,7 +7915,7 @@
   },
   {
     "name": "MIDNIGHTS",
-    "vibe": "Back Patio, Intimate, Cocktails, Bar, DJ",
+    "vibe": "Back Patio, Intimate, Cocktails, Bar, DJ, Moody, Shadowed, Sultry, Music‑Driven",
     "type": ["cocktail", "patio", "dj"],
         "lat": "40.7174706",
     "lon": "-73.9584368",
@@ -7958,7 +7958,7 @@
   },
   {
     "name": "Skinny Dennis",
-    "vibe": "Country, Live Music, Dive Bar, Outdoor Seating",
+    "vibe": "Country, Live Music, Dive Bar, Outdoor Seating, Rustic, Loud, Laid‑Back, Authentic, Barefoot",
     "type": ["music", "bar"],
         "lat": "40.7158872",
     "lon": "-73.9621335",
@@ -8001,7 +8001,7 @@
   },
   {
     "name": "Pokito",
-    "vibe": "Casual, Caribbean-Inspired, Vibrant, Cocktails",
+    "vibe": "Casual, Caribbean‑Inspired, Vibrant, Cocktails, Bright, Tropic, Lively, Warm, Relaxed",
     "type": "cocktail",
         "lat": "40.7116327",
     "lon": "-73.961939",
@@ -8044,7 +8044,7 @@
   },
   {
     "name": "MoMA PS1",
-    "vibe": "Artsy, Museum, Concert, Outdoor/Open-Air",
+    "vibe": "Artsy, Museum, Concert, Outdoor/Open‑Air, Dynamic, Cultural, Edgy, Expansive, Experimental",
     "type": "gallery",
         "lat": "40.745568",
     "lon": "-73.946913",
@@ -8087,7 +8087,7 @@
   },
   {
     "name": "Record Room",
-    "vibe": "Bar, Lounge, DJ, Cocktails, Vinyl",
+    "vibe": "Bar, Lounge, DJ, Cocktails, Vinyl, Smoky, Retro, Chill, Hip, Groovy",
     "type": ["lounge", "dj"],
         "lat": "40.74574039",
     "lon": "-73.9571733",
@@ -8130,8 +8130,8 @@
   },
   {
     "name": "Honeycomb Hi-Fi Lounge",
-    "vibe": "Vinyl, Sound Room, Hi-Fi, Cocktails, Bar",
-    "type": "cocktail",
+    "vibe": "Vinyl, Sound Room, Hi‑Fi, Cocktails, Textural, Immersive, Analog, Warm, Curated",
+    "type": ["cocktail", "lounge"],
         "lat": "40.6807473",
     "lon": "-73.9776796",
     "link": "https://www.instagram.com/thehoneycomb_bk/?hl=en",
@@ -8173,7 +8173,7 @@
   },
   {
     "name": "Rhodora Wine Bar",
-    "vibe": "Cozy, Intimate, Neighborhood Bar, Natural Wine",
+    "vibe": "Cozy, Intimate, Neighborhood Bar, Natural Wine, Earthy, Nuanced, Soft,Lush, Quiet",
     "type": "wine bar",
         "lat": "40.6917428",
     "lon": "-73.9714335",
@@ -8216,7 +8216,7 @@
   },
   {
     "name": "Bar Birba",
-    "vibe": "Wine, Pizza, Aperitif, Neighborhood Spot",
+    "vibe": "Wine, Pizza, Aperitif, Neighborhood Spot, Rustic, Casual, Friendly, Classic, Authentic",
     "type": "wine bar",
         "lat": "40.6874732",
     "lon": "-73.9570883",
@@ -8259,7 +8259,7 @@
   },
   {
     "name": "Entre Nous",
-    "vibe": "Sophisticated, French Small Plates, Natural Wine",
+    "vibe": "Sophisticated, French Small Plates, Natural Wine, Elegant, Cultured, Intimate, Refined, Tender",
     "type": "wine bar",
         "lat": "40.6879326",
     "lon": "-73.962875",
@@ -8302,7 +8302,7 @@
   },
   {
     "name": "Anaïs",
-    "vibe": "Casual, Natural Wine, Books, Outdoor Seating",
+    "vibe": "Casual, Natural Wine, Books, Outdoor Seating, Bookish, Breezy, Cozy, Reflective, Sunlit",
     "type": "wine bar",
         "lat": "40.6848831",
     "lon": "-73.9860837",
@@ -8345,7 +8345,7 @@
   },
   {
     "name": "Petit Paulette",
-    "vibe": "Cozy, Casual, French Bistro, Natural Wine, Outdoor Seating",
+    "vibe": "Cozy, Casual, French Bistro, Natural Wine, Outdoor Seating, Chic, Peaceful, Floral, Casual, Charming",
     "type": "wine bar",
         "lat": "40.689612",
     "lon": "-73.9757378",
@@ -8388,7 +8388,7 @@
   },
   {
     "name": "The Ten Bells Brooklyn",
-    "vibe": "Cozy, Wine, Oysters, Cocktails, Laid-Back",
+    "vibe": "Cozy, Wine, Oysters, Cocktails, Laid‑Back, Warm, Tactile, Comfortable, Rustic, Friendly",
     "type": "wine bar",
         "lat": "40.70467705",
     "lon": "-73.92385397",
@@ -8431,7 +8431,7 @@
   },
   {
     "name": "Bouquet",
-    "vibe": "Wine, Cozy, DJ, Social, Backyard Patio",
+    "vibe": "Wine, Cozy, DJ, Social, Backyard Patio, Romantic, Casual, Nostalgic, Soft",
     "type": ["wine bar", "patio"],
         "lat": "40.73538615",
     "lon": "-73.9553597",
@@ -8474,7 +8474,7 @@
   },
   {
     "name": "Diamond Lil",
-    "vibe": "Dive bar, Cocktails, Neighborhood Gem, Backyard Patio, Date Spot",
+    "vibe": "Dive Bar, Cocktails, Neighborhood Gem, Backyard Patio, Date Spot, Gritty, Casual, Neon, Charming, Local",
     "type": ["cocktail", "patio"],
         "lat": "40.725437",
     "lon": "-73.946085",
@@ -8517,7 +8517,7 @@
   },
   {
     "name": "Heaven & Earth",
-    "vibe": "Chill, Neighborhood Bar, Natural Wine, Small Plates, Pop Ups",
+    "vibe": "Chill, Neighborhood Bar, Natural Wine, Small Plates, Earthy, Community, Minimalist, Seasonal, Serene",
     "type": "wine bar",
         "lat": "40.7260331",
     "lon": "-73.9391293",
@@ -8560,7 +8560,7 @@
   },
   {
     "name": "BABA on Withers",
-    "vibe": "Hidden Gem, Cozy, Creative Cocktails, Wine",
+    "vibe": "Hidden Gem, Cozy, Creative Cocktails, Wine, Intimate, Inventive, Low-Key, Artsy",
     "type": ["wine bar", "patio"],
         "lat": "40.717003",
     "lon": "-73.95074",
@@ -8603,7 +8603,7 @@
   },
   {
     "name": "Plus de Vin",
-    "vibe": "Cozy, Wine, Rustic, Back Patio",
+    "vibe": "Cozy, Wine, Rustic, Back Patio, Sun-Dappled, French-Inspired, Laid-Back, Vintage, Welcoming",
     "type": ["wine bar", "patio"],
         "lat": "40.7185124",
     "lon": "-73.9451974",
