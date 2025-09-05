@@ -314,7 +314,7 @@
         "lat": "40.7219458",
     "lon": "-73.9924678",
     "link": "https://www.instagram.com/freemansrestaurant/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Freemans.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:00 AM–10:00 PM",
@@ -1236,7 +1236,7 @@
         "lat": "40.7298408",
     "lon": "-73.95978875",
     "link": "https://www.instagram.com/el_pinguino_greenpoint/?hl=en",
-    "cover": "",
+    "cover": "img/venues/El Pingüino.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–12:00 AM",
@@ -1324,7 +1324,7 @@
         "lat": "40.7424861",
     "lon": "-73.99034942",
     "link": "https://www.instagram.com/experimentalcocktailclubnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Experimental Cocktail Club.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–12:00 AM",
@@ -3502,7 +3502,7 @@
         "lat": "40.7147822",
     "lon": "-73.9615254",
     "link": "https://www.instagram.com/freshkillsbar/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Fresh Kills Bar.JPG",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–1:00 AM",
@@ -3766,7 +3766,7 @@
         "lat": "40.712665",
     "lon": "-73.9607387",
     "link": "https://www.instagram.com/fanfriedricebar/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Fan Fried Rice Bar.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–10:00 PM",
@@ -3898,7 +3898,7 @@
         "lat": "40.73449485",
     "lon": "-73.99520423",
     "link": "https://www.instagram.com/frevonyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Frevo.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -7309,7 +7309,7 @@
         "lat": "40.71951196",
     "lon": "-73.99459486",
     "link": "https://www.instagram.com/earlyterriblenyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Early Terrible New York City.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–2:00 AM",
@@ -7353,7 +7353,7 @@
         "lat": "40.7267174",
     "lon": "-73.9921853",
     "link": "https://www.instagram.com/elvisgreatjones/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Elvis.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 2:00 PM–10:00 PM",
@@ -7441,7 +7441,7 @@
         "lat": "40.7723172",
     "lon": "-73.9550167",
     "link": "https://www.instagram.com/edselbowroomnyc/",
-    "cover": "",
+    "cover": "img/venues/Ed’s Elbow Room.jpeg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–10:30 PM",
@@ -7529,7 +7529,7 @@
         "lat": "40.7273136",
     "lon": "-73.951608",
     "link": "https://www.instagram.com/filmnoircinema/",
-    "cover": "",
+    "cover": "img/venues/Film Noir Cinema.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: ",
@@ -7705,7 +7705,7 @@
         "lat": "40.6848704",
     "lon": "-73.9385509",
     "link": "https://www.instagram.com/frogwinebar/",
-    "cover": "",
+    "cover": "img/venues/Frog.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–12:00 AM",
@@ -8453,7 +8453,7 @@
         "lat": "40.6879326",
     "lon": "-73.962875",
     "link": "https://www.instagram.com/entrenous.bk/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Entre Nous.png",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–11:00 PM",
@@ -9377,7 +9377,7 @@
         "lat": "40.70947715",
     "lon": "-73.92323547",
     "link": "https://www.instagram.com/elsewherespace/",
-    "cover": "",
+    "cover": "img/venues/Elsewhere.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: ",
@@ -9641,7 +9641,7 @@
         "lat": "40.71951185",
     "lon": "-73.99353903",
     "link": "https://www.instagram.com/fig19nyc/",
-    "cover": "",
+    "cover": "img/venues/Fig. 19.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 6:00 PM–1:00 AM",
@@ -10653,7 +10653,7 @@
         "lat": "40.757618",
     "lon": "-73.975533",
     "link": "https://www.instagram.com/edengallery/",
-    "cover": "",
+    "cover": "img/venues/EDEN (Eden Gallery) - SoHo.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–9:00 PM",
@@ -11005,7 +11005,7 @@
         "lat": "40.73341965",
     "lon": "-74.00984088",
     "link": "https://www.instagram.com/elikleingallery/",
-    "cover": "",
+    "cover": "img/venues/Eli Klein Gallery.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -13827,7 +13827,7 @@
         "lat": "40.7545577",
     "lon": "-74.00200571",
     "link": "https://www.instagram.com/electriclemonnyc/",
-    "cover": "",
+    "cover": "img/venues/Electric Lemon.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–3:00 PM; 5:00 PM–10:00 PM",
@@ -14758,7 +14758,7 @@
         "lat": "40.7262314",
     "lon": "-73.9900046",
     "link": "https://www.instagram.com/ellafunt.nyc/",
-    "cover": "",
+    "cover": "img/venues/Ella Funt.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -15334,7 +15334,7 @@
         "lat": "40.6902868",
     "lon": "-73.99534426",
     "link": "https://www.instagram.com/elsabarnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Elsa.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–11:00 PM",
@@ -15806,7 +15806,7 @@
         "lat": "40.6902212",
     "lon": "-73.9070274",
     "link": "https://www.instagram.com/fathersbk/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Father Knows Best.png",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–12:00 AM",
@@ -17258,7 +17258,7 @@
         "lat": "40.6913475",
     "lon": "-73.9734488",
     "link": "https://www.instagram.com/grownyc_brooklyn/?g=5",
-    "cover": "",
+    "cover": "img/venues/Fort Greene Park Greenmarket.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -19194,7 +19194,7 @@
         "lat": "40.7145615",
     "lon": "-73.9425485",
     "link": "https://www.instagram.com/easyloverbk/",
-    "cover": "",
+    "cover": "img/venues/Easy Lover.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–2:00 AM",
@@ -20119,7 +20119,7 @@
         "lat": "40.7191201",
     "lon": "-73.9431975",
     "link": "https://www.instagram.com/fourfivesixbkny/",
-    "cover": "",
+    "cover": "img/venues/FourFiveSix.png",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–2:00 AM",
@@ -22143,7 +22143,7 @@
         "lat": "40.720326",
     "lon": "-73.995084",
     "link": "https://www.instagram.com/elizabethstreetgarden/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Elizabeth Street Garden.JPG",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–8:00 PM",
@@ -22519,7 +22519,7 @@
         "lat": "40.7464921",
     "lon": "-73.9515404",
     "link": "https://www.instagram.com/fifthhammerbeer/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Fifth Hammer Brewing Company.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–11:00 PM",
@@ -23060,7 +23060,7 @@
         "lat": 40.7134723,
     "lon": -73.9618052,
     "link": "https://www.instagram.com/finipizza/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Fini Pizza.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 12:00 PM–10:00 PM",
@@ -23105,7 +23105,7 @@
         "lat": 40.7216246,
     "lon": -73.9998097,
     "link": "https://www.instagram.com/fasttimescoffee/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Fast Times.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 8:00 AM–5:00 PM",
@@ -23785,7 +23785,7 @@
         "lat": 40.7033361,
     "lon": -74.0085763,
     "link": "https://www.instagram.com/explore/locations/1450209791737170/the-elevated-acre/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Elevated Acre.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 7:00 AM–10:00 PM",
@@ -24325,7 +24325,7 @@
         "lat": 40.7188471,
     "lon": -73.9492531,
     "link": "https://www.instagram.com/fandimatabklyn/",
-    "cover": "",
+    "cover": "img/venues/Fandi Mata.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 11:00 AM–11:00 PM",
@@ -24505,7 +24505,7 @@
         "lat": 40.723611,
     "lon": -74.010487,
     "link": "https://www.instagram.com/fouquets.newyork/",
-    "cover": "",
+    "cover": "img/venues/Élysée's.jpg",
     "openNow": true,
     "hours": [
       "Sunday: Closed",
@@ -24730,7 +24730,7 @@
     "lat": 40.735914,
     "lon": -74.0016986,
     "link": "https://www.instagram.com/fellinicoffee/",
-    "cover": "",
+    "cover": "img/venues/Fellini Cucina.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 8:00 AM–10:00 PM",
@@ -24775,7 +24775,7 @@
     "lat": 40.7259694,
     "lon": -74.00157,
     "link": "https://www.instagram.com/fellinicoffee/",
-    "cover": "",
+    "cover": "img/venues/Fellini Coffee Soho.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 8:00 AM–8:00 PM",
@@ -25540,7 +25540,7 @@
     "lat": 40.7275726,
     "lon": -74.0079097,
     "link": "https://www.instagram.com/theearinn/",
-    "cover": "",
+    "cover": "img/venues/Ear Inn.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 11:30 PM–4:00 AM",
@@ -25946,7 +25946,7 @@
     "lat": 40.719774,
     "lon": -73.992294,
     "link": "https://www.instagram.com/eckhaus_latta/",
-    "cover": "",
+    "cover": "img/venues/Eckhaus Latta.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 12:00 PM–7:00 PM",
@@ -27161,7 +27161,7 @@
     "lat": 40.6890824,
     "lon": -73.9570607,
     "link": "https://www.instagram.com/fanfandoughuts/",
-    "cover": "",
+    "cover": "img/venues/Fan Fan Doughnuts.jpeg",
     "openNow": true,
     "hours": [
       "Sunday: 9:00 AM–6:00 PM",
@@ -27761,7 +27761,7 @@
     "lat": 40.6772305,
     "lon": -73.9981372,
     "link": "https://www.instagram.com/fandfpizza/",
-    "cover": "",
+    "cover": "img/venues/F&F Restaurant and Bar.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 4:00 PM–10:00 PM",
@@ -29000,7 +29000,7 @@
     "lat": "40.714811",
     "lon": "-74.015811",
     "link": "https://www.instagram.com/elveznyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/El Vez and Burrito Bar.jpeg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 11:00 AM–10:00 PM",
@@ -29184,7 +29184,7 @@
     "lat": "40.71224115",
     "lon": "-73.95596088",
     "link": "https://www.instagram.com/fredsdoghousebk/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Fred's Dog House.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 6:00 PM–1:00 AM",
@@ -29736,7 +29736,7 @@
     "lat": "40.734351",
     "lon": "-74.0031358",
     "link": "https://www.instagram.com/fairfaxnyc/",
-    "cover": "",
+    "cover": "img/venues/Fairfax.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 9:30 AM–10:00 PM",
@@ -31300,7 +31300,7 @@
     "lat": "40.7159389",
     "lon": "-73.9875609",
     "link": "https://www.instagram.com/francoisghebaly/?hl=en",
-    "cover": "",
+    "cover": "img/venues/François Ghebaly New York.jpeg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
@@ -31438,7 +31438,7 @@
     "lat": "40.6914322",
     "lon": "-73.975246",
     "link": "https://www.instagram.com/fortgreenepark/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Fort Greene Park.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 6:00 AM–1:00 AM",
