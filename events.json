@@ -182,7 +182,7 @@
         "lat": "40.7207453",
     "lon": "-73.9993515",
     "link": "https://www.instagram.com/saturdaysnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Saturdays NYC Crosby St.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–6:00 PM",
@@ -578,7 +578,7 @@
         "lat": "40.7484928",
     "lon": "-73.9390719",
     "link": "https://www.instagram.com/redsorghumlic/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Red Sorghum.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:30 AM–10:00 PM",
@@ -622,7 +622,7 @@
         "lat": "40.6856132",
     "lon": "-73.9858591",
     "link": "https://www.instagram.com/rucolanyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Rucola.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–3:30 PM; 5:00 PM–10:30 PM",
@@ -864,7 +864,7 @@
         "lat": "40.7724775",
     "lon": "-73.9554399",
     "link": "https://www.instagram.com/nightlysnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Nightly's.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:30 AM–2:45 PM; 4:00 PM–11:45 PM",
@@ -1984,7 +1984,7 @@
         "lat": "40.7279209",
     "lon": "-74.0013375",
     "link": "https://www.instagram.com/peperossotogo/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Pepe Rosso.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–10:00 PM",
@@ -2248,7 +2248,7 @@
         "lat": "40.7292871",
     "lon": "-73.9877312",
     "link": "https://www.instagram.com/sakebar.decibel/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Sake Bar Decibel.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–5:00 PM",
@@ -2292,7 +2292,7 @@
         "lat": "40.7273101",
     "lon": "-74.0025925",
     "link": "https://www.instagram.com/rakunyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Raku.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–10:00 PM",
@@ -2468,7 +2468,7 @@
         "lat": "40.7141481",
     "lon": "-73.96014",
     "link": "https://www.instagram.com/samuraimama_bk/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Samurai Mama.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–3:45 PM; 5:00 PM–10:00 PM",
@@ -2666,7 +2666,7 @@
         "lat": "40.6955322",
     "lon": "-73.9320225",
     "link": "https://www.instagram.com/ornithologyjazzclub/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Ornithology Jazz Club.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 6:00 PM–2:00 AM",
@@ -2930,7 +2930,7 @@
         "lat": "40.726959",
     "lon": "-73.984037",
     "link": "https://www.instagram.com/romeosnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Romeos.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 2:00 PM–2:00 AM",
@@ -3106,7 +3106,7 @@
         "lat": "40.7130756",
     "lon": "-73.9572969",
     "link": "https://www.instagram.com/everybodyiknowcanbefoundhere/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Nightmoves.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: ",
@@ -3150,7 +3150,7 @@
         "lat": "40.7167708",
     "lon": "-73.9615252",
     "link": "https://www.instagram.com/radegasthall/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Radegast Hall & Biergarten.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–1:00 AM",
@@ -3238,7 +3238,7 @@
         "lat": "40.71263565",
     "lon": "-73.9622739",
     "link": "https://www.instagram.com/saucedbklyn/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Sauced bk.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–12:00 AM",
@@ -3590,7 +3590,7 @@
         "lat": "40.7169821",
     "lon": "-73.9499766",
     "link": "https://www.instagram.com/nightofjoy/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Night of Joy.JPG",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–2:00 AM",
@@ -3634,7 +3634,7 @@
         "lat": "40.712872",
     "lon": "-73.958497",
     "link": "https://www.instagram.com/pplnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/PPL.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–4:00 PM",
@@ -3722,7 +3722,7 @@
         "lat": "40.7104488",
     "lon": "-73.9644726",
     "link": "https://www.instagram.com/pollyn.nyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Pollyn.JPG",
     "openNow": "TRUE",
     "hours": [
     "Sunday: ",
@@ -4294,7 +4294,7 @@
         "lat": "40.78344811",
     "lon": "-73.95873594",
     "link": "https://www.instagram.com/salon94/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Salon 94.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -4470,7 +4470,7 @@
         "lat": "40.7149888",
     "lon": "-74.00890916",
     "link": "https://www.instagram.com/postermuseum/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Philip Williams Posters.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -4778,7 +4778,7 @@
         "lat": "40.7189664",
     "lon": "-73.9612431",
     "link": "https://www.instagram.com/nemsbistro/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Nem's Japandi Bistro.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:30 AM–9:00 PM",
@@ -5174,7 +5174,7 @@
         "lat": "40.7247377",
     "lon": "-73.9552053",
     "link": "https://www.instagram.com/thirdsbk/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Rule of Thirds.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:00 AM–1:30 PM",
@@ -5373,7 +5373,7 @@
         "lat": "40.7267074",
     "lon": "-73.9901283",
     "link": "https://www.instagram.com/piccolastrada4thstreet/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Piccola Strada.JPG",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:30 PM–9:30 PM",
@@ -5605,7 +5605,7 @@
         "lat": "40.743558",
     "lon": "-73.979469",
     "link": "https://www.instagram.com/nbetween.bar/?hl=en",
-    "cover": "",
+    "cover": "img/venues/NBetween.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–11:00 PM",
@@ -5891,7 +5891,7 @@
         "lat": "40.6821013",
     "lon": "-73.9865223",
     "link": "https://www.instagram.com/publicrecordsnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Public Records.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:00 AM–9:00 PM",
@@ -6077,7 +6077,7 @@
         "lat": "40.7154868",
     "lon": "-73.9917005",
     "link": "https://www.instagram.com/reginasgrocery/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Regina's Grocery.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:00 AM–6:00 PM",
@@ -6209,7 +6209,7 @@
         "lat": "40.7204819",
     "lon": "-73.9900143",
     "link": "https://www.instagram.com/oldfriendphotobooth/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Old Friend Photobooth.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:00 AM–10:00 PM",
@@ -6649,7 +6649,7 @@
         "lat": "40.7336769",
     "lon": "-74.0057112",
     "link": "https://www.instagram.com/paquita.nyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Paquita.jpeg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–8:00 PM",
@@ -6737,7 +6737,7 @@
         "lat": "40.7136931",
     "lon": "-73.99196929",
     "link": "https://www.instagram.com/sakebarasoko/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Sake Bar Asoko.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -6869,7 +6869,7 @@
         "lat": "40.71821778",
     "lon": "-74.00301211",
     "link": "https://www.instagram.com/shopquarters/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Quarters.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -6957,7 +6957,7 @@
         "lat": "40.71437695",
     "lon": "-73.9911555",
     "link": "https://www.instagram.com/parcellewine/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Parcelle Chinatown.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–9:30 PM",
@@ -7573,7 +7573,7 @@
         "lat": "40.72289975",
     "lon": "-74.00298799",
     "link": "https://www.instagram.com/pearlboxnyc/",
-    "cover": "",
+    "cover": "img/venues/Pearlbox.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–9:00 PM",
@@ -7661,7 +7661,7 @@
         "lat": "40.72977",
     "lon": "-73.95546035",
     "link": "https://www.instagram.com/_oxomoco_/",
-    "cover": "",
+    "cover": "img/venues/Oxomoco.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–3:00 PM; 5:30 PM–10:00 PM",
@@ -7793,7 +7793,7 @@
         "lat": "40.7453222",
     "lon": "-73.9902716",
     "link": "https://www.instagram.com/patentpendingnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Patent Pending.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–12:00 AM",
@@ -7881,7 +7881,7 @@
         "lat": "40.7341712",
     "lon": "-73.9998463",
     "link": "https://www.instagram.com/rosecrans/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Rosecrans Cafe & Wine Bar.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–10:00 PM",
@@ -8189,7 +8189,7 @@
         "lat": "40.7116327",
     "lon": "-73.961939",
     "link": "https://www.instagram.com/pokitobrooklyn/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Pokito.JPG",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–12:00 AM",
@@ -8277,7 +8277,7 @@
         "lat": "40.74574039",
     "lon": "-73.9571733",
     "link": "https://www.instagram.com/recordroom/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Record Room.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 6:00 PM–12:00 AM",
@@ -8365,7 +8365,7 @@
         "lat": "40.6917428",
     "lon": "-73.9714335",
     "link": "https://www.instagram.com/rhodora_wine_bar/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Rhodora Wine Bar.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 1:00 PM–11:00 PM",
@@ -8541,7 +8541,7 @@
         "lat": "40.689612",
     "lon": "-73.9757378",
     "link": "https://www.instagram.com/petitpaulettebk/",
-    "cover": "",
+    "cover": "img/venues/Petit Paulette.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–11:00 PM",
@@ -8805,7 +8805,7 @@
         "lat": "40.7185124",
     "lon": "-73.9451974",
     "link": "https://www.instagram.com/pdvnyc/",
-    "cover": "",
+    "cover": "img/venues/Plus de Vin.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 1:00 PM–10:00 PM",
@@ -8893,7 +8893,7 @@
         "lat": "40.7148899",
     "lon": "-73.9542821",
     "link": "https://www.instagram.com/pinkertonbk/",
-    "cover": "",
+    "cover": "img/venues/Pinkerton Wine Bar.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 1:00 PM–11:00 PM",
@@ -8937,7 +8937,7 @@
         "lat": "40.7254538",
     "lon": "-73.99029434",
     "link": "https://www.instagram.com/sauced.nyc/",
-    "cover": "",
+    "cover": "img/venues/Sauced mht.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–12:00 AM",
@@ -9025,7 +9025,7 @@
         "lat": "40.7264",
     "lon": "-73.984114",
     "link": "https://www.instagram.com/ruffian_nyc/",
-    "cover": "",
+    "cover": "img/venues/Ruffian.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–11:00 PM",
@@ -9465,7 +9465,7 @@
         "lat": "40.71463863",
     "lon": "-73.94413785",
     "link": "https://www.instagram.com/pleasetellmebk/",
-    "cover": "",
+    "cover": "img/venues/Please Tell Me.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–12:00 AM",
@@ -9553,7 +9553,7 @@
         "lat": "40.723034",
     "lon": "-73.9920355",
     "link": "https://www.instagram.com/publichotels/",
-    "cover": "",
+    "cover": "img/venues/PUBLIC Hotel.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–2:00 AM",
@@ -9597,7 +9597,7 @@
         "lat": "40.7212174",
     "lon": "-73.9924737",
     "link": "https://www.instagram.com/raysbarnyc/",
-    "cover": "",
+    "cover": "img/venues/Ray’s mht.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 1:00 PM–2:00 AM",
@@ -9817,7 +9817,7 @@
         "lat": "40.7196475",
     "lon": "-73.9884561",
     "link": "https://www.instagram.com/ramenishida/",
-    "cover": "",
+    "cover": "img/venues/Ramen Ishida.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -9949,7 +9949,7 @@
         "lat": "40.7387302",
     "lon": "-73.9945926",
     "link": "https://www.instagram.com/raineslawroom/",
-    "cover": "",
+    "cover": "img/venues/Raines Law Room Chelsea.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–1:00 AM",
@@ -10389,7 +10389,7 @@
         "lat": "40.73015835",
     "lon": "-73.96001608",
     "link": "https://www.instagram.com/rhythmzeronyc/",
-    "cover": "",
+    "cover": "img/venues/RHYTHM ZERO gp.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–4:00 PM",
@@ -10829,7 +10829,7 @@
         "lat": "40.7495759",
     "lon": "-74.0049685",
     "link": "https://www.instagram.com/pacegallery/",
-    "cover": "",
+    "cover": "img/venues/Pace Gallery.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -11093,7 +11093,7 @@
         "lat": "40.7196517",
     "lon": "-73.9892959",
     "link": "https://www.instagram.com/perrotin/",
-    "cover": "",
+    "cover": "img/venues/PERROTIN NEW YORK.png",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -11357,7 +11357,7 @@
         "lat": "40.6936542",
     "lon": "-73.9984656",
     "link": "https://www.instagram.com/riverdelibrooklyn/",
-    "cover": "",
+    "cover": "img/venues/River Deli.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:30 AM–4:00 PM; 5:00 PM–10:00 PM",
@@ -11665,7 +11665,7 @@
         "lat": "40.7592111",
     "lon": "-73.9804982",
     "link": "https://www.instagram.com/pebblebarnyc/",
-    "cover": "",
+    "cover": "img/venues/Pebble Bar.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -13021,7 +13021,7 @@
         "lat": "40.718348",
     "lon": "-74.00214",
     "link": "https://www.instagram.com/sainttuesday_nyc/",
-    "cover": "",
+    "cover": "img/venues/Saint Tuesday.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 6:00 PM–12:00 AM",
@@ -13197,7 +13197,7 @@
         "lat": "40.7246593",
     "lon": "-73.9537088",
     "link": "https://www.instagram.com/nurabrooklyn/",
-    "cover": "",
+    "cover": "img/venues/NURA.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–2:30 PM; 5–9:00 PM",
@@ -13475,7 +13475,7 @@
         "lat": "40.7371073",
     "lon": "-73.9549709",
     "link": "https://www.instagram.com/nr_nyc/",
-    "cover": "",
+    "cover": "img/venues/NR.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–10:00 PM",
@@ -13563,7 +13563,7 @@
         "lat": "40.7271211",
     "lon": "-73.983769",
     "link": "https://www.instagram.com/pdtnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Please Don't Tell.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–2:00 AM",
@@ -13783,7 +13783,7 @@
         "lat": "40.7016806",
     "lon": "-73.9231726",
     "link": "https://www.instagram.com/palmetto_bk/",
-    "cover": "",
+    "cover": "img/venues/Palmetto.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–2:00 AM",
@@ -14443,7 +14443,7 @@
         "lat": "40.6928669",
     "lon": "-73.9016974",
     "link": "https://www.instagram.com/nowadaysnyc/",
-    "cover": "",
+    "cover": "img/venues/Nowadays.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–10:00 PM",
@@ -14670,7 +14670,7 @@
         "lat": "40.76172155",
     "lon": "-73.9601005",
     "link": "https://www.instagram.com/explore/locations/362855481/roys-fish-market/",
-    "cover": "",
+    "cover": "img/venues/Roy's Fish Market.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:00 AM–7:00 PM",
@@ -15202,7 +15202,7 @@
         "lat": "40.6908713",
     "lon": "-73.99573195",
     "link": "https://www.instagram.com/pipsbrooklyn/?hl=en",
-    "cover": "",
+    "cover": "img/venues/PIPS.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -15378,7 +15378,7 @@
         "lat": "40.6878828",
     "lon": "-73.995709",
     "link": "https://www.instagram.com/saintjulivertbk/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Saint Julivert.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–9:30 PM",
@@ -15466,7 +15466,7 @@
         "lat": "40.7533299",
     "lon": "-73.966171",
     "link": "https://www.instagram.com/opheliany/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Ophelia Lounge NYC.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–11:00 PM",
@@ -15938,7 +15938,7 @@
         "lat": "40.7050062",
     "lon": "-73.9335894",
     "link": "https://www.instagram.com/robertaspizza/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Roberta's.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–10:00 PM",
@@ -16070,7 +16070,7 @@
         "lat": "40.72707645",
     "lon": "-73.95230534",
     "link": "https://www.instagram.com/razorntape/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Razor-N-Tape.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–6:00 PM",
@@ -16158,7 +16158,7 @@
         "lat": "40.7139355",
     "lon": "-73.952822",
     "link": "https://www.instagram.com/rockarolla_bk/",
-    "cover": "",
+    "cover": "img/venues/Rocka Rolla.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–4:00 AM",
@@ -16290,7 +16290,7 @@
         "lat": "40.7235334",
     "lon": "-73.9518146",
     "link": "https://www.instagram.com/raysbarbk/",
-    "cover": "",
+    "cover": "img/venues/Ray's Hometown Bar-gp.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–1:00 AM",
@@ -16686,7 +16686,7 @@
         "lat": "40.7283593",
     "lon": "-73.9571898",
     "link": "https://www.instagram.com/pauliegees_sliceshop/",
-    "cover": "",
+    "cover": "img/venues/Paulie Gee's Slice Shop.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:30 AM–10:00 PM",
@@ -16994,7 +16994,7 @@
         "lat": "40.7121091",
     "lon": "-73.9640587",
     "link": "https://www.instagram.com/sessiontraining_/",
-    "cover": "",
+    "cover": "img/venues/SESSION TRAINING.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:30 AM–3:00 PM",
@@ -17786,7 +17786,7 @@
         "lat": "40.72533265",
     "lon": "-73.98322251",
     "link": "https://www.instagram.com/pineappleclubnyc/",
-    "cover": "",
+    "cover": "img/venues/Pineapple Club.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–10:00 PM",
@@ -18182,7 +18182,7 @@
         "lat": "40.7143305",
     "lon": "-73.9611864",
     "link": "https://www.instagram.com/puerh_brooklyn_teashop/",
-    "cover": "",
+    "cover": "img/venues/Puerh Brooklyn teashop.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–6:00 PM",
@@ -18226,7 +18226,7 @@
         "lat": "40.7135282",
     "lon": "-73.95938374",
     "link": "https://www.instagram.com/patiotropicalnyc/",
-    "cover": "",
+    "cover": "img/venues/Patio Tropical.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–5:00 PM",
@@ -18270,7 +18270,7 @@
         "lat": "40.7181021",
     "lon": "-73.9501774",
     "link": "https://www.instagram.com/petescandystore/",
-    "cover": "",
+    "cover": "img/venues/Pete's Candy Store.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–2:00 AM",
@@ -18402,7 +18402,7 @@
         "lat": "40.736665",
     "lon": "-73.958064",
     "link": "https://www.instagram.com/nerinanyc/",
-    "cover": "",
+    "cover": "img/venues/Nerina.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–9:00 PM",
@@ -18622,7 +18622,7 @@
         "lat": "40.7168987",
     "lon": "-73.9652375",
     "link": "https://www.instagram.com/pallynyc/",
-    "cover": "",
+    "cover": "img/venues/Pally.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–10:00 PM",
@@ -18666,7 +18666,7 @@
         "lat": "40.72593",
     "lon": "-73.949881",
     "link": "https://www.instagram.com/panpanbrooklyn/",
-    "cover": "",
+    "cover": "img/venues/Pan Pan.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–3:00 PM",
@@ -19238,7 +19238,7 @@
         "lat": "40.6867938",
     "lon": "-73.9662119",
     "link": "https://www.instagram.com/primabrooklyn/",
-    "cover": "",
+    "cover": "img/venues/Prima Brooklyn.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–4:00 PM",
@@ -19723,7 +19723,7 @@
         "lat": "40.7331707",
     "lon": "-73.9936418",
     "link": "https://www.instagram.com/reservoirny/",
-    "cover": "",
+    "cover": "img/venues/Reservoir.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–2:00 AM",
@@ -19987,7 +19987,7 @@
         "lat": "40.7161422",
     "lon": "-73.9620296",
     "link": "https://www.instagram.com/reforesters.io/",
-    "cover": "",
+    "cover": "img/venues/Reforesters Laboratory.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–8:00 PM",
@@ -20251,7 +20251,7 @@
         "lat": "40.7169763",
     "lon": "-73.9546566",
     "link": "https://www.instagram.com/roeblingnyc/",
-    "cover": "",
+    "cover": "img/venues/Roebling Sporting Club.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–1:00 AM",
@@ -20515,7 +20515,7 @@
         "lat": "40.74262675",
     "lon": "-73.95438051",
     "link": "https://www.instagram.com/onthe7lic/",
-    "cover": "",
+    "cover": "img/venues/On The 7.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–11:00 PM",
@@ -20911,7 +20911,7 @@
         "lat": "40.7317717",
     "lon": "-73.98283928",
     "link": "https://www.instagram.com/ohanlonsbarnyc/",
-    "cover": "",
+    "cover": "img/venues/O'Hanlon's.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–4:00 AM",
@@ -21615,7 +21615,7 @@
         "lat": "40.714274",
     "lon": "-73.95596384",
     "link": "https://www.instagram.com/rudemouthbk/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Rude Mouth.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–10:00 PM",
@@ -21703,7 +21703,7 @@
         "lat": "40.676984",
     "lon": "-74.01425526",
     "link": "https://www.instagram.com/santokkistudio/?hl=en",
-    "cover": "",
+    "cover": "img/venues/San Tokki Studio.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -22475,7 +22475,7 @@
         "lat": "40.7471977",
     "lon": "-73.9549525",
     "link": "https://www.instagram.com/rockawaybrewco/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Rockaway Brewing Company.jpeg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–9:00 PM",
@@ -22609,7 +22609,7 @@
         "lat": 40.701737,
     "lon": -73.9195609,
     "link": "https://www.instagram.com/saintjameslibations/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Saint James Libations.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 5:00 PM–12:00 AM",
@@ -23425,7 +23425,7 @@
         "lat": 40.6831425,
     "lon": -73.9170946,
     "link": "https://www.instagram.com/olmobk/",
-    "cover": "",
+    "cover": "img/venues/Olmo.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 5:30 PM–10:00 PM",
@@ -23695,7 +23695,7 @@
         "lat": 40.73843685,
     "lon": -73.98302223,
     "link": "https://www.instagram.com/pluguglies/",
-    "cover": "",
+    "cover": "img/venues/Plug Uglies.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 12:00 PM–4:00 AM",
@@ -24190,7 +24190,7 @@
         "lat": 40.6847429,
     "lon": -73.9949911,
     "link": "https://www.instagram.com/saturnroadnyc/",
-    "cover": "",
+    "cover": "img/venues/Saturn Road.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 8:00 AM–10:00 PM",
@@ -24235,7 +24235,7 @@
         "lat": 40.7125159,
     "lon": -73.9490142,
     "link": "https://www.instagram.com/rosemariebk/",
-    "cover": "",
+    "cover": "img/venues/Rose Marie.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 5:00 PM–12:00 AM",
@@ -24280,7 +24280,7 @@
         "lat": 40.7080782,
     "lon": -74.0020772,
     "link": "https://www.instagram.com/quicketernity_nyc/",
-    "cover": "",
+    "cover": "img/venues/Quick Eternity.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 2:00 PM–11:00 PM",
@@ -24415,7 +24415,7 @@
         "lat": 40.7295188,
     "lon": -73.95824479,
     "link": "https://www.instagram.com/newlovecity_/",
-    "cover": "",
+    "cover": "img/venues/New Love City.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 10:00 AM–8:00 PM",
@@ -24460,7 +24460,7 @@
         "lat": 40.7292924,
     "lon": -73.95735,
     "link": "https://www.instagram.com/ohmercycafe/",
-    "cover": "",
+    "cover": "img/venues/OH MERCY.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 8:00 AM–4:00 PM",
@@ -24595,7 +24595,7 @@
         "lat": 40.6961288,
     "lon": -73.934041,
     "link": "https://www.instagram.com/paragonbroadway/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Paragon.jpg",
     "openNow": true,
     "hours": [
       "Sunday Closed",
@@ -24640,7 +24640,7 @@
         "lat": 40.6806807,
     "lon": -74.0081971,
     "link": "https://www.instagram.com/pearlstreetcaviar/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Pearl Street Caviar.jpg",
     "openNow": true,
     "hours": [
       "Sunday: Closed",
@@ -24865,7 +24865,7 @@
     "lat": 40.7473764,
     "lon": -73.98740086,
     "link": "https://www.instagram.com/nazaroma3/",
-    "cover": "",
+    "cover": "img/venues/NAZ AROMA INC.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 9:00 AM–6:00 PM",
@@ -25585,7 +25585,7 @@
     "lat": 40.7303392,
     "lon": -74.0008879,
     "link": "https://www.instagram.com/roccosnyc/",
-    "cover": "",
+    "cover": "img/venues/Rocco's Sports & Rec.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 11:00 AM–1:00 AM",
@@ -25991,7 +25991,7 @@
     "lat": 40.721033,
     "lon": -73.994205,
     "link": "https://www.instagram.com/oldjewelrystore/",
-    "cover": "",
+    "cover": "img/venues/OLD JEWELRY STORE.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 12:00 PM–7:00 PM",
@@ -26216,7 +26216,7 @@
     "lat": 40.751135,
     "lon": -73.982927,
     "link": "https://www.instagram.com/rizzolibookstore/",
-    "cover": "",
+    "cover": "img/venues/Rizzoli Bookstore.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 11:00 AM–7:00 PM",
@@ -26711,7 +26711,7 @@
     "lat": 40.7174,
     "lon": -74.0111,
     "link": "https://www.instagram.com/primosnyc/",
-    "cover": "",
+    "cover": "img/venues/Primo's.jpg",
     "openNow": true,
     "hours": [
       "Sunday: Closed",
@@ -27296,7 +27296,7 @@
     "lat": 40.6868258,
     "lon": -73.9628829,
     "link": "https://www.instagram.com/placedesfetesbrooklyn/",
-    "cover": "",
+    "cover": "img/venues/Place des Fêtes.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 5:30 PM–10:00 PM",
@@ -27671,7 +27671,7 @@
     "lat": 40.6761949,
     "lon": -73.9991293,
     "link": "https://www.instagram.com/nerdbecoolnyc/",
-    "cover": "",
+    "cover": "img/venues/Nerd be cool.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 8:00 AM–4:30 PM",
@@ -27896,7 +27896,7 @@
     "lat": 40.676563,
     "lon": -73.993362,
     "link": "https://www.instagram.com/pklyncafe/",
-    "cover": "",
+    "cover": "img/venues/PKLYN.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 7:00 AM–11:00 PM",
@@ -28076,7 +28076,7 @@
     "lat": 40.6787343,
     "lon": -73.9832325,
     "link": "https://www.instagram.com/parklifebk/",
-    "cover": "",
+    "cover": "img/venues/Parklife.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 2:00 PM–9:00 PM",
@@ -28121,7 +28121,7 @@
     "lat": 40.6786376,
     "lon": -73.9869098,
     "link": "https://www.instagram.com/royalpalmsshuffle/",
-    "cover": "",
+    "cover": "img/venues/Royal Palms Shuffleboard Club Brooklyn.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 12:00 PM–10:00 PM",
@@ -28542,7 +28542,7 @@
     "lat": 40.676346,
     "lon": -73.9561648,
     "link": "https://www.instagram.com/rialtograndenyc/",
-    "cover": "",
+    "cover": "img/venues/Rialto Grande.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 4:00 PM–12:00 AM",
@@ -29322,7 +29322,7 @@
     "lat": "40.7219976",
     "lon": "-73.9922737",
     "link": "https://www.instagram.com/outerheaven.nyc/",
-    "cover": "",
+    "cover": "img/venues/Outer Heaven.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
@@ -29460,7 +29460,7 @@
     "lat": "40.7602575",
     "lon": "-73.9750532",
     "link": "https://www.instagram.com/explore/search/keyword/?q=paley%20park",
-    "cover": "",
+    "cover": "img/venues/Paley Park.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 8:00 AM–8:00 PM",
@@ -29690,7 +29690,7 @@
     "lat": "40.7358256",
     "lon": "-74.00747899",
     "link": "https://www.instagram.com/orient_express_bar/",
-    "cover": "",
+    "cover": "img/venues/Orient Express Cocktail Bar.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 3:00 PM–11:00 PM",
@@ -29873,8 +29873,8 @@
     "type": "coffee",
     "lat": "40.7332909",
     "lon": "-74.0043095",
-    "link": "https://www.instagram.com/rhythmzeronyc/",
-    "cover": "",
+    "link": "img/venues/RHYTHM ZERO | WEST VILLAGE.jpg",
+    "cover": "img/venues/RHYTHM ZERO gp.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 8:00 AM–4:00 PM",
@@ -30196,7 +30196,7 @@
     "lat": "40.7065765",
     "lon": "-74.0080763",
     "link": "https://www.instagram.com/overstory/",
-    "cover": "",
+    "cover": "img/venues/Overstory.png",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 4:00 PM–12:00 AM",
@@ -30334,7 +30334,7 @@
     "lat": "40.7299118",
     "lon": "-74.0008153",
     "link": "https://www.instagram.com/offthewagonnyc/",
-    "cover": "",
+    "cover": "img/venues/Off the Wagon.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 12:00 PM–4:00 AM",
@@ -30610,7 +30610,7 @@
     "lat": "40.7729328",
     "lon": "-73.9558793",
     "link": "https://www.instagram.com/pilpilnyc/",
-    "cover": "",
+    "cover": "img/venues/Pil Pil.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 11:00 AM–12:00 AM",
@@ -30886,7 +30886,7 @@
     "lat": "40.717639",
     "lon": "-74.003176",
     "link": "https://www.instagram.com/sargentsdaughters/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Sargent's Daughters.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
@@ -31024,7 +31024,7 @@
     "lat": "40.7465171",
     "lon": "-74.0068656",
     "link": "https://www.instagram.com/riccomaresca/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Ricco:Maresca Gallery.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
