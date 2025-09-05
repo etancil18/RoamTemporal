@@ -50,7 +50,7 @@
         "lat": "40.68121",
     "lon": "-73.957443",
     "link": "https://www.instagram.com/dorisbedstuy/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Doris.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–1:00 AM",
@@ -138,7 +138,7 @@
         "lat": "40.7027604",
     "lon": "-73.9205215",
     "link": "https://www.instagram.com/carmelosbushwick/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Carmelo’s.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–4:00 AM",
@@ -402,7 +402,7 @@
         "lat": "40.7058463",
     "lon": "-73.9221354",
     "link": "https://www.instagram.com/carousel_bk/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Carousel.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 2:00 PM–2:00 AM",
@@ -688,7 +688,7 @@
         "lat": "40.716096",
     "lon": "-73.964839",
     "link": "https://www.instagram.com/no9nyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Dead Letter No. 9.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–12:00 AM",
@@ -820,7 +820,7 @@
         "lat": "40.7419044",
     "lon": "-74.0012093",
     "link": "https://www.instagram.com/chisholm_larsson/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Chisholm Larsson Gallery.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -1060,7 +1060,7 @@
         "lat": "40.7273469",
     "lon": "-73.984402",
     "link": "https://www.instagram.com/cafemogadornyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Cafe Mogador mht.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:30 AM–10:30 PM",
@@ -1456,7 +1456,7 @@
         "lat": "40.7611603",
     "lon": "-73.9748539",
     "link": "https://www.instagram.com/carpentersworkshopgallery/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Carpenters Workshop Gallery.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -1544,7 +1544,7 @@
         "lat": "40.692626",
     "lon": "-73.923672",
     "link": "https://www.instagram.com/codexbooks/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Codex.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–7:00 PM",
@@ -2028,7 +2028,7 @@
         "lat": "40.6845677",
     "lon": "-73.9920784",
     "link": "https://www.instagram.com/cloverclubny/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Clover Club.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–12:00 AM",
@@ -3194,7 +3194,7 @@
         "lat": "40.7108795",
     "lon": "-73.9677352",
     "link": "https://www.instagram.com/deuxchatsbk/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Deux Chats.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 3:00 PM–11:00 PM",
@@ -3810,7 +3810,7 @@
         "lat": "40.737675",
     "lon": "-74.0044663",
     "link": "https://www.instagram.com/casamagazinesnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Casa Magazines.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–9:00 PM",
@@ -3854,7 +3854,7 @@
         "lat": "40.744122",
     "lon": "-73.99921644",
     "link": "https://www.instagram.com/cafeflornyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Café-Flor : Bar 21.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–12:00 AM",
@@ -3986,7 +3986,7 @@
         "lat": "40.7359257",
     "lon": "-73.9871655",
     "link": "https://www.instagram.com/casamonobarjamon/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Casa Mono.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–12:00 AM",
@@ -4074,7 +4074,7 @@
         "lat": "40.7049007",
     "lon": "-73.92135392",
     "link": "https://www.instagram.com/cherry.on.top.nyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Cherry on Top.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 2:00 PM–12:00 AM",
@@ -4118,7 +4118,7 @@
         "lat": "40.72079935",
     "lon": "-73.9886623",
     "link": "https://www.instagram.com/nyc_close_up/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Close Up.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–12:00 AM",
@@ -4690,7 +4690,7 @@
         "lat": "40.6978902",
     "lon": "-73.9371547",
     "link": "https://www.instagram.com/cafe.erzulie/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Cafe Erzulie.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–11:00 PM",
@@ -4910,7 +4910,7 @@
         "lat": "40.725936",
     "lon": "-73.98465537",
     "link": "https://www.instagram.com/deathandcompany/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Death & Co East Village.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 6:00 PM–1:00 AM",
@@ -5561,7 +5561,7 @@
         "lat": "40.67509325",
     "lon": "-73.9755335",
     "link": "https://www.instagram.com/caferegular/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Cafe Regular.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–4:00 PM",
@@ -5649,7 +5649,7 @@
         "lat": "40.6711851",
     "lon": "-73.9937056",
     "link": "https://www.instagram.com/craftsmanave/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Craftsman Ave.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–10:00 PM",
@@ -5737,7 +5737,7 @@
         "lat": "40.7175216",
     "lon": "-73.9924393",
     "link": "https://www.instagram.com/dahingplantsnyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Dahing Plants.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–6:30 PM",
@@ -5945,7 +5945,7 @@
         "lat": "40.7139367",
     "lon": "-73.9896705",
     "link": "https://www.instagram.com/casino.ny/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Casino.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–12:00 AM",
@@ -6033,7 +6033,7 @@
         "lat": "40.71573925",
     "lon": "-73.9912318",
     "link": "https://www.instagram.com/desertvintage/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Desert Vintage.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–7:00 PM",
@@ -6297,7 +6297,7 @@
         "lat": "40.71256495",
     "lon": "-73.99415102",
     "link": "https://www.instagram.com/cellarthirtysix/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Cellar 36.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–2:00 AM",
@@ -7045,7 +7045,7 @@
         "lat": "40.69811855",
     "lon": "-73.93688719",
     "link": "https://www.instagram.com/damballa.nyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Damballa.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 7:00 PM–12:00 AM",
@@ -7133,7 +7133,7 @@
         "lat": "40.7250097",
     "lon": "-73.953394",
     "link": "https://www.instagram.com/dreamfishingtackle/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Dream Fishing Tackle.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–7:00 PM",
@@ -7265,7 +7265,7 @@
         "lat": "40.7291544",
     "lon": "-73.9992134",
     "link": "https://www.instagram.com/chessforum/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Chess Forum.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–12:00 AM",
@@ -8013,7 +8013,7 @@
         "lat": "40.7210681",
     "lon": "-73.9567687",
     "link": "https://www.instagram.com/cafebalearica/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Cafe Balearica.png",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 2:00 PM–4:00 AM",
@@ -8673,7 +8673,7 @@
         "lat": "40.725437",
     "lon": "-73.946085",
     "link": "https://www.instagram.com/diamondlilbar/",
-    "cover": "",
+    "cover": "img/venues/Diamond Lil.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 2:00 PM–1:00 AM",
@@ -9905,7 +9905,7 @@
         "lat": "40.7361878",
     "lon": "-73.9873741",
     "link": "https://www.instagram.com/dearirving/",
-    "cover": "",
+    "cover": "img/venues/Dear Irving Gramercy.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–1:00 AM",
@@ -10301,7 +10301,7 @@
         "lat": "40.7415982",
     "lon": "-73.9871904",
     "link": "https://www.instagram.com/theclementebar/",
-    "cover": "",
+    "cover": "img/venues/Clemente Bar.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–1:00 AM",
@@ -10873,7 +10873,7 @@
         "lat": "40.745866",
     "lon": "-74.006985",
     "link": "https://www.instagram.com/davidzwirner/",
-    "cover": "",
+    "cover": "img/venues/David Zwirner.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -11445,7 +11445,7 @@
         "lat": "40.740812",
     "lon": "-73.853837",
     "link": "https://www.instagram.com/chimitosnyc/",
-    "cover": "",
+    "cover": "img/venues/Chimito's.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–11:00 PM",
@@ -11753,7 +11753,7 @@
         "lat": "40.7243198",
     "lon": "-73.9784447",
     "link": "https://www.instagram.com/dingalingcocktaillounge/",
-    "cover": "",
+    "cover": "img/venues/Ding-a-ling.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -11923,7 +11923,7 @@
         "lat": "40.7352204",
     "lon": "-74.0062506",
     "link": "https://www.instagram.com/dantewestvillage/",
-    "cover": "",
+    "cover": "img/venues/Dante West Village.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:00 AM–11:00 PM",
@@ -12143,7 +12143,7 @@
         "lat": "40.72221429",
     "lon": "-73.99605",
     "link": "https://www.instagram.com/explore/search/keyword/?q=Caf%C3%A9%20Leon%20Dore",
-    "cover": "",
+    "cover": "img/venues/Café Leon Dore.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–6:00 PM",
@@ -12509,7 +12509,7 @@
         "lat": "40.7400751",
     "lon": "-73.98874859",
     "link": "https://www.instagram.com/coqodaq/",
-    "cover": "",
+    "cover": "img/venues/COQODAQ.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–3 PM; 5 PM–11:00 PM",
@@ -13248,7 +13248,7 @@
         "lat": "40.70783935",
     "lon": "-73.9437523",
     "link": "https://www.instagram.com/casaoranyc/",
-    "cover": "",
+    "cover": "img/venues/Casa Ora.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:00 AM–3:30 PM; 5:30–10:00 PM",
@@ -14399,7 +14399,7 @@
         "lat": "40.7169346",
     "lon": "-73.9429324",
     "link": "https://www.instagram.com/cozyroyalebk/",
-    "cover": "",
+    "cover": "img/venues/Cozy Royale.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 11:30 AM–12:00 AM",
@@ -14494,7 +14494,7 @@
         "lat": "40.72437788",
     "lon": "-73.95469863",
     "link": "https://www.instagram.com/caffepanna/",
-    "cover": "",
+    "cover": "img/venues/Caffè Panna.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 1:30 PM–9:30 PM",
@@ -14582,7 +14582,7 @@
         "lat": "40.8545359",
     "lon": "-73.88819948",
     "link": "https://www.instagram.com/explore/locations/8494296/cosenzas-fish-mkt/",
-    "cover": "",
+    "cover": "img/venues/Cosenza's Fish Market.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -14890,7 +14890,7 @@
         "lat": "40.715807",
     "lon": "-73.990317",
     "link": "https://www.instagram.com/casetta.ny/",
-    "cover": "",
+    "cover": "img/venues/Casetta.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 12:00 PM–9:00 PM",
@@ -16114,7 +16114,7 @@
         "lat": "40.7207181",
     "lon": "-73.9611056",
     "link": "https://www.instagram.com/dollysbk/",
-    "cover": "",
+    "cover": "img/venues/Dolly's Swing and Dive.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 2:00 PM–3:00 AM",
@@ -16202,7 +16202,7 @@
         "lat": "40.70885025",
     "lon": "-73.95788102",
     "link": "https://www.instagram.com/duffsbrooklyn/",
-    "cover": "",
+    "cover": "img/venues/Duff's.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 6:00 PM–4:00 AM",
@@ -16818,7 +16818,7 @@
         "lat": "40.71997973",
     "lon": "-73.94616318",
     "link": "https://www.instagram.com/cafemsmn/",
-    "cover": "",
+    "cover": "img/venues/Cafe MSMN.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 9:00 AM–5:00 PM",
@@ -17434,7 +17434,7 @@
         "lat": "40.6805223",
     "lon": "-73.994768",
     "link": "https://www.instagram.com/grownyc_brooklyn/?g=5",
-    "cover": "",
+    "cover": "img/venues/Carroll Gardens Greenmarket.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–2:00 PM",
@@ -17962,7 +17962,7 @@
         "lat": "40.6868109",
     "lon": "-73.9594329",
     "link": "https://www.instagram.com/communenyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Commune Cafe.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 8:00 AM–5:00 PM",
@@ -19106,7 +19106,7 @@
         "lat": "40.72167975",
     "lon": "-73.9584274",
     "link": "https://www.instagram.com/desertfivespotny/",
-    "cover": "",
+    "cover": "img/venues/Desert 5 Spot.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 2:00 PM–12:00 AM",
@@ -19370,7 +19370,7 @@
         "lat": "40.755533",
     "lon": "-73.9902804",
     "link": "https://www.instagram.com/castellnyc/",
-    "cover": "",
+    "cover": "img/venues/Castell Rooftop Lounge.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 4:00 PM–10:00 PM",
@@ -19458,7 +19458,7 @@
         "lat": "40.7518932",
     "lon": "-73.9840991",
     "link": "https://www.instagram.com/daintreenyc/",
-    "cover": "",
+    "cover": "img/venues/Daintree.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -19546,7 +19546,7 @@
         "lat": "40.6825223",
     "lon": "-73.9291165",
     "link": "https://www.instagram.com/che_brooklyn/",
-    "cover": "",
+    "cover": "img/venues/Che .jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:00 AM–3:00 PM; 6:00 PM–11:00 PM",
@@ -20779,7 +20779,7 @@
         "lat": "40.764621",
     "lon": "-73.9753353",
     "link": "https://www.instagram.com/darlingrooftop/",
-    "cover": "",
+    "cover": "img/venues/Darling.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: Closed",
@@ -21087,7 +21087,7 @@
         "lat": "40.71662833",
     "lon": "-73.96650733",
     "link": "https://www.instagram.com/dominopark/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Domino Park.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 6:00 AM–11:00 PM",
@@ -21571,7 +21571,7 @@
         "lat": "40.6785539",
     "lon": "-73.9958031",
     "link": "https://www.instagram.com/dae.bk.newyork/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Dae.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 10:00 AM–10:00 PM",
@@ -21791,7 +21791,7 @@
         "lat": "40.7195842",
     "lon": "-73.9904912",
     "link": "https://www.instagram.com/doublechickenpleasenyc/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Double Chicken Please.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 5:00 PM–12:00 AM",
@@ -21835,7 +21835,7 @@
         "lat": "40.7376427",
     "lon": "-74.0037475",
     "link": "https://www.instagram.com/cubbyholebar/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Cubbyhole.jpg",
     "openNow": "TRUE",
     "hours": [
     "Sunday: 2:00 PM–2:00 AM",
@@ -23470,7 +23470,7 @@
         "lat": 40.683861,
     "lon": -73.94387,
     "link": "https://www.instagram.com/dolores.bk/",
-    "cover": "",
+    "cover": "img/venues/DOLORES.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 4:00 PM–12:00 AM",
@@ -23560,7 +23560,7 @@
         "lat": 40.7299274,
     "lon": -74.0029971,
     "link": "https://www.instagram.com/demo.nyc",
-    "cover": "",
+    "cover": "img/venues/Demo.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 5:00 PM–10:00 PM",
@@ -26531,7 +26531,7 @@
     "lat": 40.7527,
     "lon": -73.9819,
     "link": "https://www.instagram.com/drawingroomny/",
-    "cover": "",
+    "cover": "img/venues/Drawing Room Midtown.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 12:00 PM–9:00 PM",
@@ -26576,7 +26576,7 @@
     "lat": 40.7105,
     "lon": -73.9570,
     "link": "https://www.instagram.com/drawingroombk/",
-    "cover": "",
+    "cover": "img/venues/Drawing Room Williamsburg.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 12:00 PM–9:00 PM",
@@ -26846,7 +26846,7 @@
     "lat": 40.6867791,
     "lon": -73.9548217,
     "link": "https://www.instagram.com/doordivebar/",
-    "cover": "",
+    "cover": "img/venues/Do or Dive Bar.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 12:00 PM–4:00 AM",
@@ -27071,7 +27071,7 @@
     "lat": 40.6872785,
     "lon": -73.9566572,
     "link": "https://www.instagram.com/discobirdies/",
-    "cover": "",
+    "cover": "img/venues/Disco Birdies.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 12:00 PM–6:00 PM",
@@ -27116,7 +27116,7 @@
     "lat": 40.6866784,
     "lon": -73.954747,
     "link": "https://www.instagram.com/dynaconyc/",
-    "cover": "",
+    "cover": "img/venues/Dynaco.png",
     "openNow": true,
     "hours": [
       "Sunday: 4:00 PM–2:00 AM",
@@ -27536,7 +27536,7 @@
     "lat": 40.689854,
     "lon": -73.971357,
     "link": "https://www.instagram.com/dickandjanesbar/",
-    "cover": "",
+    "cover": "img/venues/Dick and Jane’s.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 5:00 PM–12:00 AM",
@@ -27716,7 +27716,7 @@
     "lat": 40.6762056,
     "lon": -73.9986694,
     "link": "https://www.instagram.com/courtstreetgrocers/",
-    "cover": "",
+    "cover": "img/venues/Court Street Grocers.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 9:00 AM–5:00 PM",
@@ -27851,7 +27851,7 @@
     "lat": 40.6799225,
     "lon": -73.9965174,
     "link": "https://www.instagram.com/districtbrooklyn/",
-    "cover": "",
+    "cover": "img/venues/DISTRICT.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 5:00 AM–9:00 PM",
@@ -27941,7 +27941,7 @@
     "lat": 40.6805498,
     "lon": -73.9892902,
     "link": "https://www.instagram.com/cafecitosocial/",
-    "cover": "",
+    "cover": "img/venues/Cafecito Social.png",
     "openNow": true,
     "hours": [
       "Sunday: 8:00 AM–4:00 PM",
@@ -28211,7 +28211,7 @@
     "lat": 40.6775859,
     "lon": -73.9872039,
     "link": "https://www.instagram.com/cotra.nyc/",
-    "cover": "",
+    "cover": "img/venues/Cotra.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 5:00 PM–9:00 PM",
@@ -28497,7 +28497,7 @@
     "lat": 40.6729083,
     "lon": -73.9626279,
     "link": "https://www.instagram.com/cafemadonow/",
-    "cover": "",
+    "cover": "img/venues/Cafe Mado.jpg",
     "openNow": true,
     "hours": [
       "Sunday: 8:30 AM–3:00 PM; 5:00 PM–10:00 PM",
@@ -28770,7 +28770,7 @@
     "lat": "40.7191233",
     "lon": "-73.9921624",
     "link": "https://www.instagram.com/comalnyc/",
-    "cover": "",
+    "cover": "img/venues/Comal.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
@@ -29230,7 +29230,7 @@
     "lat": "40.7113494",
     "lon": "-73.961145",
     "link": "https://www.instagram.com/canarybrooklyn/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Canary Cafe.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 8:00 AM–4:00 PM",
@@ -29368,7 +29368,7 @@
     "lat": "40.7410183",
     "lon": "-73.9929415",
     "link": "https://www.instagram.com/celenesnyc/",
-    "cover": "",
+    "cover": "img/venues/Celene's.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
@@ -29782,7 +29782,7 @@
     "lat": "40.7336334",
     "lon": "-74.0032842",
     "link": "https://www.instagram.com/cellardognyc/",
-    "cover": "",
+    "cover": "img/venues/Cellar Dog.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 2:00 PM–1:00 AM",
@@ -29828,7 +29828,7 @@
     "lat": "40.7478387",
     "lon": "-74.0063018",
     "link": "https://www.instagram.com/diaartfoundation/",
-    "cover": "",
+    "cover": "img/venues/Dia Chelsea.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
@@ -30058,7 +30058,7 @@
     "lat": "40.718386",
     "lon": "-73.98895335",
     "link": "https://www.instagram.com/hotelchantelle/",
-    "cover": "",
+    "cover": "img/venues/Chantelle NYC.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
@@ -30242,7 +30242,7 @@
     "lat": "40.71862695",
     "lon": "-73.99141395",
     "link": "https://www.instagram.com/colmadocoffee/",
-    "cover": "",
+    "cover": "img/venues/Café Colmado.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 9:00 AM–6:00 PM",
@@ -30380,7 +30380,7 @@
     "lat": "40.7210247",
     "lon": "-73.9897308",
     "link": "https://www.instagram.com/copperandoak/",
-    "cover": "",
+    "cover": "img/venues/Copper & Oak.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
@@ -30748,7 +30748,7 @@
     "lat": "40.718347",
     "lon": "-73.955376",
     "link": "https://www.instagram.com/chalkgyms/",
-    "cover": "",
+    "cover": "img/venues/Chalk Gyms.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 8:00 AM–8:00 PM",
@@ -31346,7 +31346,7 @@
     "lat": "40.745074",
     "lon": "-73.993431",
     "link": "https://www.instagram.com/cueart/?hl=en",
-    "cover": "",
+    "cover": "img/venues/CUE Art Foundation.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: Closed",
@@ -31530,7 +31530,7 @@
     "lat": "40.6871772",
     "lon": "-73.9904095",
     "link": "https://www.instagram.com/cloversmoothie_tea/?hl=en",
-    "cover": "",
+    "cover": "img/venues/Clover Smoothie&Tea.jpg",
     "openNow": "TRUE",
     "hours": [
       "Sunday: 7:30 AM–8:00 PM",
