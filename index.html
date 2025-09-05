@@ -1,5 +1,5 @@
 <head>
-  <title>NYC Roam Map</title>
+  <title>NYC x Roam Map</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -189,38 +189,51 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 };
 
 
-  function isLocationOpenNow(ev) {
+  // 🔁 REPLACE your current isLocationOpenNow with this version
+function isLocationOpenNow(ev) {
   const now = new Date();
   const dayKeys = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
   const todayKey = dayKeys[now.getDay()];
   const yesterdayKey = dayKeys[(now.getDay() + 6) % 7];
-  const currentHour = now.getHours();
+
+  // Use fractional hour for better accuracy (e.g., 21.5 for 9:30 PM)
+  const currentHour = now.getHours() + now.getMinutes() / 60;
 
   const todayHours = ev.hoursNumeric?.[todayKey];
   const yesterdayHours = ev.hoursNumeric?.[yesterdayKey];
 
+  // Normalize to an array of ranges
+  const normalizeRanges = (h) =>
+    Array.isArray(h) ? h : (h && typeof h === 'object' ? [h] : []);
+
+  const todayRanges = normalizeRanges(todayHours);
+  const yRanges = normalizeRanges(yesterdayHours);
+
   const isWithin = (open, close) => {
-    if (close < open) {
-      return currentHour >= open || currentHour < close;
-    } else {
-      return currentHour >= open && currentHour < close;
-    }
+    // Over-midnight window (e.g., 18 → 26)
+    if (close < open) return currentHour >= open || currentHour < close;
+    return currentHour >= open && currentHour < close;
   };
 
-  // Check if still open from yesterday’s late-night hours
-  if (yesterdayHours && yesterdayHours.open !== undefined && yesterdayHours.close !== undefined) {
-    if (yesterdayHours.close < yesterdayHours.open && currentHour < yesterdayHours.close) {
-      return true;
-    }
+  // Still open from **yesterday** (handles over-midnight spill)
+  if (yRanges.some(r =>
+    Number.isFinite(r.open) && Number.isFinite(r.close) &&
+    r.close < r.open && currentHour < r.close
+  )) {
+    return true;
   }
 
-  // Check today’s hours
-  if (todayHours && todayHours.open !== undefined && todayHours.close !== undefined) {
-    return isWithin(todayHours.open, todayHours.close);
+  // Open during **today** in any range
+  if (todayRanges.some(r =>
+    Number.isFinite(r.open) && Number.isFinite(r.close) &&
+    isWithin(r.open, r.close)
+  )) {
+    return true;
   }
 
   return false;
 }
+
   
   let globalEvents = [];
 let allMarkers = [];
@@ -367,6 +380,77 @@ function buildRouteShareUrl(routeArr) {
   url.searchParams.set('route', buildRouteIds(routeArr));
   return url.toString();
 }
+
+  // ✅ Add photo cover helper functions here (before renderMarkers)
+function slugifyName(name = '') {
+  return String(name)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// Build an ordered list of possible image URLs.
+// Adjust the paths to match your repo structure if different.
+function coverCandidates(ev) {
+  const s = slugifyName(ev.name || '');
+  const guesses = [
+    ev.cover || null,                                       // explicit
+    `img/venues/${s}/cover.jpg`,
+    `img/venues/${s}/cover.webp`,
+    `img/venues/${s}/cover.png`,
+    `img/venues/${s}.jpg`,
+    `img/venues/${s}.webp`,
+    `img/venues/${s}.png`
+  ].filter(Boolean);
+  // Dedupe while preserving order
+  return [...new Set(guesses)];
+}
+
+// Called by <img onerror> to try the next candidate, or remove the image
+function tryNextCover(imgEl) {
+  try {
+    const list = (imgEl.dataset.candidates || '').split('|').filter(Boolean);
+    let idx = parseInt(imgEl.dataset.idx || '0', 10) + 1;
+    if (idx < list.length) {
+      imgEl.dataset.idx = String(idx);
+      imgEl.src = list[idx];
+    } else {
+      // No candidates left — remove the image cleanly
+      const parent = imgEl.parentNode;
+      parent && parent.removeChild(imgEl);
+      // Optional: remove credit line if present just below
+      const credit = parent?.querySelector?.('.cover-credit');
+      if (credit) credit.remove();
+    }
+  } catch (_) {
+    // If anything goes sideways, remove the element
+    imgEl.parentNode && imgEl.parentNode.removeChild(imgEl);
+  }
+}
+
+// Returns the HTML for the image block with all candidates embedded.
+// You can pass ev.coverCredit / ev.coverAlt if you add them in JSON.
+function buildCoverImgHTML(ev) {
+  const candidates = coverCandidates(ev);
+  if (!candidates.length) return '';
+  const first = candidates[0];
+  const alt = (ev.coverAlt || ev.name || 'Cover').replace(/"/g, '&quot;');
+  const credit = ev.coverCredit ? 
+    `<div class="cover-credit" style="font-size:11px;color:#999;margin:-4px 0 6px;">${ev.coverCredit}</div>` : '';
+  return `
+    <img
+      src="${first}"
+      alt="${alt}"
+      loading="lazy"
+      style="width:100%;max-height:140px;object-fit:cover;border-radius:8px;margin:6px 0;"
+      data-candidates="${candidates.join('|')}"
+      data-idx="0"
+      onerror="tryNextCover(this)"
+    />
+    ${credit}
+  `;
+}
+
   
 // ─── FILTER MARKERS ────────────────────────────────────────────────────
 function filterMarkersByVibe() {
@@ -438,6 +522,11 @@ function renderMarkers(events, crawlMode = false) {
   const todayIndex = new Date().getDay();
 
   events.forEach(ev => {
+    const lat = Number(ev.lat), lon = Number(ev.lon);
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+    console.warn('Skipping invalid coords:', ev.name || ev.title, ev.lat, ev.lon);
+    return;
+  }
     const rawPart = ev.dayParts?.[weekdayKeys[todayIndex]];
     const isOpen = isLocationOpenNow(ev);
     const markerColor = isOpen && rawPart && rawPart !== '-'
@@ -504,20 +593,23 @@ function renderMarkers(events, crawlMode = false) {
       : '<em>No similar places nearby.</em>';
 
     const popupContent = `
-      <div style="font-size:14px;line-height:1.4;">
-        <strong>${ev.name}</strong><br/>
-        <em>Vibe:</em> ${ev.vibe}<br/>
-        <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
-        <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
-        <a href="${ev.link}" target="_blank">More Info</a>
-        <hr/>
-        <strong>Could also be the move..:</strong>
-        ${similarList}
-        <br/><br/>
-        <button class="add-route-btn">Add to Route</button>
-        <button class="add-fav-btn">Add to Favorites</button>
-      </div>
-    `;
+  <div style="font-size:14px;line-height:1.4;">
+    <strong>${ev.name}</strong><br/>
+    ${buildCoverImgHTML(ev)}
+    <em>Vibe:</em> ${ev.vibe}<br/>
+    <em>Hours:</em> ${ev.hours?.[todayIndex] || 'N/A'}<br/>
+    <em>Status:</em> ${isOpen ? '<span style="color:green;">Open Now</span>' : '<span style="color:red;">Closed</span>'}<br/>
+    <a href="${ev.link}" target="_blank" rel="noopener">More Info</a>
+    <hr/>
+    <strong>Could also be the move..:</strong>
+    ${similarList}
+    <br/><br/>
+    <button class="add-route-btn">Add to Route</button>
+    <button class="add-fav-btn">Add to Favorites</button>
+  </div>
+`;
+
+
 
     marker.bindPopup(popupContent).addTo(markerLayer);
 
@@ -1035,6 +1127,29 @@ fetch('events.json')
   .then(res => res.json())
   .then(events => {
     globalEvents = events;
+
+    // Normalize + validate coordinates for every row
+const toNum = v => Number(String(v ?? '').replace(',', '.').replace(/[^\d.\-]/g, ''));
+
+globalEvents = (events || []).map((e, i) => {
+  const lat = toNum(e.lat ?? e.latitude);
+  const lon = toNum(e.lon ?? e.lng ?? e.longitude);
+  return { ...e, lat, lon, __idx: i };
+});
+
+// Log the first few invalid rows so you can fix the data
+const bad = globalEvents.filter(e => !Number.isFinite(e.lat) || !Number.isFinite(e.lon));
+if (bad.length) {
+  console.warn('⚠️ Invalid coords found:', bad.length);
+  console.table(bad.slice(0, 20).map(e => ({
+    idx: e.__idx, name: e.name || e.title, lat: e.lat, lon: e.lon
+  })));
+}
+
+
+    events.forEach((e, i) => {
+  console.log(i, e.name || e.title, e.lat, e.lon || e.lng);
+});
 
     const todayStr = new Date().toISOString().slice(0, 10);
     eventsToday = globalEvents.filter(ev =>
